@@ -2,6 +2,8 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
+Benchmarks, metrics, and evaluation methods for agents and their components.
+
 661 source-reviewed resources tagged `evaluation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
 **Contents:** [Benchmarks (81)](#benchmarks) · [Datasets (9)](#datasets) · [Models (1)](#models) · [Frameworks (16)](#frameworks) · [Tools (4)](#tools) · [Infrastructure (2)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (546)](#papers)

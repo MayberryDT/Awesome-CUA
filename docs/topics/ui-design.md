@@ -2,6 +2,8 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
+How interface design affects agents and users, and agents that evaluate or generate interfaces.
+
 20 source-reviewed resources tagged `ui-design`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
 **Contents:** [Datasets (1)](#datasets) · [Papers (19)](#papers)

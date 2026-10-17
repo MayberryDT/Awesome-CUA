@@ -2,6 +2,8 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
+Operating smartphone and tablet apps.
+
 248 source-reviewed resources tagged `mobile-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
 **Contents:** [Benchmarks (14)](#benchmarks) · [Datasets (12)](#datasets) · [Models (15)](#models) · [Agents (16)](#agents) · [Frameworks (8)](#frameworks) · [Tools (2)](#tools) · [Surveys (2)](#surveys) · [Papers (179)](#papers)

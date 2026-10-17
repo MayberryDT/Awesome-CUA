@@ -2,6 +2,8 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
+Reliability under perturbations, distribution shift, errors, or changing interfaces.
+
 174 source-reviewed resources tagged `robustness`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
 **Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (1)](#datasets) · [Frameworks (2)](#frameworks) · [Papers (162)](#papers)

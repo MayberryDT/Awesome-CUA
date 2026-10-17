@@ -44,6 +44,8 @@ git clone https://github.com/reacher-z/Awesome-CUA.git
 | [模型与权重版本](docs/models.md) · **98** | [产品](docs/products.md) · **20** · [发布方与品牌](docs/companies.md) · **16** |
 
 **按平台：** [Web](docs/environments/web.md) **596** · [Desktop](docs/environments/desktop.md) **320** · [Windows](docs/environments/windows.md) **61** · [macOS](docs/environments/macos.md) **30** · [Linux](docs/environments/linux.md) **47** · [Android](docs/environments/android.md) **294** · [iOS](docs/environments/ios.md) **20** · [HarmonyOS](docs/environments/harmonyos.md) **3** · [Cross-platform](docs/environments/cross-platform.md) **193**
+
+**按主题：** [评测](docs/topics/evaluation.md) **661** · [GUI 定位](docs/topics/grounding.md) **371** · [数据生成](docs/topics/data-generation.md) **337** · [网页导航](docs/topics/web-navigation.md) **275** · [规划](docs/topics/planning.md) **269** · [手机操作](docs/topics/mobile-navigation.md) **248** · [强化学习](docs/topics/reinforcement-learning.md) **230** · [界面理解](docs/topics/screen-understanding.md) **205** · [鲁棒性](docs/topics/robustness.md) **174** · [安全与防护](docs/topics/safety-security.md) **170** · [记忆](docs/topics/memory.md) **158** · [效率](docs/topics/efficiency.md) **148** · [全部 35 项 →](docs/topics.md)
 <!-- EXPLORE:END -->
 
 覆盖 Web、桌面、Android、iOS、Windows、macOS、Linux 和跨平台工作。主题包括 grounding、屏幕理解、规划、记忆、长流程任务、强化学习、数据生成、安全、鲁棒性和评测。环境分面可以重叠；不会根据模型的基准成绩推定框架支持。

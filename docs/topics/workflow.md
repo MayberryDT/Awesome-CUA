@@ -2,6 +2,8 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
+Multi-step procedures, business processes, and reusable task workflows.
+
 107 source-reviewed resources tagged `workflow`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
 **Contents:** [Benchmarks (6)](#benchmarks) · [Datasets (2)](#datasets) · [Agents (6)](#agents) · [Frameworks (8)](#frameworks) · [Products (7)](#products) · [Papers (78)](#papers)
