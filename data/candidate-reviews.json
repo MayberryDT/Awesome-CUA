@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "url:4efcd2c3fbd98bc4106d",
+    "url": "https://huggingface.co/shenzhi-wang/Llama3-8B-Chinese-Chat",
+    "decision": "out_of_scope",
+    "reason": "Llama3-8B-Chinese-Chat is a general Chinese-English chat model fine-tuned from Meta-Llama-3-8B-Instruct with ORPO; its card shows roleplay, math, writing and text-only function-calling examples. It has no GUI, browser or device interaction, so it is a general language model outside the computer-use catalog.",
+    "reviewed_at": "2026-10-18T16:07:09Z",
+    "evidence": {
+      "url": "https://huggingface.co/shenzhi-wang/Llama3-8B-Chinese-Chat/raw/f25f13cb2571e70e285121faceac92926b51e6f5/README.md",
+      "sha256": "a2b393dba94b196a23198f3bf1ecde12f49a1a303ce3449c3797667280cf8716",
+      "retrieved_at": "2026-10-18T15:51:58Z"
+    }
   }
 ]
