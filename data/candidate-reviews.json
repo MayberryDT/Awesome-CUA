@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "url:6af83fdc10d9ae10b6f3",
+    "url": "https://huggingface.co/Qwen/Qwen2-7B-Instruct",
+    "decision": "out_of_scope",
+    "reason": "Qwen2-7B-Instruct is a general-purpose, text-only instruction-tuned language model whose card covers language, coding, math and long-context benchmarks with no GUI, screen or agent use. MultiUI lists it only as the language backbone of its UIX-Qwen2 checkpoints, which are recorded separately.",
+    "reviewed_at": "2026-10-18T16:08:13Z",
+    "evidence": {
+      "url": "https://huggingface.co/Qwen/Qwen2-7B-Instruct/raw/f2826a00ceef68f0f2b946d945ecc0477ce4450c/README.md",
+      "sha256": "174c5a5d83d0f9670e0b96df86f2dddb2de5ab958f885653525b3d2c977f24b5",
+      "retrieved_at": "2026-10-18T15:52:39Z"
+    }
   }
 ]
