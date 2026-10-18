@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:cec41e40200f9baf5dde",
+    "url": "https://ai-agents-2030.github.io/VSC-RL",
+    "decision": "alias",
+    "target_id": "arxiv:2502.07949",
+    "reason": "Project website for the indexed VSC-RL paper (variational subgoal-conditioned RL for VLM agents)."
   }
 ]
