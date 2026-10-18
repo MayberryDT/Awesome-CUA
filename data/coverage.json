@@ -1,17 +1,17 @@
 {
-  "as_of_utc": "2026-10-18T08:01:28Z",
-  "total_records": 3055,
-  "curated_records": 1572,
-  "bibliographic_records": 2606,
-  "arxiv_active_records": 2593,
+  "as_of_utc": "2026-10-18T11:07:35Z",
+  "total_records": 3059,
+  "curated_records": 1574,
+  "bibliographic_records": 2609,
+  "arxiv_active_records": 2596,
   "non_arxiv_bibliographic_records": 13,
   "publication_metadata_records": 77,
-  "arxiv_archive_records": 2715,
+  "arxiv_archive_records": 2718,
   "excluded_records": 122,
   "exclusion_revalidation_pending": 0,
-  "metadata_only_records": 1483,
-  "discovery_identifiers": 4052,
-  "unindexed_candidates": 903,
+  "metadata_only_records": 1485,
+  "discovery_identifiers": 4055,
+  "unindexed_candidates": 900,
   "non_resource_candidates": 80,
   "alias_candidates": 9,
   "pending_editorial": [
@@ -150,22 +150,22 @@
     "dataset": 85,
     "framework": 72,
     "infrastructure": 14,
-    "model": 98,
-    "paper": 2591,
+    "model": 99,
+    "paper": 2594,
     "product": 20,
     "survey": 15,
     "tool": 20
   },
   "curated_by_environment": {
     "android": 294,
-    "cross-platform": 193,
-    "desktop": 320,
+    "cross-platform": 194,
+    "desktop": 321,
     "harmonyos": 3,
     "ios": 20,
     "linux": 47,
     "macos": 30,
-    "unspecified": 367,
-    "web": 596,
+    "unspecified": 368,
+    "web": 597,
     "windows": 61
   },
   "curated_by_kind_and_environment": {
@@ -226,13 +226,13 @@
     },
     "model": {
       "android": 24,
-      "cross-platform": 47,
-      "desktop": 24,
+      "cross-platform": 48,
+      "desktop": 25,
       "ios": 4,
       "linux": 6,
       "macos": 4,
       "unspecified": 2,
-      "web": 28,
+      "web": 29,
       "windows": 5
     },
     "paper": {
@@ -243,7 +243,7 @@
       "ios": 8,
       "linux": 18,
       "macos": 14,
-      "unspecified": 332,
+      "unspecified": 333,
       "web": 424,
       "windows": 36
     },
@@ -273,7 +273,7 @@
     }
   },
   "license_declarations_by_scope": {
-    "code": 176,
+    "code": 177,
     "data": 61,
     "weights": 56,
     "document": 0
@@ -991,13 +991,13 @@
         "state": "success"
       },
       "discovered": 15,
-      "indexed": 9,
-      "indexed_resources": 9,
-      "resolved_aliases": 0,
-      "curated": 9,
+      "indexed": 10,
+      "indexed_resources": 10,
+      "resolved_aliases": 1,
+      "curated": 10,
       "excluded": 0,
       "set_aside": 1,
-      "unindexed": 5
+      "unindexed": 4
     },
     {
       "id": "release-thudm-scalecua",
@@ -1171,13 +1171,13 @@
         "state": "success"
       },
       "discovered": 11,
-      "indexed": 6,
-      "indexed_resources": 6,
+      "indexed": 7,
+      "indexed_resources": 7,
       "resolved_aliases": 0,
-      "curated": 6,
+      "curated": 7,
       "excluded": 0,
       "set_aside": 0,
-      "unindexed": 5
+      "unindexed": 4
     },
     {
       "id": "release-seg2click",
@@ -1261,13 +1261,13 @@
         "state": "success"
       },
       "discovered": 12,
-      "indexed": 7,
-      "indexed_resources": 7,
+      "indexed": 8,
+      "indexed_resources": 8,
       "resolved_aliases": 0,
-      "curated": 7,
+      "curated": 8,
       "excluded": 0,
       "set_aside": 0,
-      "unindexed": 5
+      "unindexed": 4
     },
     {
       "id": "release-mobilegympp",
@@ -1441,13 +1441,13 @@
         "state": "success"
       },
       "discovered": 29,
-      "indexed": 2,
-      "indexed_resources": 2,
-      "resolved_aliases": 0,
-      "curated": 2,
+      "indexed": 3,
+      "indexed_resources": 3,
+      "resolved_aliases": 1,
+      "curated": 3,
       "excluded": 0,
       "set_aside": 3,
-      "unindexed": 24
+      "unindexed": 23
     },
     {
       "id": "release-multiui",
@@ -1501,13 +1501,13 @@
         "state": "success"
       },
       "discovered": 12,
-      "indexed": 5,
-      "indexed_resources": 5,
-      "resolved_aliases": 0,
-      "curated": 5,
+      "indexed": 6,
+      "indexed_resources": 6,
+      "resolved_aliases": 1,
+      "curated": 6,
       "excluded": 0,
       "set_aside": 0,
-      "unindexed": 7
+      "unindexed": 6
     },
     {
       "id": "release-scienceboard",

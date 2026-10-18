@@ -1,11 +1,11 @@
 # Coverage and quality ledger
 
-Evidence snapshot through **2026-10-18T08:01:28Z**. Generated from committed source receipts.
+Evidence snapshot through **2026-10-18T11:07:35Z**. Generated from committed source receipts.
 
-- 3,055 resource records: 1,572 curated; 1,483 bibliographic metadata only.
-- 2,606 paper and survey records, including 2,593 arXiv identities and 13 publisher-only identities. This count overlaps the status counts above.
-- 2,715 retained arXiv metadata records; 122 explicit scope exclusions are outside the active catalog.
-- 4,052 discovery identifiers; 903 remain unresolved after accounting for scope exclusions and for 80 reviewed non-resource links and 9 other addresses of indexed resources, which stay in the review queue with their reasons.
+- 3,059 resource records: 1,574 curated; 1,485 bibliographic metadata only.
+- 2,609 paper and survey records, including 2,596 arXiv identities and 13 publisher-only identities. This count overlaps the status counts above.
+- 2,718 retained arXiv metadata records; 122 explicit scope exclusions are outside the active catalog.
+- 4,055 discovery identifiers; 900 remain unresolved after accounting for scope exclusions and for 80 reviewed non-resource links and 9 other addresses of indexed resources, which stay in the review queue with their reasons.
 - 18 editorial proposals await verification or review.
 
 These are distinct resource identifiers, not distinct research projects. Papers, repositories, datasets, products, and publisher entities have different grains.
@@ -22,8 +22,8 @@ Counts of source-reviewed resources. A resource tagged with several environments
 | [dataset](datasets.md) | 24 | 18 | 4 | 2 | 7 | 34 | 1 | · | 14 | 8 |
 | [framework](frameworks.md) | 36 | 21 | 2 | 1 | 5 | 19 | 1 | 1 | 7 | 2 |
 | [infrastructure](infrastructures.md) | 5 | 9 | 1 | 2 | 4 | 3 | 1 | · | · | · |
-| [model](models.md) | 28 | 24 | 5 | 4 | 6 | 24 | 4 | · | 47 | 2 |
-| [paper](topics.md) | 424 | 204 | 36 | 14 | 18 | 173 | 8 | 2 | 100 | 332 |
+| [model](models.md) | 29 | 25 | 5 | 4 | 6 | 24 | 4 | · | 48 | 2 |
+| [paper](topics.md) | 424 | 204 | 36 | 14 | 18 | 173 | 8 | 2 | 100 | 333 |
 | [product](products.md) | 18 | 5 | · | · | · | · | · | · | · | · |
 | [survey](surveys.md) | 2 | 1 | 1 | · | · | 2 | 1 | · | 10 | 2 |
 | [tool](tools.md) | 11 | 3 | 3 | 2 | 2 | 5 | 2 | · | 1 | 2 |
@@ -57,24 +57,24 @@ The denominator is the normalized identifiers extracted from each fetched docume
 | [ranpox/awesome-computer-use](https://github.com/ranpox/awesome-computer-use) | 96 | 59 | 55 | 0 | 0 | 37 | OK · 2026-10-18 |
 | [Fara — first-party releases](https://github.com/microsoft/fara) | 18 | 5 | 5 | 0 | 2 | 11 | OK · 2026-10-18 |
 | [UI-Venus — first-party releases](https://github.com/inclusionAI/UI-Venus) | 9 | 4 | 4 | 0 | 2 | 3 | OK · 2026-10-18 |
-| [OpenGVLab ScaleCUA — first-party releases](https://github.com/OpenGVLab/ScaleCUA) | 15 | 9 | 9 | 0 | 1 | 5 | OK · 2026-10-18 |
+| [OpenGVLab ScaleCUA — first-party releases](https://github.com/OpenGVLab/ScaleCUA) | 15 | 10 | 10 | 0 | 1 | 4 | OK · 2026-10-18 |
 | [THUDM SCALE-CUA — first-party releases](https://github.com/THUDM/SCALE-CUA) | 28 | 1 | 1 | 0 | 1 | 26 | OK · 2026-10-18 |
 | [ShowUI-π — first-party releases](https://github.com/showlab/showui-pi) | 11 | 4 | 4 | 0 | 3 | 4 | OK · 2026-10-18 |
 | [OpenCUA — first-party releases](https://github.com/xlang-ai/OpenCUA) | 18 | 6 | 6 | 0 | 3 | 9 | OK · 2026-10-18 |
 | [WebDreamer — first-party releases](https://github.com/OSU-NLP-Group/WebDreamer) | 5 | 3 | 3 | 0 | 1 | 1 | OK · 2026-10-18 |
 | [NNetNav — first-party releases](https://github.com/MurtyShikhar/NNetnav) | 6 | 2 | 2 | 0 | 2 | 2 | OK · 2026-10-18 |
-| [GroundGUI — first-party releases](https://github.com/PrentisAI/GroundGUI) | 11 | 6 | 6 | 0 | 0 | 5 | OK · 2026-10-18 |
+| [GroundGUI — first-party releases](https://github.com/PrentisAI/GroundGUI) | 11 | 7 | 7 | 0 | 0 | 4 | OK · 2026-10-18 |
 | [Seg2Click — first-party releases](https://github.com/jcwang0602/Seg2Click) | 11 | 8 | 8 | 0 | 1 | 2 | OK · 2026-10-18 |
 | [SwitchMem — first-party releases](https://github.com/dmis-lab/SwitchMem) | 0 | 0 | 0 | 0 | 0 | 0 | OK · 2026-10-18 |
-| [OpenMobile-2 — first-party releases](https://github.com/OpenMobile2/OpenMobile2-Code) | 12 | 7 | 7 | 0 | 0 | 5 | OK · 2026-10-18 |
+| [OpenMobile-2 — first-party releases](https://github.com/OpenMobile2/OpenMobile2-Code) | 12 | 8 | 8 | 0 | 0 | 4 | OK · 2026-10-18 |
 | [MobileGym++ — first-party releases](https://github.com/OpenMobile2/MobileGym-plusplus) | 8 | 4 | 4 | 0 | 1 | 3 | OK · 2026-10-18 |
 | [CarryOn — first-party releases](https://github.com/Ethannju/carryon) | 2 | 1 | 1 | 0 | 0 | 1 | OK · 2026-10-18 |
 | [GraceBench — first-party releases](https://iaie-physicalai.github.io/GraceBench) | 3 | 1 | 1 | 0 | 0 | 2 | OK · 2026-10-18 |
 | [MobileAgent / GUI-Owl / UI-S1 — first-party release index](https://github.com/X-PLUG/MobileAgent) | 33 | 12 | 12 | 0 | 4 | 17 | OK · 2026-10-18 |
 | [GUICourse — first-party release checklist](https://github.com/yiye3/GUICourse) | 7 | 4 | 4 | 0 | 1 | 2 | OK · 2026-10-18 |
-| [OS-Genesis — first-party training assets](https://github.com/OS-Copilot/OS-Genesis) | 29 | 2 | 2 | 0 | 3 | 24 | OK · 2026-10-18 |
+| [OS-Genesis — first-party training assets](https://github.com/OS-Copilot/OS-Genesis) | 29 | 3 | 3 | 0 | 3 | 23 | OK · 2026-10-18 |
 | [MultiUI / UIX — first-party release index](https://github.com/neulab/multiui) | 8 | 1 | 1 | 0 | 0 | 7 | OK · 2026-10-18 |
-| [UI-Genie — first-party model and data releases](https://github.com/Euphoria16/UI-Genie) | 12 | 5 | 5 | 0 | 0 | 7 | OK · 2026-10-18 |
+| [UI-Genie — first-party model and data releases](https://github.com/Euphoria16/UI-Genie) | 12 | 6 | 6 | 0 | 0 | 6 | OK · 2026-10-18 |
 | [ScienceBoard — first-party environments and trajectories](https://github.com/OS-Copilot/ScienceBoard) | 16 | 4 | 4 | 0 | 3 | 9 | OK · 2026-10-18 |
 | [MAI-UI / Qwen-UI-Agent — first-party project index](https://github.com/Tongyi-MAI/MAI-UI) | 17 | 3 | 3 | 0 | 0 | 14 | OK · 2026-10-18 |
 | [H Company — official Hub model index](https://huggingface.co/Hcompany) | 39 | 4 | 4 | 0 | 0 | 35 | FAILED · 2026-10-18 |
@@ -135,7 +135,7 @@ The recorded title query returned 1,199 unique records out of 1,246 reported mat
 
 | Scope | Recorded declarations |
 | --- | ---: |
-| code | 176 |
+| code | 177 |
 | data | 61 |
 | weights | 56 |
 | document | 0 |
