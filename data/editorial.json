@@ -63143,5 +63143,126 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "url:dad3d02b2f9603713287",
+    "name": "Holo2 235B-A22B",
+    "kind": "model",
+    "url": "https://huggingface.co/Hcompany/Holo2-235B-A22B",
+    "environments": [
+      "web",
+      "desktop",
+      "cross-platform"
+    ],
+    "topics": [
+      "grounding",
+      "planning",
+      "action-prediction",
+      "reinforcement-learning"
+    ],
+    "summary": "Research-preview Holo2 checkpoint, a 235B-total, 22B-active mixture-of-experts fine-tune of Qwen3-VL-235B-A22B-Thinking for UI localization and navigation on web, desktop and mobile screens.",
+    "scope": "core",
+    "verify_terms": [
+      "Holo2-235B-A22B"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/Hcompany/Holo2-235B-A22B/raw/f7f85b14ffdeafba313a1198407b9e2722b0341d/README.md"
+    ],
+    "publisher_id": "organization:h",
+    "reviewed_relations": [
+      {
+        "type": "variant_of",
+        "target_id": "url:c0bd07d82ce25ad1d99d",
+        "evidence_url": "https://hcompany.ai/research/models"
+      }
+    ],
+    "notes": "Hub API at revision f7f85b14 lists 96 BF16 safetensors shards (about 235.7B parameters) in the Qwen3VLMoeForConditionalGeneration architecture; the repository is not gated. H Company's models page calls this release a research preview. The card describes supervised fine-tuning followed by online GRPO on a mix of open-source, synthetic and human-annotated data, some of it proprietary, and reports localization scores including an iterative 'agentic localization' mode; those scores are the publisher's and were not reproduced. No weights were downloaded. The card declares conflicting licenses; see the license review.",
+    "details": {
+      "artifact_type": "model-checkpoint",
+      "hub_id": "Hcompany/Holo2-235B-A22B",
+      "hub_revision": "f7f85b14ffdeafba313a1198407b9e2722b0341d",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/Hcompany/Holo2-235B-A22B/tree/f7f85b14ffdeafba313a1198407b9e2722b0341d",
+      "base_model": "Qwen/Qwen3-VL-235B-A22B-Thinking",
+      "architecture": "Qwen3VLMoeForConditionalGeneration",
+      "parameter_label": "235B-A22B",
+      "training_data_note": "The card describes a mix of open-source datasets, large-scale synthetic data and human-annotated samples, including proprietary data; no training set is released with the checkpoint."
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations",
+      "licenses.weights",
+      "details.base_model",
+      "details.parameter_label",
+      "details.artifact_type",
+      "details.training_data_note"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.hub_id",
+          "details.hub_revision",
+          "details.gated",
+          "details.disabled",
+          "details.download_url",
+          "notes"
+        ],
+        "url": "https://huggingface.co/api/models/Hcompany/Holo2-235B-A22B/revision/f7f85b14ffdeafba313a1198407b9e2722b0341d",
+        "sha256": "a106ad31bf308a787574abc132bf3e5201c41a348452e1de476952fd7206beae",
+        "retrieved_at": "2026-10-18T16:10:49Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.architecture"
+        ],
+        "url": "https://huggingface.co/Hcompany/Holo2-235B-A22B/raw/f7f85b14ffdeafba313a1198407b9e2722b0341d/config.json",
+        "sha256": "c24d2cbea1eff6495a9b28b3bc604afa86d20d347ef8379ed76c6139c171218e",
+        "retrieved_at": "2026-10-18T16:10:49Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "relations",
+          "notes",
+          "licenses.weights"
+        ],
+        "url": "https://hcompany.ai/research/models",
+        "sha256": "ddfa335cd71d0a7a4e61640752b1b24830f951a72c175e88fd03bf00a5e783c8",
+        "retrieved_at": "2026-10-18T16:10:28Z"
+      }
+    ],
+    "reviewed_licenses": {
+      "weights": {
+        "value": {
+          "declared": "CC-BY-NC-4.0",
+          "url": "https://huggingface.co/Hcompany/Holo2-235B-A22B/raw/f7f85b14ffdeafba313a1198407b9e2722b0341d/README.md",
+          "retrieved_at": "2026-10-18T16:10:49Z",
+          "basis": "Publisher model-card license field and size list, matching H Company's models page; the card's conflicting Apache 2.0 line is not adopted."
+        },
+        "reason": "The card's YAML license field is cc-by-nc-4.0 and its size list gives Holo2-235B-A22B a research-only, non-commercial license, and H Company's models page lists the Holo2-235B-A22B preview under CC BY-NC 4.0; a 'License: Apache 2.0' line in the card's developer block conflicts with both and is not adopted. Code and training-data terms are separate.",
+        "evidence_urls": [
+          "https://huggingface.co/Hcompany/Holo2-235B-A22B/raw/f7f85b14ffdeafba313a1198407b9e2722b0341d/README.md",
+          "https://hcompany.ai/research/models"
+        ]
+      }
+    },
+    "read_basis": "Read the pinned model card, config.json, the Hub API record (file manifest and card metadata) and H Company's models page. No weights were downloaded or run.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "4f6f76d177f42044f840327a941b259dd84d46622e63c960c9b259fe2700d2ac",
+    "reviewed_at": "2026-10-18T16:11:30Z"
   }
 ]
