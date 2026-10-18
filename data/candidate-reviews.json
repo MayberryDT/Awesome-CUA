@@ -250,5 +250,11 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:opendilab/awesome-ui-agents",
+    "url": "https://github.com/opendilab/awesome-ui-agents",
+    "decision": "not_a_resource",
+    "reason": "Repository of the opendilab-ui discovery source: an awesome list of UI-agent papers, tools and datasets whose README is fetched for discovery, so its entries are reviewed individually rather than the list itself."
   }
 ]
