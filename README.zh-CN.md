@@ -127,7 +127,7 @@ git clone https://github.com/reacher-z/Awesome-CUA.git
 <!-- RECENT:START -->
 | 审阅日期 | 资源 | 类型 | 环境 | 简介（英文） |
 | --- | --- | --- | --- | --- |
-| 2026‑10‑18 | [Agent-Eval-Refine](https://github.com/Berkeley-NLP/Agent-Eval-Refine) | 框架 | web, android, ios | Code for judging web and mobile agent trajectories with a captioner-plus-LLM or GPT-4V evaluator, and for using those verdicts in Reflexion on WebArena and filtered behavior cloning on iOS and Android. |
+| 2026‑10‑18 | [Agent-Eval-Refine](https://github.com/Berkeley-NLP/Agent-Eval-Refine) | 框架 | web, android, ios | Code for judging web and mobile agent trajectories with a captioner-plus-LLM or GPT-4V evaluator, using the verdicts in Reflexion on WebArena and filtered behavior cloning on iOS, plus Android emulator runners. |
 | 2026‑10‑18 | [ZonUI-3B checkpoint](https://huggingface.co/zonghanHZH/ZonUI-3B) | 模型 | cross-platform, desktop, web | Qwen2.5-VL-3B-based GUI grounding checkpoint that predicts click locations from screenshots and text instructions across desktop, mobile and web screens. |
 | 2026‑10‑18 | [WindowsAgentArena-V2](https://github.com/GAIR-NLP/WindowsAgentArena-V2) | 基准 | desktop, windows | Windows benchmark revision with task/evaluator fixes and VM-initialization support, documented alongside PC-Agent-E. |
 | 2026‑10‑18 | [WebSRC v1.0](https://huggingface.co/datasets/X-LANCE/WebSRC_v1.0) | 数据集 | web | Webpage segments, questions, answers, HTML, screenshots and layout metadata for structural reading comprehension. |

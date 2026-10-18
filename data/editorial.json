@@ -61589,7 +61589,7 @@
       "reward-models",
       "self-reflection"
     ],
-    "summary": "Code for judging web and mobile agent trajectories with a captioner-plus-LLM or GPT-4V evaluator, and for using those verdicts in Reflexion on WebArena and filtered behavior cloning on iOS and Android.",
+    "summary": "Code for judging web and mobile agent trajectories with a captioner-plus-LLM or GPT-4V evaluator, using the verdicts in Reflexion on WebArena and filtered behavior cloning on iOS, plus Android emulator runners.",
     "scope": "core",
     "verify_terms": [
       "Autonomous Evaluation and Refinement of Digital Agents"
