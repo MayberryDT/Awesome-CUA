@@ -63143,5 +63143,111 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "url:f039da43799772645c92",
+    "name": "OpenMobile-2 extended Android AVDs",
+    "kind": "infrastructure",
+    "url": "https://huggingface.co/datasets/yanhhh/AndroidAvd",
+    "aliases": [
+      "AndroidAvd"
+    ],
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "sandbox",
+      "mobile-navigation"
+    ],
+    "summary": "Seven preconfigured Pixel 6 emulator images for Android API 33 (arm64) with an Apple Silicon install script, listed in the OpenMobile-2 release as its extended Android AVDs.",
+    "scope": "core",
+    "verify_terms": [
+      "yanhhh/AndroidAvd"
+    ],
+    "reviewed_relations": [
+      {
+        "type": "documented_by",
+        "target_id": "arxiv:2610.14157",
+        "evidence_url": "https://raw.githubusercontent.com/OpenMobile2/OpenMobile2-Code/11e26ddc32a98112db38d6363274588cb2387817/README.md"
+      }
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "details.artifact_type",
+      "details.availability"
+    ],
+    "notes": "The Hub dataset repository at revision 4d2be380 has no card and no license declaration. It lists 143 files, about 130 GB by listed sizes: seven AVD directories (MineAndroid plus auto, general-user, manual, senior, student and travel variants), their .ini pointers and install_avd.sh. Every config.ini targets android-33 with arm64-v8a on a Pixel 6 profile and Play Store disabled. The script requires an Apple Silicon Mac, installs the android-33 Google APIs arm64-v8a system image through sdkmanager, and warns that -wipe-data erases the installed apps. Which apps each variant holds is not documented, and the images were not downloaded or booted. The OpenMobile2-Code README links this repository as 'Extended Android AVDs' in its release list; that repository's Apache-2.0 license does not cover these images or the Android system image.",
+    "details": {
+      "hub_id": "yanhhh/AndroidAvd",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/datasets/yanhhh/AndroidAvd/tree/4d2be38083d1a4395ab0de9749983f7091714070",
+      "artifact_type": "Android Virtual Device images",
+      "availability": "Seven AVD directories and an install script are public on the Hub; the Android emulator and system image are installed separately through sdkmanager, and no card or license file is provided."
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.hub_id",
+          "details.gated",
+          "details.disabled",
+          "details.download_url",
+          "licenses.data",
+          "notes"
+        ],
+        "url": "https://huggingface.co/api/datasets/yanhhh/AndroidAvd/revision/4d2be38083d1a4395ab0de9749983f7091714070",
+        "sha256": "adaf8975470b1bc32f97d0385b5f232184182047fd14885ccd2a0e867a88ec20",
+        "retrieved_at": "2026-10-18T16:13:14Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes",
+          "summary"
+        ],
+        "url": "https://huggingface.co/datasets/yanhhh/AndroidAvd/raw/4d2be38083d1a4395ab0de9749983f7091714070/MineAndroid.avd/config.ini",
+        "sha256": "dec904f33ded1925234db80035d4e3dadda318fb8a5e362da9a4afa8ab02774f",
+        "retrieved_at": "2026-10-18T16:11:45Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "name",
+          "relations",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/OpenMobile2/OpenMobile2-Code/11e26ddc32a98112db38d6363274588cb2387817/README.md",
+        "sha256": "485279038266d9454df75e27a80a0a0d71c24e90700126d2dcfa0da921b1273d",
+        "retrieved_at": "2026-10-18T16:11:45Z"
+      }
+    ],
+    "reviewed_licenses": {
+      "data": {
+        "value": null,
+        "reason": "The Hub repository has no card, license tag or license file. The Apache-2.0 license of the linked OpenMobile2-Code repository covers that code only, and the install script accepts the Android SDK licenses for the separately installed system image.",
+        "evidence_urls": [
+          "https://huggingface.co/api/datasets/yanhhh/AndroidAvd/revision/4d2be38083d1a4395ab0de9749983f7091714070"
+        ]
+      }
+    },
+    "read_basis": "Read the Hub API record and recursive file tree at revision 4d2be380, all seven AVD config.ini files, install_avd.sh, and the OpenMobile2-Code README at commit 11e26ddc. Searched the OpenMobile-2 paper HTML for AVD descriptions. No images were downloaded or booted.",
+    "evidence_urls": [
+      "https://huggingface.co/datasets/yanhhh/AndroidAvd/raw/4d2be38083d1a4395ab0de9749983f7091714070/install_avd.sh"
+    ],
+    "reviewed_sha256": "22abd21d4dfa43e7cf6eb9ae9ea63b368b754804019283f7d3f01914d8225a51",
+    "reviewed_at": "2026-10-18T16:13:31Z"
   }
 ]

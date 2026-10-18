@@ -6,7 +6,7 @@ Curated metadata, not a performance ranking. Each entry links its first-party ev
 
 *Paper* lists reviewed `introduced_by`/`documented_by` relations with the record's year. *License* lists publisher declarations by scope (code, data, weights, document). *Evidence* links the reviewed first-party snapshot and its retrieval date.
 
-**14 resources:** [Web (2)](#web) · [Desktop (6)](#desktop) · [Mobile (3)](#mobile) · [Cross-platform (3)](#cross-platform)
+**15 resources:** [Web (2)](#web) · [Desktop (6)](#desktop) · [Mobile (4)](#mobile) · [Cross-platform (3)](#cross-platform)
 
 Resources tagged with environments from more than one family are listed under *Cross-platform*; their exact environments stay in the table.
 
@@ -41,6 +41,7 @@ All entries in this section: web.
 | [AndroidEnv](https://github.com/google-deepmind/android_env) | android | [2105.13231](https://arxiv.org/abs/2105.13231) (2021) | code Apache-2.0 | Android device-control platform with screenshots, accessibility telemetry, input actions, and an optional reinforcement-learning task interface. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/google-deepmind/android_env/HEAD/README.md) |
 | [Appium](https://github.com/appium/appium) | android, ios | — | code Apache-2.0 | Open-source WebDriver-based automation server for mobile, desktop and IoT apps, extended by per-platform drivers for iOS, Android, macOS and Windows, plugins, and clients in Java, Python, Ruby and C#. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/appium/appium/HEAD/README.md) |
 | [Mobile Env](https://github.com/X-LANCE/Mobile-Env) | android | [2305.08144](https://arxiv.org/abs/2305.08144) (2023) | code Apache-2.0 | AndroidEnv-based platform for building GUI agent benchmarks and training agents, where task definition files emit instructions, rewards and episode ends from screen text, view hierarchy or log events. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/X-LANCE/Mobile-Env/HEAD/README.md) |
+| [OpenMobile-2 extended Android AVDs](https://huggingface.co/datasets/yanhhh/AndroidAvd) | android | [2610.14157](https://arxiv.org/abs/2610.14157) (2026) | — | Seven preconfigured Pixel 6 emulator images for Android API 33 (arm64) with an Apple Silicon install script, listed in the OpenMobile-2 release as its extended Android AVDs. | [✓ 2026‑10‑18](https://huggingface.co/datasets/yanhhh/AndroidAvd/raw/4d2be38083d1a4395ab0de9749983f7091714070/install_avd.sh) |
 
 [↑ Back to top](#infrastructure-catalog)
 
