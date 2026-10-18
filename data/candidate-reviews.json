@@ -254,8 +254,7 @@
   {
     "id": "github:aialt/awesome-mobile-agents",
     "url": "https://github.com/aialt/awesome-mobile-agents",
-    "decision": "alias",
-    "target_id": "arxiv:2411.02006",
-    "reason": "Companion paper and dataset list of the survey arXiv 2411.02006, whose README carries the survey title and BibTeX; it is also the mobile-agents discovery source."
+    "decision": "not_a_resource",
+    "reason": "Repository of the mobile-agents discovery source itself: a paper and dataset link list titled after the survey arXiv 2411.02006, which is indexed separately; the list is not another address of that paper."
   }
 ]

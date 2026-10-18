@@ -12,8 +12,8 @@
   "metadata_only_records": 1483,
   "discovery_identifiers": 4052,
   "unindexed_candidates": 902,
-  "non_resource_candidates": 80,
-  "alias_candidates": 10,
+  "non_resource_candidates": 81,
+  "alias_candidates": 9,
   "pending_editorial": [
     {
       "id": "github:thudm/autoglm",
