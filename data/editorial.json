@@ -61587,7 +61587,7 @@
       "memory",
       "training-free"
     ],
-    "summary": "Training-free Android agent code that explores apps over ADB, mines transition-aware screen knowledge into a retrieval store, and consults it while an API model operates the device.",
+    "summary": "Android agent code that explores apps over ADB, mines transition-aware knowledge into a knowledge base behind a retrieval service, and runs an OpenAI-backed agent demo that draws on it.",
     "verify_terms": [
       "GUI-explorer"
     ],
@@ -61600,6 +61600,6 @@
     "notes": "The repository was renamed from JiuTian-VL/GUI-explorer and is archived; the README still links the old address. It ships exploration, retrieval and demo code that needs an OpenAI API key and an ADB-connected Android device or emulator. The prebuilt knowledge_base release asset (knowledge_data.pkl) was not downloaded. SPA-Bench, AndroidWorld and GUI-KRB results appear only as README images, so no scores are recorded. The root MIT license covers code; it is not extended to the knowledge-base asset or external models.",
     "editorial_reviewed": true,
     "reviewed_sha256": "aa7fa661477451049a67af3d2ff15795bae0d26f7c2c49afae5cb73a66f89c02",
-    "reviewed_at": "2026-10-18T11:24:09Z"
+    "reviewed_at": "2026-10-18T11:31:25Z"
   }
 ]
