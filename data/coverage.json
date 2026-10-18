@@ -1,5 +1,5 @@
 {
-  "as_of_utc": "2026-10-18T08:01:28Z",
+  "as_of_utc": "2026-10-18T11:01:01Z",
   "total_records": 3055,
   "curated_records": 1572,
   "bibliographic_records": 2606,
@@ -11,7 +11,7 @@
   "exclusion_revalidation_pending": 0,
   "metadata_only_records": 1483,
   "discovery_identifiers": 4052,
-  "unindexed_candidates": 903,
+  "unindexed_candidates": 902,
   "non_resource_candidates": 80,
   "alias_candidates": 9,
   "pending_editorial": [
@@ -481,13 +481,13 @@
         "state": "success"
       },
       "discovered": 170,
-      "indexed": 115,
-      "indexed_resources": 114,
-      "resolved_aliases": 3,
-      "curated": 108,
+      "indexed": 116,
+      "indexed_resources": 115,
+      "resolved_aliases": 4,
+      "curated": 109,
       "excluded": 1,
       "set_aside": 0,
-      "unindexed": 54
+      "unindexed": 53
     },
     {
       "id": "delunn-multimodal",
