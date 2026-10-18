@@ -14,6 +14,12 @@ The hub is another entry point to the complete catalog available through `git cl
 
 For repeatable ingestion, the hub and bilingual agent guides also link to [versioned data releases](https://github.com/reacher-z/Awesome-CUA/releases). Each complete data bundle keeps the catalog, RAG documents, citations, provenance, schemas and topic subsets together with their manifests. Its release manifest identifies the source commit and file fingerprints. The website serves the current publication; a tagged bundle preserves the chosen snapshot for a retrieval corpus or report.
 
+The [English research survey](https://awesomecua.github.io/survey/) is a separately authored working manuscript. Its frozen research inventory and source editions do not change with each catalog scan. It is not an additional catalog resource, a peer-reviewed publication, or a claim that the cited experiments were reproduced. Its bibliography and evidence reading register are linked from the article and `llms.txt`.
+
+The production build copies the reviewed static package in `web/survey/`; it never runs the research builder, fetches papers, or requires historical Git objects. Before copying, `scripts/survey_bundle.py` checks `build-manifest.json`, every listed file's byte size and SHA-256, and every `input_sha256` against the current source checkout. A changed research input requires a fresh reviewed package. The package's frozen `catalog_sha256` is not compared with the moving production catalog.
+
+Update the manuscript through its research builder and review the resulting HTML, bibliography and evidence before replacing `web/survey/` with the complete approved package. Keep the package's `index.html` bytes unchanged during site publication: the survey manifest and search manifest must hash the same final HTML. Only listed root files and immediate `evidence/*.json` companions are copied; unlisted files, raw papers and local caches are not published. The package manifest itself is copied separately, without a circular self-hash. The article has one English canonical page at `/survey/`; bibliography and evidence downloads are not separate sitemap pages.
+
 ## Build and preview
 
 ```bash
@@ -66,6 +72,7 @@ In the website checkout, the script:
 - Deletes the generated files (`index.html`, `index.md`, `record.json` and the citation files) of every page that the checkout's previous `data/search-manifest.json` lists and the new build does not, in any section. It stops before deleting anything if such a page resolves outside the checkout or into a dot folder.
 - Deletes generated page files under `resources/`, `categories/`, `guides/`, `topics/`, `zh/topics/` and `badges/` whose page is not in the new manifest, record and citation files that the build no longer produces for a kept resource page, and the exports in `downloads/topics/` of topics that no longer exist. For a removed badge gallery, this includes its four featured-resource SVGs; the separately generated `badges/catalog.svg` count badge and unrelated files are preserved.
 - Copies `dist/site/` over the checkout, replacing files of the same name.
+- Handles `survey/` through its own file-ownership manifest instead of a recursive directory copy. Before any publication deletion or copy, it verifies the incoming survey and current source fingerprints and validates every old/new survey path. Removed companions are deleted even when `/survey/` remains; removing the page deletes its manifest-owned files. Unlisted files are preserved. Symlinks, escaping paths, conflicting unowned files and manual changes to previously published survey files stop preparation for review rather than being overwritten. An orphaned survey directory omitted from the new search manifest is not republished.
 - Adds `.pipeline/`, `.cache/`, `__pycache__/` and `.DS_Store` to `.gitignore` when they are missing.
 - Copies the resource issue form to `.github/ISSUE_TEMPLATE/resource.yml`, and the resource, scope-decision and publication-observation schemas to `schemas/`.
 - Rewrites `README.md` from `data/coverage.json` and `data/catalog.jsonl`.

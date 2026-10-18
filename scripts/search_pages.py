@@ -251,13 +251,18 @@ def resource_markdown(r):
     return '\n'.join(line.rstrip() for line in lines)+'\n'
 
 
-def build_search_pages(destination, rows, coverage, root):
+def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
     lookup={r["id"]:r for r in rows}
     incoming=incoming_relations(rows)
     titles=resource_titles(rows)
     reviewed=[r for r in rows if eligible(r)]
     latest=coverage["as_of_utc"]
     manifest=[]
+    if survey_page:
+        # The reviewed standalone article is already final: never normalize its bytes.
+        if survey_page != {'path':'/survey/','indexable':True,'sha256':hashlib.sha256((destination/'survey/index.html').read_bytes()).hexdigest()}:
+            raise ValueError('Survey page does not match its copied bytes')
+        manifest.append(dict(survey_page))
     script_versions={name:hashlib.sha256((destination/name).read_bytes()).hexdigest() for name in ('app.js','compare.js','downloads.js')}
     script_src=re.compile(r'''(?P<start><script\b[^>]*\bsrc\s*=\s*)(?P<quote>["'])(?P<path>(?:\./|/)(?:app|compare|downloads)\.js)(?:\?[^"'\r\n]*)?(?P=quote)''')
     def version_script_src(match):
@@ -335,7 +340,7 @@ def build_search_pages(destination, rows, coverage, root):
         root_crumb=("AwesomeCUA","/zh/" if language=='zh' else "/")
         for number in range(1,library_count+1):
             path=library_path(number,language)
-            body,schema=paper_library(rows,resource_path,language=language,site_url=SITE,number=number)
+            body,schema=paper_library(rows,resource_path,language=language,site_url=SITE,number=number,survey_available=bool(survey_page))
             numbered=(f'{title}, page {number}' if language=='en' else f'{title}（第 {number} 页）') if number>1 else title
             crumbs=[root_crumb,(title,library_path(1,language)),(f'Page {number}' if language=='en' else f'第 {number} 页',path)] if number>1 else None
             alternatives={'en':library_path(number),'zh-CN':library_path(number,'zh'),'x-default':library_path(number)}
@@ -441,6 +446,7 @@ def build_search_pages(destination, rows, coverage, root):
     emit('/zh/',page('AwesomeCUA 中文主页：Computer-Use Agent 资源目录','浏览可搜索、可追溯的 Computer-Use Agent 论文、模型、数据集、基准、框架与产品，查看来源证据并下载结构化目录。','/zh/',zh,lang='zh-CN',alternatives=True))
     # A static, visible directory is useful to visitors even when JavaScript is unavailable.
     home=(destination/'index.html').read_text(encoding='utf-8')
+    home=re.sub(r'<!-- SURVEY:START -->(.*?)<!-- SURVEY:END -->',lambda m:m[1] if survey_page else '',home,flags=re.S)
     extra=f'<link rel="canonical" href="{SITE}/"><meta name="robots" content="index,follow,max-image-preview:large"><meta property="og:url" content="{SITE}/"><link rel="alternate" hreflang="en" href="{SITE}/"><link rel="alternate" hreflang="zh-CN" href="{SITE}/zh/"><link rel="alternate" hreflang="x-default" href="{SITE}/"><link rel="alternate" type="application/atom+xml" href="{SITE}/feed.xml" title="AwesomeCUA research updates"><link rel="stylesheet" href="./pages.css">'
     home=home.replace('</head>',extra+f'<script type="application/ld+json">{jsonld({"@context":"https://schema.org","@graph":[organization(),{"@type":"WebSite","@id":SITE+"/#website","url":SITE+"/","name":"AwesomeCUA","description":"Source-backed computer-use and GUI-agent resource catalog","publisher":{"@id":SITE+"/#organization"}}]})}</script></head>')
     for identity,value in [('stat-resources',len(rows)),('stat-curated',len(reviewed)),('stat-kinds',len(KINDS)),('stat-sources',len(coverage['sources']))]:
@@ -466,8 +472,12 @@ def build_search_pages(destination, rows, coverage, root):
     llms.extend(['', '## Repository identity', '', f'- [Verified former repository names]({SITE}/downloads/repository-aliases.json): paired official API observations with the same GitHub or Hugging Face repository ID. Use the canonical returned ID for retrieval upserts; aliases add no resources. Record fields and RAG documents retain former names and their alias-scoped evidence.', f'- [Repository identity schema]({SITE}/schemas/repository-alias.schema.json)'])
     llms.extend(['', '## Download inventory', '', f'- [Bilingual data hub]({SITE}/data/)', f'- [中文数据中心]({SITE}/zh/data/)', f'- [Download manifest]({SITE}/downloads/manifest.json): file paths, exact byte sizes, SHA-256 fingerprints, counts and units. Compare catalog_sha256 with the RAG, citation and topic manifests before combining artifacts.', f'- [Download manifest schema]({SITE}/schemas/download-manifest.schema.json)'])
     llms.extend(['', '## Versioned data', '', f'- [Tagged data releases]({RELEASES_URL}): complete data bundles containing catalog, RAG, citations and topic subsets. Verify SHA256SUMS and retain release-manifest.json, source_commit and catalog_sha256. Repository CLI commands require a source clone at the recorded commit.'])
+    survey_navigation=''
+    if survey_page:
+        llms.extend(['', '## English research survey', '', f'- [Computer-use agent survey]({SITE}/survey/): working manuscript with a separately frozen research inventory; not an additional catalog record.', f'- [Survey bibliography]({SITE}/survey/references.bib)', f'- [Survey references JSON]({SITE}/survey/references.json)', f'- [Source reading register]({SITE}/survey/evidence/reading-index.json)', f'- [Survey file manifest]({SITE}/survey/build-manifest.json)'])
+        survey_navigation=f'Related reading: [English research survey]({SITE}/survey/). This working manuscript uses its own frozen inventory; its text is separate from the catalog annotations below.\n\n'
     (destination/'llms.txt').write_text(clean_text('\n'.join(llms)+'\n'),encoding='utf-8')
-    (destination/'llms-full.txt').write_text(clean_text('# AwesomeCUA curated resource annotations\n\n'+f'Evidence snapshot: {latest}. These records were reviewed with AI assistance; experiments are not independently reproduced.\n\n'+'\n---\n\n'.join(resource_markdown(r) for r in reviewed)),encoding='utf-8')
+    (destination/'llms-full.txt').write_text(clean_text('# AwesomeCUA curated resource annotations\n\n'+f'Evidence snapshot: {latest}. These records were reviewed with AI assistance; experiments are not independently reproduced.\n\n'+survey_navigation+'\n---\n\n'.join(resource_markdown(r) for r in reviewed)),encoding='utf-8')
     robots='User-agent: *\nAllow: /\n\n'+''.join(f'User-agent: {bot}\nAllow: /\n\n' for bot in ['Googlebot','bingbot','OAI-SearchBot','PerplexityBot','Claude-SearchBot'])+f'Sitemap: {SITE}/sitemap.xml\nSitemap: {SITE}/sitemap.txt\n'
     (destination/'robots.txt').write_text(clean_text(robots),encoding='utf-8')
     sitemap=ET.Element('urlset',xmlns='http://www.sitemaps.org/schemas/sitemap/0.9')

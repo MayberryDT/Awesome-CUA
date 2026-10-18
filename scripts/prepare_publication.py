@@ -10,6 +10,7 @@ from site_files import MANAGED_FILES, reconcile_generated_pages
 from publication_metadata import record_date_text
 from build import task_navigator
 from topic_pages import reconcile_topic_exports
+from survey_bundle import PAGE as SURVEY_PAGE, publication_plan as survey_publication_plan, apply_publication as apply_survey_publication
 
 ROOT=Path(__file__).resolve().parents[1]
 
@@ -27,10 +28,12 @@ def main():
     build=ROOT/'dist/site'
     if not (build/'data/search-manifest.json').is_file():raise SystemExit(f'No website build in {build}; run python3 scripts/build_site.py first.')
     incoming=json.loads((build/'data/search-manifest.json').read_text(encoding='utf-8'))
+    # Validate the bundle, source fingerprints and every owned path before any deletion or copy.
+    survey_plan=survey_publication_plan(build,site,source_root=ROOT,site_url=SITE,pages=incoming['pages'])
     old_path=site/'data/search-manifest.json'
     if old_path.exists():
         old=json.loads(old_path.read_text(encoding='utf-8'));new_paths={p['path'] for p in incoming['pages']}
-        stale=[(site/item['path'].lstrip('/')).resolve() for item in old.get('pages',[]) if item['path'] not in new_paths]
+        stale=[(site/item['path'].lstrip('/')).resolve() for item in old.get('pages',[]) if item['path'] not in new_paths and item['path']!=SURVEY_PAGE]
         # Any page the new build dropped is removed, whatever its section, but never outside the checkout or in .git or another dot folder.
         # Every path is checked before the first deletion.
         for folder in stale:
@@ -44,7 +47,9 @@ def main():
             for filename in MANAGED_FILES-{'index.html','index.md'}:
                 if not (build/item['path'].lstrip('/')/filename).exists():
                     (site/item['path'].lstrip('/')/filename).unlink(missing_ok=True)
-    shutil.copytree(build,site,dirs_exist_ok=True)
+    # Survey files have their own ownership manifest; orphaned build files must not leak through copytree.
+    shutil.copytree(build,site,dirs_exist_ok=True,ignore=lambda folder,names: ['survey'] if Path(folder)==build else [])
+    apply_survey_publication(survey_plan)
     reconcile_generated_pages(site,incoming['pages'])
     if (build/'downloads/topics.json').exists():
         topics=json.loads((build/'downloads/topics.json').read_text(encoding='utf-8'))
@@ -65,6 +70,8 @@ def main():
     rows=[json.loads(l) for l in (ROOT/'data/catalog.jsonl').read_text(encoding='utf-8').splitlines()]
     readme=['# Awesome Computer-Use Agents · AwesomeCUA','', '**A source-backed catalog of computer-use, GUI, browser, and mobile agents.**','', f'[Website]({SITE}/) · [Research papers]({SITE}/papers/) · [中文指南]({SITE}/zh/) · [GitHub organization](https://github.com/AwesomeCUA)','',f'**{report["total_records"]:,} resource records** · **{report["curated_records"]:,} curated** · **{report["bibliographic_records"]:,} paper and survey records** · **{len(report["sources"])} discovery documents**','',f'Evidence snapshot: {report["as_of_utc"]}. Bibliography counts overlap review-state counts. Resources are not independent projects.','', '## What is a computer-use agent?','', 'A computer-use agent observes software interfaces, chooses and executes actions, and checks progress toward a user goal. It may operate a browser, desktop application, or phone, sometimes combining graphical interaction with code and tools. See [the primary-source introduction]('+SITE+'/guides/what-are-computer-use-agents/) and [reviewed research]('+SITE+'/papers/).','', '## Explore the ecosystem','', '| Category | Records | Browse |','| --- | ---: | --- |']
     readme[6:6]=['## For people, RAG systems, and agents','','```sh',CLONE_COMMAND,'```','',f'[Agent instructions]({SITE}/AGENTS.md) · [Agent and RAG guide]({SITE}/agents/) · [中文使用指南]({SITE}/zh/agents/) · [Complete JSONL]({SITE}/downloads/catalog.jsonl)','',task_navigator().strip(),'']
+    if survey_plan['payloads']:
+        readme[5:5]=[f'[Read the English research survey]({SITE}/survey/) — an evidence-traced working manuscript with its own frozen research snapshot.','']
     for kind,name in KINDS.items():readme.append(f'| {name} | {report["by_kind"].get(kind,0):,} | [Open directory]({SITE}/categories/{kind}/) |')
     readme+=['','Category pages highlight reviewed resources; the [interactive catalog]('+SITE+'/#catalog) and downloads also expose metadata-only records with their review state.','', '## Research reading list','']
     selected=sorted([r for r in rows if r['kind']=='paper' and r['review_status']=='curated'],key=record_date_text,reverse=True)
