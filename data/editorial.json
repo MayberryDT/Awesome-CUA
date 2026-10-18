@@ -61609,10 +61609,6 @@
       "relations"
     ],
     "notes": "Public source contains the Chrome extension (src/, public/), a standalone MCP server and stdio proxy (mcp-server/), and small local-model comparison scripts (experiments/). The MCP server is read-only by default; click, type and navigation require --allow-write. MIT covers this code. The Chrome Web Store build and the README's experiment results were not independently checked.",
-    "details": {
-      "repository_url": "https://github.com/apireno/DOMShell",
-      "repository_tree_sha": "d313db0ba4f07422fff9ab1e356569c1ecf3d552"
-    },
     "additional_evidence": [
       {
         "url": "https://api.github.com/repos/apireno/DOMShell",
@@ -61632,8 +61628,7 @@
         "method": "editorial_primary_review",
         "supports": [
           "identity",
-          "release_status",
-          "details.repository_tree_sha"
+          "release_status"
         ]
       },
       {
