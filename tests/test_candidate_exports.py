@@ -245,7 +245,7 @@ class CandidateExportTests(unittest.TestCase):
         self.assertEqual(by_id['catalog-jsonl']['count']['value'], 3)
         self.assertEqual(by_id['rag-reviewed']['count']['value'], 2)
         self.assertNotIn(b'github-repository:', (helper.destination / 'downloads/rag-all-records.jsonl').read_bytes())
-        self.assertIn('Unreviewed candidate observations', data_hub_body(download))
+        self.assertIn('Unreviewed candidates', data_hub_body(download))
         target = self.root / 'publication'
         plan = export.candidate_publication_plan(helper.destination, target)
         export.apply_candidate_publication(plan)

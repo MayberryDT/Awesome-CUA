@@ -30,7 +30,7 @@ UNITS = {
     'exports': ('export files', '个导出文件'), 'reports': ('report', '份报告'),
     'schemas': ('schema', '份规范'),
     'aliases': ('former repository names', '个仓库旧标识'),
-    'repositories': ('numeric repository identities', '个数字仓库标识'),
+    'repositories': ('repositories', '个仓库'),
 }
 SCOPE_LABELS = {
     'active': ('All active records', '全部当前记录'),
@@ -40,7 +40,7 @@ SCOPE_LABELS = {
     'archive': ('Retained archive', '保留的原始档案'),
     'provenance': ('Provenance and status', '来源与状态'),
     'contract': ('Format contract', '格式规范'),
-    'candidate-observations': ('Unreviewed candidate observations', '待审候选观察记录'),
+    'candidate-observations': ('Unreviewed candidates', '待审候选'),
 }
 
 
@@ -198,7 +198,7 @@ def build_download_manifest(destination, rows, catalog_bytes):
             raise ValueError('Candidate observations require a complete, safe export pair')
         candidate_manifest = read_json('/downloads/' + CANDIDATE_MANIFEST)
         candidate_rows = validate_candidate_export(candidate_files[0].read_bytes(), candidate_manifest, catalog_bytes=catalog_bytes)
-        add('github-candidates', '/downloads/' + CANDIDATE_FILE, 'provenance', ('GitHub candidate observations', 'GitHub 候选观察记录'),
+        add('github-candidates', '/downloads/' + CANDIDATE_FILE, 'provenance', ('GitHub candidate repositories', 'GitHub 候选仓库'),
             ('Public API metadata, counted by numeric repository ID. CUA relevance, availability and licenses await review; these observations are separate from and may overlap the active catalog.',
              '公开 API 元数据，按数字仓库 ID 去重。CUA 相关性、可用性和许可仍待审阅；这些观察记录独立于当前目录且可能与其重叠。'),
             'JSONL', 'application/x-ndjson', len(candidate_rows), 'repositories', 'candidate-observations')
