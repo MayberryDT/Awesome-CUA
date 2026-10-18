@@ -737,13 +737,14 @@ def shield(label, message, color):
 
 def badges(rows, report):
     curated = report["curated_records"]
+    # Keep the small status strip secondary to the README's editorial banner.
+    # Counts still come from this build; workflow status stays live on main.
+    style = '?style=flat-square&labelColor=303447'
     return ("\n" + " ".join([
-        f"[![Resources]({shield('resources', format(report['total_records'], ','), '4f46e5')})](data/catalog.jsonl)",
-        f"[![Curated]({shield('source-reviewed', format(curated, ','), '0e8a16')})](docs/coverage.md)",
-        f"[![Evidence]({shield('evidence through', report['as_of_utc'][:10], '1d76db')})](docs/coverage.md)",
-        "[![Catalog quality](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml/badge.svg)](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml)",
-        f"[![License]({shield('license', 'MIT', 'blue')})](LICENSE)",
-        f"[![Website]({shield('website', 'awesomecua.github.io', '6366f1')})](https://awesomecua.github.io/)"]) + "\n")
+        f"[![Catalog records]({shield('records', format(report['total_records'], ','), '4856df')}{style})](data/catalog.jsonl)",
+        f"[![Source-reviewed records]({shield('source-reviewed', format(curated, ','), '4856df')}{style})](docs/coverage.md)",
+        "[![Catalog checks](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml/badge.svg?branch=main)](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml)",
+        f"[![MIT license]({shield('license', 'MIT', '606779')}{style})](LICENSE)"]) + "\n")
 
 
 # README category layout: rows of (left, right) cells; each cell lists (label key, generated page, kind). Counts are curated resources.
