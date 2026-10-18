@@ -2,7 +2,7 @@
 
 [Home](../README.md) · [Full arXiv bibliography](papers.md) · [Methodology](methodology.md)
 
-1,572 source-reviewed resources across 35 topics. Topic tags are catalog annotations from the editorial review, not author keywords; a resource appears under every topic it carries. Each hub lists benchmarks, data, models, systems, and papers together, newest papers first.
+1,573 source-reviewed resources across 35 topics. Topic tags are catalog annotations from the editorial review, not author keywords; a resource appears under every topic it carries. Each hub lists benchmarks, data, models, systems, and papers together, newest papers first.
 
 | Topic | All | Benchmarks | Datasets | Models | Systems | Papers | Newest reviewed paper |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | --- |
@@ -10,7 +10,7 @@
 | [GUI grounding](topics/grounding.md) | 371 | 9 | 32 | 67 | 19 | 244 | [Why Generate a Click? Plug-in Decision Heads for Web Agents](https://arxiv.org/abs/2610.20107) · 2026-10-14 |
 | [Data generation](topics/data-generation.md) | 337 | · | 54 | 2 | 23 | 258 | [Teaching Agents in their Own Style: Blackbox Teacher Distillation for Web Agents](https://arxiv.org/abs/2610.19834) · 2026-10-14 |
 | [Web navigation](topics/web-navigation.md) | 275 | 13 | 8 | 11 | 45 | 198 | [Why Generate a Click? Plug-in Decision Heads for Web Agents](https://arxiv.org/abs/2610.20107) · 2026-10-14 |
-| [Planning](topics/planning.md) | 269 | · | 4 | 27 | 32 | 206 | [OpenGCUA: Toward a Fully Open Stack for Generalist Computer Use](https://arxiv.org/abs/2610.22200) · 2026-10-15 |
+| [Planning](topics/planning.md) | 270 | · | 4 | 27 | 33 | 206 | [OpenGCUA: Toward a Fully Open Stack for Generalist Computer Use](https://arxiv.org/abs/2610.22200) · 2026-10-15 |
 | [Mobile navigation](topics/mobile-navigation.md) | 248 | 14 | 12 | 15 | 26 | 181 | [How GUI Agents Fail: GraceBench for Execution Stability Diagnosis](https://arxiv.org/abs/2610.19900) · 2026-10-14 |
 | [Reinforcement learning](topics/reinforcement-learning.md) | 230 | 2 | 5 | 23 | 20 | 180 | [OS-Helix: Unifying GUI Interaction and Code Execution in Native Computer-Using Agents](https://arxiv.org/abs/2610.22234) · 2026-10-15 |
 | [Screen understanding](topics/screen-understanding.md) | 205 | 5 | 19 | 10 | 11 | 160 | [STP-GUI: Spatially-Aware Token Pruning for Efficient Web-GUI Agents](https://arxiv.org/abs/2610.20390) · 2026-10-14 |
@@ -38,6 +38,6 @@
 | [Industry](topics/industry.md) | 27 | · | · | · | 16 | 11 | [HealthAdminBench: Evaluating Computer-Use Agents on Healthcare Administration Tasks](https://arxiv.org/abs/2604.09937) · 2026-04-10 |
 | [Recording](topics/recording.md) | 22 | · | 1 | · | 6 | 15 | [Work2Skill: Capturing Human GUI Experience for Reusable Agent Skill Induction](https://arxiv.org/abs/2610.12984) · 2026-10-09 |
 | [UI design](topics/ui-design.md) | 20 | · | 1 | · | · | 19 | [A Dual-Process Perspective on Nudge Susceptibility in LLM-Based GUI Agents](https://arxiv.org/abs/2609.19843) · 2026-09-17 |
-| [Scientific workflows](topics/science.md) | 18 | 1 | 1 | · | 1 | 15 | [MedImageOSWorld: Benchmarking GUI Agents for Medical Image Consoles](https://arxiv.org/abs/2610.04800) · 2026-10-03 |
+| [Scientific workflows](topics/science.md) | 19 | 1 | 1 | · | 2 | 15 | [MedImageOSWorld: Benchmarking GUI Agents for Medical Image Consoles](https://arxiv.org/abs/2610.04800) · 2026-10-03 |
 | [Survey](topics/survey.md) | 16 | · | · | · | · | 16 | [Efficient GUI Agents: A Systems Survey of Observation, Memory, Action, and Runtime Optimization](https://arxiv.org/abs/2609.02309) · 2026-09-02 |
 | [Historical](topics/history.md) | 4 | · | · | · | 4 | · | — |
