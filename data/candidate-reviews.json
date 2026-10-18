@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "url:49902bc1ebed9ff91a85",
+    "url": "https://huggingface.co/Hcompany/NeoMME-260M-Pretrain-predecay-s450000",
+    "decision": "out_of_scope",
+    "reason": "This repository holds the NeoMME-260M masked-language-model checkpoint saved at step 450,000 of a 500,000-step pretraining run, with its native optimizer state, for continued pretraining of H Company's text-and-image document encoder. The card and its paper describe document encoding and retrieval, not GUI, screen or agent use, so it falls outside the computer-use catalog.",
+    "reviewed_at": "2026-10-18T16:08:54Z",
+    "evidence": {
+      "url": "https://huggingface.co/Hcompany/NeoMME-260M-Pretrain-predecay-s450000/raw/1ceebb61b7df831f3990eca8b5bd1d1f7e55208e/README.md",
+      "sha256": "bdc49ad1beb20e8cc3836ee52d7d2baa090a7043258b8049a6ea4de6755e0519",
+      "retrieved_at": "2026-10-18T16:00:19Z"
+    }
   }
 ]
