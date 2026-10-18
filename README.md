@@ -1,3 +1,9 @@
+<p align="center">
+  <a href="https://awesomecua.github.io/">
+    <img src="assets/badges/featured-by-awesome-cua.svg" alt="Featured by Awesome CUA" width="300">
+  </a>
+</p>
+
 # Awesome Computer-Use Agents
 
 A source-backed collection of papers, models, datasets, benchmarks and tools for agents that use computers.

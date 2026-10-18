@@ -1,3 +1,9 @@
+<p align="center">
+  <a href="https://awesomecua.github.io/">
+    <img src="assets/badges/featured-by-awesome-cua.svg" alt="Featured by Awesome CUA" width="300">
+  </a>
+</p>
+
 # Awesome Computer-Use Agents
 
 收集面向电脑操作智能体的论文、模型、数据集、评测基准与工具，每条资源保留原始来源。
