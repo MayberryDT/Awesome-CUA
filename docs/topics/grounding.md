@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-372 source-reviewed resources tagged `grounding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+373 source-reviewed resources tagged `grounding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (32)](#datasets) · [Models (67)](#models) · [Agents (2)](#agents) · [Frameworks (11)](#frameworks) · [Tools (6)](#tools) · [Products (1)](#products) · [Papers (244)](#papers)
+**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (32)](#datasets) · [Models (68)](#models) · [Agents (2)](#agents) · [Frameworks (11)](#frameworks) · [Tools (6)](#tools) · [Products (1)](#products) · [Papers (244)](#papers)
 
 ## Benchmarks
 
@@ -70,6 +70,7 @@
 | [CogAgent](https://github.com/THUDM/CogAgent) | cross-platform | [2312.08914](https://arxiv.org/abs/2312.08914) (2023) | code Apache-2.0 | Visual language model for GUI understanding and interaction. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/THUDM/CogAgent/HEAD/README.md) |
 | [CogAgent 9B 20241220](https://huggingface.co/zai-org/cogagent-9b-20241220) | desktop, windows, macos, cross-platform | — | weights other | A bilingual GLM-4V-based execution model that uses screenshots, task instructions and action history to predict GUI operations. | [✓ 2026‑10‑17](https://huggingface.co/zai-org/cogagent-9b-20241220/raw/main/README.md) |
 | [DiMo-GUI](https://github.com/vivo/DiMo-GUI) | cross-platform | [2507.00008](https://arxiv.org/abs/2507.00008) (2025) | code Apache-2.0 | GUI grounding research using modality-aware visual reasoning and test-time scaling. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/vivo/DiMo-GUI/HEAD/readme.md) |
+| [Fara1.5-9B](https://huggingface.co/microsoft/Fara1.5-9B) | web | [2606.20785](https://arxiv.org/abs/2606.20785) (2026) | weights MIT | 9B Fara1.5 browser-use checkpoint fine-tuned from Qwen3.5-9B on FaraGen1.5 trajectories; reads screenshots, emits coordinate-grounded tool calls and pauses at critical points for the user. | [✓ 2026‑10‑18](https://huggingface.co/microsoft/Fara1.5-9B/raw/1a93677cd89d5601bc2ed759791e981f3a520032/README.md) |
 | [Ferret-UI](https://github.com/apple/ml-ferret) | android, ios | [2404.05719](https://arxiv.org/abs/2404.05719) (2024) | — | Screen understanding research within the Ferret model family. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/apple-aiml-research/ml-ferret/main/ferretui/README.md) |
 | [Gemini Computer Use](https://ai.google.dev/gemini-api/docs/computer-use) | cross-platform | — | — | Gemini capability for generating interface actions from screenshots. | [✓ 2026‑10‑16](https://ai.google.dev/gemini-api/docs/computer-use) |
 | [GroundGUI-8B](https://huggingface.co/PrentisAI/GroundGUI-8B) | desktop, web, cross-platform | [2610.19100](https://arxiv.org/abs/2610.19100) (2026) | weights apache-2.0 | Screenshot grounding checkpoint that emits a single click in a normalized coordinate space. | [✓ 2026‑10‑17](https://huggingface.co/PrentisAI/GroundGUI-8B/raw/main/README.md) |

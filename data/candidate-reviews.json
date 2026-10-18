@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:858d416603c649121c8d",
+    "url": "https://ai.azure.com/catalog/models/Fara1.5-9B",
+    "decision": "alias",
+    "target_id": "url:9c55996c7a8b3cd346be",
+    "reason": "Microsoft Foundry catalog listing for hosted deployment of the indexed Fara1.5-9B checkpoint (microsoft/Fara1.5-9B)."
   }
 ]

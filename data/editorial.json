@@ -63143,5 +63143,106 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "url:9c55996c7a8b3cd346be",
+    "name": "Fara1.5-9B",
+    "kind": "model",
+    "url": "https://huggingface.co/microsoft/Fara1.5-9B",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "grounding",
+      "imitation-learning",
+      "human-in-the-loop"
+    ],
+    "summary": "9B Fara1.5 browser-use checkpoint fine-tuned from Qwen3.5-9B on FaraGen1.5 trajectories; reads screenshots, emits coordinate-grounded tool calls and pauses at critical points for the user.",
+    "scope": "core",
+    "verify_terms": [
+      "Fara1.5-9B"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/microsoft/Fara1.5-9B/raw/1a93677cd89d5601bc2ed759791e981f3a520032/README.md"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations",
+      "licenses.weights",
+      "details.base_model",
+      "details.parameter_label",
+      "details.training_data_note",
+      "details.repository_url",
+      "details.artifact_type"
+    ],
+    "notes": "The card describes screenshot-only perception (no DOM or accessibility tree), a chain-of-thought block followed by an XML tool call to a computer_use function, training mostly at 1440x900, and asks users to run the model only through the microsoft/fara CLI or MagenticLite. The Hub manifest lists 4 Safetensors shards and an index; weights were not downloaded and the card's WebVoyager, Online-Mind2Web and WebTailBench scores were not reproduced. Microsoft Foundry lists the same model for hosted deployment at ai.azure.com/catalog/models/Fara1.5-9B. MIT is the model-card weight declaration only.",
+    "details": {
+      "hub_id": "microsoft/Fara1.5-9B",
+      "hub_revision": "1a93677cd89d5601bc2ed759791e981f3a520032",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/microsoft/Fara1.5-9B/tree/1a93677cd89d5601bc2ed759791e981f3a520032",
+      "repository_url": "https://github.com/microsoft/fara",
+      "artifact_type": "model-checkpoint",
+      "base_model": "Qwen/Qwen3.5-9B",
+      "architecture": "Qwen3_5ForConditionalGeneration",
+      "parameter_label": "9B",
+      "listed_weight_files": [
+        "model-00001-of-00004.safetensors",
+        "model-00002-of-00004.safetensors",
+        "model-00003-of-00004.safetensors",
+        "model-00004-of-00004.safetensors"
+      ],
+      "artifact_inspection": "Public file-manifest inspection only; weights were not downloaded.",
+      "training_data_note": "Card: supervised fine-tuning on FaraGen1.5 synthetic web trajectories that a verifier agent filtered for success, plus curated grounding, UI-understanding and safety-refusal data; about 1 billion text tokens, latest data acquisition 20 March 2026."
+    },
+    "additional_evidence": [
+      {
+        "url": "https://huggingface.co/api/models/microsoft/Fara1.5-9B",
+        "sha256": "024011c55923e63ce6ebb8903e24d01ad8245f3c3ffe4baa4811e027e2f94dae",
+        "retrieved_at": "2026-10-18T16:16:18Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.hub_id",
+          "details.hub_revision",
+          "details.gated",
+          "details.disabled",
+          "details.download_url",
+          "details.architecture",
+          "details.listed_weight_files"
+        ]
+      }
+    ],
+    "family_url": "https://github.com/microsoft/fara",
+    "documented_by": [
+      "2606.20785"
+    ],
+    "reviewed_licenses": {
+      "weights": {
+        "value": {
+          "declared": "MIT",
+          "url": "https://huggingface.co/microsoft/Fara1.5-9B/raw/1a93677cd89d5601bc2ed759791e981f3a520032/README.md",
+          "retrieved_at": "2026-10-18T16:16:20Z",
+          "basis": "Publisher model-card declaration for the checkpoint; code and training-data terms are separate."
+        },
+        "reason": "Publisher model-card declaration for the checkpoint; code and training-data terms are separate.",
+        "evidence_urls": [
+          "https://huggingface.co/microsoft/Fara1.5-9B/raw/1a93677cd89d5601bc2ed759791e981f3a520032/README.md"
+        ]
+      }
+    },
+    "reviewed_sha256": "64a465ed7d131c47f734f0a2a6ef05d2e61e67de89ac384dacc98089c4551518",
+    "reviewed_at": "2026-10-18T16:16:32Z"
   }
 ]
