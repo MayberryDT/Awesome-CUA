@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "url:19ee6af6e3d15e37dee5",
+    "url": "https://huggingface.co/meta-llama/Meta-Llama-3-8B",
+    "decision": "out_of_scope",
+    "reason": "Meta's gated, general-purpose Llama 3 8B base text model (text-generation pipeline, LlamaForCausalLM, Llama 3 Community License); its Hub metadata describes no GUI, web or device interaction. A web-agent list names it only as a general large language model, and agent checkpoints fine-tuned from it are separate resources.",
+    "reviewed_at": "2026-10-18T16:05:34Z",
+    "evidence": {
+      "url": "https://huggingface.co/api/models/meta-llama/Meta-Llama-3-8B",
+      "sha256": "1ca835369c162ae288b190f167a2e0e7b1ba7c6447c05d6e4a540592c0782101",
+      "retrieved_at": "2026-10-18T15:38:36Z"
+    }
   }
 ]
