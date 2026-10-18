@@ -61611,8 +61611,6 @@
     "notes": "Source and the crates.io package axcli 0.1.0 (published 2026-03-17) are public; no GitHub release is published. It requires macOS Accessibility and Screen Recording permissions and was not installed or run. The README and Cargo.toml declare MIT OR Apache-2.0, but the tree has no license text file.",
     "details": {
       "availability": "Public source and crates.io package metadata.",
-      "repository_url": "https://github.com/andelf/axcli",
-      "repository_tree_sha": "ce6ef8e65d210fbcf4f8d3d8d8d4bbeda5d2fde6",
       "package_version": "0.1.0"
     },
     "additional_evidence": [
@@ -61630,8 +61628,7 @@
         "role": "primary",
         "method": "editorial_primary_review",
         "supports": [
-          "release_status",
-          "details.repository_tree_sha"
+          "release_status"
         ],
         "url": "https://api.github.com/repos/andelf/axcli/git/trees/main?recursive=1",
         "sha256": "ff21798ade3c017124e0656040891a86c7ea3163e42880859a9a07a8fc8bc813",
