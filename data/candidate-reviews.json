@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:wandb/openui",
+    "url": "https://github.com/wandb/openui",
+    "decision": "out_of_scope",
+    "reason": "OpenUI turns a text description into HTML rendered live and converts it to frameworks such as React or Svelte, using a chosen language model. It generates interface code and never observes or operates an existing GUI, browser or device, as with the webpage-generation work already excluded.",
+    "reviewed_at": "2026-10-18T16:04:21Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/wandb/openui/HEAD/README.md",
+      "sha256": "54df29952ae63e4a0a1a4a3f14fd5b35120fdc102b139365d2ecc7e944b9d683",
+      "retrieved_at": "2026-10-18T15:32:22Z"
+    }
   }
 ]
