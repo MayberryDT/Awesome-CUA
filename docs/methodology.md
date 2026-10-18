@@ -92,7 +92,7 @@ The arXiv title-query population is also bounded. It misses papers with differen
 
 The scheduled recent query covers a 14-day first-submission window ending at the current UTC midnight. A complete, successful result, including a valid zero-result feed, is reused within that UTC day with its original retrieval timestamps. Failed or partial searches are retried by a later scan. This is a local UTC cache policy following the API's recommendation to cache an identical query within its daily publication cycle; the API defines date-query bounds in GMT. [arXiv API manual](https://info.arxiv.org/help/api/user-manual.html)
 
-Both daily workflow runs still attempt to refresh all configured discovery documents and the Hugging Face paper searches. Recent-query reuse only skips that arXiv request. The 14-day discovery window does not provide revision monitoring for every historical paper in the archive.
+All three daily workflow runs still attempt to refresh all configured discovery documents and the Hugging Face paper searches. Recent-query reuse only skips that arXiv request. The 14-day discovery window does not provide revision monitoring for every historical paper in the archive.
 
 ## Performance comparisons
 

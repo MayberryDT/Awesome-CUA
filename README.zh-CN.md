@@ -6,13 +6,25 @@
 
 # Awesome Computer-Use Agents
 
+收集面向电脑操作智能体的论文、模型、数据集、评测基准与工具，每条资源保留原始来源。
+
+[English](README.md) · **简体中文**
+
+<a href="https://awesomecua.github.io/?lang=zh"><img src="assets/readme-banner.zh-CN.svg" alt="Awesome CUA — Computer-Use 智能体资源合集，连接论文、数据、工具与原始来源" width="960"></a>
+
+**[搜索与筛选](https://awesomecua.github.io/?lang=zh)** · **[研究论文](https://awesomecua.github.io/zh/papers/)** · **[按主题浏览](https://awesomecua.github.io/zh/topics/)** · **[数据与 Agent](https://awesomecua.github.io/zh/data/)**
+
+[阅读英文研究综述](https://awesomecua.github.io/survey/) — 连接方法、评测、人的控制权与可复用研究资产；工作稿附有固定版本书目和逐篇阅读记录。
+
 <!-- BADGES:START -->
-[![Resources](https://img.shields.io/badge/resources-3%2C177-4f46e5)](data/catalog.jsonl) [![Curated](https://img.shields.io/badge/source--reviewed-1%2C619-0e8a16)](docs/coverage.md) [![Evidence](https://img.shields.io/badge/evidence%20through-2026--10--18-1d76db)](docs/coverage.md) [![Catalog quality](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml/badge.svg)](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml) [![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE) [![Website](https://img.shields.io/badge/website-awesomecua.github.io-6366f1)](https://awesomecua.github.io/)
+[![Catalog records](https://img.shields.io/badge/records-3%2C177-4856df?style=flat-square&labelColor=303447)](data/catalog.jsonl) [![Source-reviewed records](https://img.shields.io/badge/source--reviewed-1%2C619-4856df?style=flat-square&labelColor=303447)](docs/coverage.md) [![Catalog checks](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml/badge.svg?branch=main)](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml) [![MIT license](https://img.shields.io/badge/license-MIT-606779?style=flat-square&labelColor=303447)](LICENSE)
 <!-- BADGES:END -->
 
-**面向 computer-use、GUI、浏览器和移动端智能体的可溯源数据目录。**
+[按任务查找](#按任务查找) · [浏览](#浏览) · [重点资源](#重点资源) · [最新审阅](#最新审阅) · [使用数据](#使用数据)
 
-[浏览](#浏览) · [重点资源](#重点资源) · [最新审阅](#最新审阅) · [使用数据](#使用数据) · [网站](https://awesomecua.github.io/) · [中文主页](https://awesomecua.github.io/zh/) · [GitHub 组织](https://github.com/AwesomeCUA) · [English](README.md) · [覆盖台账](docs/coverage.md) · [参与贡献](CONTRIBUTING.md)
+[覆盖台账](docs/coverage.md) · [参与贡献](CONTRIBUTING.md) · [GitHub 组织](https://github.com/AwesomeCUA) · [网站](https://awesomecua.github.io/) · [中文主页](https://awesomecua.github.io/zh/)
+
+资源发现计划每日执行三次，时间为 **UTC 00:17、08:17 和 16:17**。[实际扫描结果](https://awesomecua.github.io/updates/) · [时间安排与保护机制](docs/maintenance.md)。
 
 **供人、RAG 系统和智能体使用——克隆完整目录：**
 
