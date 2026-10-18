@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-661 source-reviewed resources tagged `evaluation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+662 source-reviewed resources tagged `evaluation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (81)](#benchmarks) · [Datasets (9)](#datasets) · [Models (1)](#models) · [Frameworks (16)](#frameworks) · [Tools (4)](#tools) · [Infrastructure (2)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (546)](#papers)
+**Contents:** [Benchmarks (81)](#benchmarks) · [Datasets (9)](#datasets) · [Models (1)](#models) · [Agents (1)](#agents) · [Frameworks (16)](#frameworks) · [Tools (4)](#tools) · [Infrastructure (2)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (546)](#papers)
 
 ## Benchmarks
 
@@ -113,6 +113,14 @@ All entries in this section: web.
 | Resource | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- |
 | [WebJudge 7B](https://huggingface.co/osunlp/WebJudge-7B) | [2504.01382](https://arxiv.org/abs/2504.01382) (2025) | weights apache-2.0 | A visual trajectory judge that retains selected intermediate screenshots to evaluate whether a web agent completed its task. | [✓ 2026‑10‑17](https://huggingface.co/osunlp/WebJudge-7B/raw/main/README.md) |
+
+## Agents
+
+All entries in this section: desktop, windows, linux.
+
+| Resource | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [SheetCopilot](https://github.com/BraveGroup/SheetCopilot) | [2305.19308](https://arxiv.org/abs/2305.19308) (2023) | code GPL-3.0 | Spreadsheet agent that plans with an LLM state machine and executes atomic Excel actions with state and error feedback, released with a 221-task evaluation set over 28 workbooks. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/BraveGroup/SheetCopilot/HEAD/README.md) |
 
 ## Frameworks
 

@@ -61573,5 +61573,46 @@
         ]
       }
     }
+  },
+  {
+    "name": "SheetCopilot",
+    "kind": "agent",
+    "url": "https://github.com/BraveGroup/SheetCopilot",
+    "environments": [
+      "desktop",
+      "windows",
+      "linux"
+    ],
+    "topics": [
+      "tool-integration",
+      "planning",
+      "self-reflection",
+      "evaluation"
+    ],
+    "summary": "Spreadsheet agent that plans with an LLM state machine and executes atomic Excel actions with state and error feedback, released with a 221-task evaluation set over 28 workbooks.",
+    "scope": "core",
+    "verify_terms": [
+      "SheetCopilot"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/BraveGroup/SheetCopilot/HEAD/README.md"
+    ],
+    "documented_by": [
+      "2305.19308"
+    ],
+    "notes": "The agent acts through an atomic-action API implemented with pywin32 against Windows Excel rather than through screen pixels. The 221 tasks derive from 67 seed tasks and come with reference workbooks and check lists; the README says v1 answers match the paper and v2 adds references. A June 2026 update adds an Ubuntu evaluator built on openpyxl and headless LibreOffice, a planning probe and trajectory logging. The Google Sheets add-on is distributed separately and was not inspected. The repository LICENSE is the GPL-3.0 text and is recorded for code only; no license is declared for the task workbooks.",
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "beb8c811bf2d070845aa6fcc7e94ffd43ca4f9f60ce42c72d958598790fbdffc",
+    "reviewed_at": "2026-10-18T10:55:16Z"
   }
 ]
