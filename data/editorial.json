@@ -63143,5 +63143,130 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "url:f2cf4ec32aa0b3ba6b95",
+    "name": "WaveUI-25k",
+    "kind": "dataset",
+    "url": "https://huggingface.co/datasets/agentsea/wave-ui-25k",
+    "environments": [
+      "web",
+      "desktop",
+      "cross-platform"
+    ],
+    "topics": [
+      "grounding",
+      "screen-understanding"
+    ],
+    "summary": "A 24,978-example subset of an ~80k UI element collection, pairing screenshots and instructions with target boxes and annotated element names, descriptions, types, OCR, purposes and click expectations.",
+    "scope": "core",
+    "verify_terms": [
+      "agentsea/wave-ui-25k"
+    ],
+    "reviewed_relations": [
+      {
+        "type": "component_of",
+        "target_id": "url:0dbb55f127da04d95222",
+        "evidence_url": "https://huggingface.co/datasets/agentsea/wave-ui-25k/raw/1b77b749cb4c9936f35838ed8cb0f1b69957ad08/README.md"
+      }
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "identity",
+      "release_status",
+      "details.hub_id",
+      "details.gated",
+      "details.disabled",
+      "details.download_url",
+      "licenses.data"
+    ],
+    "notes": "The card describes this as a subset of a collection of about 80k preprocessed examples built from WebUI, RoboFlow website screenshots and GroundUI-18K, filtered for duplicates, overlaps, low quality and many text elements, with added annotation fields. The publisher's agentsea/wave-ui dataset (Wave UI) has the same 13 fields and 79,412 rows across three splits; the 25k card does not name it, so the component link rests on that match. Dataset-viewer statistics over 12,493 of the rows (partial) show platform values web, desktop and mobile and source labels including roboflow, webui, mind2web_test_*, omniact, motif, screenspot and agent_studio. The repository declares no license, and the source datasets' terms are not inferred.",
+    "details": {
+      "dataset_profile": {
+        "supervision": [
+          "instruction-to-target boxes",
+          "element annotations"
+        ],
+        "modalities": [
+          "images",
+          "text",
+          "bounding boxes",
+          "OCR metadata"
+        ],
+        "formats": [
+          "Parquet"
+        ],
+        "splits": [
+          "train"
+        ],
+        "counts": [
+          {
+            "value": 24978,
+            "unit": "rows",
+            "population": "train split",
+            "qualifier": "exact",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/agentsea/wave-ui-25k/raw/1b77b749cb4c9936f35838ed8cb0f1b69957ad08/README.md"
+          }
+        ],
+        "notes": "The row count comes from the card's dataset_info metadata; rows are labeled element examples, not unique screens. The annotation fields are name, description, type, OCR, language, purpose and expectation.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/agentsea/wave-ui-25k/raw/1b77b749cb4c9936f35838ed8cb0f1b69957ad08/README.md"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "topics",
+          "scope",
+          "relations",
+          "notes",
+          "details.dataset_profile"
+        ],
+        "url": "https://huggingface.co/datasets/agentsea/wave-ui-25k/raw/1b77b749cb4c9936f35838ed8cb0f1b69957ad08/README.md",
+        "sha256": "612d075ed11bba7357482d31b3d0d3dfa6d397babe36a236e6aa218ce6eb5488",
+        "retrieved_at": "2026-10-18T16:19:32Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes"
+        ],
+        "url": "https://datasets-server.huggingface.co/statistics?dataset=agentsea/wave-ui-25k&config=default&split=train",
+        "sha256": "7ad5c9887649c0eaaa4180816c5bd8381d5b7e394f665134cfcdc6c01ba61210",
+        "retrieved_at": "2026-10-18T16:19:34Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "relations",
+          "notes"
+        ],
+        "url": "https://huggingface.co/datasets/agentsea/wave-ui/raw/21dc5aa1b39c038aea30f4572d80edef592b7989/README.md",
+        "sha256": "27ec13aa77dc55113e4d1a19c2269070e2d69d2fe8df8e2313721a1e3fc66bd9",
+        "retrieved_at": "2026-10-18T16:19:34Z"
+      }
+    ],
+    "reviewed_licenses": {
+      "data": {
+        "value": null,
+        "reason": "The WaveUI-25k repository has no license metadata or license file. The compilation license in the separate agentsea/wave-ui repository is not applied here, and the WebUI, RoboFlow and GroundUI-18K source terms are not inferred.",
+        "evidence_urls": [
+          "https://huggingface.co/api/datasets/agentsea/wave-ui-25k"
+        ]
+      }
+    },
+    "read_basis": "Read the Hub API record, the card at revision 1b77b749, the dataset-viewer statistics for the train split, and the agentsea/wave-ui card. No Parquet files were downloaded.",
+    "reviewed_sha256": "b74327a4ecca6fd198ba54ff78b6820a65f6451a7e8af6bf7aaacdb51488b0ec",
+    "reviewed_at": "2026-10-18T16:20:16Z"
   }
 ]

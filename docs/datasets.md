@@ -6,7 +6,7 @@ Curated metadata, not a performance ranking. Each entry links its first-party ev
 
 *Scale* is the first publisher-reported or computed count per unit from the reviewed profile, linked to its source; subsets and units are never combined. *Paper* lists reviewed `introduced_by`/`documented_by` relations with the record's year. *License* lists publisher declarations by scope (code, data, weights, document). *Evidence* links the reviewed first-party snapshot and its retrieval date.
 
-**86 resources:** [Web (16)](#web) · [Desktop (13)](#desktop) · [Mobile (27)](#mobile) · [Cross-platform (23)](#cross-platform) · [Unspecified (7)](#unspecified)
+**87 resources:** [Web (16)](#web) · [Desktop (13)](#desktop) · [Mobile (27)](#mobile) · [Cross-platform (24)](#cross-platform) · [Unspecified (7)](#unspecified)
 
 Resources tagged with environments from more than one family are listed under *Cross-platform*; their exact environments stay in the table.
 
@@ -116,6 +116,7 @@ All entries in this section: web.
 | [ScreenRef Annotations](https://huggingface.co/datasets/PrentisAI/ScreenRef-Annotations) | desktop, web, android, linux | [2610.19100](https://arxiv.org/abs/2610.19100) (2026) | [633,369 annotation rows](https://huggingface.co/datasets/PrentisAI/ScreenRef-Annotations/raw/main/README.md) | data other | Annotation files, task recipes, and image manifests for ScreenRef; screenshots reside in the separately gated image repository. | [✓ 2026‑10‑17](https://huggingface.co/datasets/PrentisAI/ScreenRef-Annotations/raw/main/README.md) |
 | [UGround V1 Data](https://huggingface.co/datasets/osunlp/UGround-V1-Data) | cross-platform | — | — | data cc-by-nc-sa-4.0 | Gated web grounding training data for UGround in Web-Hybrid and Web-Direct subsets, with a bounding-box version whose coordinates are normalized to 0-999. | [✓ 2026‑10‑16](https://huggingface.co/api/datasets/osunlp/UGround-V1-Data) |
 | [UI-Ins](https://github.com/alibaba/UI-Ins) | cross-platform | [2510.20286](https://arxiv.org/abs/2510.20286) (2025) | — | — | Treats grounding instructions as multiple reasoning perspectives, releasing a data pipeline, training code and UI-Ins-7B and 32B models trained by SFT on synthesized instructions, then RL. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/alibaba/UI-Ins/HEAD/README.md) |
+| [WaveUI-25k](https://huggingface.co/datasets/agentsea/wave-ui-25k) | web, desktop, cross-platform | — | [24,978 rows](https://huggingface.co/datasets/agentsea/wave-ui-25k/raw/1b77b749cb4c9936f35838ed8cb0f1b69957ad08/README.md) | — | A 24,978-example subset of an ~80k UI element collection, pairing screenshots and instructions with target boxes and annotated element names, descriptions, types, OCR, purposes and click expectations. | [✓ 2026‑10‑18](https://huggingface.co/api/datasets/agentsea/wave-ui-25k) |
 
 [↑ Back to top](#dataset-catalog)
 

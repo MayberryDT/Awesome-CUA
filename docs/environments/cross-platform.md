@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-197 source-reviewed resources tagged `cross-platform`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+198 source-reviewed resources tagged `cross-platform`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (14)](#benchmarks) · [Datasets (15)](#datasets) · [Models (47)](#models) · [Agents (1)](#agents) · [Frameworks (7)](#frameworks) · [Tools (1)](#tools) · [Surveys (11)](#surveys) · [Papers (101)](#papers)
+**Contents:** [Benchmarks (14)](#benchmarks) · [Datasets (16)](#datasets) · [Models (47)](#models) · [Agents (1)](#agents) · [Frameworks (7)](#frameworks) · [Tools (1)](#tools) · [Surveys (11)](#surveys) · [Papers (101)](#papers)
 
 ## Benchmarks
 
@@ -44,6 +44,7 @@
 | [ScaleCUA Data](https://huggingface.co/datasets/OpenGVLab/ScaleCUA-Data) | cross-platform | [2509.15221](https://arxiv.org/abs/2509.15221) (2025) | [6 platform categories](https://huggingface.co/datasets/OpenGVLab/ScaleCUA-Data/raw/main/README.md) | — | Cross-platform training data released with ScaleCUA, with grounding and navigation annotations for Ubuntu, Windows, macOS, Android, iPhone and web screenshots. | [✓ 2026‑10‑16](https://huggingface.co/api/datasets/OpenGVLab/ScaleCUA-Data) |
 | [UGround V1 Data](https://huggingface.co/datasets/osunlp/UGround-V1-Data) | cross-platform | — | — | data cc-by-nc-sa-4.0 | Gated web grounding training data for UGround in Web-Hybrid and Web-Direct subsets, with a bounding-box version whose coordinates are normalized to 0-999. | [✓ 2026‑10‑16](https://huggingface.co/api/datasets/osunlp/UGround-V1-Data) |
 | [UI-Ins](https://github.com/alibaba/UI-Ins) | cross-platform | [2510.20286](https://arxiv.org/abs/2510.20286) (2025) | — | — | Treats grounding instructions as multiple reasoning perspectives, releasing a data pipeline, training code and UI-Ins-7B and 32B models trained by SFT on synthesized instructions, then RL. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/alibaba/UI-Ins/HEAD/README.md) |
+| [WaveUI-25k](https://huggingface.co/datasets/agentsea/wave-ui-25k) | web, desktop, cross-platform | — | [24,978 rows](https://huggingface.co/datasets/agentsea/wave-ui-25k/raw/1b77b749cb4c9936f35838ed8cb0f1b69957ad08/README.md) | — | A 24,978-example subset of an ~80k UI element collection, pairing screenshots and instructions with target boxes and annotated element names, descriptions, types, OCR, purposes and click expectations. | [✓ 2026‑10‑18](https://huggingface.co/api/datasets/agentsea/wave-ui-25k) |
 
 ## Models
 
