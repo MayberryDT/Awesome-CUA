@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:yoheinakajima/babyagi",
+    "url": "https://github.com/yoheinakajima/babyagi",
+    "decision": "out_of_scope",
+    "reason": "BabyAGI is now an experimental framework that stores, loads and runs Python functions from a database with a Flask dashboard and API-based plugins; the original 2023 task-planning agent was moved to a separate archive repository. Nothing in the repository drives a browser, desktop or mobile interface, so it falls outside the computer-use agent scope.",
+    "reviewed_at": "2026-10-18T16:06:51Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/yoheinakajima/babyagi/HEAD/README.md",
+      "sha256": "06e5fd3c01172ee9eb987456943ceed45f0c11ed6a95824d0da2309e078b2e1d",
+      "retrieved_at": "2026-10-18T15:46:44Z"
+    }
   }
 ]
