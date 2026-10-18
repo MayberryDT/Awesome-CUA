@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-170 source-reviewed resources tagged `safety-security`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+171 source-reviewed resources tagged `safety-security`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (7)](#benchmarks) · [Agents (1)](#agents) · [Frameworks (3)](#frameworks) · [Tools (1)](#tools) · [Surveys (4)](#surveys) · [Papers (154)](#papers)
+**Contents:** [Benchmarks (8)](#benchmarks) · [Agents (1)](#agents) · [Frameworks (3)](#frameworks) · [Tools (1)](#tools) · [Surveys (4)](#surveys) · [Papers (154)](#papers)
 
 ## Benchmarks
 
@@ -16,6 +16,7 @@
 | [OS-Harm](https://github.com/tml-epfl/os-harm) | desktop | [2506.14866](https://arxiv.org/abs/2506.14866) (2025) | [150 tasks as reported by the paper/README](https://raw.githubusercontent.com/tml-epfl/os-harm/HEAD/README.md) · [50 task IDs](https://raw.githubusercontent.com/tml-epfl/os-harm/HEAD/evaluation_examples/test_misuse.json) | code Apache-2.0 | Benchmark for safety of computer-use agents across misuse, prompt injection, and unintended model behavior. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/tml-epfl/os-harm/HEAD/README.md) |
 | [PopupAttack](https://github.com/SALT-NLP/PopupAttack) | web | — | — | — | Resources for evaluating GUI agents under malicious popup instructions. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/SALT-NLP/PopupAttack/HEAD/README.md) |
 | [SafeArena](https://github.com/McGill-NLP/safearena) · [leaderboard](https://huggingface.co/spaces/McGill-NLP/safearena-leaderboard) | web | [2503.04957](https://arxiv.org/abs/2503.04957) (2025) | [250 tasks](https://arxiv.org/abs/2503.04957) | — | Web-agent benchmark pairing benign and harmful tasks to study deliberate misuse risks. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/McGill-NLP/safearena/HEAD/README.md) |
+| [WAInjectBench](https://github.com/Norrrrrrr-lyn/WAInjectBench) | web | [2510.01354](https://arxiv.org/abs/2510.01354) (2025) | [6 attack types](https://raw.githubusercontent.com/Norrrrrrr-lyn/WAInjectBench/HEAD/README.md) · [8 malicious attack subsets](https://raw.githubusercontent.com/Norrrrrrr-lyn/WAInjectBench/HEAD/README.md) · [4 benign categories](https://raw.githubusercontent.com/Norrrrrrr-lyn/WAInjectBench/HEAD/README.md) | — | Labeled benign and malicious text and webpage-image sets for testing prompt-injection detectors aimed at web agents, with runners for text and image detectors that report detection and false-alarm rates. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/Norrrrrrr-lyn/WAInjectBench/HEAD/README.md) |
 | [WebTailBench](https://huggingface.co/datasets/microsoft/WebTailBench) | web | [2511.19663](https://arxiv.org/abs/2511.19663) (2025) | [609 task identities](https://huggingface.co/datasets/microsoft/WebTailBench/raw/main/README.md) · [111 tasks](https://huggingface.co/datasets/microsoft/WebTailBench/raw/main/README.md) | data mit | Live-web task definitions and rubrics for evaluating computer-use agents, with preserved original tasks, a refreshed V2 task suite and a separate refusal set. | [✓ 2026‑10‑17](https://huggingface.co/datasets/microsoft/WebTailBench/raw/main/README.md) |
 
 ## Agents
