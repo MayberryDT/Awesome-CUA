@@ -61612,7 +61612,7 @@
         "actions": [
           "browser interactions on self-hosted WebArena sites"
         ],
-        "evaluation": "Deterministic evaluators compare a structured agent response (task type, status, retrieved data) with the reference; 663 of the 812 tasks also check network events from a captured HAR trace. LLM-as-a-judge and substring matching were removed, and runs can be scored offline from saved responses and traces.",
+        "evaluation": "Deterministic evaluators compare a structured agent response (task type, status, retrieved data) with the reference; 488 of the 812 tasks also check network events from a captured HAR trace, with 663 network-event checks in all. LLM-as-a-judge and substring matching were removed, and runs can be scored offline from saved responses and traces.",
         "counts": [
           {
             "value": 812,
@@ -61638,7 +61638,6 @@
           "https://raw.githubusercontent.com/ServiceNow/webarena-verified/HEAD/assets/dataset/subsets/webarena-verified-hard.json"
         ]
       },
-      "documentation_url": "https://servicenow.github.io/webarena-verified/",
       "repository_url": "https://github.com/ServiceNow/webarena-verified",
       "repository_tree_sha": "6473f72db5dcefc97b5725b59e734504edc28a21"
     },
@@ -61705,8 +61704,7 @@
       "scope",
       "relations",
       "notes",
-      "details.benchmark_protocol",
-      "details.documentation_url"
+      "details.benchmark_protocol"
     ],
     "editorial_reviewed": true,
     "reviewed_sha256": "8f343078ba55263182f86ec54497958a1174d90cb8ce7573cedcc29f5c8e6b50",
