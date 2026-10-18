@@ -61608,7 +61608,7 @@
     "notes": "Formerly lapisrocks/LanguageAgentTreeSearch; both names resolve to GitHub repository 700717169. The webshop/ runner drives a locally hosted WebShop server through search[...] and click[...] actions on text-rendered pages; the HotPotQA and programming experiments involve no interface, so the record is adjacent. The README names arXiv:2310.04406, which is not in the catalog's arXiv archive, so no paper relation is recorded. Only programming trajectories are published; the README says HotPotQA and WebShop logs were not uploaded. Root LICENSE is MIT for the code; WebShop, HotPotQA data and model APIs keep their own terms.",
     "details": {
       "repository_url": "https://github.com/andyz245/LanguageAgentTreeSearch",
-      "repository_tree_sha": "853d81614607dd27433faf17c7b0a7d660f95d22"
+      "repository_revision": "853d81614607dd27433faf17c7b0a7d660f95d22"
     },
     "additional_evidence": [
       {
@@ -61627,7 +61627,7 @@
         "supports": [
           "identity",
           "release_status",
-          "details.repository_tree_sha"
+          "details.repository_revision"
         ],
         "url": "https://api.github.com/repos/andyz245/LanguageAgentTreeSearch/git/trees/main?recursive=1",
         "sha256": "de412b9cc81172e2789ac99346f342dc1c860f1ac61d923c3260d7a0fd3ad328",
