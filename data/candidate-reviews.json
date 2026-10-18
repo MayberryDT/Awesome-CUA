@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:540b4dae059fe6297f5a",
+    "url": "https://assistantbench.github.io",
+    "decision": "alias",
+    "target_id": "arxiv:2407.15711",
+    "reason": "Project website for the indexed AssistantBench benchmark paper."
   }
 ]
