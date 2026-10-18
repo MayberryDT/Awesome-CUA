@@ -1,11 +1,11 @@
 # Coverage and quality ledger
 
-Evidence snapshot through **2026-10-18T08:01:28Z**. Generated from committed source receipts.
+Evidence snapshot through **2026-10-18T11:56:17Z**. Generated from committed source receipts.
 
-- 3,055 resource records: 1,572 curated; 1,483 bibliographic metadata only.
+- 3,056 resource records: 1,573 curated; 1,483 bibliographic metadata only.
 - 2,606 paper and survey records, including 2,593 arXiv identities and 13 publisher-only identities. This count overlaps the status counts above.
 - 2,715 retained arXiv metadata records; 122 explicit scope exclusions are outside the active catalog.
-- 4,052 discovery identifiers; 903 remain unresolved after accounting for scope exclusions and for 80 reviewed non-resource links and 9 other addresses of indexed resources, which stay in the review queue with their reasons.
+- 4,052 discovery identifiers; 902 remain unresolved after accounting for scope exclusions and for 80 reviewed non-resource links and 9 other addresses of indexed resources, which stay in the review queue with their reasons.
 - 18 editorial proposals await verification or review.
 
 These are distinct resource identifiers, not distinct research projects. Papers, repositories, datasets, products, and publisher entities have different grains.
@@ -26,7 +26,7 @@ Counts of source-reviewed resources. A resource tagged with several environments
 | [paper](topics.md) | 424 | 204 | 36 | 14 | 18 | 173 | 8 | 2 | 100 | 332 |
 | [product](products.md) | 18 | 5 | · | · | · | · | · | · | · | · |
 | [survey](surveys.md) | 2 | 1 | 1 | · | · | 2 | 1 | · | 10 | 2 |
-| [tool](tools.md) | 11 | 3 | 3 | 2 | 2 | 5 | 2 | · | 1 | 2 |
+| [tool](tools.md) | 12 | 3 | 3 | 2 | 2 | 5 | 2 | · | 1 | 2 |
 
 ## Source snapshot coverage
 
@@ -38,7 +38,7 @@ The denominator is the normalized identifiers extracted from each fetched docume
 | [ZJU REAL Awesome GUI Agents](https://github.com/ZJU-REAL/Awesome-GUI-Agents) | 218 | 166 | 163 | 0 | 4 | 48 | OK · 2026-10-18 |
 | [OS Agents Survey](https://github.com/OS-Agent-Survey/OS-Agent-Survey) | 224 | 198 | 178 | 0 | 1 | 25 | OK · 2026-10-18 |
 | [Awesome Computer Use Agents — wjhou](https://github.com/wjhou/awesome-computer-use-agents) | 132 | 96 | 87 | 0 | 1 | 35 | OK · 2026-10-18 |
-| [Steel Awesome Web Agents](https://github.com/steel-dev/awesome-web-agents) | 113 | 24 | 24 | 0 | 4 | 85 | OK · 2026-10-18 |
+| [Steel Awesome Web Agents](https://github.com/steel-dev/awesome-web-agents) | 113 | 25 | 25 | 0 | 4 | 84 | OK · 2026-10-18 |
 | [Steel Web Agents Archive](https://github.com/steel-dev/awesome-web-agents/blob/main/ARCHIVE.md) | 7 | 1 | 1 | 0 | 0 | 6 | OK · 2026-10-18 |
 | [Computer Browser Phone Use Agent Datasets](https://github.com/Khang-9966/Computer-Browser-Phone-Use-Agent-Datasets) | 170 | 115 | 108 | 1 | 0 | 54 | OK · 2026-10-18 |
 | [Awesome Multimodal GUI Agents](https://github.com/DeLunnLi/Awesome-Multimodal-GUI-Agents) | 588 | 499 | 454 | 1 | 0 | 88 | OK · 2026-10-18 |
@@ -135,7 +135,7 @@ The recorded title query returned 1,199 unique records out of 1,246 reported mat
 
 | Scope | Recorded declarations |
 | --- | ---: |
-| code | 176 |
+| code | 177 |
 | data | 61 |
 | weights | 56 |
 | document | 0 |
