@@ -45568,7 +45568,7 @@
             "value": 300000,
             "unit": "mid-training examples",
             "qualifier": "approximately",
-            "population": "GUIMid mixture (GUIMid.json): 150K MathInstruct, 20K CodeI/O, 50K Olympiad Math and 80K Multi-modal Math examples, as described in arXiv 2504.10127v2",
+            "population": "GUIMid mixture (GUIMid.json): 150K MathInstruct, 20K CodeI/O, 50K Olympiad Math and 80K Multi-modal Math examples, as described in arXiv 2504.10127v2 Section 4.1",
             "basis": "reported",
             "evidence_url": "https://arxiv.org/html/2504.10127v2"
           },
@@ -45576,7 +45576,7 @@
             "value": 56000,
             "unit": "post-training samples",
             "qualifier": "approximately",
-            "population": "GUI post-training data (GUI_trajectory.json): web and mobile single-step samples, as described in arXiv 2504.10127v2 Section 3 and Table 2",
+            "population": "GUI post-training data (GUI_trajectory.json): web and mobile single-step samples, as described in arXiv 2504.10127v2 Sections 3.2 and 4.1 and Table 2",
             "basis": "reported",
             "evidence_url": "https://arxiv.org/html/2504.10127v2"
           }
