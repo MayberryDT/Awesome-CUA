@@ -35,9 +35,15 @@ def luminance(color):
 
 
 def ink(fill):
-    """Primary ink or white for text set inside a fill, whichever contrasts more."""
+    """Black or white for text set inside a fill, whichever contrasts more. Pure black, not the primary ink, keeps 11px values at 4.5:1 on
+    mid-luminance fills such as the light blue slot, where neither the primary ink nor white reaches it."""
     level = luminance(fill)
-    return "#0b0b0b" if (level + 0.05) / (luminance("#0b0b0b") + 0.05) >= 1.05 / (level + 0.05) else "#ffffff"
+    return "#000000" if (level + 0.05) / 0.05 >= 1.05 / (level + 0.05) else "#ffffff"
+
+
+def gap(extent, cumulative):
+    """The surface gap before a stacked segment; it never takes more than half of the segment, so a small nonzero count stays drawn."""
+    return min(GAP, extent / 2) if cumulative else 0
 
 
 def rounded(x, y, w, h, end):
@@ -95,7 +101,7 @@ def stacked_columns(slug, theme, title, subtitle, categories, series, colors):
         for k, value in enumerate(values):
             if not value:
                 continue
-            upper, lower = y(cumulative + value), y(cumulative) - (GAP if cumulative else 0)
+            upper, lower = y(cumulative + value), y(cumulative) - gap(y(cumulative) - y(cumulative + value), cumulative)
             cumulative += value
             if lower - upper > 0:
                 marks.append(f'<path d="{rounded(x, upper, width, lower - upper, "top")}" fill="{colors[k]}"/>' if k == last else
@@ -114,7 +120,7 @@ def stacked_bars(slug, theme, title, subtitle, categories, series, colors):
     height = top + pitch * len(categories) + 12
     totals = [sum(values[i] for _, values in series) for i in range(len(categories))]
     scale = (right - left) / max(max(totals, default=0), 1)
-    body = [f'<line x1="{left}" x2="{left}" y1="{top}" y2="{top + pitch * len(categories) - (pitch - thickness)}" stroke="{t["axis"]}" stroke-width="1"/>']
+    body = [f'<line x1="{left}" x2="{left}" y1="{top}" y2="{top + pitch * len(categories) - (pitch - thickness)}" stroke="{t["axis"]}" stroke-width="1"/>'] if categories else []
     for i, category in enumerate(categories):
         y, cumulative, marks = top + pitch * i, 0, []
         values = [values[i] for _, values in series]
@@ -122,7 +128,7 @@ def stacked_bars(slug, theme, title, subtitle, categories, series, colors):
         for k, value in enumerate(values):
             if not value:
                 continue
-            start, end = left + cumulative * scale + (GAP if cumulative else 0), left + (cumulative + value) * scale
+            start, end = left + cumulative * scale + gap(value * scale, cumulative), left + (cumulative + value) * scale
             cumulative += value
             if end - start <= 0:
                 continue

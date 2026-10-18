@@ -661,7 +661,8 @@ def chart_lines(rows, lang="en", base="docs/"):
     labels, totals, reviewed = (years, [sum(column) for column in zip(*(values for _, values in review))], review[0][1]) if years else (["—"], [0], [0])
     peak = max(range(len(labels)), key=totals.__getitem__)
     platform_totals = sorted(zip(platforms, map(sum, zip(*(values for _, values in groups)))), key=lambda item: -item[1])
-    alts = {"papers-by-year": text["chart_years"].format(total=sum(totals), first=labels[0], last=labels[-1], peak=labels[peak], n=totals[peak], reviewed=reviewed[peak]),
+    dated = [label for label in labels if label != "Undated"] or labels
+    alts = {"papers-by-year": text["chart_years"].format(total=sum(totals), first=dated[0], last=dated[-1], peak=labels[peak], n=totals[peak], reviewed=reviewed[peak]),
         "platforms": text["chart_platforms"].format(leaders=text["list_separator"].join(f"{label} {n:,}" for label, n in platform_totals[:3]))}
     pictures = [f'<picture><source media="(prefers-color-scheme: dark)" srcset="{base}assets/{slug}-dark.svg"><img src="{base}assets/{slug}-light.svg" alt="{esc(alt)}"></picture>'
         for slug, alt in alts.items()]

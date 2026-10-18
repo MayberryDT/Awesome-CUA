@@ -42,7 +42,7 @@ class ChartDataTests(unittest.TestCase):
 
     def test_alt_text_states_the_figures_in_both_languages(self):
         en, zh = build.chart_lines(ROWS), build.chart_lines(ROWS, "zh")
-        self.assertIn('alt="Stacked column chart of 8 paper and survey records by publication year, ≤2016 to Undated.', en[0])
+        self.assertIn('alt="Stacked column chart of 8 paper and survey records by publication year, ≤2016 to 2026.', en[0])
         self.assertIn("2026 has the most records: 3, of which 2 are reviewed.", en[0])
         self.assertIn("Largest: Web 7, Android 2, Desktop 1.", en[2])
         self.assertIn("数量最多的是 Web 7、Android 2、Desktop 1。", zh[2])
@@ -91,8 +91,29 @@ class ChartSvgTests(unittest.TestCase):
         self.assertRegex(content, r">1,000</text>")
         self.assertNotRegex(content, r"fill:#\w+\">1</text>")
         self.assertIn(">1,001</text>", content)
-        self.assertEqual(charts.ink("#eda100"), "#0b0b0b")
+        self.assertEqual(charts.ink("#eda100"), "#000000")
         self.assertEqual(charts.ink("#184f95"), "#ffffff")
+
+    def test_values_inside_every_fill_clear_text_contrast(self):
+        def contrast(a, b):
+            high, low = sorted((charts.luminance(a), charts.luminance(b)), reverse=True)
+            return (high + 0.05) / (low + 0.05)
+        for theme in charts.THEMES.values():
+            for fill in theme["categorical"] + theme["ordinal"]:
+                self.assertGreaterEqual(contrast(charts.ink(fill), fill), 4.5, fill)
+
+    def test_small_nonzero_segments_are_never_swallowed_by_the_gap(self):
+        # One HarmonyOS-like bar of 1 + 2 beside a 600-wide bar, and a 3 + 8 column beside a 1,000 column.
+        bars = ET.fromstring(charts.stacked_bars("b", "light", "T", "S", ["Big", "Small"], [("A", [600, 0]), ("B", [0, 1]), ("C", [0, 2])], ["#2a78d6", "#eb6834", "#1baf7a"]))
+        columns = ET.fromstring(charts.stacked_columns("c", "light", "T", "S", ["2017", "2026"], [("A", [3, 500]), ("B", [8, 500])], ["#256abf", "#86b6ef"]))
+        for svg, fills in ((bars, ["#2a78d6", "#eb6834", "#1baf7a"]), (columns, ["#256abf", "#86b6ef", "#256abf", "#86b6ef"])):
+            marks = [mark for group in svg.iter(SVG + "g") for mark in group if mark.tag in (SVG + "rect", SVG + "path")]
+            self.assertEqual([mark.get("fill") for mark in marks], fills)
+
+    def test_an_empty_chart_draws_no_degenerate_axis(self):
+        svg = ET.fromstring(charts.stacked_bars("b", "light", "T", "S", [], [("A", [])], ["#2a78d6"]))
+        self.assertEqual(list(svg.iter(SVG + "line")), [])
+        self.assertEqual(list(svg.iter(SVG + "g")), [])
 
     def test_readmes_share_one_generated_chart_block(self):
         block = re.compile(r"<!-- CHARTS:START -->(.*?)<!-- CHARTS:END -->", re.S)
