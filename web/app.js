@@ -199,10 +199,14 @@ function info(type) {
 document.addEventListener('click',async event=>{
   const button=event.target.closest('[data-copy-clone]');if(!button||button.disabled)return;
   const status=button.closest('[data-clone-entry]')?.querySelector('[data-clone-status]');if(!status)return;
+  const wasFocused=document.activeElement===button,dialog=button.closest('dialog');
   const announce=key=>{status.dataset.i18n=key;status.textContent=t(key);};
   button.disabled=true;announce('commandCopying');
   try{await navigator.clipboard.writeText(CLONE_COMMAND);announce('commandCopied');}
-  catch{announce('commandCopyFailed');}finally{button.disabled=false;}
+  catch{announce('commandCopyFailed');}finally{
+    button.disabled=false;
+    if(wasFocused&&button.isConnected&&(!dialog||dialog.open)&&document.activeElement===document.body)button.focus({preventScroll:true});
+  }
 });
 document.addEventListener('click',async event=>{
   const button=event.target.closest('[data-copy-citation]');if(!button)return;
