@@ -1,7 +1,7 @@
 {
-  "as_of_utc": "2026-10-18T08:01:28Z",
-  "total_records": 3055,
-  "curated_records": 1572,
+  "as_of_utc": "2026-10-18T11:55:00Z",
+  "total_records": 3056,
+  "curated_records": 1574,
   "bibliographic_records": 2606,
   "arxiv_active_records": 2593,
   "non_arxiv_bibliographic_records": 13,
@@ -9,9 +9,9 @@
   "arxiv_archive_records": 2715,
   "excluded_records": 122,
   "exclusion_revalidation_pending": 0,
-  "metadata_only_records": 1483,
+  "metadata_only_records": 1482,
   "discovery_identifiers": 4052,
-  "unindexed_candidates": 903,
+  "unindexed_candidates": 901,
   "non_resource_candidates": 80,
   "alias_candidates": 9,
   "pending_editorial": [
@@ -145,7 +145,7 @@
   "uncurated_linked_papers": [],
   "by_kind": {
     "agent": 41,
-    "benchmark": 83,
+    "benchmark": 84,
     "company": 16,
     "dataset": 85,
     "framework": 72,
@@ -165,7 +165,7 @@
     "linux": 47,
     "macos": 30,
     "unspecified": 367,
-    "web": 596,
+    "web": 598,
     "windows": 61
   },
   "curated_by_kind_and_environment": {
@@ -186,7 +186,7 @@
       "linux": 5,
       "macos": 3,
       "unspecified": 3,
-      "web": 37,
+      "web": 38,
       "windows": 5
     },
     "company": {
@@ -244,7 +244,7 @@
       "linux": 18,
       "macos": 14,
       "unspecified": 332,
-      "web": 424,
+      "web": 425,
       "windows": 36
     },
     "product": {
@@ -273,7 +273,7 @@
     }
   },
   "license_declarations_by_scope": {
-    "code": 176,
+    "code": 177,
     "data": 61,
     "weights": 56,
     "document": 0
@@ -331,13 +331,13 @@
         "state": "success"
       },
       "discovered": 218,
-      "indexed": 166,
-      "indexed_resources": 166,
-      "resolved_aliases": 1,
-      "curated": 163,
+      "indexed": 168,
+      "indexed_resources": 167,
+      "resolved_aliases": 2,
+      "curated": 166,
       "excluded": 0,
       "set_aside": 4,
-      "unindexed": 48
+      "unindexed": 46
     },
     {
       "id": "os-agent-survey",
@@ -421,13 +421,13 @@
         "state": "success"
       },
       "discovered": 113,
-      "indexed": 24,
-      "indexed_resources": 24,
-      "resolved_aliases": 1,
-      "curated": 24,
+      "indexed": 25,
+      "indexed_resources": 25,
+      "resolved_aliases": 2,
+      "curated": 25,
       "excluded": 0,
       "set_aside": 4,
-      "unindexed": 85
+      "unindexed": 84
     },
     {
       "id": "steel-web-archive",
@@ -484,7 +484,7 @@
       "indexed": 115,
       "indexed_resources": 114,
       "resolved_aliases": 3,
-      "curated": 108,
+      "curated": 109,
       "excluded": 1,
       "set_aside": 0,
       "unindexed": 54
@@ -571,13 +571,13 @@
         "state": "success"
       },
       "discovered": 78,
-      "indexed": 48,
-      "indexed_resources": 48,
+      "indexed": 49,
+      "indexed_resources": 49,
       "resolved_aliases": 0,
-      "curated": 32,
+      "curated": 34,
       "excluded": 0,
       "set_aside": 2,
-      "unindexed": 28
+      "unindexed": 27
     },
     {
       "id": "supernal-gui",
@@ -664,7 +664,7 @@
       "indexed": 486,
       "indexed_resources": 486,
       "resolved_aliases": 0,
-      "curated": 394,
+      "curated": 395,
       "excluded": 0,
       "set_aside": 45,
       "unindexed": 13
@@ -811,13 +811,13 @@
         "state": "success"
       },
       "discovered": 247,
-      "indexed": 195,
-      "indexed_resources": 195,
+      "indexed": 196,
+      "indexed_resources": 196,
       "resolved_aliases": 3,
-      "curated": 182,
+      "curated": 184,
       "excluded": 0,
       "set_aside": 2,
-      "unindexed": 50
+      "unindexed": 49
     },
     {
       "id": "mobile-agents",
@@ -904,7 +904,7 @@
       "indexed": 59,
       "indexed_resources": 59,
       "resolved_aliases": 0,
-      "curated": 55,
+      "curated": 56,
       "excluded": 0,
       "set_aside": 0,
       "unindexed": 37
@@ -1682,7 +1682,7 @@
       "indexed": 451,
       "indexed_resources": 451,
       "resolved_aliases": 56,
-      "curated": 385,
+      "curated": 386,
       "excluded": 0,
       "set_aside": 0,
       "unindexed": 45
