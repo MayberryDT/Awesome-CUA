@@ -6,7 +6,7 @@
 
 **面向 computer-use、GUI、浏览器和移动端智能体的可溯源数据目录。**
 
-[浏览](#浏览) · [重点资源](#重点资源) · [最新审阅](#最新审阅) · [使用数据](#使用数据) · [网站](https://awesomecua.github.io/) · [中文主页](https://awesomecua.github.io/zh/) · [GitHub 组织](https://github.com/AwesomeCUA) · [English](README.md) · [覆盖台账](docs/coverage.md) · [参与贡献](CONTRIBUTING.md)
+[浏览](#浏览) · [重点资源](#重点资源) · [最新审阅](#最新审阅) · [使用数据](#使用数据) · [网站](https://awesomecua.github.io/) · [中文主页](https://awesomecua.github.io/zh/) · [GitHub 组织](https://github.com/AwesomeCUA) · [English](README.md) · [覆盖台账](docs/coverage.md) · [引用](#引用) · [参与贡献](CONTRIBUTING.md)
 
 **供人、RAG 系统和智能体使用——克隆完整目录：**
 
@@ -202,6 +202,23 @@ python3 scripts/export_citations.py --format bibtex --output dist/citations.bib
 
 用 SQLite 联查资源、环境/主题分面和已审阅关系，示例见[查询指南](docs/query-guide.md)。`data/catalog.jsonl` 已提交到仓库；SQLite 和 JSON 数组导出是可复现的本地构建产物。
 
+## 引用
+
+如果 AwesomeCUA 对你的研究有帮助，请引用本目录。[CITATION.cff](CITATION.cff) 提供相同的元数据，GitHub 的“Cite this repository”按钮可将其导出为 APA 或 BibTeX。
+
+```bibtex
+@misc{awesomecua,
+  title        = {Awesome Computer-Use Agents: a source-backed catalog of computer-use, GUI, browser, and mobile agents},
+  author       = {Zhang, Yuxuan},
+  year         = {2026},
+  url          = {https://awesomecua.github.io/},
+  howpublished = {\url{https://github.com/reacher-z/Awesome-CUA}},
+  note         = {Versioned data releases: https://github.com/reacher-z/Awesome-CUA/releases}
+}
+```
+
+数据随每次扫描更新，请固定所用的确切版本。每个 `v*` 标签都有一个[数据发布](https://github.com/reacher-z/Awesome-CUA/releases)，提供由该标签所指提交构建的版本化下载：JSONL、JSON 和 SQLite 格式的目录、覆盖台账、主题与规格导出，以及它们的 `SHA256SUMS`。请引用发布标签，或在克隆中用 `git rev-parse HEAD` 记录提交，或链接该提交下的文件，例如 `https://github.com/reacher-z/Awesome-CUA/blob/<commit>/data/catalog.jsonl`。[如何发布版本](docs/maintenance.md#versioned-data-releases)。
+
 ## “已核实”的含义
 
 | 状态 | 已检查的内容 | 尚未确认的内容 |
@@ -236,5 +253,3 @@ node --test tests/web.test.mjs
 [来源登记](data/sources.json)列出了用于发现资源的社区合集和综述。书目记录依据保留的 arXiv、出版方及作者来源；出版记录分别保留各版本的题名、作者和日期精度。部分资源还会对照发布方的仓库、文档以及模型/数据集卡片核查。上游 README、论文、模型权重和数据集不在本仓库中再分发。
 
 本仓库的原创代码和标注采用 [MIT 许可](LICENSE)。被链接的资源保留各自的条款；本仓库不对其重新授权。
-
-引用本目录时，请使用 [CITATION.cff](CITATION.cff) 或 GitHub 的“Cite this repository”按钮。数据随每次扫描更新，请固定所用的确切版本。每个 `v*` 标签都有一个[数据发布](https://github.com/reacher-z/Awesome-CUA/releases)，提供由该标签所指提交构建的版本化下载：JSONL、JSON 和 SQLite 格式的目录、覆盖台账、主题与规格导出，以及它们的 `SHA256SUMS`。请引用发布标签，或在克隆中用 `git rev-parse HEAD` 记录提交，或链接该提交下的文件，例如 `https://github.com/reacher-z/Awesome-CUA/blob/<commit>/data/catalog.jsonl`。[如何发布版本](docs/maintenance.md#versioned-data-releases)。
