@@ -61636,7 +61636,6 @@
     "details": {
       "availability": "Published source; README documents a pip package",
       "repository_url": "https://github.com/ethz-spylab/agentdojo",
-      "project_url": "https://agentdojo.spylab.ai/",
       "leaderboard_url": "https://agentdojo.spylab.ai/results/",
       "benchmark_protocol": {
         "focus": [
