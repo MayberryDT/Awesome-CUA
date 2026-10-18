@@ -61608,10 +61608,6 @@
       "relations"
     ],
     "notes": "The repository holds the browser-act skill stub, Skill Forge, docs and a solutions catalog of site-specific extraction skills (101 SKILL.md files under solutions/ in the inspected tree); the CLI itself installs from PyPI as browser-act-cli and its source is not in this repository. Stealth browsers, stealth-extract and CAPTCHA solving need a BrowserAct API key, and managed proxies are paid. MIT covers this repository only; the CLI package and the hosted service keep their own terms. Distinct from the hosted BrowserAct product record.",
-    "details": {
-      "repository_url": "https://github.com/browser-act/skills",
-      "repository_tree_sha": "11c057b03f92101642cadc9f840564574120d184"
-    },
     "additional_evidence": [
       {
         "role": "primary",
@@ -61628,8 +61624,7 @@
         "method": "editorial_primary_review",
         "supports": [
           "identity",
-          "release_status",
-          "details.repository_tree_sha"
+          "release_status"
         ],
         "url": "https://api.github.com/repos/browser-act/skills/git/trees/main?recursive=1",
         "sha256": "f9c61f64880d7f9b9c735069119fab88da4c552dd645d00708232bbb5a89e871",
