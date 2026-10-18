@@ -1,7 +1,7 @@
 {
-  "as_of_utc": "2026-10-18T08:01:28Z",
-  "total_records": 3055,
-  "curated_records": 1572,
+  "as_of_utc": "2026-10-18T11:32:07Z",
+  "total_records": 3056,
+  "curated_records": 1573,
   "bibliographic_records": 2606,
   "arxiv_active_records": 2593,
   "non_arxiv_bibliographic_records": 13,
@@ -11,7 +11,7 @@
   "exclusion_revalidation_pending": 0,
   "metadata_only_records": 1483,
   "discovery_identifiers": 4052,
-  "unindexed_candidates": 903,
+  "unindexed_candidates": 902,
   "non_resource_candidates": 80,
   "alias_candidates": 9,
   "pending_editorial": [
@@ -150,7 +150,7 @@
     "dataset": 85,
     "framework": 72,
     "infrastructure": 14,
-    "model": 98,
+    "model": 99,
     "paper": 2591,
     "product": 20,
     "survey": 15,
@@ -165,7 +165,7 @@
     "linux": 47,
     "macos": 30,
     "unspecified": 367,
-    "web": 596,
+    "web": 597,
     "windows": 61
   },
   "curated_by_kind_and_environment": {
@@ -232,7 +232,7 @@
       "linux": 6,
       "macos": 4,
       "unspecified": 2,
-      "web": 28,
+      "web": 29,
       "windows": 5
     },
     "paper": {
@@ -273,7 +273,7 @@
     }
   },
   "license_declarations_by_scope": {
-    "code": 176,
+    "code": 177,
     "data": 61,
     "weights": 56,
     "document": 0
@@ -1619,13 +1619,13 @@
         "state": "success"
       },
       "discovered": 50,
-      "indexed": 26,
-      "indexed_resources": 26,
+      "indexed": 27,
+      "indexed_resources": 27,
       "resolved_aliases": 0,
-      "curated": 26,
+      "curated": 27,
       "excluded": 0,
       "set_aside": 1,
-      "unindexed": 23
+      "unindexed": 22
     },
     {
       "id": "on-device-agents",
