@@ -61633,13 +61633,13 @@
           "details",
           "notes"
         ],
-        "url": "https://huggingface.co/api/models/ByteDance-Seed/UI-TARS-72B-SFT",
+        "url": "https://huggingface.co/api/models/ByteDance-Seed/UI-TARS-72B-SFT/revision/8e7a03104915dee7bdbae5ea6e5a80264b316f9e",
         "sha256": "5a45bef8bcbee831d5a1ece2d6cfc674ceed2e978d991215308ef2f06b173e8b",
-        "retrieved_at": "2026-10-18T11:55:31Z"
+        "retrieved_at": "2026-10-18T12:03:24Z"
       }
     ],
     "editorial_reviewed": true,
     "reviewed_sha256": "c85c8ecb15f8b6909fc8f46cd9394987b08116bf61e01f3a1808da6708a8798e",
-    "reviewed_at": "2026-10-18T11:56:03Z"
+    "reviewed_at": "2026-10-18T12:03:25Z"
   }
 ]
