@@ -61609,8 +61609,6 @@
     "notes": "A general virtualization project with no agent features of its own. It is marked adjacent because Windows agent environments build on it: the WindowsAgentArena README credits Dockur for the Docker infrastructure underlying WAA. Release v6.06 was inspected; the image was not run. The project needs a Linux host with KVM and does not distribute Windows, so users need their own valid Windows license. The MIT grant in license.md covers only the project's code.",
     "details": {
       "availability": "Public source; official release metadata inspected.",
-      "repository_url": "https://github.com/dockur/windows",
-      "repository_tree_sha": "013ea27498e0e820a46b3861a0fa047d5b19d846",
       "release_tag": "v6.06"
     },
     "additional_evidence": [
@@ -61628,8 +61626,7 @@
         "role": "primary",
         "method": "editorial_primary_review",
         "supports": [
-          "release_status",
-          "details.repository_tree_sha"
+          "release_status"
         ],
         "url": "https://api.github.com/repos/dockur/windows/git/trees/master?recursive=1",
         "sha256": "3e17f0589c01a2fbbea3fbefbb1a3b44c957b009f93d56d78d1d8cf68bfae7bf",
