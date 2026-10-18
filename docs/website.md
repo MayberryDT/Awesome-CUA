@@ -34,7 +34,7 @@ node --test tests/web.test.mjs
 .venv/bin/python -m unittest discover -s tests -v
 ```
 
-The `AwesomeCUA/awesomecua.github.io` repository contains the published static snapshot and a scheduled GitHub Pages Actions workflow. It checks out the public `reacher-z/Awesome-CUA` source, validates it, rebuilds, updates the static snapshot, and deploys the artifact. Publication runs twice daily and on website-repository pushes. The [update status page](https://awesomecua.github.io/updates/) links to actual scan receipts.
+The `AwesomeCUA/awesomecua.github.io` repository contains the published static snapshot and a scheduled GitHub Pages Actions workflow. It checks out the public `reacher-z/Awesome-CUA` source, validates it, rebuilds, updates the static snapshot, and deploys the artifact. Publication runs three times daily at 01:47, 09:47 and 17:47 UTC, as well as on website-repository pushes. Each scheduled slot is 90 minutes after a configured source scan; the publication workflow independently validates its checked-out source before deployment. The [update status page](https://awesomecua.github.io/updates/) links to actual scan receipts.
 
 The `AwesomeCUA/.github` repository contains the organization profile. Its links lead to the public homepage and public website repository.
 

@@ -4,8 +4,8 @@ on:
   push:
     branches: [main]
   schedule:
-    - cron: '47 8,20 * * *'
-      timezone: America/Los_Angeles
+    - cron: '47 1,9,17 * * *'
+      timezone: UTC
   workflow_dispatch:
 
 permissions:

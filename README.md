@@ -24,6 +24,8 @@ A source-backed collection of papers, models, datasets, benchmarks and tools for
 
 [Coverage ledger](docs/coverage.md) · [Contribute](CONTRIBUTING.md) · [GitHub organization](https://github.com/AwesomeCUA)
 
+Discovery is scheduled three times daily at **00:17, 08:17 and 16:17 UTC**. [Actual scan results](https://awesomecua.github.io/updates/) · [Schedule and safeguards](docs/maintenance.md).
+
 **For people, RAG systems, and agents — clone the complete catalog:**
 
 ```sh

@@ -24,6 +24,8 @@
 
 [覆盖台账](docs/coverage.md) · [参与贡献](CONTRIBUTING.md) · [GitHub 组织](https://github.com/AwesomeCUA) · [网站](https://awesomecua.github.io/) · [中文主页](https://awesomecua.github.io/zh/)
 
+资源发现计划每日执行三次，时间为 **UTC 00:17、08:17 和 16:17**。[实际扫描结果](https://awesomecua.github.io/updates/) · [时间安排与保护机制](docs/maintenance.md)。
+
 **供人、RAG 系统和智能体使用——克隆完整目录：**
 
 ```sh
