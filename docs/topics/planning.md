@@ -2,9 +2,17 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-269 source-reviewed resources tagged `planning`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+270 source-reviewed resources tagged `planning`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Datasets (4)](#datasets) · [Models (27)](#models) · [Agents (17)](#agents) · [Frameworks (15)](#frameworks) · [Surveys (2)](#surveys) · [Papers (204)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (4)](#datasets) · [Models (27)](#models) · [Agents (17)](#agents) · [Frameworks (15)](#frameworks) · [Surveys (2)](#surveys) · [Papers (204)](#papers)
+
+## Benchmarks
+
+All entries in this section: android.
+
+| Resource | Paper | Scale | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [NaturalGAIA](https://github.com/KeLes-Coding/NatureGAIA) | [2508.01330](https://arxiv.org/abs/2508.01330) (2025) | — | — | Verifiable benchmark of long-horizon, multi-app Android information tasks with per-subtask answers, released with the LightManus planner and Jarvis ADB executor that decompose and run them. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/KeLes-Coding/NatureGAIA/HEAD/README.md) |
 
 ## Datasets
 
