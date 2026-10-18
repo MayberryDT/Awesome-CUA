@@ -63143,5 +63143,108 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "url:dc20a06c296207ac11a6",
+    "name": "Holo1.5 3B",
+    "kind": "model",
+    "url": "https://huggingface.co/Hcompany/Holo1.5-3B",
+    "environments": [
+      "web",
+      "desktop",
+      "cross-platform"
+    ],
+    "topics": [
+      "grounding",
+      "screen-understanding"
+    ],
+    "summary": "Smallest Holo1.5 checkpoint, fine-tuned from Qwen2.5-VL-3B-Instruct with supervised training then GRPO, for locating interface elements and answering questions about web, desktop and mobile screens.",
+    "scope": "core",
+    "verify_terms": [
+      "Holo1.5"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/Hcompany/Holo1.5-3B/raw/f10805d3a566ac2932ca17dfeeed91986ead01f8/README.md"
+    ],
+    "publisher_id": "organization:h",
+    "reviewed_relations": [
+      {
+        "type": "variant_of",
+        "target_id": "url:c0bd07d82ce25ad1d99d",
+        "evidence_url": "https://hcompany.ai/research/models"
+      }
+    ],
+    "notes": "Hub API at revision f10805d3 lists two BF16 safetensors shards (about 3.75B parameters) in the Qwen2_5_VLForConditionalGeneration architecture; the repository is not gated. The card describes proprietary training data mixed from open-source, synthetic and human-annotated samples, so no training dataset is linked; its localization and screen-QA scores are publisher-reported and are not recorded. Mobile is named without an operating system. The card's license field is 'other': it says the 3B size inherits Qwen's license and names the Qwen Research License, and the repository's LICENSE file is an H research agreement limited to non-commercial use. The 7B and 72B sizes carry different terms, and H Company's models page gives the family one CC BY-NC 4.0 label.",
+    "details": {
+      "artifact_type": "model-checkpoint",
+      "hub_id": "Hcompany/Holo1.5-3B",
+      "hub_revision": "f10805d3a566ac2932ca17dfeeed91986ead01f8",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/Hcompany/Holo1.5-3B/tree/f10805d3a566ac2932ca17dfeeed91986ead01f8",
+      "architecture": "Qwen2_5_VLForConditionalGeneration",
+      "parameter_label": "3B",
+      "base_model": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "license_name": "H Product Research License Agreement (built with Qwen; non-commercial)",
+      "listed_weight_files": [
+        "model-00001-of-00002.safetensors",
+        "model-00002-of-00002.safetensors"
+      ]
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes",
+      "licenses.weights",
+      "details.base_model",
+      "details.parameter_label"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details",
+          "notes"
+        ],
+        "url": "https://huggingface.co/api/models/Hcompany/Holo1.5-3B/revision/f10805d3a566ac2932ca17dfeeed91986ead01f8",
+        "sha256": "619580184acaa520e054f1844a17b0fc44bef8df2dafb9a47ad0dc3bac759223",
+        "retrieved_at": "2026-10-18T16:13:49Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.license_name",
+          "notes",
+          "licenses.weights"
+        ],
+        "url": "https://huggingface.co/Hcompany/Holo1.5-3B/raw/f10805d3a566ac2932ca17dfeeed91986ead01f8/LICENSE",
+        "sha256": "f91e82dddcf31da795865d15dbe3e7bedd2a4170382df5191d672a2f357c4184",
+        "retrieved_at": "2026-10-18T16:13:21Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "relations",
+          "notes"
+        ],
+        "url": "https://hcompany.ai/research/models",
+        "sha256": "ddfa335cd71d0a7a4e61640752b1b24830f951a72c175e88fd03bf00a5e783c8",
+        "retrieved_at": "2026-10-18T16:10:28Z"
+      }
+    ],
+    "read_basis": "Read the pinned model card, LICENSE file and Hub API record (file manifest, card metadata, config architecture) and H Company's models page. No weights were downloaded or run.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "13cc49f7c52e358d2ad34bff43e7c46c66c291928ff19a4e4c9a2aed6bf9c1a2",
+    "reviewed_at": "2026-10-18T16:14:27Z"
   }
 ]
