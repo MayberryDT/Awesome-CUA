@@ -15,7 +15,7 @@
 **[搜索与筛选](https://awesomecua.github.io/?lang=zh)** · **[研究论文](https://awesomecua.github.io/zh/papers/)** · **[按主题浏览](https://awesomecua.github.io/zh/topics/)** · **[数据与 Agent](https://awesomecua.github.io/zh/data/)**
 
 <!-- BADGES:START -->
-[![Catalog records](https://img.shields.io/badge/records-3%2C055-4856df?style=flat-square&labelColor=303447)](data/catalog.jsonl) [![Source-reviewed records](https://img.shields.io/badge/source--reviewed-1%2C572-4856df?style=flat-square&labelColor=303447)](docs/coverage.md) [![Catalog checks](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml/badge.svg?branch=main)](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml) [![MIT license](https://img.shields.io/badge/license-MIT-606779?style=flat-square&labelColor=303447)](LICENSE)
+[![Catalog records](https://img.shields.io/badge/records-3%2C057-4856df?style=flat-square&labelColor=303447)](data/catalog.jsonl) [![Source-reviewed records](https://img.shields.io/badge/source--reviewed-1%2C574-4856df?style=flat-square&labelColor=303447)](docs/coverage.md) [![Catalog checks](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml/badge.svg?branch=main)](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml) [![MIT license](https://img.shields.io/badge/license-MIT-606779?style=flat-square&labelColor=303447)](LICENSE)
 <!-- BADGES:END -->
 
 [按任务查找](#按任务查找) · [浏览](#浏览) · [重点资源](#重点资源) · [最新审阅](#最新审阅) · [使用数据](#使用数据)
@@ -69,9 +69,9 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 
 <!-- STATS:START -->
 
-**3,055 条资源记录** · **1,572 条已审阅** · **2,606 条论文与综述记录** · **47 个发现来源文档**
+**3,057 条资源记录** · **1,574 条已审阅** · **2,606 条论文与综述记录** · **47 个发现来源文档**
 
-证据截至 `2026-10-18T08:01:28Z`。1,483 条记录仅完成书目核实；903 个已发现的标识符尚待处理，另有 89 个链接经审阅确认为非资源或已收录资源的其他地址，不计入其中。122 条范围排除记录在归档中保留原始元数据。各项计数存在重叠，详见下文。
+证据截至 `2026-10-18T11:09:25Z`。1,483 条记录仅完成书目核实；903 个已发现的标识符尚待处理，另有 89 个链接经审阅确认为非资源或已收录资源的其他地址，不计入其中。122 条范围排除记录在归档中保留原始元数据。各项计数存在重叠，详见下文。
 
 <!-- STATS:END -->
 
@@ -84,9 +84,9 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 | [综述](docs/surveys.md) · **15** | [框架](docs/frameworks.md) · **72** |
 | [数据集](docs/datasets.md) · **85** | [基础设施](docs/infrastructures.md) · **14** |
 | [基准](docs/benchmarks.md) · **83** | [工具](docs/tools.md) · **20** |
-| [模型与权重版本](docs/models.md) · **98** | [产品](docs/products.md) · **20** · [发布方与品牌](docs/companies.md) · **16** |
+| [模型与权重版本](docs/models.md) · **98** | [产品](docs/products.md) · **21** · [发布方与品牌](docs/companies.md) · **17** |
 
-**按平台：** [Web](docs/environments/web.md) **596** · [Desktop](docs/environments/desktop.md) **320** · [Windows](docs/environments/windows.md) **61** · [macOS](docs/environments/macos.md) **30** · [Linux](docs/environments/linux.md) **47** · [Android](docs/environments/android.md) **294** · [iOS](docs/environments/ios.md) **20** · [HarmonyOS](docs/environments/harmonyos.md) **3** · [Cross-platform](docs/environments/cross-platform.md) **193**
+**按平台：** [Web](docs/environments/web.md) **597** · [Desktop](docs/environments/desktop.md) **321** · [Windows](docs/environments/windows.md) **62** · [macOS](docs/environments/macos.md) **30** · [Linux](docs/environments/linux.md) **47** · [Android](docs/environments/android.md) **294** · [iOS](docs/environments/ios.md) **20** · [HarmonyOS](docs/environments/harmonyos.md) **3** · [Cross-platform](docs/environments/cross-platform.md) **193**
 <!-- EXPLORE:END -->
 
 覆盖 Web、桌面、Android、iOS、Windows、macOS、Linux 和跨平台工作。主题包括 grounding、屏幕理解、规划、记忆、长流程任务、强化学习、数据生成、安全、鲁棒性和评测。环境分面可以重叠；不会根据模型的基准成绩推定框架支持。
@@ -170,6 +170,8 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 <!-- RECENT:START -->
 | 审阅日期 | 资源 | 类型 | 环境 | 简介（英文） |
 | --- | --- | --- | --- | --- |
+| 2026‑10‑18 | [Microsoft](https://learn.microsoft.com/en-us/microsoft-copilot-studio/computer-use) | 发布方 | unspecified | Publisher or product brand associated with Microsoft computer-use or browser automation offerings. |
+| 2026‑10‑18 | [Copilot Studio computer use](https://learn.microsoft.com/en-us/microsoft-copilot-studio/computer-use) | 产品 | windows, desktop, web | Copilot Studio agent tool that operates websites and Windows desktop apps on a configured machine through a computer-using model, with stored credentials, site and app allow lists and human supervision. |
 | 2026‑10‑18 | [ZonUI-3B checkpoint](https://huggingface.co/zonghanHZH/ZonUI-3B) | 模型 | cross-platform, desktop, web | Qwen2.5-VL-3B-based GUI grounding checkpoint that predicts click locations from screenshots and text instructions across desktop, mobile and web screens. |
 | 2026‑10‑18 | [WindowsAgentArena-V2](https://github.com/GAIR-NLP/WindowsAgentArena-V2) | 基准 | desktop, windows | Windows benchmark revision with task/evaluator fixes and VM-initialization support, documented alongside PC-Agent-E. |
 | 2026‑10‑18 | [WebSRC v1.0](https://huggingface.co/datasets/X-LANCE/WebSRC_v1.0) | 数据集 | web | Webpage segments, questions, answers, HTML, screenshots and layout metadata for structural reading comprehension. |
@@ -180,8 +182,6 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 | 2026‑10‑18 | [PC-Agent-E checkpoint](https://huggingface.co/henryhe0123/PC-Agent-E) | 模型 | desktop, windows, linux | Computer-use checkpoint fine-tuned on PC-Agent-E trajectories; the model-card prose identifies Qwen2.5-VL-72B-Instruct as its starting model. |
 | 2026‑10‑18 | [PC-Agent (X-PLUG component)](https://github.com/X-PLUG/MobileAgent/tree/main/PC-Agent) | 智能体 | desktop, windows, macos | Multi-agent desktop automation component for Windows and macOS, combining active perception, task decomposition and reflection for workflows spanning applications. |
 | 2026‑10‑18 | [OpenApps](https://github.com/facebookresearch/OpenApps) | 基准 | web | Configurable browser apps and task rewards for testing computer-use agents under changes in content, layout and appearance. |
-| 2026‑10‑18 | [Mobile-Eval-E task definitions](https://huggingface.co/datasets/mikewang/mobile_eval_e) | 基准 | android | Task definitions for Mobile-Agent-E’s long-horizon, multi-app Android evaluation, packaged as a 25-record test split with rubrics and human-reference operation strings. |
-| 2026‑10‑18 | [Mobile-Agent-E code component](https://github.com/X-PLUG/MobileAgent/tree/main/Mobile-Agent-E) | 智能体 | android | Android automation component with hierarchical planning, reflection and persistent tips/shortcuts learned across task sequences. |
 <!-- RECENT:END -->
 
 ## 使用数据
