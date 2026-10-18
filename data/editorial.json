@@ -63175,7 +63175,7 @@
       "notes",
       "details"
     ],
-    "notes": "Reworkd describes it as a work in progress; the last release tag is v.0.7.3 (2024-01) and the latest commit d1b1ae52 is from 2024-10. Pages are replayed from MHTML, HAR or HTML snapshots stored in the repository, so the original sites are not contacted. Planned click, navigation, multi-step and sign-in examples are unchecked roadmap items. MIT is recorded for repository code only; the snapshotted third-party pages carry no stated license. No paper is cited (CITATION.cff names the software). Nothing was installed or run.",
+    "notes": "Reworkd describes it as a work in progress; the last release tag is v.0.7.3 (2024-01) and the latest commit d1b1ae52 is from 2024-10. Most pages are replayed from MHTML, HAR or HTML snapshots stored in the repository; two training examples use the hosted source, which loads the live site URL. Planned click, navigation, multi-step and sign-in examples are unchecked roadmap items. MIT is recorded for repository code only; the snapshotted third-party pages carry no stated license. No paper is cited (CITATION.cff names the software). Nothing was installed or run.",
     "details": {
       "repository_revision": "d1b1ae52db3fd9e0e3792493f34ccf5b467933c6",
       "benchmark_protocol": {
@@ -63186,7 +63186,7 @@
         ],
         "setting": "interactive",
         "observations": [
-          "Playwright browser context over locally served page snapshots"
+          "Playwright browser context over locally served page snapshots, or the live URL for the two hosted-source training examples"
         ],
         "actions": [
           "Playwright operations implemented by the user's AgentRunner"
