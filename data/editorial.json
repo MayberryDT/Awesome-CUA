@@ -61596,7 +61596,6 @@
     "notes": "The repository author states that the code only reproduces the Seq2Act authors' AndroidHowTo generation, and asks users to cite the Seq2Act paper. It holds ten generated TFRecord shards, the merged crawl output, the annotation CSV, the vocabulary, 3,414 per-WARC intermediate files and a copy of the seq2act data-generation code. This is not a Google release. No license file or declaration is present, so code and data rights stay unknown; Common Crawl page content is third-party.",
     "details": {
       "repository_url": "https://github.com/debymf/generating_android_howto",
-      "repository_tree_sha": "485b17546e426a18a3216002b1a1977abe6feca1",
       "dataset_profile": {
         "supervision": [
           "action-phrase extraction from natural-language instructions"
@@ -61662,7 +61661,6 @@
         "supports": [
           "identity",
           "release_status",
-          "details.repository_tree_sha",
           "licenses.code",
           "licenses.data"
         ],
