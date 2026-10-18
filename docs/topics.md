@@ -2,13 +2,13 @@
 
 [Home](../README.md) · [Full arXiv bibliography](papers.md) · [Methodology](methodology.md)
 
-1,572 source-reviewed resources across 35 topics. Topic tags are catalog annotations from the editorial review, not author keywords; a resource appears under every topic it carries. Each hub lists benchmarks, data, models, systems, and papers together, newest papers first.
+1,573 source-reviewed resources across 35 topics. Topic tags are catalog annotations from the editorial review, not author keywords; a resource appears under every topic it carries. Each hub lists benchmarks, data, models, systems, and papers together, newest papers first.
 
 | Topic | All | Benchmarks | Datasets | Models | Systems | Papers | Newest reviewed paper |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | --- |
 | [Evaluation](topics/evaluation.md) | 661 | 81 | 9 | 1 | 22 | 548 | [Player-1: Learning to Play from Synthetic Experience](https://arxiv.org/abs/2610.20584) · 2026-10-14 |
 | [GUI grounding](topics/grounding.md) | 371 | 9 | 32 | 67 | 19 | 244 | [Why Generate a Click? Plug-in Decision Heads for Web Agents](https://arxiv.org/abs/2610.20107) · 2026-10-14 |
-| [Data generation](topics/data-generation.md) | 337 | · | 54 | 2 | 23 | 258 | [Teaching Agents in their Own Style: Blackbox Teacher Distillation for Web Agents](https://arxiv.org/abs/2610.19834) · 2026-10-14 |
+| [Data generation](topics/data-generation.md) | 338 | · | 55 | 2 | 23 | 258 | [Teaching Agents in their Own Style: Blackbox Teacher Distillation for Web Agents](https://arxiv.org/abs/2610.19834) · 2026-10-14 |
 | [Web navigation](topics/web-navigation.md) | 275 | 13 | 8 | 11 | 45 | 198 | [Why Generate a Click? Plug-in Decision Heads for Web Agents](https://arxiv.org/abs/2610.20107) · 2026-10-14 |
 | [Planning](topics/planning.md) | 269 | · | 4 | 27 | 32 | 206 | [OpenGCUA: Toward a Fully Open Stack for Generalist Computer Use](https://arxiv.org/abs/2610.22200) · 2026-10-15 |
 | [Mobile navigation](topics/mobile-navigation.md) | 248 | 14 | 12 | 15 | 26 | 181 | [How GUI Agents Fail: GraceBench for Execution Stability Diagnosis](https://arxiv.org/abs/2610.19900) · 2026-10-14 |
@@ -31,12 +31,12 @@
 | [Interaction history](topics/interaction-history.md) | 46 | · | · | 1 | · | 45 | [Learn How to Act from Your Own Interactions: On-Policy Self-Distillation for GUI Agents](https://arxiv.org/abs/2609.27307) · 2026-09-23 |
 | [State tracking](topics/state-tracking.md) | 46 | · | · | · | 2 | 44 | [LongPuzzleBench: Evaluating GUI Agents on Long-Horizon Visual Puzzles](https://arxiv.org/abs/2609.34769) · 2026-09-28 |
 | [World models](topics/world-models.md) | 42 | · | 3 | 2 | 2 | 35 | [Latent World Action Model for GUI Agents](https://arxiv.org/abs/2610.14228) · 2026-10-09 |
+| [Video](topics/video.md) | 38 | 2 | 7 | · | · | 29 | [Invisible in Space, Visible in Time: Motion Vision CAPTCHA against GUI Agents](https://arxiv.org/abs/2609.27461) · 2026-09-23 |
 | [Self-reflection](topics/self-reflection.md) | 37 | · | · | 3 | 7 | 27 | [Reflect, Revise, Reuse: Training-Free Skill Evolution for GUI Agents](https://arxiv.org/abs/2609.17653) · 2026-09-15 |
-| [Video](topics/video.md) | 37 | 2 | 6 | · | · | 29 | [Invisible in Space, Visible in Time: Motion Vision CAPTCHA against GUI Agents](https://arxiv.org/abs/2609.27461) · 2026-09-23 |
 | [Observability](topics/observability.md) | 36 | · | · | · | 3 | 33 | [WebFovea: When the Model Is Right but the Click Is Wrong -- Reliable Round Trips for Vision-Based Web Agents on Live Websites](https://arxiv.org/abs/2610.03036) · 2026-10-02 |
 | [Training-free methods](topics/training-free.md) | 30 | · | · | · | 2 | 28 | [Relevance Does Not Imply Applicability: Experience Activation for Personal GUI Agents](https://arxiv.org/abs/2609.33304) · 2026-09-27 |
 | [Industry](topics/industry.md) | 27 | · | · | · | 16 | 11 | [HealthAdminBench: Evaluating Computer-Use Agents on Healthcare Administration Tasks](https://arxiv.org/abs/2604.09937) · 2026-04-10 |
-| [Recording](topics/recording.md) | 22 | · | 1 | · | 6 | 15 | [Work2Skill: Capturing Human GUI Experience for Reusable Agent Skill Induction](https://arxiv.org/abs/2610.12984) · 2026-10-09 |
+| [Recording](topics/recording.md) | 23 | · | 2 | · | 6 | 15 | [Work2Skill: Capturing Human GUI Experience for Reusable Agent Skill Induction](https://arxiv.org/abs/2610.12984) · 2026-10-09 |
 | [UI design](topics/ui-design.md) | 20 | · | 1 | · | · | 19 | [A Dual-Process Perspective on Nudge Susceptibility in LLM-Based GUI Agents](https://arxiv.org/abs/2609.19843) · 2026-09-17 |
 | [Scientific workflows](topics/science.md) | 18 | 1 | 1 | · | 1 | 15 | [MedImageOSWorld: Benchmarking GUI Agents for Medical Image Consoles](https://arxiv.org/abs/2610.04800) · 2026-10-03 |
 | [Survey](topics/survey.md) | 16 | · | · | · | · | 16 | [Efficient GUI Agents: A Systems Survey of Observation, Memory, Action, and Runtime Optimization](https://arxiv.org/abs/2609.02309) · 2026-09-02 |
