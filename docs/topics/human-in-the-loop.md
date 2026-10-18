@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-78 source-reviewed resources tagged `human-in-the-loop`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+79 source-reviewed resources tagged `human-in-the-loop`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Agents (5)](#agents) · [Frameworks (1)](#frameworks) · [Papers (71)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Agents (5)](#agents) · [Frameworks (2)](#frameworks) · [Papers (71)](#papers)
 
 ## Benchmarks
 
@@ -26,11 +26,10 @@ All entries in this section: android.
 
 ## Frameworks
 
-All entries in this section: unspecified.
-
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [META-GUI baseline](https://github.com/X-LANCE/META-GUI-baseline) | [2205.11029](https://arxiv.org/abs/2205.11029) (2022) | code MIT | Training and evaluation pipeline for conversational mobile GUI agents, with action prediction, response generation, and dataset processing. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/X-LANCE/META-GUI-baseline/HEAD/README.md) |
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [LearnAct](https://github.com/lgy0404/LearnAct) | android | [2504.13805](https://arxiv.org/abs/2504.13805) (2025) | — | Offline inference and evaluation code for LearnAct that builds k-shot prompts from LearnGUI demonstrations, predicts one phone action per step and scores action-type and full matches. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/lgy0404/LearnAct/HEAD/README.md) |
+| [META-GUI baseline](https://github.com/X-LANCE/META-GUI-baseline) | unspecified | [2205.11029](https://arxiv.org/abs/2205.11029) (2022) | code MIT | Training and evaluation pipeline for conversational mobile GUI agents, with action prediction, response generation, and dataset processing. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/X-LANCE/META-GUI-baseline/HEAD/README.md) |
 
 ## Papers
 

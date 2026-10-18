@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-294 source-reviewed resources tagged `android`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+295 source-reviewed resources tagged `android`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (18)](#benchmarks) · [Datasets (34)](#datasets) · [Models (24)](#models) · [Agents (16)](#agents) · [Frameworks (19)](#frameworks) · [Tools (5)](#tools) · [Infrastructure (3)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (173)](#papers)
+**Contents:** [Benchmarks (18)](#benchmarks) · [Datasets (34)](#datasets) · [Models (24)](#models) · [Agents (16)](#agents) · [Frameworks (20)](#frameworks) · [Tools (5)](#tools) · [Infrastructure (3)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (173)](#papers)
 
 ## Benchmarks
 
@@ -133,6 +133,7 @@
 | [DroidCall generation and evaluation code](https://github.com/UbiquitousLearning/DroidCall) | android | [2412.00402](https://arxiv.org/abs/2412.00402) (2024) | code MIT | Data-generation, fine-tuning and evaluation utilities for teaching small language models to invoke Android intents through predefined functions. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/UbiquitousLearning/DroidCall/HEAD/README.md) |
 | [GUI-CIDER research code](https://github.com/Wuzheng02/GUI-CIDER) | android | [2605.28534](https://arxiv.org/abs/2605.28534) (2026) | — | Released data-synthesis and evaluation scripts that distill planning and causal GUI knowledge into text for mid-training mobile interface agents. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/Wuzheng02/GUI-CIDER/HEAD/README.md) |
 | [GUIPivot](https://github.com/ZrW00/GUIPivot) | android | [2503.00401](https://arxiv.org/abs/2503.00401) (2025) | code GPL-3.0 | Research tooling for query-inference pivot tasks that connect screenshot grounding with GUI action reasoning, including preprocessing, query refinement and mobile-agent evaluation. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/ZrW00/GUIPivot/HEAD/README.md) |
+| [LearnAct](https://github.com/lgy0404/LearnAct) | android | [2504.13805](https://arxiv.org/abs/2504.13805) (2025) | — | Offline inference and evaluation code for LearnAct that builds k-shot prompts from LearnGUI demonstrations, predicts one phone action per step and scores action-type and full matches. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/lgy0404/LearnAct/HEAD/README.md) |
 | [MAI-UI inference and evaluation code](https://github.com/Tongyi-MAI/MAI-UI) | android | [2512.22047](https://arxiv.org/abs/2512.22047) (2025) | code Apache-2.0 (MAI-UI subdirectory) | Published MAI-UI grounding and navigation-agent implementations with inference demos and evaluation scripts. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/Tongyi-MAI/MAI-UI/HEAD/MAI-UI/README.md) |
 | [MobileRL](https://github.com/THUDM/MobileRL) | android | [2509.18119](https://arxiv.org/abs/2509.18119) (2025) | code MIT | Online agentic RL framework for mobile GUI agents built around the difficulty-adaptive ADAGRPO algorithm, with Dockerized AndroidWorld and AndroidLab evaluation and a MobileRL-9B checkpoint. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/THUDM/MobileRL/HEAD/README.md) |
 | [Mobilerun (formerly Droidrun)](https://github.com/droidrun/mobilerun) | android, ios | — | code MIT | A framework that combines screenshots and accessibility state with agent tools for mobile-device tasks through command-line and Python interfaces. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/droidrun/mobilerun/HEAD/README.md) |

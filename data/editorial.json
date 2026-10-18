@@ -61573,5 +61573,112 @@
         ]
       }
     }
+  },
+  {
+    "id": "github:lgy0404/learnact",
+    "name": "LearnAct",
+    "kind": "framework",
+    "url": "https://github.com/lgy0404/LearnAct",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "action-prediction",
+      "evaluation",
+      "human-in-the-loop"
+    ],
+    "summary": "Offline inference and evaluation code for LearnAct that builds k-shot prompts from LearnGUI demonstrations, predicts one phone action per step and scores action-type and full matches.",
+    "scope": "core",
+    "verify_terms": [
+      "LearnAct"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/lgy0404/LearnAct/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "topics",
+      "scope",
+      "notes",
+      "relations",
+      "licenses.code"
+    ],
+    "documented_by": [
+      "2504.13805"
+    ],
+    "notes": "Released code covers LearnGUI-Offline only: gen_messages.py inserts k-shot example steps into per-step prompts with a swipe/click/type/back/home action space, and offline_infer.py queries an OpenAI-compatible VLM (gpt-4o-mini by default) and scores type and full action matches. The README lists LearnGUI-Online evaluation and a deployment demo as not yet released. Android is taken from the LearnGUI Hub dataset's 101 online task files, which carry AndroidWorld task names; the code README itself says only mobile. The README's Apache-2.0 sentence refers to 'this dataset' and the repository has no LICENSE file, so the code license stays unknown. LearnGUI data is a separate Hub release.",
+    "details": {
+      "repository_url": "https://github.com/lgy0404/LearnAct",
+      "repository_tree_sha": "5ad6c328df853a357c0bbe32ac9571f9c24ea0fd"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity"
+        ],
+        "url": "https://api.github.com/repos/lgy0404/LearnAct",
+        "sha256": "3076ba998b534a80d711cbc8dfbc3d7b03548aa7cc4698d3ad65a2716c13cee6",
+        "retrieved_at": "2026-10-18T11:24:59Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.repository_tree_sha"
+        ],
+        "url": "https://api.github.com/repos/lgy0404/LearnAct/git/trees/master?recursive=1",
+        "sha256": "e21a1a6c47e5d0096dd810a4d5c8cb7bd574a19e3fb831dd5242f23da5aec427",
+        "retrieved_at": "2026-10-18T11:25:06Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary"
+        ],
+        "url": "https://raw.githubusercontent.com/lgy0404/LearnAct/HEAD/gen_messages.py",
+        "sha256": "e6f110380843a49315f40ad9dd3664b2cd7943b8277090eb2b32779bc08fb6f8",
+        "retrieved_at": "2026-10-18T11:25:00Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary"
+        ],
+        "url": "https://raw.githubusercontent.com/lgy0404/LearnAct/HEAD/offline_infer.py",
+        "sha256": "2146a8d1fb992684c66e6709c42142d8ec81e914794cc9eab822f40111433754",
+        "retrieved_at": "2026-10-18T11:25:00Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments"
+        ],
+        "url": "https://huggingface.co/api/datasets/lgy0404/LearnGUI/tree/main/online/low_level_instructions",
+        "sha256": "c4eef287a4f50cb21fe967f422132ca761e46a4e0ce2184038e77f8f1949f8a5",
+        "retrieved_at": "2026-10-18T11:25:00Z"
+      }
+    ],
+    "reviewed_licenses": {
+      "code": {
+        "value": null,
+        "reason": "The repository has no LICENSE file and the GitHub API reports none; the README's Apache-2.0 sentence names the dataset, so no code license is established.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/lgy0404/LearnAct/HEAD/README.md"
+        ]
+      }
+    },
+    "reviewed_sha256": "95184255b6ec021aac8ca062b944f3ed76d1e01405e5771d9e31368021523eec",
+    "reviewed_at": "2026-10-18T11:25:23Z"
   }
 ]
