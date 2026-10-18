@@ -250,5 +250,11 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:osu-nlp-group/gui-agents-paper-list",
+    "url": "https://github.com/OSU-NLP-Group/GUI-Agents-Paper-List",
+    "decision": "not_a_resource",
+    "reason": "Repository of the osu-gui discovery source: a curated GUI-agent paper list whose README is fetched for discovery, so its papers are reviewed individually. Its website is already set aside under the same reasoning."
   }
 ]
