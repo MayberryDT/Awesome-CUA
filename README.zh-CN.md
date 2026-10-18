@@ -170,7 +170,7 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 <!-- RECENT:START -->
 | 审阅日期 | 资源 | 类型 | 环境 | 简介（英文） |
 | --- | --- | --- | --- | --- |
-| 2026‑10‑18 | [Holo4 Trajectories](https://huggingface.co/datasets/Hcompany/trajectories) | 数据集 | cross-platform, desktop, android | H Company's 7,366 Holo4 27B and Holo4 35B-A3B agent runs behind its Holo4 benchmark scores, on OSWorld, OSWorld 2, AndroidWorld and three other suites, with per-step reasoning, actions, tool results and screenshots. |
+| 2026‑10‑18 | [Holo4 Trajectories](https://huggingface.co/datasets/Hcompany/trajectories) | 数据集 | cross-platform, desktop, android | H Company's 7,366 published Holo4 27B and Holo4 35B-A3B runs on OSWorld, OSWorld 2, AndroidWorld and three other suites, logging step reasoning, actions and tool results, with screenshots for fewer than half. |
 | 2026‑10‑18 | [ZonUI-3B checkpoint](https://huggingface.co/zonghanHZH/ZonUI-3B) | 模型 | cross-platform, desktop, web | Qwen2.5-VL-3B-based GUI grounding checkpoint that predicts click locations from screenshots and text instructions across desktop, mobile and web screens. |
 | 2026‑10‑18 | [WindowsAgentArena-V2](https://github.com/GAIR-NLP/WindowsAgentArena-V2) | 基准 | desktop, windows | Windows benchmark revision with task/evaluator fixes and VM-initialization support, documented alongside PC-Agent-E. |
 | 2026‑10‑18 | [WebSRC v1.0](https://huggingface.co/datasets/X-LANCE/WebSRC_v1.0) | 数据集 | web | Webpage segments, questions, answers, HTML, screenshots and layout metadata for structural reading comprehension. |

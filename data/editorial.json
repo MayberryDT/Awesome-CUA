@@ -61587,7 +61587,7 @@
       "evaluation",
       "observability"
     ],
-    "summary": "H Company's 7,366 Holo4 27B and Holo4 35B-A3B agent runs behind its Holo4 benchmark scores, on OSWorld, OSWorld 2, AndroidWorld and three other suites, with per-step reasoning, actions, tool results and screenshots.",
+    "summary": "H Company's 7,366 published Holo4 27B and Holo4 35B-A3B runs on OSWorld, OSWorld 2, AndroidWorld and three other suites, logging step reasoning, actions and tool results, with screenshots for fewer than half.",
     "scope": "core",
     "verify_terms": [
       "Holo4 Trajectories"
@@ -61608,7 +61608,7 @@
         "evidence_url": "https://huggingface.co/datasets/Hcompany/trajectories/raw/ede2a362c99ddba0d03f439c47a0b8fea6abae22/README.md"
       }
     ],
-    "notes": "The Hub API at revision ede2a362 reports an ungated repository with data/index.json, 7,366 trajectory JSON files under data/t/ (matching the card's total) and 49,308 WebP screenshots in 3,146 trajectory folders, so not every run carries screenshots. The card masks credentials, internal hosts and personal data as '<PII removed>' and leaves out a few tasks. The card declares Apache-2.0 for the bundle; upstream task instructions and environments keep the licenses its table lists. AutomationBench, PinchBench, Agents' Last Exam, OSWorld 2 and Holo4 27B are not catalog records, so only the OSWorld and AndroidWorld links are recorded; the curated Holo4 35B-A3B record (url:16083a0225a60882c704) has no relation type for a run log and is left to this note. Success flags and scores are the publisher's own runs and were not re-scored.",
+    "notes": "The Hub API at revision ede2a362 reports an ungated repository with data/index.json, 7,366 trajectory JSON files under data/t/ (matching the card's total) and, under img/, 49,192 WebP screenshots plus 116 redacted.png placeholders in 3,146 folders, so fewer than half of the runs carry screenshots. The card masks credentials, internal hosts and personal data as '<PII removed>' and leaves out a few tasks. The card declares Apache-2.0 for the bundle; upstream task instructions and environments keep the licenses its table lists. OSWorld 2 (arxiv:2606.29537) and AutomationBench (arxiv:2604.18934) are in the catalog only as papers, which the card does not link, and PinchBench, Agents' Last Exam and Holo4 27B are not catalog records, so only the OSWorld and AndroidWorld links are recorded; the curated Holo4 35B-A3B record (url:16083a0225a60882c704) has no relation type for a run log and is left to this note. Success flags and scores are the publisher's own runs and were not re-scored.",
     "details": {
       "hub_id": "Hcompany/trajectories",
       "hub_revision": "ede2a362c99ddba0d03f439c47a0b8fea6abae22",
@@ -61628,7 +61628,8 @@
         ],
         "formats": [
           "JSON",
-          "WebP images"
+          "WebP images",
+          "PNG placeholders"
         ],
         "splits": [],
         "counts": [
@@ -61649,10 +61650,18 @@
             "evidence_url": "https://huggingface.co/api/datasets/Hcompany/trajectories"
           },
           {
-            "value": 49308,
-            "unit": "screenshot files",
+            "value": 49192,
+            "unit": "WebP screenshot files",
             "qualifier": "exact",
             "population": "img/ at revision ede2a362",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/api/datasets/Hcompany/trajectories"
+          },
+          {
+            "value": 116,
+            "unit": "redacted placeholder image files",
+            "qualifier": "exact",
+            "population": "img/*/redacted.png at revision ede2a362",
             "basis": "computed",
             "evidence_url": "https://huggingface.co/api/datasets/Hcompany/trajectories"
           },
