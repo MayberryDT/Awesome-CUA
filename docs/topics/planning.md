@@ -12,7 +12,7 @@ All entries in this section: android.
 
 | Resource | Paper | Scale | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
-| [NaturalGAIA](https://github.com/KeLes-Coding/NatureGAIA) | [2508.01330](https://arxiv.org/abs/2508.01330) (2025) | — | — | Verifiable benchmark of long-horizon GUI tasks with per-subtask answers, released with the LightManus task decomposer, the Jarvis ADB executor for Android and an LLM answer validator. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/KeLes-Coding/NatureGAIA/HEAD/README.md) |
+| [NaturalGAIA](https://github.com/KeLes-Coding/NatureGAIA) | [2508.01330](https://arxiv.org/abs/2508.01330) (2025) | — | — | Verifiable benchmark of long-horizon Android app tasks with per-subtask answers, released with the LightManus task decomposer and an LLM answer validator; three sample tasks are public. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/KeLes-Coding/NatureGAIA/HEAD/README.md) |
 
 ## Datasets
 
