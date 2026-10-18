@@ -61598,7 +61598,7 @@
     "documented_by": [
       "2406.08451"
     ],
-    "notes": "The card now asks users to switch to the newer hflqf88888/GUIOdyssey release, which reports a different episode total; this record keeps the earlier OpenGVLab upload, which the card still links to the GUI-Odyssey repository and paper. Hub API at revision 71e0e7e2: not gated, with all_anno.json, 7,735 annotation JSON files, four split files and screenshot folders; its sibling list stops at 100,000 entries. A paginated Hub tree listing at the same revision counted 118,791 PNG files in 100 screenshot folders; zipped copies of annotations and screenshots sit under zips/. The card declares CC-BY-4.0 for the data.",
+    "notes": "The card now asks users to switch to the newer hflqf88888/GUIOdyssey release, which reports a different episode total; this record keeps the earlier OpenGVLab upload, whose card still links the GUI-Odyssey repository and paper. Hub API at revision 71e0e7e2: not gated, with all_anno.json, 7,735 annotation JSON files, four split files and screenshot folders; its sibling list stops at 100,000 entries. A paginated Hub tree listing at the same revision counted 118,791 PNG files in 100 screenshot folders; zipped copies of annotations and screenshots sit under zips/. The card declares CC-BY-4.0 for the data.",
     "details": {
       "hub_id": "OpenGVLab/GUI-Odyssey",
       "hub_revision": "71e0e7e2d169c642e7a99c264d82ffecadf67889",
