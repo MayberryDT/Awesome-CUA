@@ -105,6 +105,17 @@ class CandidateReviewTests(unittest.TestCase):
         unresolved = {row["id"] for row in queue if "resolution" not in row}
         self.assertEqual(sorted(set(LISTED) & unresolved), [])
 
+    def test_harvest_skips_arxiv_candidates_reviewed_as_non_resources(self):
+        import catalog
+        self.write("candidates.jsonl", [{"id": "arxiv:2306.17882", "url": "https://arxiv.org/abs/2306.17882", "provider": "arxiv", "discovered_in": SOURCE}])
+        self.write("candidate-reviews.json", [{"id": "arxiv:2306.17882", "url": "https://arxiv.org/abs/2306.17882", "decision": "not_a_resource", "reason": "Malformed arXiv number."}])
+        self.write("papers.jsonl", [])
+        self.write("metadata-updates.jsonl", [])
+        with mock.patch.object(catalog, "DATA", self.data), mock.patch.object(catalog, "fetch") as fetch, contextlib.redirect_stdout(io.StringIO()):
+            catalog.harvest(types.SimpleNamespace(refresh=False, limit=50))
+        fetch.assert_not_called()
+        self.assertEqual(catalog.read_jsonl(self.data / "harvest-failures.jsonl"), [])
+
 
 if __name__ == "__main__":
     unittest.main()
