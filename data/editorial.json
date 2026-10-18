@@ -61614,7 +61614,7 @@
       "availability": "Public source; official release metadata inspected",
       "release_tag": "v1.0.0",
       "repository_url": "https://github.com/jayamitkatariya/clickyyy",
-      "repository_tree_sha": "9010b1ddf7b7ac6733884277d3345bc843461e44"
+      "repository_revision": "9010b1ddf7b7ac6733884277d3345bc843461e44"
     },
     "additional_evidence": [
       {
@@ -61633,7 +61633,7 @@
         "supports": [
           "identity",
           "release_status",
-          "details.repository_tree_sha"
+          "details.repository_revision"
         ],
         "url": "https://api.github.com/repos/jayamitkatariya/clickyyy/git/trees/main?recursive=1",
         "sha256": "d0711930977284d1671379ee649329b6df99d86f0faf756fa6a39d30fd0e459a",
