@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-275 source-reviewed resources tagged `web-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+276 source-reviewed resources tagged `web-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (13)](#benchmarks) · [Datasets (8)](#datasets) · [Models (11)](#models) · [Agents (9)](#agents) · [Frameworks (23)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (2)](#infrastructure) · [Products (8)](#products) · [Surveys (2)](#surveys) · [Papers (196)](#papers)
+**Contents:** [Benchmarks (14)](#benchmarks) · [Datasets (8)](#datasets) · [Models (11)](#models) · [Agents (9)](#agents) · [Frameworks (23)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (2)](#infrastructure) · [Products (8)](#products) · [Surveys (2)](#surveys) · [Papers (196)](#papers)
 
 ## Benchmarks
 
@@ -13,6 +13,7 @@ All entries in this section: web.
 | Resource | Paper | Scale | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
 | [AgentRewardBench](https://github.com/McGill-NLP/agent-reward-bench) · [leaderboard](https://huggingface.co/spaces/McGill-NLP/agent-reward-bench-leaderboard) | [2504.08942](https://arxiv.org/abs/2504.08942) (2025) | [1,302 trajectories](https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22%29+AND+submittedDate%3A%5B200001010000+TO+202610160636%5D&start=700&max_results=100&sortBy=submittedDate&sortOrder=descending) | data Custom AgentRewardBench Terms of Use | A benchmark and evaluation toolkit for comparing automatic web-agent judges against expert judgments of task success, side effects and repetition. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/McGill-NLP/agent-reward-bench/HEAD/README.md) |
+| [Bananalyzer](https://github.com/reworkd/bananalyzer) | — | [282 examples](https://raw.githubusercontent.com/reworkd/bananalyzer/d1b1ae52db3fd9e0e3792493f34ccf5b467933c6/static/examples.json) | code MIT | Playwright evaluation suite in which web agents extract structured JSON from saved detail, listing and paginated pages, scored field by field against expected outputs through a generated pytest run. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/reworkd/bananalyzer/HEAD/README.md) |
 | [CUAVerifierBench](https://huggingface.co/datasets/microsoft/CUAVerifierBench) | [2604.06240](https://arxiv.org/abs/2604.06240) (2026) | [106 trajectories](https://huggingface.co/datasets/microsoft/CUAVerifierBench/raw/main/README.md) · [215 annotation rows](https://huggingface.co/datasets/microsoft/CUAVerifierBench/raw/main/README.md) | data mit | Human-annotated browser-agent trajectories for comparing automated task-success and process-quality verifiers against reviewer judgments. | [✓ 2026‑10‑17](https://huggingface.co/datasets/microsoft/CUAVerifierBench/raw/main/README.md) |
 | [Mind2Web](https://github.com/OSU-NLP-Group/Mind2Web) | [2306.06070](https://arxiv.org/abs/2306.06070) (2023) | [1,009 task instances](https://raw.githubusercontent.com/OSU-NLP-Group/Mind2Web/HEAD/README.md) | code MIT | Human demonstrations and tasks for generalist web navigation research. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/OSU-NLP-Group/Mind2Web/HEAD/README.md) |
 | [Mind2Web 2](https://github.com/OSU-NLP-Group/Mind2Web-2) · [leaderboard](https://osu-nlp-group.github.io/Mind2Web-2/#leaderboard) | — | — | code MIT | Long-horizon agentic web search benchmark whose Agent-as-a-Judge framework scores time-varying, citation-backed answers, with evaluation scripts for its dev and test sets. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/OSU-NLP-Group/Mind2Web-2/HEAD/README.md) |
