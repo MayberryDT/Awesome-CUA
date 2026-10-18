@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-170 source-reviewed resources tagged `safety-security`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+171 source-reviewed resources tagged `safety-security`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (7)](#benchmarks) · [Agents (1)](#agents) · [Frameworks (3)](#frameworks) · [Tools (1)](#tools) · [Surveys (4)](#surveys) · [Papers (154)](#papers)
+**Contents:** [Benchmarks (8)](#benchmarks) · [Agents (1)](#agents) · [Frameworks (3)](#frameworks) · [Tools (1)](#tools) · [Surveys (4)](#surveys) · [Papers (154)](#papers)
 
 ## Benchmarks
 
@@ -12,6 +12,7 @@
 | --- | --- | --- | --- | --- | --- | --- |
 | [Adversarial Web Agents](https://github.com/ChenWu98/agent-attack) | web | [2406.12814](https://arxiv.org/abs/2406.12814) (2024) | — | — | Evaluation resources for adversarial attacks on multimodal web agents. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/ChenWu98/agent-attack/HEAD/README.md) |
 | [AgentDAM](https://github.com/facebookresearch/ai-agent-privacy) | web | [2503.09780](https://arxiv.org/abs/2503.09780) (2025) | — | — | Web-agent benchmark for measuring unnecessary use of sensitive personal information during end-to-end task execution. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/facebookresearch/ai-agent-privacy/HEAD/README.md) |
+| [EnvDistraction](https://github.com/xbmxb/EnvDistraction) | web | [2408.02544](https://arxiv.org/abs/2408.02544) (2024) | — | — | Code for the EnvDistraction study, which renders web pages carrying unrelated pop-ups, search results, recommendations or chat messages and scores whether multimodal agents act on the user goal or the distractor. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/xbmxb/EnvDistraction/HEAD/README.md) |
 | [MobileSafetyBench](https://github.com/jylee425/mobilesafetybench) | android | — | — | code Apache-2.0 | Android emulator testbed that scores mobile device-control agents on both safety and helpfulness, using ADB and Appium for observations, actions and success checks. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/jylee425/mobilesafetybench/HEAD/README.md) |
 | [OS-Harm](https://github.com/tml-epfl/os-harm) | desktop | [2506.14866](https://arxiv.org/abs/2506.14866) (2025) | [150 tasks as reported by the paper/README](https://raw.githubusercontent.com/tml-epfl/os-harm/HEAD/README.md) · [50 task IDs](https://raw.githubusercontent.com/tml-epfl/os-harm/HEAD/evaluation_examples/test_misuse.json) | code Apache-2.0 | Benchmark for safety of computer-use agents across misuse, prompt injection, and unintended model behavior. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/tml-epfl/os-harm/HEAD/README.md) |
 | [PopupAttack](https://github.com/SALT-NLP/PopupAttack) | web | — | — | — | Resources for evaluating GUI agents under malicious popup instructions. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/SALT-NLP/PopupAttack/HEAD/README.md) |
