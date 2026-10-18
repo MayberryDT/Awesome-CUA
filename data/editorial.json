@@ -63143,5 +63143,107 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Holo4 27B GGUF",
+    "kind": "model",
+    "url": "https://huggingface.co/Hcompany/Holo4-27B-GGUF",
+    "environments": [
+      "web",
+      "desktop",
+      "cross-platform"
+    ],
+    "topics": [
+      "grounding",
+      "action-prediction",
+      "tool-integration",
+      "efficiency"
+    ],
+    "summary": "Q4_K_M GGUF release of the Holo4-27B computer-use model with a separate F16 vision projector; an external harness sends it screenshots and tool results and executes the actions and tool calls it requests.",
+    "scope": "core",
+    "verify_terms": [
+      "Holo4-27B-GGUF"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/Hcompany/Holo4-27B-GGUF/raw/045834b6864fb5cee8e9c72e47ef4c19140ce932/README.md"
+    ],
+    "family_url": "https://hcompany.ai/research/models",
+    "publisher_id": "organization:h",
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations",
+      "licenses.weights",
+      "details.artifact_type",
+      "details.parameter_label"
+    ],
+    "notes": "Hub metadata marks this repository as a quantized derivative of Hcompany/Holo4-27B. It holds one Q4_K_M language-model GGUF file and an F16 multimodal projector GGUF; the Hub's GGUF metadata reports the qwen35 architecture, 26,895,998,464 parameters and an importance-matrix quantization. The card text is shared with the BF16 release, so its specification and its OSWorld and other scores describe Holo4-27B rather than this 4-bit build; none were reproduced and no weights were loaded. The card declares CC BY-NC 4.0 for the weights and also ships the base model's Apache-2.0 text.",
+    "details": {
+      "hub_id": "Hcompany/Holo4-27B-GGUF",
+      "hub_revision": "045834b6864fb5cee8e9c72e47ef4c19140ce932",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/Hcompany/Holo4-27B-GGUF/tree/045834b6864fb5cee8e9c72e47ef4c19140ce932",
+      "artifact_type": "model-checkpoint",
+      "parameter_label": "27B",
+      "listed_weight_files": [
+        "q4_k_m.gguf",
+        "mmproj.f16.gguf"
+      ]
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "notes",
+          "details.hub_id",
+          "details.hub_revision",
+          "details.gated",
+          "details.disabled",
+          "details.download_url",
+          "details.listed_weight_files"
+        ],
+        "url": "https://huggingface.co/api/models/Hcompany/Holo4-27B-GGUF",
+        "sha256": "277bbeafac3cc3ece9922bf8dd8302727eab4242e72e970f3471b6dbda8557ab",
+        "retrieved_at": "2026-10-18T16:11:10Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.weights"
+        ],
+        "url": "https://huggingface.co/Hcompany/Holo4-27B-GGUF/raw/045834b6864fb5cee8e9c72e47ef4c19140ce932/LICENSE",
+        "sha256": "41003d4a74749c0220e33dd415042164b5a1093ed401f36277234f772d22d3d0",
+        "retrieved_at": "2026-10-18T16:11:12Z"
+      }
+    ],
+    "reviewed_licenses": {
+      "weights": {
+        "value": {
+          "declared": "CC-BY-NC-4.0",
+          "url": "https://huggingface.co/Hcompany/Holo4-27B-GGUF/raw/045834b6864fb5cee8e9c72e47ef4c19140ce932/README.md",
+          "retrieved_at": "2026-10-18T16:11:11Z",
+          "basis": "Publisher model-card declaration for these GGUF weights, matched by the repository's CC BY-NC 4.0 LICENSE file; the bundled Apache-2.0 text covers the Qwen base model, and code and training-data terms are separate."
+        },
+        "reason": "Publisher model-card declaration for these GGUF weights, matched by the repository's CC BY-NC 4.0 LICENSE file; the bundled Apache-2.0 text covers the Qwen base model, and code and training-data terms are separate.",
+        "evidence_urls": [
+          "https://huggingface.co/Hcompany/Holo4-27B-GGUF/raw/045834b6864fb5cee8e9c72e47ef4c19140ce932/README.md",
+          "https://huggingface.co/Hcompany/Holo4-27B-GGUF/raw/045834b6864fb5cee8e9c72e47ef4c19140ce932/LICENSE"
+        ]
+      }
+    },
+    "read_basis": "Read the pinned model card, LICENSE header and Hub API record (file manifest, cardData base_model and base_model_relation, GGUF metadata). No weights were downloaded or run.",
+    "reviewed_sha256": "066e6b3fa8220001ebb98747364eccb95d0ea3dd736d5b9ba5d704f9092a098d",
+    "reviewed_at": "2026-10-18T16:11:31Z"
   }
 ]
