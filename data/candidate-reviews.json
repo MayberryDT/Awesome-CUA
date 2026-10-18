@@ -250,5 +250,11 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:camel-ai/agent",
+    "url": "https://github.com/camel-ai/agent",
+    "decision": "not_a_resource",
+    "reason": "Dead link: the repository page and the GitHub API both return 404 with no rename redirect. The listing labels it OWL, whose repository camel-ai/owl is a separate candidate."
   }
 ]
