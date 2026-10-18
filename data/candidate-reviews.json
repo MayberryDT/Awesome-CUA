@@ -250,5 +250,12 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:aialt/awesome-mobile-agents",
+    "url": "https://github.com/aialt/awesome-mobile-agents",
+    "decision": "alias",
+    "target_id": "arxiv:2411.02006",
+    "reason": "Companion paper and dataset list of the survey arXiv 2411.02006, whose README carries the survey title and BibTeX; it is also the mobile-agents discovery source."
   }
 ]

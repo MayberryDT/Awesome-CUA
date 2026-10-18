@@ -11,9 +11,9 @@
   "exclusion_revalidation_pending": 0,
   "metadata_only_records": 1483,
   "discovery_identifiers": 4052,
-  "unindexed_candidates": 903,
+  "unindexed_candidates": 902,
   "non_resource_candidates": 80,
-  "alias_candidates": 9,
+  "alias_candidates": 10,
   "pending_editorial": [
     {
       "id": "github:thudm/autoglm",
@@ -366,8 +366,8 @@
       "resolved_aliases": 0,
       "curated": 178,
       "excluded": 0,
-      "set_aside": 1,
-      "unindexed": 25
+      "set_aside": 2,
+      "unindexed": 24
     },
     {
       "id": "wjhou-cua",
@@ -396,8 +396,8 @@
       "resolved_aliases": 1,
       "curated": 87,
       "excluded": 0,
-      "set_aside": 1,
-      "unindexed": 35
+      "set_aside": 2,
+      "unindexed": 34
     },
     {
       "id": "steel-web",
