@@ -1,7 +1,7 @@
 {
   "as_of_utc": "2026-10-18T13:06:20.028238+00:00",
-  "total_records": 3175,
-  "curated_records": 1614,
+  "total_records": 3176,
+  "curated_records": 1616,
   "bibliographic_records": 2715,
   "arxiv_active_records": 2702,
   "non_arxiv_bibliographic_records": 13,
@@ -9,9 +9,9 @@
   "arxiv_archive_records": 2838,
   "excluded_records": 136,
   "exclusion_revalidation_pending": 0,
-  "metadata_only_records": 1561,
+  "metadata_only_records": 1560,
   "discovery_identifiers": 4239,
-  "unindexed_candidates": 905,
+  "unindexed_candidates": 903,
   "non_resource_candidates": 97,
   "alias_candidates": 36,
   "pending_editorial": [
@@ -187,7 +187,7 @@
   "uncurated_linked_papers": [],
   "by_kind": {
     "agent": 43,
-    "benchmark": 88,
+    "benchmark": 89,
     "company": 16,
     "dataset": 86,
     "framework": 75,
@@ -207,7 +207,7 @@
     "linux": 49,
     "macos": 30,
     "unspecified": 377,
-    "web": 621,
+    "web": 623,
     "windows": 63
   },
   "curated_by_kind_and_environment": {
@@ -230,7 +230,7 @@
       "linux": 5,
       "macos": 3,
       "unspecified": 3,
-      "web": 42,
+      "web": 43,
       "windows": 5
     },
     "company": {
@@ -288,7 +288,7 @@
       "linux": 18,
       "macos": 14,
       "unspecified": 341,
-      "web": 441,
+      "web": 442,
       "windows": 37
     },
     "product": {
@@ -317,7 +317,7 @@
     }
   },
   "license_declarations_by_scope": {
-    "code": 182,
+    "code": 183,
     "data": 61,
     "weights": 56,
     "document": 0
@@ -373,13 +373,13 @@
         "state": "success"
       },
       "discovered": 218,
-      "indexed": 166,
-      "indexed_resources": 166,
-      "resolved_aliases": 1,
-      "curated": 163,
+      "indexed": 168,
+      "indexed_resources": 167,
+      "resolved_aliases": 2,
+      "curated": 166,
       "excluded": 0,
       "set_aside": 14,
-      "unindexed": 38
+      "unindexed": 36
     },
     {
       "id": "os-agent-survey",
@@ -460,13 +460,13 @@
         "state": "success"
       },
       "discovered": 113,
-      "indexed": 24,
-      "indexed_resources": 24,
-      "resolved_aliases": 1,
-      "curated": 24,
+      "indexed": 25,
+      "indexed_resources": 25,
+      "resolved_aliases": 2,
+      "curated": 25,
       "excluded": 0,
       "set_aside": 7,
-      "unindexed": 82
+      "unindexed": 81
     },
     {
       "id": "steel-web-archive",
@@ -521,7 +521,7 @@
       "indexed": 116,
       "indexed_resources": 115,
       "resolved_aliases": 3,
-      "curated": 109,
+      "curated": 110,
       "excluded": 1,
       "set_aside": 9,
       "unindexed": 44
@@ -605,13 +605,13 @@
         "state": "success"
       },
       "discovered": 78,
-      "indexed": 48,
-      "indexed_resources": 48,
+      "indexed": 49,
+      "indexed_resources": 49,
       "resolved_aliases": 0,
-      "curated": 32,
+      "curated": 34,
       "excluded": 0,
       "set_aside": 3,
-      "unindexed": 27
+      "unindexed": 26
     },
     {
       "id": "supernal-gui",
@@ -695,7 +695,7 @@
       "indexed": 486,
       "indexed_resources": 486,
       "resolved_aliases": 0,
-      "curated": 394,
+      "curated": 395,
       "excluded": 0,
       "set_aside": 45,
       "unindexed": 13
@@ -837,13 +837,13 @@
         "state": "success"
       },
       "discovered": 247,
-      "indexed": 195,
-      "indexed_resources": 195,
+      "indexed": 196,
+      "indexed_resources": 196,
       "resolved_aliases": 3,
-      "curated": 182,
+      "curated": 184,
       "excluded": 0,
       "set_aside": 6,
-      "unindexed": 46
+      "unindexed": 45
     },
     {
       "id": "mobile-agents",
@@ -927,7 +927,7 @@
       "indexed": 59,
       "indexed_resources": 59,
       "resolved_aliases": 0,
-      "curated": 55,
+      "curated": 56,
       "excluded": 0,
       "set_aside": 0,
       "unindexed": 37
@@ -1074,13 +1074,13 @@
         "state": "success"
       },
       "discovered": 27,
-      "indexed": 9,
-      "indexed_resources": 9,
-      "resolved_aliases": 1,
-      "curated": 8,
+      "indexed": 10,
+      "indexed_resources": 10,
+      "resolved_aliases": 2,
+      "curated": 10,
       "excluded": 0,
       "set_aside": 3,
-      "unindexed": 15
+      "unindexed": 14
     },
     {
       "id": "release-fara",
@@ -1894,7 +1894,7 @@
       "indexed": 451,
       "indexed_resources": 451,
       "resolved_aliases": 56,
-      "curated": 385,
+      "curated": 386,
       "excluded": 0,
       "set_aside": 0,
       "unindexed": 45
