@@ -250,5 +250,12 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:platonai/pulsarrpa",
+    "url": "https://github.com/platonai/pulsarRPA",
+    "decision": "alias",
+    "target_id": "github:platonai/browser4",
+    "reason": "PulsarRPA was published from repository 124882400, which is now named platonai/Browser4. The platonai/PulsarRPA name now belongs to a separate repository (1144072510, created 2026-01-28) holding a copy of that history up to January 2026, so it is an older mirror of Browser4 rather than another project."
   }
 ]
