@@ -250,5 +250,11 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:chengyou-jia/agentstore",
+    "url": "https://github.com/chengyou-jia/AgentStore",
+    "decision": "not_a_resource",
+    "reason": "Repository returns 404 from GitHub, its API and raw README on 2026-10-18 (Wayback captures show it was public in early 2025); no code remains at this address. The AgentStore paper is indexed as arxiv:2410.18603."
   }
 ]
