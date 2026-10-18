@@ -61597,7 +61597,7 @@
     "notes": "Source-available under BUSL-1.1, which GitHub reports as NOASSERTION: production, commercial and hosted use need a Core-Mate license until the version's change to Apache-2.0 on 2030-04-29. The WorkBuddy plugin runs on macOS with host-side ADB and scrcpy and signs in through Core-Mate's account service; the DSH plugin also drives a managed browser. The full stack needs Android 11 or later, local PostgreSQL and Redis, and a vision model with tool calling. The README itself says long tasks and device compatibility need more real-world verification; reliability was not tested here.",
     "details": {
       "availability": "Source-available backend, Android client and host plugins; plugin installers and release packages on GitHub",
-      "repository_tree_sha": "8a681b45f170eb2566c3d254e7ee0089ba9f43a5"
+      "repository_revision": "8a681b45f170eb2566c3d254e7ee0089ba9f43a5"
     },
     "reviewed_licenses": {
       "code": {
@@ -61632,7 +61632,7 @@
         "supports": [
           "identity",
           "release_status",
-          "details.repository_tree_sha"
+          "details.repository_revision"
         ],
         "url": "https://api.github.com/repos/Core-Mate/OpenGUI/git/trees/main?recursive=1",
         "sha256": "6e9cd440044867f9b3a5af468ccdb27b211143540cc67024f8f57654bdaddff8",
