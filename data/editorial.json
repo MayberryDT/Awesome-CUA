@@ -17004,7 +17004,7 @@
     "kind": "paper",
     "url": "https://arxiv.org/abs/2505.24838",
     "environments": [
-      "desktop"
+      "web"
     ],
     "topics": [
       "video",
@@ -17021,8 +17021,21 @@
     ],
     "editorial_reviewed": true,
     "reviewed_sha256": "afe4e75ffb8a5c44f4c088a90ffa5f53553036f514aa768f5aee0c5aa38d731e",
-    "reviewed_at": "2026-10-16T12:02:14Z",
-    "notes": "The annotation and scope were reviewed against the primary paper abstract. Experimental results and released artifacts have not been independently reproduced."
+    "reviewed_at": "2026-10-18T13:33:19Z",
+    "notes": "The contribution was reviewed from the retained abstract. Sections 1 and 3 of the exact-version v2 paper identify Onshape as the browser-based interaction environment; the use of pixel-level input does not make the operated surface a desktop application. No experimental results were independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2505.24838v2",
+        "sha256": "a303d95a811331cd6ee23b0340f1b9ef2dd996835bfbc66656a871ff94eead50",
+        "retrieved_at": "2026-10-18T12:02:34.311949+00:00"
+      }
+    ]
   },
   {
     "name": "MagicGUI: A Foundational Mobile GUI Agent with Scalable Data Pipeline and Reinforcement Fine-tuning",
@@ -22880,7 +22893,7 @@
     "kind": "dataset",
     "url": "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/WX8PCK",
     "environments": [
-      "unspecified"
+      "web"
     ],
     "topics": [
       "grounding",
@@ -22891,13 +22904,13 @@
     "verify_terms": [
       "VideoCAD"
     ],
-    "notes": "Dataverse reports a RELEASED version 5.0 with 261 unrestricted files and a CC0-1.0 dataset declaration. Archive count is not a video or trajectory count. The linked repository documents the action and video formats. No archives or training samples were downloaded; operating-system coverage is unspecified.",
+    "notes": "Dataverse reports a RELEASED version 5.0 with 261 unrestricted files and a CC0-1.0 dataset declaration. Archive count is not a video or trajectory count. The author repository documents the action and video formats, and Section 3 of the v2 paper identifies the recorded Onshape browser interface. No archives or training samples were downloaded; operating-system coverage is unspecified.",
     "evidence_urls": [
       "https://dataverse.harvard.edu/api/datasets/:persistentId/?persistentId=doi:10.7910/DVN/WX8PCK"
     ],
     "editorial_reviewed": true,
     "reviewed_sha256": "f67df0a4422a0484aaa2f93cd185b7000070d2a88d919d9ef995587f5e724007",
-    "reviewed_at": "2026-10-17T02:07:18Z",
+    "reviewed_at": "2026-10-18T13:33:19Z",
     "additional_evidence": [
       {
         "role": "primary",
@@ -22907,16 +22920,27 @@
           "relations",
           "details.dataset_profile"
         ],
-        "url": "https://raw.githubusercontent.com/UDGOK/videocad/HEAD/README.md",
-        "sha256": "6c182da7783e740539ce49d91794d299f2ca477a5b0d946bce48649b8fa2e49c",
-        "retrieved_at": "2026-10-17T02:02:45Z"
+        "url": "https://raw.githubusercontent.com/ghadinehme/VideoCAD/2d69eeaf0ac44210c76dcab2d08b4d4610be236c/README.md",
+        "sha256": "cbb08803922b4b7736979ca0a5fe552b111fcd428fa9317401bc090b14bb4e54",
+        "retrieved_at": "2026-10-18T12:02:53.536297+00:00"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2505.24838v2",
+        "sha256": "a303d95a811331cd6ee23b0340f1b9ef2dd996835bfbc66656a871ff94eead50",
+        "retrieved_at": "2026-10-18T12:02:34.311949+00:00"
       }
     ],
     "reviewed_relations": [
       {
         "type": "documented_by",
         "target_id": "arxiv:2505.24838",
-        "evidence_url": "https://raw.githubusercontent.com/UDGOK/videocad/HEAD/README.md"
+        "evidence_url": "https://raw.githubusercontent.com/ghadinehme/VideoCAD/2d69eeaf0ac44210c76dcab2d08b4d4610be236c/README.md"
       }
     ],
     "details": {
@@ -22946,10 +22970,10 @@
           "timestamped UI actions",
           "target model images"
         ],
-        "notes": "The reported video total is distinct from the Dataverse package-file count. The source does not specify OS compatibility.",
+        "notes": "The reported video total is distinct from the Dataverse package-file count. The exact-version paper identifies the recorded interface as browser-based Onshape; operating-system compatibility is not established.",
         "evidence_urls": [
           "https://dataverse.harvard.edu/api/datasets/:persistentId/?persistentId=doi:10.7910/DVN/WX8PCK",
-          "https://raw.githubusercontent.com/UDGOK/videocad/HEAD/README.md"
+          "https://raw.githubusercontent.com/ghadinehme/VideoCAD/2d69eeaf0ac44210c76dcab2d08b4d4610be236c/README.md"
         ],
         "splits": []
       }
