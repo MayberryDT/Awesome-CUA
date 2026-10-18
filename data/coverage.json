@@ -1,7 +1,7 @@
 {
-  "as_of_utc": "2026-10-18T08:01:28Z",
-  "total_records": 3055,
-  "curated_records": 1572,
+  "as_of_utc": "2026-10-18T12:26:45Z",
+  "total_records": 3056,
+  "curated_records": 1573,
   "bibliographic_records": 2606,
   "arxiv_active_records": 2593,
   "non_arxiv_bibliographic_records": 13,
@@ -147,7 +147,7 @@
     "agent": 41,
     "benchmark": 83,
     "company": 16,
-    "dataset": 85,
+    "dataset": 86,
     "framework": 72,
     "infrastructure": 14,
     "model": 98,
@@ -158,14 +158,14 @@
   },
   "curated_by_environment": {
     "android": 294,
-    "cross-platform": 193,
-    "desktop": 320,
+    "cross-platform": 194,
+    "desktop": 321,
     "harmonyos": 3,
     "ios": 20,
     "linux": 47,
     "macos": 30,
     "unspecified": 367,
-    "web": 596,
+    "web": 597,
     "windows": 61
   },
   "curated_by_kind_and_environment": {
@@ -194,13 +194,13 @@
     },
     "dataset": {
       "android": 34,
-      "cross-platform": 14,
-      "desktop": 18,
+      "cross-platform": 15,
+      "desktop": 19,
       "ios": 1,
       "linux": 7,
       "macos": 2,
       "unspecified": 8,
-      "web": 24,
+      "web": 25,
       "windows": 4
     },
     "framework": {
