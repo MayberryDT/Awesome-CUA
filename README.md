@@ -1,7 +1,7 @@
 # Awesome Computer-Use Agents
 
 <!-- BADGES:START -->
-[![Resources](https://img.shields.io/badge/resources-3%2C055-4f46e5)](data/catalog.jsonl) [![Curated](https://img.shields.io/badge/source--reviewed-1%2C572-0e8a16)](docs/coverage.md) [![Evidence](https://img.shields.io/badge/evidence%20through-2026--10--18-1d76db)](docs/coverage.md) [![Catalog quality](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml/badge.svg)](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml) [![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE) [![Website](https://img.shields.io/badge/website-awesomecua.github.io-6366f1)](https://awesomecua.github.io/)
+[![Resources](https://img.shields.io/badge/resources-3%2C056-4f46e5)](data/catalog.jsonl) [![Curated](https://img.shields.io/badge/source--reviewed-1%2C573-0e8a16)](docs/coverage.md) [![Evidence](https://img.shields.io/badge/evidence%20through-2026--10--18-1d76db)](docs/coverage.md) [![Catalog quality](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml/badge.svg)](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml) [![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE) [![Website](https://img.shields.io/badge/website-awesomecua.github.io-6366f1)](https://awesomecua.github.io/)
 <!-- BADGES:END -->
 
 **A source-backed data catalog for computer-use, GUI, browser, and mobile agents.**
@@ -53,9 +53,9 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 
 <!-- STATS:START -->
 
-**3,055 resource records** · **1,572 curated** · **2,606 paper and survey records** · **47 discovery documents**
+**3,056 resource records** · **1,573 curated** · **2,606 paper and survey records** · **47 discovery documents**
 
-Evidence through `2026-10-18T08:01:28Z`. 1,483 records have bibliographic verification only; 903 discovered identifiers remain unresolved, not counting 89 links reviewed as non-resources or other addresses of indexed resources. 122 scope exclusions retain their original metadata in the archive. Counts overlap as explained below.
+Evidence through `2026-10-18T11:06:08Z`. 1,483 records have bibliographic verification only; 903 discovered identifiers remain unresolved, not counting 89 links reviewed as non-resources or other addresses of indexed resources. 122 scope exclusions retain their original metadata in the archive. Counts overlap as explained below.
 
 <!-- STATS:END -->
 
@@ -67,10 +67,10 @@ Evidence through `2026-10-18T08:01:28Z`. 1,483 records have bibliographic verifi
 | [Research by topic](docs/topics.md) · **1,108** reviewed papers · [Full bibliography](docs/papers.md) · 2,606 paper and survey records | [Agents](docs/agents.md) · **41** |
 | [Surveys](docs/surveys.md) · **15** | [Frameworks](docs/frameworks.md) · **72** |
 | [Datasets](docs/datasets.md) · **85** | [Infrastructure](docs/infrastructures.md) · **14** |
-| [Benchmarks](docs/benchmarks.md) · **83** | [Tools](docs/tools.md) · **20** |
+| [Benchmarks](docs/benchmarks.md) · **84** | [Tools](docs/tools.md) · **20** |
 | [Models and checkpoint releases](docs/models.md) · **98** | [Products](docs/products.md) · **20** · [Publishers and brands](docs/companies.md) · **16** |
 
-**By platform:** [Web](docs/environments/web.md) **596** · [Desktop](docs/environments/desktop.md) **320** · [Windows](docs/environments/windows.md) **61** · [macOS](docs/environments/macos.md) **30** · [Linux](docs/environments/linux.md) **47** · [Android](docs/environments/android.md) **294** · [iOS](docs/environments/ios.md) **20** · [HarmonyOS](docs/environments/harmonyos.md) **3** · [Cross-platform](docs/environments/cross-platform.md) **193**
+**By platform:** [Web](docs/environments/web.md) **597** · [Desktop](docs/environments/desktop.md) **320** · [Windows](docs/environments/windows.md) **61** · [macOS](docs/environments/macos.md) **30** · [Linux](docs/environments/linux.md) **47** · [Android](docs/environments/android.md) **294** · [iOS](docs/environments/ios.md) **20** · [HarmonyOS](docs/environments/harmonyos.md) **3** · [Cross-platform](docs/environments/cross-platform.md) **193**
 <!-- EXPLORE:END -->
 
 Coverage spans web, desktop, Android, iOS, Windows, macOS, Linux, and cross-platform work. Topics include grounding, screen understanding, planning, memory, long-horizon workflows, reinforcement learning, data generation, safety, robustness, and evaluation. Environment facets overlap; framework support is not assumed from a model's benchmark results.
@@ -90,7 +90,7 @@ The most-mentioned curated resources per category: the count is how many other c
 | 2025‑05‑16 | [A Survey on the Safety and Security Threats of Computer-Using Agents: JARVIS or Ultron?](https://arxiv.org/abs/2505.10924) | cross-platform |
 | 2025‑04‑29 | [A Survey on GUI Agents with Foundation Models Enhanced by Reinforcement Learning](https://arxiv.org/abs/2504.20464) | cross-platform |
 
-**Benchmarks** · [all 83 →](docs/benchmarks.md)
+**Benchmarks** · [all 84 →](docs/benchmarks.md)
 
 | Resource | Mentions | Environments | Paper | License | Description |
 | --- | ---: | --- | --- | --- | --- |
@@ -154,6 +154,7 @@ Newest editorial approvals of models, datasets, benchmarks, systems, and tools (
 <!-- RECENT:START -->
 | Reviewed | Resource | Kind | Environments | Description |
 | --- | --- | --- | --- | --- |
+| 2026‑10‑18 | [WebArena-Verified](https://github.com/ServiceNow/webarena-verified) | benchmark | web | An audited re-release of WebArena's 812 web tasks with corrected reference answers and deterministic evaluators that score structured agent responses and captured network traces, plus a 258-task hard subset. |
 | 2026‑10‑18 | [ZonUI-3B checkpoint](https://huggingface.co/zonghanHZH/ZonUI-3B) | model | cross-platform, desktop, web | Qwen2.5-VL-3B-based GUI grounding checkpoint that predicts click locations from screenshots and text instructions across desktop, mobile and web screens. |
 | 2026‑10‑18 | [WindowsAgentArena-V2](https://github.com/GAIR-NLP/WindowsAgentArena-V2) | benchmark | desktop, windows | Windows benchmark revision with task/evaluator fixes and VM-initialization support, documented alongside PC-Agent-E. |
 | 2026‑10‑18 | [WebSRC v1.0](https://huggingface.co/datasets/X-LANCE/WebSRC_v1.0) | dataset | web | Webpage segments, questions, answers, HTML, screenshots and layout metadata for structural reading comprehension. |
@@ -165,7 +166,6 @@ Newest editorial approvals of models, datasets, benchmarks, systems, and tools (
 | 2026‑10‑18 | [PC-Agent (X-PLUG component)](https://github.com/X-PLUG/MobileAgent/tree/main/PC-Agent) | agent | desktop, windows, macos | Multi-agent desktop automation component for Windows and macOS, combining active perception, task decomposition and reflection for workflows spanning applications. |
 | 2026‑10‑18 | [OpenApps](https://github.com/facebookresearch/OpenApps) | benchmark | web | Configurable browser apps and task rewards for testing computer-use agents under changes in content, layout and appearance. |
 | 2026‑10‑18 | [Mobile-Eval-E task definitions](https://huggingface.co/datasets/mikewang/mobile_eval_e) | benchmark | android | Task definitions for Mobile-Agent-E’s long-horizon, multi-app Android evaluation, packaged as a 25-record test split with rubrics and human-reference operation strings. |
-| 2026‑10‑18 | [Mobile-Agent-E code component](https://github.com/X-PLUG/MobileAgent/tree/main/Mobile-Agent-E) | agent | android | Android automation component with hierarchical planning, reflection and persistent tips/shortcuts learned across task sequences. |
 <!-- RECENT:END -->
 
 ## Use the data
