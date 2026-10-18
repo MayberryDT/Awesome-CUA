@@ -61625,9 +61625,7 @@
     "details": {
       "access": "publisher-managed",
       "pricing_url": null,
-      "availability": "not independently tested",
-      "announced_at": "2025-04-15",
-      "announcement_url": "https://www.microsoft.com/en-us/copilot/blog/copilot-studio/announcing-computer-use-microsoft-copilot-studio-ui-automation/"
+      "availability": "not independently tested"
     },
     "additional_evidence": [
       {
