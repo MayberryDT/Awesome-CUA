@@ -16,6 +16,10 @@ Supporting automation libraries and workflow recording tools may be marked `adja
 4. Editorial resources use official repositories, publisher documentation, and model/dataset cards. A reachable page or name match alone is insufficient for curation.
 5. Editorial decisions are AI-assisted, not an assertion of independent human peer review. The reviewed content digest is recorded. A changed snapshot cannot inherit approval merely because its URL still works.
 
+The [18 October 2026 expansion review](reviews/2026-10-18-expansion-review.md)
+shows how these rules changed annotations, withheld approvals, and preserved
+conflicting license declarations in a concrete batch.
+
 ## Identity and deduplication
 
 - arXiv PDF, abstract, HTML, versioned URLs, and Hugging Face paper mirrors map to one version-independent arXiv ID.

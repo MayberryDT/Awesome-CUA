@@ -17,7 +17,7 @@
 [阅读英文研究综述](https://awesomecua.github.io/survey/) — 连接方法、评测、人的控制权与可复用研究资产；工作稿附有固定版本书目和逐篇阅读记录。
 
 <!-- BADGES:START -->
-[![Catalog records](https://img.shields.io/badge/records-3%2C177-4856df?style=flat-square&labelColor=303447)](data/catalog.jsonl) [![Source-reviewed records](https://img.shields.io/badge/source--reviewed-1%2C619-4856df?style=flat-square&labelColor=303447)](docs/coverage.md) [![Catalog checks](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml/badge.svg?branch=main)](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml) [![MIT license](https://img.shields.io/badge/license-MIT-606779?style=flat-square&labelColor=303447)](LICENSE)
+[![Catalog records](https://img.shields.io/badge/records-3%2C175-4856df?style=flat-square&labelColor=303447)](data/catalog.jsonl) [![Source-reviewed records](https://img.shields.io/badge/source--reviewed-1%2C614-4856df?style=flat-square&labelColor=303447)](docs/coverage.md) [![Catalog checks](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml/badge.svg?branch=main)](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml) [![MIT license](https://img.shields.io/badge/license-MIT-606779?style=flat-square&labelColor=303447)](LICENSE)
 <!-- BADGES:END -->
 
 [按任务查找](#按任务查找) · [浏览](#浏览) · [重点资源](#重点资源) · [最新审阅](#最新审阅) · [使用数据](#使用数据)
@@ -73,9 +73,9 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 
 <!-- STATS:START -->
 
-**3,177 条资源记录** · **1,619 条已审阅** · **2,715 条论文与综述记录** · **54 个发现来源文档**
+**3,175 条资源记录** · **1,614 条已审阅** · **2,715 条论文与综述记录** · **54 个发现来源文档**
 
-证据截至 `2026-10-18T12:03:30.911159+00:00`。1,558 条记录仅完成书目核实；903 个已发现的标识符尚待处理，另有 133 个链接经审阅确认为非资源或已收录资源的其他地址，不计入其中。136 条范围排除记录在归档中保留原始元数据。各项计数存在重叠，详见下文。
+证据截至 `2026-10-18T13:06:20.028238+00:00`。1,561 条记录仅完成书目核实；905 个已发现的标识符尚待处理，另有 133 个链接经审阅确认为非资源或已收录资源的其他地址，不计入其中。136 条范围排除记录在归档中保留原始元数据。各项计数存在重叠，详见下文。
 
 <!-- STATS:END -->
 
@@ -84,13 +84,13 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 <!-- EXPLORE:START -->
 | 研究与训练 | 工程与产业 |
 | --- | --- |
-| [按主题浏览研究](docs/topics.md) · **1,139** 篇已审阅论文 · [完整论文目录](docs/papers.md) · 2,715 条论文与综述记录 | [智能体](docs/agents.md) · **43** |
+| [按主题浏览研究](docs/topics.md) · **1,136** 篇已审阅论文 · [完整论文目录](docs/papers.md) · 2,715 条论文与综述记录 | [智能体](docs/agents.md) · **43** |
 | [综述](docs/surveys.md) · **18** | [框架](docs/frameworks.md) · **75** |
 | [数据集](docs/datasets.md) · **86** | [基础设施](docs/infrastructures.md) · **14** |
-| [基准](docs/benchmarks.md) · **90** | [工具](docs/tools.md) · **20** |
+| [基准](docs/benchmarks.md) · **88** | [工具](docs/tools.md) · **20** |
 | [模型与权重版本](docs/models.md) · **98** | [产品](docs/products.md) · **20** · [发布方与品牌](docs/companies.md) · **16** |
 
-**按平台：** [Web](docs/environments/web.md) **622** · [Desktop](docs/environments/desktop.md) **325** · [Windows](docs/environments/windows.md) **64** · [macOS](docs/environments/macos.md) **31** · [Linux](docs/environments/linux.md) **50** · [Android](docs/environments/android.md) **311** · [iOS](docs/environments/ios.md) **21** · [HarmonyOS](docs/environments/harmonyos.md) **3** · [Cross-platform](docs/environments/cross-platform.md) **209**
+**按平台：** [Web](docs/environments/web.md) **619** · [Desktop](docs/environments/desktop.md) **323** · [Windows](docs/environments/windows.md) **63** · [macOS](docs/environments/macos.md) **30** · [Linux](docs/environments/linux.md) **49** · [Android](docs/environments/android.md) **300** · [iOS](docs/environments/ios.md) **21** · [HarmonyOS](docs/environments/harmonyos.md) **3** · [Cross-platform](docs/environments/cross-platform.md) **197**
 <!-- EXPLORE:END -->
 
 覆盖 Web、桌面、Android、iOS、Windows、macOS、Linux 和跨平台工作。主题包括 grounding、屏幕理解、规划、记忆、长流程任务、强化学习、数据生成、安全、鲁棒性和评测。环境分面可以重叠；不会根据模型的基准成绩推定框架支持。
@@ -106,11 +106,11 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 | --- | --- | --- |
 | 2026‑09‑02 | [Efficient GUI Agents: A Systems Survey of Observation, Memory, Action, and Runtime Optimization](https://arxiv.org/abs/2609.02309) | cross-platform |
 | 2026‑08‑30 | [A Systematic Survey of Agentic Skills: Architecture, Lifecycle, and Security](https://arxiv.org/abs/2608.29596) | cross-platform |
-| 2026‑04‑17 | [A Survey on Long-Term Memory Security in LLM Agents: Attacks, Defenses, and Governance Across the Memory Lifecycle](https://arxiv.org/abs/2604.16548) | cross-platform |
+| 2026‑04‑17 | [A Survey on Long-Term Memory Security in LLM Agents: Attacks, Defenses, and Governance Across the Memory Lifecycle](https://arxiv.org/abs/2604.16548) | unspecified |
 | 2026‑02‑12 | [Agent Skills for Large Language Models: Architecture, Acquisition, Security, and the Path Forward](https://arxiv.org/abs/2602.12430) | unspecified |
 | 2025‑08‑06 | [OS Agents: A Survey on MLLM-based Agents for General Computing Devices Use](https://arxiv.org/abs/2508.04482) | cross-platform |
 
-**基准** · [全部 90 项 →](docs/benchmarks.md)
+**基准** · [全部 88 项 →](docs/benchmarks.md)
 
 | 资源 | 被提及 | 环境 | 论文 | 许可 | 简介（英文） |
 | --- | ---: | --- | --- | --- | --- |
@@ -174,16 +174,16 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 <!-- RECENT:START -->
 | 审阅日期 | 资源 | 类型 | 环境 | 简介（英文） |
 | --- | --- | --- | --- | --- |
+| 2026‑10‑18 | [VeriSafe Agent](https://github.com/VeriSafeAgent/VeriSafeAgent) | 框架 | android | Runtime verification framework for Android GUI agents that checks proposed actions against logical rules derived from user instructions and developer-defined app states. |
+| 2026‑10‑18 | [VeriOS](https://github.com/Wuzheng02/VeriOS) | 框架 | unspecified | Research code for proactive human–GUI-agent verification, including offline interaction-loop and dual-agent evaluation scripts plus LLaMA-Factory fine-tuning configurations. |
+| 2026‑10‑18 | [SheetCopilot](https://github.com/BraveGroup/SheetCopilot) | 智能体 | desktop, windows, linux | Spreadsheet automation agent for Windows/Excel, with benchmark assets and a separately released headless Ubuntu evaluation backend. |
+| 2026‑10‑18 | [MONDAY](https://github.com/runamu/monday) | 数据集 | android, ios, cross-platform | Cross-platform mobile GUI trajectory dataset derived from instructional videos, with released data-processing helpers and example evaluation code for Android and iOS data. |
+| 2026‑10‑18 | [LearnAct](https://github.com/lgy0404/LearnAct) | 智能体 | unspecified | Released inference and evaluation code for demonstration-conditioned mobile GUI agents on LearnGUI-Offline. The repository describes a multi-agent adaptation method and links the LearnGUI demonstrations. |
+| 2026‑10‑18 | [BrowserART](https://github.com/scaleapi/browser-art) | 基准 | web | Red-teaming benchmark and test suite from Scale AI evaluating whether refusal-trained language models can be jailbroken when deployed as browser agents. |
+| 2026‑10‑18 | [AgentStudio](https://github.com/skyworkai/agent-studio) | 框架 | desktop, linux | Toolkit and Ubuntu-based environment for building and evaluating generalist computer-use agents through GUI and API interaction. |
 | 2026‑10‑18 | [VideoCAD training and evaluation code](https://github.com/ghadinehme/VideoCAD) | 框架 | web | VideoCADFormer training, action-log preprocessing and evaluation code for learning CAD interface action sequences from screen recordings of browser-based Onshape. |
 | 2026‑10‑18 | [GUIPivot](https://github.com/ZrW00/GUIPivot) | 框架 | android | Query-inference training tools connecting screenshot grounding with GUI action reasoning, including preprocessing, query refinement and offline single-step evaluation on AndroidControl and AITZ. |
-| 2026‑10‑18 | [SheetCopilot](https://github.com/BraveGroup/SheetCopilot) | 智能体 | desktop, windows, linux | Spreadsheet automation agent and evaluation environment that translates natural-language requests into atomic spreadsheet operations on Windows and Ubuntu Linux. |
-| 2026‑10‑18 | [LearnAct](https://github.com/lgy0404/LearnAct) | 智能体 | android | Few-shot mobile GUI agent framework and LearnGUI demonstration benchmark for adapting smartphone agents from human task demonstrations. |
-| 2026‑10‑18 | [AgentStudio](https://github.com/skyworkai/agent-studio) | 框架 | desktop, linux, windows, macos, cross-platform | Open-source toolkit, interactive virtual environment, and benchmark suite for building and evaluating generalist computer-use agents across desktop operating systems. |
-| 2026‑10‑18 | [VeriSafe Agent](https://github.com/VeriSafeAgent/VeriSafeAgent) | 框架 | android | Logic-based runtime verification framework that compiles natural-language safety rules into formal predicates checked before mobile GUI agent actions execute. |
-| 2026‑10‑18 | [VeriOS](https://github.com/Wuzheng02/VeriOS) | 框架 | android | Query-driven proactive verification framework and training code for OS agents that detect underspecified or risky GUI states and ask users for clarification. |
-| 2026‑10‑18 | [MONDAY](https://github.com/runamu/monday) | 数据集 | android, ios, cross-platform | Video-to-dataset generation pipeline and cross-platform mobile GUI trajectory dataset extracted from public instructional videos across Android and iOS. |
 | 2026‑10‑18 | [MLA-Trust](https://github.com/thu-ml/MLA-Trust) | 基准 | web, android, cross-platform | Unified evaluation framework measuring truthfulness, controllability, safety, and privacy of multimodal LLM agents across interactive web and mobile GUI tasks. |
-| 2026‑10‑18 | [Agent-SafetyBench](https://github.com/thu-coai/Agent-SafetyBench) | 基准 | cross-platform | Safety evaluation benchmark and ShieldAgent scoring pipeline covering 349 interactive environments and 2,000 test cases across eight agent risk categories. |
 | 2026‑10‑18 | [ST-WebAgentBench](https://github.com/segev-shlomov/ST-WebAgentBench) | 基准 | web | BrowserGym-based benchmark for evaluating the safety and policy compliance of enterprise web agents across six trustworthiness risk dimensions. |
 | 2026‑10‑18 | [EIA](https://github.com/OSU-NLP-Group/EIA_against_webagent) | 基准 | web | Evaluation suite for Environmental Injection Attacks that embed invisible malicious HTML elements into benign websites to test privacy leakage in generalist web agents. |
 <!-- RECENT:END -->

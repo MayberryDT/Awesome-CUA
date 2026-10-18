@@ -1,12 +1,12 @@
 # Coverage and quality ledger
 
-Evidence snapshot through **2026-10-18T12:03:30.911159+00:00**. Generated from committed source receipts.
+Evidence snapshot through **2026-10-18T13:06:20.028238+00:00**. Generated from committed source receipts.
 
-- 3,177 resource records: 1,619 curated; 1,558 bibliographic metadata only.
+- 3,175 resource records: 1,614 curated; 1,561 bibliographic metadata only.
 - 2,715 paper and survey records, including 2,702 arXiv identities and 13 publisher-only identities. This count overlaps the status counts above.
 - 2,838 retained arXiv metadata records; 136 explicit scope exclusions are outside the active catalog.
-- 4,239 discovery identifiers; 903 remain unresolved after accounting for scope exclusions and for 97 reviewed non-resource links and 36 other addresses of indexed resources, which stay in the review queue with their reasons.
-- 19 editorial proposals await verification or review.
+- 4,239 discovery identifiers; 905 remain unresolved after accounting for scope exclusions and for 97 reviewed non-resource links and 36 other addresses of indexed resources, which stay in the review queue with their reasons.
+- 24 editorial proposals await verification or review.
 
 These are distinct resource identifiers, not distinct research projects. Papers, repositories, datasets, products, and publisher entities have different grains.
 
@@ -16,16 +16,16 @@ Counts of source-reviewed resources. A resource tagged with several environments
 
 | Kind | web | desktop | windows | macos | linux | android | ios | harmonyos | cross-platform | unspecified |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| [agent](agents.md) | 11 | 16 | 5 | 2 | 1 | 17 | 1 | · | 1 | · |
-| [benchmark](benchmarks.md) | 43 | 20 | 5 | 3 | 5 | 19 | 1 | · | 16 | 3 |
+| [agent](agents.md) | 11 | 16 | 5 | 2 | 1 | 16 | 1 | · | 1 | 1 |
+| [benchmark](benchmarks.md) | 42 | 20 | 5 | 3 | 5 | 19 | 1 | · | 14 | 3 |
 | [company](companies.md) | · | · | · | · | · | · | · | · | · | 16 |
 | [dataset](datasets.md) | 24 | 18 | 4 | 2 | 7 | 35 | 2 | · | 15 | 8 |
-| [framework](frameworks.md) | 37 | 22 | 3 | 2 | 6 | 21 | 1 | 1 | 8 | 1 |
+| [framework](frameworks.md) | 37 | 22 | 2 | 1 | 6 | 20 | 1 | 1 | 7 | 2 |
 | [infrastructure](infrastructures.md) | 5 | 9 | 1 | 2 | 4 | 3 | 1 | · | · | · |
 | [model](models.md) | 28 | 24 | 5 | 4 | 6 | 24 | 4 | · | 47 | 2 |
-| [paper](topics.md) | 443 | 207 | 37 | 14 | 19 | 185 | 8 | 2 | 108 | 332 |
+| [paper](topics.md) | 440 | 205 | 37 | 14 | 18 | 176 | 8 | 2 | 101 | 341 |
 | [product](products.md) | 18 | 5 | · | · | · | · | · | · | · | · |
-| [survey](surveys.md) | 2 | 1 | 1 | · | · | 2 | 1 | · | 13 | 2 |
+| [survey](surveys.md) | 3 | 1 | 1 | · | · | 2 | 1 | · | 11 | 3 |
 | [tool](tools.md) | 11 | 3 | 3 | 2 | 2 | 5 | 2 | · | 1 | 2 |
 
 ## Source snapshot coverage
@@ -36,7 +36,7 @@ The denominator is the normalized identifiers extracted from each fetched docume
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | --- |
 | [ShowLab Awesome GUI Agent](https://github.com/showlab/Awesome-GUI-Agent) | 338 | 226 | 215 | 0 | 29 | 83 | OK · 2026-10-17 |
 | [ZJU REAL Awesome GUI Agents](https://github.com/ZJU-REAL/Awesome-GUI-Agents) | 218 | 166 | 163 | 0 | 14 | 38 | OK · 2026-10-17 |
-| [OS Agents Survey](https://github.com/OS-Agent-Survey/OS-Agent-Survey) | 224 | 198 | 179 | 0 | 6 | 20 | OK · 2026-10-17 |
+| [OS Agents Survey](https://github.com/OS-Agent-Survey/OS-Agent-Survey) | 224 | 198 | 178 | 0 | 6 | 20 | OK · 2026-10-17 |
 | [Awesome Computer Use Agents — wjhou](https://github.com/wjhou/awesome-computer-use-agents) | 132 | 96 | 87 | 0 | 6 | 30 | OK · 2026-10-17 |
 | [Steel Awesome Web Agents](https://github.com/steel-dev/awesome-web-agents) | 113 | 24 | 24 | 0 | 7 | 82 | OK · 2026-10-17 |
 | [Steel Web Agents Archive](https://github.com/steel-dev/awesome-web-agents/blob/main/ARCHIVE.md) | 7 | 1 | 1 | 0 | 0 | 6 | OK · 2026-10-17 |
@@ -56,7 +56,7 @@ The denominator is the normalized identifiers extracted from each fetched docume
 | [albzni/Awesome-LLM-based-Web-Agent-and-Tools](https://github.com/albzni/Awesome-LLM-based-Web-Agent-and-Tools) | 10 | 4 | 4 | 0 | 0 | 6 | OK · 2026-10-17 |
 | [ranpox/awesome-computer-use](https://github.com/ranpox/awesome-computer-use) | 96 | 59 | 55 | 0 | 0 | 37 | OK · 2026-10-17 |
 | [Awesome GUI Agent Security](https://github.com/Yuxuan2003/Awesome-GUI-Agent-Security) | 186 | 186 | 136 | 0 | 0 | 0 | OK · 2026-10-18 |
-| [Awesome GUI Agent Safety](https://github.com/Autonomous-Agent-Team/Awesome-GUI-Agent-Safety) | 72 | 53 | 39 | 0 | 13 | 6 | OK · 2026-10-18 |
+| [Awesome GUI Agent Safety](https://github.com/Autonomous-Agent-Team/Awesome-GUI-Agent-Safety) | 72 | 51 | 34 | 0 | 13 | 8 | OK · 2026-10-18 |
 | [Awesome GUI Agent Memory](https://github.com/kqcoxn/Awesome-GUI-Agent-Memory) | 50 | 46 | 39 | 0 | 1 | 3 | OK · 2026-10-18 |
 | [ChenVoid Awesome GUI Agent](https://github.com/ChenVoid/Awesome-GUI-Agent) | 215 | 151 | 129 | 14 | 14 | 36 | OK · 2026-10-18 |
 | [Awesome Computer Use — philfung](https://github.com/philfung/awesome-computer-use) | 27 | 9 | 8 | 0 | 3 | 15 | OK · 2026-10-18 |
@@ -142,7 +142,7 @@ The recorded title query returned 1,199 unique records out of 1,246 reported mat
 
 | Scope | Recorded declarations |
 | --- | ---: |
-| code | 185 |
+| code | 182 |
 | data | 61 |
 | weights | 56 |
 | document | 0 |
@@ -151,7 +151,7 @@ A code license never fills a data or weights field. Hub declarations are publish
 
 ## Pending editorial proposals
 
-19 proposals: 3 with unresolved primary evidence, 0 whose current source snapshot awaits review, 16 held by a reviewer after reading the current source, and 0 awaiting another scope review.
+24 proposals: 3 with unresolved primary evidence, 0 whose current source snapshot awaits review, 21 held by a reviewer after reading the current source, and 0 awaiting another scope review.
 
 | Resource | Reason |
 | --- | --- |
@@ -159,6 +159,7 @@ A code license never fills a data or weights field. Hub declarations are publish
 | [Comet](https://www.perplexity.ai/comet) | primary evidence unresolved: HTTP Error 403: Forbidden; www.perplexity.ai answers HTTP 403 to the catalog's identified client for /comet and for its blog and help-center paths, and comet.perplexity.ai and perplexity.ai/comet redirect to /comet. No first-party page could be read, so the summary is unchecked; approval needs a first-party source the catalog client can fetch. |
 | [MM-Navigator](https://github.com/zzxslp/MM-Navigator) | The fresh README still says code and the evaluation benchmark will be out soon. The public tree contains call_gpt4.py and eval.py, but no benchmark release or usage/dependency documentation sufficient to validate a usable agent artifact. Preserve the paper separately. |
 | [InfiGUIAgent](https://github.com/InfiXAI/InfiGUIAgent) | The fresh README still explains that third-party training-data restrictions delay the full model release. The repository tree contains only README/images, and the linked Reallm-Labs collection API returns 404; no code or checkpoint release is established. |
+| [Agent-SafetyBench: Evaluating the Safety of LLM Agents](https://arxiv.org/abs/2412.14470) | Reviewer hold after a separate follow-up review of the prior adjacent approval: the retained abstract and full-text Section 3.2.1 and Appendix C describe JSON-schema/Python simulated tool environments and content-safety cases, without a specific GUI or browser execution basis. Preserve the bibliography as metadata-only pending a supported adjacent-scope rationale; this is not a scope exclusion. |
 | [ChatUITest / GTArena project hub](https://github.com/ZJU-ACES-ISE/ChatUITest) | The fresh README remains under construction and says the dataset is being organized/uploaded. The tree has only README.md, and the linked GTArena-UI-Defects API and raw card return 401. No access request was made. UIDefectMocker is already cataloged separately. |
 | [CarryOn implementation release](https://github.com/Ethannju/carryon) | Primary README reviewed; implementation release is still pending. The paper is cataloged separately. |
 | [GraceBench task and evaluation release](https://iaie-physicalai.github.io/GraceBench) | Primary project page reviewed; task definitions, data, and evaluation-code release remain pending. The paper is cataloged separately. |
@@ -174,6 +175,10 @@ A code license never fills a data or weights field. Hub declarations are publish
 | [An Information Theoretic Perspective on Agentic System Design](https://arxiv.org/abs/2512.21720) | The abstract studies compressor-predictor language-model systems and Deep Research. A concrete connection to GUI, browser or operating-system interaction needs further primary-source review. |
 | [Rethinking Scale: Deployment Trade-offs of Small Language Models under Agent Paradigms](https://arxiv.org/abs/2604.19299) | The abstract compares base models, tool-equipped agents and multi-agent systems without identifying interface-interaction tasks. Retain as metadata pending a task-level scope check. |
 | [HazardAuditor: From Executable Threats to Safer Computer-Use Agents](https://arxiv.org/abs/2609.15134) | The abstract trains safety guards from normalized events across Claude Code, Codex, Hermes and OpenClaw. Browser interaction appears in the general motivation, but it does not identify actual GUI/browser tasks or the execution interface of its evaluated benchmarks. Harness names and the computer-use label alone do not establish material GUI evidence. |
+| [AgentAttack](https://github.com/OSU-NLP-Group/AgentAttack) | Reviewer hold: the retained README accompanies a conceptual position paper and lists related work; the official repository tree contains a README, two images, and .DS_Store, with no executable benchmark or test dataset. Do not classify this bibliography as a released benchmark. |
+| [Agent-SafetyBench](https://github.com/thu-coai/Agent-SafetyBench) | Reviewer hold: this release evaluates general tool-using agents in JSON-schema/Python simulated environments. The retained README and paper Sections 3.2.1 and Appendix C do not establish direct GUI or browser execution for this benchmark. Keep the source and receipt pending an explicit adjacent-scope justification. |
+| [PrivacyLens: Evaluating Privacy Norm Awareness of Language Models in Action](https://arxiv.org/abs/2409.00138) | Reviewer hold: the retained abstract and full-text Sections 3.2–3.3 describe ToolEmu/GPT-4-emulated tool trajectories and final-action privacy evaluation. They do not establish direct GUI or browser interaction for this method. Preserve the bibliographic record as metadata-only pending an explicit adjacent-scope justification. |
+| [Progent: Securing AI Agents with Privilege Control](https://arxiv.org/abs/2504.11703) | Reviewer hold: the retained abstract and full-text Sections 8–9 evaluate typed tool-call policies on AgentDojo/ASB and MCP integrations. Section 9 explicitly excludes graphical-interface tool calls from the current method. Preserve the bibliographic record as metadata-only; do not describe this as a web/GUI defense. |
 
 ## Uncurated papers behind curated resources
 

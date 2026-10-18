@@ -255,7 +255,7 @@
     "id": "arxiv:2306.17882",
     "url": "https://arxiv.org/abs/2306.17882",
     "decision": "not_a_resource",
-    "reason": "Malformed arXiv link in ChenVoid/Awesome-GUI-Agent for AdbGPT; June 2023 arXiv identifiers end at 2306.17859."
+    "reason": "The ChenVoid discovery source attributes AdbGPT to this identifier, but the retained arXiv API response requested it and returned no matching entry. Set aside this unresolved source link pending an upstream correction; no replacement identifier is inferred."
   },
   {
     "id": "github:sindresorhus/awesome",

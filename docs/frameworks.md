@@ -6,7 +6,7 @@ Curated metadata, not a performance ranking. Each entry links its first-party ev
 
 *Paper* lists reviewed `introduced_by`/`documented_by` relations with the record's year. *License* lists publisher declarations by scope (code, data, weights, document). *Evidence* links the reviewed first-party snapshot and its retrieval date.
 
-**75 resources:** [Web (28)](#web) · [Desktop (13)](#desktop) · [Mobile (19)](#mobile) · [Cross-platform (14)](#cross-platform) · [Unspecified (1)](#unspecified)
+**75 resources:** [Web (28)](#web) · [Desktop (14)](#desktop) · [Mobile (18)](#mobile) · [Cross-platform (13)](#cross-platform) · [Unspecified (2)](#unspecified)
 
 Resources tagged with environments from more than one family are listed under *Cross-platform*; their exact environments stay in the table.
 
@@ -51,6 +51,7 @@ All entries in this section: web.
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
+| [AgentStudio](https://github.com/skyworkai/agent-studio) | desktop, linux | [2403.17918](https://arxiv.org/abs/2403.17918) (2024) | code AGPL-3.0 | Toolkit and Ubuntu-based environment for building and evaluating generalist computer-use agents through GUI and API interaction. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/skyworkai/agent-studio/HEAD/README.md) |
 | [ARPO training framework](https://github.com/JIA-Lab-research/ARPO) | desktop, linux | [2505.16282](https://arxiv.org/abs/2505.16282) (2025) | code Apache-2.0 | Replay-based policy-optimization framework for GUI agents, with distributed OSWorld rollouts and screenshot/action histories. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/JIA-Lab-research/ARPO/HEAD/README.md) |
 | [Computer Use OOTB](https://github.com/showlab/computer_use_ootb) | desktop | [2411.10323](https://arxiv.org/abs/2411.10323) (2024) | code Apache-2.0 | Gradio desktop GUI agent for Windows and macOS that needs no Docker, using Claude 3.5 Computer Use over the API or ShowUI and UI-TARS run locally, with multi-display and phone remote control. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/showlab/computer_use_ootb/HEAD/README.md) |
 | [ComputerRL](https://github.com/THUDM/ComputerRL) | desktop | [2508.14040](https://arxiv.org/abs/2508.14040) (2025) | code Apache-2.0 | Reinforcement-learning infrastructure for computer-use agents. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/THUDM/ComputerRL/HEAD/README.md) |
@@ -88,8 +89,7 @@ All entries in this section: web.
 | [SwitchMem](https://github.com/dmis-lab/SwitchMem) | android | [2610.17928](https://arxiv.org/abs/2610.17928) (2026) | — | Memory-routing implementation that chooses text or image demonstrations for a frozen GUI actor, with offline evaluation and Android transfer experiments. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/dmis-lab/SwitchMem/HEAD/README.md) |
 | [UI-Genie](https://github.com/Euphoria16/UI-Genie) | android | [2505.21496](https://arxiv.org/abs/2505.21496) (2025) | — | Training and evaluation code for a mobile-agent framework that iteratively generates trajectories using agent and reward-model feedback. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/Euphoria16/UI-Genie/HEAD/README.md) |
 | [VEM GUI-Agent-RL](https://github.com/microsoft/GUI-Agent-RL) | android | [2502.18906](https://arxiv.org/abs/2502.18906) (2025) | code MIT | Training code that learns a value environment model from offline Android interaction data and uses its frozen value estimates to guide GUI policy optimization. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/microsoft/GUI-Agent-RL/HEAD/README.md) |
-| [VeriOS](https://github.com/Wuzheng02/VeriOS) | android | [2509.07553](https://arxiv.org/abs/2509.07553) (2025) | — | Query-driven proactive verification framework and training code for OS agents that detect underspecified or risky GUI states and ask users for clarification. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/Wuzheng02/VeriOS/HEAD/README.md) |
-| [VeriSafe Agent](https://github.com/VeriSafeAgent/VeriSafeAgent) | android | [2503.18492](https://arxiv.org/abs/2503.18492) (2025) | — | Logic-based runtime verification framework that compiles natural-language safety rules into formal predicates checked before mobile GUI agent actions execute. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/VeriSafeAgent/VeriSafeAgent/HEAD/README.md) |
+| [VeriSafe Agent](https://github.com/VeriSafeAgent/VeriSafeAgent) | android | [2503.18492](https://arxiv.org/abs/2503.18492) (2025) | — | Runtime verification framework for Android GUI agents that checks proposed actions against logical rules derived from user instructions and developer-defined app states. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/VeriSafeAgent/VeriSafeAgent/HEAD/README.md) |
 
 [↑ Back to top](#framework-catalog)
 
@@ -97,7 +97,6 @@ All entries in this section: web.
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
-| [AgentStudio](https://github.com/skyworkai/agent-studio) | desktop, linux, windows, macos, cross-platform | [2403.17918](https://arxiv.org/abs/2403.17918) (2024) | code AGPL-3.0 | Open-source toolkit, interactive virtual environment, and benchmark suite for building and evaluating generalist computer-use agents across desktop operating systems. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/skyworkai/agent-studio/HEAD/README.md) |
 | [AgentSynth task-generation pipeline](https://github.com/sunblaze-ucb/AgentSynth) | desktop, web | [2506.14205](https://arxiv.org/abs/2506.14205) (2025) | code Apache-2.0 | Generates synthetic computer-use tasks and records trajectories in OSWorld desktop environments and InSTA browser environments. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/sunblaze-ucb/AgentSynth/HEAD/README.md) |
 | [ClawGUI](https://github.com/ZJU-REAL/ClawGUI) | cross-platform | [2604.11784](https://arxiv.org/abs/2604.11784) (2026) | code Apache-2.0 | Framework for GUI agent training, evaluation, and deployment. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/ZJU-REAL/ClawGUI/HEAD/README.md) |
 | [CUAWright (formerly Webwright)](https://github.com/microsoft/Webwright) | web, desktop | [2610.04116](https://arxiv.org/abs/2610.04116) (2026) | code MIT | Agent framework for browser and desktop tasks using automation code. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/microsoft/Webwright/HEAD/README.md) |
@@ -121,6 +120,7 @@ All entries in this section: unspecified.
 | Resource | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- |
 | [META-GUI baseline](https://github.com/X-LANCE/META-GUI-baseline) | [2205.11029](https://arxiv.org/abs/2205.11029) (2022) | code MIT | Training and evaluation pipeline for conversational mobile GUI agents, with action prediction, response generation, and dataset processing. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/X-LANCE/META-GUI-baseline/HEAD/README.md) |
+| [VeriOS](https://github.com/Wuzheng02/VeriOS) | [2509.07553](https://arxiv.org/abs/2509.07553) (2025) | — | Research code for proactive human–GUI-agent verification, including offline interaction-loop and dual-agent evaluation scripts plus LLaMA-Factory fine-tuning configurations. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/Wuzheng02/VeriOS/HEAD/README.md) |
 
 [↑ Back to top](#framework-catalog)
 

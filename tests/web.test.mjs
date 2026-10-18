@@ -316,6 +316,7 @@ test('record facts label every published detail and never print raw objects',()=
   assert.ok(formatFact('dataset_profile',profile,'zh').startsWith('监督信号：trajectories\n'));
   assert.equal(formatFact('gated','auto','en'),'Yes, approved automatically');
   assert.equal(formatFact('gated',false,'zh'),'否');
+  for(const lang of ['en','zh'])assert.equal(formatFact('repository_id',1079441024,lang),'1079441024');
   assert.equal(formatFact('platform_constraints',{harmonyos:'HarmonyOS 4 or earlier'},'en'),'harmonyos: HarmonyOS 4 or earlier');
   assert.equal(formatFact('dataverse',{publisher:'Harvard Dataverse',version_number:5,version_minor_number:0,file_count:261,license:{name:'CC0 1.0'},publication_date:'2025-05-15'},'en'),'Harvard Dataverse · v5.0 · 261 files · CC0 1.0 · published May 15, 2025');
   for(const empty of [null,'',[]])assert.equal(formatFact('languages',empty,'en'),'');

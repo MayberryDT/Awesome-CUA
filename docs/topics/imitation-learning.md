@@ -45,11 +45,11 @@ All entries in this section: android.
 
 ## Agents
 
-All entries in this section: android.
+All entries in this section: unspecified.
 
 | Resource | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- |
-| [LearnAct](https://github.com/lgy0404/LearnAct) | [2504.13805](https://arxiv.org/abs/2504.13805) (2025) | — | Few-shot mobile GUI agent framework and LearnGUI demonstration benchmark for adapting smartphone agents from human task demonstrations. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/lgy0404/LearnAct/HEAD/README.md) |
+| [LearnAct](https://github.com/lgy0404/LearnAct) | [2504.13805](https://arxiv.org/abs/2504.13805) (2025) | — | Released inference and evaluation code for demonstration-conditioned mobile GUI agents on LearnGUI-Offline. The repository describes a multi-agent adaptation method and links the LearnGUI demonstrations. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/lgy0404/LearnAct/HEAD/README.md) |
 
 ## Frameworks
 
