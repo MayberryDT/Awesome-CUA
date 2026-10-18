@@ -250,5 +250,12 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:numbmelon/os-oracle",
+    "url": "https://github.com/numbmelon/OS-Oracle",
+    "decision": "alias",
+    "target_id": "url:c73ba0618d1b3c505887",
+    "reason": "Official OS-Oracle repository whose only released code is the OS-Critic Bench inference and accuracy-scoring scripts; the indexed OS-Critic Bench record already describes these scripts and cites this README and tree. Its data-synthesis pipeline, training data and checkpoints are still listed as TODO."
   }
 ]
