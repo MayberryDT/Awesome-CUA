@@ -250,5 +250,11 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:ranpox/awesome-computer-use",
+    "url": "https://github.com/ranpox/awesome-computer-use",
+    "decision": "not_a_resource",
+    "reason": "Repository of the ranpox-cua discovery source itself, a link list of computer-use agent videos, blogs, papers and projects; its entries are discovered from its README."
   }
 ]
