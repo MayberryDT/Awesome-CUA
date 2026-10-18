@@ -1,7 +1,7 @@
 {
-  "as_of_utc": "2026-10-18T08:01:28Z",
-  "total_records": 3055,
-  "curated_records": 1572,
+  "as_of_utc": "2026-10-18T12:27:48Z",
+  "total_records": 3056,
+  "curated_records": 1573,
   "bibliographic_records": 2606,
   "arxiv_active_records": 2593,
   "non_arxiv_bibliographic_records": 13,
@@ -11,7 +11,7 @@
   "exclusion_revalidation_pending": 0,
   "metadata_only_records": 1483,
   "discovery_identifiers": 4052,
-  "unindexed_candidates": 903,
+  "unindexed_candidates": 902,
   "non_resource_candidates": 80,
   "alias_candidates": 9,
   "pending_editorial": [
@@ -144,7 +144,7 @@
   ],
   "uncurated_linked_papers": [],
   "by_kind": {
-    "agent": 41,
+    "agent": 42,
     "benchmark": 83,
     "company": 16,
     "dataset": 85,
@@ -157,7 +157,7 @@
     "tool": 20
   },
   "curated_by_environment": {
-    "android": 294,
+    "android": 295,
     "cross-platform": 193,
     "desktop": 320,
     "harmonyos": 3,
@@ -170,7 +170,7 @@
   },
   "curated_by_kind_and_environment": {
     "agent": {
-      "android": 16,
+      "android": 17,
       "cross-platform": 1,
       "desktop": 15,
       "ios": 1,
@@ -811,13 +811,13 @@
         "state": "success"
       },
       "discovered": 247,
-      "indexed": 195,
-      "indexed_resources": 195,
+      "indexed": 196,
+      "indexed_resources": 196,
       "resolved_aliases": 3,
-      "curated": 182,
+      "curated": 183,
       "excluded": 0,
       "set_aside": 2,
-      "unindexed": 50
+      "unindexed": 49
     },
     {
       "id": "mobile-agents",
