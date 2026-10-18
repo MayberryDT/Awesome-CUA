@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "url:618028884ec02c25e156",
+    "url": "https://huggingface.co/Hcompany/NeoMME-800M",
+    "decision": "out_of_scope",
+    "reason": "NeoMME-800M is H Company's pretrained single-tower text-and-image encoder trained with a masked-diffusion objective for long-context document understanding; its card says it needs a task head for retrieval, classification or extraction. Neither the card nor H's models page describes GUI, screen or agent use, so it falls outside the computer-use catalog.",
+    "reviewed_at": "2026-10-18T16:07:52Z",
+    "evidence": {
+      "url": "https://huggingface.co/Hcompany/NeoMME-800M/raw/b0169a3100065d5f3f2d0c112e2ec7bdacf88456/README.md",
+      "sha256": "39550199dbb5eb75b1b23bdfa9e68fa058f5f53dd36099b1f929475388bedef0",
+      "retrieved_at": "2026-10-18T15:52:38Z"
+    }
   }
 ]
