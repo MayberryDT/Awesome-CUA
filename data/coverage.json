@@ -1,7 +1,7 @@
 {
-  "as_of_utc": "2026-10-18T08:01:28Z",
-  "total_records": 3055,
-  "curated_records": 1572,
+  "as_of_utc": "2026-10-18T12:33:30Z",
+  "total_records": 3056,
+  "curated_records": 1574,
   "bibliographic_records": 2606,
   "arxiv_active_records": 2593,
   "non_arxiv_bibliographic_records": 13,
@@ -9,7 +9,7 @@
   "arxiv_archive_records": 2715,
   "excluded_records": 122,
   "exclusion_revalidation_pending": 0,
-  "metadata_only_records": 1483,
+  "metadata_only_records": 1482,
   "discovery_identifiers": 4052,
   "unindexed_candidates": 903,
   "non_resource_candidates": 80,
@@ -147,7 +147,7 @@
     "agent": 41,
     "benchmark": 83,
     "company": 16,
-    "dataset": 85,
+    "dataset": 86,
     "framework": 72,
     "infrastructure": 14,
     "model": 98,
@@ -157,15 +157,15 @@
     "tool": 20
   },
   "curated_by_environment": {
-    "android": 294,
-    "cross-platform": 193,
+    "android": 295,
+    "cross-platform": 194,
     "desktop": 320,
     "harmonyos": 3,
     "ios": 20,
     "linux": 47,
     "macos": 30,
     "unspecified": 367,
-    "web": 596,
+    "web": 598,
     "windows": 61
   },
   "curated_by_kind_and_environment": {
@@ -193,14 +193,14 @@
       "unspecified": 16
     },
     "dataset": {
-      "android": 34,
+      "android": 35,
       "cross-platform": 14,
       "desktop": 18,
       "ios": 1,
       "linux": 7,
       "macos": 2,
       "unspecified": 8,
-      "web": 24,
+      "web": 25,
       "windows": 4
     },
     "framework": {
@@ -237,14 +237,14 @@
     },
     "paper": {
       "android": 173,
-      "cross-platform": 100,
+      "cross-platform": 101,
       "desktop": 204,
       "harmonyos": 2,
       "ios": 8,
       "linux": 18,
       "macos": 14,
       "unspecified": 332,
-      "web": 424,
+      "web": 425,
       "windows": 36
     },
     "product": {
@@ -274,7 +274,7 @@
   },
   "license_declarations_by_scope": {
     "code": 176,
-    "data": 61,
+    "data": 62,
     "weights": 56,
     "document": 0
   },
@@ -514,7 +514,7 @@
       "indexed": 499,
       "indexed_resources": 499,
       "resolved_aliases": 5,
-      "curated": 454,
+      "curated": 455,
       "excluded": 1,
       "set_aside": 0,
       "unindexed": 88
@@ -544,7 +544,7 @@
       "indexed": 69,
       "indexed_resources": 69,
       "resolved_aliases": 0,
-      "curated": 63,
+      "curated": 64,
       "excluded": 0,
       "set_aside": 1,
       "unindexed": 24
@@ -664,7 +664,7 @@
       "indexed": 486,
       "indexed_resources": 486,
       "resolved_aliases": 0,
-      "curated": 394,
+      "curated": 395,
       "excluded": 0,
       "set_aside": 45,
       "unindexed": 13
@@ -1682,7 +1682,7 @@
       "indexed": 451,
       "indexed_resources": 451,
       "resolved_aliases": 56,
-      "curated": 385,
+      "curated": 386,
       "excluded": 0,
       "set_aside": 0,
       "unindexed": 45
