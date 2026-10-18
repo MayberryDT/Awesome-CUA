@@ -6,7 +6,7 @@ Environment facets come from the editorial review and overlap: a resource tagged
 
 | Platform | All | Benchmarks | Datasets | Models | Systems | Papers |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| [Web](environments/web.md) | 621 | 43 | 24 | 28 | 81 | 445 |
+| [Web](environments/web.md) | 622 | 43 | 24 | 28 | 82 | 445 |
 | [Desktop](environments/desktop.md) | 325 | 20 | 18 | 24 | 55 | 208 |
 | [Windows](environments/windows.md) | 64 | 5 | 4 | 5 | 12 | 38 |
 | [macOS](environments/macos.md) | 31 | 3 | 2 | 4 | 8 | 14 |

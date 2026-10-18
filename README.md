@@ -61,7 +61,7 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 
 **3,177 resource records** · **1,619 curated** · **2,715 paper and survey records** · **54 discovery documents**
 
-Evidence through `2026-10-18T11:04:43Z`. 1,558 records have bibliographic verification only; 903 discovered identifiers remain unresolved, not counting 133 links reviewed as non-resources or other addresses of indexed resources. 136 scope exclusions retain their original metadata in the archive. Counts overlap as explained below.
+Evidence through `2026-10-18T12:03:30.911159+00:00`. 1,558 records have bibliographic verification only; 903 discovered identifiers remain unresolved, not counting 133 links reviewed as non-resources or other addresses of indexed resources. 136 scope exclusions retain their original metadata in the archive. Counts overlap as explained below.
 
 <!-- STATS:END -->
 
@@ -76,7 +76,7 @@ Evidence through `2026-10-18T11:04:43Z`. 1,558 records have bibliographic verifi
 | [Benchmarks](docs/benchmarks.md) · **90** | [Tools](docs/tools.md) · **20** |
 | [Models and checkpoint releases](docs/models.md) · **98** | [Products](docs/products.md) · **20** · [Publishers and brands](docs/companies.md) · **16** |
 
-**By platform:** [Web](docs/environments/web.md) **621** · [Desktop](docs/environments/desktop.md) **325** · [Windows](docs/environments/windows.md) **64** · [macOS](docs/environments/macos.md) **31** · [Linux](docs/environments/linux.md) **50** · [Android](docs/environments/android.md) **311** · [iOS](docs/environments/ios.md) **21** · [HarmonyOS](docs/environments/harmonyos.md) **3** · [Cross-platform](docs/environments/cross-platform.md) **209**
+**By platform:** [Web](docs/environments/web.md) **622** · [Desktop](docs/environments/desktop.md) **325** · [Windows](docs/environments/windows.md) **64** · [macOS](docs/environments/macos.md) **31** · [Linux](docs/environments/linux.md) **50** · [Android](docs/environments/android.md) **311** · [iOS](docs/environments/ios.md) **21** · [HarmonyOS](docs/environments/harmonyos.md) **3** · [Cross-platform](docs/environments/cross-platform.md) **209**
 <!-- EXPLORE:END -->
 
 Coverage spans web, desktop, Android, iOS, Windows, macOS, Linux, and cross-platform work. Topics include grounding, screen understanding, planning, memory, long-horizon workflows, reinforcement learning, data generation, safety, robustness, and evaluation. Environment facets overlap; framework support is not assumed from a model's benchmark results.
@@ -160,6 +160,8 @@ Newest editorial approvals of models, datasets, benchmarks, systems, and tools (
 <!-- RECENT:START -->
 | Reviewed | Resource | Kind | Environments | Description |
 | --- | --- | --- | --- | --- |
+| 2026‑10‑18 | [VideoCAD training and evaluation code](https://github.com/ghadinehme/VideoCAD) | framework | web | VideoCADFormer training, action-log preprocessing and evaluation code for learning CAD interface action sequences from screen recordings of browser-based Onshape. |
+| 2026‑10‑18 | [GUIPivot](https://github.com/ZrW00/GUIPivot) | framework | android | Query-inference training tools connecting screenshot grounding with GUI action reasoning, including preprocessing, query refinement and offline single-step evaluation on AndroidControl and AITZ. |
 | 2026‑10‑18 | [SheetCopilot](https://github.com/BraveGroup/SheetCopilot) | agent | desktop, windows, linux | Spreadsheet automation agent and evaluation environment that translates natural-language requests into atomic spreadsheet operations on Windows and Ubuntu Linux. |
 | 2026‑10‑18 | [LearnAct](https://github.com/lgy0404/LearnAct) | agent | android | Few-shot mobile GUI agent framework and LearnGUI demonstration benchmark for adapting smartphone agents from human task demonstrations. |
 | 2026‑10‑18 | [AgentStudio](https://github.com/skyworkai/agent-studio) | framework | desktop, linux, windows, macos, cross-platform | Open-source toolkit, interactive virtual environment, and benchmark suite for building and evaluating generalist computer-use agents across desktop operating systems. |
@@ -170,8 +172,6 @@ Newest editorial approvals of models, datasets, benchmarks, systems, and tools (
 | 2026‑10‑18 | [Agent-SafetyBench](https://github.com/thu-coai/Agent-SafetyBench) | benchmark | cross-platform | Safety evaluation benchmark and ShieldAgent scoring pipeline covering 349 interactive environments and 2,000 test cases across eight agent risk categories. |
 | 2026‑10‑18 | [ST-WebAgentBench](https://github.com/segev-shlomov/ST-WebAgentBench) | benchmark | web | BrowserGym-based benchmark for evaluating the safety and policy compliance of enterprise web agents across six trustworthiness risk dimensions. |
 | 2026‑10‑18 | [EIA](https://github.com/OSU-NLP-Group/EIA_against_webagent) | benchmark | web | Evaluation suite for Environmental Injection Attacks that embed invisible malicious HTML elements into benign websites to test privacy leakage in generalist web agents. |
-| 2026‑10‑18 | [BrowserART](https://github.com/scaleapi/browser-art) | benchmark | web | Red-teaming benchmark and test suite from Scale AI evaluating whether refusal-trained language models can be jailbroken when deployed as browser agents. |
-| 2026‑10‑18 | [AgentAttack](https://github.com/OSU-NLP-Group/AgentAttack) | benchmark | web, cross-platform | Companion repository mapping 12 adversarial attack scenarios across perception, reasoning, and action components of language and multimodal agents. |
 <!-- RECENT:END -->
 
 ## Use the data

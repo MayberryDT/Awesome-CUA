@@ -63,7 +63,7 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 
 **3,177 条资源记录** · **1,619 条已审阅** · **2,715 条论文与综述记录** · **54 个发现来源文档**
 
-证据截至 `2026-10-18T11:04:43Z`。1,558 条记录仅完成书目核实；903 个已发现的标识符尚待处理，另有 133 个链接经审阅确认为非资源或已收录资源的其他地址，不计入其中。136 条范围排除记录在归档中保留原始元数据。各项计数存在重叠，详见下文。
+证据截至 `2026-10-18T12:03:30.911159+00:00`。1,558 条记录仅完成书目核实；903 个已发现的标识符尚待处理，另有 133 个链接经审阅确认为非资源或已收录资源的其他地址，不计入其中。136 条范围排除记录在归档中保留原始元数据。各项计数存在重叠，详见下文。
 
 <!-- STATS:END -->
 
@@ -78,7 +78,7 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 | [基准](docs/benchmarks.md) · **90** | [工具](docs/tools.md) · **20** |
 | [模型与权重版本](docs/models.md) · **98** | [产品](docs/products.md) · **20** · [发布方与品牌](docs/companies.md) · **16** |
 
-**按平台：** [Web](docs/environments/web.md) **621** · [Desktop](docs/environments/desktop.md) **325** · [Windows](docs/environments/windows.md) **64** · [macOS](docs/environments/macos.md) **31** · [Linux](docs/environments/linux.md) **50** · [Android](docs/environments/android.md) **311** · [iOS](docs/environments/ios.md) **21** · [HarmonyOS](docs/environments/harmonyos.md) **3** · [Cross-platform](docs/environments/cross-platform.md) **209**
+**按平台：** [Web](docs/environments/web.md) **622** · [Desktop](docs/environments/desktop.md) **325** · [Windows](docs/environments/windows.md) **64** · [macOS](docs/environments/macos.md) **31** · [Linux](docs/environments/linux.md) **50** · [Android](docs/environments/android.md) **311** · [iOS](docs/environments/ios.md) **21** · [HarmonyOS](docs/environments/harmonyos.md) **3** · [Cross-platform](docs/environments/cross-platform.md) **209**
 <!-- EXPLORE:END -->
 
 覆盖 Web、桌面、Android、iOS、Windows、macOS、Linux 和跨平台工作。主题包括 grounding、屏幕理解、规划、记忆、长流程任务、强化学习、数据生成、安全、鲁棒性和评测。环境分面可以重叠；不会根据模型的基准成绩推定框架支持。
@@ -162,6 +162,8 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 <!-- RECENT:START -->
 | 审阅日期 | 资源 | 类型 | 环境 | 简介（英文） |
 | --- | --- | --- | --- | --- |
+| 2026‑10‑18 | [VideoCAD training and evaluation code](https://github.com/ghadinehme/VideoCAD) | 框架 | web | VideoCADFormer training, action-log preprocessing and evaluation code for learning CAD interface action sequences from screen recordings of browser-based Onshape. |
+| 2026‑10‑18 | [GUIPivot](https://github.com/ZrW00/GUIPivot) | 框架 | android | Query-inference training tools connecting screenshot grounding with GUI action reasoning, including preprocessing, query refinement and offline single-step evaluation on AndroidControl and AITZ. |
 | 2026‑10‑18 | [SheetCopilot](https://github.com/BraveGroup/SheetCopilot) | 智能体 | desktop, windows, linux | Spreadsheet automation agent and evaluation environment that translates natural-language requests into atomic spreadsheet operations on Windows and Ubuntu Linux. |
 | 2026‑10‑18 | [LearnAct](https://github.com/lgy0404/LearnAct) | 智能体 | android | Few-shot mobile GUI agent framework and LearnGUI demonstration benchmark for adapting smartphone agents from human task demonstrations. |
 | 2026‑10‑18 | [AgentStudio](https://github.com/skyworkai/agent-studio) | 框架 | desktop, linux, windows, macos, cross-platform | Open-source toolkit, interactive virtual environment, and benchmark suite for building and evaluating generalist computer-use agents across desktop operating systems. |
@@ -172,8 +174,6 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 | 2026‑10‑18 | [Agent-SafetyBench](https://github.com/thu-coai/Agent-SafetyBench) | 基准 | cross-platform | Safety evaluation benchmark and ShieldAgent scoring pipeline covering 349 interactive environments and 2,000 test cases across eight agent risk categories. |
 | 2026‑10‑18 | [ST-WebAgentBench](https://github.com/segev-shlomov/ST-WebAgentBench) | 基准 | web | BrowserGym-based benchmark for evaluating the safety and policy compliance of enterprise web agents across six trustworthiness risk dimensions. |
 | 2026‑10‑18 | [EIA](https://github.com/OSU-NLP-Group/EIA_against_webagent) | 基准 | web | Evaluation suite for Environmental Injection Attacks that embed invisible malicious HTML elements into benign websites to test privacy leakage in generalist web agents. |
-| 2026‑10‑18 | [BrowserART](https://github.com/scaleapi/browser-art) | 基准 | web | Red-teaming benchmark and test suite from Scale AI evaluating whether refusal-trained language models can be jailbroken when deployed as browser agents. |
-| 2026‑10‑18 | [AgentAttack](https://github.com/OSU-NLP-Group/AgentAttack) | 基准 | web, cross-platform | Companion repository mapping 12 adversarial attack scenarios across perception, reasoning, and action components of language and multimodal agents. |
 <!-- RECENT:END -->
 
 ## 使用数据

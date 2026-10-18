@@ -1,5 +1,5 @@
 {
-  "as_of_utc": "2026-10-18T11:04:43Z",
+  "as_of_utc": "2026-10-18T12:03:30.911159+00:00",
   "total_records": 3177,
   "curated_records": 1619,
   "bibliographic_records": 2715,
@@ -62,6 +62,13 @@
       "name": "GraceBench task and evaluation release",
       "url": "https://iaie-physicalai.github.io/GraceBench",
       "reason": "Primary project page reviewed; task definitions, data, and evaluation-code release remain pending. The paper is cataloged separately.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "github:udgok/videocad",
+      "name": "VideoCAD training and evaluation code",
+      "url": "https://github.com/UDGOK/videocad",
+      "reason": "Curated inclusion withdrawn: UDGOK/videocad is a distinct GitHub fork (repository 1108132573), while the paper links the author repository ghadinehme/VideoCAD (1079441024). The author repository is indexed as github:ghadinehme/videocad. The original entry and evidence remain here for provenance; this is not a repository rename or alias, and the fork is not counted as a second original implementation.",
       "cause": "reviewer_hold"
     },
     {
@@ -164,8 +171,8 @@
     "ios": 21,
     "linux": 50,
     "macos": 31,
-    "unspecified": 367,
-    "web": 621,
+    "unspecified": 366,
+    "web": 622,
     "windows": 64
   },
   "curated_by_kind_and_environment": {
@@ -212,8 +219,8 @@
       "ios": 1,
       "linux": 6,
       "macos": 2,
-      "unspecified": 2,
-      "web": 36,
+      "unspecified": 1,
+      "web": 37,
       "windows": 3
     },
     "infrastructure": {
@@ -274,7 +281,7 @@
     }
   },
   "license_declarations_by_scope": {
-    "code": 184,
+    "code": 185,
     "data": 61,
     "weights": 56,
     "document": 0

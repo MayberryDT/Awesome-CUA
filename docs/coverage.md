@@ -1,12 +1,12 @@
 # Coverage and quality ledger
 
-Evidence snapshot through **2026-10-18T11:04:43Z**. Generated from committed source receipts.
+Evidence snapshot through **2026-10-18T12:03:30.911159+00:00**. Generated from committed source receipts.
 
 - 3,177 resource records: 1,619 curated; 1,558 bibliographic metadata only.
 - 2,715 paper and survey records, including 2,702 arXiv identities and 13 publisher-only identities. This count overlaps the status counts above.
 - 2,838 retained arXiv metadata records; 136 explicit scope exclusions are outside the active catalog.
 - 4,239 discovery identifiers; 903 remain unresolved after accounting for scope exclusions and for 97 reviewed non-resource links and 36 other addresses of indexed resources, which stay in the review queue with their reasons.
-- 18 editorial proposals await verification or review.
+- 19 editorial proposals await verification or review.
 
 These are distinct resource identifiers, not distinct research projects. Papers, repositories, datasets, products, and publisher entities have different grains.
 
@@ -20,7 +20,7 @@ Counts of source-reviewed resources. A resource tagged with several environments
 | [benchmark](benchmarks.md) | 43 | 20 | 5 | 3 | 5 | 19 | 1 | · | 16 | 3 |
 | [company](companies.md) | · | · | · | · | · | · | · | · | · | 16 |
 | [dataset](datasets.md) | 24 | 18 | 4 | 2 | 7 | 35 | 2 | · | 15 | 8 |
-| [framework](frameworks.md) | 36 | 22 | 3 | 2 | 6 | 21 | 1 | 1 | 8 | 2 |
+| [framework](frameworks.md) | 37 | 22 | 3 | 2 | 6 | 21 | 1 | 1 | 8 | 1 |
 | [infrastructure](infrastructures.md) | 5 | 9 | 1 | 2 | 4 | 3 | 1 | · | · | · |
 | [model](models.md) | 28 | 24 | 5 | 4 | 6 | 24 | 4 | · | 47 | 2 |
 | [paper](topics.md) | 443 | 207 | 37 | 14 | 19 | 185 | 8 | 2 | 108 | 332 |
@@ -142,7 +142,7 @@ The recorded title query returned 1,199 unique records out of 1,246 reported mat
 
 | Scope | Recorded declarations |
 | --- | ---: |
-| code | 184 |
+| code | 185 |
 | data | 61 |
 | weights | 56 |
 | document | 0 |
@@ -151,7 +151,7 @@ A code license never fills a data or weights field. Hub declarations are publish
 
 ## Pending editorial proposals
 
-18 proposals: 3 with unresolved primary evidence, 0 whose current source snapshot awaits review, 15 held by a reviewer after reading the current source, and 0 awaiting another scope review.
+19 proposals: 3 with unresolved primary evidence, 0 whose current source snapshot awaits review, 16 held by a reviewer after reading the current source, and 0 awaiting another scope review.
 
 | Resource | Reason |
 | --- | --- |
@@ -162,6 +162,7 @@ A code license never fills a data or weights field. Hub declarations are publish
 | [ChatUITest / GTArena project hub](https://github.com/ZJU-ACES-ISE/ChatUITest) | The fresh README remains under construction and says the dataset is being organized/uploaded. The tree has only README.md, and the linked GTArena-UI-Defects API and raw card return 401. No access request was made. UIDefectMocker is already cataloged separately. |
 | [CarryOn implementation release](https://github.com/Ethannju/carryon) | Primary README reviewed; implementation release is still pending. The paper is cataloged separately. |
 | [GraceBench task and evaluation release](https://iaie-physicalai.github.io/GraceBench) | Primary project page reviewed; task definitions, data, and evaluation-code release remain pending. The paper is cataloged separately. |
+| [VideoCAD training and evaluation code](https://github.com/UDGOK/videocad) | Curated inclusion withdrawn: UDGOK/videocad is a distinct GitHub fork (repository 1108132573), while the paper links the author repository ghadinehme/VideoCAD (1079441024). The author repository is indexed as github:ghadinehme/videocad. The original entry and evidence remain here for provenance; this is not a repository rename or alias, and the fork is not counted as a second original implementation. |
 | [WinSpot](https://github.com/zackhuiiiii/WinSpot) | Primary README and repository tree reviewed; the benchmark data release is still pending. |
 | [PAE data](https://huggingface.co/datasets/yifeizhou/pae-data) | Hub metadata and the project README disagree on dataset-license scope; review remains pending without requesting gated access. |
 | [Aguvis-7B-720P checkpoint](https://huggingface.co/xlangai/Aguvis-7B-720P) | Weight files are listed, but the official README still marks the release in progress and the inspected Hub metadata lacks weight terms; review remains pending. |

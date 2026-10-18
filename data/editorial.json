@@ -22831,7 +22831,7 @@
     "evidence_urls": [
       "https://raw.githubusercontent.com/UDGOK/videocad/HEAD/README.md"
     ],
-    "editorial_reviewed": true,
+    "editorial_reviewed": false,
     "reviewed_sha256": "6c182da7783e740539ce49d91794d299f2ca477a5b0d946bce48649b8fa2e49c",
     "reviewed_at": "2026-10-17T02:07:18Z",
     "documented_by": [
@@ -22858,7 +22858,8 @@
         "sha256": "55b59b0642a8c28cda6c12e35ba4fcc39c0ba28ab5c846f58262746f32a9601d",
         "retrieved_at": "2026-10-17T02:05:40Z"
       }
-    ]
+    ],
+    "review_note": "Curated inclusion withdrawn: UDGOK/videocad is a distinct GitHub fork (repository 1108132573), while the paper links the author repository ghadinehme/VideoCAD (1079441024). The author repository is indexed as github:ghadinehme/videocad. The original entry and evidence remain here for provenance; this is not a repository rename or alias, and the fork is not counted as a second original implementation."
   },
   {
     "name": "VideoCAD data",
@@ -45959,17 +45960,17 @@
       "imitation-learning"
     ],
     "scope": "core",
-    "summary": "Research tooling for query-inference pivot tasks that connect screenshot grounding with GUI action reasoning, including preprocessing, query refinement and mobile-agent evaluation.",
+    "summary": "Query-inference training tools connecting screenshot grounding with GUI action reasoning, including preprocessing, query refinement and offline single-step evaluation on AndroidControl and AITZ.",
     "verify_terms": [
       "GUIPivot"
     ],
-    "notes": "The repository releases preprocessing/refinement/evaluation code and packaged ShareGPT-format JSON training annotations. It instructs users to obtain original UIBERT/OS-Atlas, AITZ and AndroidControl images separately and train their own model. This entry does not claim a released trained checkpoint or transfer the repository GPL-3.0 code license to third-party datasets and images.",
+    "notes": "The repository releases preprocessing/refinement/evaluation code and multipart ShareGPT-format JSON annotations. Evaluation matches recorded single-step action predictions on AndroidControl and AITZ; it does not run live device tasks. The README links a UIBERT training-JSON path that is not a standalone file in this revision; annotations are packaged in data/GUI.z01, data/GUI.z02 and data/GUI.zip. Original UIBERT/OS-Atlas, AITZ and AndroidControl images must be obtained separately. This entry does not claim a released trained checkpoint or transfer the GPL-3.0 code license to third-party datasets and images.",
     "evidence_urls": [
-      "https://raw.githubusercontent.com/ZrW00/GUIPivot/HEAD/README.md"
+      "https://raw.githubusercontent.com/ZrW00/GUIPivot/b02e8efdbe02ab82169a2c54d724e33b4037330e/README.md"
     ],
     "editorial_reviewed": true,
     "reviewed_sha256": "77384ff1dfceac74f2e60af56b016a815963481f9e41a29915698777f55e828e",
-    "reviewed_at": "2026-10-17T11:38:10Z",
+    "reviewed_at": "2026-10-18T12:22:22Z",
     "primary_supports": [
       "name",
       "kind",
@@ -45981,7 +45982,7 @@
       "relations"
     ],
     "details": {
-      "availability": "Public preprocessing/refinement/evaluation source and annotation-archive manifest; original images remain separate.",
+      "availability": "Public preprocessing/refinement code, offline action-matching evaluation, and multipart annotation archives; original images and a fine-tuned model are separate.",
       "repository_revision": "b02e8efdbe02ab82169a2c54d724e33b4037330e"
     },
     "documented_by": [
@@ -45995,19 +45996,21 @@
           "identity"
         ],
         "url": "https://api.github.com/repos/ZrW00/GUIPivot",
-        "sha256": "af47c1183407c8f80b2d2615e15579a4c0a7cd3fe476ac6f8697b745f6f54318",
-        "retrieved_at": "2026-10-17T11:18:22Z"
+        "retrieved_at": "2026-10-18T11:25:27+00:00",
+        "sha256": "3d57dc43db78620832e41416e4bfb7ae445afe782e5538d85a9784a8f1e5e4eb"
       },
       {
         "role": "primary",
         "method": "editorial_primary_review",
         "supports": [
           "release_status",
-          "details.repository_revision"
+          "details.repository_revision",
+          "details.availability",
+          "notes"
         ],
-        "url": "https://api.github.com/repos/ZrW00/GUIPivot/git/trees/main?recursive=1",
-        "sha256": "a4d3ddbb2b2f4a936c9bc1a1c388b9870dbc5d2c61ff6841a1082b884f5c54e9",
-        "retrieved_at": "2026-10-17T11:23:02Z"
+        "url": "https://api.github.com/repos/ZrW00/GUIPivot/git/trees/b02e8efdbe02ab82169a2c54d724e33b4037330e?recursive=1",
+        "retrieved_at": "2026-10-18T12:02:54.310430+00:00",
+        "sha256": "a4d3ddbb2b2f4a936c9bc1a1c388b9870dbc5d2c61ff6841a1082b884f5c54e9"
       },
       {
         "role": "primary",
@@ -46015,25 +46018,49 @@
         "supports": [
           "licenses.code"
         ],
-        "url": "https://raw.githubusercontent.com/ZrW00/GUIPivot/HEAD/LICENSE",
-        "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
-        "retrieved_at": "2026-10-17T11:23:03Z"
+        "url": "https://raw.githubusercontent.com/ZrW00/GUIPivot/b02e8efdbe02ab82169a2c54d724e33b4037330e/LICENSE",
+        "retrieved_at": "2026-10-18T12:03:28.611747+00:00",
+        "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2503.00401v2",
+        "retrieved_at": "2026-10-18T12:02:36.501726+00:00",
+        "sha256": "25e5282e7d85bca133fc77e294cd95d90e4ae65b0d8796cd7c49f53a633b4893"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.availability"
+        ],
+        "url": "https://raw.githubusercontent.com/ZrW00/GUIPivot/b02e8efdbe02ab82169a2c54d724e33b4037330e/data/dataset_info.json",
+        "retrieved_at": "2026-10-18T12:03:30.911159+00:00",
+        "sha256": "9b5b196e065be2ebc05169a68710b8a6e1bd3b6eb663c68bb449234dbb7a45af"
       }
     ],
     "reviewed_licenses": {
       "code": {
         "value": {
           "declared": "GPL-3.0",
-          "url": "https://raw.githubusercontent.com/ZrW00/GUIPivot/HEAD/LICENSE",
-          "retrieved_at": "2026-10-17T11:23:03Z",
+          "url": "https://raw.githubusercontent.com/ZrW00/GUIPivot/b02e8efdbe02ab82169a2c54d724e33b4037330e/LICENSE",
+          "retrieved_at": "2026-10-18T12:03:28.611747+00:00",
           "basis": "Repository GNU GPL version 3 license for code; no data or pretrained-weight license inferred."
         },
         "reason": "Repository GNU GPL version 3 license for code; no data or pretrained-weight license inferred.",
         "evidence_urls": [
-          "https://raw.githubusercontent.com/ZrW00/GUIPivot/HEAD/LICENSE"
+          "https://raw.githubusercontent.com/ZrW00/GUIPivot/b02e8efdbe02ab82169a2c54d724e33b4037330e/LICENSE"
         ]
       }
-    }
+    },
+    "read_basis": "Reviewed the pinned README, full tree and annotation manifest, license declaration, arXiv v2 evaluation protocol and evaluator source as text. The direct training-JSON path is absent from the complete tree and separately returned 404; no failed response is represented as successful release evidence. Runtime and published scores were not re-evaluated."
   },
   {
     "name": "WebWorld: A Large-Scale World Model for Web Agent Training",
@@ -62722,5 +62749,113 @@
     "reviewed_sha256": "5f5bae19420f79231516d4bcf604ea18d4f930fc7790cde5a3e7fcb8d41a1126",
     "reviewed_at": "2026-10-18T10:54:12Z",
     "notes": "The annotation and scope were reviewed against the primary paper abstract. Experimental results and released artifacts have not been independently reproduced."
+  },
+  {
+    "name": "VideoCAD training and evaluation code",
+    "kind": "framework",
+    "url": "https://github.com/ghadinehme/VideoCAD",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "grounding",
+      "imitation-learning",
+      "evaluation"
+    ],
+    "scope": "core",
+    "summary": "VideoCADFormer training, action-log preprocessing and evaluation code for learning CAD interface action sequences from screen recordings of browser-based Onshape.",
+    "verify_terms": [
+      "VideoCAD"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ghadinehme/VideoCAD/2d69eeaf0ac44210c76dcab2d08b4d4610be236c/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "cbb08803922b4b7736979ca0a5fe552b111fcd428fa9317401bc090b14bb4e54",
+    "reviewed_at": "2026-10-18T12:22:22Z",
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "topics",
+      "scope",
+      "notes",
+      "relations"
+    ],
+    "notes": "The paper links this author repository. Training, preprocessing, model and evaluation source files are released; runtime behavior has not been independently reproduced. Onshape is a browser-based CAD environment; supported operating systems are not inferred. The full dataset and a checkpoint are linked separately, and their payloads were not downloaded for this review. MIT is recorded only for this repository code; external data and weight licenses remain unknown.",
+    "details": {
+      "repository_revision": "2d69eeaf0ac44210c76dcab2d08b4d4610be236c",
+      "repository_id": 1079441024
+    },
+    "reviewed_relations": [
+      {
+        "type": "documented_by",
+        "target_id": "arxiv:2505.24838",
+        "evidence_url": "https://arxiv.org/html/2505.24838v2"
+      }
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "details.repository_id"
+        ],
+        "url": "https://api.github.com/repos/ghadinehme/VideoCAD",
+        "retrieved_at": "2026-10-18T12:02:30.768857+00:00",
+        "sha256": "ff80afd35c79d8dd27dd7b9284ce082fe238c13a113aa19400ca0dc2d18ff194"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "release_status",
+          "details.repository_revision",
+          "notes"
+        ],
+        "url": "https://api.github.com/repos/ghadinehme/VideoCAD/git/trees/2d69eeaf0ac44210c76dcab2d08b4d4610be236c?recursive=1",
+        "retrieved_at": "2026-10-18T12:02:52.564274+00:00",
+        "sha256": "9ded7c6ef25b88879e9d46939ca7ff3bef97362e76dbdb808e57c67008541557"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "summary",
+          "relations",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2505.24838v2",
+        "retrieved_at": "2026-10-18T12:02:34.311949+00:00",
+        "sha256": "a303d95a811331cd6ee23b0340f1b9ef2dd996835bfbc66656a871ff94eead50"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/ghadinehme/VideoCAD/2d69eeaf0ac44210c76dcab2d08b4d4610be236c/LICENSE",
+        "retrieved_at": "2026-10-18T12:03:24.765415+00:00",
+        "sha256": "8e02753a1016dc67c97b395934313027b5f91b74209c7a24438de70fdc19cad1"
+      }
+    ],
+    "reviewed_licenses": {
+      "code": {
+        "value": {
+          "declared": "MIT",
+          "url": "https://raw.githubusercontent.com/ghadinehme/VideoCAD/2d69eeaf0ac44210c76dcab2d08b4d4610be236c/LICENSE",
+          "retrieved_at": "2026-10-18T12:03:24.765415+00:00",
+          "basis": "The author repository at the inspected commit contains the standard MIT license. This declaration does not establish terms for externally hosted data or weights."
+        },
+        "reason": "MIT declaration in the author repository LICENSE; separate data, weights and document scopes are not inferred.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/ghadinehme/VideoCAD/2d69eeaf0ac44210c76dcab2d08b4d4610be236c/LICENSE"
+        ]
+      }
+    },
+    "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
   }
 ]
