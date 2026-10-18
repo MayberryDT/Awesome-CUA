@@ -250,5 +250,11 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:opengvlab/opencua",
+    "url": "https://github.com/OpenGVLab/OpenCUA",
+    "decision": "not_a_resource",
+    "reason": "Dead link: the ScaleCUA README labels it \"Model Demo\", but the repository page and the GitHub API both return 404 with no rename redirect, no OpenGVLab repository other than ScaleCUA has a similar name, and the Wayback Machine has no capture (CDX query empty)."
   }
 ]
