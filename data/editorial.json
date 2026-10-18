@@ -63143,5 +63143,112 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "url:f2c34526651f5f57cf98",
+    "name": "OS-Genesis 8B WA",
+    "kind": "model",
+    "url": "https://huggingface.co/OS-Copilot/OS-Genesis-8B-WA",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "action-prediction",
+      "imitation-learning"
+    ],
+    "summary": "WebArena-oriented InternVL2-8B checkpoint trained on web trajectories from OS-Genesis reverse task synthesis; the card's example prompt pairs a screenshot and accessibility tree with the instruction and action history.",
+    "scope": "core",
+    "verify_terms": [
+      "OS-Genesis-8B-WA"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/OS-Copilot/OS-Genesis-8B-WA/raw/d1ec7c7f7dd2478d1830e04a812fd216a479e34c/README.md"
+    ],
+    "documented_by": [
+      "2412.19723"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes",
+      "licenses.weights",
+      "details.base_model",
+      "details.parameter_label",
+      "details.training_data_note"
+    ],
+    "notes": "Hub API at revision d1ec7c7f lists four BF16 safetensors shards (about 8.08B parameters) in the InternVLChatModel architecture, with custom InternViT and InternLM2 modeling files; the repository is not gated. The card prose and config.json name InternVL2-8B (InternLM2 language model) as the starting model, while the card's YAML base_model field says InternVL2-4B; the prose and configuration are followed. The card lists this checkpoint in its WA table with the OS-Genesis web training file and points to WebArena evaluation code, although its quick-start sentence calls it a mobile action model and its table caption says AndroidControl. The OS-Genesis README lists it under Web. The card declares Apache-2.0. The 4B and 7B WA checkpoints and the AndroidWorld and AndroidControl variants are separate releases, and no result is transferred to this checkpoint; no weights were loaded.",
+    "details": {
+      "artifact_type": "model-checkpoint",
+      "hub_id": "OS-Copilot/OS-Genesis-8B-WA",
+      "hub_revision": "d1ec7c7f7dd2478d1830e04a812fd216a479e34c",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/OS-Copilot/OS-Genesis-8B-WA/tree/d1ec7c7f7dd2478d1830e04a812fd216a479e34c",
+      "architecture": "InternVLChatModel",
+      "parameter_label": "8B",
+      "base_model": "OpenGVLab/InternVL2-8B",
+      "listed_weight_files": [
+        "model-00001-of-00004.safetensors",
+        "model-00002-of-00004.safetensors",
+        "model-00003-of-00004.safetensors",
+        "model-00004-of-00004.safetensors"
+      ],
+      "repository_url": "https://github.com/OS-Copilot/OS-Genesis",
+      "training_data_note": "The card's table names os_genesis_web_training.jsonl in OS-Copilot/OS-Genesis-web-data as the training data."
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "notes",
+          "details.hub_id",
+          "details.hub_revision",
+          "details.gated",
+          "details.disabled",
+          "details.download_url",
+          "details.listed_weight_files"
+        ],
+        "url": "https://huggingface.co/api/models/OS-Copilot/OS-Genesis-8B-WA/revision/d1ec7c7f7dd2478d1830e04a812fd216a479e34c",
+        "sha256": "27a4a4c781412908e220a274b39085507aed74fd56fca2471d9c2b3c7019da37",
+        "retrieved_at": "2026-10-18T16:15:55Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.base_model",
+          "details.architecture"
+        ],
+        "url": "https://huggingface.co/OS-Copilot/OS-Genesis-8B-WA/raw/d1ec7c7f7dd2478d1830e04a812fd216a479e34c/config.json",
+        "sha256": "918ec82f37bd5bf98f1e2a01940943f4dc7b60b01751447e32324410597278d5",
+        "retrieved_at": "2026-10-18T16:15:55Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes",
+          "details.repository_url"
+        ],
+        "url": "https://raw.githubusercontent.com/OS-Copilot/OS-Genesis/72128850dad4ca9ba642ee7399794b4fb8f5154d/README.md",
+        "sha256": "430e495ab250395d666854bd18b0fc29b819cd784cd7730215ef65e461834d0d",
+        "retrieved_at": "2026-10-18T16:15:57Z"
+      }
+    ],
+    "read_basis": "Read the pinned model card, config.json, Hub API revision record and the OS-Genesis README at commit 72128850. No weights were downloaded or run.",
+    "reviewed_sha256": "c966adef0998300a623921d0882bf155025da261357263cef3ed8c3ac165ed6e",
+    "reviewed_at": "2026-10-18T16:16:29Z"
   }
 ]
