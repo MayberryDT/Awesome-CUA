@@ -11,8 +11,8 @@
   "exclusion_revalidation_pending": 0,
   "metadata_only_records": 1483,
   "discovery_identifiers": 4052,
-  "unindexed_candidates": 903,
-  "non_resource_candidates": 80,
+  "unindexed_candidates": 902,
+  "non_resource_candidates": 81,
   "alias_candidates": 9,
   "pending_editorial": [
     {
@@ -696,8 +696,8 @@
       "resolved_aliases": 1,
       "curated": 83,
       "excluded": 0,
-      "set_aside": 2,
-      "unindexed": 50
+      "set_aside": 3,
+      "unindexed": 49
     },
     {
       "id": "jin-gui-hub",
