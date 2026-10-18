@@ -61629,13 +61629,13 @@
           "details",
           "notes"
         ],
-        "url": "https://huggingface.co/api/models/OS-Copilot/OS-Atlas-Pro-7B",
+        "url": "https://huggingface.co/api/models/OS-Copilot/OS-Atlas-Pro-7B/revision/6c0135de0627db98533ac4b47ae71fa17cf21c48",
         "sha256": "8fe182b06e327e37d5b655239aa4e87ce634612e0da9bf6739c6bc94c1bc1ea1",
-        "retrieved_at": "2026-10-18T11:56:54Z"
+        "retrieved_at": "2026-10-18T12:03:55Z"
       }
     ],
     "editorial_reviewed": true,
     "reviewed_sha256": "44a33feb0172449e12f3b54b26073acf90af66a64c598768040fd6de32a44e6f",
-    "reviewed_at": "2026-10-18T11:57:06Z"
+    "reviewed_at": "2026-10-18T12:03:56Z"
   }
 ]
