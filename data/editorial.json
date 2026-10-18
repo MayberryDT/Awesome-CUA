@@ -61600,7 +61600,7 @@
     "notes": "The README is titled 爪爪 · PawWork, and GitHub redirects the former repository name Player-YN/PawWork_ZhuaZhua to this repository. It is not on the Chrome Web Store and needs Chrome 135 or later and an OpenAI-compatible API key. AGENTS.md describes an offscreen AI SDK ToolLoopAgent with page actions, a QuickJS sandbox for guest code and Univer-based sheet and document previews. The extension was not loaded or tested.",
     "details": {
       "availability": "Published source loaded as an unpacked extension or from a release zip",
-      "repository_tree_sha": "1951ed05128b4cb3512cb67859f6fea331b7c23b"
+      "repository_revision": "1951ed05128b4cb3512cb67859f6fea331b7c23b"
     },
     "additional_evidence": [
       {
@@ -61619,7 +61619,7 @@
         "supports": [
           "identity",
           "release_status",
-          "details.repository_tree_sha"
+          "details.repository_revision"
         ],
         "url": "https://api.github.com/repos/Player-YN/BrowserKitten/git/trees/main?recursive=1",
         "sha256": "9c3ba58b4ee519dfbd94b4c0e66da841a699184bf6d28f100c1966932edc0679",
