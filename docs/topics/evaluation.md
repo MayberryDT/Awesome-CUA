@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-661 source-reviewed resources tagged `evaluation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+662 source-reviewed resources tagged `evaluation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (81)](#benchmarks) · [Datasets (9)](#datasets) · [Models (1)](#models) · [Frameworks (16)](#frameworks) · [Tools (4)](#tools) · [Infrastructure (2)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (546)](#papers)
+**Contents:** [Benchmarks (81)](#benchmarks) · [Datasets (10)](#datasets) · [Models (1)](#models) · [Frameworks (16)](#frameworks) · [Tools (4)](#tools) · [Infrastructure (2)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (546)](#papers)
 
 ## Benchmarks
 
@@ -104,6 +104,7 @@
 | [UI-AGILE-Data](https://huggingface.co/datasets/KDEGroup/UI-AGILE-Data) | android | [2507.22025](https://arxiv.org/abs/2507.22025) (2025) | — | — | UI-AGILE training annotations and screenshots together with converted GUI-grounding and AndroidControl evaluation files. | [✓ 2026‑10‑17](https://huggingface.co/datasets/KDEGroup/UI-AGILE-Data/raw/main/README.md) |
 | [UIBert AppSim and RefExp annotations](https://github.com/google-research-datasets/uibert) | android | [2107.13731](https://arxiv.org/abs/2107.13731) (2021) | — | data CC-BY-4.0 | Two Rico-derived UI component retrieval datasets: AppSim pairs semantically similar elements across screens, while RefExp links referring expressions to target elements. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/google-research-datasets/uibert/HEAD/README.md) |
 | [UICrit](https://github.com/google-research-datasets/uicrit) | unspecified | — | [1,000 mobile UI screens](https://raw.githubusercontent.com/google-research-datasets/uicrit/HEAD/README.md) · [11,344 design critiques](https://raw.githubusercontent.com/google-research-datasets/uicrit/HEAD/README.md) | — | Mobile-interface critiques and quality ratings with region coordinates and RICO screen references, including a larger three-annotator release than the original paper dataset. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/google-research-datasets/uicrit/HEAD/README.md) |
+| [VLM Reasoning Traces for mobile GUI tasks](https://github.com/LlamaTouch/VLM-Reasoning-Traces) | android | [2503.16788](https://arxiv.org/abs/2503.16788) (2025) | [500 step responses](https://raw.githubusercontent.com/LlamaTouch/VLM-Reasoning-Traces/HEAD/AndroidControl/claude-thinking-task-action.jsonl) · [502 grounding responses](https://raw.githubusercontent.com/LlamaTouch/VLM-Reasoning-Traces/HEAD/ScreenSpot/gemini-base-bbox-pixel.jsonl) | — | Recorded outputs of Claude 3.7 Sonnet and Gemini 2.0 Flash, each with and without reasoning, on AndroidControl steps and ScreenSpot mobile grounding, including Claude's thinking text. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/LlamaTouch/VLM-Reasoning-Traces/HEAD/README.md) |
 | [WebPRM Collection preference data](https://huggingface.co/datasets/LangAGI-Lab/WebPRMCollection_preference_pair) | web | [2505.15277](https://arxiv.org/abs/2505.15277) (2025) | [9,460 rows](https://huggingface.co/datasets/LangAGI-Lab/WebPRMCollection_preference_pair/raw/main/README.md) | — | Checklist-annotated web decision records with page observations, prior actions, one preferred continuation and rejected alternatives for process-reward learning. | [✓ 2026‑10‑17](https://huggingface.co/datasets/LangAGI-Lab/WebPRMCollection_preference_pair/raw/main/README.md) |
 
 ## Models
