@@ -8742,7 +8742,36 @@
       "artifact_type": "model-checkpoint"
     },
     "reviewed_sha256": "0097be2c0e5c3f3c8aace10de835b0d7c1075531cc7823287c3f5488aebaea08",
-    "reviewed_at": "2026-10-16T06:50:49Z"
+    "reviewed_at": "2026-10-16T06:50:49Z",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "relations",
+          "licenses.weights"
+        ],
+        "url": "https://huggingface.co/inclusionAI/UI-Venus-2-9B/raw/90d6dfe13ece735f82793635b69bcc10c710e2ab/README.md",
+        "sha256": "a2fe2b90d7585cb3e6600242841746a2e73fa532b015957c0f3fd14b96f08e12",
+        "retrieved_at": "2026-10-18T16:19:15Z"
+      }
+    ],
+    "reviewed_relations": [
+      {
+        "type": "documented_by",
+        "target_id": "arxiv:2609.00028",
+        "evidence_url": "https://huggingface.co/inclusionAI/UI-Venus-2-9B/raw/90d6dfe13ece735f82793635b69bcc10c710e2ab/README.md"
+      }
+    ],
+    "reviewed_licenses": {
+      "weights": {
+        "value": null,
+        "reason": "The model card at revision 90d6dfe declares no license in its metadata and states that the model-weight license is pending final confirmation; it deliberately omits Apache-2.0 because upstream materials conflict.",
+        "evidence_urls": [
+          "https://huggingface.co/inclusionAI/UI-Venus-2-9B/raw/90d6dfe13ece735f82793635b69bcc10c710e2ab/README.md"
+        ]
+      }
+    }
   },
   {
     "name": "EvoCUA 32B 20260105",
