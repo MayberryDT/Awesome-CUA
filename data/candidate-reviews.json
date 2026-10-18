@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:cdd0141d97276ad31fa5",
+    "url": "https://app.steel.dev",
+    "decision": "alias",
+    "target_id": "url:b940a884f200a916a61b",
+    "reason": "Account and dashboard web app of the indexed Steel Cloud product; the Steel Browser README links app.steel.dev as Steel Cloud."
   }
 ]
