@@ -250,5 +250,12 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "url:5bce848e38063e95b0cc",
+    "url": "https://os-world.github.io",
+    "decision": "alias",
+    "target_id": "github:xlang-ai/osworld",
+    "reason": "Official OSWorld leaderboard site, which hosts the OSWorld-Verified results; it is already the leaderboard_url of the curated OSWorld benchmark, not a separate resource."
   }
 ]
