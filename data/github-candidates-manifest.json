@@ -1,0 +1,449 @@
+{
+  "active_catalog_context": {
+    "records": 3175,
+    "role": "Comparison context only; not the observation source, selection, or approval.",
+    "sha256": "dd87ca14e36042ccf95acc78559aa318bc541ba11bb4311c339a9649f24a4118"
+  },
+  "count": {
+    "unit": "repositories",
+    "value": 4933
+  },
+  "count_policy": "Unique positive numeric GitHub repository IDs within this observation snapshot. Query occurrences overlap. Candidates may overlap active catalog resources; these populations must not be added or treated as independent projects.",
+  "export": {
+    "bytes": 10155549,
+    "file": "github-candidates.jsonl",
+    "format": "JSONL",
+    "sha256": "1193997bd075eda90c17d6c13a1b7fea6004a48073c202b9803f463ef83df603"
+  },
+  "input_fingerprints": [
+    {
+      "files": {
+        "candidate-reviews.json": {
+          "bytes": 9504,
+          "sha256": "dd1c3ee5a0855bcf8e4b325c247230831b974e503588b919c7e3bb4a39481656"
+        },
+        "candidates.jsonl": {
+          "bytes": 4710136,
+          "sha256": "dcbf7657cc61326a9e9ee56a6ef61faca1796ecb5bda425fc22e6e53263d493d"
+        },
+        "catalog.jsonl": {
+          "bytes": 7939848,
+          "sha256": "3c943bd4d62222e1069392a703f7433b69b71bde0837e7272fd83fbc33717814"
+        },
+        "primary-evidence.jsonl": {
+          "bytes": 1710824,
+          "sha256": "eb7981b5f6ada2e8577f892461f477dd722e69f13ac62d8230f2ca40018654bc"
+        },
+        "repository-aliases.json": {
+          "bytes": 24061,
+          "sha256": "f830cd3a152433350805a322d75e5e7beb6ce1e799760c99fe34ab44d8da4c14"
+        }
+      },
+      "id": "6387067c095950f40bd87de0e466db23b9726480bbb5f194704e051b7b1a2e4a"
+    }
+  ],
+  "manifest_schema": "/schemas/github-candidate-observation-manifest.schema.json",
+  "observation_snapshot_sha256": "1193997bd075eda90c17d6c13a1b7fea6004a48073c202b9803f463ef83df603",
+  "observed_from": "2026-10-18T13:02:50.777197+00:00",
+  "observed_through": "2026-10-18T13:30:18.993990+00:00",
+  "privacy": {
+    "checked_records": 4933,
+    "omitted_fields": [],
+    "policy": "Only allowlisted public repository fields and accepted primary receipts. Suspect descriptions are explicitly omitted; owner/contact objects, headers, raw bodies and local paths are not exported."
+  },
+  "provider": "github",
+  "review_policy": "Public GitHub metadata observations only. Every row remains candidate/relevance_pending; HTTP success, a topic tag, or a repository name does not establish CUA relevance, release completeness, licensing, or editorial approval.",
+  "scan": {
+    "configuration": {
+      "created_after": "2008-01-01",
+      "created_before": "2026-10-18",
+      "topics": [
+        "browser-automation",
+        "computer-use"
+      ]
+    },
+    "global_completeness_established": false,
+    "limit": "Bounded observed requests, not an exhaustive GitHub/CUA census. Per-query totals and overlapping shards are not a global union.",
+    "queries": [
+      {
+        "id": "existing:6387067c095950f40bd87de0e466db23b9726480bbb5f194704e051b7b1a2e4a",
+        "input_id": "6387067c095950f40bd87de0e466db23b9726480bbb5f194704e051b7b1a2e4a",
+        "kind": "existing",
+        "status": "pending"
+      },
+      {
+        "created_after": "2008-01-01",
+        "created_before": "2026-10-18",
+        "id": "search:923f3ad006b003aaf5f8db90",
+        "kind": "search",
+        "reported_total": 5313,
+        "status": "split",
+        "topic": "browser-automation"
+      },
+      {
+        "created_after": "2008-01-01",
+        "created_before": "2026-10-18",
+        "id": "search:748fe5abe54623d0df5a3a45",
+        "kind": "search",
+        "reported_total": 1630,
+        "status": "split",
+        "topic": "computer-use"
+      },
+      {
+        "created_after": "2008-01-01",
+        "created_before": "2017-05-25",
+        "id": "search:d13f8547dda51f63832969f9",
+        "kind": "search",
+        "reported_total": 11,
+        "status": "observed_pages_exhausted",
+        "topic": "browser-automation"
+      },
+      {
+        "created_after": "2017-05-26",
+        "created_before": "2026-10-18",
+        "id": "search:7be8ca4e704ca6580d08d36c",
+        "kind": "search",
+        "reported_total": 5302,
+        "status": "split",
+        "topic": "browser-automation"
+      },
+      {
+        "created_after": "2008-01-01",
+        "created_before": "2017-05-25",
+        "id": "search:eee42af3874ac9d6b422b2bc",
+        "kind": "search",
+        "reported_total": 1,
+        "status": "observed_pages_exhausted",
+        "topic": "computer-use"
+      },
+      {
+        "created_after": "2017-05-26",
+        "created_before": "2026-10-18",
+        "id": "search:634ff0f0fe846aee5aa96a01",
+        "kind": "search",
+        "reported_total": 1629,
+        "status": "split",
+        "topic": "computer-use"
+      },
+      {
+        "created_after": "2017-05-26",
+        "created_before": "2022-02-05",
+        "id": "search:db21d3418efb4d5a49c46e80",
+        "kind": "search",
+        "reported_total": 165,
+        "status": "observed_pages_exhausted",
+        "topic": "browser-automation"
+      },
+      {
+        "created_after": "2022-02-06",
+        "created_before": "2026-10-18",
+        "id": "search:9dba7fecc4e967aed2d9528c",
+        "kind": "search",
+        "reported_total": 5137,
+        "status": "split",
+        "topic": "browser-automation"
+      },
+      {
+        "created_after": "2017-05-26",
+        "created_before": "2022-02-05",
+        "id": "search:73a839738b8f996954f2675b",
+        "kind": "search",
+        "reported_total": 2,
+        "status": "observed_pages_exhausted",
+        "topic": "computer-use"
+      },
+      {
+        "created_after": "2022-02-06",
+        "created_before": "2026-10-18",
+        "id": "search:876d14bd029692a137e6b966",
+        "kind": "search",
+        "reported_total": 1627,
+        "status": "split",
+        "topic": "computer-use"
+      },
+      {
+        "created_after": "2022-02-06",
+        "created_before": "2024-06-12",
+        "id": "search:abfba81090d2f58b631df258",
+        "kind": "search",
+        "reported_total": 132,
+        "status": "observed_pages_exhausted",
+        "topic": "browser-automation"
+      },
+      {
+        "created_after": "2024-06-13",
+        "created_before": "2026-10-18",
+        "id": "search:b4d2e018b05107be47687dba",
+        "kind": "search",
+        "reported_total": 5006,
+        "status": "split",
+        "topic": "browser-automation"
+      },
+      {
+        "created_after": "2022-02-06",
+        "created_before": "2024-06-12",
+        "id": "search:5b86538a9641286c19d292ff",
+        "kind": "search",
+        "reported_total": 11,
+        "status": "observed_pages_exhausted",
+        "topic": "computer-use"
+      },
+      {
+        "created_after": "2024-06-13",
+        "created_before": "2026-10-18",
+        "id": "search:06394afee06bb669b70206c4",
+        "kind": "search",
+        "reported_total": 1616,
+        "status": "split",
+        "topic": "computer-use"
+      },
+      {
+        "created_after": "2024-06-13",
+        "created_before": "2025-08-15",
+        "id": "search:74843094fef9879bb382f76f",
+        "kind": "search",
+        "reported_total": 265,
+        "status": "observed_pages_exhausted",
+        "topic": "browser-automation"
+      },
+      {
+        "created_after": "2025-08-16",
+        "created_before": "2026-10-18",
+        "id": "search:1fcf787c46b4c2749f818972",
+        "kind": "search",
+        "reported_total": 4741,
+        "status": "split",
+        "topic": "browser-automation"
+      },
+      {
+        "created_after": "2024-06-13",
+        "created_before": "2025-08-15",
+        "id": "search:d1cfe2eb51d63266de6ef79f",
+        "kind": "search",
+        "reported_total": 90,
+        "status": "observed_pages_exhausted",
+        "topic": "computer-use"
+      },
+      {
+        "created_after": "2025-08-16",
+        "created_before": "2026-10-18",
+        "id": "search:2cb3b5995cc07a4466388caf",
+        "kind": "search",
+        "reported_total": 1526,
+        "status": "split",
+        "topic": "computer-use"
+      },
+      {
+        "created_after": "2025-08-16",
+        "created_before": "2026-03-18",
+        "id": "search:cad5f68aa19e89fd141416eb",
+        "kind": "search",
+        "reported_total": 804,
+        "status": "pending",
+        "topic": "browser-automation"
+      },
+      {
+        "created_after": "2026-03-19",
+        "created_before": "2026-10-18",
+        "id": "search:1d1af5d9f4e76afe4391d830",
+        "kind": "search",
+        "reported_total": 3937,
+        "status": "split",
+        "topic": "browser-automation"
+      },
+      {
+        "created_after": "2025-08-16",
+        "created_before": "2026-03-18",
+        "id": "search:9210df3628b5ec10d968f4c7",
+        "kind": "search",
+        "reported_total": 145,
+        "status": "observed_pages_exhausted",
+        "topic": "computer-use"
+      },
+      {
+        "created_after": "2026-03-19",
+        "created_before": "2026-10-18",
+        "id": "search:b9832a5e4c4dda574131023d",
+        "kind": "search",
+        "reported_total": 1381,
+        "status": "split",
+        "topic": "computer-use"
+      },
+      {
+        "created_after": "2026-03-19",
+        "created_before": "2026-07-03",
+        "id": "search:8c6132a1109bdece66ea6a2c",
+        "kind": "search",
+        "reported_total": 1385,
+        "status": "split",
+        "topic": "browser-automation"
+      },
+      {
+        "created_after": "2026-07-04",
+        "created_before": "2026-10-18",
+        "id": "search:78f6bb2303aa1e5e17706cec",
+        "kind": "search",
+        "reported_total": 2552,
+        "status": "split",
+        "topic": "browser-automation"
+      },
+      {
+        "created_after": "2026-03-19",
+        "created_before": "2026-07-03",
+        "id": "search:2a9d9419672dd4eadfc6be6d",
+        "kind": "search",
+        "reported_total": 359,
+        "status": "observed_pages_exhausted",
+        "topic": "computer-use"
+      },
+      {
+        "created_after": "2026-07-04",
+        "created_before": "2026-10-18",
+        "id": "search:4a46c8ae62f3554b372f8156",
+        "kind": "search",
+        "reported_total": 1022,
+        "status": "split",
+        "topic": "computer-use"
+      },
+      {
+        "created_after": "2026-03-19",
+        "created_before": "2026-05-11",
+        "id": "search:01d3d13c1f5f28222f2b1f14",
+        "kind": "search",
+        "reported_total": 647,
+        "status": "pending",
+        "topic": "browser-automation"
+      },
+      {
+        "created_after": "2026-05-12",
+        "created_before": "2026-07-03",
+        "id": "search:d0d91d8e69c0bc34770055b3",
+        "kind": "search",
+        "reported_total": 738,
+        "status": "pending",
+        "topic": "browser-automation"
+      },
+      {
+        "created_after": "2026-07-04",
+        "created_before": "2026-08-26",
+        "id": "search:81e64cf55236719b185be42d",
+        "kind": "search",
+        "reported_total": 1001,
+        "status": "split",
+        "topic": "browser-automation"
+      },
+      {
+        "created_after": "2026-08-27",
+        "created_before": "2026-10-18",
+        "id": "search:476cfc40f96f091cc2f8cf41",
+        "kind": "search",
+        "reported_total": 1551,
+        "status": "split",
+        "topic": "browser-automation"
+      },
+      {
+        "created_after": "2026-07-04",
+        "created_before": "2026-08-26",
+        "id": "search:f202fdd5e27878a37e85e182",
+        "kind": "search",
+        "reported_total": 327,
+        "status": "observed_pages_exhausted",
+        "topic": "computer-use"
+      },
+      {
+        "created_after": "2026-08-27",
+        "created_before": "2026-10-18",
+        "id": "search:2da8704d708bbc88a4ce2ef2",
+        "kind": "search",
+        "reported_total": 695,
+        "status": "pending",
+        "topic": "computer-use"
+      },
+      {
+        "created_after": "2026-07-04",
+        "created_before": "2026-07-30",
+        "id": "search:ef3948696830299037cdbbe5",
+        "kind": "search",
+        "reported_total": 448,
+        "status": "pending",
+        "topic": "browser-automation"
+      },
+      {
+        "created_after": "2026-07-31",
+        "created_before": "2026-08-26",
+        "id": "search:cde3c0cbdf6225183f33227e",
+        "kind": "search",
+        "reported_total": 554,
+        "status": "pending",
+        "topic": "browser-automation"
+      },
+      {
+        "created_after": "2026-08-27",
+        "created_before": "2026-09-22",
+        "id": "search:96f11be69b8b72edc47bdd64",
+        "kind": "search",
+        "reported_total": 659,
+        "status": "pending",
+        "topic": "browser-automation"
+      },
+      {
+        "created_after": "2026-09-23",
+        "created_before": "2026-10-18",
+        "id": "search:9c344409e06858ea430a6e41",
+        "kind": "search",
+        "reported_total": 893,
+        "status": "pending",
+        "topic": "browser-automation"
+      }
+    ],
+    "request_outcomes": {
+      "accepted": 79,
+      "rate_limited": 1,
+      "redirect_not_followed": 2,
+      "unavailable": 1
+    },
+    "runs": [
+      {
+        "accepted_metadata_rows": 613,
+        "after_unique_repositories": 313,
+        "before_unique_repositories": 0,
+        "finished_at": "2026-10-18T13:03:53.172986+00:00",
+        "id": "run:213dfa7d94b4019ba6e5446f",
+        "input_id": "6387067c095950f40bd87de0e466db23b9726480bbb5f194704e051b7b1a2e4a",
+        "new_unique_repositories": 313,
+        "requests_attempted": 10,
+        "started_at": "2026-10-18T13:02:50.776028+00:00",
+        "status": "request_budget"
+      },
+      {
+        "accepted_metadata_rows": 3545,
+        "after_unique_repositories": 2418,
+        "before_unique_repositories": 313,
+        "finished_at": "2026-10-18T13:14:57.949516+00:00",
+        "id": "run:ed52b14c24e844de57495943",
+        "input_id": "6387067c095950f40bd87de0e466db23b9726480bbb5f194704e051b7b1a2e4a",
+        "new_unique_repositories": 2105,
+        "requests_attempted": 40,
+        "started_at": "2026-10-18T13:10:36.985329+00:00",
+        "status": "request_budget"
+      },
+      {
+        "accepted_metadata_rows": 2654,
+        "after_unique_repositories": 4933,
+        "before_unique_repositories": 2418,
+        "finished_at": "2026-10-18T13:30:27.326199+00:00",
+        "id": "run:7067be7358484c6938b8324c",
+        "input_id": "6387067c095950f40bd87de0e466db23b9726480bbb5f194704e051b7b1a2e4a",
+        "new_unique_repositories": 2515,
+        "requests_attempted": 33,
+        "started_at": "2026-10-18T13:26:57.253658+00:00",
+        "status": "rate_limited"
+      }
+    ]
+  },
+  "schema": "/schemas/github-candidate-observation.schema.json",
+  "schema_version": 1,
+  "scope": "candidate-observations",
+  "source_ledger_sha256": "c18879ebf150941dcb7c395300d3ab3dbf2349279906dd72f6549c5fdeabfd10",
+  "supporting_primary_bodies": 79
+}
