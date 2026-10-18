@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:weiminxiong/mpo",
+    "url": "https://github.com/WeiminXiong/MPO",
+    "decision": "out_of_scope",
+    "reason": "The MPO repository releases meta-plan generation, DPO data construction and evaluation code for the text-based ALFWorld and ScienceWorld environments only. It contains no web, GUI or device environment, so the curated paper arxiv:2503.02682 already covers the method and its WebShop result.",
+    "reviewed_at": "2026-10-18T16:04:48Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/WeiminXiong/MPO/HEAD/README.md",
+      "sha256": "409aea1c1c7d428fd75cecab42a36f07538b6af9f7a541a9f2c2bfb0ca490abb",
+      "retrieved_at": "2026-10-18T15:32:56Z"
+    }
   }
 ]
