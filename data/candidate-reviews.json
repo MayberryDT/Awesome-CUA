@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:e20fbd9d134ef0dbd864",
+    "url": "https://ai-agents-2030.github.io/ViMo",
+    "decision": "alias",
+    "target_id": "arxiv:2504.13936",
+    "reason": "Project website for the indexed ViMo visual GUI world model paper."
   }
 ]
