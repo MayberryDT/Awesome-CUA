@@ -250,5 +250,11 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:nvlabs/llm-agents",
+    "url": "https://github.com/NVlabs/llm-agents",
+    "decision": "not_a_resource",
+    "reason": "Dead link: the repository page and the GitHub API both return 404 with no rename redirect, no NVlabs repository has this or a similar name, and the Wayback Machine has no capture (CDX query empty). The discovery list's description, standardized evaluation for LLM agents, names no other resource."
   }
 ]
