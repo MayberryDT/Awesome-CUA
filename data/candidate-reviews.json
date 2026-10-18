@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:b1c74b74404eefa7090c",
+    "url": "https://huggingface.co/datasets/Voxel51/ShowUI_desktop",
+    "decision": "alias",
+    "target_id": "url:f976dec3d1c5e0bedbd7",
+    "reason": "Third-party copy of the indexed ShowUI Desktop dataset: Voxel51/ShowUI_desktop repackages its 7,496 grounding examples in FiftyOne format, one image file per example, and credits showlab/ShowUI-desktop."
   }
 ]
