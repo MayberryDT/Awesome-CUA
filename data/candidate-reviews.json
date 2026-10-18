@@ -250,5 +250,11 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:showlab/awesome-gui-agent",
+    "url": "https://github.com/showlab/Awesome-GUI-Agent",
+    "decision": "not_a_resource",
+    "reason": "Repository of the showlab-gui discovery source: an awesome list of GUI-agent papers, projects and resources whose README is fetched for discovery, so its entries are reviewed individually rather than the list itself."
   }
 ]

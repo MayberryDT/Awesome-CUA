@@ -11,8 +11,8 @@
   "exclusion_revalidation_pending": 0,
   "metadata_only_records": 1483,
   "discovery_identifiers": 4052,
-  "unindexed_candidates": 903,
-  "non_resource_candidates": 80,
+  "unindexed_candidates": 902,
+  "non_resource_candidates": 81,
   "alias_candidates": 9,
   "pending_editorial": [
     {
@@ -396,8 +396,8 @@
       "resolved_aliases": 1,
       "curated": 87,
       "excluded": 0,
-      "set_aside": 1,
-      "unindexed": 35
+      "set_aside": 2,
+      "unindexed": 34
     },
     {
       "id": "steel-web",
@@ -516,8 +516,8 @@
       "resolved_aliases": 5,
       "curated": 454,
       "excluded": 1,
-      "set_aside": 0,
-      "unindexed": 88
+      "set_aside": 1,
+      "unindexed": 87
     },
     {
       "id": "tianyuan-cua",
@@ -636,8 +636,8 @@
       "resolved_aliases": 3,
       "curated": 144,
       "excluded": 0,
-      "set_aside": 0,
-      "unindexed": 46
+      "set_aside": 1,
+      "unindexed": 45
     },
     {
       "id": "osu-gui",
@@ -696,8 +696,8 @@
       "resolved_aliases": 1,
       "curated": 83,
       "excluded": 0,
-      "set_aside": 2,
-      "unindexed": 50
+      "set_aside": 3,
+      "unindexed": 49
     },
     {
       "id": "jin-gui-hub",
