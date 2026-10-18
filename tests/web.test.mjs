@@ -589,6 +589,10 @@ test('clone commands copy exactly once and announce scoped bilingual success or 
   const html=readFileSync(new URL('../web/index.html',import.meta.url),'utf8');
   assert.match(html,/<code[^>]*>git clone https:\/\/github.com\/reacher-z\/Awesome-CUA.git<\/code>/);
   assert.match(html,/id="clone-status-home"[^>]*data-clone-status[^>]*role="status"[^>]*aria-live="polite"[^>]*aria-atomic="true"/);
+  assert.match(html,/<details class="agent-search"><summary data-i18n="localSearch">Try a local search<\/summary>/);
+  const localSearch='python3 scripts/catalog.py search "grounding" --kind model --status curated --json';
+  assert.ok(readFileSync(new URL('../AGENTS.md',import.meta.url),'utf8').includes(localSearch));
+  assert.ok(html.includes(`cd Awesome-CUA\n${localSearch}`));
   for(const path of ['/agents/','/AGENTS.md','/downloads/rag-manifest.json'])assert.ok(html.includes(`href="${path}"`));
   const coverage=JSON.parse(readFileSync(new URL('../data/coverage.json',import.meta.url),'utf8'));
   const keys=['document','window','location','history','localStorage','fetch','navigator'],saved=keys.map(key=>[key,Object.getOwnPropertyDescriptor(globalThis,key)]);
@@ -615,6 +619,9 @@ test('clone commands copy exactly once and announce scoped bilingual success or 
       assert.match(content,/id="clone-status-download"[^>]*data-clone-status[^>]*role="status"[^>]*aria-live="polite"/);
       for(const path of [language==='zh'?'/zh/agents/':'/agents/','/AGENTS.md','/downloads/rag-manifest.json'])assert.ok(content.includes(`href="${path}"`));
       assert.ok(content.includes(language==='zh'?'导出数量与快照指纹。':'Export counts and snapshot fingerprints.'));
+      assert.ok(content.includes(`<details class="agent-search"><summary>${language==='zh'?'试一次本地检索':'Try a local search'}</summary>`));
+      assert.ok(content.includes(`cd Awesome-CUA\n${escapeHTML(localSearch)}`));
+      assert.ok(content.includes(language==='zh'?'需要 Python 3.11+，无需安装软件包或注册账号。':'Python 3.11+; no package installation or account needed.'));
       navigator.clipboard.writeText=async value=>{writes.push(value);throw new Error('Permission denied');};
       await click(modalButton);
       assert.equal(modalButton.disabled,false);assert.equal(modal.textContent,language==='zh'?'复制失败，请选中命令后手动复制。':'Copy failed. Select and copy the command manually.');

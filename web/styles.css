@@ -35,6 +35,8 @@
 .clone-command button:hover{background:#e8ecff}
 .clone-command button:disabled{cursor:progress;opacity:.65}
 .clone-feedback{min-height:1.65em;margin:7px 0 0;color:#3542b4;font-size:13px;line-height:1.65;overflow-wrap:anywhere}
+.agent-search{margin-top:2px}.agent-search summary{min-height:44px;padding:11px 2px;color:#3542b4;font-size:13px;line-height:1.65;cursor:pointer}.agent-search summary:focus-visible{outline:2px solid var(--blue);outline-offset:3px}
+.agent-search pre{margin:0;padding:12px;background:#f7f8fc;border:1px solid #e2e6f0;border-radius:7px;white-space:pre-wrap;overflow-wrap:anywhere;user-select:text}.agent-search code{color:#27305e;font:13px/1.7 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}.agent-search p{margin:8px 0 0;color:#555d70;font-size:12px;line-height:1.65}
 .agent-download{margin:24px 0}.agent-download h3{font-size:20px;margin-bottom:8px}.agent-download .agent-entry-links{margin-top:14px}
 .download-section-heading{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:20px;border-top:1px solid var(--line)}
 .download-section-heading h3{margin:0;font-size:18px;line-height:1.5}.download-section-heading>a{display:inline-flex;align-items:center;min-height:44px;flex-shrink:0;font-size:14px;color:#3542b4}
