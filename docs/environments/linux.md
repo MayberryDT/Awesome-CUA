@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-47 source-reviewed resources tagged `linux`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+48 source-reviewed resources tagged `linux`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (7)](#datasets) · [Models (6)](#models) · [Frameworks (5)](#frameworks) · [Tools (2)](#tools) · [Infrastructure (4)](#infrastructure) · [Papers (18)](#papers)
+**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (8)](#datasets) · [Models (6)](#models) · [Frameworks (5)](#frameworks) · [Tools (2)](#tools) · [Infrastructure (4)](#infrastructure) · [Papers (18)](#papers)
 
 ## Benchmarks
 
@@ -21,6 +21,7 @@
 | Resource | Environments | Paper | Scale | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- | --- |
 | [Aria-UI Data](https://huggingface.co/datasets/Aria-UI/Aria-UI_Data) | web, android, desktop, linux | [2412.16256](https://arxiv.org/abs/2412.16256) (2024) | [≈ 2,900,000 instructions](https://huggingface.co/datasets/Aria-UI/Aria-UI_Data/raw/main/README.md) · [≈ 173,000 images](https://huggingface.co/datasets/Aria-UI/Aria-UI_Data/raw/main/README.md) | data apache-2.0 | GUI element descriptions and grounding instructions spanning web, mobile, and Ubuntu desktop interfaces. | [✓ 2026‑10‑16](https://huggingface.co/datasets/Aria-UI/Aria-UI_Data/raw/main/README.md) |
+| [GroundCUA dataset](https://huggingface.co/datasets/ServiceNow/GroundCUA) | desktop, windows, macos, linux | [2511.07332](https://arxiv.org/abs/2511.07332) (2025) | [51,175 screenshot-annotation file pairs](https://huggingface.co/api/datasets/ServiceNow/GroundCUA/tree/5d6845b0116029d46ec762e734701c5b8ce207c3/data) · [87 application folders](https://huggingface.co/api/datasets/ServiceNow/GroundCUA/tree/5d6845b0116029d46ec762e734701c5b8ce207c3/data) · [≈ 56,000 screenshots](https://raw.githubusercontent.com/ServiceNow/GroundCUA/94cba61693d6258c7100f7016a299b84b1bb7732/README.md) · [≈ 3,560,000 element annotations](https://raw.githubusercontent.com/ServiceNow/GroundCUA/94cba61693d6258c7100f7016a299b84b1bb7732/README.md) | data mit | Desktop GUI-grounding data from the GroundCUA project: PNG screenshots of 87 applications paired by hash with JSON lists of element boxes, visible text and optional coarse categories. | [✓ 2026‑10‑18](https://huggingface.co/datasets/ServiceNow/GroundCUA/raw/5d6845b0116029d46ec762e734701c5b8ce207c3/README.md) |
 | [GUI-R1 data bundle](https://huggingface.co/datasets/ritzzai/GUI-R1) | desktop, windows, linux, macos, android, web | [2504.10458](https://arxiv.org/abs/2504.10458) (2025) | — | data mit | Training and evaluation Parquet bundles accompanying GUI-R1, including GUI grounding and mobile/web action-prediction data. | [✓ 2026‑10‑17](https://huggingface.co/datasets/ritzzai/GUI-R1/raw/main/README.md) |
 | [PC-Agent-E training data](https://huggingface.co/datasets/henryhe0123/PC-Agent-E) | desktop, windows, linux | [2505.13909](https://arxiv.org/abs/2505.13909) (2025) | — | data MIT | Released dataset used to train PC-Agent-E, linked by the official pipeline for refining human trajectories and synthesizing action reasoning. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/GAIR-NLP/PC-Agent-E/HEAD/README.md) |
 | [ScienceBoard evaluation trajectories](https://huggingface.co/datasets/OS-Copilot/ScienceBoard-Traj) | desktop, linux | [2505.19897](https://arxiv.org/abs/2505.19897) (2025) | — | — | Archives of ScienceBoard agent evaluation runs, separated by agent configuration and screenshot, accessibility-tree or set-of-marks observation mode. | [✓ 2026‑10‑17](https://huggingface.co/api/datasets/OS-Copilot/ScienceBoard-Traj) |

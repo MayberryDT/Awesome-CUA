@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-61 source-reviewed resources tagged `windows`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+62 source-reviewed resources tagged `windows`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (4)](#datasets) · [Models (5)](#models) · [Agents (4)](#agents) · [Frameworks (2)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (1)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (36)](#papers)
+**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (5)](#datasets) · [Models (5)](#models) · [Agents (4)](#agents) · [Frameworks (2)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (1)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (36)](#papers)
 
 ## Benchmarks
 
@@ -20,6 +20,7 @@
 
 | Resource | Environments | Paper | Scale | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- | --- |
+| [GroundCUA dataset](https://huggingface.co/datasets/ServiceNow/GroundCUA) | desktop, windows, macos, linux | [2511.07332](https://arxiv.org/abs/2511.07332) (2025) | [51,175 screenshot-annotation file pairs](https://huggingface.co/api/datasets/ServiceNow/GroundCUA/tree/5d6845b0116029d46ec762e734701c5b8ce207c3/data) · [87 application folders](https://huggingface.co/api/datasets/ServiceNow/GroundCUA/tree/5d6845b0116029d46ec762e734701c5b8ce207c3/data) · [≈ 56,000 screenshots](https://raw.githubusercontent.com/ServiceNow/GroundCUA/94cba61693d6258c7100f7016a299b84b1bb7732/README.md) · [≈ 3,560,000 element annotations](https://raw.githubusercontent.com/ServiceNow/GroundCUA/94cba61693d6258c7100f7016a299b84b1bb7732/README.md) | data mit | Desktop GUI-grounding data from the GroundCUA project: PNG screenshots of 87 applications paired by hash with JSON lists of element boxes, visible text and optional coarse categories. | [✓ 2026‑10‑18](https://huggingface.co/datasets/ServiceNow/GroundCUA/raw/5d6845b0116029d46ec762e734701c5b8ce207c3/README.md) |
 | [GUI-360](https://huggingface.co/datasets/vyokky/GUI-360) | desktop, windows | [2511.04307](https://arxiv.org/abs/2511.04307) (2025) | — | data mit | Desktop GUI trajectory data supporting multiple interface understanding tasks. | [✓ 2026‑10‑16](https://huggingface.co/api/datasets/vyokky/GUI-360) |
 | [GUI-R1 data bundle](https://huggingface.co/datasets/ritzzai/GUI-R1) | desktop, windows, linux, macos, android, web | [2504.10458](https://arxiv.org/abs/2504.10458) (2025) | — | data mit | Training and evaluation Parquet bundles accompanying GUI-R1, including GUI grounding and mobile/web action-prediction data. | [✓ 2026‑10‑17](https://huggingface.co/datasets/ritzzai/GUI-R1/raw/main/README.md) |
 | [PC-Agent-E training data](https://huggingface.co/datasets/henryhe0123/PC-Agent-E) | desktop, windows, linux | [2505.13909](https://arxiv.org/abs/2505.13909) (2025) | — | data MIT | Released dataset used to train PC-Agent-E, linked by the official pipeline for refining human trajectories and synthesizing action reasoning. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/GAIR-NLP/PC-Agent-E/HEAD/README.md) |
