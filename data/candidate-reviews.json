@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "url:143351d4efc86a846bba",
+    "url": "https://huggingface.co/google/siglip-so400m-patch14-384",
+    "decision": "out_of_scope",
+    "reason": "A general-purpose SigLIP image-text encoder pre-trained on WebLi for zero-shot image classification and retrieval; its card describes no GUI, web or device interaction. MultiUI lists it only as the vision tower behind its UIX-Qwen2 checkpoints, which does not make the encoder itself a computer-use resource.",
+    "reviewed_at": "2026-10-18T16:05:13Z",
+    "evidence": {
+      "url": "https://huggingface.co/google/siglip-so400m-patch14-384/raw/9fdffc58afc957d1a03a25b10dba0329ab15c2a3/README.md",
+      "sha256": "96a172e58539296eadb939acf544287c14e20a0a426fbbff116518c2c8024a8b",
+      "retrieved_at": "2026-10-18T15:38:35Z"
+    }
   }
 ]
