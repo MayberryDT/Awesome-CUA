@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "url:a1ebe1d53a071bcb3e4a",
+    "url": "https://huggingface.co/lerobot/smolvla_base",
+    "decision": "out_of_scope",
+    "reason": "SmolVLA base is LeRobot's vision-language-action checkpoint for robot manipulation: it maps multi-view camera images, robot state and an optional instruction to continuous robot actions, and its card describes no GUI, screen or computer use. It appears in the discovery source only as the base acknowledged by ShowUI-pi, whose GUI checkpoint is recorded separately.",
+    "reviewed_at": "2026-10-18T16:08:33Z",
+    "evidence": {
+      "url": "https://huggingface.co/lerobot/smolvla_base/raw/5e8d12a6e2975b0e5e5fce7c8caf47c371d257b6/README.md",
+      "sha256": "1c4eab155e159a5fd3fd6c4d5f770c43f056665d73e11c0584e47f8b824d3c98",
+      "retrieved_at": "2026-10-18T15:53:27Z"
+    }
   }
 ]
