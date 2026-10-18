@@ -11,9 +11,9 @@
   "exclusion_revalidation_pending": 0,
   "metadata_only_records": 1483,
   "discovery_identifiers": 4052,
-  "unindexed_candidates": 903,
+  "unindexed_candidates": 902,
   "non_resource_candidates": 80,
-  "alias_candidates": 9,
+  "alias_candidates": 10,
   "pending_editorial": [
     {
       "id": "github:thudm/autoglm",
@@ -516,8 +516,8 @@
       "resolved_aliases": 5,
       "curated": 454,
       "excluded": 1,
-      "set_aside": 0,
-      "unindexed": 88
+      "set_aside": 1,
+      "unindexed": 87
     },
     {
       "id": "tianyuan-cua",
