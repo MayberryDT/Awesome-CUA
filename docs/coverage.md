@@ -5,7 +5,7 @@ Evidence snapshot through **2026-10-18T08:01:28Z**. Generated from committed sou
 - 3,055 resource records: 1,572 curated; 1,483 bibliographic metadata only.
 - 2,606 paper and survey records, including 2,593 arXiv identities and 13 publisher-only identities. This count overlaps the status counts above.
 - 2,715 retained arXiv metadata records; 122 explicit scope exclusions are outside the active catalog.
-- 4,052 discovery identifiers; 903 remain unresolved after accounting for scope exclusions and for 80 reviewed non-resource links, 9 other addresses of indexed resources and 0 resources reviewed as outside the computer-use scope, which stay in the review queue with their reasons.
+- 4,052 discovery identifiers; 902 remain unresolved after accounting for scope exclusions and for 80 reviewed non-resource links, 9 other addresses of indexed resources and 1 resources reviewed as outside the computer-use scope, which stay in the review queue with their reasons.
 - 18 editorial proposals await verification or review.
 
 These are distinct resource identifiers, not distinct research projects. Papers, repositories, datasets, products, and publisher entities have different grains.
@@ -77,7 +77,7 @@ The denominator is the normalized identifiers extracted from each fetched docume
 | [UI-Genie — first-party model and data releases](https://github.com/Euphoria16/UI-Genie) | 12 | 5 | 5 | 0 | 0 | 0 | 7 | OK · 2026-10-18 |
 | [ScienceBoard — first-party environments and trajectories](https://github.com/OS-Copilot/ScienceBoard) | 16 | 4 | 4 | 0 | 3 | 0 | 9 | OK · 2026-10-18 |
 | [MAI-UI / Qwen-UI-Agent — first-party project index](https://github.com/Tongyi-MAI/MAI-UI) | 17 | 3 | 3 | 0 | 0 | 0 | 14 | OK · 2026-10-18 |
-| [H Company — official Hub model index](https://huggingface.co/Hcompany) | 39 | 4 | 4 | 0 | 0 | 0 | 35 | FAILED · 2026-10-18 |
+| [H Company — official Hub model index](https://huggingface.co/Hcompany) | 39 | 4 | 4 | 0 | 0 | 1 | 34 | FAILED · 2026-10-18 |
 | [Maxi-W Awesome AI for GUI Agents](https://github.com/maxi-w/awesome-ai-for-gui-agents) | 50 | 26 | 26 | 0 | 1 | 0 | 23 | OK · 2026-10-18 |
 | [Awesome On-Device Agents](https://github.com/Adam-THU/awesome-on-device-agents) | 32 | 20 | 15 | 3 | 0 | 0 | 9 | OK · 2026-10-18 |
 | [AwesomeEverything GUI Agents Paper List](https://github.com/WeijianQ/AwesomeEverything_GUI-Agents-Paper-List) | 496 | 451 | 385 | 0 | 0 | 0 | 45 | OK · 2026-10-18 |

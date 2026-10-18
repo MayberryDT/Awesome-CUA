@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "url:9216257833c74d2ea15f",
+    "url": "https://huggingface.co/Hcompany/NeoMME-800M-Retriever-ST-late",
+    "decision": "out_of_scope",
+    "reason": "NeoMME-800M-Retriever-ST-late is H Company's Sentence Transformers late-interaction variant of a multilingual multimodal encoder for retrieving text and document-page images, evaluated on ViDoRe and BEIR retrieval benchmarks. It neither perceives nor operates graphical interfaces, so it is a document-retrieval model outside the computer-use scope despite its publisher's GUI-agent models.",
+    "reviewed_at": "2026-10-18T16:09:32Z",
+    "evidence": {
+      "url": "https://huggingface.co/Hcompany/NeoMME-800M-Retriever-ST-late/raw/ad4c17419c28745c3b3045981b0d8abb72cd142b/README.md",
+      "sha256": "0d7ae8361d598236d573e4e5841cf7a828cd92438bb12dcc2c08a635889a2f36",
+      "retrieved_at": "2026-10-18T16:03:31Z"
+    }
   }
 ]
