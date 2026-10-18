@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-596 source-reviewed resources tagged `web`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+597 source-reviewed resources tagged `web`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (37)](#benchmarks) · [Datasets (24)](#datasets) · [Models (28)](#models) · [Agents (11)](#agents) · [Frameworks (36)](#frameworks) · [Tools (11)](#tools) · [Infrastructure (5)](#infrastructure) · [Products (18)](#products) · [Surveys (2)](#surveys) · [Papers (424)](#papers)
+**Contents:** [Benchmarks (37)](#benchmarks) · [Datasets (24)](#datasets) · [Models (28)](#models) · [Agents (11)](#agents) · [Frameworks (37)](#frameworks) · [Tools (11)](#tools) · [Infrastructure (5)](#infrastructure) · [Products (18)](#products) · [Surveys (2)](#surveys) · [Papers (424)](#papers)
 
 ## Benchmarks
 
@@ -152,6 +152,7 @@
 | [RedTeamCUA](https://github.com/OSU-NLP-Group/RedTeamCUA) | web, desktop | [2505.21936](https://arxiv.org/abs/2505.21936) (2025) | code Apache-2.0 | A controlled testing framework that combines desktop virtual machines and replicated websites to evaluate computer-use agents against indirect prompt injection. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/OSU-NLP-Group/RedTeamCUA/HEAD/README.md) |
 | [ScreenSuite](https://github.com/huggingface/screensuite) | web, android, desktop | — | code Apache-2.0 | A shared evaluation harness for GUI-model perception, offline action prediction and multi-step interaction, using simple smolagents-based agents across existing benchmarks. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/huggingface/screensuite/HEAD/README.md) |
 | [Self-MAP](https://github.com/magicgh/Self-MAP) | web | [2402.15057](https://arxiv.org/abs/2402.15057) (2024) | code MIT | A conversational web-agent implementation with candidate ranking and memory-assisted action planning, including optional memory simplification, refinement and self-reflection modules. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/magicgh/self-map/HEAD/README.md) |
+| [SimpAgent](https://github.com/JiuTian-VL/SimpAgent) | android, web | [2507.03730](https://arxiv.org/abs/2507.03730) (2025) | — | Qwen2-VL fine-tuning and evaluation code for GUI agents that mask irrelevant screen elements and compress action history, with scripts for AITW, Mind2Web, AndroidControl and GUI-Odyssey. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/JiuTian-VL/SimpAgent/HEAD/README.md) |
 | [SkillWeaver](https://github.com/OSU-NLP-Group/SkillWeaver) | web | [2504.07079](https://arxiv.org/abs/2504.07079) (2025) | code MIT | A web-agent framework that explores sites, synthesizes reusable interaction APIs and builds a skill library for later tasks. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/OSU-NLP-Group/SkillWeaver/HEAD/README.md) |
 | [Skyvern](https://github.com/Skyvern-AI/skyvern) | web | — | — | Browser workflow automation that relies on vision LLMs and a swarm of agents instead of fixed XPath selectors, offered as a Playwright-compatible SDK and a no-code workflow builder. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/Skyvern-AI/skyvern/HEAD/README.md) |
 | [Stagehand](https://github.com/browserbase/stagehand) | web | — | code MIT | Browser automation framework combining code and natural-language actions. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/browserbase/stagehand/HEAD/README.md) |
