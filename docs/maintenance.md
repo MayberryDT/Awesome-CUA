@@ -10,6 +10,12 @@ python3 scripts/scan.py
 
 One scan attempts to refresh all registered discovery documents and the Hugging Face paper searches, obtains a recent arXiv query result, verifies missing paper identities, rebuilds the catalog, and validates it. New rows remain metadata-only or candidates. Existing-paper changes are proposed for review instead of overwriting retained metadata. Partial source failures are recorded explicitly; a failed build or validation prevents publication. A partial scan still commits its verified data, and each recorded gap, such as an HTTP 429, appears in the job log, the run's step summary and as a warning annotation. After `max_consecutive_partial` partial scans in a row (4, set in `data/scan-config.json`), a separate job fails the run so GitHub sends its failure notification.
 
+The optional [public GitHub candidate metadata scanner](public-candidate-scan.md)
+is a separate, bounded pilot path. It records public numeric repository identities
+and resumable creation-date search shards in ignored cache, without approving
+resources or changing the active catalog. It is not part of the scheduled scan;
+integration must first share the scheduler's request and time budgets.
+
 The committed `data/paper-discovery-queries.json` registry defines 32 Hugging Face hybrid searches, each with an 80-result window. The topics include desktop and mobile platforms, professional software, grounding, data, learning, memory, safety, accessibility, and Chinese-language discovery. All three daily scans run the registry. `data/paper-discovery-status.json` records the current pass, each query's receipt, successful/failed/deferred states, unique identifiers, and new candidate contributions. Ranked windows and their overlaps do not establish complete coverage. Per-query new counts depend on query order; the pass total is deduplicated.
 
 Successful query results replace only that query's current candidate occurrences. Failures or malformed responses retain prior occurrences without borrowing an old success for the current scan. A completed query is persisted before the next request. On HTTP 429, remaining queries for that provider are explicitly deferred. arXiv harvest also stops after a 429; a rate-limited recent query defers the same scan's harvest. Unresolved candidates remain queued for later verification.
