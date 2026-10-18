@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:8062bbb2caeb530525c3",
+    "url": "https://alibaba-nlp.github.io/WebWalker",
+    "decision": "alias",
+    "target_id": "arxiv:2501.07572",
+    "reason": "Former project website for the indexed WebWalker paper. The address now returns 404 because its repository was renamed to Alibaba-NLP/DeepResearch, and the same WebWalker page is served at alibaba-nlp.github.io/DeepResearch/."
   }
 ]
