@@ -2,15 +2,16 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-322 source-reviewed resources tagged `desktop`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+323 source-reviewed resources tagged `desktop`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (20)](#benchmarks) · [Datasets (18)](#datasets) · [Models (24)](#models) · [Agents (16)](#agents) · [Frameworks (22)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (9)](#infrastructure) · [Products (5)](#products) · [Surveys (1)](#surveys) · [Papers (204)](#papers)
+**Contents:** [Benchmarks (21)](#benchmarks) · [Datasets (18)](#datasets) · [Models (24)](#models) · [Agents (16)](#agents) · [Frameworks (22)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (9)](#infrastructure) · [Products (5)](#products) · [Surveys (1)](#surveys) · [Papers (204)](#papers)
 
 ## Benchmarks
 
 | Resource | Environments | Paper | Scale | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- | --- |
 | [CRAB](https://github.com/camel-ai/crab) | desktop, android | [2407.01511](https://arxiv.org/abs/2407.01511) (2024) | [120 tasks](https://arxiv.org/abs/2407.01511) | — | Cross-environment benchmark framework for multimodal agents. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/camel-ai/crab/HEAD/README.md) |
+| [GroundUI-18K](https://huggingface.co/datasets/agent-studio/GroundUI-18K) | web, desktop, cross-platform | [2403.17918](https://arxiv.org/abs/2403.17918) (2024) | [18,026 examples](https://huggingface.co/datasets/agent-studio/GroundUI-18K/raw/f061eba2b7e3fffcf511694f15ad3ca38898ab9e/README.md) | data mit | AgentStudio's full GUI grounding test set: 18,026 instruction and target-box examples on web, desktop and mobile screenshots, pooled from Mind2Web, OmniACT, MoTIF, ScreenSpot and AgentStudio. | [✓ 2026‑10‑18](https://huggingface.co/datasets/agent-studio/GroundUI-18K/raw/f061eba2b7e3fffcf511694f15ad3ca38898ab9e/README.md) |
 | [MacAgentBench](https://github.com/JetAstra/MacAgentBench) · [leaderboard](https://jetastra.github.io/MacAgentBench/) | desktop, macos | [2606.22557](https://arxiv.org/abs/2606.22557) (2026) | [676 tasks](https://raw.githubusercontent.com/JetAstra/MacAgentBench/HEAD/README.md) · [25 applications](https://raw.githubusercontent.com/JetAstra/MacAgentBench/HEAD/README.md) | code MIT | 676 macOS tasks across 25 applications, each run in its own Docker container and scored by deterministic rule-based checks with multiple checkpoints. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/JetAstra/MacAgentBench/HEAD/README.md) |
 | [OmniAct](https://huggingface.co/datasets/Writer/omniact) | desktop, web | [2402.17553](https://arxiv.org/abs/2402.17553) (2024) | [6,788 task examples](https://huggingface.co/datasets/Writer/omniact/raw/5e4bcb26745afc8d58ba9519ea9c9fb832386d26/README.md) | data mit | Dataset and benchmark for generating computer interaction programs. | [✓ 2026‑10‑16](https://huggingface.co/api/datasets/Writer/omniact) |
 | [OS-Critic Bench](https://huggingface.co/datasets/OS-Copilot/OS-Critic-Bench) | cross-platform, desktop, web | [2512.16295](https://arxiv.org/abs/2512.16295) (2025) | [3 platform JSONL splits](https://huggingface.co/datasets/OS-Copilot/OS-Critic-Bench/raw/main/README.md) | data apache-2.0 | A cross-platform GUI-critic benchmark with mobile, desktop and web JSONL splits and screenshot assets, accompanied by public inference and accuracy-scoring scripts. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/numbmelon/OS-Oracle/HEAD/README.md) |
