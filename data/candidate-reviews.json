@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:32d16f6671f97b8be7d0",
+    "url": "https://agentnet_data_viewer.xlang.ai",
+    "decision": "alias",
+    "target_id": "url:964d70c40bfc5ca8e1ee",
+    "reason": "Hosted viewer for trajectories of the indexed AgentNet dataset, linked from the OpenCUA README; on 2026-10-18 it returned Cloudflare 530 (error 1033), and a 2026-01-01 Wayback capture shows a Streamlit app page."
   }
 ]
