@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:a3f0c354be3fad103b5f",
+    "url": "https://ariaui.github.io",
+    "decision": "alias",
+    "target_id": "github:ariaui/aria-ui",
+    "reason": "Project website for the indexed Aria-UI repository, which names ariaui.github.io as its homepage."
   }
 ]
