@@ -100,6 +100,13 @@ these rows use a different schema from the catalog CLI and default RAG exports.
 Preserve evidence and observation dates. Candidate counts can overlap the active
 catalog and must not be added to it or treated as independent projects.
 
+The source checkout also retains `data/github-candidate-progress.json` for
+scheduled continuation. Keep it with the matching observation and manifest
+files; it is operational progress, not another retrieval corpus. The scheduled
+scan runs three times daily at 00:17, 08:17 and 16:17 UTC. See the
+[continuation guide](docs/public-candidate-scan.md#durable-progress-across-fresh-checkouts)
+before changing scan inputs or resuming a checkpoint.
+
 ## Answer with the evidence boundary intact
 
 - Prefer `review_status=curated` for recommendations and evidence-backed summaries. `metadata_verified` confirms bibliographic facts; relevance and findings still await review.
