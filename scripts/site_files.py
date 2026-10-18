@@ -2,9 +2,10 @@
 from pathlib import Path
 
 
-MANAGED_ROOTS = ('resources', 'categories', 'guides', 'topics', 'zh/topics')
+MANAGED_ROOTS = ('resources', 'categories', 'guides', 'topics', 'zh/topics', 'badges')
 MANAGED_FILES = frozenset({'index.html', 'index.md', 'record.json', 'citation.bib', 'citation.csl.json',
-                           'publication-citation.bib', 'publication-citation.csl.json'})
+                           'publication-citation.bib', 'publication-citation.csl.json',
+                           'featured-by-awesomecua-laurel.svg', 'featured-by-awesomecua.svg', 'featured-by-awesomecua-dark.svg', 'awesomecua-featured-seal.svg'})
 
 
 def reconcile_generated_pages(directory, pages):

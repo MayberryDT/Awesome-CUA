@@ -71,6 +71,14 @@ def write_site(destination):
     if len(rows)!=coverage['total_records']:raise ValueError('Catalog/coverage count mismatch; rebuild catalog first.')
     for path in (ROOT/'web').iterdir():
         if path.is_file():shutil.copy2(path,destination/path.name)
+    badge_source=ROOT/'web/badges'
+    if badge_source.is_dir():
+        if badge_source.is_symlink():raise ValueError('Static badge directory must not be a symbolic link')
+        (destination/'badges').mkdir(exist_ok=True)
+        for name in ('featured-by-awesomecua-laurel.svg','featured-by-awesomecua.svg','featured-by-awesomecua-dark.svg','awesomecua-featured-seal.svg'):
+            source=badge_source/name
+            if source.is_symlink() or not source.is_file():raise ValueError('Missing or unsafe static badge: '+name)
+            shutil.copy2(source,destination/'badges'/name)
     version_script_imports(destination)
     (destination/'data').mkdir(exist_ok=True)
     (destination/'downloads').mkdir(exist_ok=True)

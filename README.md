@@ -6,7 +6,7 @@
 
 **A source-backed data catalog for computer-use, GUI, browser, and mobile agents.**
 
-[Highlights](#highlights) · [Recently reviewed](#recently-reviewed) · [Explore](#explore) · [Use the data](#use-the-data) · [Website](https://awesomecua.github.io/) · [GitHub organization](https://github.com/AwesomeCUA) · [简体中文](README.zh-CN.md) · [Coverage ledger](docs/coverage.md) · [Contribute](CONTRIBUTING.md)
+[Find by task](#find-by-task) · [Highlights](#highlights) · [Recently reviewed](#recently-reviewed) · [Explore](#explore) · [Use the data](#use-the-data) · [Website](https://awesomecua.github.io/) · [GitHub organization](https://github.com/AwesomeCUA) · [简体中文](README.zh-CN.md) · [Coverage ledger](docs/coverage.md) · [Contribute](CONTRIBUTING.md)
 
 **For people, RAG systems, and agents — clone the complete catalog:**
 
@@ -21,6 +21,35 @@ The goal is comprehensive coverage of public research and industry resources, wi
 **Global completeness is a goal, not a verified claim.** We publish the source populations, review states, and remaining gaps. Bibliographic metadata verification is different from reviewing a resource's relevance or quality.
 
 [Browse by topic](https://awesomecua.github.io/topics/) · [Topic subsets and fingerprints](https://awesomecua.github.io/downloads/topics.json)
+
+<!-- TASKS:START -->
+## Find by task
+
+| Your task | Start here | What you can find |
+| --- | --- | --- |
+| Find papers | [Research library](https://awesomecua.github.io/papers/) · [Topics](https://awesomecua.github.io/topics/) | Reviewed papers by year and topic, with original sources. |
+| Choose a benchmark | [Benchmark guide](https://awesomecua.github.io/guides/gui-agent-benchmarks/) | Platforms, tasks, evaluators, and versions to compare. |
+| Find training data | [Training-data guide](https://awesomecua.github.io/guides/gui-agent-training-data/) | Supervision, splits, count units, and data licenses. |
+| Build an agent | [Agents](https://awesomecua.github.io/categories/agent/) · [Frameworks](https://awesomecua.github.io/categories/framework/) | Implementation entry points, supported platforms, and papers. |
+| Use RAG or an agent | [Agent guide](https://awesomecua.github.io/agents/) · [Data hub](https://awesomecua.github.io/data/) | Complete records or retrieval documents with review states and sources. |
+| Trace papers to assets | [Paper–asset connections](https://awesomecua.github.io/connections/) | Code, datasets, and models linked through reviewed primary evidence. |
+
+<details>
+<summary>Local examples (after cloning; Python 3.11+, no dependencies required)</summary>
+
+```sh
+cd Awesome-CUA
+python3 scripts/catalog.py search "grounding" --kind paper --status curated --limit 0 --json
+python3 scripts/catalog.py search --kind benchmark --environment web --status curated --limit 0 --json
+python3 scripts/catalog.py search --kind dataset --environment android --status curated --limit 0 --json
+python3 scripts/catalog.py search --kind framework --status curated --limit 0 --json
+python3 scripts/export_rag.py --output dist/rag-documents.jsonl
+python3 scripts/catalog.py get arxiv:2404.07972 --related --json
+```
+
+</details>
+
+<!-- TASKS:END -->
 
 <!-- STATS:START -->
 

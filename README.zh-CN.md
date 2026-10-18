@@ -24,6 +24,35 @@ git clone https://github.com/reacher-z/Awesome-CUA.git
 
 [按主题浏览](https://awesomecua.github.io/zh/topics/)（[English](https://awesomecua.github.io/topics/)） · [主题子集与指纹](https://awesomecua.github.io/downloads/topics.json)
 
+<!-- TASKS:START -->
+## 按任务查找
+
+| 你的任务 | 从这里开始 | 可以找到什么 |
+| --- | --- | --- |
+| 查找论文 | [论文库](https://awesomecua.github.io/zh/papers/) · [研究主题](https://awesomecua.github.io/zh/topics/) | 按年份和主题阅读已审阅论文，查看原始来源。 |
+| 选择评测基准 | [基准指南](https://awesomecua.github.io/guides/gui-agent-benchmarks/) | 核对平台、任务、评估器和版本。 |
+| 寻找训练数据 | [训练数据指南](https://awesomecua.github.io/guides/gui-agent-training-data/) | 比较监督形式、划分、样本单位和数据许可。 |
+| 构建智能体 | [智能体](https://awesomecua.github.io/categories/agent/) · [框架](https://awesomecua.github.io/categories/framework/) | 找到实现入口、支持的平台和论文依据。 |
+| 接入 RAG 或 Agent | [使用指南](https://awesomecua.github.io/zh/agents/) · [数据中心](https://awesomecua.github.io/zh/data/) | 下载完整记录或检索文档，保留审阅状态和来源。 |
+| 追溯论文与资产 | [论文—资产关系](https://awesomecua.github.io/connections/) | 查看经一手来源支持的代码、数据和模型关联。 |
+
+<details>
+<summary>本地检索示例（克隆后运行；Python 3.11+，无需安装依赖）</summary>
+
+```sh
+cd Awesome-CUA
+python3 scripts/catalog.py search "grounding" --kind paper --status curated --limit 0 --json
+python3 scripts/catalog.py search --kind benchmark --environment web --status curated --limit 0 --json
+python3 scripts/catalog.py search --kind dataset --environment android --status curated --limit 0 --json
+python3 scripts/catalog.py search --kind framework --status curated --limit 0 --json
+python3 scripts/export_rag.py --output dist/rag-documents.jsonl
+python3 scripts/catalog.py get arxiv:2404.07972 --related --json
+```
+
+</details>
+
+<!-- TASKS:END -->
+
 <!-- STATS:START -->
 
 **3,055 条资源记录** · **1,572 条已审阅** · **2,606 条论文与综述记录** · **47 个发现来源文档**

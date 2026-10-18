@@ -8,7 +8,7 @@ import urllib.parse
 
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
 from build_site import build_site
-from search_pages import KINDS, REPO, SITE
+from search_pages import KINDS, SOURCE_REPO, SITE
 
 
 class NotFoundParser(HTMLParser):
@@ -44,7 +44,7 @@ class NotFoundPageTests(unittest.TestCase):
     def test_links_to_search_directory_papers_categories_and_issue_tracker(self):
         links=set(self.page.links)
         for target in ['/#catalog','/catalog/','/papers/',*(f'/categories/{kind}/' for kind in KINDS)]:self.assertIn(target,links)
-        self.assertTrue(any(link.startswith(REPO+'/issues') for link in links))
+        self.assertTrue(any(link.startswith(SOURCE_REPO+'/issues') for link in links))
         for link in links:
             u=urllib.parse.urlsplit(link)
             if u.scheme or u.netloc or link.startswith('#'):continue
