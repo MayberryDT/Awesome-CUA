@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "url:b0c7aaa37caa57c013b5",
+    "url": "https://huggingface.co/Hcompany/NeoMME-800M-Retriever",
+    "decision": "out_of_scope",
+    "reason": "NeoMME-800M-Retriever is H Company's multimodal document-retrieval encoder, fine-tuned from NeoMME-800M, that embeds text queries and document pages (text or page images) into dense and multi-vector representations; its card evaluates it only on ViDoRe and BEIR retrieval. It does not observe or act on graphical interfaces and the card describes no agent use, so it falls outside the computer-use catalog.",
+    "reviewed_at": "2026-10-18T16:09:13Z",
+    "evidence": {
+      "url": "https://huggingface.co/Hcompany/NeoMME-800M-Retriever/raw/1a89315b30e2c2fac38b949b35a92ca321e62b24/README.md",
+      "sha256": "6353303ed48d818c80c43b1aeb2c1e48eed162ae6ce81ebc9a72124f9736dec3",
+      "retrieved_at": "2026-10-18T16:01:22Z"
+    }
   }
 ]
