@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-170 source-reviewed resources tagged `safety-security`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+171 source-reviewed resources tagged `safety-security`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (7)](#benchmarks) · [Agents (1)](#agents) · [Frameworks (3)](#frameworks) · [Tools (1)](#tools) · [Surveys (4)](#surveys) · [Papers (154)](#papers)
+**Contents:** [Benchmarks (7)](#benchmarks) · [Agents (1)](#agents) · [Frameworks (4)](#frameworks) · [Tools (1)](#tools) · [Surveys (4)](#surveys) · [Papers (154)](#papers)
 
 ## Benchmarks
 
@@ -31,6 +31,7 @@ All entries in this section: android.
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
 | [AdvAgent (formerly AdvWeb)](https://github.com/AI-secure/AdvAgent) | web | — | — | Research code for constructing and evaluating adversarial inputs to web agents, with a black-box red-team pipeline using Mind2Web data and SeeAct. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/AI-secure/AdvAgent/HEAD/README.md) |
+| [Manipulating-Web-Agents](https://github.com/sej2020/Manipulating-Web-Agents) | web | [2507.14799](https://arxiv.org/abs/2507.14799) (2025) | code MIT | Indirect prompt-injection attack code that optimizes GCG triggers hidden in a page's accessibility tree to make a BrowserGym web agent on Llama or Mistral models click or fill fields the attacker chooses. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/sej2020/Manipulating-Web-Agents/HEAD/README.md) |
 | [OS-Sentinel](https://github.com/OS-Copilot/OS-Sentinel) | desktop | [2510.24411](https://arxiv.org/abs/2510.24411) (2025) | code Apache-2.0 | Safety-checking environment and benchmark for mobile agents on AndroidWorld that judges proposed actions with rule-based and VLM-based checks, evaluated on the MobileRisk trajectory dataset. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/OS-Copilot/OS-Sentinel/HEAD/README.md) |
 | [RedTeamCUA](https://github.com/OSU-NLP-Group/RedTeamCUA) | web, desktop | [2505.21936](https://arxiv.org/abs/2505.21936) (2025) | code Apache-2.0 | A controlled testing framework that combines desktop virtual machines and replicated websites to evaluate computer-use agents against indirect prompt injection. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/OSU-NLP-Group/RedTeamCUA/HEAD/README.md) |
 
