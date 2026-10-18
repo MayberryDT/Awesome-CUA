@@ -61597,7 +61597,6 @@
     "evidence_urls": [
       "https://huggingface.co/mPLUG/GUI-Owl-1.5-2B-Instruct/raw/528ceaec795bbfbe6103bd79e03db849feadfb24/README.md"
     ],
-    "family_url": "https://github.com/X-PLUG/MobileAgent",
     "documented_by": [
       "2602.16855"
     ],
@@ -61636,13 +61635,13 @@
           "details",
           "notes"
         ],
-        "url": "https://huggingface.co/api/models/mPLUG/GUI-Owl-1.5-2B-Instruct",
+        "url": "https://huggingface.co/api/models/mPLUG/GUI-Owl-1.5-2B-Instruct/revision/528ceaec795bbfbe6103bd79e03db849feadfb24",
         "sha256": "e4255782c39b634789d8bf608acb5d87360fda8ff3f107fb065f465af98fb5c3",
-        "retrieved_at": "2026-10-18T11:59:00Z"
+        "retrieved_at": "2026-10-18T12:04:43Z"
       }
     ],
     "editorial_reviewed": true,
     "reviewed_sha256": "8520a786d7a9d411e45466c2b7e7786d062ec03f2778acecc4a45991a803d8d8",
-    "reviewed_at": "2026-10-18T11:59:14Z"
+    "reviewed_at": "2026-10-18T12:04:44Z"
   }
 ]
