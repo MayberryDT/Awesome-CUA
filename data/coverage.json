@@ -1,7 +1,7 @@
 {
-  "as_of_utc": "2026-10-18T08:01:28Z",
-  "total_records": 3055,
-  "curated_records": 1572,
+  "as_of_utc": "2026-10-18T11:22:29Z",
+  "total_records": 3056,
+  "curated_records": 1573,
   "bibliographic_records": 2606,
   "arxiv_active_records": 2593,
   "non_arxiv_bibliographic_records": 13,
@@ -11,7 +11,7 @@
   "exclusion_revalidation_pending": 0,
   "metadata_only_records": 1483,
   "discovery_identifiers": 4052,
-  "unindexed_candidates": 903,
+  "unindexed_candidates": 902,
   "non_resource_candidates": 80,
   "alias_candidates": 9,
   "pending_editorial": [
@@ -148,7 +148,7 @@
     "benchmark": 83,
     "company": 16,
     "dataset": 85,
-    "framework": 72,
+    "framework": 73,
     "infrastructure": 14,
     "model": 98,
     "paper": 2591,
@@ -165,7 +165,7 @@
     "linux": 47,
     "macos": 30,
     "unspecified": 367,
-    "web": 596,
+    "web": 597,
     "windows": 61
   },
   "curated_by_kind_and_environment": {
@@ -212,7 +212,7 @@
       "linux": 5,
       "macos": 1,
       "unspecified": 2,
-      "web": 36,
+      "web": 37,
       "windows": 2
     },
     "infrastructure": {
@@ -273,7 +273,7 @@
     }
   },
   "license_declarations_by_scope": {
-    "code": 176,
+    "code": 177,
     "data": 61,
     "weights": 56,
     "document": 0
@@ -691,13 +691,13 @@
         "state": "success"
       },
       "discovered": 144,
-      "indexed": 92,
-      "indexed_resources": 92,
-      "resolved_aliases": 1,
-      "curated": 83,
+      "indexed": 93,
+      "indexed_resources": 93,
+      "resolved_aliases": 2,
+      "curated": 84,
       "excluded": 0,
       "set_aside": 2,
-      "unindexed": 50
+      "unindexed": 49
     },
     {
       "id": "jin-gui-hub",
