@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-170 source-reviewed resources tagged `safety-security`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+171 source-reviewed resources tagged `safety-security`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (7)](#benchmarks) · [Agents (1)](#agents) · [Frameworks (3)](#frameworks) · [Tools (1)](#tools) · [Surveys (4)](#surveys) · [Papers (154)](#papers)
+**Contents:** [Benchmarks (7)](#benchmarks) · [Models (1)](#models) · [Agents (1)](#agents) · [Frameworks (3)](#frameworks) · [Tools (1)](#tools) · [Surveys (4)](#surveys) · [Papers (154)](#papers)
 
 ## Benchmarks
 
@@ -17,6 +17,14 @@
 | [PopupAttack](https://github.com/SALT-NLP/PopupAttack) | web | — | — | — | Resources for evaluating GUI agents under malicious popup instructions. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/SALT-NLP/PopupAttack/HEAD/README.md) |
 | [SafeArena](https://github.com/McGill-NLP/safearena) · [leaderboard](https://huggingface.co/spaces/McGill-NLP/safearena-leaderboard) | web | [2503.04957](https://arxiv.org/abs/2503.04957) (2025) | [250 tasks](https://arxiv.org/abs/2503.04957) | — | Web-agent benchmark pairing benign and harmful tasks to study deliberate misuse risks. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/McGill-NLP/safearena/HEAD/README.md) |
 | [WebTailBench](https://huggingface.co/datasets/microsoft/WebTailBench) | web | [2511.19663](https://arxiv.org/abs/2511.19663) (2025) | [609 task identities](https://huggingface.co/datasets/microsoft/WebTailBench/raw/main/README.md) · [111 tasks](https://huggingface.co/datasets/microsoft/WebTailBench/raw/main/README.md) | data mit | Live-web task definitions and rubrics for evaluating computer-use agents, with preserved original tasks, a refreshed V2 task suite and a separate refusal set. | [✓ 2026‑10‑17](https://huggingface.co/datasets/microsoft/WebTailBench/raw/main/README.md) |
+
+## Models
+
+All entries in this section: web, android.
+
+| Resource | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [Gemini 2.5 Computer Use](https://blog.google/innovation-and-ai/models-and-research/google-deepmind/gemini-computer-use-model/) | — | — | Preview Google DeepMind model built on Gemini 2.5 Pro and post-trained for UI control, returning browser and mobile actions from screenshots and recent action history through the Gemini API computer_use tool. | [✓ 2026‑10‑18](https://blog.google/innovation-and-ai/models-and-research/google-deepmind/gemini-computer-use-model/) |
 
 ## Agents
 
