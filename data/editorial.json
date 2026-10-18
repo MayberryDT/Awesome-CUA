@@ -61608,10 +61608,9 @@
       "notes",
       "relations"
     ],
-    "notes": "The repository is a fork of Salesforce LAVIS; its root LICENSE.txt is the BSD-3-Clause text with a Salesforce copyright, recorded here for code only. The OpenApp annotations, raw pretraining images and pretrained checkpoints are linked through Google Drive and were not downloaded or access-tested; the inspected README states no data or weights license. OpenApp is rebuilt from MoTIF, Android-in-the-Wild and Longitudinal app data, which keep their own terms.",
+    "notes": "The repository carries a copy of Salesforce LAVIS (lavis/), though GitHub does not list it as a fork; its root LICENSE.txt is the BSD-3-Clause text with a Salesforce copyright, recorded here for code only. The OpenApp annotations, raw pretraining images and pretrained checkpoints are linked through Google Drive and were not downloaded or access-tested; the inspected README states no data or weights license. OpenApp is rebuilt from MoTIF, Android-in-the-Wild and Longitudinal app data, which keep their own terms.",
     "details": {
-      "repository_url": "https://github.com/aburns4/textualforesight",
-      "repository_tree_sha": "c9728ccdb7a712459384802bbe91d4377db8dfdf"
+      "repository_url": "https://github.com/aburns4/textualforesight"
     },
     "additional_evidence": [
       {
@@ -61632,8 +61631,7 @@
         "method": "editorial_primary_review",
         "supports": [
           "identity",
-          "release_status",
-          "details.repository_tree_sha"
+          "release_status"
         ]
       },
       {
