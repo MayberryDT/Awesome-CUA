@@ -2,15 +2,16 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-197 source-reviewed resources tagged `cross-platform`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+198 source-reviewed resources tagged `cross-platform`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (14)](#benchmarks) · [Datasets (15)](#datasets) · [Models (47)](#models) · [Agents (1)](#agents) · [Frameworks (7)](#frameworks) · [Tools (1)](#tools) · [Surveys (11)](#surveys) · [Papers (101)](#papers)
+**Contents:** [Benchmarks (15)](#benchmarks) · [Datasets (15)](#datasets) · [Models (47)](#models) · [Agents (1)](#agents) · [Frameworks (7)](#frameworks) · [Tools (1)](#tools) · [Surveys (11)](#surveys) · [Papers (101)](#papers)
 
 ## Benchmarks
 
 | Resource | Environments | Paper | Scale | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- | --- |
 | [AgentBench](https://github.com/THUDM/AgentBench) · [leaderboard](https://docs.google.com/spreadsheets/d/e/2PACX-1vRR3Wl7wsCgHpwUw1_eUXW_fptAPLL3FkhnW_rua0O1Ji_GIVrpTjY5LaKAhwO-WeARjnY_KNw0SYNJ/pubhtml) | cross-platform, web | [2308.03688](https://arxiv.org/abs/2308.03688) (2023) | — | code Apache-2.0 | Agent evaluation suite with containerized tasks and a function-calling interface, including operating-system and shopping environments. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/THUDM/AgentBench/HEAD/README.md) |
+| [GroundUI-1K](https://huggingface.co/datasets/agent-studio/GroundUI-1K) | web, desktop, cross-platform | [2403.17918](https://arxiv.org/abs/2403.17918) (2024) | [1,000 examples](https://huggingface.co/datasets/agent-studio/GroundUI-1K/raw/5d18efc3085902648b7031bf747a1090356a1b17/README.md) | data mit | AgentStudio's 1,000-example GUI grounding test set, sampled from GroundUI-18K: web, desktop and mobile screenshots with GPT-4o-recaptioned instructions and target bounding boxes. | [✓ 2026‑10‑18](https://huggingface.co/datasets/agent-studio/GroundUI-1K/raw/5d18efc3085902648b7031bf747a1090356a1b17/README.md) |
 | [GUI-Robust](https://github.com/chessbean1/GUI-Robust) | cross-platform | [2506.14477](https://arxiv.org/abs/2506.14477) (2025) | — | — | Evaluation scripts and linked data for comparing GUI action predictions and task execution under ordinary and anomalous interface conditions. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/chessbean1/GUI-Robust/HEAD/README.md) |
 | [GUIHalluBench](https://github.com/ant-research/GUIHalluBench) | cross-platform | — | [1,000 page-annotation entries](https://raw.githubusercontent.com/ant-research/GUIHalluBench/HEAD/README.md) | — | Measures hallucination in UI-element parsing by matching the boxes and descriptions a model lists for 1,000 English and 1,000 Chinese screenshots against human annotations. | [✓ 2026‑10‑16](https://github.com/ant-research/GUIHalluBench) |
 | [MCPWorld](https://github.com/SAAgent/MCPWorld) | cross-platform | [2506.07672](https://arxiv.org/abs/2506.07672) (2025) | — | code MIT | Evaluation environment combining computer interaction with tool access. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/SAAgent/MCPWorld/HEAD/README.md) |

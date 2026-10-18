@@ -63143,5 +63143,164 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "url:d86f55753bfea45fe313",
+    "name": "GroundUI-1K",
+    "kind": "benchmark",
+    "url": "https://huggingface.co/datasets/agent-studio/GroundUI-1K",
+    "environments": [
+      "web",
+      "desktop",
+      "cross-platform"
+    ],
+    "topics": [
+      "grounding",
+      "evaluation"
+    ],
+    "summary": "AgentStudio's 1,000-example GUI grounding test set, sampled from GroundUI-18K: web, desktop and mobile screenshots with GPT-4o-recaptioned instructions and target bounding boxes.",
+    "scope": "core",
+    "verify_terms": [
+      "GroundUI-1K"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/datasets/agent-studio/GroundUI-1K/raw/5d18efc3085902648b7031bf747a1090356a1b17/README.md"
+    ],
+    "documented_by": [
+      "2403.17918"
+    ],
+    "notes": "The card calls this a test set and asks that it not be used for training, although the Hub split is named train. One Parquet split in two shards carries image, instruction, raw_instruction, bbox, resolution, source and platform fields; platform and source tallies come from the Hugging Face dataset-viewer statistics, not a download. Source labels name Mind2Web test subsets, OmniACT, MoTIF, ScreenSpot and AgentStudio screens; mobile rows name no operating system. MIT is the dataset-card declaration, and screenshots drawn from upstream datasets keep their own terms.",
+    "details": {
+      "hub_id": "agent-studio/GroundUI-1K",
+      "hub_revision": "5d18efc3085902648b7031bf747a1090356a1b17",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/datasets/agent-studio/GroundUI-1K/tree/5d18efc3085902648b7031bf747a1090356a1b17",
+      "repository_url": "https://github.com/ltzheng/agent-studio/tree/main/eval_agent_desiderata",
+      "benchmark_protocol": {
+        "focus": [
+          "instruction-conditioned GUI element grounding"
+        ],
+        "setting": "offline",
+        "observations": [
+          "screenshots",
+          "natural-language instructions"
+        ],
+        "actions": [
+          "click coordinate"
+        ],
+        "evaluation": "The AgentStudio evaluator scores a predicted click 1 when it falls strictly inside the annotated bounding box and 0 otherwise; grounding accuracy is not task success.",
+        "counts": [
+          {
+            "value": 1000,
+            "unit": "examples",
+            "population": "Hub split at revision 5d18efc3 (named train, described as a test set)",
+            "qualifier": "exact",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/agent-studio/GroundUI-1K/raw/5d18efc3085902648b7031bf747a1090356a1b17/README.md"
+          },
+          {
+            "value": 400,
+            "unit": "examples",
+            "population": "platform label web",
+            "qualifier": "exact",
+            "basis": "computed",
+            "evidence_url": "https://datasets-server.huggingface.co/statistics?dataset=agent-studio/GroundUI-1K&config=default&split=train"
+          },
+          {
+            "value": 300,
+            "unit": "examples",
+            "population": "platform label desktop",
+            "qualifier": "exact",
+            "basis": "computed",
+            "evidence_url": "https://datasets-server.huggingface.co/statistics?dataset=agent-studio/GroundUI-1K&config=default&split=train"
+          },
+          {
+            "value": 300,
+            "unit": "examples",
+            "population": "platform label mobile",
+            "qualifier": "exact",
+            "basis": "computed",
+            "evidence_url": "https://datasets-server.huggingface.co/statistics?dataset=agent-studio/GroundUI-1K&config=default&split=train"
+          }
+        ],
+        "notes": "Subset of GroundUI-18K sampled for efficient benchmarking; the larger set is a separate Hub repository and is not counted here. Instructions were recaptioned with GPT-4o; raw_instruction keeps the source wording.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/agent-studio/GroundUI-1K/raw/5d18efc3085902648b7031bf747a1090356a1b17/README.md",
+          "https://huggingface.co/api/datasets/agent-studio/GroundUI-1K/revision/5d18efc3085902648b7031bf747a1090356a1b17",
+          "https://datasets-server.huggingface.co/statistics?dataset=agent-studio/GroundUI-1K&config=default&split=train",
+          "https://raw.githubusercontent.com/ltzheng/agent-studio/39959e230fecd6651e5700936432861ca7ef7016/eval_agent_desiderata/README.md",
+          "https://raw.githubusercontent.com/ltzheng/agent-studio/39959e230fecd6651e5700936432861ca7ef7016/eval_agent_desiderata/eval_gui_grounding.py"
+        ]
+      }
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes",
+      "licenses.data",
+      "details.benchmark_protocol"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.hub_id",
+          "details.hub_revision",
+          "details.gated",
+          "details.disabled",
+          "details.download_url",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://huggingface.co/api/datasets/agent-studio/GroundUI-1K/revision/5d18efc3085902648b7031bf747a1090356a1b17",
+        "sha256": "652082bd5c0e35322611a1c97a9291f061598ec7930b998ea4b437d3d56fd1f0",
+        "retrieved_at": "2026-10-18T16:07:58Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://datasets-server.huggingface.co/statistics?dataset=agent-studio/GroundUI-1K&config=default&split=train",
+        "sha256": "afd9a96bdb3d2a6575c9b738ed709fad9ba41523bd82ee7714d6ffd54e22665a",
+        "retrieved_at": "2026-10-18T16:07:17Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "details.repository_url",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/ltzheng/agent-studio/39959e230fecd6651e5700936432861ca7ef7016/eval_agent_desiderata/README.md",
+        "sha256": "1f2b513c700b31a1bacd023a54c6d4cadac9e02092e526d42c32103cb476c359",
+        "retrieved_at": "2026-10-18T16:07:58Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/ltzheng/agent-studio/39959e230fecd6651e5700936432861ca7ef7016/eval_agent_desiderata/eval_gui_grounding.py",
+        "sha256": "d503891371a62b6d8532667aea53f40c8691a2c3daaab5ea5a33ebce80eb83c8",
+        "retrieved_at": "2026-10-18T16:07:58Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "d1072a12c9cbcb48e73434620b62e39a8857bdb1d598fc2f64396b8523ec6e4c",
+    "reviewed_at": "2026-10-18T16:08:33Z"
   }
 ]
