@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:043b319268e1c70ce0e8",
+    "url": "https://agenthijack.github.io",
+    "decision": "alias",
+    "target_id": "arxiv:2605.25707",
+    "reason": "Project website for the indexed AgentHijack common-corruption benchmark preprint 2605.25707 (same title and authors); unrelated to the visual patch attack preprint 2609.09212 that shares the name."
   }
 ]
