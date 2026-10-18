@@ -63143,5 +63143,137 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Holo4 27B BF16",
+    "kind": "model",
+    "url": "https://huggingface.co/Hcompany/Holo4-27B",
+    "environments": [
+      "web",
+      "desktop",
+      "cross-platform"
+    ],
+    "topics": [
+      "grounding",
+      "action-prediction",
+      "tool-integration"
+    ],
+    "summary": "Dense 27B computer-use checkpoint from H Company built on Qwen3.8-27B; an external harness sends it screenshots and tool results and executes the clicks, typing, code and tool calls it requests.",
+    "scope": "core",
+    "verify_terms": [
+      "Holo4-27B"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/Hcompany/Holo4-27B/raw/4de03cfeee1d930b616bfd4817570293f29ad8b9/README.md"
+    ],
+    "family_url": "https://hcompany.ai/research/models",
+    "publisher_id": "organization:h",
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations",
+      "licenses.weights",
+      "details.base_model",
+      "details.artifact_type",
+      "details.parameter_label"
+    ],
+    "notes": "This is the full-precision BF16 Holo4-27B repository; the card lists FP8, NVFP4 and Q4 GGUF builds as separate repositories and names web, desktop and mobile as target environments. config.json declares Qwen3_5ForConditionalGeneration, while the card and Hub metadata name Qwen/Qwen3.8-27B as the base. The manifest lists 18 Safetensors shards and the Hub reports 27,356,728,560 BF16 parameters. The card declares CC BY-NC 4.0 for the weights and also ships the base model's Apache-2.0 text. OSWorld, OSWorld 2.0 and AutomationBench scores and costs on the card are publisher claims and were not reproduced; no weights were loaded.",
+    "details": {
+      "hub_id": "Hcompany/Holo4-27B",
+      "hub_revision": "4de03cfeee1d930b616bfd4817570293f29ad8b9",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/Hcompany/Holo4-27B/tree/4de03cfeee1d930b616bfd4817570293f29ad8b9",
+      "artifact_type": "model-checkpoint",
+      "base_model": "Qwen/Qwen3.8-27B",
+      "architecture": "Qwen3_5ForConditionalGeneration",
+      "parameter_label": "27B",
+      "listed_weight_files": [
+        "model-00001-of-00018.safetensors",
+        "model-00002-of-00018.safetensors",
+        "model-00003-of-00018.safetensors",
+        "model-00004-of-00018.safetensors",
+        "model-00005-of-00018.safetensors",
+        "model-00006-of-00018.safetensors",
+        "model-00007-of-00018.safetensors",
+        "model-00008-of-00018.safetensors",
+        "model-00009-of-00018.safetensors",
+        "model-00010-of-00018.safetensors",
+        "model-00011-of-00018.safetensors",
+        "model-00012-of-00018.safetensors",
+        "model-00013-of-00018.safetensors",
+        "model-00014-of-00018.safetensors",
+        "model-00015-of-00018.safetensors",
+        "model-00016-of-00018.safetensors",
+        "model-00017-of-00018.safetensors",
+        "model-00018-of-00018.safetensors"
+      ]
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "notes",
+          "details.hub_id",
+          "details.hub_revision",
+          "details.gated",
+          "details.disabled",
+          "details.download_url",
+          "details.listed_weight_files",
+          "details.base_model"
+        ],
+        "url": "https://huggingface.co/api/models/Hcompany/Holo4-27B",
+        "sha256": "32d1105195420bd56f24e9267bbbfd543a407d53468318c2387695fd71faa480",
+        "retrieved_at": "2026-10-18T16:09:31Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.architecture"
+        ],
+        "url": "https://huggingface.co/Hcompany/Holo4-27B/raw/4de03cfeee1d930b616bfd4817570293f29ad8b9/config.json",
+        "sha256": "c0dac651abc94fc028da5ecef306b23c795ec5ebbd3f30b3772c6995f34c8a44",
+        "retrieved_at": "2026-10-18T16:09:32Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.weights"
+        ],
+        "url": "https://huggingface.co/Hcompany/Holo4-27B/raw/4de03cfeee1d930b616bfd4817570293f29ad8b9/LICENSE",
+        "sha256": "41003d4a74749c0220e33dd415042164b5a1093ed401f36277234f772d22d3d0",
+        "retrieved_at": "2026-10-18T16:09:33Z"
+      }
+    ],
+    "reviewed_licenses": {
+      "weights": {
+        "value": {
+          "declared": "CC-BY-NC-4.0",
+          "url": "https://huggingface.co/Hcompany/Holo4-27B/raw/4de03cfeee1d930b616bfd4817570293f29ad8b9/README.md",
+          "retrieved_at": "2026-10-18T16:09:32Z",
+          "basis": "Publisher model-card declaration for the Holo4-27B weights, matched by the repository's CC BY-NC 4.0 LICENSE file; the bundled Apache-2.0 text covers the Qwen base model, and code and training-data terms are separate."
+        },
+        "reason": "Publisher model-card declaration for the Holo4-27B weights, matched by the repository's CC BY-NC 4.0 LICENSE file; the bundled Apache-2.0 text covers the Qwen base model, and code and training-data terms are separate.",
+        "evidence_urls": [
+          "https://huggingface.co/Hcompany/Holo4-27B/raw/4de03cfeee1d930b616bfd4817570293f29ad8b9/README.md",
+          "https://huggingface.co/Hcompany/Holo4-27B/raw/4de03cfeee1d930b616bfd4817570293f29ad8b9/LICENSE"
+        ]
+      }
+    },
+    "read_basis": "Read the pinned model card, config.json, LICENSE header and Hub API record (file manifest, cardData base_model). No weights were downloaded or run.",
+    "reviewed_sha256": "2254c1065a1d88bc491a93e060c5c55e25edc90a34c935a457b5dc1466a1c123",
+    "reviewed_at": "2026-10-18T16:09:57Z"
   }
 ]
