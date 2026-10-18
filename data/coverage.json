@@ -1,7 +1,7 @@
 {
-  "as_of_utc": "2026-10-18T08:01:28Z",
-  "total_records": 3055,
-  "curated_records": 1572,
+  "as_of_utc": "2026-10-18T10:52:12Z",
+  "total_records": 3056,
+  "curated_records": 1573,
   "bibliographic_records": 2606,
   "arxiv_active_records": 2593,
   "non_arxiv_bibliographic_records": 13,
@@ -11,7 +11,7 @@
   "exclusion_revalidation_pending": 0,
   "metadata_only_records": 1483,
   "discovery_identifiers": 4052,
-  "unindexed_candidates": 903,
+  "unindexed_candidates": 902,
   "non_resource_candidates": 80,
   "alias_candidates": 9,
   "pending_editorial": [
@@ -144,7 +144,7 @@
   ],
   "uncurated_linked_papers": [],
   "by_kind": {
-    "agent": 41,
+    "agent": 42,
     "benchmark": 83,
     "company": 16,
     "dataset": 85,
@@ -159,24 +159,25 @@
   "curated_by_environment": {
     "android": 294,
     "cross-platform": 193,
-    "desktop": 320,
+    "desktop": 321,
     "harmonyos": 3,
     "ios": 20,
-    "linux": 47,
-    "macos": 30,
+    "linux": 48,
+    "macos": 31,
     "unspecified": 367,
     "web": 596,
-    "windows": 61
+    "windows": 62
   },
   "curated_by_kind_and_environment": {
     "agent": {
       "android": 16,
       "cross-platform": 1,
-      "desktop": 15,
+      "desktop": 16,
       "ios": 1,
-      "macos": 2,
+      "linux": 1,
+      "macos": 3,
       "web": 11,
-      "windows": 4
+      "windows": 5
     },
     "benchmark": {
       "android": 18,
@@ -273,7 +274,7 @@
     }
   },
   "license_declarations_by_scope": {
-    "code": 176,
+    "code": 177,
     "data": 61,
     "weights": 56,
     "document": 0
@@ -901,13 +902,13 @@
         "state": "success"
       },
       "discovered": 96,
-      "indexed": 59,
-      "indexed_resources": 59,
+      "indexed": 60,
+      "indexed_resources": 60,
       "resolved_aliases": 0,
-      "curated": 55,
+      "curated": 56,
       "excluded": 0,
       "set_aside": 0,
-      "unindexed": 37
+      "unindexed": 36
     },
     {
       "id": "release-fara",
