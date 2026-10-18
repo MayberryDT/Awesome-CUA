@@ -61601,7 +61601,7 @@
       "environments",
       "scope"
     ],
-    "notes": "The repository holds only natbot.py, a three-line README and an MIT LICENSE (copyright 2022 Nat Friedman). The script starts on Google, builds the page view from a Chrome DevTools DOMSnapshot, and calls the legacy openai.Completion interface with the hard-coded text-davinci-002 model. It was not run, and no evaluation results are published.",
+    "notes": "The repository holds only natbot.py, a short README (a one-line tagline, a demo link and a list of improvement ideas) and an MIT LICENSE (copyright 2022 Nat Friedman). The script starts on Google, builds the page view from a Chrome DevTools DOMSnapshot, and calls the legacy openai.Completion interface with the hard-coded text-davinci-002 model. It was not run, and no evaluation results are published.",
     "details": {
       "availability": "Published source; no packaged release",
       "repository_url": "https://github.com/nat/natbot"
