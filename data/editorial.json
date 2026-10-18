@@ -3037,7 +3037,7 @@
   {
     "name": "CogAgent",
     "kind": "model",
-    "url": "https://github.com/THUDM/CogAgent",
+    "url": "https://github.com/zai-org/CogAgent",
     "environments": [
       "cross-platform"
     ],
@@ -3052,10 +3052,11 @@
     ],
     "editorial_reviewed": true,
     "reviewed_sha256": "f025e4bc9d920ec982525394c69b87043aae87fbe719de4b9e973408a44211e2",
-    "reviewed_at": "2026-10-16T10:50:15Z",
+    "reviewed_at": "2026-10-18T12:05:16Z",
     "documented_by": [
       "2312.08914"
-    ]
+    ],
+    "notes": "Formerly published as THUDM/CogAgent; that address now resolves to this repository (GitHub repository ID 724535804), and both serve the same reviewed README."
   },
   {
     "name": "OS-Atlas",
@@ -27444,7 +27445,7 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "de2c8e7a9792c3d129451ec813d458f83263460a5808cf87c45b04b260a376c9",
     "reviewed_at": "2026-10-17T02:48:39Z",
-    "family_url": "https://github.com/THUDM/CogAgent",
+    "family_url": "https://github.com/zai-org/CogAgent",
     "details": {
       "hub_id": "zai-org/cogagent-9b-20241220",
       "gated": false,
