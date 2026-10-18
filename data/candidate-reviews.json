@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "url:5b125e4e6db1286080c7",
+    "url": "https://huggingface.co/datasets/GAIR/AgencyBench",
+    "decision": "out_of_scope",
+    "reason": "AgencyBench evaluates autonomous LLM agents on 32 long-horizon scenarios in game, frontend and backend development, code, deep research and MCP tool use, run through coding scaffolds. Mouse, keyboard and screenshot actions appear only in its evaluation sandbox, which checks the web pages and games the agent builds, so the agent under test never operates a GUI.",
+    "reviewed_at": "2026-10-18T16:07:28Z",
+    "evidence": {
+      "url": "https://huggingface.co/datasets/GAIR/AgencyBench/raw/ea9008235da1864d00380f56e48c18270e84518c/README.md",
+      "sha256": "9f33dc44d29224baa8c55c3894d3eeaf053739ad610cde6093f054b34e433954",
+      "retrieved_at": "2026-10-18T15:52:37Z"
+    }
   }
 ]
