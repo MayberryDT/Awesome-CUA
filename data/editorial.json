@@ -61573,5 +61573,135 @@
         ]
       }
     }
+  },
+  {
+    "name": "MONDAY data processing and evaluation code",
+    "kind": "framework",
+    "url": "https://github.com/runamu/monday",
+    "environments": [
+      "android",
+      "ios"
+    ],
+    "topics": [
+      "data-generation",
+      "mobile-navigation",
+      "video",
+      "evaluation"
+    ],
+    "summary": "Companion code for the MONDAY mobile-navigation dataset: per-split YouTube video lists, frame extraction at annotated scene timestamps, JSON conversion and a SeeClick-derived action-matching evaluation script.",
+    "scope": "core",
+    "verify_terms": [
+      "MONDAY"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/runamu/monday/HEAD/README.md"
+    ],
+    "documented_by": [
+      "2505.12632"
+    ],
+    "reviewed_relations": [
+      {
+        "type": "uses",
+        "target_id": "url:570654ff67ecefa2b955",
+        "evidence_url": "https://raw.githubusercontent.com/runamu/monday/HEAD/README.md"
+      }
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations"
+    ],
+    "notes": "Code repository of the CVPR 2025 MONDAY release; the annotations themselves are the separate Hugging Face record runamu/MONDAY, which extract_scenes.py loads. Users download the source videos from YouTube; the repository lists 19,725 train, 495 validation, 100 test and 50 test_unseen_os (Windows Mobile) video URLs at commit 69c7b8c4, counted with a script. eval_seeclick.py adapts SeeClick's AITW script and reports action-type, click and text matching. The README lists checkpoints, training scripts and the full data pipeline as unreleased planned updates. The LICENSE file is Apache-2.0 text, while the README defers videos, checkpoints, datasets and third-party code to their original licenses. Nothing was installed or run.",
+    "details": {
+      "repository_revision": "69c7b8c49721bae3b31ac53e703a60d121950353",
+      "repository_tree_sha": "4fe7b90db79bde1e5ddaa19445a0b9a5f06e8da6",
+      "availability": "Data-processing and evaluation scripts with video URL lists; model checkpoints, training scripts and the full data-generation pipeline are listed as planned updates."
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.repository_revision",
+          "details.repository_tree_sha",
+          "details.availability"
+        ],
+        "url": "https://api.github.com/repos/runamu/monday/git/trees/4fe7b90db79bde1e5ddaa19445a0b9a5f06e8da6?recursive=1",
+        "sha256": "43762350f09ddd94a7d9eec35d69cb12a5c55f755165ee3068c163a0717166f8",
+        "retrieved_at": "2026-10-18T12:00:32Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/runamu/monday/69c7b8c49721bae3b31ac53e703a60d121950353/agent_tasks/eval_seeclick.py",
+        "sha256": "c6944e02138eea7e1b2ed8df03cf8f8785020a9b32992007aa9d91b253cc7f7a",
+        "retrieved_at": "2026-10-18T12:00:33Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "relations"
+        ],
+        "url": "https://raw.githubusercontent.com/runamu/monday/69c7b8c49721bae3b31ac53e703a60d121950353/data_processing/extract_scenes.py",
+        "sha256": "2eee516733b8dfe75c52147eb8f0bb6267cf0b84eb8eb6da6648e4f38a334e0a",
+        "retrieved_at": "2026-10-18T12:00:34Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/runamu/monday/69c7b8c49721bae3b31ac53e703a60d121950353/data/video_urls/video_urls_train.txt",
+        "sha256": "92f7346482732b047b671d6808dd5cdc5c3c070860314f1eaf3f2e5cc9b26ef6",
+        "retrieved_at": "2026-10-18T12:01:12Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/runamu/monday/69c7b8c49721bae3b31ac53e703a60d121950353/data/video_urls/video_urls_validation.txt",
+        "sha256": "cfbbf501d265abdec9eea700bb6609f29a451353576be4ebb7d4eb9310ce0703",
+        "retrieved_at": "2026-10-18T12:01:12Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/runamu/monday/69c7b8c49721bae3b31ac53e703a60d121950353/data/video_urls/video_urls_test.txt",
+        "sha256": "622edde4adbd6e5b6a19df65613e11c23a14d55008100ef8ba623b407beda861",
+        "retrieved_at": "2026-10-18T12:01:12Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/runamu/monday/69c7b8c49721bae3b31ac53e703a60d121950353/data/video_urls/video_urls_test_unseen_os.txt",
+        "sha256": "7d2923f711a4fc7393696d5cff056e3ea4dae28ff50672a2cdce90c6eb958c0b",
+        "retrieved_at": "2026-10-18T12:01:12Z"
+      }
+    ],
+    "reviewed_sha256": "cb3d2329571a80b6edeab98c04f8b63c7f4e976929788d6a8283238b0b7fdadc",
+    "reviewed_at": "2026-10-18T12:01:26Z"
   }
 ]

@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-20 source-reviewed resources tagged `ios`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+21 source-reviewed resources tagged `ios`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (1)](#datasets) · [Models (4)](#models) · [Agents (1)](#agents) · [Frameworks (1)](#frameworks) · [Tools (2)](#tools) · [Infrastructure (1)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (8)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (1)](#datasets) · [Models (4)](#models) · [Agents (1)](#agents) · [Frameworks (2)](#frameworks) · [Tools (2)](#tools) · [Infrastructure (1)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (8)](#papers)
 
 ## Benchmarks
 
@@ -46,6 +46,7 @@ All entries in this section: android, ios.
 | Resource | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- |
 | [Mobilerun (formerly Droidrun)](https://github.com/droidrun/mobilerun) | — | code MIT | A framework that combines screenshots and accessibility state with agent tools for mobile-device tasks through command-line and Python interfaces. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/droidrun/mobilerun/HEAD/README.md) |
+| [MONDAY data processing and evaluation code](https://github.com/runamu/monday) | [2505.12632](https://arxiv.org/abs/2505.12632) (2025) | code Apache-2.0 | Companion code for the MONDAY mobile-navigation dataset: per-split YouTube video lists, frame extraction at annotated scene timestamps, JSON conversion and a SeeClick-derived action-matching evaluation script. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/runamu/monday/HEAD/README.md) |
 
 ## Tools
 

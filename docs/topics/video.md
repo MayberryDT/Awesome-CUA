@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-37 source-reviewed resources tagged `video`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+38 source-reviewed resources tagged `video`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (2)](#benchmarks) · [Datasets (6)](#datasets) · [Papers (29)](#papers)
+**Contents:** [Benchmarks (2)](#benchmarks) · [Datasets (6)](#datasets) · [Frameworks (1)](#frameworks) · [Papers (29)](#papers)
 
 ## Benchmarks
 
@@ -23,6 +23,14 @@
 | [MONDAY annotations](https://huggingface.co/datasets/runamu/MONDAY) | android, ios | [2505.12632](https://arxiv.org/abs/2505.12632) (2025) | [19,725 video annotation records](https://huggingface.co/datasets/runamu/MONDAY/raw/main/README.md) · [≈ 333,000 detected scenes](https://huggingface.co/datasets/runamu/MONDAY/raw/main/README.md) · [≈ 313,000 identified actions](https://huggingface.co/datasets/runamu/MONDAY/raw/main/README.md) | — | Video-derived mobile navigation annotations that pair scene boundaries and screen or element boxes with action labels for training and evaluating GUI agents. | [✓ 2026‑10‑17](https://huggingface.co/datasets/runamu/MONDAY/raw/main/README.md) |
 | [VideoCAD data](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/WX8PCK) | unspecified | [2505.24838](https://arxiv.org/abs/2505.24838) (2025) | [> 41,000 video recordings](https://dataverse.harvard.edu/api/datasets/:persistentId/?persistentId=doi:10.7910/DVN/WX8PCK) | data CC0 1.0 | CAD screen recordings paired with action logs and target model images for studying precise interface control and long-horizon visual imitation. | [✓ 2026‑10‑17](https://dataverse.harvard.edu/api/datasets/:persistentId/?persistentId=doi:10.7910/DVN/WX8PCK) |
 | [WorkDemo-350](https://huggingface.co/datasets/yuqi777/WorkDemo-350) | desktop | [2610.12984](https://arxiv.org/abs/2610.12984) (2026) | [350 demonstrations](https://huggingface.co/datasets/yuqi777/WorkDemo-350/raw/main/README.md) · [8,388 evidence images](https://huggingface.co/datasets/yuqi777/WorkDemo-350/raw/main/README.md) · [11,951 action records](https://huggingface.co/datasets/yuqi777/WorkDemo-350/raw/main/README.md) | data cc-by-4.0 | Desktop demonstrations with task descriptions, videos, input logs, and action-linked screenshot evidence for studying reusable agent skills. | [✓ 2026‑10‑16](https://huggingface.co/datasets/yuqi777/WorkDemo-350/raw/main/README.md) |
+
+## Frameworks
+
+All entries in this section: android, ios.
+
+| Resource | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [MONDAY data processing and evaluation code](https://github.com/runamu/monday) | [2505.12632](https://arxiv.org/abs/2505.12632) (2025) | code Apache-2.0 | Companion code for the MONDAY mobile-navigation dataset: per-split YouTube video lists, frame extraction at annotated scene timestamps, JSON conversion and a SeeClick-derived action-matching evaluation script. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/runamu/monday/HEAD/README.md) |
 
 ## Papers
 
