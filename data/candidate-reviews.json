@@ -254,8 +254,7 @@
   {
     "id": "github:jykoh/visualwebarena",
     "url": "https://github.com/jykoh/visualwebarena",
-    "decision": "alias",
-    "target_id": "github:web-arena-x/visualwebarena",
-    "reason": "Mistyped star-badge link under the VisualWebArena entry of the showlab list, whose badge image names web-arena-x/visualwebarena; the jykoh address returns 404 and that account has no public repositories."
+    "decision": "not_a_resource",
+    "reason": "Dead link: the GitHub page and api.github.com/repos/jykoh/visualwebarena return 404 with no rename redirect, the jykoh account has no public repositories, and the Wayback Machine has no snapshot. The showlab entry's badge image names the curated web-arena-x/visualwebarena."
   }
 ]
