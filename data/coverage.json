@@ -1,7 +1,7 @@
 {
-  "as_of_utc": "2026-10-18T08:01:28Z",
-  "total_records": 3055,
-  "curated_records": 1572,
+  "as_of_utc": "2026-10-18T11:04:02Z",
+  "total_records": 3056,
+  "curated_records": 1573,
   "bibliographic_records": 2606,
   "arxiv_active_records": 2593,
   "non_arxiv_bibliographic_records": 13,
@@ -11,7 +11,7 @@
   "exclusion_revalidation_pending": 0,
   "metadata_only_records": 1483,
   "discovery_identifiers": 4052,
-  "unindexed_candidates": 903,
+  "unindexed_candidates": 902,
   "non_resource_candidates": 80,
   "alias_candidates": 9,
   "pending_editorial": [
@@ -149,7 +149,7 @@
     "company": 16,
     "dataset": 85,
     "framework": 72,
-    "infrastructure": 14,
+    "infrastructure": 15,
     "model": 98,
     "paper": 2591,
     "product": 20,
@@ -159,14 +159,14 @@
   "curated_by_environment": {
     "android": 294,
     "cross-platform": 193,
-    "desktop": 320,
+    "desktop": 321,
     "harmonyos": 3,
     "ios": 20,
     "linux": 47,
     "macos": 30,
     "unspecified": 367,
     "web": 596,
-    "windows": 61
+    "windows": 62
   },
   "curated_by_kind_and_environment": {
     "agent": {
@@ -217,12 +217,12 @@
     },
     "infrastructure": {
       "android": 3,
-      "desktop": 9,
+      "desktop": 10,
       "ios": 1,
       "linux": 4,
       "macos": 2,
       "web": 5,
-      "windows": 1
+      "windows": 2
     },
     "model": {
       "android": 24,
@@ -273,7 +273,7 @@
     }
   },
   "license_declarations_by_scope": {
-    "code": 176,
+    "code": 177,
     "data": 61,
     "weights": 56,
     "document": 0
@@ -391,13 +391,13 @@
         "state": "success"
       },
       "discovered": 132,
-      "indexed": 96,
-      "indexed_resources": 96,
+      "indexed": 97,
+      "indexed_resources": 97,
       "resolved_aliases": 1,
-      "curated": 87,
+      "curated": 88,
       "excluded": 0,
       "set_aside": 1,
-      "unindexed": 35
+      "unindexed": 34
     },
     {
       "id": "steel-web",
