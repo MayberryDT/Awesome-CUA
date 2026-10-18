@@ -61590,7 +61590,7 @@
       "mobile-navigation",
       "web-navigation"
     ],
-    "summary": "Qwen2-VL fine-tuning and evaluation code for GUI agents that mask irrelevant screen elements and compress action history, with scripts for AITW, Mind2Web, AndroidControl and GUI-Odyssey.",
+    "summary": "Qwen2-VL fine-tuning and evaluation code for GUI agents that mask irrelevant screen elements and compress interaction history, with scripts for AITW, Mind2Web, AndroidControl and GUI-Odyssey.",
     "verify_terms": [
       "SimpAgent"
     ],

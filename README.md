@@ -160,7 +160,7 @@ Newest editorial approvals of models, datasets, benchmarks, systems, and tools (
 <!-- RECENT:START -->
 | Reviewed | Resource | Kind | Environments | Description |
 | --- | --- | --- | --- | --- |
-| 2026‑10‑18 | [SimpAgent](https://github.com/JiuTian-VL/SimpAgent) | framework | android, web | Qwen2-VL fine-tuning and evaluation code for GUI agents that mask irrelevant screen elements and compress action history, with scripts for AITW, Mind2Web, AndroidControl and GUI-Odyssey. |
+| 2026‑10‑18 | [SimpAgent](https://github.com/JiuTian-VL/SimpAgent) | framework | android, web | Qwen2-VL fine-tuning and evaluation code for GUI agents that mask irrelevant screen elements and compress interaction history, with scripts for AITW, Mind2Web, AndroidControl and GUI-Odyssey. |
 | 2026‑10‑18 | [ZonUI-3B checkpoint](https://huggingface.co/zonghanHZH/ZonUI-3B) | model | cross-platform, desktop, web | Qwen2.5-VL-3B-based GUI grounding checkpoint that predicts click locations from screenshots and text instructions across desktop, mobile and web screens. |
 | 2026‑10‑18 | [WindowsAgentArena-V2](https://github.com/GAIR-NLP/WindowsAgentArena-V2) | benchmark | desktop, windows | Windows benchmark revision with task/evaluator fixes and VM-initialization support, documented alongside PC-Agent-E. |
 | 2026‑10‑18 | [WebSRC v1.0](https://huggingface.co/datasets/X-LANCE/WebSRC_v1.0) | dataset | web | Webpage segments, questions, answers, HTML, screenshots and layout metadata for structural reading comprehension. |

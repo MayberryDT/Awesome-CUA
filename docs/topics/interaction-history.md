@@ -20,7 +20,7 @@ All entries in this section: android, web.
 
 | Resource | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- |
-| [SimpAgent](https://github.com/JiuTian-VL/SimpAgent) | [2507.03730](https://arxiv.org/abs/2507.03730) (2025) | — | Qwen2-VL fine-tuning and evaluation code for GUI agents that mask irrelevant screen elements and compress action history, with scripts for AITW, Mind2Web, AndroidControl and GUI-Odyssey. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/JiuTian-VL/SimpAgent/HEAD/README.md) |
+| [SimpAgent](https://github.com/JiuTian-VL/SimpAgent) | [2507.03730](https://arxiv.org/abs/2507.03730) (2025) | — | Qwen2-VL fine-tuning and evaluation code for GUI agents that mask irrelevant screen elements and compress interaction history, with scripts for AITW, Mind2Web, AndroidControl and GUI-Odyssey. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/JiuTian-VL/SimpAgent/HEAD/README.md) |
 
 ## Papers
 
