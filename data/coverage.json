@@ -1,7 +1,7 @@
 {
-  "as_of_utc": "2026-10-18T08:01:28Z",
-  "total_records": 3055,
-  "curated_records": 1572,
+  "as_of_utc": "2026-10-18T12:30:21Z",
+  "total_records": 3056,
+  "curated_records": 1573,
   "bibliographic_records": 2606,
   "arxiv_active_records": 2593,
   "non_arxiv_bibliographic_records": 13,
@@ -148,7 +148,7 @@
     "benchmark": 83,
     "company": 16,
     "dataset": 85,
-    "framework": 72,
+    "framework": 73,
     "infrastructure": 14,
     "model": 98,
     "paper": 2591,
@@ -159,13 +159,13 @@
   "curated_by_environment": {
     "android": 294,
     "cross-platform": 193,
-    "desktop": 320,
+    "desktop": 321,
     "harmonyos": 3,
     "ios": 20,
     "linux": 47,
     "macos": 30,
     "unspecified": 367,
-    "web": 596,
+    "web": 597,
     "windows": 61
   },
   "curated_by_kind_and_environment": {
@@ -206,13 +206,13 @@
     "framework": {
       "android": 19,
       "cross-platform": 7,
-      "desktop": 21,
+      "desktop": 22,
       "harmonyos": 1,
       "ios": 1,
       "linux": 5,
       "macos": 1,
       "unspecified": 2,
-      "web": 36,
+      "web": 37,
       "windows": 2
     },
     "infrastructure": {
@@ -273,7 +273,7 @@
     }
   },
   "license_declarations_by_scope": {
-    "code": 176,
+    "code": 177,
     "data": 61,
     "weights": 56,
     "document": 0
