@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:c5346e5d1484746a384c",
+    "url": "https://huggingface.co/collections/inclusionAI/ui-venus",
+    "decision": "alias",
+    "target_id": "github:inclusionai/ui-venus",
+    "reason": "Hugging Face release collection titled UI-Venus for the indexed UI-Venus project: its UI-Venus 1, 1.5 and 2 checkpoints, technical reports and VenusBench datasets. It also lists the publisher's separate GUI-G2 and VISTA checkpoints."
   }
 ]
