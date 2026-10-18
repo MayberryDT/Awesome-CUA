@@ -17,6 +17,8 @@ import xml.etree.ElementTree as ET
 
 from catalog import ROOT, DATA, arxiv_entry, fetch, now, read_json, read_jsonl, write_json, write_jsonl
 from arxiv_metadata import consider_paper, parse_search_feed, timestamp
+from network_budget import (RoundBudget, budget_from_environment, ENV_PHASE,
+                            DEFAULT_REQUESTS, DEFAULT_SECONDS)
 
 
 def counts():
@@ -29,20 +31,49 @@ def counts():
         'candidates':len(read_jsonl(DATA/'candidates.jsonl'))}
 
 
-# Seconds each subprocess stage may run. Together with the recent arXiv search's retry bound and the workflow's other steps they
-# must fit inside scan.yml's timeout-minutes, so even a stalled stage ends with this scan's own receipt (tests/test_scan_budget.py).
-STAGE_TIMEOUTS={'discovery':300,'huggingface':300,'harvest':300,'build':180,'validate':180}
+# Phase caps never extend the single network-round deadline. Offline build/validation
+# retain separate time, leaving room for the workflow's remaining quality gate.
+STAGE_TIMEOUTS={'discovery':300,'huggingface':300,'recent_arxiv':600,'harvest':300,'build':180,'validate':180}
+NETWORK_STAGES=frozenset({'discovery','huggingface','recent_arxiv','harvest'})
 
 
 def stage(name,command):
     started=now();timeout=STAGE_TIMEOUTS[name]
+    budget=budget_from_environment()
+    if budget and name in NETWORK_STAGES:
+        timeout=min(timeout,budget.remaining_seconds())
+        if timeout<=0:
+            return {'name':name,'started_at':started,'finished_at':now(),'ok':False,'deferred':True,
+                    'request_attempted':False,'error':'Network round wall budget exhausted; no phase started.'}
+    env={**os.environ,ENV_PHASE:name}
     try:
-        result=subprocess.run([sys.executable,*command],cwd=ROOT,encoding='utf-8',errors='replace',stdout=subprocess.PIPE,stderr=subprocess.STDOUT,timeout=timeout)
+        result=subprocess.run([sys.executable,*command],cwd=ROOT,encoding='utf-8',errors='replace',stdout=subprocess.PIPE,stderr=subprocess.STDOUT,timeout=timeout,env=env)
         print(result.stdout[-6000:],flush=True)
         return {'name':name,'started_at':started,'finished_at':now(),'ok':result.returncode==0,'exit_code':result.returncode,
             'error':result.stdout[-1600:] if result.returncode else None}
     except subprocess.TimeoutExpired:
-        return {'name':name,'started_at':started,'finished_at':now(),'ok':False,'error':f'Stage exceeded {timeout} seconds; last verified records retained.'}
+        return {'name':name,'started_at':started,'finished_at':now(),'ok':False,
+                'error':f'Stage exceeded {timeout:g} seconds; last verified records retained.'}
+
+
+def recent_result_path(budget):
+    return budget.path.with_name(budget.run_id+'-recent-result.json')
+
+
+def recent_phase():
+    """Run the recent search under the same hard outer timeout as other network phases."""
+    budget=budget_from_environment()
+    if budget is None:raise ValueError('Recent scan phase requires a network-round context')
+    output=recent_result_path(budget)
+    output.unlink(missing_ok=True)
+    result=stage('recent_arxiv',['scripts/scan.py','--recent-only'])
+    if not result['ok']:return result
+    receipt=read_json(output,{})
+    phase=receipt.get('phase')
+    if (receipt.get('round_id')!=budget.run_id or not isinstance(phase,dict)
+            or phase.get('name')!='recent_arxiv' or type(phase.get('ok')) is not bool):
+        return {**result,'ok':False,'error':'No complete recent-search receipt for this network round.'}
+    return {**result,**phase}
 
 
 def reusable_recent_snapshot(report, query, since, cutoff, day):
@@ -146,11 +177,21 @@ def workflow_message(text):
 def run_scan():
     config=read_json(DATA/'scan-config.json')
     if not 1<=config['recent_lookback_days']<=31 or not 1<=config['recent_max_results']<=2000:raise ValueError('Unbounded recent-search configuration')
+    cooldowns=read_json(DATA/'scan-status.json',{}).get('network_budget',{}).get('provider_cooldowns',{})
+    budget=RoundBudget.create(ROOT/'.cache/scan-rounds',
+        max_requests=config.get('network_max_requests',DEFAULT_REQUESTS),
+        max_seconds=config.get('network_max_seconds',DEFAULT_SECONDS),cooldowns=cooldowns)
+    with budget.activate():
+        return run_round(config,budget)
+
+
+def run_round(config,budget):
     started=now();before=counts();old_papers={r['id'] for r in read_jsonl(DATA/'papers.jsonl')};old_candidates={r['id'] for r in read_jsonl(DATA/'candidates.jsonl')}
     repo=os.getenv('GITHUB_REPOSITORY','');run_id=os.getenv('GITHUB_RUN_ID','')
     run_url=f'https://github.com/{repo}/actions/runs/{run_id}' if repo and run_id else None
     # Replaced when the scan finishes; a run killed before then leaves this receipt instead of the previous run's.
-    write_json(DATA/'scan-status.json',{'id':'scan:'+started,'schema_version':1,'status':'running','started_at':started,'finished_at':None,'run_url':run_url})
+    write_json(DATA/'scan-status.json',{'id':'scan:'+started,'schema_version':1,'status':'running','started_at':started,'finished_at':None,'run_url':run_url,
+        'network_budget':budget.summary()})
     phases=[stage('discovery',['scripts/catalog.py','discover','--refresh'])]
     source_runs=read_json(DATA/'discovery-runs.json',[])
     hf_limited=phases[0]['ok'] and any(r.get('status')==429 and r.get('provider_host')=='huggingface.co'
@@ -160,7 +201,7 @@ def run_scan():
             'request_attempted':False,'error':'Deferred after the publisher-source phase returned Hugging Face HTTP 429.'})
     else:
         phases.append(stage('huggingface',['scripts/discover_papers.py','--refresh']))
-    try:phases.append(recent_papers(config))
+    try:phases.append(recent_phase())
     except Exception as error:phases.append({'name':'recent_arxiv','ok':False,'error':str(error)})
     if phases[-1].get('rate_limited'):
         phases.append({'name':'harvest','ok':False,'deferred':True,
@@ -185,7 +226,7 @@ def run_scan():
         'pending_metadata_changes':len(read_jsonl(DATA/'metadata-updates.jsonl')),'source_fetches':{'successful':sum(bool(r.get('ok')) for r in source_runs) if phases[0]['ok'] else 0,'total':len(source_runs)},
         'paper_searches':{'successful':sum(r.get('state')=='success' for r in hf_runs),'total':hf_report.get('configured_query_count',0) if hf_current else 0,
             'unique_identifiers':hf_report.get('unique_identifiers',0) if hf_current else 0,'new_candidates':hf_report.get('new_candidate_count',0) if hf_current else 0},
-        'phases':phases,'warnings':problems,'policy':config['policy']}
+        'phases':phases,'warnings':problems,'policy':config['policy'],'network_budget':budget.summary()}
     write_json(DATA/'scan-status.json',report)
     history=read_jsonl(DATA/'scan-history.jsonl');history.append({k:v for k,v in report.items() if k!='phases'})
     write_jsonl(DATA/'scan-history.jsonl',history[-config['history_limit']:])
@@ -228,7 +269,16 @@ def check_freshness(current=None):
 def main(argv=None):
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--check-freshness',action='store_true',help='Only check that a completed scan finished within max_scan_age_hours of data/scan-config.json; writes no data.')
-    return check_freshness() if parser.parse_args(argv).check_freshness else run_scan()
+    parser.add_argument('--recent-only',action='store_true',help=argparse.SUPPRESS)
+    args=parser.parse_args(argv)
+    if args.recent_only:
+        if args.check_freshness:parser.error('Recent phase and freshness check are mutually exclusive')
+        budget=budget_from_environment()
+        if budget is None:parser.error('Recent phase requires a network-round context')
+        phase=recent_papers(read_json(DATA/'scan-config.json'))
+        write_json(recent_result_path(budget),{'round_id':budget.run_id,'phase':phase})
+        return 0
+    return check_freshness() if args.check_freshness else run_scan()
 
 
 if __name__=='__main__':

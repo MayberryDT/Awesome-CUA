@@ -24,6 +24,7 @@ import urllib.request
 import xml.etree.ElementTree as ET
 
 from arxiv_metadata import entry_snapshot, consider_paper, parse_search_feed
+from network_budget import BudgetDeferred, budget_from_environment, budgeted_urlopen
 
 ROOT = Path(__file__).resolve().parents[1]
 CACHE = ROOT / ".cache" / "http"
@@ -122,12 +123,16 @@ def fetch(url, refresh=False):
     body = body_path.read_bytes() if old.get("ok") and body_path.exists() else None
     # The body is replaced before its metadata, so a run killed in between leaves a digest mismatch: refetch.
     if body is not None and hashlib.sha256(body).hexdigest() == old.get("sha256"):
-        return old, body
+        # Keep the retained response receipt intact while reporting this call's transport.
+        return {**old, 'request_attempted': False, 'request_attempts': 0, 'cache_used': True}, body
+    budget = budget_from_environment()
+    reserved_before = budget.summary()['requests_reserved'] if budget else 0
     for attempt in range(1, MAX_ATTEMPTS + 1):
         info = {"url": url, "retrieved_at": now(), "ok": False, "request_attempts": attempt}
         try:
             request = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "application/json, application/atom+xml, text/html, text/plain, */*"})
-            with urllib.request.urlopen(request, timeout=30) as response:
+            connection = budgeted_urlopen(request, budget, timeout=30) if budget else urllib.request.urlopen(request, timeout=30)
+            with connection as response:
                 body = response.read(10_000_001)
                 if len(body) > 10_000_000:
                     raise ValueError("response exceeds 10 MB metadata budget")
@@ -135,18 +140,46 @@ def fetch(url, refresh=False):
                             content_type=response.headers.get("Content-Type", ""),
                             sha256=hashlib.sha256(body).hexdigest(), bytes=len(body))
             atomic_write(body_path, body)
+            if budget:
+                info['request_attempts'] = budget.summary()['requests_reserved'] - reserved_before
+                info['request_attempted'] = info['request_attempts'] > 0
             write_json(info_path, info)
             return info, body
+        except BudgetDeferred as error:
+            attempts = budget.summary()['requests_reserved'] - reserved_before
+            info.update(error=str(error), deferred=True, deferred_reason=error.reason,
+                        request_attempted=attempts > 0, request_attempts=attempts)
+            if error.provider:
+                info['deferred_provider'] = error.provider
+            break
         except (urllib.error.URLError, http.client.HTTPException, TimeoutError, ValueError, OSError) as error:
             info.update(error=str(error), status=getattr(error, "code", None))
             headers = getattr(error, "headers", None)
             if headers and headers.get('Retry-After'):
                 info['retry_after'] = headers.get('Retry-After')
+            response_url = url
+            if isinstance(error, urllib.error.HTTPError):
+                response_url = error.geturl()
+                info['final_url'] = response_url
+                error.close()
+            if budget and budget.provider_deferred(response_url):
+                # The first actual rate-limit response remains the receipt; no retry is sent.
+                info.update(deferred=True, deferred_reason='provider_cooldown',
+                            deferred_provider=urllib.parse.urlsplit(response_url).hostname)
+                break
             delay = retry_delay(error, attempt) if attempt < MAX_ATTEMPTS else None
             if delay is None:
                 break
-            time.sleep(delay)
+            try:
+                if budget: budget.wait(delay)
+                else: time.sleep(delay)
+            except BudgetDeferred as deferred:
+                info.update(deferred=True, deferred_reason=deferred.reason)
+                break
     # Keep the previous successful cache intact when a refresh fails.
+    if budget:
+        info['request_attempts'] = budget.summary()['requests_reserved'] - reserved_before
+        info['request_attempted'] = info['request_attempts'] > 0
     write_json(CACHE / f"{key}.error.json", info)
     return info, b""
 
@@ -340,7 +373,8 @@ def discover(args):
             info, body = fetch(source["url"], args.refresh)
         manifest = {"id": source["id"], **info, "unique_resources": 0,
             'run_started_at': started, 'provider_host': host,
-            'request_attempted': not deferred, 'state': 'deferred' if deferred else 'failed'}
+            'request_attempted': info.get('request_attempted', not deferred),
+            'state': 'deferred' if deferred or info.get('deferred') else 'failed'}
         if info.get('status') == 429:
             rate_limited_hosts.add(host)
         if not info["ok"]:
