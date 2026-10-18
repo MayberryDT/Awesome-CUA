@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-371 source-reviewed resources tagged `grounding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+372 source-reviewed resources tagged `grounding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (32)](#datasets) · [Models (67)](#models) · [Agents (2)](#agents) · [Frameworks (10)](#frameworks) · [Tools (6)](#tools) · [Products (1)](#products) · [Papers (244)](#papers)
+**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (32)](#datasets) · [Models (67)](#models) · [Agents (2)](#agents) · [Frameworks (11)](#frameworks) · [Tools (6)](#tools) · [Products (1)](#products) · [Papers (244)](#papers)
 
 ## Benchmarks
 
@@ -140,6 +140,7 @@
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
+| [AgentStudio](https://github.com/skyworkai/agent-studio) | desktop, linux, windows, macos, cross-platform | [2403.17918](https://arxiv.org/abs/2403.17918) (2024) | code AGPL-3.0 | Open-source toolkit, interactive virtual environment, and benchmark suite for building and evaluating generalist computer-use agents across desktop operating systems. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/skyworkai/agent-studio/HEAD/README.md) |
 | [GroundGUI training and evaluation code](https://github.com/PrentisAI/GroundGUI) | desktop, web, cross-platform | [2610.19100](https://arxiv.org/abs/2610.19100) (2026) | code Apache-2.0 | Code for screenshot grounding through supervised training, teacher-guided distillation, reinforcement learning, and benchmark evaluation. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/PrentisAI/GroundGUI/HEAD/README.md) |
 | [GUI-RC / GUI-RCPO](https://github.com/ZJU-REAL/GUI-RCPO) | cross-platform, desktop, web | [2508.05615](https://arxiv.org/abs/2508.05615) (2025) | — | GUI-grounding research code for spatial voting across sampled predictions and test-time policy optimization using region-consistency rewards. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/zju-real/gui-rcpo/HEAD/README.md) |
 | [GUIPivot](https://github.com/ZrW00/GUIPivot) | android | [2503.00401](https://arxiv.org/abs/2503.00401) (2025) | code GPL-3.0 | Research tooling for query-inference pivot tasks that connect screenshot grounding with GUI action reasoning, including preprocessing, query refinement and mobile-agent evaluation. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/ZrW00/GUIPivot/HEAD/README.md) |
