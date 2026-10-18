@@ -36,7 +36,7 @@
 | --- | --- | --- | --- | --- | --- |
 | [PC-Agent (X-PLUG component)](https://github.com/X-PLUG/MobileAgent/tree/main/PC-Agent) | desktop, windows, macos | [2502.14282](https://arxiv.org/abs/2502.14282) (2025) | code MIT | Multi-agent desktop automation component for Windows and macOS, combining active perception, task decomposition and reflection for workflows spanning applications. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/X-PLUG/MobileAgent/HEAD/PC-Agent/README.md) |
 | [ShowUI-Aloha](https://github.com/showlab/ShowUI-Aloha) | desktop, windows, macos | [2601.07181](https://arxiv.org/abs/2601.07181) (2026) | code Apache-2.0 | Desktop agent that records demonstrations, derives semantic action traces, and uses them to plan and execute related workflows. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/showlab/ShowUI-Aloha/HEAD/README.md) |
-| [TuriX CUA](https://github.com/TurixAI/TuriX-CUA) | desktop, macos, windows, linux | — | code MIT | macOS desktop agent whose brain, actor and memory models read annotated screenshots and issue pixel clicks, drags, typing, hotkeys, app launches and AppleScript; Windows and Linux setups live on other branches. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/TurixAI/TuriX-CUA/HEAD/README.md) |
+| [TuriX CUA](https://github.com/TurixAI/TuriX-CUA) | desktop, macos, windows, linux | — | code MIT | macOS desktop agent whose brain and actor models read screenshots and issue pixel clicks, drags, typing, hotkeys, app launches and AppleScript while a memory model condenses history; Windows and Linux use other branches. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/TurixAI/TuriX-CUA/HEAD/README.md) |
 
 ## Frameworks
 

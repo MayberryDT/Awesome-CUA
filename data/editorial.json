@@ -61590,7 +61590,7 @@
       "planning",
       "memory"
     ],
-    "summary": "macOS desktop agent whose brain, actor and memory models read annotated screenshots and issue pixel clicks, drags, typing, hotkeys, app launches and AppleScript; Windows and Linux setups live on other branches.",
+    "summary": "macOS desktop agent whose brain and actor models read screenshots and issue pixel clicks, drags, typing, hotkeys, app launches and AppleScript while a memory model condenses history; Windows and Linux use other branches.",
     "scope": "core",
     "verify_terms": [
       "TuriX"
@@ -61608,7 +61608,7 @@
       "scope",
       "notes"
     ],
-    "notes": "The main branch is macOS-only: Quartz mouse events, pyautogui and pynput input, an Accessibility-tree builder and an optional planner with markdown skills. The README sends Windows and Linux users to the multi-agent-windows and multi-agent-linux branches, which were not inspected; the main tree has no MCP server. Default brain and actor models are TuriX-hosted endpoints; Ollama and other LangChain providers are configurable. The README's OSWorld 64.2% and Mac-benchmark 80% figures are publisher-reported and were not reproduced. The MIT LICENSE names Gregor Zunic (2024) and NGT-LTD (2025). Code was read, not run.",
+    "notes": "The main branch is macOS-only: Quartz mouse events, pyautogui and pynput input, an Accessibility-tree builder and an optional planner with markdown skills. The tree builder can draw numbered element boxes, but src/agent/service.py sends the plain screen capture to the brain and actor and only text to the memory model. The README sends Windows and Linux users to the multi-agent-windows and multi-agent-linux branches, which were not inspected; the main tree has no MCP server. Default brain and actor models are TuriX-hosted endpoints; Ollama and other LangChain providers are configurable. The README's OSWorld 64.2% and Mac-benchmark 80% figures are publisher-reported and were not reproduced. The MIT LICENSE names Gregor Zunic (2024) and NGT-LTD (2025). Code was read, not run.",
     "details": {
       "availability": "Public source and tagged releases without binary assets; a packaged app is offered from the publisher site",
       "release_tag": "v0.4",
@@ -61660,6 +61660,17 @@
         "url": "https://raw.githubusercontent.com/TurixAI/TuriX-CUA/88c777bddfec9796667445873886a3563aa27246/src/mac/actions.py",
         "sha256": "f4722cb11d01e7e80bdda6f28360ae1f608e96d6f06d2cf47b60543e1c6a717a",
         "retrieved_at": "2026-10-18T11:31:28Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/TurixAI/TuriX-CUA/88c777bddfec9796667445873886a3563aa27246/src/agent/service.py",
+        "sha256": "f527b26559c6f18f39886223192d9b557caefc80b2539b8b7fa742e78599f109",
+        "retrieved_at": "2026-10-18T11:58:02Z"
       },
       {
         "role": "primary",

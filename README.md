@@ -69,7 +69,7 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 
 **3,056 resource records** · **1,573 curated** · **2,606 paper and survey records** · **47 discovery documents**
 
-Evidence through `2026-10-18T11:32:12Z`. 1,483 records have bibliographic verification only; 903 discovered identifiers remain unresolved, not counting 89 links reviewed as non-resources or other addresses of indexed resources. 122 scope exclusions retain their original metadata in the archive. Counts overlap as explained below.
+Evidence through `2026-10-18T11:58:27Z`. 1,483 records have bibliographic verification only; 903 discovered identifiers remain unresolved, not counting 89 links reviewed as non-resources or other addresses of indexed resources. 122 scope exclusions retain their original metadata in the archive. Counts overlap as explained below.
 
 <!-- STATS:END -->
 
@@ -168,7 +168,7 @@ Newest editorial approvals of models, datasets, benchmarks, systems, and tools (
 <!-- RECENT:START -->
 | Reviewed | Resource | Kind | Environments | Description |
 | --- | --- | --- | --- | --- |
-| 2026‑10‑18 | [TuriX CUA](https://github.com/TurixAI/TuriX-CUA) | agent | desktop, macos, windows, linux | macOS desktop agent whose brain, actor and memory models read annotated screenshots and issue pixel clicks, drags, typing, hotkeys, app launches and AppleScript; Windows and Linux setups live on other branches. |
+| 2026‑10‑18 | [TuriX CUA](https://github.com/TurixAI/TuriX-CUA) | agent | desktop, macos, windows, linux | macOS desktop agent whose brain and actor models read screenshots and issue pixel clicks, drags, typing, hotkeys, app launches and AppleScript while a memory model condenses history; Windows and Linux use other branches. |
 | 2026‑10‑18 | [ZonUI-3B checkpoint](https://huggingface.co/zonghanHZH/ZonUI-3B) | model | cross-platform, desktop, web | Qwen2.5-VL-3B-based GUI grounding checkpoint that predicts click locations from screenshots and text instructions across desktop, mobile and web screens. |
 | 2026‑10‑18 | [WindowsAgentArena-V2](https://github.com/GAIR-NLP/WindowsAgentArena-V2) | benchmark | desktop, windows | Windows benchmark revision with task/evaluator fixes and VM-initialization support, documented alongside PC-Agent-E. |
 | 2026‑10‑18 | [WebSRC v1.0](https://huggingface.co/datasets/X-LANCE/WebSRC_v1.0) | dataset | web | Webpage segments, questions, answers, HTML, screenshots and layout metadata for structural reading comprehension. |

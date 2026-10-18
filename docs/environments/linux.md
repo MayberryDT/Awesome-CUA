@@ -45,7 +45,7 @@ All entries in this section: desktop, macos, windows, linux.
 
 | Resource | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- |
-| [TuriX CUA](https://github.com/TurixAI/TuriX-CUA) | — | code MIT | macOS desktop agent whose brain, actor and memory models read annotated screenshots and issue pixel clicks, drags, typing, hotkeys, app launches and AppleScript; Windows and Linux setups live on other branches. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/TurixAI/TuriX-CUA/HEAD/README.md) |
+| [TuriX CUA](https://github.com/TurixAI/TuriX-CUA) | — | code MIT | macOS desktop agent whose brain and actor models read screenshots and issue pixel clicks, drags, typing, hotkeys, app launches and AppleScript while a memory model condenses history; Windows and Linux use other branches. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/TurixAI/TuriX-CUA/HEAD/README.md) |
 
 ## Frameworks
 

@@ -71,7 +71,7 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 
 **3,056 条资源记录** · **1,573 条已审阅** · **2,606 条论文与综述记录** · **47 个发现来源文档**
 
-证据截至 `2026-10-18T11:32:12Z`。1,483 条记录仅完成书目核实；903 个已发现的标识符尚待处理，另有 89 个链接经审阅确认为非资源或已收录资源的其他地址，不计入其中。122 条范围排除记录在归档中保留原始元数据。各项计数存在重叠，详见下文。
+证据截至 `2026-10-18T11:58:27Z`。1,483 条记录仅完成书目核实；903 个已发现的标识符尚待处理，另有 89 个链接经审阅确认为非资源或已收录资源的其他地址，不计入其中。122 条范围排除记录在归档中保留原始元数据。各项计数存在重叠，详见下文。
 
 <!-- STATS:END -->
 
@@ -170,7 +170,7 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 <!-- RECENT:START -->
 | 审阅日期 | 资源 | 类型 | 环境 | 简介（英文） |
 | --- | --- | --- | --- | --- |
-| 2026‑10‑18 | [TuriX CUA](https://github.com/TurixAI/TuriX-CUA) | 智能体 | desktop, macos, windows, linux | macOS desktop agent whose brain, actor and memory models read annotated screenshots and issue pixel clicks, drags, typing, hotkeys, app launches and AppleScript; Windows and Linux setups live on other branches. |
+| 2026‑10‑18 | [TuriX CUA](https://github.com/TurixAI/TuriX-CUA) | 智能体 | desktop, macos, windows, linux | macOS desktop agent whose brain and actor models read screenshots and issue pixel clicks, drags, typing, hotkeys, app launches and AppleScript while a memory model condenses history; Windows and Linux use other branches. |
 | 2026‑10‑18 | [ZonUI-3B checkpoint](https://huggingface.co/zonghanHZH/ZonUI-3B) | 模型 | cross-platform, desktop, web | Qwen2.5-VL-3B-based GUI grounding checkpoint that predicts click locations from screenshots and text instructions across desktop, mobile and web screens. |
 | 2026‑10‑18 | [WindowsAgentArena-V2](https://github.com/GAIR-NLP/WindowsAgentArena-V2) | 基准 | desktop, windows | Windows benchmark revision with task/evaluator fixes and VM-initialization support, documented alongside PC-Agent-E. |
 | 2026‑10‑18 | [WebSRC v1.0](https://huggingface.co/datasets/X-LANCE/WebSRC_v1.0) | 数据集 | web | Webpage segments, questions, answers, HTML, screenshots and layout metadata for structural reading comprehension. |
