@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:dafa4a52324a36af4eb1",
+    "url": "https://agenthazard.github.io",
+    "decision": "alias",
+    "target_id": "arxiv:2507.04227",
+    "reason": "Project website for the indexed paper Mobile GUI Agents under Real-world Threats (MobiSys 2026), which presents its app-content instrumentation framework and mobile-agent benchmark as AgentHazard; unrelated to the computer-use AgentHazard preprint 2604.02947."
   }
 ]
