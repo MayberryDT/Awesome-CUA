@@ -61573,5 +61573,246 @@
         ]
       }
     }
+  },
+  {
+    "name": "OSWorld-Science",
+    "kind": "benchmark",
+    "url": "https://github.com/DiscoAILab/OSWorld-Science",
+    "environments": [
+      "desktop",
+      "linux",
+      "windows"
+    ],
+    "topics": [
+      "evaluation",
+      "science"
+    ],
+    "summary": "Benchmark harness that runs computer-use agents on scientific-software tasks in per-domain VMs and scores the resulting application states and deliverables with task-specific executable evaluators.",
+    "scope": "core",
+    "verify_terms": [
+      "OSWorld-Science"
+    ],
+    "documented_by": [
+      "2609.39903"
+    ],
+    "notes": "The repository holds the osworld_science package (CLI, VM control, agents, evaluators), VM build scripts and tests; task data and VM images are downloaded from the gated Hugging Face dataset, and the inspected tree contains no data/ files. The built-in prompt agent follows the OSWorld PromptAgent pattern (screenshot in, pyautogui code out); a Kimi tool-calling agent is vendored from xlang-ai/OSWorld under Apache-2.0. The paper builds task images on Ubuntu, and its ANSYS configuration runs on Windows; the README says that Windows image cannot be redistributed and the EEGLAB image is not yet published. The repository LICENSE is CC BY 4.0; scientific software and vendored components keep their own terms.",
+    "details": {
+      "repository_revision": "25483148138b235212ee75c660a63e5b7bde6072",
+      "repository_tree_sha": "1f8bb1c4636e3d7994791d25d8b056d9f1c41cc1",
+      "benchmark_protocol": {
+        "focus": [
+          "scientific-software workflows",
+          "combined GUI and command-line interaction"
+        ],
+        "setting": "interactive",
+        "observations": [
+          "screenshots"
+        ],
+        "actions": [
+          "pyautogui code (built-in prompt agent)",
+          "tool calls (vendored Kimi agent)"
+        ],
+        "evaluation": "Task-specific executable evaluators (JSON, CSV, artifact, R, SQL, Slicer and Praat checks plus author-provided scientific checks) inspect application states and collected deliverables and can award partial credit; the report command exports PASS/FAIL/VOID counts, scores, steps and costs.",
+        "counts": [
+          {
+            "value": 146,
+            "unit": "tasks",
+            "qualifier": "exact",
+            "population": "full benchmark reported in the paper, seven scientific domains",
+            "basis": "reported",
+            "evidence_url": "https://raw.githubusercontent.com/DiscoAILab/OSWorld-Science/HEAD/README.md"
+          }
+        ],
+        "notes": "The README states that 83.6% of tasks also allow CLI access and 16.4% are GUI-only under the recorded configurations. The published dataset includes answer keys (the private/ folder is hidden from the solver, not access-controlled), so results from models that may have trained on it are not held-out measurements. Record the code revision, task data revision, VM image, model and agent when comparing scores.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/DiscoAILab/OSWorld-Science/HEAD/README.md",
+          "https://api.github.com/repos/DiscoAILab/OSWorld-Science/git/trees/25483148138b235212ee75c660a63e5b7bde6072?recursive=1",
+          "https://raw.githubusercontent.com/DiscoAILab/OSWorld-Science/25483148138b235212ee75c660a63e5b7bde6072/src/osworld_science/agents/prompt_agent/agent.py"
+        ]
+      }
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations",
+      "details.benchmark_protocol"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.repository_revision",
+          "details.repository_tree_sha",
+          "details.benchmark_protocol",
+          "notes"
+        ],
+        "url": "https://api.github.com/repos/DiscoAILab/OSWorld-Science/git/trees/25483148138b235212ee75c660a63e5b7bde6072?recursive=1",
+        "sha256": "470ffe57b8ce4baab4b7849aa6c01450491142c7d8e16853f2e8d91c73cbff71",
+        "retrieved_at": "2026-10-18T12:33:40Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/DiscoAILab/OSWorld-Science/25483148138b235212ee75c660a63e5b7bde6072/src/osworld_science/agents/prompt_agent/agent.py",
+        "sha256": "59571f205d945c2a4a2eaec84bf40e681c5de302182acaafe61f0481d9de52e7",
+        "retrieved_at": "2026-10-18T12:32:27Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2609.39903v1",
+        "sha256": "b4878955429b6b8d177c7d18fde30004fafd1973dda36f7d0412fb61dd2b0178",
+        "retrieved_at": "2026-10-18T12:32:28Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "5871a62e7dac017cbb16017bc28b956aa20058193aebced9505210f34fdc7057",
+    "reviewed_at": "2026-10-18T12:34:15Z"
+  },
+  {
+    "name": "OSWorld-Science task data",
+    "kind": "dataset",
+    "url": "https://huggingface.co/datasets/SciAILab/OSWorld-Science-data",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "evaluation",
+      "science"
+    ],
+    "summary": "Gated Hub release of OSWorld-Science task definitions, staged inputs, grader references and prepared Ubuntu VM images for computer-use agents working in scientific software.",
+    "scope": "core",
+    "verify_terms": [
+      "OSWorld-Science"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/api/datasets/SciAILab/OSWorld-Science-data/revision/9b8de9ad9325c87fbeba90e0676e8d640be70681"
+    ],
+    "documented_by": [
+      "2609.39903"
+    ],
+    "component_of": "https://github.com/DiscoAILab/OSWorld-Science",
+    "notes": "Access requires manual approval by the publisher, so the dataset card and file contents were not read; the record rests on the public Hub metadata and file list, the paper and the benchmark README. The paper says the release holds all question sets and images and carries a contamination watermark; the benchmark README says it includes answer keys. The Windows/ANSYS image is not part of the release. Hub metadata declares CC-BY-NC-4.0 for the data; bundled scientific software and third-party inputs keep their own terms.",
+    "details": {
+      "hub_id": "SciAILab/OSWorld-Science-data",
+      "hub_revision": "9b8de9ad9325c87fbeba90e0676e8d640be70681",
+      "gated": "manual",
+      "disabled": false,
+      "download_url": "https://huggingface.co/datasets/SciAILab/OSWorld-Science-data/tree/9b8de9ad9325c87fbeba90e0676e8d640be70681",
+      "dataset_profile": {
+        "supervision": [
+          "expert-defined task definitions",
+          "grader reference files"
+        ],
+        "modalities": [
+          "task instructions",
+          "input files",
+          "reference outputs",
+          "VM disk images"
+        ],
+        "formats": [
+          "JSON",
+          "QCOW2",
+          "Python",
+          "CSV"
+        ],
+        "splits": [],
+        "counts": [
+          {
+            "value": 153,
+            "unit": "task-definition JSON files",
+            "qualifier": "exact",
+            "population": "<domain>/tasks/ at Hub revision 9b8de9ad (chem 44, biomed 34, physics 31, stat 20, eeg 10, econ 6, geoscience 6, linguistics 2)",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/api/datasets/SciAILab/OSWorld-Science-data/revision/9b8de9ad9325c87fbeba90e0676e8d640be70681"
+          },
+          {
+            "value": 115,
+            "unit": "translated task files",
+            "qualifier": "exact",
+            "population": "ablation/ at Hub revision 9b8de9ad (23 each in es, fr, ja, th, zh)",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/api/datasets/SciAILab/OSWorld-Science-data/revision/9b8de9ad9325c87fbeba90e0676e8d640be70681"
+          },
+          {
+            "value": 11,
+            "unit": "QCOW2 VM images",
+            "qualifier": "exact",
+            "population": "files at Hub revision 9b8de9ad",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/api/datasets/SciAILab/OSWorld-Science-data/revision/9b8de9ad9325c87fbeba90e0676e8d640be70681"
+          },
+          {
+            "value": 2759,
+            "unit": "files",
+            "qualifier": "exact",
+            "population": "Hub repository at revision 9b8de9ad",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/api/datasets/SciAILab/OSWorld-Science-data/revision/9b8de9ad9325c87fbeba90e0676e8d640be70681"
+          }
+        ],
+        "notes": "All counts come from a script over the pinned Hub file list; no file was downloaded. The paper and README report 146 tasks in seven domains, while the listing has 153 task files in eight domain folders, including six econ tasks; a task file is a definition, not an agent run. Task files, translated variants, images and files are different units and are not summed.",
+        "evidence_urls": [
+          "https://huggingface.co/api/datasets/SciAILab/OSWorld-Science-data/revision/9b8de9ad9325c87fbeba90e0676e8d640be70681",
+          "https://raw.githubusercontent.com/DiscoAILab/OSWorld-Science/HEAD/README.md"
+        ]
+      }
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes",
+      "details.dataset_profile"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "relations",
+          "notes",
+          "details.dataset_profile"
+        ],
+        "url": "https://raw.githubusercontent.com/DiscoAILab/OSWorld-Science/HEAD/README.md",
+        "sha256": "5871a62e7dac017cbb16017bc28b956aa20058193aebced9505210f34fdc7057",
+        "retrieved_at": "2026-10-18T12:32:26Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2609.39903v1",
+        "sha256": "b4878955429b6b8d177c7d18fde30004fafd1973dda36f7d0412fb61dd2b0178",
+        "retrieved_at": "2026-10-18T12:32:28Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "68262ed16b86bb34261d6be0051011ee459bade323689bb38703342148ccb28e",
+    "reviewed_at": "2026-10-18T12:34:15Z"
   }
 ]
