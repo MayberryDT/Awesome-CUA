@@ -250,5 +250,11 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:phonellm/awesome-llm-powered-phone-gui-agents",
+    "url": "https://github.com/PhoneLLM/Awesome-LLM-Powered-Phone-GUI-Agents",
+    "decision": "not_a_resource",
+    "reason": "Repository of the phone-gui discovery source itself: the paper list that accompanies the survey arXiv 2504.19838, which stays its own curated record. The repository holds only the README list, figures and a license, with no artifact of its own."
   }
 ]
