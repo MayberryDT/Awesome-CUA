@@ -250,5 +250,11 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:albzni/awesome-llm-based-web-agent-and-tools",
+    "url": "https://github.com/albzni/Awesome-LLM-based-Web-Agent-and-Tools",
+    "decision": "not_a_resource",
+    "reason": "Repository of the web-research discovery source itself: a link list of web-agent papers, code, datasets and tools with no survey or artifact of its own. GitHub now serves it as chenzixuan99/Awesome-LLM-based-Web-Agent-and-Tools."
   }
 ]
