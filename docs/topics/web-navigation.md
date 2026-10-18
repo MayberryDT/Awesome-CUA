@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-275 source-reviewed resources tagged `web-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+276 source-reviewed resources tagged `web-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (13)](#benchmarks) · [Datasets (8)](#datasets) · [Models (11)](#models) · [Agents (9)](#agents) · [Frameworks (23)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (2)](#infrastructure) · [Products (8)](#products) · [Surveys (2)](#surveys) · [Papers (196)](#papers)
+**Contents:** [Benchmarks (13)](#benchmarks) · [Datasets (8)](#datasets) · [Models (11)](#models) · [Agents (9)](#agents) · [Frameworks (23)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (2)](#infrastructure) · [Products (9)](#products) · [Surveys (2)](#surveys) · [Papers (196)](#papers)
 
 ## Benchmarks
 
@@ -134,6 +134,7 @@ All entries in this section: web.
 | [ChatGPT Atlas](https://openai.com/index/introducing-chatgpt-atlas/) | [OpenAI](https://openai.com/index/computer-using-agent/) | OpenAI browser product integrating ChatGPT and agent capabilities. | [✓ 2026‑10‑16](https://openai.com/index/introducing-chatgpt-atlas/) |
 | [Claude for Chrome](https://claude.com/chrome) | [Anthropic](https://claude.com/chrome) | Claude browser extension for interacting with websites. | [✓ 2026‑10‑16](https://claude.com/chrome) |
 | [HoloTab](https://hcompany.ai/newsroom/meet-holotab) | [H](https://hcompany.ai/research/models) | H browser extension for executing tasks through website interfaces. | [✓ 2026‑10‑16](https://hcompany.ai/newsroom/meet-holotab) |
+| [Opera Neon](https://www.operaneon.com/) | — | Opera's subscription agentic browser whose Neon Do agent opens, closes and acts across tabs inside the user's logged-in session, with task workspaces, prompt cards and MCP or CLI access for outside agents. | [✓ 2026‑10‑18](https://www.operaneon.com/) |
 | [Operator](https://openai.com/index/introducing-operator/) | [OpenAI](https://openai.com/index/computer-using-agent/) | Historical OpenAI browser-agent research preview. | [✓ 2026‑10‑16](https://openai.com/index/introducing-operator/) |
 | [TinyFish](https://www.tinyfish.ai/) | [TinyFish](https://www.tinyfish.ai/) | Browser-agent API for executing web tasks and extracting structured results. | [✓ 2026‑10‑16](https://www.tinyfish.ai/) |
 

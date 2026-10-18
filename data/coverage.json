@@ -1,7 +1,7 @@
 {
-  "as_of_utc": "2026-10-18T08:01:28Z",
-  "total_records": 3055,
-  "curated_records": 1572,
+  "as_of_utc": "2026-10-18T11:11:34Z",
+  "total_records": 3056,
+  "curated_records": 1573,
   "bibliographic_records": 2606,
   "arxiv_active_records": 2593,
   "non_arxiv_bibliographic_records": 13,
@@ -152,7 +152,7 @@
     "infrastructure": 14,
     "model": 98,
     "paper": 2591,
-    "product": 20,
+    "product": 21,
     "survey": 15,
     "tool": 20
   },
@@ -165,7 +165,7 @@
     "linux": 47,
     "macos": 30,
     "unspecified": 367,
-    "web": 596,
+    "web": 597,
     "windows": 61
   },
   "curated_by_kind_and_environment": {
@@ -249,7 +249,7 @@
     },
     "product": {
       "desktop": 5,
-      "web": 18
+      "web": 19
     },
     "survey": {
       "android": 2,
