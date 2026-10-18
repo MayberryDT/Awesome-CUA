@@ -413,7 +413,7 @@ def build_search_pages(destination, rows, coverage, root):
     (destination/'badges').mkdir(exist_ok=True)
     badge=f'<svg xmlns="http://www.w3.org/2000/svg" width="590" height="30" role="img" aria-label="{len(rows)} resources, {len(reviewed)} reviewed resources, {badge_papers} reviewed papers"><rect width="590" height="30" rx="5" fill="#4856df"/><g fill="#fff" font-family="Arial,sans-serif" font-size="12" text-anchor="middle"><text x="85" y="20">{len(rows):,} resources</text><text x="270" y="20">{len(reviewed):,} reviewed resources</text><text x="485" y="20">{badge_papers:,} reviewed papers</text></g></svg>'
     (destination/'badges/catalog.svg').write_text(badge,encoding='utf-8')
-    featured_badges=[('featured-by-awesomecua-laurel.svg','Laurel badge',500,106),('featured-by-awesomecua.svg','Light badge',200,40),('featured-by-awesomecua-dark.svg','Dark badge',200,40),('awesomecua-featured-seal.svg','Featured seal',140,156)]
+    featured_badges=[('featured-by-awesomecua-laurel.svg','Periwinkle laurel and CUA monogram',500,106),('featured-by-awesomecua.svg','Light badge',200,40),('featured-by-awesomecua-dark.svg','Dark badge',200,40),('awesomecua-featured-seal.svg','Featured seal',140,156)]
     if all((destination/'badges'/name).is_file() for name,_,_,_ in featured_badges):
         body='<h1>Featured by AwesomeCUA</h1><p class="answer-lead">SVG badges for project pages, GitHub READMEs, and release notes. Link a badge to your resource’s AwesomeCUA entry so readers can inspect its sources.</p><div class="badge-gallery">'
         for name,label,width,height in featured_badges:
