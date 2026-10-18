@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-174 source-reviewed resources tagged `robustness`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+175 source-reviewed resources tagged `robustness`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (1)](#datasets) · [Frameworks (2)](#frameworks) · [Papers (162)](#papers)
+**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (1)](#datasets) · [Agents (1)](#agents) · [Frameworks (2)](#frameworks) · [Papers (162)](#papers)
 
 ## Benchmarks
 
@@ -27,6 +27,14 @@ All entries in this section: cross-platform.
 | Resource | Paper | Scale | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
 | [RoTS](https://github.com/AlibabaResearch/RoTS) | — | [≈ 800,000 training samples](https://raw.githubusercontent.com/AlibabaResearch/RoTS/HEAD/README.md) | — | Announced GUI trajectory synthesis resources for recovery from policy-induced errors; the inspected repository marks code and data releases as in preparation. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/AlibabaResearch/RoTS/HEAD/README.md) |
+
+## Agents
+
+All entries in this section: web, android, ios.
+
+| Resource | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [agent-qa](https://github.com/vostride/agent-qa) | — | code FSL-1.1-ALv2 | TypeScript QA harness in which an LLM agent runs natural-language web and mobile tests through Playwright and Appium, retries failed steps by re-observing the screen, and reuses memory from earlier runs. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/vostride/agent-qa/HEAD/README.md) |
 
 ## Frameworks
 
