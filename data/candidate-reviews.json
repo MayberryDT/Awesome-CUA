@@ -250,5 +250,11 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:os-agent-survey/os-agent-survey",
+    "url": "https://github.com/OS-Agent-Survey/OS-Agent-Survey",
+    "decision": "not_a_resource",
+    "reason": "Repository of the os-agent-survey discovery source: the companion paper list of the survey arxiv:2508.04482, whose README is fetched for discovery, so its entries are reviewed individually and the survey is cited through its arXiv record."
   }
 ]
