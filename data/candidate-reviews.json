@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:cc138683b2bb0df93592",
+    "url": "https://aclanthology.org/2025.findings-naacl.318",
+    "decision": "alias",
+    "target_id": "arxiv:2410.19054",
+    "reason": "ACL Anthology page for the Findings of NAACL 2025 edition (DOI 10.18653/v1/2025.findings-naacl.318) of the indexed Infogent preprint; title and six-author list match arXiv 2410.19054."
   }
 ]
