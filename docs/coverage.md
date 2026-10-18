@@ -1,11 +1,11 @@
 # Coverage and quality ledger
 
-Evidence snapshot through **2026-10-18T08:01:28Z**. Generated from committed source receipts.
+Evidence snapshot through **2026-10-18T12:10:41Z**. Generated from committed source receipts.
 
-- 3,055 resource records: 1,572 curated; 1,483 bibliographic metadata only.
+- 3,056 resource records: 1,573 curated; 1,483 bibliographic metadata only.
 - 2,606 paper and survey records, including 2,593 arXiv identities and 13 publisher-only identities. This count overlaps the status counts above.
 - 2,715 retained arXiv metadata records; 122 explicit scope exclusions are outside the active catalog.
-- 4,052 discovery identifiers; 903 remain unresolved after accounting for scope exclusions and for 80 reviewed non-resource links and 9 other addresses of indexed resources, which stay in the review queue with their reasons.
+- 4,052 discovery identifiers; 902 remain unresolved after accounting for scope exclusions and for 80 reviewed non-resource links and 9 other addresses of indexed resources, which stay in the review queue with their reasons.
 - 18 editorial proposals await verification or review.
 
 These are distinct resource identifiers, not distinct research projects. Papers, repositories, datasets, products, and publisher entities have different grains.
@@ -21,7 +21,7 @@ Counts of source-reviewed resources. A resource tagged with several environments
 | [company](companies.md) | · | · | · | · | · | · | · | · | · | 16 |
 | [dataset](datasets.md) | 24 | 18 | 4 | 2 | 7 | 34 | 1 | · | 14 | 8 |
 | [framework](frameworks.md) | 36 | 21 | 2 | 1 | 5 | 19 | 1 | 1 | 7 | 2 |
-| [infrastructure](infrastructures.md) | 5 | 9 | 1 | 2 | 4 | 3 | 1 | · | · | · |
+| [infrastructure](infrastructures.md) | 5 | 10 | 1 | 2 | 5 | 3 | 1 | · | · | · |
 | [model](models.md) | 28 | 24 | 5 | 4 | 6 | 24 | 4 | · | 47 | 2 |
 | [paper](topics.md) | 424 | 204 | 36 | 14 | 18 | 173 | 8 | 2 | 100 | 332 |
 | [product](products.md) | 18 | 5 | · | · | · | · | · | · | · | · |
@@ -75,7 +75,7 @@ The denominator is the normalized identifiers extracted from each fetched docume
 | [OS-Genesis — first-party training assets](https://github.com/OS-Copilot/OS-Genesis) | 29 | 2 | 2 | 0 | 3 | 24 | OK · 2026-10-18 |
 | [MultiUI / UIX — first-party release index](https://github.com/neulab/multiui) | 8 | 1 | 1 | 0 | 0 | 7 | OK · 2026-10-18 |
 | [UI-Genie — first-party model and data releases](https://github.com/Euphoria16/UI-Genie) | 12 | 5 | 5 | 0 | 0 | 7 | OK · 2026-10-18 |
-| [ScienceBoard — first-party environments and trajectories](https://github.com/OS-Copilot/ScienceBoard) | 16 | 4 | 4 | 0 | 3 | 9 | OK · 2026-10-18 |
+| [ScienceBoard — first-party environments and trajectories](https://github.com/OS-Copilot/ScienceBoard) | 16 | 5 | 5 | 0 | 3 | 8 | OK · 2026-10-18 |
 | [MAI-UI / Qwen-UI-Agent — first-party project index](https://github.com/Tongyi-MAI/MAI-UI) | 17 | 3 | 3 | 0 | 0 | 14 | OK · 2026-10-18 |
 | [H Company — official Hub model index](https://huggingface.co/Hcompany) | 39 | 4 | 4 | 0 | 0 | 35 | FAILED · 2026-10-18 |
 | [Maxi-W Awesome AI for GUI Agents](https://github.com/maxi-w/awesome-ai-for-gui-agents) | 50 | 26 | 26 | 0 | 1 | 23 | OK · 2026-10-18 |

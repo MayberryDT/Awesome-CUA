@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-46 source-reviewed resources tagged `state-tracking`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+47 source-reviewed resources tagged `state-tracking`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Frameworks (2)](#frameworks) · [Papers (44)](#papers)
+**Contents:** [Frameworks (2)](#frameworks) · [Infrastructure (1)](#infrastructure) · [Papers (44)](#papers)
 
 ## Frameworks
 
@@ -12,6 +12,14 @@
 | --- | --- | --- | --- | --- | --- |
 | [AgentProg](https://github.com/MobileLLM/AgentProg) | android | [2512.10371](https://arxiv.org/abs/2512.10371) (2025) | code Apache-2.0 | Android GUI-agent framework that keeps long-running task context in structured programs, variables and control flow, with a CLI and AndroidWorld integration. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/MobileLLM/AgentProg/HEAD/README.md) |
 | [StateAct](https://github.com/ai-nikolai/StateAct) | web | [2410.02810](https://arxiv.org/abs/2410.02810) (2024) | — | State-tracking prompts and experiment runners for language agents, including a WebShop implementation alongside text-based environments. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/ai-nikolai/StateAct/HEAD/README.md) |
+
+## Infrastructure
+
+All entries in this section: desktop, linux.
+
+| Resource | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [ChimeraX-SessionStates](https://github.com/ShiinaHiiragi/chimerax-states) | — | — | ChimeraX bundle from ScienceBoard that adds a states command writing the traversed session state to raw and flattened JSON, so the benchmark's verifiers can check molecular-visualization tasks. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/ShiinaHiiragi/chimerax-states/HEAD/README.md) |
 
 ## Papers
 
