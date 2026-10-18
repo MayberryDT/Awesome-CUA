@@ -11,8 +11,8 @@
   "exclusion_revalidation_pending": 0,
   "metadata_only_records": 1483,
   "discovery_identifiers": 4052,
-  "unindexed_candidates": 903,
-  "non_resource_candidates": 80,
+  "unindexed_candidates": 902,
+  "non_resource_candidates": 81,
   "alias_candidates": 9,
   "pending_editorial": [
     {
@@ -426,8 +426,8 @@
       "resolved_aliases": 1,
       "curated": 24,
       "excluded": 0,
-      "set_aside": 4,
-      "unindexed": 85
+      "set_aside": 5,
+      "unindexed": 84
     },
     {
       "id": "steel-web-archive",
@@ -906,8 +906,8 @@
       "resolved_aliases": 0,
       "curated": 55,
       "excluded": 0,
-      "set_aside": 0,
-      "unindexed": 37
+      "set_aside": 1,
+      "unindexed": 36
     },
     {
       "id": "release-fara",
