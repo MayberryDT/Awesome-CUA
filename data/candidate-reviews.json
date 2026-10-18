@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "url:3312804cfa1c8a3349fe",
+    "url": "https://huggingface.co/Hcompany/NeoMME-260M-Retriever-ST-late",
+    "decision": "out_of_scope",
+    "reason": "NeoMME-260M-Retriever-ST-late is the multi-vector (late-interaction) Sentence Transformers variant of H Company's NeoMME-260M document retriever, scored on ViDoRe and BEIR. Its card describes document-page and text retrieval only, with no GUI, screen-control or agent use, so it is outside the computer-use catalog.",
+    "reviewed_at": "2026-10-18T16:06:28Z",
+    "evidence": {
+      "url": "https://huggingface.co/Hcompany/NeoMME-260M-Retriever-ST-late/raw/main/README.md",
+      "sha256": "60a1562a0fda2980795ffde310a265d0c6f102fa77dbeb51e50bd8bf0c23f4bb",
+      "retrieved_at": "2026-10-18T15:38:59Z"
+    }
   }
 ]
