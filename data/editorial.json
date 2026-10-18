@@ -61573,5 +61573,146 @@
         ]
       }
     }
+  },
+  {
+    "name": "Sai on OSWorld v2.1 reference-VM runs",
+    "kind": "dataset",
+    "url": "https://huggingface.co/datasets/simular-ai/sai-osworld-v21-reference-runs",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "evaluation",
+      "observability"
+    ],
+    "summary": "Simular's 134 clean runs of its Sai computer-use agent on the 108 OSWorld v2.1 tasks in a reference Ubuntu VM, with OSWorld trajectories, agent records, harness and grader logs, scorecards and screenshot and video tars.",
+    "scope": "core",
+    "verify_terms": [
+      "Sai on OSWorld v2.1"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/datasets/simular-ai/sai-osworld-v21-reference-runs/raw/abfb5852189f49e81255c38d98287df29ae53658/README.md"
+    ],
+    "publisher_id": "organization:simular",
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations",
+      "licenses.data",
+      "details.dataset_profile"
+    ],
+    "notes": "The card reports agent model anthropic/claude-opus-5 at max thinking effort on a cocoon microVM built from the official OSWorld v2.1 reference image (Ubuntu 22.04.3), and five guest image builds (ref4, ref5, ref7, ref8, ref9) that differ only in environment fixes. A run is clean under the card's own rule: a numeric score, infra ok or proxy_missing, and no disk-full, driver-timeout or forced-zero replay-render failure. Headline scores are the publisher's and were not reproduced. Text files are redacted copies (proxy, credentials, per-run GitLab passwords, host names); images and video are unchanged and show masked GitLab login fields and an internal GitLab address in two tasks. The Hub owner simular-ai is the account named Simular, whose site presents Sai as its agent. No license is declared.",
+    "details": {
+      "hub_id": "simular-ai/sai-osworld-v21-reference-runs",
+      "hub_revision": "abfb5852189f49e81255c38d98287df29ae53658",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/datasets/simular-ai/sai-osworld-v21-reference-runs/tree/abfb5852189f49e81255c38d98287df29ae53658",
+      "dataset_profile": {
+        "supervision": [
+          "grader task scores",
+          "agent-generated trajectories"
+        ],
+        "modalities": [
+          "screenshots",
+          "screen recordings",
+          "action trajectories",
+          "agent messages and events",
+          "harness and grader logs",
+          "scores"
+        ],
+        "formats": [
+          "JSONL",
+          "JSON",
+          "plain-text logs",
+          "TAR media archives"
+        ],
+        "splits": [],
+        "counts": [
+          {
+            "value": 134,
+            "unit": "clean task runs",
+            "qualifier": "exact",
+            "population": "osworld-v2.1 release as described by the card",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/simular-ai/sai-osworld-v21-reference-runs/raw/abfb5852189f49e81255c38d98287df29ae53658/README.md"
+          },
+          {
+            "value": 134,
+            "unit": "run/task directories with traj.jsonl",
+            "qualifier": "exact",
+            "population": "runs/ at Hub revision abfb5852",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/api/datasets/simular-ai/sai-osworld-v21-reference-runs/revision/abfb5852189f49e81255c38d98287df29ae53658"
+          },
+          {
+            "value": 108,
+            "unit": "distinct OSWorld v2.1 tasks",
+            "qualifier": "exact",
+            "population": "runs/ at Hub revision abfb5852",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/api/datasets/simular-ai/sai-osworld-v21-reference-runs/revision/abfb5852189f49e81255c38d98287df29ae53658"
+          },
+          {
+            "value": 18,
+            "unit": "batch directories",
+            "qualifier": "exact",
+            "population": "runs/ at Hub revision abfb5852",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/api/datasets/simular-ai/sai-osworld-v21-reference-runs/revision/abfb5852189f49e81255c38d98287df29ae53658"
+          },
+          {
+            "value": 134,
+            "unit": "per-run media TAR archives",
+            "qualifier": "exact",
+            "population": "media/ at Hub revision abfb5852",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/api/datasets/simular-ai/sai-osworld-v21-reference-runs/revision/abfb5852189f49e81255c38d98287df29ae53658"
+          }
+        ],
+        "notes": "Computed counts come from a script over the pinned Hub file list. A run is one task execution; some tasks ran more than once, so 134 run directories cover 108 tasks, grouped under 18 batch directories. Card headline: 0.7731 mean over tasks of each task's mean clean score (first clean run 0.7674, best 0.7938), from the benchmark grader, not independent labels. No task file or media archive was downloaded.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/simular-ai/sai-osworld-v21-reference-runs/raw/abfb5852189f49e81255c38d98287df29ae53658/README.md",
+          "https://huggingface.co/api/datasets/simular-ai/sai-osworld-v21-reference-runs/revision/abfb5852189f49e81255c38d98287df29ae53658"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.hub_id",
+          "details.hub_revision",
+          "details.gated",
+          "details.disabled",
+          "details.download_url",
+          "details.dataset_profile"
+        ],
+        "url": "https://huggingface.co/api/datasets/simular-ai/sai-osworld-v21-reference-runs/revision/abfb5852189f49e81255c38d98287df29ae53658",
+        "sha256": "de6231347f32cc04143d47778d616ef03fc6a6d49ebb69b7992a1f95fc7e92ec",
+        "retrieved_at": "2026-10-18T12:33:58Z"
+      }
+    ],
+    "reviewed_licenses": {
+      "data": {
+        "value": null,
+        "reason": "The card declares no license in its metadata or text, and the file list at this revision has no license file, so no data grant is established; agent outputs and captured third-party content keep their own terms.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/simular-ai/sai-osworld-v21-reference-runs/raw/abfb5852189f49e81255c38d98287df29ae53658/README.md"
+        ]
+      }
+    },
+    "reviewed_sha256": "d11edc15df8bb33c7ef2a49772985166f6fb37107e5e36334653c95108246a12",
+    "reviewed_at": "2026-10-18T15:34:52Z"
   }
 ]
