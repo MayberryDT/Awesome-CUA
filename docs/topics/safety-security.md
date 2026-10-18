@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-170 source-reviewed resources tagged `safety-security`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+171 source-reviewed resources tagged `safety-security`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (7)](#benchmarks) · [Agents (1)](#agents) · [Frameworks (3)](#frameworks) · [Tools (1)](#tools) · [Surveys (4)](#surveys) · [Papers (154)](#papers)
+**Contents:** [Benchmarks (7)](#benchmarks) · [Agents (2)](#agents) · [Frameworks (3)](#frameworks) · [Tools (1)](#tools) · [Surveys (4)](#surveys) · [Papers (154)](#papers)
 
 ## Benchmarks
 
@@ -20,11 +20,10 @@
 
 ## Agents
 
-All entries in this section: android.
-
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [OS-Kairos](https://github.com/Wuzheng02/OS-Kairos) | [2503.16465](https://arxiv.org/abs/2503.16465) (2025) | — | Android GUI-agent research implementation that uses confidence-guided interaction to choose between autonomous actions and human assistance. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/Wuzheng02/OS-Kairos/HEAD/README.md) |
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [Login Machine](https://github.com/RichardHruby/login-machine) | web | — | code MIT | Browser agent loop for website logins: Claude classifies each login screen from a screenshot and stripped HTML and returns DOM-checked Playwright locators; user-entered credentials never reach the model. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/RichardHruby/login-machine/HEAD/README.md) |
+| [OS-Kairos](https://github.com/Wuzheng02/OS-Kairos) | android | [2503.16465](https://arxiv.org/abs/2503.16465) (2025) | — | Android GUI-agent research implementation that uses confidence-guided interaction to choose between autonomous actions and human assistance. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/Wuzheng02/OS-Kairos/HEAD/README.md) |
 
 ## Frameworks
 
