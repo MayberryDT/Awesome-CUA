@@ -61573,5 +61573,59 @@
         ]
       }
     }
+  },
+  {
+    "name": "EIA",
+    "kind": "framework",
+    "url": "https://github.com/OSU-NLP-Group/EIA_against_webagent",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "robustness",
+      "evaluation"
+    ],
+    "summary": "Attack code that injects invisible form elements and instructions into Mind2Web-derived webpages so SeeAct web agents type users' private data into them, with injection, local hosting and success-rate scripts.",
+    "scope": "core",
+    "aliases": [
+      "Environmental Injection Attack"
+    ],
+    "verify_terms": [
+      "EIA"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/OSU-NLP-Group/EIA_against_webagent/HEAD/README.md"
+    ],
+    "documented_by": [
+      "2409.11295"
+    ],
+    "reviewed_relations": [
+      {
+        "type": "uses",
+        "target_id": "github:osu-nlp-group/seeact",
+        "evidence_url": "https://raw.githubusercontent.com/OSU-NLP-Group/EIA_against_webagent/HEAD/README.md"
+      },
+      {
+        "type": "uses",
+        "target_id": "github:osu-nlp-group/mind2web",
+        "evidence_url": "https://raw.githubusercontent.com/OSU-NLP-Group/EIA_against_webagent/HEAD/README.md"
+      }
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations",
+      "aliases"
+    ],
+    "notes": "The README calls this the official repository of arXiv:2409.11295. The tree (commit 8ff1e5d) holds injection scripts, a FastAPI server for the injected pages, eval.py and eval_run.sh for the ASR, ASR_o and ASR_pt metrics the README names, and a modified SeeAct copy pinned to SeeAct commit 472be04 with its own AI Pubs Open RAIL-S license. The evaluation pages, which the README says cover 177 PII-bearing action steps adapted from Mind2Web, and the evaluation results are distributed through Globus and were not downloaded. Root LICENSE is MIT for code; the README separately declares CC BY 4.0 for the Mind2Web-derived evaluation set, which this record does not extend to the code.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "61eb6109404f266fd22c6fa8ca58ef773a9d502567403f42edc096958ab2e430",
+    "reviewed_at": "2026-10-18T11:52:47Z"
   }
 ]

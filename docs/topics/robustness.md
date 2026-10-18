@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-174 source-reviewed resources tagged `robustness`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+175 source-reviewed resources tagged `robustness`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (1)](#datasets) · [Frameworks (2)](#frameworks) · [Papers (162)](#papers)
+**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (1)](#datasets) · [Frameworks (3)](#frameworks) · [Papers (162)](#papers)
 
 ## Benchmarks
 
@@ -33,6 +33,7 @@ All entries in this section: cross-platform.
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
 | [AdvAgent (formerly AdvWeb)](https://github.com/AI-secure/AdvAgent) | web | — | — | Research code for constructing and evaluating adversarial inputs to web agents, with a black-box red-team pipeline using Mind2Web data and SeeAct. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/AI-secure/AdvAgent/HEAD/README.md) |
+| [EIA](https://github.com/OSU-NLP-Group/EIA_against_webagent) | web | [2409.11295](https://arxiv.org/abs/2409.11295) (2024) | code MIT | Attack code that injects invisible form elements and instructions into Mind2Web-derived webpages so SeeAct web agents type users' private data into them, with injection, local hosting and success-rate scripts. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/OSU-NLP-Group/EIA_against_webagent/HEAD/README.md) |
 | [GUI-HARVEST](https://github.com/GaryYang12345/GUI-HARVEST) | desktop | [2610.00948](https://arxiv.org/abs/2610.00948) (2026) | code Apache-2.0 | Optimizes GUI-agent execution code from repeated rollout evidence and checks proposed changes against fixed validation gates. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/GaryYang12345/GUI-HARVEST/HEAD/README.md) |
 
 ## Papers
