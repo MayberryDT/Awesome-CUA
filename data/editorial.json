@@ -61601,7 +61601,7 @@
     "documented_by": [
       "2509.17336"
     ],
-    "notes": "The repository holds only bilingual README files, images and an Apache-2.0 LICENSE (tree 87673eff, 19 entries); the mano-cua CLI, mano-skill, Cider SDK and Mano-AFK live in separate Mininglamp-AI repositories. The only linked checkpoint is Mininglamp-2718/Mano-CUA-2.0-4B, whose Hub card declares apache-2.0 and base model Qwen/Qwen3-VL-4B; the headline OSWorld 58.2% figure is reported for Mano-CUA 1.1, for which no checkpoint is linked. Cloud mode sends screenshots and task text to mano.mininglamp.com. Benchmark claims were not reproduced, and the repository license is not applied to the weights.",
+    "notes": "The repository holds only bilingual README files, images and an Apache-2.0 LICENSE (tree 87673eff, 19 entries); the mano-cua CLI, mano-skill, Cider SDK and Mano-AFK live in separate Mininglamp-AI repositories. The linked checkpoints are Mininglamp-2718/Mano-CUA-2.0-4B, whose Hub card declares apache-2.0 and base model Qwen/Qwen3-VL-4B, and its MLX 8-bit conversion Mano-CUA-2.0-4B-MLX-8bit; the headline OSWorld 58.2% figure is reported for Mano-CUA 1.1, for which no checkpoint is linked. Cloud mode sends screenshots and task text to mano.mininglamp.com. Benchmark claims were not reproduced, and the repository license is not applied to the weights.",
     "details": {
       "availability": "README-only hub; Mano-CUA-2.0-4B weights on Hugging Face and ModelScope; CLI, skill and SDK in separate repositories"
     },
