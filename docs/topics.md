@@ -2,7 +2,7 @@
 
 [Home](../README.md) · [Full arXiv bibliography](papers.md) · [Methodology](methodology.md)
 
-1,572 source-reviewed resources across 35 topics. Topic tags are catalog annotations from the editorial review, not author keywords; a resource appears under every topic it carries. Each hub lists benchmarks, data, models, systems, and papers together, newest papers first.
+1,573 source-reviewed resources across 35 topics. Topic tags are catalog annotations from the editorial review, not author keywords; a resource appears under every topic it carries. Each hub lists benchmarks, data, models, systems, and papers together, newest papers first.
 
 | Topic | All | Benchmarks | Datasets | Models | Systems | Papers | Newest reviewed paper |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | --- |
@@ -10,7 +10,7 @@
 | [GUI grounding](topics/grounding.md) | 371 | 9 | 32 | 67 | 19 | 244 | [Why Generate a Click? Plug-in Decision Heads for Web Agents](https://arxiv.org/abs/2610.20107) · 2026-10-14 |
 | [Data generation](topics/data-generation.md) | 337 | · | 54 | 2 | 23 | 258 | [Teaching Agents in their Own Style: Blackbox Teacher Distillation for Web Agents](https://arxiv.org/abs/2610.19834) · 2026-10-14 |
 | [Web navigation](topics/web-navigation.md) | 275 | 13 | 8 | 11 | 45 | 198 | [Why Generate a Click? Plug-in Decision Heads for Web Agents](https://arxiv.org/abs/2610.20107) · 2026-10-14 |
-| [Planning](topics/planning.md) | 269 | · | 4 | 27 | 32 | 206 | [OpenGCUA: Toward a Fully Open Stack for Generalist Computer Use](https://arxiv.org/abs/2610.22200) · 2026-10-15 |
+| [Planning](topics/planning.md) | 270 | · | 4 | 27 | 33 | 206 | [OpenGCUA: Toward a Fully Open Stack for Generalist Computer Use](https://arxiv.org/abs/2610.22200) · 2026-10-15 |
 | [Mobile navigation](topics/mobile-navigation.md) | 248 | 14 | 12 | 15 | 26 | 181 | [How GUI Agents Fail: GraceBench for Execution Stability Diagnosis](https://arxiv.org/abs/2610.19900) · 2026-10-14 |
 | [Reinforcement learning](topics/reinforcement-learning.md) | 230 | 2 | 5 | 23 | 20 | 180 | [OS-Helix: Unifying GUI Interaction and Code Execution in Native Computer-Using Agents](https://arxiv.org/abs/2610.22234) · 2026-10-15 |
 | [Screen understanding](topics/screen-understanding.md) | 205 | 5 | 19 | 10 | 11 | 160 | [STP-GUI: Spatially-Aware Token Pruning for Efficient Web-GUI Agents](https://arxiv.org/abs/2610.20390) · 2026-10-14 |
@@ -19,7 +19,7 @@
 | [Memory](topics/memory.md) | 158 | 1 | 2 | · | 15 | 140 | [Pack Light, CarryOn: Building Object-Oriented Context for Long-Horizon Agents](https://arxiv.org/abs/2610.18784) · 2026-10-13 |
 | [Efficiency](topics/efficiency.md) | 148 | 1 | · | 5 | 4 | 138 | [LEASH: Uncertainty-Aware Weak-to-Strong Escalation and Oversight for Computer-Use Agents](https://arxiv.org/abs/2610.22280) · 2026-10-15 |
 | [Tool integration](topics/tool-integration.md) | 128 | 9 | 2 | 4 | 23 | 90 | [OpenGCUA: Toward a Fully Open Stack for Generalist Computer Use](https://arxiv.org/abs/2610.22200) · 2026-10-15 |
-| [Automation](topics/automation.md) | 111 | · | · | 1 | 27 | 83 | [Interaction-as-a-Judge](https://arxiv.org/abs/2610.17895) · 2026-10-13 |
+| [Automation](topics/automation.md) | 112 | · | · | 1 | 28 | 83 | [Interaction-as-a-Judge](https://arxiv.org/abs/2610.17895) · 2026-10-13 |
 | [Workflows](topics/workflow.md) | 107 | 6 | 2 | · | 21 | 78 | [Task-State Governance: A Virtual Machine for Verifiable and Recoverable GUI Agent Execution](https://arxiv.org/abs/2610.20100) · 2026-10-14 |
 | [Long-horizon tasks](topics/long-horizon.md) | 99 | 5 | 1 | 1 | 4 | 88 | [Pack Light, CarryOn: Building Object-Oriented Context for Long-Horizon Agents](https://arxiv.org/abs/2610.18784) · 2026-10-13 |
 | [Human in the loop](topics/human-in-the-loop.md) | 78 | 1 | · | · | 6 | 71 | [Task-State Governance: A Virtual Machine for Verifiable and Recoverable GUI Agent Execution](https://arxiv.org/abs/2610.20100) · 2026-10-14 |
@@ -28,8 +28,8 @@
 | [Cross-app](topics/cross-app.md) | 54 | 13 | 2 | · | 4 | 35 | [AgentHorizon: Evaluating Agentic Judges for Long-Horizon Computer-Use Tasks](https://arxiv.org/abs/2610.11050) · 2026-10-08 |
 | [Sandboxes](topics/sandbox.md) | 54 | 3 | · | · | 13 | 38 | [MAI-Gym: An Open All-in-One Platform for GUI Agent Evaluation and RL Training across Mobile and Computer Environments](https://arxiv.org/abs/2610.20939) · 2026-10-14 |
 | [Action prediction](topics/action-prediction.md) | 48 | · | 2 | 17 | 3 | 26 | [Guides That Cause Actions: An Offline Study of Guide-Action Mutual Reinforcement in Multimodal Web Agents](https://arxiv.org/abs/2609.27353) · 2026-09-23 |
+| [State tracking](topics/state-tracking.md) | 47 | · | · | · | 3 | 44 | [LongPuzzleBench: Evaluating GUI Agents on Long-Horizon Visual Puzzles](https://arxiv.org/abs/2609.34769) · 2026-09-28 |
 | [Interaction history](topics/interaction-history.md) | 46 | · | · | 1 | · | 45 | [Learn How to Act from Your Own Interactions: On-Policy Self-Distillation for GUI Agents](https://arxiv.org/abs/2609.27307) · 2026-09-23 |
-| [State tracking](topics/state-tracking.md) | 46 | · | · | · | 2 | 44 | [LongPuzzleBench: Evaluating GUI Agents on Long-Horizon Visual Puzzles](https://arxiv.org/abs/2609.34769) · 2026-09-28 |
 | [World models](topics/world-models.md) | 42 | · | 3 | 2 | 2 | 35 | [Latent World Action Model for GUI Agents](https://arxiv.org/abs/2610.14228) · 2026-10-09 |
 | [Self-reflection](topics/self-reflection.md) | 37 | · | · | 3 | 7 | 27 | [Reflect, Revise, Reuse: Training-Free Skill Evolution for GUI Agents](https://arxiv.org/abs/2609.17653) · 2026-09-15 |
 | [Video](topics/video.md) | 37 | 2 | 6 | · | · | 29 | [Invisible in Space, Visible in Time: Motion Vision CAPTCHA against GUI Agents](https://arxiv.org/abs/2609.27461) · 2026-09-23 |
