@@ -63143,5 +63143,172 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "url:c7489f15e7883a695832",
+    "name": "MoCon",
+    "kind": "dataset",
+    "url": "https://huggingface.co/datasets/OpenDFM/MoCon",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "screen-understanding",
+      "data-generation"
+    ],
+    "summary": "Icon and text bounding-box annotations for 10,364 mobile app screenshots, with 154 icon classes and font-family text labels in LabelMe JSON and train, val and test splits; images not included.",
+    "scope": "core",
+    "verify_terms": [
+      "MoCon"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/datasets/OpenDFM/MoCon/raw/e37127c9ad04ccd5a1381aa60054683eda8a5462/README.md"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations",
+      "licenses.data"
+    ],
+    "notes": "The card, shared with its sibling crawl release, carries only the license, links and citation requests, and the pre-release PDF it links is a two-page announcement framed around mobile GUI agents without methods or statistics. Contents were read from the 15.6 MB mocondata.zip (SHA-256 98463d69…, matching the Hub LFS object): one LabelMe 4.5.9 JSON file per screenshot whose imagePath names a JPEG that is not in the repository and whose imageData is empty. A script counted 364,352 rectangles: 212,342 labelled icon with one of the 154 icon.csv classes (in Chinese or English) and 152,010 text boxes labelled with a font family (sans, fantasy, serif, cursive, mono or math) and the transcribed text. Image sizes are mostly 1080×1920 and 540×960 portrait. No operating system is named, so the environment stays unspecified. CC BY-NC-SA 4.0 is the card's data declaration.",
+    "details": {
+      "hub_id": "OpenDFM/MoCon",
+      "hub_revision": "e37127c9ad04ccd5a1381aa60054683eda8a5462",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/datasets/OpenDFM/MoCon/tree/e37127c9ad04ccd5a1381aa60054683eda8a5462",
+      "dataset_profile": {
+        "supervision": [
+          "icon bounding boxes with class labels",
+          "text bounding boxes with transcribed text and font-family labels"
+        ],
+        "modalities": [
+          "bounding-box annotations",
+          "UI text transcriptions"
+        ],
+        "formats": [
+          "LabelMe JSON",
+          "ZIP",
+          "CSV"
+        ],
+        "splits": [
+          "train",
+          "val",
+          "test"
+        ],
+        "counts": [
+          {
+            "value": 6972,
+            "unit": "annotated screenshots",
+            "population": "MoCon train split",
+            "evidence_url": "https://huggingface.co/datasets/OpenDFM/MoCon/resolve/e37127c9ad04ccd5a1381aa60054683eda8a5462/split.csv",
+            "qualifier": "exact",
+            "basis": "computed"
+          },
+          {
+            "value": 1143,
+            "unit": "annotated screenshots",
+            "population": "MoCon val split",
+            "evidence_url": "https://huggingface.co/datasets/OpenDFM/MoCon/resolve/e37127c9ad04ccd5a1381aa60054683eda8a5462/split.csv",
+            "qualifier": "exact",
+            "basis": "computed"
+          },
+          {
+            "value": 2249,
+            "unit": "annotated screenshots",
+            "population": "MoCon test split",
+            "evidence_url": "https://huggingface.co/datasets/OpenDFM/MoCon/resolve/e37127c9ad04ccd5a1381aa60054683eda8a5462/split.csv",
+            "qualifier": "exact",
+            "basis": "computed"
+          },
+          {
+            "value": 154,
+            "unit": "icon classes",
+            "population": "icon.csv class table (Chinese and English names)",
+            "evidence_url": "https://huggingface.co/datasets/OpenDFM/MoCon/resolve/e37127c9ad04ccd5a1381aa60054683eda8a5462/icon.csv",
+            "qualifier": "exact",
+            "basis": "computed"
+          }
+        ],
+        "notes": "split.csv assigns each of the 10,364 annotation IDs to exactly one split, and the IDs match the JSON file names in mocondata.zip one to one. Screenshot images are referenced by file name but not released, so the annotations cannot be paired with pixels from this repository alone. The publisher states no counts; all counts were computed from the released files.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/OpenDFM/MoCon/resolve/e37127c9ad04ccd5a1381aa60054683eda8a5462/split.csv",
+          "https://huggingface.co/datasets/OpenDFM/MoCon/resolve/e37127c9ad04ccd5a1381aa60054683eda8a5462/icon.csv",
+          "https://huggingface.co/api/datasets/OpenDFM/MoCon/tree/e37127c9ad04ccd5a1381aa60054683eda8a5462"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "url": "https://huggingface.co/api/datasets/OpenDFM/MoCon",
+        "sha256": "9ddd265eeda4ed7439927fefd24805573c46fb9ee072341b8129a377d720f8f5",
+        "retrieved_at": "2026-10-18T16:15:56Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.hub_id",
+          "details.hub_revision",
+          "details.gated",
+          "details.disabled",
+          "details.download_url"
+        ]
+      },
+      {
+        "url": "https://huggingface.co/api/datasets/OpenDFM/MoCon/tree/e37127c9ad04ccd5a1381aa60054683eda8a5462",
+        "sha256": "4cbfe0afb8a5b37901a986d9bfcb38c2e6bd9455eebdb95879039c15c205d6a9",
+        "retrieved_at": "2026-10-18T16:16:12Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "details.dataset_profile",
+          "notes"
+        ]
+      },
+      {
+        "url": "https://huggingface.co/datasets/OpenDFM/MoCon/resolve/e37127c9ad04ccd5a1381aa60054683eda8a5462/split.csv",
+        "sha256": "281c3b35f822b9e7b278552c663718df17ba698fccc8ef65ef29280cbae2dd18",
+        "retrieved_at": "2026-10-18T16:15:58Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "details.dataset_profile"
+        ]
+      },
+      {
+        "url": "https://huggingface.co/datasets/OpenDFM/MoCon/resolve/e37127c9ad04ccd5a1381aa60054683eda8a5462/icon.csv",
+        "sha256": "409e9b424de315eafd248f80030221b70c4f372355f88b1ce36b076c52db1ef5",
+        "retrieved_at": "2026-10-18T16:15:59Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "details.dataset_profile"
+        ]
+      },
+      {
+        "url": "https://huggingface.co/datasets/OpenDFM/MoCon/resolve/e37127c9ad04ccd5a1381aa60054683eda8a5462/MoGUI_Paper_v0.1.pdf",
+        "sha256": "5f7a66c12756ae057bbd3216e45b874825e671769e751cd7efb31081d05a52f5",
+        "retrieved_at": "2026-10-18T16:16:00Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "scope",
+          "notes"
+        ]
+      }
+    ],
+    "read_basis": "Read the Hub API record and tree at revision e37127c9, the card, the pre-release PDF, split.csv and icon.csv, and parsed every JSON file in mocondata.zip (downloaded, digest matched the LFS object) without extracting images, which are absent.",
+    "reviewed_sha256": "7d930295e3a7b1cc8b1b186a242f53963214df78156567e90184b39ebbf479dd",
+    "reviewed_at": "2026-10-18T16:16:53Z"
   }
 ]
