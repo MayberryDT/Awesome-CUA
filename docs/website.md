@@ -64,7 +64,7 @@ python3 scripts/prepare_publication.py
 In the website checkout, the script:
 
 - Deletes the generated files (`index.html`, `index.md`, `record.json` and the citation files) of every page that the checkout's previous `data/search-manifest.json` lists and the new build does not, in any section. It stops before deleting anything if such a page resolves outside the checkout or into a dot folder.
-- Deletes generated page files under `resources/`, `categories/`, `guides/`, `topics/` and `zh/topics/` whose page is not in the new manifest, record and citation files that the build no longer produces for a kept resource page, and the exports in `downloads/topics/` of topics that no longer exist.
+- Deletes generated page files under `resources/`, `categories/`, `guides/`, `topics/`, `zh/topics/` and `badges/` whose page is not in the new manifest, record and citation files that the build no longer produces for a kept resource page, and the exports in `downloads/topics/` of topics that no longer exist. For a removed badge gallery, this includes its four featured-resource SVGs; the separately generated `badges/catalog.svg` count badge and unrelated files are preserved.
 - Copies `dist/site/` over the checkout, replacing files of the same name.
 - Adds `.pipeline/`, `.cache/`, `__pycache__/` and `.DS_Store` to `.gitignore` when they are missing.
 - Copies the resource issue form to `.github/ISSUE_TEMPLATE/resource.yml`, and the resource, scope-decision and publication-observation schemas to `schemas/`.
