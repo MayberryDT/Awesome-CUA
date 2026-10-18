@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-294 source-reviewed resources tagged `android`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+295 source-reviewed resources tagged `android`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (18)](#benchmarks) · [Datasets (34)](#datasets) · [Models (24)](#models) · [Agents (16)](#agents) · [Frameworks (19)](#frameworks) · [Tools (5)](#tools) · [Infrastructure (3)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (173)](#papers)
+**Contents:** [Benchmarks (18)](#benchmarks) · [Datasets (34)](#datasets) · [Models (24)](#models) · [Agents (16)](#agents) · [Frameworks (20)](#frameworks) · [Tools (5)](#tools) · [Infrastructure (3)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (173)](#papers)
 
 ## Benchmarks
 
@@ -141,6 +141,7 @@
 | [SwitchMem](https://github.com/dmis-lab/SwitchMem) | android | [2610.17928](https://arxiv.org/abs/2610.17928) (2026) | — | Memory-routing implementation that chooses text or image demonstrations for a frozen GUI actor, with offline evaluation and Android transfer experiments. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/dmis-lab/SwitchMem/HEAD/README.md) |
 | [UI-Genie](https://github.com/Euphoria16/UI-Genie) | android | [2505.21496](https://arxiv.org/abs/2505.21496) (2025) | — | Training and evaluation code for a mobile-agent framework that iteratively generates trajectories using agent and reward-model feedback. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/Euphoria16/UI-Genie/HEAD/README.md) |
 | [VEM GUI-Agent-RL](https://github.com/microsoft/GUI-Agent-RL) | android | [2502.18906](https://arxiv.org/abs/2502.18906) (2025) | code MIT | Training code that learns a value environment model from offline Android interaction data and uses its frozen value estimates to guide GUI policy optimization. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/microsoft/GUI-Agent-RL/HEAD/README.md) |
+| [VGA: Vision GUI Assistant](https://github.com/Linziyang1999/Vision-GUI-assistant) | android | [2406.14056](https://arxiv.org/abs/2406.14056) (2024) | code Apache-2.0 | Code and data release for VGA: GPT-generated question-answer conversations about Rico Android screens in LLaVA format, the prompts that produced them, and two-stage LLaVA-1.6 fine-tuning scripts. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/Linziyang1999/Vision-GUI-assistant/HEAD/README.md) |
 
 ## Tools
 
