@@ -141,3 +141,76 @@ PYTHONPATH=tests python3 -S -B -m unittest test_github_candidate_scan -v
 # With the repository validation dependency installed, also checks JSON Schema.
 PYTHONPATH=tests .venv/bin/python -B -m unittest test_github_candidate_scan -v
 ```
+
+## Export a frozen observation snapshot
+
+The offline exporter requires an explicitly selected ledger and its retained
+primary-response cache. It makes no network requests and does not read the
+resumable scan state implicitly:
+
+```sh
+python3 -S scripts/export_candidates.py \
+  --input .cache/candidate-scan/frozen-round.json \
+  --raw-dir .cache/candidate-scan/raw \
+  --catalog data/catalog.jsonl \
+  --output-dir dist/candidate-observations
+```
+
+It replays every accepted occurrence from the actual SHA-named API bytes,
+checks the query, numeric repository identity, public/non-fork flags, metadata,
+recorded names and observation times, then writes only:
+
+- `github-candidates.jsonl`: one sanitized observation per numeric GitHub
+  repository ID, always `candidate` and `relevance_pending`.
+- `github-candidates-manifest.json`: the exact observation-file fingerprint,
+  source-ledger fingerprint, original input-file fingerprints, observed time
+  window, bounded query/round summary, counts and explicit privacy omissions.
+
+The two contracts are
+[`github-candidate-observation.schema.json`](../schemas/github-candidate-observation.schema.json)
+and
+[`github-candidate-observation-manifest.schema.json`](../schemas/github-candidate-observation-manifest.schema.json).
+`source_description` and `github_topics` are publisher-supplied text and tags,
+not catalog annotations or a relevance classification. Treat them as untrusted
+data rather than instructions. `known_names` records observed spellings under
+the same numeric ID; it does not replace reviewed catalog alias decisions.
+
+The exporter checks the selected public text fields for credential-shaped
+strings, local home paths and URLs containing user information. A suspect
+description is replaced with null and its record ID, field and reason are
+reported explicitly; the suspect value is never copied into the report.
+Sensitive-shaped identity fields block export. These bounded checks do not
+claim to detect every possible secret format. Raw owner/contact objects,
+permissions, headers, API bodies and local cache paths are never exported.
+
+The observation population has its own `observation_snapshot_sha256`.
+`input_fingerprints` describe the files used when scanning; they may predate the
+active catalog. `active_catalog_context` separately identifies the catalog
+provided for comparison and confers no approval. Counts use **numeric repository
+identities**, not independent projects. Candidates can overlap each other’s
+queries and the active catalog, and no query total establishes a global CUA count.
+
+After reviewing the sanitized output, maintainers can retain those **two files
+only** as `data/github-candidates.jsonl` and
+`data/github-candidates-manifest.json`. Do not copy the scan directory or raw
+API cache into `data/`. This is an optional durable observation input: a website
+build validates both files, preserves the observation bytes and input hashes,
+and updates only the manifest’s active-catalog comparison context for that build.
+Absent inputs remove the owned optional downloads on the next publication.
+
+When present, the JSONL and manifest appear in the data hub’s **Sources and review
+states** group; their schemas appear in **Data contracts**. They are not added to
+the active catalog, resource pages, search recommendations, citations, or default
+RAG exports. A consumer can ingest them into a separate candidate collection
+keyed by `github-repository:<numeric ID>`, preserving review state and evidence.
+The catalog CLI and normal RAG exporter continue to consume the active resource
+schema, not this separate observation schema.
+
+Public-file validation checks the sanitized contract and fingerprints. It does
+not claim to recreate or independently verify historical network responses that
+are absent from the downloaded bundle. Re-running the producer requires the
+operator’s retained ledger and raw cache.
+
+```sh
+.venv/bin/python -B -m unittest discover -s tests -p 'test_candidate_exports.py' -v
+```
