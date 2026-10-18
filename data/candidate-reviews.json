@@ -250,5 +250,12 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:jykoh/visualwebarena",
+    "url": "https://github.com/jykoh/visualwebarena",
+    "decision": "alias",
+    "target_id": "github:web-arena-x/visualwebarena",
+    "reason": "Mistyped star-badge link under the VisualWebArena entry of the showlab list, whose badge image names web-arena-x/visualwebarena; the jykoh address returns 404 and that account has no public repositories."
   }
 ]
