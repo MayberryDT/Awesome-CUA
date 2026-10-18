@@ -6,7 +6,7 @@ Curated metadata, not a performance ranking. Each entry links its first-party ev
 
 *Paper* lists reviewed `introduced_by`/`documented_by` relations with the record's year. *License* lists publisher declarations by scope (code, data, weights, document). *Evidence* links the reviewed first-party snapshot and its retrieval date.
 
-**72 resources:** [Web (27)](#web) · [Desktop (13)](#desktop) · [Mobile (17)](#mobile) · [Cross-platform (13)](#cross-platform) · [Unspecified (2)](#unspecified)
+**73 resources:** [Web (27)](#web) · [Desktop (13)](#desktop) · [Mobile (17)](#mobile) · [Cross-platform (13)](#cross-platform) · [Unspecified (3)](#unspecified)
 
 Resources tagged with environments from more than one family are listed under *Cross-platform*; their exact environments stay in the table.
 
@@ -116,6 +116,7 @@ All entries in this section: unspecified.
 
 | Resource | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- |
+| [MaskClaw](https://github.com/Theodora-Y/MaskClaw) | [2605.28646](https://arxiv.org/abs/2605.28646) (2026) | — | Local privacy layer for GUI agents: a local VLM describes each screenshot and retrieves the user's rules from ChromaDB, RapidOCR locates sensitive text to blur before forwarding, and user corrections evolve the rules. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/Theodora-Y/MaskClaw/HEAD/README.md) |
 | [META-GUI baseline](https://github.com/X-LANCE/META-GUI-baseline) | [2205.11029](https://arxiv.org/abs/2205.11029) (2022) | code MIT | Training and evaluation pipeline for conversational mobile GUI agents, with action prediction, response generation, and dataset processing. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/X-LANCE/META-GUI-baseline/HEAD/README.md) |
 | [VideoCAD training and evaluation code](https://github.com/UDGOK/videocad) | [2505.24838](https://arxiv.org/abs/2505.24838) (2025) | — | VideoCADFormer training, action-log preprocessing and evaluation code for learning long sequences of CAD interface operations from screen recordings. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/UDGOK/videocad/HEAD/README.md) |
 
