@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "url:1bd8434bd25907f469c0",
+    "url": "https://huggingface.co/Hcompany/NeoMME-260M-Retriever-ST-dense",
+    "decision": "out_of_scope",
+    "reason": "NeoMME-260M-Retriever-ST-dense is a 263M-parameter encoder that embeds text queries and document pages (text or page images) for multimodal document retrieval, evaluated on ViDoRe and BEIR. Its card describes no GUI, screen-control or agent use, so it is a document-retrieval model outside the computer-use catalog despite its publisher's other GUI-agent releases.",
+    "reviewed_at": "2026-10-18T16:05:54Z",
+    "evidence": {
+      "url": "https://huggingface.co/Hcompany/NeoMME-260M-Retriever-ST-dense/raw/main/README.md",
+      "sha256": "30c509a5d55237a5b5dbe8331d7bd76c25ebaa66f1123fe10784c1a5ae65e3df",
+      "retrieved_at": "2026-10-18T15:38:59Z"
+    }
   }
 ]
