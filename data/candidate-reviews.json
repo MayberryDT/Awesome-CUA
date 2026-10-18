@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:ff60fa8969e2acff42ad",
+    "url": "https://aclanthology.org/2025.acl-long.1065",
+    "decision": "alias",
+    "target_id": "arxiv:2406.11317",
+    "reason": "ACL Anthology page for the ACL 2025 long-paper edition (DOI 10.18653/v1/2025.acl-long.1065) of the indexed GUICourse preprint; same 14 authors as arXiv 2406.11317, with a singular-form title variant."
   }
 ]
