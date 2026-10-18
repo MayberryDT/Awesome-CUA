@@ -517,5 +517,11 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:c5b5e9d09ea81f07c080",
+    "url": "https://huggingface.co/UnicomLLM",
+    "decision": "not_a_resource",
+    "reason": "Hugging Face organization profile of China Unicom's unicomAI team, linked as the hub site of its Unichat-llama3-Chinese chat model. The profile is a publisher homepage whose three models are Chinese chat Llama 3 checkpoints, with no GUI-agent resource."
   }
 ]
