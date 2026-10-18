@@ -2,21 +2,21 @@
 
 [Home](../README.md) · [Full arXiv bibliography](papers.md) · [Methodology](methodology.md)
 
-1,572 source-reviewed resources across 35 topics. Topic tags are catalog annotations from the editorial review, not author keywords; a resource appears under every topic it carries. Each hub lists benchmarks, data, models, systems, and papers together, newest papers first.
+1,573 source-reviewed resources across 35 topics. Topic tags are catalog annotations from the editorial review, not author keywords; a resource appears under every topic it carries. Each hub lists benchmarks, data, models, systems, and papers together, newest papers first.
 
 | Topic | All | Benchmarks | Datasets | Models | Systems | Papers | Newest reviewed paper |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | --- |
 | [Evaluation](topics/evaluation.md) | 661 | 81 | 9 | 1 | 22 | 548 | [Player-1: Learning to Play from Synthetic Experience](https://arxiv.org/abs/2610.20584) · 2026-10-14 |
 | [GUI grounding](topics/grounding.md) | 371 | 9 | 32 | 67 | 19 | 244 | [Why Generate a Click? Plug-in Decision Heads for Web Agents](https://arxiv.org/abs/2610.20107) · 2026-10-14 |
 | [Data generation](topics/data-generation.md) | 337 | · | 54 | 2 | 23 | 258 | [Teaching Agents in their Own Style: Blackbox Teacher Distillation for Web Agents](https://arxiv.org/abs/2610.19834) · 2026-10-14 |
-| [Web navigation](topics/web-navigation.md) | 275 | 13 | 8 | 11 | 45 | 198 | [Why Generate a Click? Plug-in Decision Heads for Web Agents](https://arxiv.org/abs/2610.20107) · 2026-10-14 |
-| [Planning](topics/planning.md) | 269 | · | 4 | 27 | 32 | 206 | [OpenGCUA: Toward a Fully Open Stack for Generalist Computer Use](https://arxiv.org/abs/2610.22200) · 2026-10-15 |
+| [Web navigation](topics/web-navigation.md) | 276 | 13 | 8 | 11 | 46 | 198 | [Why Generate a Click? Plug-in Decision Heads for Web Agents](https://arxiv.org/abs/2610.20107) · 2026-10-14 |
+| [Planning](topics/planning.md) | 270 | · | 4 | 27 | 33 | 206 | [OpenGCUA: Toward a Fully Open Stack for Generalist Computer Use](https://arxiv.org/abs/2610.22200) · 2026-10-15 |
 | [Mobile navigation](topics/mobile-navigation.md) | 248 | 14 | 12 | 15 | 26 | 181 | [How GUI Agents Fail: GraceBench for Execution Stability Diagnosis](https://arxiv.org/abs/2610.19900) · 2026-10-14 |
 | [Reinforcement learning](topics/reinforcement-learning.md) | 230 | 2 | 5 | 23 | 20 | 180 | [OS-Helix: Unifying GUI Interaction and Code Execution in Native Computer-Using Agents](https://arxiv.org/abs/2610.22234) · 2026-10-15 |
 | [Screen understanding](topics/screen-understanding.md) | 205 | 5 | 19 | 10 | 11 | 160 | [STP-GUI: Spatially-Aware Token Pruning for Efficient Web-GUI Agents](https://arxiv.org/abs/2610.20390) · 2026-10-14 |
 | [Robustness](topics/robustness.md) | 174 | 9 | 1 | · | 2 | 162 | [How GUI Agents Fail: GraceBench for Execution Stability Diagnosis](https://arxiv.org/abs/2610.19900) · 2026-10-14 |
 | [Safety & security](topics/safety-security.md) | 170 | 7 | · | · | 5 | 158 | [Task-State Governance: A Virtual Machine for Verifiable and Recoverable GUI Agent Execution](https://arxiv.org/abs/2610.20100) · 2026-10-14 |
-| [Memory](topics/memory.md) | 158 | 1 | 2 | · | 15 | 140 | [Pack Light, CarryOn: Building Object-Oriented Context for Long-Horizon Agents](https://arxiv.org/abs/2610.18784) · 2026-10-13 |
+| [Memory](topics/memory.md) | 159 | 1 | 2 | · | 16 | 140 | [Pack Light, CarryOn: Building Object-Oriented Context for Long-Horizon Agents](https://arxiv.org/abs/2610.18784) · 2026-10-13 |
 | [Efficiency](topics/efficiency.md) | 148 | 1 | · | 5 | 4 | 138 | [LEASH: Uncertainty-Aware Weak-to-Strong Escalation and Oversight for Computer-Use Agents](https://arxiv.org/abs/2610.22280) · 2026-10-15 |
 | [Tool integration](topics/tool-integration.md) | 128 | 9 | 2 | 4 | 23 | 90 | [OpenGCUA: Toward a Fully Open Stack for Generalist Computer Use](https://arxiv.org/abs/2610.22200) · 2026-10-15 |
 | [Automation](topics/automation.md) | 111 | · | · | 1 | 27 | 83 | [Interaction-as-a-Judge](https://arxiv.org/abs/2610.17895) · 2026-10-13 |
