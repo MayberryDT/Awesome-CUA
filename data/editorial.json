@@ -61605,7 +61605,7 @@
       "scope",
       "notes"
     ],
-    "notes": "Adjacent: browser operation is one worker role in a general productivity workforce, as in the CAMEL OWL record. The browser agent uses CAMEL's hybrid browser toolkit against a pool of CDP browsers, with terminal, note and screenshot toolkits beside it. Local deployment can use vLLM, Ollama or LM Studio, while the quick start connects to Eigent cloud services and needs an account. Code was read, not run, and installers were not downloaded.",
+    "notes": "Adjacent: browser operation is one worker role in a general productivity workforce built on CAMEL. The browser agent uses CAMEL's hybrid browser toolkit against a pool of CDP browsers, with terminal, note and screenshot toolkits beside it. Local deployment can use vLLM, Ollama or LM Studio, while the quick start connects to Eigent cloud services and needs an account. Code was read, not run, and installers were not downloaded.",
     "details": {
       "availability": "Public source with packaged desktop releases; the quick-start mode depends on Eigent cloud services",
       "repository_revision": "8f90b99125e790fb4ccebb472dac7e6a6d1972a9"
