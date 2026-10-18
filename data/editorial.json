@@ -63143,5 +63143,83 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "url:c6e1ffa1f4c6561c3b22",
+    "name": "Fuyu-8B",
+    "kind": "model",
+    "url": "https://huggingface.co/adept/fuyu-8b",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "screen-understanding",
+      "grounding"
+    ],
+    "summary": "Adept's decoder-only multimodal base model that feeds image patches straight into the transformer, released for research on digital agents, UI question answering and screen localization.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "Fuyu-8B"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/adept/fuyu-8b/raw/f41defefdb89be0d28cac19d94ce216e37cb6be5/README.md"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations",
+      "licenses.weights",
+      "details.parameter_label",
+      "details.artifact_type"
+    ],
+    "notes": "Adjacent: a general image-and-text base model whose card says it was designed for digital agents, UI-based questions and fine-grained localization on screen images, and lists computer control among research uses. The card calls it a raw base model that needs fine-tuning, reports only VQAv2, OKVQA, COCO Captions and AI2D scores, publishes no GUI or agent evaluation, names no platform and does not describe the training data. Adept's blog post is its only linked description; no paper is linked. The manifest lists two Safetensors shards (9,408,238,592 BF16 parameters per the Hub API). CC BY-NC 4.0 is the card's weights declaration.",
+    "details": {
+      "hub_id": "adept/fuyu-8b",
+      "hub_revision": "f41defefdb89be0d28cac19d94ce216e37cb6be5",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/adept/fuyu-8b/tree/f41defefdb89be0d28cac19d94ce216e37cb6be5",
+      "artifact_type": "model-checkpoint",
+      "architecture": "FuyuForCausalLM",
+      "parameter_label": "8B"
+    },
+    "additional_evidence": [
+      {
+        "url": "https://huggingface.co/api/models/adept/fuyu-8b",
+        "sha256": "ae28118b1737267db5c334db7f0b492bc5187ac5b975549158c63d392d8acd2e",
+        "retrieved_at": "2026-10-18T16:12:39Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.hub_id",
+          "details.hub_revision",
+          "details.gated",
+          "details.disabled",
+          "details.download_url",
+          "notes"
+        ]
+      },
+      {
+        "url": "https://huggingface.co/adept/fuyu-8b/raw/f41defefdb89be0d28cac19d94ce216e37cb6be5/config.json",
+        "sha256": "cbf11fcb3e60c985b5f5ab8a8e277b17e2910c3060285609dbfbf2354689c8ff",
+        "retrieved_at": "2026-10-18T16:12:44Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.architecture"
+        ]
+      }
+    ],
+    "read_basis": "Read the pinned model card, config.json and Hub API record (file manifest, card metadata and parameter count). No weights were downloaded or run.",
+    "reviewed_sha256": "8f8beb8b0174e9b661ef5bc795e0342747d0069a590b41167e636172c177c6ff",
+    "reviewed_at": "2026-10-18T16:13:05Z"
   }
 ]
