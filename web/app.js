@@ -10,8 +10,8 @@ const TEXT = {
 };
 // Topic labels come from data/topics.json through data/index.json.
 let TOPICS = {};
-Object.assign(TEXT.en, {agentEyebrow:'DATA FOR PEOPLE & AGENTS',agentTitle:'Clone the catalog. Put it to work.',agentCopy:'Search locally, connect a RAG pipeline, or let your agent explore—with sources and review states intact.',agentGuide:'Agent & RAG guide',copyCommand:'Copy command',commandCopied:'Clone command copied',commandCopyFailed:'Select the command above to copy it.',ragReviewed:'RAG documents · reviewed',ragReviewedCopy:'One retrieval document per reviewed resource, with citations and provenance.',ragAll:'RAG documents · all records',ragAllCopy:'Every active record, including metadata-only entries with their review state.'});
-Object.assign(TEXT.zh, {agentEyebrow:'给人阅读，也给 AGENTS 使用',agentTitle:'克隆完整目录，接入你的工作。',agentCopy:'本地检索、构建 RAG，或让 Agent 继续探索。来源、引用和审阅状态随数据一起保留。',agentGuide:'Agents 与 RAG 使用指南',copyCommand:'复制克隆命令',commandCopied:'克隆命令已复制',commandCopyFailed:'请选择上方命令并复制。',ragReviewed:'RAG 文档 · 已审阅',ragReviewedCopy:'每项已审阅资源对应一份检索文档，保留引用和来源。',ragAll:'RAG 文档 · 全部记录',ragAllCopy:'包含全部当前记录，并明确保留待审阅论文的状态。'});
+Object.assign(TEXT.en, {agentEyebrow:'USE THE DATA',agentTitle:'Clone the complete catalog',agentCopy:'Search locally or prepare RAG documents, with source evidence and review states preserved.',agentGuide:'Agent & RAG guide',agentGuideCopy:'Steps for local search and retrieval data.',agentInstructionsCopy:'Instructions for agents using this catalog.',agentManifest:'RAG manifest',agentManifestCopy:'Export counts and snapshot fingerprints.',agentDownloads:'Browse download formats',cloneCommandLabel:'Git clone command',copyCommand:'Copy command',commandCopying:'Copying…',commandCopied:'Command copied. Paste it into your terminal.',commandCopyFailed:'Copy failed. Select and copy the command manually.',ragReviewed:'RAG documents · reviewed',ragReviewedCopy:'One retrieval document per reviewed resource, with citations and provenance.',ragAll:'RAG documents · all records',ragAllCopy:'Every active record, including metadata-only entries with their review state.'});
+Object.assign(TEXT.zh, {agentEyebrow:'使用数据',agentTitle:'克隆完整资源目录',agentCopy:'在本地检索，或准备 RAG 文档；来源证据与审阅状态随记录保留。',agentGuide:'Agent 与 RAG 指南',agentGuideCopy:'本地检索与 RAG 导入步骤。',agentInstructionsCopy:'给智能体的目录使用说明。',agentManifest:'RAG 导出清单',agentManifestCopy:'导出数量与快照指纹。',agentDownloads:'查看下载格式',cloneCommandLabel:'Git 克隆命令',copyCommand:'复制命令',commandCopying:'正在复制…',commandCopied:'命令已复制，可粘贴到终端。',commandCopyFailed:'复制失败，请选中命令后手动复制。',ragReviewed:'RAG 文档 · 已审阅',ragReviewedCopy:'每项已审阅资源对应一份检索文档，保留引用和来源。',ragAll:'RAG 文档 · 全部记录',ragAllCopy:'包含全部当前记录，并保留仅有元数据条目的审阅状态。'});
 Object.assign(TEXT.en,{topicDirectory:'Browse topics'});
 Object.assign(TEXT.zh,{topicDirectory:'浏览主题'});
 Object.assign(TEXT.en,{pageNumber:'Page %s',pageStatus:'Page %s of %s'});
@@ -170,14 +170,20 @@ async function showRecord(id,setURL=true) {
   }catch(error){if(activeRecord!==id)return;$('#detail-content').innerHTML=`<h2 id="detail-title" tabindex="-1">${e(found.name)}</h2><p>${e(t('errorDetail'))}</p><button type="button" class="button secondary" data-record="${e(id)}">${e(t('retry'))}</button>`;}
   if(inside)$('#detail-title').focus();
 }
+function cloneCommand(scope) {
+  return `<div class="clone-entry-command" data-clone-entry><div class="clone-command"><code aria-label="${e(t('cloneCommandLabel'))}">${e(CLONE_COMMAND)}</code><button type="button" data-copy-clone aria-describedby="clone-status-${scope}">${e(t('copyCommand'))}</button></div><p id="clone-status-${scope}" class="clone-feedback" data-clone-status role="status" aria-live="polite" aria-atomic="true"></p></div>`;
+}
+function agentLinks() {
+  return `<ul class="agent-entry-links"><li><a href="${lang==='zh'?'/zh/agents/':'/agents/'}"><strong>${e(t('agentGuide'))} ↗</strong><span>${e(t('agentGuideCopy'))}</span></a></li><li><a href="/AGENTS.md"><strong>AGENTS.md ↗</strong><span>${e(t('agentInstructionsCopy'))}</span></a></li><li><a href="/downloads/rag-manifest.json"><strong>${e(t('agentManifest'))} ↗</strong><span>${e(t('agentManifestCopy'))}</span></a></li></ul>`;
+}
 function info(type) {
   let content='';
   // Downloads are static files; only the coverage view waits for index.json, and it re-renders once loading settles.
   pendingInfo=type!=='download'&&!report?type:'';
   if(type==='download') {
     const options=[['catalog.jsonl','fullCatalog','fullCatalogCopy','JSONL'],['catalog.sqlite','sqlite','sqliteCopy','SQLite'],['rag-documents.jsonl','ragReviewed','ragReviewedCopy','JSONL'],['rag-all-records.jsonl','ragAll','ragAllCopy','JSONL'],['citations.bib','paperBibtex','paperBibtexCopy','BibTeX'],['citations.csl.json','paperCSL','paperCSLCopy','JSON'],['publication-citations.bib','publicationBib','publicationBibCopy','BibTeX'],['publication-citations.csl.json','publicationCSL','publicationCSLCopy','JSON'],['coverage.json','coverageFile','coverageFileCopy','JSON'],['sources.json','sourcesFile','sourcesFileCopy','JSON']];
-    content=`<h2 id="info-title">${e(t('downloadTitle'))}</h2><p>${e(t('downloadCopy'))}</p><p><a class="button secondary" href="${lang==='zh'?'/zh/data/':'/data/'}">${e(t('dataHub'))} ↗</a> <a href="/downloads/manifest.json">${e(t('downloadInventory'))}</a></p><div class="download-options">${options.map(([file,title,copy])=>`<a class="download-option" href="./downloads/${file}" download><span><strong>${e(t(title))}</strong><small>${e(t(copy))}</small></span><span>↓</span></a>`).join('')}</div><p>${e(t('licenseNote'))}</p>`;
-    content+=`<section class="agent-download"><h3>${e(t('agentTitle'))}</h3><div class="clone-command"><code>${CLONE_COMMAND}</code><button type="button" data-copy-clone>${e(t('copyCommand'))}</button></div><p><a href="${lang==='zh'?'/zh/agents/':'/agents/'}">${e(t('agentGuide'))} ↗</a> · <a href="/AGENTS.md">AGENTS.md</a> · <a href="/downloads/rag-manifest.json">RAG manifest</a></p></section>`;
+    content=`<h2 id="info-title">${e(t('downloadTitle'))}</h2><section class="agent-download"><h3>${e(t('agentTitle'))}</h3><p class="agent-entry-copy">${e(t('agentCopy'))}</p>${cloneCommand('download')}${agentLinks()}</section>`;
+    content+=`<div class="download-section-heading"><h3>${e(t('agentDownloads'))}</h3><a href="${lang==='zh'?'/zh/data/':'/data/'}">${e(t('dataHub'))} ↗</a></div><p>${e(t('downloadCopy'))}</p><div class="download-options">${options.map(([file,title,copy])=>`<a class="download-option" href="./downloads/${file}" download><span><strong>${e(t(title))}</strong><small>${e(t(copy))}</small></span><span>↓</span></a>`).join('')}</div><p><a href="/downloads/manifest.json">${e(t('downloadInventory'))} ↗</a></p><p>${e(t('licenseNote'))}</p>`;
   }else if(!report) {
     content=`<h2 id="info-title">${e(t('coverageDialogTitle'))}</h2><p role="status">${e(t(loading?'loading':'errorTitle'))}</p><p><a href="/coverage/">${e(t('viewCoverage'))} ↗</a></p>`;
   }else {
@@ -186,7 +192,14 @@ function info(type) {
   if(type!=='download' && report?.excluded_records)content+=`<h3>${e(t('excluded'))}: ${num(report.excluded_records)}</h3><p>${e(t('exclusionCopy'))}</p><p><a href="./downloads/exclusions.json">${e(t('exclusionFile'))}</a> · <a href="./downloads/arxiv-archive.jsonl">${e(t('archiveFile'))}</a></p>`;
   $('#info-content').innerHTML=content;if(!$('#info-dialog').open)$('#info-dialog').showModal();
 }
-document.addEventListener('click',async event=>{if(!event.target.closest('[data-copy-clone]'))return;try{await navigator.clipboard.writeText(CLONE_COMMAND);toast(t('commandCopied'));}catch{toast(t('commandCopyFailed'));}});
+document.addEventListener('click',async event=>{
+  const button=event.target.closest('[data-copy-clone]');if(!button||button.disabled)return;
+  const status=button.closest('[data-clone-entry]')?.querySelector('[data-clone-status]');if(!status)return;
+  const announce=key=>{status.dataset.i18n=key;status.textContent=t(key);};
+  button.disabled=true;announce('commandCopying');
+  try{await navigator.clipboard.writeText(CLONE_COMMAND);announce('commandCopied');}
+  catch{announce('commandCopyFailed');}finally{button.disabled=false;}
+});
 document.addEventListener('click',async event=>{
   const button=event.target.closest('[data-copy-citation]');if(!button)return;
   button.disabled=true;

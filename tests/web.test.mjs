@@ -495,8 +495,6 @@ test('load failures and toasts are announced through live regions that exist bef
     await Promise.all(dialog.listeners.click.map(listener=>listener({target:{closest:selector=>selector==='[data-copy-link]'?{}:null}})));
     assert.deepEqual(texts(),['','Copy the URL from your address bar.','']);
     dialog.close();
-    await Promise.all(clicks.map(listener=>listener({target:{closest:selector=>selector==='[data-copy-clone]'?{}:null}})));
-    assert.deepEqual(texts(),['Select the command above to copy it.','','']);
     t.mock.timers.tick(2600);
     assert.deepEqual(texts(),['','','']);
   } finally {
@@ -580,6 +578,51 @@ test('topic labels come from data/topics.json through the index payload',async()
     // app.js indexes the same labels it shows, in both languages, whichever language is active.
     for(const [index,q] of ['界面设计','GUI 定位','UI design','论文','Papers','浏览器'].entries())assert.ok((await render('?q='+encodeURIComponent(q),'search-'+index)).results.includes('Design study'),q);
     assert.equal((await render('?q=xyzq987654&lang=zh','search-none')).results.includes('Design study'),false);
+  } finally {
+    for(const [key,descriptor] of saved)if(descriptor)Object.defineProperty(globalThis,key,descriptor);else delete globalThis[key];
+  }
+});
+
+
+test('clone commands copy exactly once and announce scoped bilingual success or manual fallback',async()=>{
+  const command='git clone https://github.com/reacher-z/Awesome-CUA.git';
+  const html=readFileSync(new URL('../web/index.html',import.meta.url),'utf8');
+  assert.match(html,/<code[^>]*>git clone https:\/\/github.com\/reacher-z\/Awesome-CUA.git<\/code>/);
+  assert.match(html,/id="clone-status-home"[^>]*data-clone-status[^>]*role="status"[^>]*aria-live="polite"[^>]*aria-atomic="true"/);
+  for(const path of ['/agents/','/AGENTS.md','/downloads/rag-manifest.json'])assert.ok(html.includes(`href="${path}"`));
+  const coverage=JSON.parse(readFileSync(new URL('../data/coverage.json',import.meta.url),'utf8'));
+  const keys=['document','window','location','history','localStorage','fetch','navigator'],saved=keys.map(key=>[key,Object.getOwnPropertyDescriptor(globalThis,key)]);
+  const settle=()=>new Promise(resolve=>setImmediate(resolve));
+  try {
+    for(const language of ['en','zh']){
+      const clicks=[],elements=new Map(),make=()=>({dataset:{},listeners:{},textContent:'',classList:{toggle(){}},open:false,addEventListener(type,fn){(this.listeners[type]??=[]).push(fn);},setAttribute(){},showModal(){this.open=true;},close(){this.open=false;}});
+      const element=selector=>{if(!elements.has(selector))elements.set(selector,make());return elements.get(selector);};
+      const writes=[];let resolveCopy;
+      const globals={document:{documentElement:{},body:{classList:{toggle(){}}},addEventListener(type,fn){if(type==='click')clicks.push(fn);},querySelector:element,querySelectorAll:()=>[]},window:{addEventListener(){}},location:{search:`?lang=${language}`,pathname:'/',hash:''},history:{replaceState(){}},localStorage:{getItem:()=>null,setItem(){}},fetch:async()=>({ok:true,json:async()=>({coverage,records:[]})}),navigator:{clipboard:{writeText:value=>{writes.push(value);return new Promise(resolve=>resolveCopy=resolve);}}}};
+      for(const [key,value] of Object.entries(globals))Object.defineProperty(globalThis,key,{value,configurable:true,writable:true});
+      await import(`../web/app.js?clone-scoped-${language}`);await settle();
+      const home=make(),modal=make(),button=status=>({disabled:false,closest:selector=>selector==='[data-clone-entry]'?{querySelector:()=>status}:null});
+      const homeButton=button(home),modalButton=button(modal);
+      const click=button=>Promise.all(clicks.map(listener=>listener({target:{closest:selector=>selector==='[data-copy-clone]'?button:null}})));
+      const pending=click(homeButton);
+      assert.equal(homeButton.disabled,true);assert.equal(modal.textContent,'');
+      await click(homeButton);assert.deepEqual(writes,[command]);
+      resolveCopy();await pending;
+      assert.equal(homeButton.disabled,false);assert.equal(home.textContent,language==='zh'?'命令已复制，可粘贴到终端。':'Command copied. Paste it into your terminal.');
+      assert.equal(home.dataset.i18n,'commandCopied');assert.equal(element('#toast').textContent,'');
+      element('#hero-download').listeners.click[0]();
+      const content=element('#info-content').innerHTML;
+      assert.match(content,/id="clone-status-download"[^>]*data-clone-status[^>]*role="status"[^>]*aria-live="polite"/);
+      for(const path of [language==='zh'?'/zh/agents/':'/agents/','/AGENTS.md','/downloads/rag-manifest.json'])assert.ok(content.includes(`href="${path}"`));
+      assert.ok(content.includes(language==='zh'?'导出数量与快照指纹。':'Export counts and snapshot fingerprints.'));
+      navigator.clipboard.writeText=async value=>{writes.push(value);throw new Error('Permission denied');};
+      await click(modalButton);
+      assert.equal(modalButton.disabled,false);assert.equal(modal.textContent,language==='zh'?'复制失败，请选中命令后手动复制。':'Copy failed. Select and copy the command manually.');
+      assert.equal(modal.dataset.i18n,'commandCopyFailed');assert.equal(home.dataset.i18n,'commandCopied');
+      assert.equal(element('#toast').textContent,'');assert.deepEqual(writes,[command,command]);
+      navigator.clipboard=undefined;
+      await click(homeButton);assert.equal(homeButton.disabled,false);assert.equal(home.dataset.i18n,'commandCopyFailed');
+    }
   } finally {
     for(const [key,descriptor] of saved)if(descriptor)Object.defineProperty(globalThis,key,descriptor);else delete globalThis[key];
   }
