@@ -250,5 +250,11 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:sindresorhus/awesome",
+    "url": "https://github.com/sindresorhus/awesome",
+    "decision": "not_a_resource",
+    "reason": "Target of the Awesome badge in list headers: a general index of awesome lists on every topic, not a resource about computer-use agents."
   }
 ]
