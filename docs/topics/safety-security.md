@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-170 source-reviewed resources tagged `safety-security`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+171 source-reviewed resources tagged `safety-security`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (7)](#benchmarks) · [Agents (1)](#agents) · [Frameworks (3)](#frameworks) · [Tools (1)](#tools) · [Surveys (4)](#surveys) · [Papers (154)](#papers)
+**Contents:** [Benchmarks (8)](#benchmarks) · [Agents (1)](#agents) · [Frameworks (3)](#frameworks) · [Tools (1)](#tools) · [Surveys (4)](#surveys) · [Papers (154)](#papers)
 
 ## Benchmarks
 
@@ -12,6 +12,7 @@
 | --- | --- | --- | --- | --- | --- | --- |
 | [Adversarial Web Agents](https://github.com/ChenWu98/agent-attack) | web | [2406.12814](https://arxiv.org/abs/2406.12814) (2024) | — | — | Evaluation resources for adversarial attacks on multimodal web agents. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/ChenWu98/agent-attack/HEAD/README.md) |
 | [AgentDAM](https://github.com/facebookresearch/ai-agent-privacy) | web | [2503.09780](https://arxiv.org/abs/2503.09780) (2025) | — | — | Web-agent benchmark for measuring unnecessary use of sensitive personal information during end-to-end task execution. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/facebookresearch/ai-agent-privacy/HEAD/README.md) |
+| [MalURLBench](https://github.com/JiangYingEr/MalURLBench) | web | [2601.18113](https://arxiv.org/abs/2601.18113) (2026) | [61,845 attack instances](https://export.arxiv.org/api/query?id_list=2601.18113&max_results=1) · [10 scenarios](https://raw.githubusercontent.com/JiangYingEr/MalURLBench/HEAD/README.md) · [7 attack categories](https://raw.githubusercontent.com/JiangYingEr/MalURLBench/HEAD/README.md) · [12 LLMs](https://export.arxiv.org/api/query?id_list=2601.18113&max_results=1) | code GPL-3.0 | Benchmark code and attack URL lists that test whether LLMs behind web agents accept disguised malicious links recommended in ten service scenarios, with a QLoRA URL filter as a defense. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/JiangYingEr/MalURLBench/HEAD/README.md) |
 | [MobileSafetyBench](https://github.com/jylee425/mobilesafetybench) | android | — | — | code Apache-2.0 | Android emulator testbed that scores mobile device-control agents on both safety and helpfulness, using ADB and Appium for observations, actions and success checks. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/jylee425/mobilesafetybench/HEAD/README.md) |
 | [OS-Harm](https://github.com/tml-epfl/os-harm) | desktop | [2506.14866](https://arxiv.org/abs/2506.14866) (2025) | [150 tasks as reported by the paper/README](https://raw.githubusercontent.com/tml-epfl/os-harm/HEAD/README.md) · [50 task IDs](https://raw.githubusercontent.com/tml-epfl/os-harm/HEAD/evaluation_examples/test_misuse.json) | code Apache-2.0 | Benchmark for safety of computer-use agents across misuse, prompt injection, and unintended model behavior. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/tml-epfl/os-harm/HEAD/README.md) |
 | [PopupAttack](https://github.com/SALT-NLP/PopupAttack) | web | — | — | — | Resources for evaluating GUI agents under malicious popup instructions. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/SALT-NLP/PopupAttack/HEAD/README.md) |
