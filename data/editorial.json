@@ -63327,16 +63327,16 @@
         "supports": [
           "relations"
         ],
-        "url": "https://export.arxiv.org/api/query?id_list=2604.14956",
-        "sha256": "7a4dd01a80737f56ac46dfd1fc848f9e04325d58d6d3b83c74dcfaf6d8da3c82",
-        "retrieved_at": "2026-10-18T15:36:36Z"
+        "url": "https://arxiv.org/abs/2604.14956v1",
+        "sha256": "7908dbeb2c7108b44294a8e2e4677b1497339e7375f72dbfe5e1800eb0432c61",
+        "retrieved_at": "2026-10-19T06:20:08Z"
       }
     ],
     "reviewed_relations": [
       {
         "type": "documented_by",
         "target_id": "arxiv:2604.14956",
-        "evidence_url": "https://export.arxiv.org/api/query?id_list=2604.14956"
+        "evidence_url": "https://arxiv.org/abs/2604.14956v1"
       }
     ],
     "reviewed_licenses": {
