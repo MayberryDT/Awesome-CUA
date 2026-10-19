@@ -63186,9 +63186,9 @@
           "details.package_version",
           "licenses.code"
         ],
-        "url": "https://raw.githubusercontent.com/outcrawlai/scout/HEAD/packages/scout/package.json",
+        "url": "https://raw.githubusercontent.com/outcrawlai/scout/5536410912d23975ad92405de3f37ad36c8bdafc/packages/scout/package.json",
         "sha256": "5c700791379c0c8cf01ceaf6da226a13b96ad40decdad0cb0b4222f100b851ff",
-        "retrieved_at": "2026-10-18T11:51:54Z"
+        "retrieved_at": "2026-10-19T06:16:13Z"
       },
       {
         "role": "primary",
@@ -63196,9 +63196,9 @@
         "supports": [
           "licenses.code"
         ],
-        "url": "https://raw.githubusercontent.com/outcrawlai/scout/HEAD/LICENSE",
+        "url": "https://raw.githubusercontent.com/outcrawlai/scout/5536410912d23975ad92405de3f37ad36c8bdafc/LICENSE",
         "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
-        "retrieved_at": "2026-10-18T11:51:54Z"
+        "retrieved_at": "2026-10-19T06:16:13Z"
       }
     ],
     "editorial_reviewed": true,
