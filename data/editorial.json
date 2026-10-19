@@ -63163,7 +63163,7 @@
     "evidence_urls": [
       "https://raw.githubusercontent.com/fyzhang1/DualTAP/HEAD/README.md"
     ],
-    "notes": "Code for the DualTAP paper (ECCV 2026; README cites arXiv 2511.13248). train_map.py trains the generator against a surrogate vision-language model (Qwen2.5-VL-7B-Instruct in config.py) with a contrastive attention module; eval.py and eval_original.py score protected and original screenshots with local VLMs or OpenAI, Gemini and OpenRouter-style APIs, using an LLM to extract answer fields. The PrivScreen screenshots and QA files are distributed separately on Hugging Face and no trained generator checkpoint is in the tree, which also commits __pycache__ bytecode and a README.html. The README names no mobile operating system. There is no LICENSE file and GitHub reports no license, so the code license is unknown. Code was read, not run.",
+    "notes": "Code for the DualTAP paper (ECCV 2026; README cites arXiv 2511.13248, recorded as documented_by). train_map.py trains the generator against a surrogate vision-language model (Qwen2.5-VL-7B-Instruct in config.py) with a contrastive attention module; eval.py scores generator-protected screenshots with local VLMs or OpenAI, Gemini and OpenRouter-style APIs, using an LLM to extract answer fields; the eval_original.py that the README uses for unprotected screenshots is not in the tree, only its compiled bytecode. The PrivScreen screenshots and QA files are distributed separately on Hugging Face and no trained generator checkpoint is in the tree, which also commits __pycache__ bytecode and a README.html. The README names no mobile operating system. There is no LICENSE file and GitHub reports no license, so the code license is unknown. Code was read, not run.",
     "details": {
       "availability": "Training and evaluation source; dataset on Hugging Face; no generator checkpoint released in the repository",
       "repository_revision": "ef1f62af781868cd5d75a6a97100b19264e912b4"
@@ -63227,6 +63227,9 @@
     ],
     "editorial_reviewed": true,
     "reviewed_sha256": "f7c73cdc169a78d256897a60b528dc5402a9d2c23a5545062e97e593051ca101",
-    "reviewed_at": "2026-10-18T15:41:33Z"
+    "reviewed_at": "2026-10-18T15:41:33Z",
+    "documented_by": [
+      "2511.13248"
+    ]
   }
 ]

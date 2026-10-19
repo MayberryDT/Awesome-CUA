@@ -119,7 +119,7 @@ All entries in this section: unspecified.
 
 | Resource | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- |
-| [DualTAP](https://github.com/fyzhang1/DualTAP) | — | — | Training and evaluation code for a generator that perturbs privacy-sensitive regions of mobile-agent screenshots before they reach untrusted MLLM routers, scored on PII-probing and GUI-task questions. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/fyzhang1/DualTAP/HEAD/README.md) |
+| [DualTAP](https://github.com/fyzhang1/DualTAP) | [2511.13248](https://arxiv.org/abs/2511.13248) (2025) | — | Training and evaluation code for a generator that perturbs privacy-sensitive regions of mobile-agent screenshots before they reach untrusted MLLM routers, scored on PII-probing and GUI-task questions. | [✓ 2026‑10‑19](https://raw.githubusercontent.com/fyzhang1/DualTAP/HEAD/README.md) |
 | [META-GUI baseline](https://github.com/X-LANCE/META-GUI-baseline) | [2205.11029](https://arxiv.org/abs/2205.11029) (2022) | code MIT | Training and evaluation pipeline for conversational mobile GUI agents, with action prediction, response generation, and dataset processing. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/X-LANCE/META-GUI-baseline/HEAD/README.md) |
 | [VeriOS](https://github.com/Wuzheng02/VeriOS) | [2509.07553](https://arxiv.org/abs/2509.07553) (2025) | — | Research code for proactive human–GUI-agent verification, including offline interaction-loop and dual-agent evaluation scripts plus LLaMA-Factory fine-tuning configurations. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/Wuzheng02/VeriOS/HEAD/README.md) |
 
