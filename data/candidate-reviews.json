@@ -252,10 +252,270 @@
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
   },
   {
+    "id": "arxiv:2306.17882",
+    "url": "https://arxiv.org/abs/2306.17882",
+    "decision": "not_a_resource",
+    "reason": "The ChenVoid discovery source attributes AdbGPT to this identifier, but the retained arXiv API response requested it and returned no matching entry. Set aside this unresolved source link pending an upstream correction; no replacement identifier is inferred."
+  },
+  {
+    "id": "github:sindresorhus/awesome",
+    "url": "https://github.com/sindresorhus/awesome",
+    "decision": "not_a_resource",
+    "reason": "Target of the Awesome badge in a list header."
+  },
+  {
+    "id": "url:80a63af589412574249e",
+    "url": "https://makeapullrequest.com",
+    "decision": "not_a_resource",
+    "reason": "Target of the PRs Welcome badge in a list header."
+  },
+  {
+    "id": "github:osu-nlp-group/gui-agents-paper-list",
+    "url": "https://github.com/OSU-NLP-Group/GUI-Agents-Paper-List",
+    "decision": "not_a_resource",
+    "reason": "Repository of the osu-gui discovery source itself; its entries are discovered directly from its README."
+  },
+  {
+    "id": "github:showlab/awesome-gui-agent",
+    "url": "https://github.com/showlab/Awesome-GUI-Agent",
+    "decision": "not_a_resource",
+    "reason": "Repository of the showlab-gui discovery source itself; its entries are discovered directly from its README."
+  },
+  {
+    "id": "github:os-agent-survey/os-agent-survey",
+    "url": "https://github.com/OS-Agent-Survey/OS-Agent-Survey",
+    "decision": "not_a_resource",
+    "reason": "Repository of the os-agent-survey discovery source itself; its entries are discovered directly from its README."
+  },
+  {
+    "id": "url:31e550bf7d17f5b61d3b",
+    "url": "https://os-agent-survey.github.io",
+    "decision": "not_a_resource",
+    "reason": "Website of the os-agent-survey discovery source itself."
+  },
+  {
+    "id": "github:phonellm/awesome-llm-powered-phone-gui-agents",
+    "url": "https://github.com/PhoneLLM/Awesome-LLM-Powered-Phone-GUI-Agents",
+    "decision": "not_a_resource",
+    "reason": "Repository of the phone-gui discovery source itself; its entries are discovered directly from its README."
+  },
+  {
+    "id": "github:zju-real/awesome-gui-agents",
+    "url": "https://github.com/ZJU-REAL/Awesome-GUI-Agents",
+    "decision": "not_a_resource",
+    "reason": "Repository of the zju-gui discovery source itself; its entries are discovered directly from its README."
+  },
+  {
+    "id": "github:aialt/awesome-mobile-agents",
+    "url": "https://github.com/aialt/awesome-mobile-agents",
+    "decision": "not_a_resource",
+    "reason": "Repository of the mobile-agents discovery source itself; its entries are discovered directly from its README."
+  },
+  {
+    "id": "github:albzni/awesome-llm-based-web-agent-and-tools",
+    "url": "https://github.com/albzni/Awesome-LLM-based-Web-Agent-and-Tools",
+    "decision": "not_a_resource",
+    "reason": "Repository of the web-research discovery source itself; its entries are discovered directly from its README."
+  },
+  {
+    "id": "github:opendilab/awesome-ui-agents",
+    "url": "https://github.com/opendilab/awesome-ui-agents",
+    "decision": "not_a_resource",
+    "reason": "Repository of the opendilab-ui discovery source itself; its entries are discovered directly from its README."
+  },
+  {
+    "id": "github:ranpox/awesome-computer-use",
+    "url": "https://github.com/ranpox/awesome-computer-use",
+    "decision": "not_a_resource",
+    "reason": "Repository of the ranpox-cua discovery source itself; its entries are discovered directly from its README."
+  },
+  {
+    "id": "url:6aa05fd8de7ddc19416f",
+    "url": "https://webarena.dev",
+    "decision": "alias",
+    "target_id": "github:web-arena-x/webarena",
+    "reason": "Project website for the indexed WebArena benchmark repository."
+  },
+  {
     "id": "url:5bce848e38063e95b0cc",
     "url": "https://os-world.github.io",
     "decision": "alias",
     "target_id": "github:xlang-ai/osworld",
-    "reason": "Official OSWorld leaderboard site, which hosts the OSWorld-Verified results; it is already the leaderboard_url of the curated OSWorld benchmark, not a separate resource."
+    "reason": "Project website and leaderboard for the indexed OSWorld benchmark repository; it hosts the OSWorld-Verified results and is already the leaderboard_url of the curated OSWorld benchmark."
+  },
+  {
+    "id": "url:7363d0c9ecdc9a0a089b",
+    "url": "https://osu-nlp-group.github.io/Mind2Web",
+    "decision": "alias",
+    "target_id": "github:osu-nlp-group/mind2web",
+    "reason": "Project website for the indexed Mind2Web dataset and benchmark repository."
+  },
+  {
+    "id": "url:b9b646d12ef5a60cd9fa",
+    "url": "https://osatlas.github.io",
+    "decision": "alias",
+    "target_id": "github:os-copilot/os-atlas",
+    "reason": "Project website for the indexed OS-Atlas repository."
+  },
+  {
+    "id": "url:5861f751c91dede288dc",
+    "url": "https://huggingface.co/collections/OS-Copilot/os-atlas-67246e44003a1dfcc5d0d045",
+    "decision": "alias",
+    "target_id": "github:os-copilot/os-atlas",
+    "reason": "Hugging Face release collection for the indexed OS-Atlas project."
+  },
+  {
+    "id": "url:1f985f69cb60db0b59ff",
+    "url": "https://microsoft.github.io/WindowsAgentArena",
+    "decision": "alias",
+    "target_id": "github:microsoft/windowsagentarena",
+    "reason": "Project website for the indexed Windows Agent Arena benchmark repository."
+  },
+  {
+    "id": "url:2ef0ceb0bf18f50ab3d3",
+    "url": "https://showlab.github.io/assistgui",
+    "decision": "alias",
+    "target_id": "github:showlab/assistgui",
+    "reason": "Project website for the indexed AssistGUI benchmark repository."
+  },
+  {
+    "id": "url:0c5d0685493e1c4fd7f1",
+    "url": "https://yuxiangchai.github.io/Android-Agent-Arena",
+    "decision": "alias",
+    "target_id": "arxiv:2501.01149",
+    "reason": "Project website for the indexed Android Agent Arena (A3) paper."
+  },
+  {
+    "id": "url:d4156ec7479ebcdd16c1",
+    "url": "https://gui-world.github.io",
+    "decision": "alias",
+    "target_id": "github:dongping-chen/gui-world",
+    "reason": "Project website for the indexed GUI-World dataset and benchmark repository."
+  },
+  {
+    "id": "url:f2ae597c24dac63dcba3",
+    "url": "https://aguvis-project.github.io",
+    "decision": "alias",
+    "target_id": "github:xlang-ai/aguvis",
+    "reason": "Project website for the indexed Aguvis repository."
+  },
+  {
+    "id": "url:b698faf59f9c91c2db09",
+    "url": "https://huggingface.co/collections/ranpox/aguvis-unified-pure-vision-gui-agents-6764e2bc343c62af95c209d8",
+    "decision": "alias",
+    "target_id": "github:xlang-ai/aguvis",
+    "reason": "Hugging Face release collection for the indexed Aguvis project."
+  },
+  {
+    "id": "url:c02729bfcdfdab136ee2",
+    "url": "https://appagent-official.github.io",
+    "decision": "alias",
+    "target_id": "github:tencentqqgylab/appagent",
+    "reason": "Project website for the indexed AppAgent repository."
+  },
+  {
+    "id": "url:5f99bbacc77752ef9705",
+    "url": "https://qiushisun.github.io/OS-Genesis-Home",
+    "decision": "alias",
+    "target_id": "github:os-copilot/os-genesis",
+    "reason": "Project website for the indexed OS-Genesis repository."
+  },
+  {
+    "id": "url:d433ba91bd0f43998844",
+    "url": "https://qiushisun.github.io/ScienceBoard-Home",
+    "decision": "alias",
+    "target_id": "github:os-copilot/scienceboard",
+    "reason": "Project website for the indexed ScienceBoard benchmark repository."
+  },
+  {
+    "id": "url:31dafc16201cef0de618",
+    "url": "https://osu-nlp-group.github.io/SeeAct",
+    "decision": "alias",
+    "target_id": "github:osu-nlp-group/seeact",
+    "reason": "Project website for the indexed SeeAct web agent repository."
+  },
+  {
+    "id": "url:61ff6a60677bd4e3ab4c",
+    "url": "https://webshop-pnlp.github.io",
+    "decision": "alias",
+    "target_id": "github:princeton-nlp/webshop",
+    "reason": "Project website for the indexed WebShop benchmark repository."
+  },
+  {
+    "id": "url:120ed4d73a3cf2fd066e",
+    "url": "https://ai-agents-2030.github.io/SPA-Bench",
+    "decision": "alias",
+    "target_id": "github:ai-agents-2030/spa-bench",
+    "reason": "Project website for the indexed SPA-Bench smartphone agent benchmark repository."
+  },
+  {
+    "id": "url:0120b73cb23c3445de36",
+    "url": "https://google-research.github.io/android_world",
+    "decision": "alias",
+    "target_id": "github:google-research/android_world",
+    "reason": "Project website for the indexed AndroidWorld benchmark repository."
+  },
+  {
+    "id": "url:1a5bd63b39d24e29ad85",
+    "url": "https://mcgill-nlp.github.io/weblinx",
+    "decision": "alias",
+    "target_id": "github:mcgill-nlp/weblinx",
+    "reason": "Project website for the indexed WebLINX conversational web navigation benchmark."
+  },
+  {
+    "id": "url:03d7c24eeecf81253e81",
+    "url": "https://mobileagentbench.github.io",
+    "decision": "alias",
+    "target_id": "github:mobileagentbench/mobile-agent-bench",
+    "reason": "Project website for the indexed MobileAgentBench repository."
+  },
+  {
+    "id": "url:0d32ba653ffa63983916",
+    "url": "https://tongui-agent.github.io",
+    "decision": "alias",
+    "target_id": "github:tongui-agent/tongui-agent",
+    "reason": "Project website for the indexed TongUI repository."
+  },
+  {
+    "id": "url:302b777c33252aa1a650",
+    "url": "https://baai-agents.github.io/Cradle",
+    "decision": "alias",
+    "target_id": "github:baai-agents/cradle",
+    "reason": "Project website for the indexed Cradle computer control framework."
+  },
+  {
+    "id": "url:a2dd9314f0fbb42032c5",
+    "url": "https://safearena.github.io",
+    "decision": "alias",
+    "target_id": "github:mcgill-nlp/safearena",
+    "reason": "Project website for the indexed SafeArena benchmark repository."
+  },
+  {
+    "id": "url:9c059e93604d9960bafb",
+    "url": "https://mobilesafetybench.github.io",
+    "decision": "alias",
+    "target_id": "github:jylee425/mobilesafetybench",
+    "reason": "Project website for the indexed MobileSafetyBench repository."
+  },
+  {
+    "id": "url:adc60b1b4fe73553d9cd",
+    "url": "https://macos-world.github.io",
+    "decision": "alias",
+    "target_id": "arxiv:2506.04135",
+    "reason": "Project website for the indexed macOSWorld benchmark paper."
+  },
+  {
+    "id": "url:264f7e5a408032f65627",
+    "url": "https://sites.google.com/view/st-webagentbench/home",
+    "decision": "alias",
+    "target_id": "github:segev-shlomov/st-webagentbench",
+    "reason": "Project website for the indexed ST-WebAgentBench benchmark repository."
+  },
+  {
+    "id": "url:e38437b8d94da6abc8b0",
+    "url": "https://ai-secure.github.io/AdvWeb",
+    "decision": "alias",
+    "target_id": "github:ai-secure/advagent",
+    "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
   }
 ]

@@ -80,8 +80,8 @@ class ScanFreshnessTests(unittest.TestCase):
 
     def test_configured_limit_allows_one_scheduled_interval_plus_slack(self):
         config = scan.read_json(ROOT / "data" / "scan-config.json")
-        self.assertEqual(config["scan_times_local"], ["08:17", "20:17"])
-        self.assertTrue(12 < config["max_scan_age_hours"] <= 16, config["max_scan_age_hours"])
+        self.assertEqual(config["scan_times_local"], ["00:17", "08:17", "16:17"])
+        self.assertEqual(config["max_scan_age_hours"], 10)
 
 
 class FreshnessWorkflowTests(unittest.TestCase):

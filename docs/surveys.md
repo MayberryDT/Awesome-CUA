@@ -6,7 +6,7 @@ Curated metadata, not a performance ranking. Each entry links its first-party ev
 
 *Date* retains the arXiv first-submission date, or the publisher-only record's publication date at its known precision; newest first. Titles link primary sources; receipts are in `data/catalog.jsonl`.
 
-**15 resources:** [Web (1)](#web) · [Mobile (1)](#mobile) · [Cross-platform (11)](#cross-platform) · [Unspecified (2)](#unspecified)
+**18 resources:** [Web (2)](#web) · [Mobile (1)](#mobile) · [Cross-platform (12)](#cross-platform) · [Unspecified (3)](#unspecified)
 
 Resources tagged with environments from more than one family are listed under *Cross-platform*; their exact environments stay in the table.
 
@@ -17,6 +17,7 @@ All entries in this section: web.
 | Date | Resource | Description |
 | --- | --- | --- |
 | 2025‑03‑30 | [A Survey of WebAgents: Towards Next-Generation AI Agents for Web Automation with Large Foundation Models](https://arxiv.org/abs/2503.23350) | Surveys foundation-model web agents through their architectures, training methods and trustworthiness. It organizes research on completing browser tasks from user instructions and identifies directions for further development. |
+| 2024‑02‑15 | [A Trembling House of Cards? Mapping Adversarial Attacks against Language Agents](https://arxiv.org/abs/2402.10196) | Presents a conceptual perception–reasoning–action framework and 12 potential attack scenarios for language agents, including hypothetical web-navigation attacks. |
 
 [↑ Back to top](#survey-catalog)
 
@@ -35,6 +36,7 @@ All entries in this section: android, ios.
 | Date | Resource | Environments | Description |
 | --- | --- | --- | --- |
 | 2026‑09‑02 | [Efficient GUI Agents: A Systems Survey of Observation, Memory, Action, and Runtime Optimization](https://arxiv.org/abs/2609.02309) | cross-platform | Surveys GUI-agent efficiency beyond task success: observation, context and memory, action, and planner or runtime cost. |
+| 2026‑08‑30 | [A Systematic Survey of Agentic Skills: Architecture, Lifecycle, and Security](https://arxiv.org/abs/2608.29596) | cross-platform | Surveys modular agentic skill architectures, skill lifecycles, and security risks in autonomous tool- and interface-using agents. |
 | 2025‑08‑06 | [OS Agents: A Survey on MLLM-based Agents for General Computing Devices Use](https://arxiv.org/abs/2508.04482) | cross-platform | Surveys agents that operate computers and phones through operating-system interfaces, covering components, capabilities, foundation models, frameworks, and benchmarks. |
 | 2025‑05‑16 | [A Survey on the Safety and Security Threats of Computer-Using Agents: JARVIS or Ultron?](https://arxiv.org/abs/2505.10924) | cross-platform | Systematizes safety and security threats to computer-using agents, with taxonomies of threats and defensive strategies. |
 | 2025‑04‑29 | [A Survey on GUI Agents with Foundation Models Enhanced by Reinforcement Learning](https://arxiv.org/abs/2504.20464) | cross-platform | Formalizes GUI tasks as Markov decision processes and traces agent training from prompting through supervised fine-tuning to reinforcement learning. |
@@ -54,6 +56,7 @@ All entries in this section: unspecified.
 
 | Date | Resource | Description |
 | --- | --- | --- |
+| 2026‑04‑17 | [A Survey on Long-Term Memory Security in LLM Agents: Attacks, Defenses, and Governance Across the Memory Lifecycle](https://arxiv.org/abs/2604.16548) | Organizes security risks and defenses for persistent agent memory into six lifecycle phases and proposes five verifiable governance primitives. |
 | 2026‑02‑12 | [Agent Skills for Large Language Models: Architecture, Acquisition, Security, and the Path Forward](https://arxiv.org/abs/2602.12430) | This survey organizes agent skills by architecture, acquisition, deployment and security, including their role in computer-use systems and GUI grounding. It also proposes a permission and lifecycle governance framework for skill deployment. |
 | 2024‑11‑04 | [Foundations and Recent Trends in Multimodal Mobile Agents: A Survey](https://arxiv.org/abs/2411.02006) | Surveys multimodal mobile agents, organizing prompt-based and training-based approaches alongside evaluation benchmarks, supporting technologies, and open challenges in mobile task execution. |
 

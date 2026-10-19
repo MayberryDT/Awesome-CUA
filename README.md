@@ -1,12 +1,30 @@
+<p align="center">
+  <a href="https://awesomecua.github.io/">
+    <img src="assets/badges/featured-by-awesome-cua.svg" alt="Featured by Awesome CUA" width="220">
+  </a>
+</p>
+
 # Awesome Computer-Use Agents
 
+A source-backed collection of papers, models, datasets, benchmarks and tools for agents that use computers.
+
+**English** · [简体中文](README.zh-CN.md)
+
+<a href="https://awesomecua.github.io/"><img src="assets/readme-banner.svg" alt="Awesome CUA — computer-use agent research, data and tools connected to original sources" width="960"></a>
+
+**[Search & filter](https://awesomecua.github.io/)** · **[Research papers](https://awesomecua.github.io/papers/)** · **[Browse topics](https://awesomecua.github.io/topics/)** · **[Data & agents](https://awesomecua.github.io/data/)**
+
+[Read the research survey](https://awesomecua.github.io/survey/) — Methods, evaluation, human agency, and reusable research assets. English working manuscript with a versioned bibliography and reading register.
+
 <!-- BADGES:START -->
-[![Resources](https://img.shields.io/badge/resources-3%2C055-4f46e5)](data/catalog.jsonl) [![Curated](https://img.shields.io/badge/source--reviewed-1%2C572-0e8a16)](docs/coverage.md) [![Evidence](https://img.shields.io/badge/evidence%20through-2026--10--18-1d76db)](docs/coverage.md) [![Catalog quality](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml/badge.svg)](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml) [![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE) [![Website](https://img.shields.io/badge/website-awesomecua.github.io-6366f1)](https://awesomecua.github.io/)
+[![Catalog records](https://img.shields.io/badge/records-3%2C178-4856df?style=flat-square&labelColor=303447)](data/catalog.jsonl) [![Source-reviewed records](https://img.shields.io/badge/source--reviewed-1%2C614-4856df?style=flat-square&labelColor=303447)](docs/coverage.md) [![Catalog checks](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml/badge.svg?branch=main)](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml) [![MIT license](https://img.shields.io/badge/license-MIT-606779?style=flat-square&labelColor=303447)](LICENSE)
 <!-- BADGES:END -->
 
-**A source-backed data catalog for computer-use, GUI, browser, and mobile agents.**
+[Find by task](#find-by-task) · [Explore](#explore) · [Highlights](#highlights) · [Recently reviewed](#recently-reviewed) · [Use the data](#use-the-data)
 
-[Find by task](#find-by-task) · [Highlights](#highlights) · [Recently reviewed](#recently-reviewed) · [Explore](#explore) · [Use the data](#use-the-data) · [Website](https://awesomecua.github.io/) · [GitHub organization](https://github.com/AwesomeCUA) · [简体中文](README.zh-CN.md) · [Coverage ledger](docs/coverage.md) · [Contribute](CONTRIBUTING.md)
+[Coverage ledger](docs/coverage.md) · [Contribute](CONTRIBUTING.md) · [GitHub organization](https://github.com/AwesomeCUA)
+
+Discovery is scheduled three times daily at **00:17, 08:17 and 16:17 UTC**. [Actual scan results](https://awesomecua.github.io/updates/) · [Schedule and safeguards](docs/maintenance.md).
 
 **For people, RAG systems, and agents — clone the complete catalog:**
 
@@ -53,9 +71,9 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 
 <!-- STATS:START -->
 
-**3,055 resource records** · **1,572 curated** · **2,606 paper and survey records** · **47 discovery documents**
+**3,178 resource records** · **1,614 curated** · **2,718 paper and survey records** · **54 discovery documents**
 
-Evidence through `2026-10-18T08:01:28Z`. 1,483 records have bibliographic verification only; 902 discovered identifiers remain unresolved, not counting 90 links reviewed as non-resources or other addresses of indexed resources. 122 scope exclusions retain their original metadata in the archive. Counts overlap as explained below.
+Evidence through `2026-10-19T04:42:05Z`. 1,564 records have bibliographic verification only; 905 discovered identifiers remain unresolved, not counting 133 links reviewed as non-resources or other addresses of indexed resources. 136 scope exclusions retain their original metadata in the archive. Counts overlap as explained below.
 
 <!-- STATS:END -->
 
@@ -64,13 +82,13 @@ Evidence through `2026-10-18T08:01:28Z`. 1,483 records have bibliographic verifi
 <!-- EXPLORE:START -->
 | Research and training | Engineering and industry |
 | --- | --- |
-| [Research by topic](docs/topics.md) · **1,108** reviewed papers · [Full bibliography](docs/papers.md) · 2,606 paper and survey records | [Agents](docs/agents.md) · **41** |
-| [Surveys](docs/surveys.md) · **15** | [Frameworks](docs/frameworks.md) · **72** |
-| [Datasets](docs/datasets.md) · **85** | [Infrastructure](docs/infrastructures.md) · **14** |
-| [Benchmarks](docs/benchmarks.md) · **83** | [Tools](docs/tools.md) · **20** |
+| [Research by topic](docs/topics.md) · **1,136** reviewed papers · [Full bibliography](docs/papers.md) · 2,718 paper and survey records | [Agents](docs/agents.md) · **43** |
+| [Surveys](docs/surveys.md) · **18** | [Frameworks](docs/frameworks.md) · **75** |
+| [Datasets](docs/datasets.md) · **86** | [Infrastructure](docs/infrastructures.md) · **14** |
+| [Benchmarks](docs/benchmarks.md) · **88** | [Tools](docs/tools.md) · **20** |
 | [Models and checkpoint releases](docs/models.md) · **98** | [Products](docs/products.md) · **20** · [Publishers and brands](docs/companies.md) · **16** |
 
-**By platform:** [Web](docs/environments/web.md) **596** · [Desktop](docs/environments/desktop.md) **320** · [Windows](docs/environments/windows.md) **61** · [macOS](docs/environments/macos.md) **30** · [Linux](docs/environments/linux.md) **47** · [Android](docs/environments/android.md) **294** · [iOS](docs/environments/ios.md) **20** · [HarmonyOS](docs/environments/harmonyos.md) **3** · [Cross-platform](docs/environments/cross-platform.md) **193**
+**By platform:** [Web](docs/environments/web.md) **621** · [Desktop](docs/environments/desktop.md) **322** · [Windows](docs/environments/windows.md) **63** · [macOS](docs/environments/macos.md) **30** · [Linux](docs/environments/linux.md) **49** · [Android](docs/environments/android.md) **300** · [iOS](docs/environments/ios.md) **21** · [HarmonyOS](docs/environments/harmonyos.md) **3** · [Cross-platform](docs/environments/cross-platform.md) **197**
 <!-- EXPLORE:END -->
 
 Coverage spans web, desktop, Android, iOS, Windows, macOS, Linux, and cross-platform work. Topics include grounding, screen understanding, planning, memory, long-horizon workflows, reinforcement learning, data generation, safety, robustness, and evaluation. Environment facets overlap; framework support is not assumed from a model's benchmark results.
@@ -80,24 +98,24 @@ Coverage spans web, desktop, Android, iOS, Windows, macOS, Linux, and cross-plat
 The most-mentioned curated resources per category: the count is how many other cataloged resources mention each one in their reviewed first-party source (README, model or dataset card). It reflects connectedness inside this catalog, not quality, popularity, or benchmark performance. Every category page lists all reviewed entries. Surveys come first, newest first.
 
 <!-- HIGHLIGHTS:START -->
-**Start with the newest surveys** · [all 15 →](docs/surveys.md)
+**Start with the newest surveys** · [all 18 →](docs/surveys.md)
 
 | Date | Survey | Environments |
 | --- | --- | --- |
 | 2026‑09‑02 | [Efficient GUI Agents: A Systems Survey of Observation, Memory, Action, and Runtime Optimization](https://arxiv.org/abs/2609.02309) | cross-platform |
+| 2026‑08‑30 | [A Systematic Survey of Agentic Skills: Architecture, Lifecycle, and Security](https://arxiv.org/abs/2608.29596) | cross-platform |
+| 2026‑04‑17 | [A Survey on Long-Term Memory Security in LLM Agents: Attacks, Defenses, and Governance Across the Memory Lifecycle](https://arxiv.org/abs/2604.16548) | unspecified |
 | 2026‑02‑12 | [Agent Skills for Large Language Models: Architecture, Acquisition, Security, and the Path Forward](https://arxiv.org/abs/2602.12430) | unspecified |
 | 2025‑08‑06 | [OS Agents: A Survey on MLLM-based Agents for General Computing Devices Use](https://arxiv.org/abs/2508.04482) | cross-platform |
-| 2025‑05‑16 | [A Survey on the Safety and Security Threats of Computer-Using Agents: JARVIS or Ultron?](https://arxiv.org/abs/2505.10924) | cross-platform |
-| 2025‑04‑29 | [A Survey on GUI Agents with Foundation Models Enhanced by Reinforcement Learning](https://arxiv.org/abs/2504.20464) | cross-platform |
 
-**Benchmarks** · [all 83 →](docs/benchmarks.md)
+**Benchmarks** · [all 88 →](docs/benchmarks.md)
 
 | Resource | Mentions | Environments | Paper | License | Description |
 | --- | ---: | --- | --- | --- | --- |
-| [OSWorld](https://github.com/xlang-ai/OSWorld) | 20 | desktop, linux, windows, macos | [2404.07972](https://arxiv.org/abs/2404.07972) (2024) | code Apache-2.0 | Execution-based evaluation of agents performing tasks in real desktop environments. |
-| [WebArena](https://github.com/web-arena-x/webarena) | 13 | web | [2307.13854](https://arxiv.org/abs/2307.13854) (2023) | code Apache-2.0 | Self-hosted web environments and tasks for evaluating autonomous web agents. |
+| [OSWorld](https://github.com/xlang-ai/OSWorld) | 21 | desktop, linux, windows, macos | [2404.07972](https://arxiv.org/abs/2404.07972) (2024) | code Apache-2.0 | Execution-based evaluation of agents performing tasks in real desktop environments. |
+| [WebArena](https://github.com/web-arena-x/webarena) | 15 | web | [2307.13854](https://arxiv.org/abs/2307.13854) (2023) | code Apache-2.0 | Self-hosted web environments and tasks for evaluating autonomous web agents. |
+| [BrowserGym](https://github.com/ServiceNow/BrowserGym) | 8 | web | [2412.05467](https://arxiv.org/abs/2412.05467) (2024) | code Apache-2.0 | Unified interfaces for browser-agent tasks and benchmark environments. |
 | [ScreenSpot Pro](https://github.com/likaixin2000/ScreenSpot-Pro-GUI-Grounding) | 8 | desktop, windows, macos, linux | — | code MIT | GUI grounding benchmark focused on professional high-resolution interfaces. |
-| [BrowserGym](https://github.com/ServiceNow/BrowserGym) | 7 | web | [2412.05467](https://arxiv.org/abs/2412.05467) (2024) | code Apache-2.0 | Unified interfaces for browser-agent tasks and benchmark environments. |
 | [VisualWebArena](https://github.com/web-arena-x/visualwebarena) | 7 | web | [2401.13649](https://arxiv.org/abs/2401.13649) (2024) | — | Visually grounded web tasks extending the WebArena evaluation setting. |
 | [AndroidWorld](https://github.com/google-research/android_world) | 6 | android | [2405.14573](https://arxiv.org/abs/2405.14573) (2024) | code Apache-2.0 | Android environment with programmatic task evaluation for mobile agents. |
 
@@ -105,14 +123,14 @@ The most-mentioned curated resources per category: the count is how many other c
 
 | Resource | Mentions | Environments | Paper | License | Description |
 | --- | ---: | --- | --- | --- | --- |
-| [SeeClick](https://github.com/njucckevin/SeeClick) | 8 | cross-platform | [2401.10935](https://arxiv.org/abs/2401.10935) (2024) | code Apache-2.0 | GUI grounding model trained to locate visual interface elements. |
+| [SeeClick](https://github.com/njucckevin/SeeClick) | 9 | cross-platform | [2401.10935](https://arxiv.org/abs/2401.10935) (2024) | code Apache-2.0 | GUI grounding model trained to locate visual interface elements. |
 | [Aguvis](https://github.com/xlang-ai/aguvis) | 5 | cross-platform | [2412.04454](https://arxiv.org/abs/2412.04454) (2024) | — | Vision-based GUI agent models with unified action representations. |
 | [UI-TARS](https://github.com/bytedance/UI-TARS) | 5 | cross-platform | [2501.12326](https://arxiv.org/abs/2501.12326) (2025) | code Apache-2.0 | Native GUI agent models; UI-TARS-1.5 adds reinforcement-learned reasoning before acting and an open 7B checkpoint, and UI-TARS-2 extends to games, code and tool use. |
 | [OpenCUA](https://github.com/xlang-ai/OpenCUA) | 3 | desktop | [2508.09123](https://arxiv.org/abs/2508.09123) (2025) | code MIT | Open computer-use research stack including models and training resources. |
 | [OS-Atlas](https://github.com/OS-Copilot/OS-Atlas) | 3 | cross-platform | [2410.23218](https://arxiv.org/abs/2410.23218) (2024) | code Apache-2.0 | OS-Atlas GUI action models, including grounding bases fine-tuned from InternVL2-4B and Qwen2-VL-7B-Instruct that accept any image size and output 0-1000 relative coordinates. |
 | [ShowUI](https://github.com/showlab/ShowUI) | 3 | cross-platform | [2411.17465](https://arxiv.org/abs/2411.17465) (2024) | code Apache-2.0 | Lightweight GUI-agent vision-language-action model from Show Lab and Microsoft, released with UI-guided token selection, training code, the ShowUI-web and ShowUI-desktop datasets and vLLM inference. |
 
-**Datasets** · [all 85 →](docs/datasets.md)
+**Datasets** · [all 86 →](docs/datasets.md)
 
 | Resource | Mentions | Environments | Paper | License | Description |
 | --- | ---: | --- | --- | --- | --- |
@@ -123,7 +141,7 @@ The most-mentioned curated resources per category: the count is how many other c
 | [GUIEnv-local](https://huggingface.co/datasets/yiye2023/GUIEnv) | 3 | web | [2406.11317](https://arxiv.org/abs/2406.11317) (2024) | — | The released local-supervision portion of GUIEnv, pairing webpage regions and text for OCR and GUI grounding. |
 | [OpenMobile-Data-v2](https://huggingface.co/datasets/OpenMobile-2/OpenMobile-Data-v2) | 3 | android, web | [2610.14157](https://arxiv.org/abs/2610.14157) (2026) | — | Mobile-agent supervision from emulator and simulator trajectories, plus executable tasks with starting states and success checks for reinforcement learning. |
 
-**Frameworks** · [all 72 →](docs/frameworks.md)
+**Frameworks** · [all 75 →](docs/frameworks.md)
 
 | Resource | Mentions | Environments | Paper | License | Description |
 | --- | ---: | --- | --- | --- | --- |
@@ -134,16 +152,16 @@ The most-mentioned curated resources per category: the count is how many other c
 | [UI-Genie](https://github.com/Euphoria16/UI-Genie) | 3 | android | [2505.21496](https://arxiv.org/abs/2505.21496) (2025) | — | Training and evaluation code for a mobile-agent framework that iteratively generates trajectories using agent and reward-model feedback. |
 | [Computer Use OOTB](https://github.com/showlab/computer_use_ootb) | 2 | desktop | [2411.10323](https://arxiv.org/abs/2411.10323) (2024) | code Apache-2.0 | Gradio desktop GUI agent for Windows and macOS that needs no Docker, using Claude 3.5 Computer Use over the API or ShowUI and UI-TARS run locally, with multi-display and phone remote control. |
 
-**Agents** · [all 41 →](docs/agents.md)
+**Agents** · [all 43 →](docs/agents.md)
 
 | Resource | Mentions | Environments | Paper | License | Description |
 | --- | ---: | --- | --- | --- | --- |
-| [Mobile-Agent](https://github.com/X-PLUG/MobileAgent) | 8 | android, cross-platform | [2401.16158](https://arxiv.org/abs/2401.16158) (2024), [2406.01014](https://arxiv.org/abs/2406.01014) (2024), [2508.15144](https://arxiv.org/abs/2508.15144) (2025), [2602.16855](https://arxiv.org/abs/2602.16855) (2026) | code MIT | Mobile device agent family using visual interface interaction. |
+| [Mobile-Agent](https://github.com/X-PLUG/MobileAgent) | 9 | android, cross-platform | [2401.16158](https://arxiv.org/abs/2401.16158) (2024), [2406.01014](https://arxiv.org/abs/2406.01014) (2024), [2508.15144](https://arxiv.org/abs/2508.15144) (2025), [2602.16855](https://arxiv.org/abs/2602.16855) (2026) | code MIT | Mobile device agent family using visual interface interaction. |
 | [Agent S](https://github.com/simular-ai/Agent-S) | 2 | desktop | [2410.08164](https://arxiv.org/abs/2410.08164) (2024), [2504.00906](https://arxiv.org/abs/2504.00906) (2025) | code Apache-2.0 | Simular's open-source framework for computer-use agents that click, type and scroll through desktop and web apps on macOS, Windows and Linux; its third generation, Agent S3, reports 72.6% on OSWorld. |
+| [SeeAct](https://github.com/OSU-NLP-Group/SeeAct) | 2 | web | [2401.01614](https://arxiv.org/abs/2401.01614) (2024) | — | Generalist web agent framework for large multimodal models such as GPT-4V, with a Playwright tool that runs agents on live websites, text-choice and set-of-mark grounding, and a crawler mode. |
 | [AppAgent](https://github.com/TencentQQGYLab/AppAgent) | 1 | android | [2312.13771](https://arxiv.org/abs/2312.13771) (2023) | code MIT | Multimodal agent that operates Android apps through taps and swipes without back-end access, building a reusable knowledge base from autonomous exploration or from watching human demonstrations. |
 | [Auto-GUI / Auto-UI](https://github.com/cooelf/Auto-GUI) | 1 | android | [2309.11436](https://arxiv.org/abs/2309.11436) (2023) | code Apache-2.0 | Screenshot-based mobile agent implementation with training and inference code for chain-of-action prediction. |
 | [MagenticLite / Magentic UI](https://github.com/microsoft/magentic-ui) | 1 | web | — | code MIT | Microsoft agent application combining orchestration with browser interaction; successor to Magentic UI. |
-| [Open-AutoGLM](https://github.com/zai-org/Open-AutoGLM) | 1 | android, ios | — | code Apache-2.0 | Phone agent model and framework with device interaction tooling. |
 
 <!-- HIGHLIGHTS:END -->
 
@@ -154,18 +172,18 @@ Newest editorial approvals of models, datasets, benchmarks, systems, and tools (
 <!-- RECENT:START -->
 | Reviewed | Resource | Kind | Environments | Description |
 | --- | --- | --- | --- | --- |
-| 2026‑10‑18 | [ZonUI-3B checkpoint](https://huggingface.co/zonghanHZH/ZonUI-3B) | model | cross-platform, desktop, web | Qwen2.5-VL-3B-based GUI grounding checkpoint that predicts click locations from screenshots and text instructions across desktop, mobile and web screens. |
-| 2026‑10‑18 | [WindowsAgentArena-V2](https://github.com/GAIR-NLP/WindowsAgentArena-V2) | benchmark | desktop, windows | Windows benchmark revision with task/evaluator fixes and VM-initialization support, documented alongside PC-Agent-E. |
-| 2026‑10‑18 | [WebSRC v1.0](https://huggingface.co/datasets/X-LANCE/WebSRC_v1.0) | dataset | web | Webpage segments, questions, answers, HTML, screenshots and layout metadata for structural reading comprehension. |
-| 2026‑10‑18 | [WebEvolver SFT data](https://huggingface.co/datasets/CognitiveKernel/WebEvolver) | dataset | web | Two JSONL collections for supervised fine-tuning the WebEvolver agent policy and web world model. |
-| 2026‑10‑18 | [WebEvolver code component](https://github.com/Tencent/SelfEvolvingAgent/tree/main/WebEvolver) | framework | web | Component for web-agent trajectory collection, supervised-data preparation and world-model-based trajectory synthesis. |
-| 2026‑10‑18 | [PC-Agent-E training data](https://huggingface.co/datasets/henryhe0123/PC-Agent-E) | dataset | desktop, windows, linux | Released dataset used to train PC-Agent-E, linked by the official pipeline for refining human trajectories and synthesizing action reasoning. |
-| 2026‑10‑18 | [PC-Agent-E training and deployment](https://github.com/GAIR-NLP/PC-Agent-E) | framework | desktop, windows, linux | Tools for refining and augmenting human computer-use trajectories, preparing supervised training data, and deploying a native PC-Agent-E scaffold. |
-| 2026‑10‑18 | [PC-Agent-E checkpoint](https://huggingface.co/henryhe0123/PC-Agent-E) | model | desktop, windows, linux | Computer-use checkpoint fine-tuned on PC-Agent-E trajectories; the model-card prose identifies Qwen2.5-VL-72B-Instruct as its starting model. |
-| 2026‑10‑18 | [PC-Agent (X-PLUG component)](https://github.com/X-PLUG/MobileAgent/tree/main/PC-Agent) | agent | desktop, windows, macos | Multi-agent desktop automation component for Windows and macOS, combining active perception, task decomposition and reflection for workflows spanning applications. |
-| 2026‑10‑18 | [OpenApps](https://github.com/facebookresearch/OpenApps) | benchmark | web | Configurable browser apps and task rewards for testing computer-use agents under changes in content, layout and appearance. |
-| 2026‑10‑18 | [Mobile-Eval-E task definitions](https://huggingface.co/datasets/mikewang/mobile_eval_e) | benchmark | android | Task definitions for Mobile-Agent-E’s long-horizon, multi-app Android evaluation, packaged as a 25-record test split with rubrics and human-reference operation strings. |
-| 2026‑10‑18 | [Mobile-Agent-E code component](https://github.com/X-PLUG/MobileAgent/tree/main/Mobile-Agent-E) | agent | android | Android automation component with hierarchical planning, reflection and persistent tips/shortcuts learned across task sequences. |
+| 2026‑10‑18 | [VideoCAD data](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/WX8PCK) | dataset | web | CAD screen recordings paired with action logs and target model images for studying precise interface control and long-horizon visual imitation. |
+| 2026‑10‑18 | [VeriSafe Agent](https://github.com/VeriSafeAgent/VeriSafeAgent) | framework | android | Runtime verification framework for Android GUI agents that checks proposed actions against logical rules derived from user instructions and developer-defined app states. |
+| 2026‑10‑18 | [VeriOS](https://github.com/Wuzheng02/VeriOS) | framework | unspecified | Research code for proactive human–GUI-agent verification, including offline interaction-loop and dual-agent evaluation scripts plus LLaMA-Factory fine-tuning configurations. |
+| 2026‑10‑18 | [SheetCopilot](https://github.com/BraveGroup/SheetCopilot) | agent | desktop, windows, linux | Spreadsheet automation agent for Windows/Excel, with benchmark assets and a separately released headless Ubuntu evaluation backend. |
+| 2026‑10‑18 | [MONDAY](https://github.com/runamu/monday) | dataset | android, ios, cross-platform | Cross-platform mobile GUI trajectory dataset derived from instructional videos, with released data-processing helpers and example evaluation code for Android and iOS data. |
+| 2026‑10‑18 | [LearnAct](https://github.com/lgy0404/LearnAct) | agent | unspecified | Released inference and evaluation code for demonstration-conditioned mobile GUI agents on LearnGUI-Offline. The repository describes a multi-agent adaptation method and links the LearnGUI demonstrations. |
+| 2026‑10‑18 | [BrowserART](https://github.com/scaleapi/browser-art) | benchmark | web | Red-teaming benchmark and test suite from Scale AI evaluating whether refusal-trained language models can be jailbroken when deployed as browser agents. |
+| 2026‑10‑18 | [AgentStudio](https://github.com/skyworkai/agent-studio) | framework | desktop, linux | Toolkit and Ubuntu-based environment for building and evaluating generalist computer-use agents through GUI and API interaction. |
+| 2026‑10‑18 | [VideoCAD training and evaluation code](https://github.com/ghadinehme/VideoCAD) | framework | web | VideoCADFormer training, action-log preprocessing and evaluation code for learning CAD interface action sequences from screen recordings of browser-based Onshape. |
+| 2026‑10‑18 | [GUIPivot](https://github.com/ZrW00/GUIPivot) | framework | android | Query-inference training tools connecting screenshot grounding with GUI action reasoning, including preprocessing, query refinement and offline single-step evaluation on AndroidControl and AITZ. |
+| 2026‑10‑18 | [MLA-Trust](https://github.com/thu-ml/MLA-Trust) | benchmark | web, android, cross-platform | Unified evaluation framework measuring truthfulness, controllability, safety, and privacy of multimodal LLM agents across interactive web and mobile GUI tasks. |
+| 2026‑10‑18 | [ST-WebAgentBench](https://github.com/segev-shlomov/ST-WebAgentBench) | benchmark | web | BrowserGym-based benchmark for evaluating the safety and policy compliance of enterprise web agents across six trustworthiness risk dimensions. |
 <!-- RECENT:END -->
 
 ## Use the data
