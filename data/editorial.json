@@ -63157,7 +63157,7 @@
       "tool-integration"
     ],
     "scope": "core",
-    "summary": "Open-source edition of the DomA browser-agent extension for Chrome and Edge: it observes pages through set-of-marks screenshots and element lists, acts with DOM events and CDP clicks, and serves its tools over MCP.",
+    "summary": "Source-available edition of the DomA browser-agent extension for Chrome and Edge: it observes pages through set-of-marks screenshots and element lists, acts with DOM events and CDP clicks, and serves its tools over MCP.",
     "verify_terms": [
       "DomA"
     ],

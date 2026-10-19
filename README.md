@@ -172,7 +172,7 @@ Newest editorial approvals of models, datasets, benchmarks, systems, and tools (
 <!-- RECENT:START -->
 | Reviewed | Resource | Kind | Environments | Description |
 | --- | --- | --- | --- | --- |
-| 2026‑10‑18 | [DomA](https://github.com/dom-actions/doma) | agent | web | Open-source edition of the DomA browser-agent extension for Chrome and Edge: it observes pages through set-of-marks screenshots and element lists, acts with DOM events and CDP clicks, and serves its tools over MCP. |
+| 2026‑10‑18 | [DomA](https://github.com/dom-actions/doma) | agent | web | Source-available edition of the DomA browser-agent extension for Chrome and Edge: it observes pages through set-of-marks screenshots and element lists, acts with DOM events and CDP clicks, and serves its tools over MCP. |
 | 2026‑10‑18 | [VideoCAD data](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/WX8PCK) | dataset | web | CAD screen recordings paired with action logs and target model images for studying precise interface control and long-horizon visual imitation. |
 | 2026‑10‑18 | [VeriSafe Agent](https://github.com/VeriSafeAgent/VeriSafeAgent) | framework | android | Runtime verification framework for Android GUI agents that checks proposed actions against logical rules derived from user instructions and developer-defined app states. |
 | 2026‑10‑18 | [VeriOS](https://github.com/Wuzheng02/VeriOS) | framework | unspecified | Research code for proactive human–GUI-agent verification, including offline interaction-loop and dual-agent evaluation scripts plus LLaMA-Factory fine-tuning configurations. |
