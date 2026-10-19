@@ -63188,7 +63188,7 @@
           "summary",
           "notes"
         ],
-        "url": "https://raw.githubusercontent.com/instavm/clickclickclick/HEAD/clickclickclick/executor/osx.py",
+        "url": "https://raw.githubusercontent.com/instavm/clickclickclick/e4ce8f958b4d7748a95af6d7201d1fa12ca5d2cb/clickclickclick/executor/osx.py",
         "sha256": "5889e60067ed0a89dac137698d84fd94f0c1457b69a807ebea31f0fcabe5699d",
         "retrieved_at": "2026-10-18T11:53:20Z"
       },
@@ -63198,7 +63198,7 @@
         "supports": [
           "notes"
         ],
-        "url": "https://raw.githubusercontent.com/instavm/clickclickclick/HEAD/README-raspberry.md",
+        "url": "https://raw.githubusercontent.com/instavm/clickclickclick/e4ce8f958b4d7748a95af6d7201d1fa12ca5d2cb/README-raspberry.md",
         "sha256": "dd04ef5fbc243cdcb667d9a694cc33b58ed007329bec071777350330a884a04d",
         "retrieved_at": "2026-10-18T11:53:14Z"
       },
@@ -63209,7 +63209,7 @@
           "licenses.code",
           "notes"
         ],
-        "url": "https://raw.githubusercontent.com/instavm/clickclickclick/HEAD/LICENSE",
+        "url": "https://raw.githubusercontent.com/instavm/clickclickclick/e4ce8f958b4d7748a95af6d7201d1fa12ca5d2cb/LICENSE",
         "sha256": "a79fd36681effa8566bdae339348218a1214669ee0a18e45514097892ba44b45",
         "retrieved_at": "2026-10-18T11:53:13Z"
       }
@@ -63221,13 +63221,13 @@
       "code": {
         "value": {
           "declared": "MIT",
-          "url": "https://raw.githubusercontent.com/instavm/clickclickclick/HEAD/LICENSE",
+          "url": "https://raw.githubusercontent.com/instavm/clickclickclick/e4ce8f958b4d7748a95af6d7201d1fa12ca5d2cb/LICENSE",
           "retrieved_at": "2026-10-18T11:53:13Z",
           "basis": "The LICENSE file is the verbatim MIT permission text without the 'MIT License' title line, and the README states the project is MIT-licensed; this covers code only, not model weights or external services."
         },
         "reason": "The LICENSE file is the verbatim MIT permission text without the 'MIT License' title line, and the README states the project is MIT-licensed; this covers code only, not model weights or external services.",
         "evidence_urls": [
-          "https://raw.githubusercontent.com/instavm/clickclickclick/HEAD/LICENSE"
+          "https://raw.githubusercontent.com/instavm/clickclickclick/e4ce8f958b4d7748a95af6d7201d1fa12ca5d2cb/LICENSE"
         ]
       }
     }
