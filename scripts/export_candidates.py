@@ -126,8 +126,8 @@ def catalog_context(catalog_bytes):
     return {'sha256': digest(catalog_bytes), 'records': len(rows), 'role': CONTEXT_POLICY}
 
 
-def _replay(state, raw_dir):
-    """Recompute each observed metadata value, not merely the ledger checksum."""
+def replay_receipts(state, raw_dir, *, receipt_ids=None):
+    """Replay an explicit receipt selection; an empty set never reads old raw bodies."""
     raw_dir = scan.checked_output(raw_dir)
     if not raw_dir.is_dir(): raise ValueError('Retained primary bodies require a real directory')
     queries = {q['id']: q for q in state['queries']}
@@ -135,6 +135,8 @@ def _replay(state, raw_dir):
     observed = {}
     bodies = {}
     for receipt in state['receipts']:
+        if receipt_ids is not None and receipt['id'] not in receipt_ids:
+            continue
         if not receipt['raw_body_retained']:
             if receipt['accepted_repository_ids']:
                 raise ValueError('Accepted metadata has no replayable primary body')
@@ -186,6 +188,12 @@ def _replay(state, raw_dir):
         if set(accepted) != set(receipt['accepted_repository_ids']):
             raise ValueError('Accepted numeric identities differ from the primary response')
         observed[receipt['id']] = accepted
+    return receipts, observed, len(bodies)
+
+
+def _replay(state, raw_dir):
+    """Recompute every retained metadata observation for an offline full replay."""
+    receipts, observed, body_count = replay_receipts(state, raw_dir)
     for row in state['records'].values():
         occurrences = row['occurrences']
         histories = [observed[o['receipt_id']][row['repository_id']] for o in occurrences]
@@ -197,7 +205,7 @@ def _replay(state, raw_dir):
                 or any(scan.timestamp(a) > scan.timestamp(b) for a, b in zip(times, times[1:]))
                 or row['known_names'] != sorted({r['full_name'] for r in histories})):
             raise ValueError('Candidate observation history differs from its receipts: ' + row['id'])
-    return receipts, len(bodies)
+    return receipts, body_count
 
 
 def public_record(row, receipts):
@@ -248,20 +256,38 @@ def _summary(state):
     for q in state['queries']:
         keys = ('id', 'kind', 'status', 'topic', 'created_after', 'created_before', 'reported_total') if q['kind'] == 'search' else ('id', 'kind', 'status', 'input_id')
         queries.append({key: q[key] for key in keys})
-    return {'configuration': copy.deepcopy(state['configuration']), 'runs': runs, 'queries': queries,
+        if 'epochs' in state and q['kind'] == 'search': queries[-1]['parent_id'] = q['parent_id']
+    result = {'configuration': copy.deepcopy(state['configuration']), 'runs': runs, 'queries': queries,
             'request_outcomes': dict(sorted(Counter(r['outcome'] for r in state['receipts']).items())),
             'global_completeness_established': False,
             'limit': 'Bounded observed requests, not an exhaustive GitHub/CUA census. Per-query totals and overlapping shards are not a global union.'}
+    if 'epochs' in state:
+        result.update(epochs=copy.deepcopy(state['epochs']), current_epoch_id=state['current_epoch_id'],
+                      query_rechecks_count=len(state.get('query_rechecks', [])))
+    return result
 
 
 def build_candidate_export(ledger_bytes, raw_dir, catalog_bytes):
     state = scan.validate_state(scan.strict_json(ledger_bytes))
-    receipts, _ = _replay(state, raw_dir)
+    receipts, body_count = _replay(state, raw_dir)
     rows = [public_record(row, receipts) for row in sorted(state['records'].values(), key=lambda r: r['repository_id'])]
     body = b''.join(encoded(row) for row in rows)
+    verification = {'mode': 'full_retained_replay', 'historical_raw_replayed': True,
+                    'baseline_observation_sha256': None, 'baseline_checkpoint_sha256': None,
+                    'successful_receipts_replayed': sum(r['raw_body_retained'] for r in state['receipts']),
+                    'primary_bodies_replayed': body_count}
+    return body, manifest_for_records(state, body, catalog_bytes,
+        source_ledger_sha256=digest(ledger_bytes), verification=verification)
+
+
+def manifest_for_records(state, body, catalog_bytes, *, source_ledger_sha256, verification,
+                         checkpoint_state_sha256=None):
+    """Describe already verified public rows; incremental callers declare their boundary."""
+    rows = [scan.strict_json(line) for line in body.splitlines() if line.strip()]
     omissions = [{'id': r['id'], **o} for r in rows for o in r['omitted_fields']]
     manifest = {'schema_version': 1, 'provider': 'github', 'scope': 'candidate-observations',
-                'observation_snapshot_sha256': digest(body), 'source_ledger_sha256': digest(ledger_bytes),
+                'observation_snapshot_sha256': digest(body), 'source_ledger_sha256': source_ledger_sha256,
+                'verification': verification, 'checkpoint_state_sha256': checkpoint_state_sha256,
                 'input_fingerprints': [{'id': i['id'], 'files': copy.deepcopy(i['files'])} for i in state['inputs']], 'scan': _summary(state),
                 'active_catalog_context': catalog_context(catalog_bytes),
                 'count': {'value': len(rows), 'unit': 'repositories'},
@@ -273,7 +299,7 @@ def build_candidate_export(ledger_bytes, raw_dir, catalog_bytes):
                 'export': {'file': RECORD_FILE, 'format': 'JSONL', 'bytes': len(body), 'sha256': digest(body)},
                 'schema': '/schemas/' + SCHEMAS[0], 'manifest_schema': '/schemas/' + SCHEMAS[1]}
     validate_candidate_export(body, manifest, catalog_bytes=catalog_bytes)
-    return body, manifest
+    return manifest
 
 
 def validate_candidate_export(body, manifest, *, catalog_bytes=None):
@@ -283,11 +309,27 @@ def validate_candidate_export(body, manifest, *, catalog_bytes=None):
     required = {'schema_version', 'provider', 'scope', 'observation_snapshot_sha256', 'source_ledger_sha256',
                 'input_fingerprints', 'scan', 'active_catalog_context', 'count', 'supporting_primary_bodies',
                 'observed_from', 'observed_through', 'review_policy', 'count_policy', 'privacy', 'export', 'schema', 'manifest_schema'}
-    if set(manifest) != required or manifest['provider'] != 'github' or manifest['scope'] != 'candidate-observations':
+    optional = {'verification', 'checkpoint_state_sha256'}
+    if set(manifest) - optional != required or manifest['provider'] != 'github' or manifest['scope'] != 'candidate-observations':
         raise ValueError('Unexpected candidate manifest fields or scope')
     if manifest['review_policy'] != POLICY or manifest['count_policy'] != COUNT_POLICY:
         raise ValueError('Candidate review/count boundaries differ')
     checked_sha(manifest['source_ledger_sha256'])
+    if 'verification' in manifest or 'checkpoint_state_sha256' in manifest:
+        if not optional <= set(manifest): raise ValueError('Incomplete candidate verification boundary')
+        if manifest['checkpoint_state_sha256'] is not None: checked_sha(manifest['checkpoint_state_sha256'])
+        verification = manifest['verification']
+        keys = {'mode', 'historical_raw_replayed', 'baseline_observation_sha256', 'baseline_checkpoint_sha256',
+                'successful_receipts_replayed', 'primary_bodies_replayed'}
+        if not isinstance(verification, dict) or set(verification) != keys or verification['mode'] not in {'full_retained_replay', 'incremental_retained_replay'}:
+            raise ValueError('Invalid candidate verification boundary')
+        checked_count(verification['successful_receipts_replayed']); checked_count(verification['primary_bodies_replayed'])
+        if verification['mode'] == 'full_retained_replay':
+            if verification['historical_raw_replayed'] is not True or any(verification[k] is not None for k in ('baseline_observation_sha256', 'baseline_checkpoint_sha256')):
+                raise ValueError('Invalid full-history verification claim')
+        else:
+            if verification['historical_raw_replayed'] is not False: raise ValueError('Incremental validation must not claim historical raw replay')
+            for key in ('baseline_observation_sha256', 'baseline_checkpoint_sha256'): checked_sha(verification[key])
     if manifest['observation_snapshot_sha256'] != digest(body):
         raise ValueError('Candidate observation snapshot fingerprint mismatch')
     if (not equal_json(manifest['export'], {'file': RECORD_FILE, 'format': 'JSONL', 'bytes': len(body), 'sha256': digest(body)})
@@ -379,8 +421,11 @@ def _validate_public_provenance(manifest, rows, receipts):
             raise ValueError('Invalid or duplicate scan input fingerprint')
         inputs[item['id']] = item
     report = manifest['scan']
-    if not isinstance(report, dict) or set(report) != {'configuration', 'runs', 'queries', 'request_outcomes', 'global_completeness_established', 'limit'}:
+    epoch_fields = {'epochs', 'current_epoch_id', 'query_rechecks_count'}
+    if not isinstance(report, dict) or set(report) - epoch_fields != {'configuration', 'runs', 'queries', 'request_outcomes', 'global_completeness_established', 'limit'}:
         raise ValueError('Unexpected scan summary fields')
+    has_epochs = bool(set(report) & epoch_fields)
+    if has_epochs and not epoch_fields <= set(report): raise ValueError('Incomplete public query epoch metadata')
     if report['global_completeness_established'] is not False or report['limit'] != 'Bounded observed requests, not an exhaustive GitHub/CUA census. Per-query totals and overlapping shards are not a global union.':
         raise ValueError('Candidate observations cannot establish global completeness')
     config = report['configuration']
@@ -394,12 +439,14 @@ def _validate_public_provenance(manifest, rows, receipts):
     for query in report['queries']:
         if not isinstance(query, dict) or query.get('id') in queries: raise ValueError('Duplicate public query')
         if query.get('kind') == 'search':
-            if set(query) != {'id', 'kind', 'status', 'topic', 'created_after', 'created_before', 'reported_total'}:
+            expected_fields = {'id', 'kind', 'status', 'topic', 'created_after', 'created_before', 'reported_total'}
+            if has_epochs: expected_fields.add('parent_id')
+            if set(query) != expected_fields:
                 raise ValueError('Unexpected public search fields')
             expected = scan.search_query(query['topic'], query['created_after'], query['created_before'])
-            if (query['id'] != expected['id'] or query['topic'] not in config['topics']
+            if (query['id'] != expected['id'] or (not has_epochs and query['topic'] not in config['topics'])
                     or query['status'] not in {'pending', 'split', 'blocked_single_day_window', 'observed_pages_exhausted', 'partial_results', 'partial_api_window'}
-                    or not config['created_after'] <= query['created_after'] <= query['created_before'] <= config['created_before']):
+                    or (not has_epochs and not config['created_after'] <= query['created_after'] <= query['created_before'] <= config['created_before'])):
                 raise ValueError('Invalid public query cohort')
             scan.date.fromisoformat(query['created_after']); scan.date.fromisoformat(query['created_before'])
             if query['reported_total'] is not None: checked_count(query['reported_total'])
@@ -409,6 +456,9 @@ def _validate_public_provenance(manifest, rows, receipts):
                 raise ValueError('Invalid public existing-candidate cohort')
         else: raise ValueError('Unknown public query kind')
         queries[query['id']] = query
+    if has_epochs:
+        checked_count(report['query_rechecks_count'])
+        scan.validate_public_epochs(config, report['epochs'], report['current_epoch_id'], report['queries'])
     run_fields = {'id', 'input_id', 'started_at', 'finished_at', 'status', 'requests_attempted',
                   'before_unique_repositories', 'new_unique_repositories', 'accepted_metadata_rows', 'after_unique_repositories'}
     runs = {}; seen = set()
@@ -442,7 +492,7 @@ def _validate_public_provenance(manifest, rows, receipts):
                     or params.get('q') != [scan.search_query(query['topic'], query['created_after'], query['created_before'])['query']]):
                 raise ValueError('Public primary receipt differs from its query')
     outcomes = report['request_outcomes']
-    allowed = {'accepted', 'accepted_with_rejections', 'rejected', 'rate_limited', 'unavailable', 'redirect_not_followed', 'fetch_failed', 'response_too_large', 'malformed_response'}
+    allowed = {'accepted', 'accepted_with_rejections', 'rejected', 'quarantined', 'rate_limited', 'unavailable', 'redirect_not_followed', 'fetch_failed', 'response_too_large', 'malformed_response'}
     if not isinstance(outcomes, dict) or set(outcomes) - allowed:
         raise ValueError('Invalid public request outcomes')
     if sum(checked_count(n) for n in outcomes.values()) != sum(r['requests_attempted'] for r in runs.values()) or outcomes.get('accepted', 0) < len(receipts):
