@@ -22,6 +22,16 @@ from search_pages import SITE, eligible, resource_path, resource_schema, page, i
 ROOT=Path(__file__).resolve().parents[1]
 
 
+def copy_survey_source_inputs(destination):
+    """Isolated script-version fixtures retain the reviewed survey's declared input bytes."""
+    manifest = ROOT/'web/survey/build-manifest.json'
+    if manifest.exists():
+        for name in json.loads(manifest.read_text(encoding='utf-8'))['input_sha256']:
+            target = destination/name
+            target.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(ROOT/name, target)
+
+
 class PageParser(HTMLParser):
     def __init__(self,text):
         super().__init__();self.canonical=[];self.robots=[];self.links=[];self.scripts=[];self.heading_count=0
@@ -180,6 +190,7 @@ class SearchPagesTests(unittest.TestCase):
             source=Path(directory)/'source';source.mkdir()
             for name in ('web','data','schemas'):shutil.copytree(ROOT/name,source/name)
             for name in ('LICENSE','AGENTS.md'):shutil.copy2(ROOT/name,source/name)
+            copy_survey_source_inputs(source)
             destination=Path(directory)/'site'
             def snapshot():
                 return {item['path']:item['sha256'] for item in
@@ -202,6 +213,7 @@ class SearchPagesTests(unittest.TestCase):
             shutil.copytree(ROOT/'web',source/'web');shutil.copytree(ROOT/'data',source/'data')
             shutil.copytree(ROOT/'schemas',source/'schemas')
             shutil.copy2(ROOT/'LICENSE',source/'LICENSE');shutil.copy2(ROOT/'AGENTS.md',source/'AGENTS.md')
+            copy_survey_source_inputs(source)
             destination=Path(directory)/'site'
             def snapshot():
                 manifest=json.loads((destination/'data/search-manifest.json').read_text())

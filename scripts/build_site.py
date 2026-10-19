@@ -12,12 +12,13 @@ ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'scripts'))
 from build import validate_records, write_sqlite
 from catalog import TOPICS
-from search_pages import build_search_pages, resource_path
+from search_pages import build_search_pages, resource_path, SITE
 from export_rag import build_exports
 from export_citations import build_citation_exports
 from site_files import reconcile_generated_pages
 from publication_metadata import record_date_text, publication_search_text
 from repository_identity import attach_repository_aliases
+from survey_bundle import copy_bundle as copy_survey_bundle
 
 
 def version_script_imports(destination):
@@ -69,6 +70,7 @@ def write_site(destination):
         errors.append('Catalog repository aliases differ from their reviewed source declarations; rebuild catalog first.')
     if errors:raise ValueError('\n'.join(errors[:10]))
     if len(rows)!=coverage['total_records']:raise ValueError('Catalog/coverage count mismatch; rebuild catalog first.')
+    survey_page=copy_survey_bundle(ROOT/'web/survey',destination/'survey',source_root=ROOT,site_url=SITE)
     for path in (ROOT/'web').iterdir():
         if path.is_file():shutil.copy2(path,destination/path.name)
     badge_source=ROOT/'web/badges'
@@ -117,7 +119,7 @@ def write_site(destination):
         if (ROOT/'data'/name).exists():shutil.copy2(ROOT/'data'/name,destination/'downloads'/name)
     shutil.copy2(ROOT/'LICENSE',destination/'LICENSE')
     (destination/'.nojekyll').write_text('',encoding='utf-8')
-    manifest=build_search_pages(destination,rows,coverage,ROOT)
+    manifest=build_search_pages(destination,rows,coverage,ROOT,survey_page=survey_page)
     reconcile_generated_pages(destination,manifest)
     return manifest,len(rows)
 

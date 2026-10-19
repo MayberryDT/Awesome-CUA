@@ -1,0 +1,178 @@
+{
+  "schema_version": 1,
+  "artifact": "English working-manuscript survey",
+  "working_manuscript_date": "2026-10-18",
+  "source_commit_for_inventory": "87166fe8ad9c8e832f7a90ee84b2e93c6e0e40db",
+  "catalog_sha256": "7f71a1683ab013e587a20086c3e357956981f517a24ae8bc8e81791108c66e4f",
+  "canonical_location_intended": "https://awesomecua.github.io/survey/",
+  "publication_performed": false,
+  "counts": {
+    "unique_cited_works": 89,
+    "fulltext_section_read_works": 87,
+    "abstract_and_project_only_works": 1,
+    "dataset_snapshots": 1,
+    "fresh_arxiv_bibliography_additions": 14
+  },
+  "body_word_count": 11556,
+  "estimated_reading_minutes": 54,
+  "citation_occurrences": 104,
+  "tables": [
+    {
+      "id": "context-survey-comparison",
+      "number": 1,
+      "caption": "Complementary perspectives in selected prior surveys. “Read basis” identifies the sections used to establish each emphasis; it does not claim that every page or cited experiment was independently audited."
+    },
+    {
+      "id": "inventory-table",
+      "number": 2,
+      "caption": "Populations used in this review. Counts refer to the frozen release or the explicitly bounded supplementary search; the rows overlap and should not be added."
+    },
+    {
+      "id": "methods-design-table",
+      "number": 3,
+      "caption": "Design choices change the information and guarantees available to an agent. The failure column identifies a boundary to test, not a measured ranking."
+    },
+    {
+      "id": "evaluation-benchmarks",
+      "number": 4,
+      "caption": "Representative evaluation contracts. Versions identify the inspected paper editions, except where a software release is explicitly named. Counts use the stated unit and are not additive across overlapping or derived benchmarks. Interfaces listed are supported options, not a claim that every evaluated agent used all of them."
+    },
+    {
+      "id": "evaluation-datasets",
+      "number": 5,
+      "caption": "Selected data populations and their measurement boundaries. Sizes are reported in the inspected papers, not independently counted downloads. A paper’s collection, its public release and the complete training mixture need not contain the same records."
+    },
+    {
+      "id": "human-case-table",
+      "number": 6,
+      "caption": "Three cases that separate useful assistance from autonomous execution. The interpretation column is this survey's synthesis."
+    },
+    {
+      "id": "asset-contract-table",
+      "number": 7,
+      "caption": "A proposed record contract for reusable computer-use research. This is a design recommendation; presence of the fields does not certify the underlying claims."
+    },
+    {
+      "id": "agenda-table",
+      "number": 8,
+      "caption": "Research questions with experiments that could resolve them. These are proposed studies, not new experimental results."
+    },
+    {
+      "id": "reading-register-table",
+      "number": 9,
+      "caption": "Reading level and inspected sections for every cited source."
+    }
+  ],
+  "toc_headings": 33,
+  "checks": {
+    "all_citation_keys_resolved": true,
+    "all_citations_have_read_basis": true,
+    "all_read_versions_match_citations": true,
+    "all_read_titles_and_ordered_authors_match_citations": true,
+    "all_internal_anchors_resolve": true,
+    "all_relative_downloads_exist": true,
+    "mobile_contents_default_collapsed": true,
+    "external_runtime_dependencies": 0,
+    "raw_source_documents_redistributed": false
+  },
+  "input_sha256": {
+    "research/survey/sections/context.html": "52c872bbabd4af68f7f3b7608034e69bb31b47cb6878183591e2dc81e8330695",
+    "research/survey/sections/review-design.html": "449f0878f6750fe1eceeeaf76436c658d30eeedcb706c5f649c753661a66ae5d",
+    "research/survey/sections/methods.html": "37a0aa207a16c5acabccf4401eb7e34b47898b58370ad103c7ba855c85aff569",
+    "research/survey/sections/evaluation.html": "d03272b79c305a75cc786bd914255e9d75a35a6a8dc79caf81e0162740c208c6",
+    "research/survey/sections/human-agency.html": "2f83e37e57ce924abf168d98e38a7b4dd9db6940fde487d3b738d48dd59be31f",
+    "research/survey/sections/assets.html": "11fb06f3f79cd56c261532beb282199293efe4767e18920eb802f71218f4fae5",
+    "research/survey/sections/agenda.html": "86ecec3fa6c42c5331ddb539e03dabfe5ba448a6f308b57885f2a2ff0e3bf941",
+    "research/survey/evidence/context.json": "2e3210a9a6860448d8e5a2239761484bb46bc9c039becb2e0bef9d961f752888",
+    "research/survey/evidence/methods.json": "315aeee1df6318b5333ecfa1e34c5c3cad2965c8475e0fbcb9ae049ffeebd33b",
+    "research/survey/evidence/evaluation.json": "f1d188d7ab2b9f41c7c764266cd8c04c3b7c0319d24cf76228deb00f7cb0e74c",
+    "research/survey/evidence/root.json": "32bfaa034625d8002ab87d6e39c6d81aec2d934a7169a134d5998982756bb9a3",
+    "research/survey/evidence/corpus-statistics.json": "47fd9c2b1ed89fbfe540d17721691fd7b82e82dadea2c5205c5555a6a6a38be7",
+    "research/survey/evidence/title-search.json": "661bb5b7eea1125e9f5db7edc2644581fd5941d0cecea5835e3dbb2794b091c9",
+    "research/survey/evidence/supplementary-screening.json": "04b8edbae9f4e17911e5919282192da51e97be777f3d01be963b4a43ac9f9edb",
+    "research/survey/evidence/extra-references.json": "1d1ec6287aed88df38688afd91d74cfd9326b1a8135a3480fd5562dda54f26f3",
+    "research/survey/scripts/build_article.py": "6a3e6309bb120902b420ef069825fa320c30a3b1cd292f59a59f2763619fed80",
+    "research/survey/article.css": "f70cedca3e5b0c3b48123cd280afdf7d30cc83aa4cebb6363db6ab4066f89d54",
+    "research/survey/article.js": "903d48ebaad90a39a7f88f15c2aa78cb48992188b8b89bd7186be17defcd6bfe",
+    "research/survey/template.html": "a5f6f52a090ec551771b8076940c34644c4e27f8ec4ca49ae40dca8e9d8c8d17",
+    "research/survey/figures/corpus.svg": "33bb85647bd7a42235ada6dc47ef51f7d272d98e922cf181e51495d96140b106",
+    "scripts/export_citations.py": "ef23ed11c2fa1cd08c7fe46c725dd6fca80eb72c4480508bd140ecfadd535a67",
+    "scripts/publication_metadata.py": "5b0823d908d8c91977ce2d0b8d8a6dc77176e5fcf988c02c88be0c3b608357a7",
+    "research/survey/fixtures/frozen-catalog-bibliography.json": "0cecc54c022392d4e597f92f73c1ac03a01a124656e932608f77f186780df0fb"
+  },
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 964,
+      "sha256": "f138534d1d1962985f4ac88d1b890848008996ff85611d2d4ae40de979ae3e5e"
+    },
+    {
+      "path": "evidence/context.json",
+      "bytes": 138788,
+      "sha256": "e7f9b74995a1175aa2f1d14d125b6634d3df8c6c2b27c5752a445a27814b9abd"
+    },
+    {
+      "path": "evidence/corpus-statistics.json",
+      "bytes": 429466,
+      "sha256": "a8718e30229a76e50b2628fe7f87da62032690de53eaa57205df8d6a762f1b2d"
+    },
+    {
+      "path": "evidence/evaluation.json",
+      "bytes": 95803,
+      "sha256": "2edc6d655264c75c9080e4414a19ce594b8f4b1aed4140ada7aa8c5b1956d85d"
+    },
+    {
+      "path": "evidence/extra-references.json",
+      "bytes": 4030,
+      "sha256": "59b7da54b1aefe7d172fda719aa4e6b7cb1489a33b189f32c73ac431015627e1"
+    },
+    {
+      "path": "evidence/methods.json",
+      "bytes": 152855,
+      "sha256": "3cee151d0d0cfbc659e25550d857db3b58546a79017fcc02ec2eb1757576e230"
+    },
+    {
+      "path": "evidence/reading-index.json",
+      "bytes": 97754,
+      "sha256": "952dcab2a02e8080e372faa0864550b2433b14290a6acd3cd71c2ac0e480deff"
+    },
+    {
+      "path": "evidence/root.json",
+      "bytes": 6274,
+      "sha256": "a23fbc393aa56002a6d1de9f1ef558f1bf13e0465c1b0b86047857213bd845e6"
+    },
+    {
+      "path": "evidence/supplementary-screening.json",
+      "bytes": 124571,
+      "sha256": "5a8a13c717d5b7389aca9adb07ca2bdbb3b82d918d4e09b57fb46ee65d8e3530"
+    },
+    {
+      "path": "evidence/title-search.json",
+      "bytes": 725233,
+      "sha256": "b72c034d9f008d6655c31559635d4a239e394e0744fee9bbb331281a88d5cad8"
+    },
+    {
+      "path": "index.html",
+      "bytes": 464368,
+      "sha256": "ea4312a479c6cb125d16bd9d0b88e3239ceeb9ed0cf8e1cd5d8f15106ac7fe46"
+    },
+    {
+      "path": "references.bib",
+      "bytes": 101124,
+      "sha256": "b60a0de533d985f7b313554f6b843bbe7dfcd6973d2d2a9efddcda4e388d1b95"
+    },
+    {
+      "path": "references.json",
+      "bytes": 218662,
+      "sha256": "596d3353d3e1741725844d9e8e2a91ccfe53628fc65d40acd59d3bffb3d449ff"
+    }
+  ],
+  "frozen_bibliography_verification": {
+    "fixture_sha256": "0cecc54c022392d4e597f92f73c1ac03a01a124656e932608f77f186780df0fb",
+    "record_count": 70,
+    "record_hash_method": "sha256-utf8-json-sorted-keys-compact-v1",
+    "history_check": "not_available_or_disabled; verified_pinned_fixture_used",
+    "network_requests": 0,
+    "subset_cannot_recompute_full_catalog_sha256": true
+  }
+}

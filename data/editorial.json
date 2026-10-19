@@ -15987,10 +15987,24 @@
     "evidence_urls": [
       "https://export.arxiv.org/api/query?id_list=2412.04454%2C2412.04626%2C2412.05467%2C2412.09362%2C2412.09605%2C2412.10342%2C2412.10742%2C2412.10840%2C2412.13103%2C2412.13194%2C2412.13501%2C2412.14161%2C2412.14470%2C2412.16256%2C2412.17589%2C2412.18116%2C2412.18426%2C2412.19723%2C2501.01149%2C2501.04575%2C2501.07572%2C2501.11733%2C2501.12326%2C2501.13896%2C2501.16150%2C2502.01600%2C2502.01977%2C2502.02982%2C2502.06395%2C2502.07949%2C2502.08047%2C2502.08226%2C2502.11357%2C2502.13053%2C2502.13923%2C2502.14282%2C2502.18906%2C2503.00401%2C2503.02268%2C2503.03196%2C2503.04730%2C2503.05143%2C2503.06470%2C2503.09263%2C2503.11069%2C2503.11170%2C2503.12687%2C2503.15661%2C2503.15937%2C2503.16465&max_results=50"
     ],
-    "editorial_reviewed": true,
+    "editorial_reviewed": false,
     "reviewed_sha256": "e96b86015c763c780e0430a8d0867b96cae947f50e888b3441c85abcaa42de78",
-    "reviewed_at": "2026-10-16T11:07:39Z",
-    "notes": "The annotation and scope were reviewed against the primary paper abstract. Experimental results and released artifacts have not been independently reproduced."
+    "reviewed_at": "2026-10-18T13:14:56Z",
+    "notes": "The annotation and scope were reviewed against the primary paper abstract. Experimental results and released artifacts have not been independently reproduced.",
+    "review_note": "Reviewer hold after a separate follow-up review of the prior adjacent approval: the retained abstract and full-text Section 3.2.1 and Appendix C describe JSON-schema/Python simulated tool environments and content-safety cases, without a specific GUI or browser execution basis. Preserve the bibliography as metadata-only pending a supported adjacent-scope rationale; this is not a scope exclusion.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "scope",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2412.14470v2",
+        "retrieved_at": "2026-10-18T13:00:11.489320+00:00",
+        "sha256": "b78772a2c31ba2baf770244d890fe5b66190ef1ad8657e616ea208f23af0574c"
+      }
+    ]
   },
   {
     "name": "Evaluating the Robustness of Multimodal Agents Against Active Environmental Injection Attacks",
@@ -16990,7 +17004,7 @@
     "kind": "paper",
     "url": "https://arxiv.org/abs/2505.24838",
     "environments": [
-      "desktop"
+      "web"
     ],
     "topics": [
       "video",
@@ -17007,8 +17021,21 @@
     ],
     "editorial_reviewed": true,
     "reviewed_sha256": "afe4e75ffb8a5c44f4c088a90ffa5f53553036f514aa768f5aee0c5aa38d731e",
-    "reviewed_at": "2026-10-16T12:02:14Z",
-    "notes": "The annotation and scope were reviewed against the primary paper abstract. Experimental results and released artifacts have not been independently reproduced."
+    "reviewed_at": "2026-10-18T13:33:19Z",
+    "notes": "The contribution was reviewed from the retained abstract. Sections 1 and 3 of the exact-version v2 paper identify Onshape as the browser-based interaction environment; the use of pixel-level input does not make the operated surface a desktop application. No experimental results were independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2505.24838v2",
+        "sha256": "a303d95a811331cd6ee23b0340f1b9ef2dd996835bfbc66656a871ff94eead50",
+        "retrieved_at": "2026-10-18T12:02:34.311949+00:00"
+      }
+    ]
   },
   {
     "name": "MagicGUI: A Foundational Mobile GUI Agent with Scalable Data Pipeline and Reinforcement Fine-tuning",
@@ -22831,7 +22858,7 @@
     "evidence_urls": [
       "https://raw.githubusercontent.com/UDGOK/videocad/HEAD/README.md"
     ],
-    "editorial_reviewed": true,
+    "editorial_reviewed": false,
     "reviewed_sha256": "6c182da7783e740539ce49d91794d299f2ca477a5b0d946bce48649b8fa2e49c",
     "reviewed_at": "2026-10-17T02:07:18Z",
     "documented_by": [
@@ -22858,14 +22885,15 @@
         "sha256": "55b59b0642a8c28cda6c12e35ba4fcc39c0ba28ab5c846f58262746f32a9601d",
         "retrieved_at": "2026-10-17T02:05:40Z"
       }
-    ]
+    ],
+    "review_note": "Curated inclusion withdrawn: UDGOK/videocad is a distinct GitHub fork (repository 1108132573), while the paper links the author repository ghadinehme/VideoCAD (1079441024). The author repository is indexed as github:ghadinehme/videocad. The original entry and evidence remain here for provenance; this is not a repository rename or alias, and the fork is not counted as a second original implementation."
   },
   {
     "name": "VideoCAD data",
     "kind": "dataset",
     "url": "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/WX8PCK",
     "environments": [
-      "unspecified"
+      "web"
     ],
     "topics": [
       "grounding",
@@ -22876,13 +22904,13 @@
     "verify_terms": [
       "VideoCAD"
     ],
-    "notes": "Dataverse reports a RELEASED version 5.0 with 261 unrestricted files and a CC0-1.0 dataset declaration. Archive count is not a video or trajectory count. The linked repository documents the action and video formats. No archives or training samples were downloaded; operating-system coverage is unspecified.",
+    "notes": "Dataverse reports a RELEASED version 5.0 with 261 unrestricted files and a CC0-1.0 dataset declaration. Archive count is not a video or trajectory count. The author repository documents the action and video formats, and Section 3 of the v2 paper identifies the recorded Onshape browser interface. No archives or training samples were downloaded; operating-system coverage is unspecified.",
     "evidence_urls": [
       "https://dataverse.harvard.edu/api/datasets/:persistentId/?persistentId=doi:10.7910/DVN/WX8PCK"
     ],
     "editorial_reviewed": true,
     "reviewed_sha256": "f67df0a4422a0484aaa2f93cd185b7000070d2a88d919d9ef995587f5e724007",
-    "reviewed_at": "2026-10-17T02:07:18Z",
+    "reviewed_at": "2026-10-18T13:33:19Z",
     "additional_evidence": [
       {
         "role": "primary",
@@ -22892,16 +22920,27 @@
           "relations",
           "details.dataset_profile"
         ],
-        "url": "https://raw.githubusercontent.com/UDGOK/videocad/HEAD/README.md",
-        "sha256": "6c182da7783e740539ce49d91794d299f2ca477a5b0d946bce48649b8fa2e49c",
-        "retrieved_at": "2026-10-17T02:02:45Z"
+        "url": "https://raw.githubusercontent.com/ghadinehme/VideoCAD/2d69eeaf0ac44210c76dcab2d08b4d4610be236c/README.md",
+        "sha256": "cbb08803922b4b7736979ca0a5fe552b111fcd428fa9317401bc090b14bb4e54",
+        "retrieved_at": "2026-10-18T12:02:53.536297+00:00"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2505.24838v2",
+        "sha256": "a303d95a811331cd6ee23b0340f1b9ef2dd996835bfbc66656a871ff94eead50",
+        "retrieved_at": "2026-10-18T12:02:34.311949+00:00"
       }
     ],
     "reviewed_relations": [
       {
         "type": "documented_by",
         "target_id": "arxiv:2505.24838",
-        "evidence_url": "https://raw.githubusercontent.com/UDGOK/videocad/HEAD/README.md"
+        "evidence_url": "https://raw.githubusercontent.com/ghadinehme/VideoCAD/2d69eeaf0ac44210c76dcab2d08b4d4610be236c/README.md"
       }
     ],
     "details": {
@@ -22931,10 +22970,10 @@
           "timestamped UI actions",
           "target model images"
         ],
-        "notes": "The reported video total is distinct from the Dataverse package-file count. The source does not specify OS compatibility.",
+        "notes": "The reported video total is distinct from the Dataverse package-file count. The exact-version paper identifies the recorded interface as browser-based Onshape; operating-system compatibility is not established.",
         "evidence_urls": [
           "https://dataverse.harvard.edu/api/datasets/:persistentId/?persistentId=doi:10.7910/DVN/WX8PCK",
-          "https://raw.githubusercontent.com/UDGOK/videocad/HEAD/README.md"
+          "https://raw.githubusercontent.com/ghadinehme/VideoCAD/2d69eeaf0ac44210c76dcab2d08b4d4610be236c/README.md"
         ],
         "splits": []
       }
@@ -45959,17 +45998,17 @@
       "imitation-learning"
     ],
     "scope": "core",
-    "summary": "Research tooling for query-inference pivot tasks that connect screenshot grounding with GUI action reasoning, including preprocessing, query refinement and mobile-agent evaluation.",
+    "summary": "Query-inference training tools connecting screenshot grounding with GUI action reasoning, including preprocessing, query refinement and offline single-step evaluation on AndroidControl and AITZ.",
     "verify_terms": [
       "GUIPivot"
     ],
-    "notes": "The repository releases preprocessing/refinement/evaluation code and packaged ShareGPT-format JSON training annotations. It instructs users to obtain original UIBERT/OS-Atlas, AITZ and AndroidControl images separately and train their own model. This entry does not claim a released trained checkpoint or transfer the repository GPL-3.0 code license to third-party datasets and images.",
+    "notes": "The repository releases preprocessing/refinement/evaluation code and multipart ShareGPT-format JSON annotations. Evaluation matches recorded single-step action predictions on AndroidControl and AITZ; it does not run live device tasks. The README links a UIBERT training-JSON path that is not a standalone file in this revision; annotations are packaged in data/GUI.z01, data/GUI.z02 and data/GUI.zip. Original UIBERT/OS-Atlas, AITZ and AndroidControl images must be obtained separately. This entry does not claim a released trained checkpoint or transfer the GPL-3.0 code license to third-party datasets and images.",
     "evidence_urls": [
-      "https://raw.githubusercontent.com/ZrW00/GUIPivot/HEAD/README.md"
+      "https://raw.githubusercontent.com/ZrW00/GUIPivot/b02e8efdbe02ab82169a2c54d724e33b4037330e/README.md"
     ],
     "editorial_reviewed": true,
     "reviewed_sha256": "77384ff1dfceac74f2e60af56b016a815963481f9e41a29915698777f55e828e",
-    "reviewed_at": "2026-10-17T11:38:10Z",
+    "reviewed_at": "2026-10-18T12:22:22Z",
     "primary_supports": [
       "name",
       "kind",
@@ -45981,7 +46020,7 @@
       "relations"
     ],
     "details": {
-      "availability": "Public preprocessing/refinement/evaluation source and annotation-archive manifest; original images remain separate.",
+      "availability": "Public preprocessing/refinement code, offline action-matching evaluation, and multipart annotation archives; original images and a fine-tuned model are separate.",
       "repository_revision": "b02e8efdbe02ab82169a2c54d724e33b4037330e"
     },
     "documented_by": [
@@ -45995,19 +46034,21 @@
           "identity"
         ],
         "url": "https://api.github.com/repos/ZrW00/GUIPivot",
-        "sha256": "af47c1183407c8f80b2d2615e15579a4c0a7cd3fe476ac6f8697b745f6f54318",
-        "retrieved_at": "2026-10-17T11:18:22Z"
+        "retrieved_at": "2026-10-18T11:25:27+00:00",
+        "sha256": "3d57dc43db78620832e41416e4bfb7ae445afe782e5538d85a9784a8f1e5e4eb"
       },
       {
         "role": "primary",
         "method": "editorial_primary_review",
         "supports": [
           "release_status",
-          "details.repository_revision"
+          "details.repository_revision",
+          "details.availability",
+          "notes"
         ],
-        "url": "https://api.github.com/repos/ZrW00/GUIPivot/git/trees/main?recursive=1",
-        "sha256": "a4d3ddbb2b2f4a936c9bc1a1c388b9870dbc5d2c61ff6841a1082b884f5c54e9",
-        "retrieved_at": "2026-10-17T11:23:02Z"
+        "url": "https://api.github.com/repos/ZrW00/GUIPivot/git/trees/b02e8efdbe02ab82169a2c54d724e33b4037330e?recursive=1",
+        "retrieved_at": "2026-10-18T12:02:54.310430+00:00",
+        "sha256": "a4d3ddbb2b2f4a936c9bc1a1c388b9870dbc5d2c61ff6841a1082b884f5c54e9"
       },
       {
         "role": "primary",
@@ -46015,25 +46056,49 @@
         "supports": [
           "licenses.code"
         ],
-        "url": "https://raw.githubusercontent.com/ZrW00/GUIPivot/HEAD/LICENSE",
-        "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
-        "retrieved_at": "2026-10-17T11:23:03Z"
+        "url": "https://raw.githubusercontent.com/ZrW00/GUIPivot/b02e8efdbe02ab82169a2c54d724e33b4037330e/LICENSE",
+        "retrieved_at": "2026-10-18T12:03:28.611747+00:00",
+        "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2503.00401v2",
+        "retrieved_at": "2026-10-18T12:02:36.501726+00:00",
+        "sha256": "25e5282e7d85bca133fc77e294cd95d90e4ae65b0d8796cd7c49f53a633b4893"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.availability"
+        ],
+        "url": "https://raw.githubusercontent.com/ZrW00/GUIPivot/b02e8efdbe02ab82169a2c54d724e33b4037330e/data/dataset_info.json",
+        "retrieved_at": "2026-10-18T12:03:30.911159+00:00",
+        "sha256": "9b5b196e065be2ebc05169a68710b8a6e1bd3b6eb663c68bb449234dbb7a45af"
       }
     ],
     "reviewed_licenses": {
       "code": {
         "value": {
           "declared": "GPL-3.0",
-          "url": "https://raw.githubusercontent.com/ZrW00/GUIPivot/HEAD/LICENSE",
-          "retrieved_at": "2026-10-17T11:23:03Z",
+          "url": "https://raw.githubusercontent.com/ZrW00/GUIPivot/b02e8efdbe02ab82169a2c54d724e33b4037330e/LICENSE",
+          "retrieved_at": "2026-10-18T12:03:28.611747+00:00",
           "basis": "Repository GNU GPL version 3 license for code; no data or pretrained-weight license inferred."
         },
         "reason": "Repository GNU GPL version 3 license for code; no data or pretrained-weight license inferred.",
         "evidence_urls": [
-          "https://raw.githubusercontent.com/ZrW00/GUIPivot/HEAD/LICENSE"
+          "https://raw.githubusercontent.com/ZrW00/GUIPivot/b02e8efdbe02ab82169a2c54d724e33b4037330e/LICENSE"
         ]
       }
-    }
+    },
+    "read_basis": "Reviewed the pinned README, full tree and annotation manifest, license declaration, arXiv v2 evaluation protocol and evaluator source as text. The direct training-JSON path is absent from the complete tree and separately returned 404; no failed response is represented as successful release evidence. Runtime and published scores were not re-evaluated."
   },
   {
     "name": "WebWorld: A Large-Scale World Model for Web Agent Training",
@@ -61573,6 +61638,1511 @@
         ]
       }
     }
+  },
+  {
+    "name": "WebGuard",
+    "kind": "benchmark",
+    "url": "https://github.com/OSU-NLP-Group/WebGuard",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "evaluation",
+      "web-navigation"
+    ],
+    "summary": "Codebase, annotation toolkit, and action-level risk dataset for training and evaluating guardrail models that flag unsafe browser-agent actions before execution.",
+    "verify_terms": [
+      "WebGuard",
+      "2507.14293"
+    ],
+    "documented_by": [
+      "2507.14293"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "be53561dcf69cb2295a26eaebf965eead10b3504fca30f71f73dc5e5728fc5b3",
+    "reviewed_at": "2026-10-18T10:59:53Z"
+  },
+  {
+    "name": "AgentAttack",
+    "kind": "benchmark",
+    "url": "https://github.com/OSU-NLP-Group/AgentAttack",
+    "environments": [
+      "web",
+      "cross-platform"
+    ],
+    "topics": [
+      "safety-security",
+      "evaluation",
+      "robustness"
+    ],
+    "summary": "Companion repository mapping 12 adversarial attack scenarios across perception, reasoning, and action components of language and multimodal agents.",
+    "verify_terms": [
+      "A Trembling House of Cards",
+      "2402.10196"
+    ],
+    "documented_by": [
+      "2402.10196"
+    ],
+    "editorial_reviewed": false,
+    "reviewed_sha256": "50bfe1c454f34ffb95d16b85a7b79ad8b22a9c014b73d4532f7b3078a2b9e36a",
+    "reviewed_at": "2026-10-18T13:13:38Z",
+    "review_note": "Reviewer hold: the retained README accompanies a conceptual position paper and lists related work; the official repository tree contains a README, two images, and .DS_Store, with no executable benchmark or test dataset. Do not classify this bibliography as a released benchmark."
+  },
+  {
+    "name": "EIA",
+    "kind": "benchmark",
+    "url": "https://github.com/OSU-NLP-Group/EIA_against_webagent",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "evaluation",
+      "web-navigation"
+    ],
+    "summary": "Evaluation suite for Environmental Injection Attacks that embed invisible malicious HTML elements into benign websites to test privacy leakage in generalist web agents.",
+    "verify_terms": [
+      "ENVIRONMENTAL INJECTION ATTACK",
+      "2409.11295"
+    ],
+    "documented_by": [
+      "2409.11295"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "61eb6109404f266fd22c6fa8ca58ef773a9d502567403f42edc096958ab2e430",
+    "reviewed_at": "2026-10-18T10:59:54Z"
+  },
+  {
+    "name": "ST-WebAgentBench",
+    "kind": "benchmark",
+    "url": "https://github.com/segev-shlomov/ST-WebAgentBench",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "evaluation",
+      "web-navigation"
+    ],
+    "summary": "BrowserGym-based benchmark for evaluating the safety and policy compliance of enterprise web agents across six trustworthiness risk dimensions.",
+    "verify_terms": [
+      "ST-WebAgentBench",
+      "2410.06703"
+    ],
+    "documented_by": [
+      "2410.06703"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "e712feb15886d5a2aba1051d419dc69dc6e58c9a86a9d2d566090bbbf67492fc",
+    "reviewed_at": "2026-10-18T10:59:54Z"
+  },
+  {
+    "name": "BrowserART",
+    "kind": "benchmark",
+    "url": "https://github.com/scaleapi/browser-art",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "evaluation",
+      "web-navigation"
+    ],
+    "summary": "Red-teaming benchmark and test suite from Scale AI evaluating whether refusal-trained language models can be jailbroken when deployed as browser agents.",
+    "verify_terms": [
+      "BrowserART",
+      "Refusal-Trained LLMs Are Easily Jailbroken As Browser Agents"
+    ],
+    "documented_by": [
+      "2410.13886"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "a9d33536fae38485eb6aac9698ae22ed3533510d43f783d6c0e9f9cf95d9c58f",
+    "reviewed_at": "2026-10-18T13:13:38Z",
+    "notes": "The retained README and LICENSE contain conflicting code-license declarations. The catalog leaves the code-license value unknown pending an upstream clarification; it does not infer data or model permissions.",
+    "additional_evidence": [
+      {
+        "method": "license_header",
+        "retrieved_at": "2026-10-18T11:03:46Z",
+        "role": "primary",
+        "sha256": "f7f28b8c7a1af76b9874ca6d040e8b1eb6768fd1043106c9d315090ea96754e7",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/scaleapi/browser-art/HEAD/LICENSE"
+      }
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "licenses.code",
+      "notes"
+    ],
+    "reviewed_licenses": {
+      "code": {
+        "value": null,
+        "reason": "The retained README states that the project is MIT licensed, while the retained LICENSE contains Creative Commons Attribution-NonCommercial-NoDerivatives 4.0. These declarations conflict, so a settled code license is not asserted.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/scaleapi/browser-art/HEAD/README.md",
+          "https://raw.githubusercontent.com/scaleapi/browser-art/HEAD/LICENSE"
+        ]
+      }
+    }
+  },
+  {
+    "name": "MLA-Trust",
+    "kind": "benchmark",
+    "url": "https://github.com/thu-ml/MLA-Trust",
+    "environments": [
+      "web",
+      "android",
+      "cross-platform"
+    ],
+    "topics": [
+      "safety-security",
+      "evaluation",
+      "robustness"
+    ],
+    "summary": "Unified evaluation framework measuring truthfulness, controllability, safety, and privacy of multimodal LLM agents across interactive web and mobile GUI tasks.",
+    "verify_terms": [
+      "MLA-Trust",
+      "Benchmarking Trustworthiness of Multimodal LLM Agents in GUI Environments"
+    ],
+    "documented_by": [
+      "2506.01616"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "d69da19edaed185ad3071a97db3bb3fcfbdb14c0b514b7d27794b39fbe8e2541",
+    "reviewed_at": "2026-10-18T10:59:55Z"
+  },
+  {
+    "name": "VeriSafe Agent",
+    "kind": "framework",
+    "url": "https://github.com/VeriSafeAgent/VeriSafeAgent",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "safety-security",
+      "mobile-navigation",
+      "state-tracking"
+    ],
+    "summary": "Runtime verification framework for Android GUI agents that checks proposed actions against logical rules derived from user instructions and developer-defined app states.",
+    "verify_terms": [
+      "VeriSafe Agent System",
+      "VeriSafeAgent"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "2403ef3ec300e257dc631e3c569fc9aabaab1d3f385ac37abe1e4021aaae6e21",
+    "reviewed_at": "2026-10-18T13:13:38Z",
+    "notes": "The verification method requires developers to supply app-state predicates and transition hooks. The paper-to-repository relation is supported by the exact-version paper, not inferred from the repository name.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2503.18492v2",
+        "retrieved_at": "2026-10-18T13:06:20.028238+00:00",
+        "sha256": "9b04efe4136a39e3e5f21a1d3bb8a44075f1370bdbeec6a4307783f3836f8311",
+        "supports": [
+          "summary",
+          "relations",
+          "notes"
+        ]
+      }
+    ],
+    "reviewed_relations": [
+      {
+        "type": "documented_by",
+        "target_id": "arxiv:2503.18492",
+        "evidence_url": "https://arxiv.org/html/2503.18492v2"
+      }
+    ]
+  },
+  {
+    "name": "VeriOS",
+    "kind": "framework",
+    "url": "https://github.com/Wuzheng02/VeriOS",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "safety-security",
+      "human-in-the-loop",
+      "mobile-navigation"
+    ],
+    "summary": "Research code for proactive human–GUI-agent verification, including offline interaction-loop and dual-agent evaluation scripts plus LLaMA-Factory fine-tuning configurations.",
+    "verify_terms": [
+      "VeriOS",
+      "2509.07553"
+    ],
+    "documented_by": [
+      "2509.07553"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "282883d02391a86c5a4d0cdafdc1d33f10a5073f31eba8c852095601d0aeb939",
+    "reviewed_at": "2026-10-18T13:13:38Z",
+    "notes": "The released scripts evaluate recorded task inputs; the retained README does not establish a live Android execution environment. No runtime behavior or reported results were independently reproduced.",
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes"
+    ]
+  },
+  {
+    "name": "Agent-SafetyBench",
+    "kind": "benchmark",
+    "url": "https://github.com/thu-coai/Agent-SafetyBench",
+    "environments": [
+      "cross-platform"
+    ],
+    "topics": [
+      "safety-security",
+      "evaluation",
+      "tool-integration"
+    ],
+    "summary": "Safety evaluation benchmark and ShieldAgent scoring pipeline covering 349 interactive environments and 2,000 test cases across eight agent risk categories.",
+    "verify_terms": [
+      "Agent-SafetyBench",
+      "2412.14470"
+    ],
+    "documented_by": [
+      "2412.14470"
+    ],
+    "editorial_reviewed": false,
+    "reviewed_sha256": "349ca07f1ecda2eba2b1e5cbb96a01d316c5c047937a2b7929ee13da38d67f9a",
+    "reviewed_at": "2026-10-18T13:13:38Z",
+    "review_note": "Reviewer hold: this release evaluates general tool-using agents in JSON-schema/Python simulated environments. The retained README and paper Sections 3.2.1 and Appendix C do not establish direct GUI or browser execution for this benchmark. Keep the source and receipt pending an explicit adjacent-scope justification.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2412.14470v2",
+        "retrieved_at": "2026-10-18T13:00:11.489320+00:00",
+        "sha256": "b78772a2c31ba2baf770244d890fe5b66190ef1ad8657e616ea208f23af0574c",
+        "supports": [
+          "scope",
+          "notes"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MONDAY",
+    "kind": "dataset",
+    "url": "https://github.com/runamu/monday",
+    "environments": [
+      "android",
+      "ios",
+      "cross-platform"
+    ],
+    "topics": [
+      "data-generation",
+      "mobile-navigation",
+      "video"
+    ],
+    "summary": "Cross-platform mobile GUI trajectory dataset derived from instructional videos, with released data-processing helpers and example evaluation code for Android and iOS data.",
+    "verify_terms": [
+      "Scalable Video-to-Dataset Generation for Cross-Platform Mobile Agents",
+      "2505.12632"
+    ],
+    "documented_by": [
+      "2505.12632"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "cb3d2329571a80b6edeab98c04f8b63c7f4e976929788d6a8283238b0b7fdadc",
+    "reviewed_at": "2026-10-18T13:13:38Z",
+    "notes": "The retained README marks release of the full data-generation pipeline, training scripts, and model checkpoints as pending. Linked video content and datasets remain subject to their original licenses; the repository code license does not establish a blanket data or weights license.",
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes"
+    ]
+  },
+  {
+    "name": "SheetCopilot",
+    "kind": "agent",
+    "url": "https://github.com/BraveGroup/SheetCopilot",
+    "environments": [
+      "desktop",
+      "windows",
+      "linux"
+    ],
+    "topics": [
+      "workflow",
+      "tool-integration",
+      "evaluation"
+    ],
+    "summary": "Spreadsheet automation agent for Windows/Excel, with benchmark assets and a separately released headless Ubuntu evaluation backend.",
+    "verify_terms": [
+      "SheetCopilot",
+      "2305.19308"
+    ],
+    "documented_by": [
+      "2305.19308"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "beb8c811bf2d070845aa6fcc7e94ffd43ca4f9f60ce42c72d958598790fbdffc",
+    "reviewed_at": "2026-10-18T13:13:38Z",
+    "notes": "The original agent and the later Ubuntu evaluator have different roles; the repository does not establish that the original agent runs on Ubuntu. Code licensing is unresolved because the retained README and LICENSE contain conflicting declarations.",
+    "additional_evidence": [
+      {
+        "method": "license_header",
+        "retrieved_at": "2026-10-18T11:03:47Z",
+        "role": "primary",
+        "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/BraveGroup/SheetCopilot/HEAD/LICENSE"
+      }
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "licenses.code",
+      "notes"
+    ],
+    "reviewed_licenses": {
+      "code": {
+        "value": null,
+        "reason": "The retained README restricts SheetCopilot and its dataset to noncommercial use, while the retained repository LICENSE contains the GNU GPL version 3 text. These declarations do not establish one unambiguous code license.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/BraveGroup/SheetCopilot/HEAD/README.md",
+          "https://raw.githubusercontent.com/BraveGroup/SheetCopilot/HEAD/LICENSE"
+        ]
+      }
+    }
+  },
+  {
+    "name": "LearnAct",
+    "kind": "agent",
+    "url": "https://github.com/lgy0404/LearnAct",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "imitation-learning",
+      "evaluation"
+    ],
+    "summary": "Released inference and evaluation code for demonstration-conditioned mobile GUI agents on LearnGUI-Offline. The repository describes a multi-agent adaptation method and links the LearnGUI demonstrations.",
+    "verify_terms": [
+      "LearnAct",
+      "2504.13805"
+    ],
+    "documented_by": [
+      "2504.13805"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "95184255b6ec021aac8ca062b944f3ed76d1e01405e5771d9e31368021523eec",
+    "reviewed_at": "2026-10-18T13:13:38Z",
+    "notes": "At the retained README snapshot, LearnGUI-Online code and the real-world deployment implementation were marked coming soon. The mobile operating system is not established by the reviewed release instructions; no code was executed.",
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes"
+    ]
+  },
+  {
+    "name": "AgentStudio",
+    "kind": "framework",
+    "url": "https://github.com/skyworkai/agent-studio",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "sandbox",
+      "evaluation",
+      "grounding",
+      "recording"
+    ],
+    "summary": "Toolkit and Ubuntu-based environment for building and evaluating generalist computer-use agents through GUI and API interaction.",
+    "verify_terms": [
+      "AgentStudio",
+      "2403.17918"
+    ],
+    "documented_by": [
+      "2403.17918"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "5653db27f736c0c77afb63f81ca051bf31f1e1f0579ac77cf00dca4ea751c159",
+    "reviewed_at": "2026-10-18T13:13:38Z"
+  },
+  {
+    "name": "SheetCopilot: Bringing Software Productivity to the Next Level through Large Language Models",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2305.19308",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "workflow",
+      "tool-integration",
+      "evaluation"
+    ],
+    "summary": "Introduces SheetCopilot, an agent that steers spreadsheet software via atomic virtual APIs, along with a 221-task spreadsheet manipulation benchmark.",
+    "verify_terms": [
+      "SheetCopilot: Bringing So"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?id_list=1802.08802%2C1808.09132%2C2005.03776%2C2101.09465%2C2103.16057%2C2104.08560%2C2105.13231%2C2107.03374%2C2107.13731%2C2108.03353%2C2202.02312%2C2202.08137%2C2204.01691%2C2205.11029%2C2207.01206%2C2209.08199%2C2209.08655%2C2209.14927%2C2209.15099%2C2210.02663%2C2210.03629%2C2210.03945%2C2211.07615%2C2301.10165%2C2301.13280%2C2302.04761%2C2303.07280%2C2303.08774%2C2303.17491%2C2303.17580%2C2304.04370%2C2304.07061%2C2305.04091%2C2305.05662%2C2305.08144%2C2305.10601%2C2305.11854%2C2305.12487%2C2305.14257%2C2305.14325%2C2305.16504%2C2305.16653%2C2305.19308%2C2306.00245%2C2306.06070%2C2306.07863%2C2307.10088%2C2307.12856%2C2307.13854%2C2308.01990&max_results=50"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "cbe8bfcbce4170a94a6cf42de01fbe0a448e7b1d29fa75a0de877105a98ec08e",
+    "reviewed_at": "2026-10-18T13:13:38Z",
+    "notes": "The contribution was reviewed from the retained paper abstract. The original Windows/Excel implementation is identified in the separately retained project README; the later Ubuntu evaluator is not treated as a paper result. No results were independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://raw.githubusercontent.com/BraveGroup/SheetCopilot/HEAD/README.md",
+        "retrieved_at": "2026-10-18T10:59:56Z",
+        "sha256": "beb8c811bf2d070845aa6fcc7e94ffd43ca4f9f60ce42c72d958598790fbdffc",
+        "supports": [
+          "environments",
+          "notes"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "A Trembling House of Cards? Mapping Adversarial Attacks against Language Agents",
+    "kind": "survey",
+    "url": "https://arxiv.org/abs/2402.10196",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "survey",
+      "robustness"
+    ],
+    "summary": "Presents a conceptual perception–reasoning–action framework and 12 potential attack scenarios for language agents, including hypothetical web-navigation attacks.",
+    "verify_terms": [
+      "A Trembling House of Card"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?id_list=2302.01560%2C2303.16563%2C2305.15486%2C2305.16291%2C2305.17144%2C2306.00003%2C2306.00349%2C2306.17882%2C2310.01557%2C2310.08235%2C2310.08367%2C2311.05997%2C2311.17600%2C2312.02519%2C2312.11865%2C2402.01118%2C2402.10196%2C2402.11208%2C2403.10249%2C2403.12037%2C2404.06647%2C2404.12241%2C2404.13246%2C2407.15325%2C2409.00138%2C2410.14573%2C2410.18927%2C2410.19012%2C2411.09523%2C2411.10349%2C2411.13543%2C2412.01547%2C2501.05366%2C2501.09004%2C2502.07463%2C2502.14538%2C2503.02732%2C2503.08175%2C2503.11387%2C2504.10147%2C2504.11703%2C2504.14064%2C2504.15810%2C2504.16208%2C2504.20635%2C2504.21776%2C2505.12981%2C2505.13076%2C2506.01616%2C2506.13205&max_results=50"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "00d275cd5407cec847fa9d43fe73cfc4384c5570b68a5e058c97921799be0bec",
+    "reviewed_at": "2026-10-18T13:13:38Z",
+    "notes": "Adjacent conceptual security work: the paper describes hypothetical scenarios and a future generalist agent, rather than an implemented attack benchmark. Scope was checked against the retained abstract and full-text Sections 2.4 and 3; no results were independently reproduced.",
+    "scope": "adjacent",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2402.10196v1",
+        "retrieved_at": "2026-10-18T13:00:03.117157+00:00",
+        "sha256": "a1d4dc44a6572863df1d8cc68bff592c3a04a174a3dbc87ab5cdcd0d33be92b0",
+        "supports": [
+          "summary",
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "PrivacyLens: Evaluating Privacy Norm Awareness of Language Models in Action",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2409.00138",
+    "environments": [
+      "cross-platform"
+    ],
+    "topics": [
+      "safety-security",
+      "evaluation"
+    ],
+    "summary": "Evaluates contextual privacy norm awareness of language model agents executing tool and communication actions from regulations and crowdsourced vignettes.",
+    "verify_terms": [
+      "PrivacyLens: Evaluating P"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?id_list=2302.01560%2C2303.16563%2C2305.15486%2C2305.16291%2C2305.17144%2C2306.00003%2C2306.00349%2C2306.17882%2C2310.01557%2C2310.08235%2C2310.08367%2C2311.05997%2C2311.17600%2C2312.02519%2C2312.11865%2C2402.01118%2C2402.10196%2C2402.11208%2C2403.10249%2C2403.12037%2C2404.06647%2C2404.12241%2C2404.13246%2C2407.15325%2C2409.00138%2C2410.14573%2C2410.18927%2C2410.19012%2C2411.09523%2C2411.10349%2C2411.13543%2C2412.01547%2C2501.05366%2C2501.09004%2C2502.07463%2C2502.14538%2C2503.02732%2C2503.08175%2C2503.11387%2C2504.10147%2C2504.11703%2C2504.14064%2C2504.15810%2C2504.16208%2C2504.20635%2C2504.21776%2C2505.12981%2C2505.13076%2C2506.01616%2C2506.13205&max_results=50"
+    ],
+    "editorial_reviewed": false,
+    "reviewed_sha256": "00d275cd5407cec847fa9d43fe73cfc4384c5570b68a5e058c97921799be0bec",
+    "reviewed_at": "2026-10-18T13:13:38Z",
+    "notes": "The annotation and scope were reviewed against the primary paper abstract. Experimental results and released artifacts have not been independently reproduced.",
+    "review_note": "Reviewer hold: the retained abstract and full-text Sections 3.2–3.3 describe ToolEmu/GPT-4-emulated tool trajectories and final-action privacy evaluation. They do not establish direct GUI or browser interaction for this method. Preserve the bibliographic record as metadata-only pending an explicit adjacent-scope justification.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2409.00138v3",
+        "retrieved_at": "2026-10-18T13:00:04.550892+00:00",
+        "sha256": "3fddd512f725d8112780730b133965a3df7c28d2ecf20deddd52d037a6dcaccb",
+        "supports": [
+          "scope",
+          "notes"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Progent: Securing AI Agents with Privilege Control",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2504.11703",
+    "environments": [
+      "web",
+      "cross-platform"
+    ],
+    "topics": [
+      "safety-security",
+      "tool-integration"
+    ],
+    "summary": "Introduces a domain-specific privilege-control policy language that constrains tool calls to defend web and tool-using agents against indirect prompt injection.",
+    "verify_terms": [
+      "Progent: Securing AI Agen"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?id_list=2302.01560%2C2303.16563%2C2305.15486%2C2305.16291%2C2305.17144%2C2306.00003%2C2306.00349%2C2306.17882%2C2310.01557%2C2310.08235%2C2310.08367%2C2311.05997%2C2311.17600%2C2312.02519%2C2312.11865%2C2402.01118%2C2402.10196%2C2402.11208%2C2403.10249%2C2403.12037%2C2404.06647%2C2404.12241%2C2404.13246%2C2407.15325%2C2409.00138%2C2410.14573%2C2410.18927%2C2410.19012%2C2411.09523%2C2411.10349%2C2411.13543%2C2412.01547%2C2501.05366%2C2501.09004%2C2502.07463%2C2502.14538%2C2503.02732%2C2503.08175%2C2503.11387%2C2504.10147%2C2504.11703%2C2504.14064%2C2504.15810%2C2504.16208%2C2504.20635%2C2504.21776%2C2505.12981%2C2505.13076%2C2506.01616%2C2506.13205&max_results=50"
+    ],
+    "editorial_reviewed": false,
+    "reviewed_sha256": "00d275cd5407cec847fa9d43fe73cfc4384c5570b68a5e058c97921799be0bec",
+    "reviewed_at": "2026-10-18T13:13:38Z",
+    "notes": "The annotation and scope were reviewed against the primary paper abstract. Experimental results and released artifacts have not been independently reproduced.",
+    "review_note": "Reviewer hold: the retained abstract and full-text Sections 8–9 evaluate typed tool-call policies on AgentDojo/ASB and MCP integrations. Section 9 explicitly excludes graphical-interface tool calls from the current method. Preserve the bibliographic record as metadata-only; do not describe this as a web/GUI defense.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2504.11703v3",
+        "retrieved_at": "2026-10-18T13:00:05.761027+00:00",
+        "sha256": "0cf3f66defbe6910837c6b3fc30022b3ee5ec3912ecffc1af0155232e7a7886d",
+        "supports": [
+          "scope",
+          "notes"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "DoomArena: A framework for Testing AI Agents Against Evolving Security Threats",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2504.14064",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "evaluation"
+    ],
+    "summary": "Presents a modular security testing framework that plugs into BrowserGym and tool-use benchmarks to evaluate agents under configurable threat models.",
+    "verify_terms": [
+      "DoomArena: A framework fo"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?id_list=2302.01560%2C2303.16563%2C2305.15486%2C2305.16291%2C2305.17144%2C2306.00003%2C2306.00349%2C2306.17882%2C2310.01557%2C2310.08235%2C2310.08367%2C2311.05997%2C2311.17600%2C2312.02519%2C2312.11865%2C2402.01118%2C2402.10196%2C2402.11208%2C2403.10249%2C2403.12037%2C2404.06647%2C2404.12241%2C2404.13246%2C2407.15325%2C2409.00138%2C2410.14573%2C2410.18927%2C2410.19012%2C2411.09523%2C2411.10349%2C2411.13543%2C2412.01547%2C2501.05366%2C2501.09004%2C2502.07463%2C2502.14538%2C2503.02732%2C2503.08175%2C2503.11387%2C2504.10147%2C2504.11703%2C2504.14064%2C2504.15810%2C2504.16208%2C2504.20635%2C2504.21776%2C2505.12981%2C2505.13076%2C2506.01616%2C2506.13205&max_results=50"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "00d275cd5407cec847fa9d43fe73cfc4384c5570b68a5e058c97921799be0bec",
+    "reviewed_at": "2026-10-18T13:13:38Z",
+    "notes": "The annotation and scope were reviewed against the primary paper abstract. Experimental results and released artifacts have not been independently reproduced."
+  },
+  {
+    "name": "WebThinker: Empowering Large Reasoning Models with Deep Research Capability",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2504.21776",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "planning",
+      "tool-integration"
+    ],
+    "summary": "Combines iterative web search and link-following with interleaved reasoning and report drafting for deep research. Its reported web explorer retrieves page content through a crawler rather than controlling a visual browser interface.",
+    "verify_terms": [
+      "WebThinker: Empowering La"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?id_list=2302.01560%2C2303.16563%2C2305.15486%2C2305.16291%2C2305.17144%2C2306.00003%2C2306.00349%2C2306.17882%2C2310.01557%2C2310.08235%2C2310.08367%2C2311.05997%2C2311.17600%2C2312.02519%2C2312.11865%2C2402.01118%2C2402.10196%2C2402.11208%2C2403.10249%2C2403.12037%2C2404.06647%2C2404.12241%2C2404.13246%2C2407.15325%2C2409.00138%2C2410.14573%2C2410.18927%2C2410.19012%2C2411.09523%2C2411.10349%2C2411.13543%2C2412.01547%2C2501.05366%2C2501.09004%2C2502.07463%2C2502.14538%2C2503.02732%2C2503.08175%2C2503.11387%2C2504.10147%2C2504.11703%2C2504.14064%2C2504.15810%2C2504.16208%2C2504.20635%2C2504.21776%2C2505.12981%2C2505.13076%2C2506.01616%2C2506.13205&max_results=50"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "00d275cd5407cec847fa9d43fe73cfc4384c5570b68a5e058c97921799be0bec",
+    "reviewed_at": "2026-10-18T13:13:38Z",
+    "notes": "Adjacent web-research method. The retained abstract and full-text Section 3 and Appendix A describe search APIs and Crawl4AI URL retrieval; no visual GUI execution is inferred. Results were not independently reproduced.",
+    "scope": "adjacent",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2504.21776v2",
+        "retrieved_at": "2026-10-18T13:00:06.851520+00:00",
+        "sha256": "d06baa20c7775347cbb4492473418d11cbe56941ab90baa16381353ab6c39e07",
+        "supports": [
+          "summary",
+          "scope",
+          "notes"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "From Assistants to Adversaries: Exploring the Security Risks of Mobile LLM Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2505.12981",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "safety-security",
+      "mobile-navigation",
+      "evaluation"
+    ],
+    "summary": "Analyzes security vulnerabilities across OEM system-level, third-party, and research mobile LLM agents, covering GUI and cross-application attack surfaces.",
+    "verify_terms": [
+      "From Assistants to Advers"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?id_list=2302.01560%2C2303.16563%2C2305.15486%2C2305.16291%2C2305.17144%2C2306.00003%2C2306.00349%2C2306.17882%2C2310.01557%2C2310.08235%2C2310.08367%2C2311.05997%2C2311.17600%2C2312.02519%2C2312.11865%2C2402.01118%2C2402.10196%2C2402.11208%2C2403.10249%2C2403.12037%2C2404.06647%2C2404.12241%2C2404.13246%2C2407.15325%2C2409.00138%2C2410.14573%2C2410.18927%2C2410.19012%2C2411.09523%2C2411.10349%2C2411.13543%2C2412.01547%2C2501.05366%2C2501.09004%2C2502.07463%2C2502.14538%2C2503.02732%2C2503.08175%2C2503.11387%2C2504.10147%2C2504.11703%2C2504.14064%2C2504.15810%2C2504.16208%2C2504.20635%2C2504.21776%2C2505.12981%2C2505.13076%2C2506.01616%2C2506.13205&max_results=50"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "00d275cd5407cec847fa9d43fe73cfc4384c5570b68a5e058c97921799be0bec",
+    "reviewed_at": "2026-10-18T13:13:38Z",
+    "notes": "The annotation and scope were reviewed against the primary paper abstract. Experimental results and released artifacts have not been independently reproduced."
+  },
+  {
+    "name": "The Hidden Dangers of Browsing AI Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2505.13076",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "web-navigation",
+      "evaluation"
+    ],
+    "summary": "Outlines an end-to-end threat model and empirical security evaluation across architectural layers of autonomous browser agents.",
+    "verify_terms": [
+      "The Hidden Dangers of Bro"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?id_list=2302.01560%2C2303.16563%2C2305.15486%2C2305.16291%2C2305.17144%2C2306.00003%2C2306.00349%2C2306.17882%2C2310.01557%2C2310.08235%2C2310.08367%2C2311.05997%2C2311.17600%2C2312.02519%2C2312.11865%2C2402.01118%2C2402.10196%2C2402.11208%2C2403.10249%2C2403.12037%2C2404.06647%2C2404.12241%2C2404.13246%2C2407.15325%2C2409.00138%2C2410.14573%2C2410.18927%2C2410.19012%2C2411.09523%2C2411.10349%2C2411.13543%2C2412.01547%2C2501.05366%2C2501.09004%2C2502.07463%2C2502.14538%2C2503.02732%2C2503.08175%2C2503.11387%2C2504.10147%2C2504.11703%2C2504.14064%2C2504.15810%2C2504.16208%2C2504.20635%2C2504.21776%2C2505.12981%2C2505.13076%2C2506.01616%2C2506.13205&max_results=50"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "00d275cd5407cec847fa9d43fe73cfc4384c5570b68a5e058c97921799be0bec",
+    "reviewed_at": "2026-10-18T10:54:08Z",
+    "notes": "The annotation and scope were reviewed against the primary paper abstract. Experimental results and released artifacts have not been independently reproduced."
+  },
+  {
+    "name": "MLA-Trust: Benchmarking Trustworthiness of Multimodal LLM Agents in GUI Environments",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2506.01616",
+    "environments": [
+      "web",
+      "android",
+      "cross-platform"
+    ],
+    "topics": [
+      "safety-security",
+      "evaluation",
+      "robustness"
+    ],
+    "summary": "Benchmarks truthfulness, controllability, safety, and privacy of multimodal LLM agents across interactive web and mobile GUI tasks.",
+    "verify_terms": [
+      "MLA-Trust: Benchmarking T"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?id_list=2302.01560%2C2303.16563%2C2305.15486%2C2305.16291%2C2305.17144%2C2306.00003%2C2306.00349%2C2306.17882%2C2310.01557%2C2310.08235%2C2310.08367%2C2311.05997%2C2311.17600%2C2312.02519%2C2312.11865%2C2402.01118%2C2402.10196%2C2402.11208%2C2403.10249%2C2403.12037%2C2404.06647%2C2404.12241%2C2404.13246%2C2407.15325%2C2409.00138%2C2410.14573%2C2410.18927%2C2410.19012%2C2411.09523%2C2411.10349%2C2411.13543%2C2412.01547%2C2501.05366%2C2501.09004%2C2502.07463%2C2502.14538%2C2503.02732%2C2503.08175%2C2503.11387%2C2504.10147%2C2504.11703%2C2504.14064%2C2504.15810%2C2504.16208%2C2504.20635%2C2504.21776%2C2505.12981%2C2505.13076%2C2506.01616%2C2506.13205&max_results=50"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "00d275cd5407cec847fa9d43fe73cfc4384c5570b68a5e058c97921799be0bec",
+    "reviewed_at": "2026-10-18T13:13:38Z",
+    "notes": "The contribution was reviewed from the retained paper abstract; Android setup is supported separately by the official project README. No benchmark results were independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://raw.githubusercontent.com/thu-ml/MLA-Trust/HEAD/README.md",
+        "retrieved_at": "2026-10-18T10:59:55Z",
+        "sha256": "d69da19edaed185ad3071a97db3bb3fcfbdb14c0b514b7d27794b39fbe8e2541",
+        "supports": [
+          "environments",
+          "notes"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Poison Once, Control Anywhere: Clean-Text Visual Backdoors in VLM-based Mobile Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2506.13205",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "safety-security",
+      "mobile-navigation",
+      "robustness"
+    ],
+    "summary": "Demonstrates clean-text visual backdoor attacks (VIBMA) that compromise fine-tuned VLM mobile agents through visual triggers while keeping text instructions intact.",
+    "verify_terms": [
+      "Poison Once, Control Anyw"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?id_list=2302.01560%2C2303.16563%2C2305.15486%2C2305.16291%2C2305.17144%2C2306.00003%2C2306.00349%2C2306.17882%2C2310.01557%2C2310.08235%2C2310.08367%2C2311.05997%2C2311.17600%2C2312.02519%2C2312.11865%2C2402.01118%2C2402.10196%2C2402.11208%2C2403.10249%2C2403.12037%2C2404.06647%2C2404.12241%2C2404.13246%2C2407.15325%2C2409.00138%2C2410.14573%2C2410.18927%2C2410.19012%2C2411.09523%2C2411.10349%2C2411.13543%2C2412.01547%2C2501.05366%2C2501.09004%2C2502.07463%2C2502.14538%2C2503.02732%2C2503.08175%2C2503.11387%2C2504.10147%2C2504.11703%2C2504.14064%2C2504.15810%2C2504.16208%2C2504.20635%2C2504.21776%2C2505.12981%2C2505.13076%2C2506.01616%2C2506.13205&max_results=50"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "00d275cd5407cec847fa9d43fe73cfc4384c5570b68a5e058c97921799be0bec",
+    "reviewed_at": "2026-10-18T10:54:08Z",
+    "notes": "The annotation and scope were reviewed against the primary paper abstract. Experimental results and released artifacts have not been independently reproduced."
+  },
+  {
+    "name": "Mind the Third Eye! Benchmarking Privacy Awareness in MLLM-powered Smartphone Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2508.19493",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "safety-security",
+      "mobile-navigation",
+      "evaluation"
+    ],
+    "summary": "Introduces SAPA-Bench with 7,138 smartphone scenarios to evaluate whether MLLM-powered mobile agents detect and protect sensitive personal information on screen.",
+    "verify_terms": [
+      "Mind the Third Eye! Bench"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?id_list=2508.19461%2C2508.19493%2C2509.21782%2C2509.25140%2C2510.03485%2C2510.07809%2C2510.14276%2C2510.27140%2C2510.27210%2C2511.13248%2C2512.08417%2C2601.07263%2C2602.13516%2C2603.00476%2C2603.11862%2C2603.18762%2C2603.23791%2C2604.00986%2C2604.16515%2C2604.16548%2C2604.24348%2C2605.05509%2C2605.08876%2C2605.20833%2C2605.24785%2C2607.00333%2C2607.18659%2C2607.25255%2C2608.00202%2C2608.08939%2C2608.24913%2C2608.29596&max_results=32"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "5f5bae19420f79231516d4bcf604ea18d4f930fc7790cde5a3e7fcb8d41a1126",
+    "reviewed_at": "2026-10-18T13:13:38Z",
+    "notes": "The annotation and scope were reviewed against the primary paper abstract. Experimental results and released artifacts have not been independently reproduced."
+  },
+  {
+    "name": "Benchmarking MLLM-based Web Understanding: Reasoning, Robustness and Safety",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2509.21782",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "screen-understanding",
+      "safety-security",
+      "robustness"
+    ],
+    "summary": "Evaluates multimodal LLMs on web interface reasoning, visual perturbation robustness, and safety-critical web understanding tasks.",
+    "verify_terms": [
+      "Benchmarking MLLM-based W"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?id_list=2508.19461%2C2508.19493%2C2509.21782%2C2509.25140%2C2510.03485%2C2510.07809%2C2510.14276%2C2510.27140%2C2510.27210%2C2511.13248%2C2512.08417%2C2601.07263%2C2602.13516%2C2603.00476%2C2603.11862%2C2603.18762%2C2603.23791%2C2604.00986%2C2604.16515%2C2604.16548%2C2604.24348%2C2605.05509%2C2605.08876%2C2605.20833%2C2605.24785%2C2607.00333%2C2607.18659%2C2607.25255%2C2608.00202%2C2608.08939%2C2608.24913%2C2608.29596&max_results=32"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "5f5bae19420f79231516d4bcf604ea18d4f930fc7790cde5a3e7fcb8d41a1126",
+    "reviewed_at": "2026-10-18T10:54:12Z",
+    "notes": "The annotation and scope were reviewed against the primary paper abstract. Experimental results and released artifacts have not been independently reproduced."
+  },
+  {
+    "name": "ReasoningBank: Scaling Agent Self-Evolving with Reasoning Memory",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2509.25140",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "memory",
+      "self-reflection",
+      "web-navigation"
+    ],
+    "summary": "Distills generalizable reasoning strategies from both successful and failed agent trajectories into a persistent memory bank for test-time retrieval.",
+    "verify_terms": [
+      "ReasoningBank: Scaling Ag"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?id_list=2508.19461%2C2508.19493%2C2509.21782%2C2509.25140%2C2510.03485%2C2510.07809%2C2510.14276%2C2510.27140%2C2510.27210%2C2511.13248%2C2512.08417%2C2601.07263%2C2602.13516%2C2603.00476%2C2603.11862%2C2603.18762%2C2603.23791%2C2604.00986%2C2604.16515%2C2604.16548%2C2604.24348%2C2605.05509%2C2605.08876%2C2605.20833%2C2605.24785%2C2607.00333%2C2607.18659%2C2607.25255%2C2608.00202%2C2608.08939%2C2608.24913%2C2608.29596&max_results=32"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "5f5bae19420f79231516d4bcf604ea18d4f930fc7790cde5a3e7fcb8d41a1126",
+    "reviewed_at": "2026-10-18T13:13:38Z",
+    "notes": "The annotation and scope were reviewed against the primary paper abstract. Experimental results and released artifacts have not been independently reproduced."
+  },
+  {
+    "name": "Invisible to Humans, Triggered by Agents: Stealthy Jailbreak Attacks on Mobile Vision-Language Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2510.07809",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "safety-security",
+      "mobile-navigation",
+      "robustness"
+    ],
+    "summary": "Uses the near-zero contact-touch signals of automated mobile agents to expose malicious visual content selectively during agent interactions. The paper combines this agent-only perceptual injection with HG-IDA* prompt optimization to study unauthorized cross-app actions.",
+    "verify_terms": [
+      "Invisible to Humans, Trig"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?id_list=2508.19461%2C2508.19493%2C2509.21782%2C2509.25140%2C2510.03485%2C2510.07809%2C2510.14276%2C2510.27140%2C2510.27210%2C2511.13248%2C2512.08417%2C2601.07263%2C2602.13516%2C2603.00476%2C2603.11862%2C2603.18762%2C2603.23791%2C2604.00986%2C2604.16515%2C2604.16548%2C2604.24348%2C2605.05509%2C2605.08876%2C2605.20833%2C2605.24785%2C2607.00333%2C2607.18659%2C2607.25255%2C2608.00202%2C2608.08939%2C2608.24913%2C2608.29596&max_results=32"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "5f5bae19420f79231516d4bcf604ea18d4f930fc7790cde5a3e7fcb8d41a1126",
+    "reviewed_at": "2026-10-18T13:13:38Z",
+    "notes": "The annotation and scope were reviewed against the primary paper abstract. Experimental results and released artifacts have not been independently reproduced."
+  },
+  {
+    "name": "Measuring the Security of Mobile LLM Agents under Adversarial Prompts from Untrusted Third-Party Channels",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2510.27140",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "safety-security",
+      "mobile-navigation",
+      "evaluation"
+    ],
+    "summary": "Measures how untrusted third-party notifications, messages, and app content can hijack mobile LLM agents into executing unauthorized cross-app actions.",
+    "verify_terms": [
+      "Measuring the Security of"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?id_list=2508.19461%2C2508.19493%2C2509.21782%2C2509.25140%2C2510.03485%2C2510.07809%2C2510.14276%2C2510.27140%2C2510.27210%2C2511.13248%2C2512.08417%2C2601.07263%2C2602.13516%2C2603.00476%2C2603.11862%2C2603.18762%2C2603.23791%2C2604.00986%2C2604.16515%2C2604.16548%2C2604.24348%2C2605.05509%2C2605.08876%2C2605.20833%2C2605.24785%2C2607.00333%2C2607.18659%2C2607.25255%2C2608.00202%2C2608.08939%2C2608.24913%2C2608.29596&max_results=32"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "5f5bae19420f79231516d4bcf604ea18d4f930fc7790cde5a3e7fcb8d41a1126",
+    "reviewed_at": "2026-10-18T13:13:38Z",
+    "notes": "The annotation and scope were reviewed against the primary paper abstract. Experimental results and released artifacts have not been independently reproduced."
+  },
+  {
+    "name": "GUI-Rise: Structured Reasoning and History Summarization for GUI Navigation",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2510.27210",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "planning",
+      "interaction-history",
+      "reinforcement-learning"
+    ],
+    "summary": "Combines structured progress-and-decision reasoning with history summarization to improve cross-domain generalization in GUI navigation agents.",
+    "verify_terms": [
+      "GUI-Rise: Structured Reas"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?id_list=2508.19461%2C2508.19493%2C2509.21782%2C2509.25140%2C2510.03485%2C2510.07809%2C2510.14276%2C2510.27140%2C2510.27210%2C2511.13248%2C2512.08417%2C2601.07263%2C2602.13516%2C2603.00476%2C2603.11862%2C2603.18762%2C2603.23791%2C2604.00986%2C2604.16515%2C2604.16548%2C2604.24348%2C2605.05509%2C2605.08876%2C2605.20833%2C2605.24785%2C2607.00333%2C2607.18659%2C2607.25255%2C2608.00202%2C2608.08939%2C2608.24913%2C2608.29596&max_results=32"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "5f5bae19420f79231516d4bcf604ea18d4f930fc7790cde5a3e7fcb8d41a1126",
+    "reviewed_at": "2026-10-18T13:13:38Z",
+    "notes": "The annotation and scope were reviewed against the primary paper abstract. Experimental results and released artifacts have not been independently reproduced."
+  },
+  {
+    "name": "DualTAP: A Dual-Task Adversarial Protector for Mobile MLLM Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2511.13248",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "safety-security",
+      "mobile-navigation"
+    ],
+    "summary": "Applies dual-task adversarial perturbations to mobile screenshots to conceal personally identifiable information from untrusted MLLM routers while preserving agent task utility.",
+    "verify_terms": [
+      "DualTAP: A Dual-Task Adve"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?id_list=2508.19461%2C2508.19493%2C2509.21782%2C2509.25140%2C2510.03485%2C2510.07809%2C2510.14276%2C2510.27140%2C2510.27210%2C2511.13248%2C2512.08417%2C2601.07263%2C2602.13516%2C2603.00476%2C2603.11862%2C2603.18762%2C2603.23791%2C2604.00986%2C2604.16515%2C2604.16548%2C2604.24348%2C2605.05509%2C2605.08876%2C2605.20833%2C2605.24785%2C2607.00333%2C2607.18659%2C2607.25255%2C2608.00202%2C2608.08939%2C2608.24913%2C2608.29596&max_results=32"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "5f5bae19420f79231516d4bcf604ea18d4f930fc7790cde5a3e7fcb8d41a1126",
+    "reviewed_at": "2026-10-18T13:13:38Z",
+    "notes": "The annotation and scope were reviewed against the primary paper abstract. Experimental results and released artifacts have not been independently reproduced."
+  },
+  {
+    "name": "When Bots Take the Bait: Exposing and Mitigating the Emerging Social Engineering Attack in Web Automation Agent",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2601.07263",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "web-navigation",
+      "robustness"
+    ],
+    "summary": "Studies deceptive social-engineering web patterns targeting browser automation agents and proposes defenses against bait-based manipulation.",
+    "verify_terms": [
+      "When Bots Take the Bait: "
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?id_list=2508.19461%2C2508.19493%2C2509.21782%2C2509.25140%2C2510.03485%2C2510.07809%2C2510.14276%2C2510.27140%2C2510.27210%2C2511.13248%2C2512.08417%2C2601.07263%2C2602.13516%2C2603.00476%2C2603.11862%2C2603.18762%2C2603.23791%2C2604.00986%2C2604.16515%2C2604.16548%2C2604.24348%2C2605.05509%2C2605.08876%2C2605.20833%2C2605.24785%2C2607.00333%2C2607.18659%2C2607.25255%2C2608.00202%2C2608.08939%2C2608.24913%2C2608.29596&max_results=32"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "5f5bae19420f79231516d4bcf604ea18d4f930fc7790cde5a3e7fcb8d41a1126",
+    "reviewed_at": "2026-10-18T10:54:12Z",
+    "notes": "The annotation and scope were reviewed against the primary paper abstract. Experimental results and released artifacts have not been independently reproduced."
+  },
+  {
+    "name": "SPILLage: Agentic Oversharing on the Web",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2602.13516",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "web-navigation",
+      "evaluation"
+    ],
+    "summary": "Formalizes and measures natural agentic oversharing when browser agents handle private user emails and calendars across live websites.",
+    "verify_terms": [
+      "SPILLage: Agentic Oversha"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?id_list=2508.19461%2C2508.19493%2C2509.21782%2C2509.25140%2C2510.03485%2C2510.07809%2C2510.14276%2C2510.27140%2C2510.27210%2C2511.13248%2C2512.08417%2C2601.07263%2C2602.13516%2C2603.00476%2C2603.11862%2C2603.18762%2C2603.23791%2C2604.00986%2C2604.16515%2C2604.16548%2C2604.24348%2C2605.05509%2C2605.08876%2C2605.20833%2C2605.24785%2C2607.00333%2C2607.18659%2C2607.25255%2C2608.00202%2C2608.08939%2C2608.24913%2C2608.29596&max_results=32"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "5f5bae19420f79231516d4bcf604ea18d4f930fc7790cde5a3e7fcb8d41a1126",
+    "reviewed_at": "2026-10-18T10:54:12Z",
+    "notes": "The annotation and scope were reviewed against the primary paper abstract. Experimental results and released artifacts have not been independently reproduced."
+  },
+  {
+    "name": "Atomicity for Agents: Exposing, Exploiting, and Mitigating TOCTOU Vulnerabilities in Browser-Use Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2603.00476",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "web-navigation",
+      "state-tracking"
+    ],
+    "summary": "Identifies time-of-check to time-of-use (TOCTOU) race vulnerabilities when web pages mutate between agent planning and action execution.",
+    "verify_terms": [
+      "Atomicity for Agents: Exp"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?id_list=2508.19461%2C2508.19493%2C2509.21782%2C2509.25140%2C2510.03485%2C2510.07809%2C2510.14276%2C2510.27140%2C2510.27210%2C2511.13248%2C2512.08417%2C2601.07263%2C2602.13516%2C2603.00476%2C2603.11862%2C2603.18762%2C2603.23791%2C2604.00986%2C2604.16515%2C2604.16548%2C2604.24348%2C2605.05509%2C2605.08876%2C2605.20833%2C2605.24785%2C2607.00333%2C2607.18659%2C2607.25255%2C2608.00202%2C2608.08939%2C2608.24913%2C2608.29596&max_results=32"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "5f5bae19420f79231516d4bcf604ea18d4f930fc7790cde5a3e7fcb8d41a1126",
+    "reviewed_at": "2026-10-18T10:54:12Z",
+    "notes": "The annotation and scope were reviewed against the primary paper abstract. Experimental results and released artifacts have not been independently reproduced."
+  },
+  {
+    "name": "ClawTrap: A MITM-Based Red-Teaming Framework for Real-World OpenClaw Security Evaluation",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2603.18762",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "evaluation",
+      "web-navigation"
+    ],
+    "summary": "Presents a man-in-the-middle network red-teaming framework for evaluating autonomous OpenClaw agents under live traffic manipulation.",
+    "verify_terms": [
+      "ClawTrap: A MITM-Based Re"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?id_list=2508.19461%2C2508.19493%2C2509.21782%2C2509.25140%2C2510.03485%2C2510.07809%2C2510.14276%2C2510.27140%2C2510.27210%2C2511.13248%2C2512.08417%2C2601.07263%2C2602.13516%2C2603.00476%2C2603.11862%2C2603.18762%2C2603.23791%2C2604.00986%2C2604.16515%2C2604.16548%2C2604.24348%2C2605.05509%2C2605.08876%2C2605.20833%2C2605.24785%2C2607.00333%2C2607.18659%2C2607.25255%2C2608.00202%2C2608.08939%2C2608.24913%2C2608.29596&max_results=32"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "5f5bae19420f79231516d4bcf604ea18d4f930fc7790cde5a3e7fcb8d41a1126",
+    "reviewed_at": "2026-10-18T13:13:38Z",
+    "notes": "The annotation and scope were reviewed against the primary paper abstract. Experimental results and released artifacts have not been independently reproduced."
+  },
+  {
+    "name": "The Cognitive Firewall:Securing Browser Based AI Agents Against Indirect Prompt Injection Via Hybrid Edge Cloud Defense",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2603.23791",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "web-navigation"
+    ],
+    "summary": "Proposes a split-compute browser defense pairing a local visual sentinel, a cloud planner, and deterministic policy enforcement against indirect prompt injection.",
+    "verify_terms": [
+      "The Cognitive Firewall:Se"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?id_list=2508.19461%2C2508.19493%2C2509.21782%2C2509.25140%2C2510.03485%2C2510.07809%2C2510.14276%2C2510.27140%2C2510.27210%2C2511.13248%2C2512.08417%2C2601.07263%2C2602.13516%2C2603.00476%2C2603.11862%2C2603.18762%2C2603.23791%2C2604.00986%2C2604.16515%2C2604.16548%2C2604.24348%2C2605.05509%2C2605.08876%2C2605.20833%2C2605.24785%2C2607.00333%2C2607.18659%2C2607.25255%2C2608.00202%2C2608.08939%2C2608.24913%2C2608.29596&max_results=32"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "5f5bae19420f79231516d4bcf604ea18d4f930fc7790cde5a3e7fcb8d41a1126",
+    "reviewed_at": "2026-10-18T10:54:12Z",
+    "notes": "The annotation and scope were reviewed against the primary paper abstract. Experimental results and released artifacts have not been independently reproduced."
+  },
+  {
+    "name": "Do Phone-Use Agents Respect Your Privacy?",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2604.00986",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "safety-security",
+      "mobile-navigation",
+      "evaluation"
+    ],
+    "summary": "Introduces MyPhoneBench to verify whether phone-use agents minimize personal data disclosure when filling forms during benign mobile tasks.",
+    "verify_terms": [
+      "Do Phone-Use Agents Respe"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?id_list=2508.19461%2C2508.19493%2C2509.21782%2C2509.25140%2C2510.03485%2C2510.07809%2C2510.14276%2C2510.27140%2C2510.27210%2C2511.13248%2C2512.08417%2C2601.07263%2C2602.13516%2C2603.00476%2C2603.11862%2C2603.18762%2C2603.23791%2C2604.00986%2C2604.16515%2C2604.16548%2C2604.24348%2C2605.05509%2C2605.08876%2C2605.20833%2C2605.24785%2C2607.00333%2C2607.18659%2C2607.25255%2C2608.00202%2C2608.08939%2C2608.24913%2C2608.29596&max_results=32"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "5f5bae19420f79231516d4bcf604ea18d4f930fc7790cde5a3e7fcb8d41a1126",
+    "reviewed_at": "2026-10-18T13:13:38Z",
+    "notes": "The annotation and scope were reviewed against the primary paper abstract. Experimental results and released artifacts have not been independently reproduced."
+  },
+  {
+    "name": "Penny Wise, Pixel Foolish: Bypassing Price Constraints in Multimodal Agents via Visual Adversarial Perturbations",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2604.16515",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "safety-security",
+      "robustness"
+    ],
+    "summary": "Introduces PriceBlind, a visual perturbation method for controlled screenshot-based evaluation of price-constrained multimodal agents. The reported transfer experiments use a simplified single-turn coordinate-selection protocol.",
+    "verify_terms": [
+      "Penny Wise, Pixel Foolish"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?id_list=2508.19461%2C2508.19493%2C2509.21782%2C2509.25140%2C2510.03485%2C2510.07809%2C2510.14276%2C2510.27140%2C2510.27210%2C2511.13248%2C2512.08417%2C2601.07263%2C2602.13516%2C2603.00476%2C2603.11862%2C2603.18762%2C2603.23791%2C2604.00986%2C2604.16515%2C2604.16548%2C2604.24348%2C2605.05509%2C2605.08876%2C2605.20833%2C2605.24785%2C2607.00333%2C2607.18659%2C2607.25255%2C2608.00202%2C2608.08939%2C2608.24913%2C2608.29596&max_results=32"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "5f5bae19420f79231516d4bcf604ea18d4f930fc7790cde5a3e7fcb8d41a1126",
+    "reviewed_at": "2026-10-18T13:13:38Z",
+    "notes": "Scope is screenshot-based interface understanding and safety. The retained abstract does not establish a specific operating system or live transaction execution; no attack results were independently reproduced.",
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes"
+    ]
+  },
+  {
+    "name": "A Survey on Long-Term Memory Security in LLM Agents: Attacks, Defenses, and Governance Across the Memory Lifecycle",
+    "kind": "survey",
+    "url": "https://arxiv.org/abs/2604.16548",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "memory",
+      "safety-security",
+      "survey"
+    ],
+    "summary": "Organizes security risks and defenses for persistent agent memory into six lifecycle phases and proposes five verifiable governance primitives.",
+    "verify_terms": [
+      "A Survey on Long-Term Mem"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?id_list=2508.19461%2C2508.19493%2C2509.21782%2C2509.25140%2C2510.03485%2C2510.07809%2C2510.14276%2C2510.27140%2C2510.27210%2C2511.13248%2C2512.08417%2C2601.07263%2C2602.13516%2C2603.00476%2C2603.11862%2C2603.18762%2C2603.23791%2C2604.00986%2C2604.16515%2C2604.16548%2C2604.24348%2C2605.05509%2C2605.08876%2C2605.20833%2C2605.24785%2C2607.00333%2C2607.18659%2C2607.25255%2C2608.00202%2C2608.08939%2C2608.24913%2C2608.29596&max_results=32"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "5f5bae19420f79231516d4bcf604ea18d4f930fc7790cde5a3e7fcb8d41a1126",
+    "reviewed_at": "2026-10-18T13:13:38Z",
+    "notes": "Adjacent memory-security survey. Full-text Sections 3.1 and 3.3 discuss poisoned web observations persisted into later agent actions; the work is broader than GUI agents and does not establish a platform implementation.",
+    "scope": "adjacent",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2604.16548v3",
+        "retrieved_at": "2026-10-18T13:00:08.054642+00:00",
+        "sha256": "f795535d55a4def0f2ce7dfc41a9d1d22ad38eddf48fb4f1feed98b6b5b66721",
+        "supports": [
+          "summary",
+          "scope",
+          "notes"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "OS-SPEAR: A Toolkit for the Safety, Performance,Efficiency, and Robustness Analysis of OS Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2604.24348",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "evaluation",
+      "safety-security",
+      "efficiency",
+      "robustness"
+    ],
+    "summary": "Provides an evaluation toolkit for joint safety, efficiency, and multimodal robustness analysis of operating-system GUI agents.",
+    "verify_terms": [
+      "OS-SPEAR: A Toolkit for t"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?id_list=2508.19461%2C2508.19493%2C2509.21782%2C2509.25140%2C2510.03485%2C2510.07809%2C2510.14276%2C2510.27140%2C2510.27210%2C2511.13248%2C2512.08417%2C2601.07263%2C2602.13516%2C2603.00476%2C2603.11862%2C2603.18762%2C2603.23791%2C2604.00986%2C2604.16515%2C2604.16548%2C2604.24348%2C2605.05509%2C2605.08876%2C2605.20833%2C2605.24785%2C2607.00333%2C2607.18659%2C2607.25255%2C2608.00202%2C2608.08939%2C2608.24913%2C2608.29596&max_results=32"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "5f5bae19420f79231516d4bcf604ea18d4f930fc7790cde5a3e7fcb8d41a1126",
+    "reviewed_at": "2026-10-18T13:13:38Z",
+    "notes": "The annotation and scope were reviewed against the primary paper abstract. Experimental results and released artifacts have not been independently reproduced."
+  },
+  {
+    "name": "WAAA! Web Adversaries Against Agentic Browsers",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2605.05509",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "web-navigation",
+      "evaluation"
+    ],
+    "summary": "Evaluates agentic browsers against classical web attacks and visual social-engineering lures beyond indirect prompt injection.",
+    "verify_terms": [
+      "WAAA! Web Adversaries Aga"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?id_list=2508.19461%2C2508.19493%2C2509.21782%2C2509.25140%2C2510.03485%2C2510.07809%2C2510.14276%2C2510.27140%2C2510.27210%2C2511.13248%2C2512.08417%2C2601.07263%2C2602.13516%2C2603.00476%2C2603.11862%2C2603.18762%2C2603.23791%2C2604.00986%2C2604.16515%2C2604.16548%2C2604.24348%2C2605.05509%2C2605.08876%2C2605.20833%2C2605.24785%2C2607.00333%2C2607.18659%2C2607.25255%2C2608.00202%2C2608.08939%2C2608.24913%2C2608.29596&max_results=32"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "5f5bae19420f79231516d4bcf604ea18d4f930fc7790cde5a3e7fcb8d41a1126",
+    "reviewed_at": "2026-10-18T10:54:12Z",
+    "notes": "The annotation and scope were reviewed against the primary paper abstract. Experimental results and released artifacts have not been independently reproduced."
+  },
+  {
+    "name": "PANDO: Efficient Multimodal AI Agents via Online Skill Distillation",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2605.24785",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "efficiency",
+      "memory",
+      "web-navigation"
+    ],
+    "summary": "Analyzes inefficiency in VisualWebArena trajectories and distills reusable online skills to reduce repeated actions and token overhead in multimodal web agents.",
+    "verify_terms": [
+      "PANDO: Efficient Multimod"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?id_list=2508.19461%2C2508.19493%2C2509.21782%2C2509.25140%2C2510.03485%2C2510.07809%2C2510.14276%2C2510.27140%2C2510.27210%2C2511.13248%2C2512.08417%2C2601.07263%2C2602.13516%2C2603.00476%2C2603.11862%2C2603.18762%2C2603.23791%2C2604.00986%2C2604.16515%2C2604.16548%2C2604.24348%2C2605.05509%2C2605.08876%2C2605.20833%2C2605.24785%2C2607.00333%2C2607.18659%2C2607.25255%2C2608.00202%2C2608.08939%2C2608.24913%2C2608.29596&max_results=32"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "5f5bae19420f79231516d4bcf604ea18d4f930fc7790cde5a3e7fcb8d41a1126",
+    "reviewed_at": "2026-10-18T10:54:12Z",
+    "notes": "The annotation and scope were reviewed against the primary paper abstract. Experimental results and released artifacts have not been independently reproduced."
+  },
+  {
+    "name": "(A)I Sees What You Don't: Exploiting New Attack Surfaces in Third-Party Mobile Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2607.00333",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "safety-security",
+      "mobile-navigation"
+    ],
+    "summary": "Analyzes cross-app privilege escalation and visual attack surfaces introduced by third-party VLM-powered mobile agents.",
+    "verify_terms": [
+      "(A)I Sees What You Don't:"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?id_list=2508.19461%2C2508.19493%2C2509.21782%2C2509.25140%2C2510.03485%2C2510.07809%2C2510.14276%2C2510.27140%2C2510.27210%2C2511.13248%2C2512.08417%2C2601.07263%2C2602.13516%2C2603.00476%2C2603.11862%2C2603.18762%2C2603.23791%2C2604.00986%2C2604.16515%2C2604.16548%2C2604.24348%2C2605.05509%2C2605.08876%2C2605.20833%2C2605.24785%2C2607.00333%2C2607.18659%2C2607.25255%2C2608.00202%2C2608.08939%2C2608.24913%2C2608.29596&max_results=32"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "5f5bae19420f79231516d4bcf604ea18d4f930fc7790cde5a3e7fcb8d41a1126",
+    "reviewed_at": "2026-10-18T13:13:38Z",
+    "notes": "The annotation and scope were reviewed against the primary paper abstract. Experimental results and released artifacts have not been independently reproduced."
+  },
+  {
+    "name": "Broken Gates: Re-evaluating Web Bot Defenses in the Age of LLM Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2607.18659",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "web-navigation",
+      "evaluation"
+    ],
+    "summary": "Measures how autonomous LLM browser agents interact with commercial bot-management and anti-automation defenses on the web.",
+    "verify_terms": [
+      "Broken Gates: Re-evaluati"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?id_list=2508.19461%2C2508.19493%2C2509.21782%2C2509.25140%2C2510.03485%2C2510.07809%2C2510.14276%2C2510.27140%2C2510.27210%2C2511.13248%2C2512.08417%2C2601.07263%2C2602.13516%2C2603.00476%2C2603.11862%2C2603.18762%2C2603.23791%2C2604.00986%2C2604.16515%2C2604.16548%2C2604.24348%2C2605.05509%2C2605.08876%2C2605.20833%2C2605.24785%2C2607.00333%2C2607.18659%2C2607.25255%2C2608.00202%2C2608.08939%2C2608.24913%2C2608.29596&max_results=32"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "5f5bae19420f79231516d4bcf604ea18d4f930fc7790cde5a3e7fcb8d41a1126",
+    "reviewed_at": "2026-10-18T10:54:12Z",
+    "notes": "The annotation and scope were reviewed against the primary paper abstract. Experimental results and released artifacts have not been independently reproduced."
+  },
+  {
+    "name": "From Monoliths to Swarms: A Study of Attack Surface Evolution in the Transition to Multi-Agent Web Systems",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2608.00202",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "web-navigation",
+      "planning"
+    ],
+    "summary": "Categorizes structural attack surfaces that emerge when single-agent browser systems are decomposed into multi-agent web workflows.",
+    "verify_terms": [
+      "From Monoliths to Swarms:"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?id_list=2508.19461%2C2508.19493%2C2509.21782%2C2509.25140%2C2510.03485%2C2510.07809%2C2510.14276%2C2510.27140%2C2510.27210%2C2511.13248%2C2512.08417%2C2601.07263%2C2602.13516%2C2603.00476%2C2603.11862%2C2603.18762%2C2603.23791%2C2604.00986%2C2604.16515%2C2604.16548%2C2604.24348%2C2605.05509%2C2605.08876%2C2605.20833%2C2605.24785%2C2607.00333%2C2607.18659%2C2607.25255%2C2608.00202%2C2608.08939%2C2608.24913%2C2608.29596&max_results=32"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "5f5bae19420f79231516d4bcf604ea18d4f930fc7790cde5a3e7fcb8d41a1126",
+    "reviewed_at": "2026-10-18T10:54:12Z",
+    "notes": "The annotation and scope were reviewed against the primary paper abstract. Experimental results and released artifacts have not been independently reproduced."
+  },
+  {
+    "name": "Not an A11y: How Android Accessibility Exposes Mobile AI Agents to Indirect Prompt Injection",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2608.08939",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "safety-security",
+      "mobile-navigation",
+      "screen-understanding"
+    ],
+    "summary": "Demonstrates that unsanitized Android accessibility tree metadata exposes mobile GUI agents to stealthy indirect prompt injection attacks.",
+    "verify_terms": [
+      "Not an A11y: How Android "
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?id_list=2508.19461%2C2508.19493%2C2509.21782%2C2509.25140%2C2510.03485%2C2510.07809%2C2510.14276%2C2510.27140%2C2510.27210%2C2511.13248%2C2512.08417%2C2601.07263%2C2602.13516%2C2603.00476%2C2603.11862%2C2603.18762%2C2603.23791%2C2604.00986%2C2604.16515%2C2604.16548%2C2604.24348%2C2605.05509%2C2605.08876%2C2605.20833%2C2605.24785%2C2607.00333%2C2607.18659%2C2607.25255%2C2608.00202%2C2608.08939%2C2608.24913%2C2608.29596&max_results=32"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "5f5bae19420f79231516d4bcf604ea18d4f930fc7790cde5a3e7fcb8d41a1126",
+    "reviewed_at": "2026-10-18T10:54:12Z",
+    "notes": "The annotation and scope were reviewed against the primary paper abstract. Experimental results and released artifacts have not been independently reproduced."
+  },
+  {
+    "name": "From Blind Edits to Verified Repair: Building Trustworthy User-Side LLM Agents for Web Accessibility",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2608.24913",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "ui-design",
+      "web-navigation",
+      "safety-security"
+    ],
+    "summary": "Builds a local browser-extension agent that generates and verifies additive CSS repairs for WCAG web accessibility violations.",
+    "verify_terms": [
+      "From Blind Edits to Verif"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?id_list=2508.19461%2C2508.19493%2C2509.21782%2C2509.25140%2C2510.03485%2C2510.07809%2C2510.14276%2C2510.27140%2C2510.27210%2C2511.13248%2C2512.08417%2C2601.07263%2C2602.13516%2C2603.00476%2C2603.11862%2C2603.18762%2C2603.23791%2C2604.00986%2C2604.16515%2C2604.16548%2C2604.24348%2C2605.05509%2C2605.08876%2C2605.20833%2C2605.24785%2C2607.00333%2C2607.18659%2C2607.25255%2C2608.00202%2C2608.08939%2C2608.24913%2C2608.29596&max_results=32"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "5f5bae19420f79231516d4bcf604ea18d4f930fc7790cde5a3e7fcb8d41a1126",
+    "reviewed_at": "2026-10-18T10:54:12Z",
+    "notes": "The annotation and scope were reviewed against the primary paper abstract. Experimental results and released artifacts have not been independently reproduced."
+  },
+  {
+    "name": "A Systematic Survey of Agentic Skills: Architecture, Lifecycle, and Security",
+    "kind": "survey",
+    "url": "https://arxiv.org/abs/2608.29596",
+    "environments": [
+      "cross-platform"
+    ],
+    "topics": [
+      "survey",
+      "workflow",
+      "memory",
+      "safety-security"
+    ],
+    "summary": "Surveys modular agentic skill architectures, skill lifecycles, and security risks in autonomous tool- and interface-using agents.",
+    "verify_terms": [
+      "A Systematic Survey of Ag"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?id_list=2508.19461%2C2508.19493%2C2509.21782%2C2509.25140%2C2510.03485%2C2510.07809%2C2510.14276%2C2510.27140%2C2510.27210%2C2511.13248%2C2512.08417%2C2601.07263%2C2602.13516%2C2603.00476%2C2603.11862%2C2603.18762%2C2603.23791%2C2604.00986%2C2604.16515%2C2604.16548%2C2604.24348%2C2605.05509%2C2605.08876%2C2605.20833%2C2605.24785%2C2607.00333%2C2607.18659%2C2607.25255%2C2608.00202%2C2608.08939%2C2608.24913%2C2608.29596&max_results=32"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "5f5bae19420f79231516d4bcf604ea18d4f930fc7790cde5a3e7fcb8d41a1126",
+    "reviewed_at": "2026-10-18T13:13:38Z",
+    "notes": "Adjacent broad survey of procedural agent skills. Full-text Section 4.4.2 explicitly covers desktop, mobile, and web interface skills; surveyed systems and their reported results are not independently reproduced.",
+    "scope": "adjacent",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2608.29596v2",
+        "retrieved_at": "2026-10-18T13:00:09.204016+00:00",
+        "sha256": "d112d0a83472b87de538d0290efdd2d0dd0d21e878acca5f383da5baa880fe88",
+        "supports": [
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "VideoCAD training and evaluation code",
+    "kind": "framework",
+    "url": "https://github.com/ghadinehme/VideoCAD",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "grounding",
+      "imitation-learning",
+      "evaluation"
+    ],
+    "scope": "core",
+    "summary": "VideoCADFormer training, action-log preprocessing and evaluation code for learning CAD interface action sequences from screen recordings of browser-based Onshape.",
+    "verify_terms": [
+      "VideoCAD"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ghadinehme/VideoCAD/2d69eeaf0ac44210c76dcab2d08b4d4610be236c/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "cbb08803922b4b7736979ca0a5fe552b111fcd428fa9317401bc090b14bb4e54",
+    "reviewed_at": "2026-10-18T12:22:22Z",
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "topics",
+      "scope",
+      "notes",
+      "relations"
+    ],
+    "notes": "The paper links this author repository. Training, preprocessing, model and evaluation source files are released; runtime behavior has not been independently reproduced. Onshape is a browser-based CAD environment; supported operating systems are not inferred. The full dataset and a checkpoint are linked separately, and their payloads were not downloaded for this review. MIT is recorded only for this repository code; external data and weight licenses remain unknown.",
+    "details": {
+      "repository_revision": "2d69eeaf0ac44210c76dcab2d08b4d4610be236c",
+      "repository_id": 1079441024
+    },
+    "reviewed_relations": [
+      {
+        "type": "documented_by",
+        "target_id": "arxiv:2505.24838",
+        "evidence_url": "https://arxiv.org/html/2505.24838v2"
+      }
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "details.repository_id"
+        ],
+        "url": "https://api.github.com/repos/ghadinehme/VideoCAD",
+        "retrieved_at": "2026-10-18T12:02:30.768857+00:00",
+        "sha256": "ff80afd35c79d8dd27dd7b9284ce082fe238c13a113aa19400ca0dc2d18ff194"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "release_status",
+          "details.repository_revision",
+          "notes"
+        ],
+        "url": "https://api.github.com/repos/ghadinehme/VideoCAD/git/trees/2d69eeaf0ac44210c76dcab2d08b4d4610be236c?recursive=1",
+        "retrieved_at": "2026-10-18T12:02:52.564274+00:00",
+        "sha256": "9ded7c6ef25b88879e9d46939ca7ff3bef97362e76dbdb808e57c67008541557"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "summary",
+          "relations",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2505.24838v2",
+        "retrieved_at": "2026-10-18T12:02:34.311949+00:00",
+        "sha256": "a303d95a811331cd6ee23b0340f1b9ef2dd996835bfbc66656a871ff94eead50"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/ghadinehme/VideoCAD/2d69eeaf0ac44210c76dcab2d08b4d4610be236c/LICENSE",
+        "retrieved_at": "2026-10-18T12:03:24.765415+00:00",
+        "sha256": "8e02753a1016dc67c97b395934313027b5f91b74209c7a24438de70fdc19cad1"
+      }
+    ],
+    "reviewed_licenses": {
+      "code": {
+        "value": {
+          "declared": "MIT",
+          "url": "https://raw.githubusercontent.com/ghadinehme/VideoCAD/2d69eeaf0ac44210c76dcab2d08b4d4610be236c/LICENSE",
+          "retrieved_at": "2026-10-18T12:03:24.765415+00:00",
+          "basis": "The author repository at the inspected commit contains the standard MIT license. This declaration does not establish terms for externally hosted data or weights."
+        },
+        "reason": "MIT declaration in the author repository LICENSE; separate data, weights and document scopes are not inferred.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/ghadinehme/VideoCAD/2d69eeaf0ac44210c76dcab2d08b4d4610be236c/LICENSE"
+        ]
+      }
+    },
+    "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
   },
   {
     "name": "DoomArena",
