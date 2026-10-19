@@ -238,6 +238,68 @@
     ]
   },
   {
+    "id": "gui-agent-security",
+    "name": "Awesome GUI Agent Security",
+    "url": "https://raw.githubusercontent.com/Yuxuan2003/Awesome-GUI-Agent-Security/HEAD/README.md",
+    "homepage": "https://github.com/Yuxuan2003/Awesome-GUI-Agent-Security",
+    "role": "discovery",
+    "scope": [
+      "research",
+      "safety",
+      "benchmarks"
+    ]
+  },
+  {
+    "id": "gui-agent-safety",
+    "name": "Awesome GUI Agent Safety",
+    "url": "https://raw.githubusercontent.com/Autonomous-Agent-Team/Awesome-GUI-Agent-Safety/HEAD/README.md",
+    "homepage": "https://github.com/Autonomous-Agent-Team/Awesome-GUI-Agent-Safety",
+    "role": "discovery",
+    "scope": [
+      "research",
+      "safety",
+      "benchmarks",
+      "frameworks"
+    ]
+  },
+  {
+    "id": "gui-agent-memory",
+    "name": "Awesome GUI Agent Memory",
+    "url": "https://raw.githubusercontent.com/kqcoxn/Awesome-GUI-Agent-Memory/HEAD/README.md",
+    "homepage": "https://github.com/kqcoxn/Awesome-GUI-Agent-Memory",
+    "role": "discovery",
+    "scope": [
+      "research",
+      "models",
+      "benchmarks"
+    ]
+  },
+  {
+    "id": "chenvoid-gui",
+    "name": "ChenVoid Awesome GUI Agent",
+    "url": "https://raw.githubusercontent.com/ChenVoid/Awesome-GUI-Agent/HEAD/README.md",
+    "homepage": "https://github.com/ChenVoid/Awesome-GUI-Agent",
+    "role": "discovery",
+    "scope": [
+      "research",
+      "models",
+      "benchmarks",
+      "datasets"
+    ]
+  },
+  {
+    "id": "philfung-cua",
+    "name": "Awesome Computer Use — philfung",
+    "url": "https://raw.githubusercontent.com/philfung/awesome-computer-use/HEAD/README.md",
+    "homepage": "https://github.com/philfung/awesome-computer-use",
+    "role": "discovery",
+    "scope": [
+      "research",
+      "frameworks",
+      "products"
+    ]
+  },
+  {
     "id": "release-fara",
     "name": "Fara — first-party releases",
     "url": "https://raw.githubusercontent.com/microsoft/fara/HEAD/README.md",
@@ -422,6 +484,32 @@
     "scope": [
       "research",
       "benchmarks",
+      "release-monitoring"
+    ]
+  },
+  {
+    "id": "release-aguvis",
+    "name": "AGUVIS — first-party releases",
+    "url": "https://raw.githubusercontent.com/xlang-ai/aguvis/HEAD/README.md",
+    "homepage": "https://github.com/xlang-ai/aguvis",
+    "role": "discovery",
+    "scope": [
+      "research",
+      "models",
+      "datasets",
+      "release-monitoring"
+    ]
+  },
+  {
+    "id": "release-os-atlas",
+    "name": "OS-Atlas — first-party releases",
+    "url": "https://raw.githubusercontent.com/OS-Copilot/OS-Atlas/HEAD/README.md",
+    "homepage": "https://github.com/OS-Copilot/OS-Atlas",
+    "role": "discovery",
+    "scope": [
+      "research",
+      "models",
+      "datasets",
       "release-monitoring"
     ]
   },

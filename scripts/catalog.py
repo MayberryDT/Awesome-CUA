@@ -418,7 +418,8 @@ def harvest(args):
     candidates = read_jsonl(DATA / "candidates.jsonl")
     records = {r["id"]: r for r in read_jsonl(DATA / "papers.jsonl")}
     proposals = {r['id']: r for r in read_jsonl(DATA / 'metadata-updates.jsonl')}
-    ids = sorted({r["id"].split(":", 1)[1] for r in candidates if r["provider"] == "arxiv" and (args.refresh or r["id"] not in records)})
+    set_aside = {e["id"] for e in read_json(DATA / "candidate-reviews.json", []) if isinstance(e, dict) and e.get("decision") == "not_a_resource" and isinstance(e.get("id"), str) and e["id"] not in records}
+    ids = sorted({r["id"].split(":", 1)[1] for r in candidates if r["provider"] == "arxiv" and r["id"] not in set_aside and (args.refresh or r["id"] not in records)})
     if args.limit:
         ids = ids[:args.limit]
     failures = []
