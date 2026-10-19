@@ -63186,7 +63186,7 @@
           "notes",
           "licenses.code"
         ],
-        "url": "https://raw.githubusercontent.com/vibesurf-ai/VibeSurf/HEAD/pyproject.toml",
+        "url": "https://raw.githubusercontent.com/vibesurf-ai/VibeSurf/cd6e519d507cdd4d63061300bf60fb176e1f57e0/pyproject.toml",
         "sha256": "97b5d7bf51bf343eaced126fd67164a5642e56c2a206a41020a70367b68a6f6a",
         "retrieved_at": "2026-10-18T12:06:28Z"
       },
@@ -63197,7 +63197,7 @@
           "licenses.code",
           "notes"
         ],
-        "url": "https://raw.githubusercontent.com/vibesurf-ai/VibeSurf/HEAD/LICENSE",
+        "url": "https://raw.githubusercontent.com/vibesurf-ai/VibeSurf/cd6e519d507cdd4d63061300bf60fb176e1f57e0/LICENSE",
         "sha256": "ca7712f8e100ee3f6ee6316c8fad4be37dfeb0b1e88be27631ec04259ae1b9d7",
         "retrieved_at": "2026-10-18T12:06:27Z"
       }
@@ -63206,7 +63206,7 @@
       {
         "type": "uses",
         "target_id": "github:browser-use/browser-use",
-        "evidence_url": "https://raw.githubusercontent.com/vibesurf-ai/VibeSurf/HEAD/pyproject.toml"
+        "evidence_url": "https://raw.githubusercontent.com/vibesurf-ai/VibeSurf/cd6e519d507cdd4d63061300bf60fb176e1f57e0/pyproject.toml"
       }
     ],
     "reviewed_licenses": {
@@ -63214,8 +63214,8 @@
         "value": null,
         "reason": "The LICENSE is a custom 'VibeSurf Open Source License' (Apache-2.0 plus multi-tenant, SaaS, frontend-logo and contributor conditions), which conflicts with the plain Apache-2.0 declared in pyproject.toml; no standard identifier applies, so the code license stays unknown.",
         "evidence_urls": [
-          "https://raw.githubusercontent.com/vibesurf-ai/VibeSurf/HEAD/LICENSE",
-          "https://raw.githubusercontent.com/vibesurf-ai/VibeSurf/HEAD/pyproject.toml"
+          "https://raw.githubusercontent.com/vibesurf-ai/VibeSurf/cd6e519d507cdd4d63061300bf60fb176e1f57e0/LICENSE",
+          "https://raw.githubusercontent.com/vibesurf-ai/VibeSurf/cd6e519d507cdd4d63061300bf60fb176e1f57e0/pyproject.toml"
         ]
       }
     },
