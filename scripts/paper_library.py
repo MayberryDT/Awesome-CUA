@@ -78,7 +78,7 @@ def library_years(rows, language='en'):
     return links
 
 
-def paper_library(rows, resource_path, *, language='en', site_url='https://awesomecua.github.io', number=1):
+def paper_library(rows, resource_path, *, language='en', site_url='https://awesomecua.github.io', number=1, survey_available=False):
     """Return one library page's HTML and an ItemList describing exactly its visible reviewed papers."""
     zh = language == 'zh'
     def tr(en, cn):
@@ -111,6 +111,7 @@ def paper_library(rows, resource_path, *, language='en', site_url='https://aweso
             '<h1 id="library-title">' + title_markup + '</h1></div>',
             '<a class="library-language" href="' + library_path(number, 'en' if zh else 'zh') + '">' + ('English' if zh else '中文') + '</a></div>',
             '<p class="library-intro">' + tr('Source-backed papers on GUI grounding, agents, training, evaluation, and safety.', '从 GUI 定位到智能体训练、评测与安全，每篇都可追溯到原始论文。') + '</p>',
+            '<p class="library-intro"><a href="/survey/">' + tr('Read the research survey', '阅读英文研究综述') + ' ↗</a> · ' + tr('Methods, evaluation, and human agency — an English working manuscript with a source-by-source reading register.', '方法、评测与人的控制权；英文工作稿附有逐篇阅读记录。') + '</p>' if survey_available else '',
             '<div class="library-toolbar"><p class="library-count"><strong>' + f'{len(papers):,}' + '</strong> ' + tr('reviewed papers & surveys', '篇已审阅论文与综述')
             + ('<a class="library-connected-count" href="/connections/">' + str(len(assets)) + ' ' + tr('with recorded resource links', '篇附有已审阅的资源关联') + ' ↗</a>' if assets else '') + '</p>',
             '<div class="library-downloads"><a class="button primary" href="' + search_link() + '">' + tr('Search papers', '检索论文') + ' ↗</a>',

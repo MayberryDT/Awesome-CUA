@@ -10,6 +10,7 @@ from unittest import mock
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
 from build_site import build_site
 from search_pages import clean_text, eligible, resource_path, reviewed_times
+from test_search_pages import copy_survey_source_inputs
 
 ROOT=Path(__file__).resolve().parents[1]
 
@@ -47,6 +48,7 @@ class GeneratedWhitespaceTests(unittest.TestCase):
             source=Path(directory)/'source';source.mkdir()
             shutil.copytree(ROOT/'web',source/'web');shutil.copytree(ROOT/'data',source/'data');shutil.copytree(ROOT/'schemas',source/'schemas')
             shutil.copy2(ROOT/'LICENSE',source/'LICENSE');shutil.copy2(ROOT/'AGENTS.md',source/'AGENTS.md')
+            copy_survey_source_inputs(source)
             status_path=source/'data/exclusion-status.json';status=json.loads(status_path.read_text())
             decision=next(d for d in status['decisions'] if d['status']=='excluded');decision.update(name=decision['name']+'  ',reason=reason)
             status_path.write_text(json.dumps(status))
