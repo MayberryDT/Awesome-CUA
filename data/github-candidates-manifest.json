@@ -1,9 +1,10 @@
 {
   "active_catalog_context": {
-    "records": 3175,
+    "records": 3192,
     "role": "Comparison context only; not the observation source, selection, or approval.",
-    "sha256": "dd87ca14e36042ccf95acc78559aa318bc541ba11bb4311c339a9649f24a4118"
+    "sha256": "f62d291f4631005ec735a9e29356f1865a5a34b4e1f10f45292b4ef43df57a6e"
   },
+  "checkpoint_state_sha256": "d1b00677644105fd59cfb6a1a78e0ab07f4f409c479c1472d90c305aebfeed21",
   "count": {
     "unit": "repositories",
     "value": 4933
@@ -62,6 +63,28 @@
         "computer-use"
       ]
     },
+    "current_epoch_id": "epoch:85a6bf871bd9c2425431518a",
+    "epochs": [
+      {
+        "configuration": {
+          "created_after": "2008-01-01",
+          "created_before": "2026-10-18",
+          "topics": [
+            "browser-automation",
+            "computer-use"
+          ]
+        },
+        "created_at": "2026-10-19T19:09:42.152311+00:00",
+        "id": "epoch:85a6bf871bd9c2425431518a",
+        "previous_epoch_id": null,
+        "reason": "v1_migration",
+        "root_query_ids": [
+          "search:923f3ad006b003aaf5f8db90",
+          "search:748fe5abe54623d0df5a3a45"
+        ],
+        "source_state_sha256": "1a831608ce7b1ed6312f93fa689c3182d41dbaa33e0dbe88c2e5410d1c6c4196"
+      }
+    ],
     "global_completeness_established": false,
     "limit": "Bounded observed requests, not an exhaustive GitHub/CUA census. Per-query totals and overlapping shards are not a global union.",
     "queries": [
@@ -76,6 +99,7 @@
         "created_before": "2026-10-18",
         "id": "search:923f3ad006b003aaf5f8db90",
         "kind": "search",
+        "parent_id": null,
         "reported_total": 5313,
         "status": "split",
         "topic": "browser-automation"
@@ -85,6 +109,7 @@
         "created_before": "2026-10-18",
         "id": "search:748fe5abe54623d0df5a3a45",
         "kind": "search",
+        "parent_id": null,
         "reported_total": 1630,
         "status": "split",
         "topic": "computer-use"
@@ -94,6 +119,7 @@
         "created_before": "2017-05-25",
         "id": "search:d13f8547dda51f63832969f9",
         "kind": "search",
+        "parent_id": "search:923f3ad006b003aaf5f8db90",
         "reported_total": 11,
         "status": "observed_pages_exhausted",
         "topic": "browser-automation"
@@ -103,6 +129,7 @@
         "created_before": "2026-10-18",
         "id": "search:7be8ca4e704ca6580d08d36c",
         "kind": "search",
+        "parent_id": "search:923f3ad006b003aaf5f8db90",
         "reported_total": 5302,
         "status": "split",
         "topic": "browser-automation"
@@ -112,6 +139,7 @@
         "created_before": "2017-05-25",
         "id": "search:eee42af3874ac9d6b422b2bc",
         "kind": "search",
+        "parent_id": "search:748fe5abe54623d0df5a3a45",
         "reported_total": 1,
         "status": "observed_pages_exhausted",
         "topic": "computer-use"
@@ -121,6 +149,7 @@
         "created_before": "2026-10-18",
         "id": "search:634ff0f0fe846aee5aa96a01",
         "kind": "search",
+        "parent_id": "search:748fe5abe54623d0df5a3a45",
         "reported_total": 1629,
         "status": "split",
         "topic": "computer-use"
@@ -130,6 +159,7 @@
         "created_before": "2022-02-05",
         "id": "search:db21d3418efb4d5a49c46e80",
         "kind": "search",
+        "parent_id": "search:7be8ca4e704ca6580d08d36c",
         "reported_total": 165,
         "status": "observed_pages_exhausted",
         "topic": "browser-automation"
@@ -139,6 +169,7 @@
         "created_before": "2026-10-18",
         "id": "search:9dba7fecc4e967aed2d9528c",
         "kind": "search",
+        "parent_id": "search:7be8ca4e704ca6580d08d36c",
         "reported_total": 5137,
         "status": "split",
         "topic": "browser-automation"
@@ -148,6 +179,7 @@
         "created_before": "2022-02-05",
         "id": "search:73a839738b8f996954f2675b",
         "kind": "search",
+        "parent_id": "search:634ff0f0fe846aee5aa96a01",
         "reported_total": 2,
         "status": "observed_pages_exhausted",
         "topic": "computer-use"
@@ -157,6 +189,7 @@
         "created_before": "2026-10-18",
         "id": "search:876d14bd029692a137e6b966",
         "kind": "search",
+        "parent_id": "search:634ff0f0fe846aee5aa96a01",
         "reported_total": 1627,
         "status": "split",
         "topic": "computer-use"
@@ -166,6 +199,7 @@
         "created_before": "2024-06-12",
         "id": "search:abfba81090d2f58b631df258",
         "kind": "search",
+        "parent_id": "search:9dba7fecc4e967aed2d9528c",
         "reported_total": 132,
         "status": "observed_pages_exhausted",
         "topic": "browser-automation"
@@ -175,6 +209,7 @@
         "created_before": "2026-10-18",
         "id": "search:b4d2e018b05107be47687dba",
         "kind": "search",
+        "parent_id": "search:9dba7fecc4e967aed2d9528c",
         "reported_total": 5006,
         "status": "split",
         "topic": "browser-automation"
@@ -184,6 +219,7 @@
         "created_before": "2024-06-12",
         "id": "search:5b86538a9641286c19d292ff",
         "kind": "search",
+        "parent_id": "search:876d14bd029692a137e6b966",
         "reported_total": 11,
         "status": "observed_pages_exhausted",
         "topic": "computer-use"
@@ -193,6 +229,7 @@
         "created_before": "2026-10-18",
         "id": "search:06394afee06bb669b70206c4",
         "kind": "search",
+        "parent_id": "search:876d14bd029692a137e6b966",
         "reported_total": 1616,
         "status": "split",
         "topic": "computer-use"
@@ -202,6 +239,7 @@
         "created_before": "2025-08-15",
         "id": "search:74843094fef9879bb382f76f",
         "kind": "search",
+        "parent_id": "search:b4d2e018b05107be47687dba",
         "reported_total": 265,
         "status": "observed_pages_exhausted",
         "topic": "browser-automation"
@@ -211,6 +249,7 @@
         "created_before": "2026-10-18",
         "id": "search:1fcf787c46b4c2749f818972",
         "kind": "search",
+        "parent_id": "search:b4d2e018b05107be47687dba",
         "reported_total": 4741,
         "status": "split",
         "topic": "browser-automation"
@@ -220,6 +259,7 @@
         "created_before": "2025-08-15",
         "id": "search:d1cfe2eb51d63266de6ef79f",
         "kind": "search",
+        "parent_id": "search:06394afee06bb669b70206c4",
         "reported_total": 90,
         "status": "observed_pages_exhausted",
         "topic": "computer-use"
@@ -229,6 +269,7 @@
         "created_before": "2026-10-18",
         "id": "search:2cb3b5995cc07a4466388caf",
         "kind": "search",
+        "parent_id": "search:06394afee06bb669b70206c4",
         "reported_total": 1526,
         "status": "split",
         "topic": "computer-use"
@@ -238,6 +279,7 @@
         "created_before": "2026-03-18",
         "id": "search:cad5f68aa19e89fd141416eb",
         "kind": "search",
+        "parent_id": "search:1fcf787c46b4c2749f818972",
         "reported_total": 804,
         "status": "pending",
         "topic": "browser-automation"
@@ -247,6 +289,7 @@
         "created_before": "2026-10-18",
         "id": "search:1d1af5d9f4e76afe4391d830",
         "kind": "search",
+        "parent_id": "search:1fcf787c46b4c2749f818972",
         "reported_total": 3937,
         "status": "split",
         "topic": "browser-automation"
@@ -256,6 +299,7 @@
         "created_before": "2026-03-18",
         "id": "search:9210df3628b5ec10d968f4c7",
         "kind": "search",
+        "parent_id": "search:2cb3b5995cc07a4466388caf",
         "reported_total": 145,
         "status": "observed_pages_exhausted",
         "topic": "computer-use"
@@ -265,6 +309,7 @@
         "created_before": "2026-10-18",
         "id": "search:b9832a5e4c4dda574131023d",
         "kind": "search",
+        "parent_id": "search:2cb3b5995cc07a4466388caf",
         "reported_total": 1381,
         "status": "split",
         "topic": "computer-use"
@@ -274,6 +319,7 @@
         "created_before": "2026-07-03",
         "id": "search:8c6132a1109bdece66ea6a2c",
         "kind": "search",
+        "parent_id": "search:1d1af5d9f4e76afe4391d830",
         "reported_total": 1385,
         "status": "split",
         "topic": "browser-automation"
@@ -283,6 +329,7 @@
         "created_before": "2026-10-18",
         "id": "search:78f6bb2303aa1e5e17706cec",
         "kind": "search",
+        "parent_id": "search:1d1af5d9f4e76afe4391d830",
         "reported_total": 2552,
         "status": "split",
         "topic": "browser-automation"
@@ -292,6 +339,7 @@
         "created_before": "2026-07-03",
         "id": "search:2a9d9419672dd4eadfc6be6d",
         "kind": "search",
+        "parent_id": "search:b9832a5e4c4dda574131023d",
         "reported_total": 359,
         "status": "observed_pages_exhausted",
         "topic": "computer-use"
@@ -301,6 +349,7 @@
         "created_before": "2026-10-18",
         "id": "search:4a46c8ae62f3554b372f8156",
         "kind": "search",
+        "parent_id": "search:b9832a5e4c4dda574131023d",
         "reported_total": 1022,
         "status": "split",
         "topic": "computer-use"
@@ -310,6 +359,7 @@
         "created_before": "2026-05-11",
         "id": "search:01d3d13c1f5f28222f2b1f14",
         "kind": "search",
+        "parent_id": "search:8c6132a1109bdece66ea6a2c",
         "reported_total": 647,
         "status": "pending",
         "topic": "browser-automation"
@@ -319,6 +369,7 @@
         "created_before": "2026-07-03",
         "id": "search:d0d91d8e69c0bc34770055b3",
         "kind": "search",
+        "parent_id": "search:8c6132a1109bdece66ea6a2c",
         "reported_total": 738,
         "status": "pending",
         "topic": "browser-automation"
@@ -328,6 +379,7 @@
         "created_before": "2026-08-26",
         "id": "search:81e64cf55236719b185be42d",
         "kind": "search",
+        "parent_id": "search:78f6bb2303aa1e5e17706cec",
         "reported_total": 1001,
         "status": "split",
         "topic": "browser-automation"
@@ -337,6 +389,7 @@
         "created_before": "2026-10-18",
         "id": "search:476cfc40f96f091cc2f8cf41",
         "kind": "search",
+        "parent_id": "search:78f6bb2303aa1e5e17706cec",
         "reported_total": 1551,
         "status": "split",
         "topic": "browser-automation"
@@ -346,6 +399,7 @@
         "created_before": "2026-08-26",
         "id": "search:f202fdd5e27878a37e85e182",
         "kind": "search",
+        "parent_id": "search:4a46c8ae62f3554b372f8156",
         "reported_total": 327,
         "status": "observed_pages_exhausted",
         "topic": "computer-use"
@@ -355,6 +409,7 @@
         "created_before": "2026-10-18",
         "id": "search:2da8704d708bbc88a4ce2ef2",
         "kind": "search",
+        "parent_id": "search:4a46c8ae62f3554b372f8156",
         "reported_total": 695,
         "status": "pending",
         "topic": "computer-use"
@@ -364,6 +419,7 @@
         "created_before": "2026-07-30",
         "id": "search:ef3948696830299037cdbbe5",
         "kind": "search",
+        "parent_id": "search:81e64cf55236719b185be42d",
         "reported_total": 448,
         "status": "pending",
         "topic": "browser-automation"
@@ -373,6 +429,7 @@
         "created_before": "2026-08-26",
         "id": "search:cde3c0cbdf6225183f33227e",
         "kind": "search",
+        "parent_id": "search:81e64cf55236719b185be42d",
         "reported_total": 554,
         "status": "pending",
         "topic": "browser-automation"
@@ -382,6 +439,7 @@
         "created_before": "2026-09-22",
         "id": "search:96f11be69b8b72edc47bdd64",
         "kind": "search",
+        "parent_id": "search:476cfc40f96f091cc2f8cf41",
         "reported_total": 659,
         "status": "pending",
         "topic": "browser-automation"
@@ -391,11 +449,13 @@
         "created_before": "2026-10-18",
         "id": "search:9c344409e06858ea430a6e41",
         "kind": "search",
+        "parent_id": "search:476cfc40f96f091cc2f8cf41",
         "reported_total": 893,
         "status": "pending",
         "topic": "browser-automation"
       }
     ],
+    "query_rechecks_count": 0,
     "request_outcomes": {
       "accepted": 79,
       "rate_limited": 1,
@@ -445,5 +505,13 @@
   "schema_version": 1,
   "scope": "candidate-observations",
   "source_ledger_sha256": "c18879ebf150941dcb7c395300d3ab3dbf2349279906dd72f6549c5fdeabfd10",
-  "supporting_primary_bodies": 79
+  "supporting_primary_bodies": 79,
+  "verification": {
+    "baseline_checkpoint_sha256": null,
+    "baseline_observation_sha256": null,
+    "historical_raw_replayed": true,
+    "mode": "full_retained_replay",
+    "primary_bodies_replayed": 79,
+    "successful_receipts_replayed": 79
+  }
 }
