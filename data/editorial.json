@@ -63212,9 +63212,9 @@
           "details.download_url",
           "details.listed_weight_files"
         ],
-        "url": "https://huggingface.co/api/models/Hcompany/Holo4-27B-GGUF",
-        "sha256": "277bbeafac3cc3ece9922bf8dd8302727eab4242e72e970f3471b6dbda8557ab",
-        "retrieved_at": "2026-10-18T16:11:10Z"
+        "url": "https://huggingface.co/api/models/Hcompany/Holo4-27B-GGUF/revision/045834b6864fb5cee8e9c72e47ef4c19140ce932",
+        "sha256": "5828a5282e7379d3712843d35f52f4cd82e2864871cef7d1df3128fdbf934d46",
+        "retrieved_at": "2026-10-19T07:14:36Z"
       },
       {
         "role": "primary",
