@@ -63168,7 +63168,14 @@
     "documented_by": [
       "2407.17490"
     ],
-    "notes": "The card calls this the official dataset repository of the AMEX paper. The full release sits under AMEX/ as element_anno.zip, instruction_anno.zip and a screenshot archive split into eight 10 GiB parts plus a final zip (about 93.5 GB together); a sample/ folder holds one episode's five screenshots with its annotations. The card adds ScreenSpot mobile-subset and AndroidControl results that are not in the arXiv paper; they are publisher figures and were not reproduced. The card does not link the AMEX-codebase training-code repository (github:yuxiangchai/amex-codebase), so no relation to it is recorded. CC-BY-4.0 is the card's data declaration; that repository's Apache-2.0 code license is separate.",
+    "reviewed_relations": [
+      {
+        "type": "component_of",
+        "target_id": "github:yuxiangchai/amex-codebase",
+        "evidence_url": "https://yxchai.com/AMEX/"
+      }
+    ],
+    "notes": "The card calls this the official dataset repository of the AMEX paper. The full release sits under AMEX/ as element_anno.zip, instruction_anno.zip and a screenshot archive split into eight 10 GiB parts plus a final zip (about 93.5 GB together); a sample/ folder holds one episode's five screenshots with its annotations. The card adds ScreenSpot mobile-subset and AndroidControl results that are not in the arXiv paper; they are publisher figures and were not reproduced. The card does not link the AMEX-codebase training-code repository, but the AMEX project page links both this dataset and that repository, which the catalog holds as the AMEX record github:yuxiangchai/amex-codebase; this release is recorded as its component. CC-BY-4.0 is the card's data declaration; that repository's Apache-2.0 code license is separate.",
     "details": {
       "hub_id": "Yuxiang007/AMEX",
       "hub_revision": "17196b29c88dd48a7fb90ef9131bc5c7bf39f26e",
@@ -63281,6 +63288,17 @@
         "url": "https://arxiv.org/abs/2407.17490v1",
         "sha256": "0b19217aee442587ec75e7d691d4645f6d6125e82edf0c08ee5670a1a64ddfd8",
         "retrieved_at": "2026-10-18T15:51:39Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "relations",
+          "notes"
+        ],
+        "url": "https://yxchai.com/AMEX/",
+        "sha256": "4aab61e6a95ab6b6598fb64b8e55d787cd49b5c4f242d15372aed2dd312f97aa",
+        "retrieved_at": "2026-10-19T06:21:55Z"
       }
     ],
     "editorial_reviewed": true,
