@@ -63185,7 +63185,7 @@
     "notes": "Task configurations are in the repository, but their input files (benchmark_task_files.tar.gz) are on Google Drive, and the GroundUI, IDM and success-detection data are fetched from the project page or Hugging Face; those datasets are not separate records here. Google Workspace tasks need the user's own OAuth credentials, and the README warns that agents can take non-reversible actions. The GitHub API and root LICENSE give AGPL-3.0 for the code; task files, datasets and third-party applications are not covered by that declaration.",
     "details": {
       "repository_url": "https://github.com/ltzheng/agent-studio",
-      "repository_tree_sha": "39959e230fecd6651e5700936432861ca7ef7016",
+      "repository_revision": "39959e230fecd6651e5700936432861ca7ef7016",
       "benchmark_protocol": {
         "focus": [
           "single-API, single-GUI and compositional computer tasks",
@@ -63209,7 +63209,7 @@
             "qualifier": "exact",
             "population": "eval_online_benchmarks/tasks",
             "basis": "reported",
-            "evidence_url": "https://raw.githubusercontent.com/ltzheng/agent-studio/HEAD/eval_online_benchmarks/README.md"
+            "evidence_url": "https://raw.githubusercontent.com/ltzheng/agent-studio/39959e230fecd6651e5700936432861ca7ef7016/eval_online_benchmarks/README.md"
           },
           {
             "value": 95,
@@ -63217,7 +63217,7 @@
             "qualifier": "exact",
             "population": "eval_online_benchmarks/tasks/single_gui",
             "basis": "computed",
-            "evidence_url": "https://api.github.com/repos/ltzheng/agent-studio/git/trees/main?recursive=1"
+            "evidence_url": "https://api.github.com/repos/ltzheng/agent-studio/git/trees/39959e230fecd6651e5700936432861ca7ef7016?recursive=1"
           },
           {
             "value": 50,
@@ -63225,7 +63225,7 @@
             "qualifier": "exact",
             "population": "eval_online_benchmarks/tasks/single_api",
             "basis": "computed",
-            "evidence_url": "https://api.github.com/repos/ltzheng/agent-studio/git/trees/main?recursive=1"
+            "evidence_url": "https://api.github.com/repos/ltzheng/agent-studio/git/trees/39959e230fecd6651e5700936432861ca7ef7016?recursive=1"
           },
           {
             "value": 60,
@@ -63233,15 +63233,15 @@
             "qualifier": "exact",
             "population": "eval_online_benchmarks/tasks/compositional",
             "basis": "computed",
-            "evidence_url": "https://api.github.com/repos/ltzheng/agent-studio/git/trees/main?recursive=1"
+            "evidence_url": "https://api.github.com/repos/ltzheng/agent-studio/git/trees/39959e230fecd6651e5700936432861ca7ef7016?recursive=1"
           }
         ],
         "notes": "Computed counts are task JSON files per folder in the inspected tree; they sum to the reported 205. Single-GUI tasks cover VS Code, GIMP, OS and Google Docs, Sheets and Slides; single-API tasks cover OS, Gmail, Google Calendar and Google Docs. Record the task folder, model, step limit and whether --remote Docker mode was used with any score.",
         "evidence_urls": [
-          "https://raw.githubusercontent.com/ltzheng/agent-studio/HEAD/eval_online_benchmarks/README.md",
-          "https://api.github.com/repos/ltzheng/agent-studio/git/trees/main?recursive=1",
-          "https://raw.githubusercontent.com/ltzheng/agent-studio/HEAD/agent_studio/agent/direct_agent.py",
-          "https://raw.githubusercontent.com/ltzheng/agent-studio/HEAD/eval_agent_desiderata/README.md"
+          "https://raw.githubusercontent.com/ltzheng/agent-studio/39959e230fecd6651e5700936432861ca7ef7016/eval_online_benchmarks/README.md",
+          "https://api.github.com/repos/ltzheng/agent-studio/git/trees/39959e230fecd6651e5700936432861ca7ef7016?recursive=1",
+          "https://raw.githubusercontent.com/ltzheng/agent-studio/39959e230fecd6651e5700936432861ca7ef7016/agent_studio/agent/direct_agent.py",
+          "https://raw.githubusercontent.com/ltzheng/agent-studio/39959e230fecd6651e5700936432861ca7ef7016/eval_agent_desiderata/README.md"
         ]
       }
     },
@@ -63263,10 +63263,10 @@
         "supports": [
           "identity",
           "release_status",
-          "details.repository_tree_sha",
+          "details.repository_revision",
           "details.benchmark_protocol"
         ],
-        "url": "https://api.github.com/repos/ltzheng/agent-studio/git/trees/main?recursive=1",
+        "url": "https://api.github.com/repos/ltzheng/agent-studio/git/trees/39959e230fecd6651e5700936432861ca7ef7016?recursive=1",
         "sha256": "230ca1800ba7949f754b93935643009970eca0aa0b708b473b7857b4c2f9adba",
         "retrieved_at": "2026-10-18T11:50:06Z"
       },
@@ -63278,7 +63278,7 @@
           "notes",
           "details.benchmark_protocol"
         ],
-        "url": "https://raw.githubusercontent.com/ltzheng/agent-studio/HEAD/eval_online_benchmarks/README.md",
+        "url": "https://raw.githubusercontent.com/ltzheng/agent-studio/39959e230fecd6651e5700936432861ca7ef7016/eval_online_benchmarks/README.md",
         "sha256": "c608fc0c42ae92f66e9ef91c1b9d8c461143bb9865d0d852ac96cab0b607ef41",
         "retrieved_at": "2026-10-18T11:50:07Z"
       },
@@ -63290,7 +63290,7 @@
           "notes",
           "details.benchmark_protocol"
         ],
-        "url": "https://raw.githubusercontent.com/ltzheng/agent-studio/HEAD/eval_agent_desiderata/README.md",
+        "url": "https://raw.githubusercontent.com/ltzheng/agent-studio/39959e230fecd6651e5700936432861ca7ef7016/eval_agent_desiderata/README.md",
         "sha256": "1f2b513c700b31a1bacd023a54c6d4cadac9e02092e526d42c32103cb476c359",
         "retrieved_at": "2026-10-18T11:50:07Z"
       },
@@ -63301,7 +63301,7 @@
           "summary",
           "details.benchmark_protocol"
         ],
-        "url": "https://raw.githubusercontent.com/ltzheng/agent-studio/HEAD/agent_studio/agent/direct_agent.py",
+        "url": "https://raw.githubusercontent.com/ltzheng/agent-studio/39959e230fecd6651e5700936432861ca7ef7016/agent_studio/agent/direct_agent.py",
         "sha256": "508ab4171c56e8b9a7523185adfbc768b73e8c3366af71cb0c70598380705501",
         "retrieved_at": "2026-10-18T11:50:07Z"
       },
@@ -63311,7 +63311,7 @@
         "supports": [
           "licenses.code"
         ],
-        "url": "https://raw.githubusercontent.com/ltzheng/agent-studio/HEAD/LICENSE",
+        "url": "https://raw.githubusercontent.com/ltzheng/agent-studio/39959e230fecd6651e5700936432861ca7ef7016/LICENSE",
         "sha256": "8486a10c4393cee1c25392769ddd3b2d6c242d6ec7928e1414efff7dfb2f07ef",
         "retrieved_at": "2026-10-18T11:50:07Z"
       }
@@ -63320,13 +63320,13 @@
       "code": {
         "value": {
           "declared": "AGPL-3.0",
-          "url": "https://raw.githubusercontent.com/ltzheng/agent-studio/HEAD/LICENSE",
+          "url": "https://raw.githubusercontent.com/ltzheng/agent-studio/39959e230fecd6651e5700936432861ca7ef7016/LICENSE",
           "retrieved_at": "2026-10-18T11:50:07Z",
           "basis": "Reviewed repository license declaration for code; task input files, GroundUI and trajectory datasets, Docker images and third-party applications are separate. The inspected text does not establish -only versus -or-later for the project."
         },
         "reason": "Reviewed repository license declaration for code; task input files, GroundUI and trajectory datasets, Docker images and third-party applications are separate. The inspected text does not establish -only versus -or-later for the project.",
         "evidence_urls": [
-          "https://raw.githubusercontent.com/ltzheng/agent-studio/HEAD/LICENSE"
+          "https://raw.githubusercontent.com/ltzheng/agent-studio/39959e230fecd6651e5700936432861ca7ef7016/LICENSE"
         ]
       }
     },
