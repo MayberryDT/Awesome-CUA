@@ -20,7 +20,7 @@ All entries in this section: web.
 
 | Resource | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- |
-| [Fara1.5-9B](https://huggingface.co/microsoft/Fara1.5-9B) | [2606.20785](https://arxiv.org/abs/2606.20785) (2026) | weights MIT | 9B Fara1.5 browser-use checkpoint fine-tuned from Qwen3.5-9B on FaraGen1.5 trajectories; reads screenshots, emits coordinate-grounded tool calls and pauses at critical points for the user. | [✓ 2026‑10‑18](https://huggingface.co/microsoft/Fara1.5-9B/raw/1a93677cd89d5601bc2ed759791e981f3a520032/README.md) |
+| [Fara1.5-9B](https://huggingface.co/microsoft/Fara1.5-9B) | [2606.20785](https://arxiv.org/abs/2606.20785) (2026) | weights MIT | 9B Fara1.5 browser-use checkpoint fine-tuned from Qwen3.5-9B on FaraGen1.5 trajectories; reads screenshots, emits coordinate-grounded tool calls and pauses at critical points for the user. | [✓ 2026‑10‑19](https://huggingface.co/microsoft/Fara1.5-9B/raw/1a93677cd89d5601bc2ed759791e981f3a520032/README.md) |
 
 ## Agents
 

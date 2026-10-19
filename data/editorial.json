@@ -63206,9 +63206,9 @@
     },
     "additional_evidence": [
       {
-        "url": "https://huggingface.co/api/models/microsoft/Fara1.5-9B",
-        "sha256": "024011c55923e63ce6ebb8903e24d01ad8245f3c3ffe4baa4811e027e2f94dae",
-        "retrieved_at": "2026-10-18T16:16:18Z",
+        "url": "https://huggingface.co/api/models/microsoft/Fara1.5-9B/revision/1a93677cd89d5601bc2ed759791e981f3a520032",
+        "sha256": "9c9ec98bab2a920fec9d44928d79d0a903fc0861edf88808528ef0291e5e1b79",
+        "retrieved_at": "2026-10-19T07:15:58Z",
         "role": "primary",
         "method": "editorial_primary_review",
         "supports": [
