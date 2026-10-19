@@ -10469,10 +10469,20 @@
         ],
         "formats": [],
         "splits": [],
-        "counts": [],
-        "notes": "Coordinates were resized for a specified Qwen2.5-VL image processor and must remain aligned with image resizing. AGUVIS++ material requires images from upstream AGUVIS and OS-Atlas releases; this repository is not a self-contained copy of every referenced image collection.",
+        "counts": [
+          {
+            "value": 4000000,
+            "unit": "examples",
+            "qualifier": "approximately",
+            "population": "Jedi dataset as stated in the arXiv 2505.13227v3 abstract",
+            "basis": "reported",
+            "evidence_url": "https://arxiv.org/abs/2505.13227v3"
+          }
+        ],
+        "notes": "Coordinates were resized for a specified Qwen2.5-VL image processor and must remain aligned with image resizing. AGUVIS++ material requires images from upstream AGUVIS and OS-Atlas releases; this repository is not a self-contained copy of every referenced image collection. The 4 million figure is the abstract's statement; no row total of this repository's JSONL files was computed.",
         "evidence_urls": [
-          "https://huggingface.co/datasets/xlangai/Jedi/raw/main/README.md"
+          "https://huggingface.co/datasets/xlangai/Jedi/raw/main/README.md",
+          "https://arxiv.org/abs/2505.13227v3"
         ]
       }
     },
@@ -10486,6 +10496,16 @@
         "url": "https://huggingface.co/datasets/xlangai/Jedi/raw/main/README.md",
         "sha256": "1d4d15c0cd27837602d55f0fda1ed91d9e8a98b33b3e3c4ba64decae42399558",
         "retrieved_at": "2026-10-17T02:02:38Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.dataset_profile"
+        ],
+        "url": "https://arxiv.org/abs/2505.13227v3",
+        "sha256": "eb56b020839f34a0e4664c602420595aeb20387879dd0f005685c64103558a8f",
+        "retrieved_at": "2026-10-18T16:21:27Z"
       }
     ]
   },
