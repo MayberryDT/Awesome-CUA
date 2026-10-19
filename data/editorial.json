@@ -63269,15 +63269,15 @@
         "notes": "The card metadata gives split sizes for the desktop and web configurations only; the mobile configuration's sizes appear only as the prose figure of 10.5K. The prose figures for desktop (16.6K) and web (10.2K) differ slightly from the metadata split totals (16,488 and 10,086). Each element carries a name, five intents and center/size coordinates; the card reports an average of 54 annotated elements per image. Annotations are LLM-generated and were not human-verified by this review.",
         "evidence_urls": [
           "https://huggingface.co/datasets/allenai/MolmoPoint-GUISyn/raw/24bb3e990bb1e48796d80ade9dbc858dda695e75/README.md",
-          "https://huggingface.co/api/datasets/allenai/MolmoPoint-GUISyn"
+          "https://huggingface.co/api/datasets/allenai/MolmoPoint-GUISyn/revision/24bb3e990bb1e48796d80ade9dbc858dda695e75"
         ]
       }
     },
     "additional_evidence": [
       {
-        "url": "https://huggingface.co/api/datasets/allenai/MolmoPoint-GUISyn",
+        "url": "https://huggingface.co/api/datasets/allenai/MolmoPoint-GUISyn/revision/24bb3e990bb1e48796d80ade9dbc858dda695e75",
         "sha256": "df47b9fad1bfd4ec67013263cd4bfe1be0a32e3f303f2e13be068ac81bdc4101",
-        "retrieved_at": "2026-10-18T12:03:37Z",
+        "retrieved_at": "2026-10-19T06:17:16Z",
         "role": "primary",
         "method": "editorial_primary_review",
         "supports": [
