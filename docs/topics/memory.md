@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-162 source-reviewed resources tagged `memory`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+164 source-reviewed resources tagged `memory`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (2)](#datasets) · [Agents (8)](#agents) · [Frameworks (7)](#frameworks) · [Surveys (2)](#surveys) · [Papers (142)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (2)](#datasets) · [Agents (8)](#agents) · [Frameworks (8)](#frameworks) · [Surveys (2)](#surveys) · [Papers (143)](#papers)
 
 ## Benchmarks
 
@@ -38,6 +38,7 @@ All entries in this section: ios.
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
+| [Agent Skill Induction (ASI)](https://github.com/zorazrw/agent-skill-induction) | web | [2504.06821](https://arxiv.org/abs/2504.06821) (2025) | code CC-BY-SA-4.0 | Official code for agent skill induction on WebArena: an LLM judge checks each trajectory, successful episodes become Python skill functions, and skills join the action space only after generated tests pass. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/zorazrw/agent-skill-induction/HEAD/README.md) |
 | [Agent Workflow Memory implementation](https://github.com/zorazrw/agent-workflow-memory) | web | [2409.07429](https://arxiv.org/abs/2409.07429) (2024) | code Apache-2.0 | Research code that extracts reusable browser-task routines from demonstrations or prior executions, stores them as workflow memory and reuses them during subsequent navigation. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/zorazrw/agent-workflow-memory/HEAD/README.md) |
 | [AgentProg](https://github.com/MobileLLM/AgentProg) | android | [2512.10371](https://arxiv.org/abs/2512.10371) (2025) | code Apache-2.0 | Android GUI-agent framework that keeps long-running task context in structured programs, variables and control flow, with a CLI and AndroidWorld integration. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/MobileLLM/AgentProg/HEAD/README.md) |
 | [AndroTMem inference and evaluation code](https://github.com/CVC2233/AndroTMem) | android | [2603.18429](https://arxiv.org/abs/2603.18429) (2026) | code MIT | A public Android GUI evaluation framework with action-history, summary and anchored-memory prompt modes, plus step-action and dependency-aware task scoring. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/CVC2233/AndroTMem/HEAD/README.md) |
@@ -175,6 +176,7 @@ All entries in this section: ios.
 | 2025‑05‑22 | [GUI-explorer: Autonomous Exploration and Mining of Transition-aware Knowledge for GUI Agent](https://arxiv.org/abs/2505.16827) | android | GUI-explorer generates exploration goals from screenshots and interface structure, then mines observation-action-outcome triples for app-specific transition knowledge. The resulting training-free agent uses this knowledge during mobile task execution, evaluated on SPA-Bench and AndroidWorld. |
 | 2025‑05‑16 | [Creating General User Models from Computer Use](https://arxiv.org/abs/2505.10831) | unspecified | Proposes general user models that turn computer-use observations into confidence-weighted propositions and revise them as new context arrives. Demonstrations use this memory to contextualize assistants, manage notifications, and support proactive actions across apps. |
 | 2025‑04‑18 | [LearnAct: Few-Shot Mobile GUI Agent with a Unified Demonstration Benchmark](https://arxiv.org/abs/2504.13805) | unspecified | LearnAct parses human demonstrations into reusable knowledge, retrieves relevant examples, and uses them during mobile GUI task execution. The accompanying LearnGUI benchmark includes 2,252 offline tasks and 101 online tasks for studying adaptation from demonstrations. |
+| 2025‑04‑09 | [Inducing Programmatic Skills for Agentic Tasks](https://arxiv.org/abs/2504.06821) | web | Proposes agent skill induction, in which web agents induce, verify and reuse program-based skills online; evaluated on WebArena, including skill transfer across websites. |
 | 2025‑03‑26 | [ScreenLLM: Stateful Screen Schema for Efficient Action Understanding and Prediction](https://arxiv.org/abs/2503.20978) | cross-platform | Represents interface interactions with a stateful screen schema to model user behavior and support action understanding and prediction. |
 | 2025‑03‑12 | [COLA: A Scalable Multi-Agent Framework For Windows UI Task Automation](https://arxiv.org/abs/2503.09263) | desktop, windows | Coordinates specialized Windows UI agents with dynamic task scheduling, shared memory, and human-triggered rollback for recovering from errors. |
 | 2025‑03‑04 | [AppAgentX: Evolving GUI Agents as Proficient Smartphone Users](https://arxiv.org/abs/2503.02268) | android | Records interaction history and converts repeated action sequences into reusable high-level shortcuts for mobile GUI tasks. |

@@ -1,7 +1,7 @@
 {
-  "as_of_utc": "2026-10-18T13:06:20.028238+00:00",
-  "total_records": 3175,
-  "curated_records": 1614,
+  "as_of_utc": "2026-10-18T16:20:42Z",
+  "total_records": 3176,
+  "curated_records": 1616,
   "bibliographic_records": 2715,
   "arxiv_active_records": 2702,
   "non_arxiv_bibliographic_records": 13,
@@ -9,7 +9,7 @@
   "arxiv_archive_records": 2838,
   "excluded_records": 136,
   "exclusion_revalidation_pending": 0,
-  "metadata_only_records": 1561,
+  "metadata_only_records": 1560,
   "discovery_identifiers": 4239,
   "unindexed_candidates": 905,
   "non_resource_candidates": 97,
@@ -190,7 +190,7 @@
     "benchmark": 88,
     "company": 16,
     "dataset": 86,
-    "framework": 75,
+    "framework": 76,
     "infrastructure": 14,
     "model": 98,
     "paper": 2697,
@@ -207,7 +207,7 @@
     "linux": 49,
     "macos": 30,
     "unspecified": 377,
-    "web": 621,
+    "web": 623,
     "windows": 63
   },
   "curated_by_kind_and_environment": {
@@ -256,7 +256,7 @@
       "linux": 6,
       "macos": 1,
       "unspecified": 2,
-      "web": 37,
+      "web": 38,
       "windows": 2
     },
     "infrastructure": {
@@ -288,7 +288,7 @@
       "linux": 18,
       "macos": 14,
       "unspecified": 341,
-      "web": 441,
+      "web": 442,
       "windows": 37
     },
     "product": {
@@ -317,7 +317,7 @@
     }
   },
   "license_declarations_by_scope": {
-    "code": 182,
+    "code": 183,
     "data": 61,
     "weights": 56,
     "document": 0

@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-110 source-reviewed resources tagged `workflow`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+112 source-reviewed resources tagged `workflow`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (6)](#benchmarks) · [Datasets (2)](#datasets) · [Agents (7)](#agents) · [Frameworks (8)](#frameworks) · [Products (7)](#products) · [Surveys (1)](#surveys) · [Papers (79)](#papers)
+**Contents:** [Benchmarks (6)](#benchmarks) · [Datasets (2)](#datasets) · [Agents (7)](#agents) · [Frameworks (9)](#frameworks) · [Products (7)](#products) · [Surveys (1)](#surveys) · [Papers (80)](#papers)
 
 ## Benchmarks
 
@@ -40,6 +40,7 @@
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
+| [Agent Skill Induction (ASI)](https://github.com/zorazrw/agent-skill-induction) | web | [2504.06821](https://arxiv.org/abs/2504.06821) (2025) | code CC-BY-SA-4.0 | Official code for agent skill induction on WebArena: an LLM judge checks each trajectory, successful episodes become Python skill functions, and skills join the action space only after generated tests pass. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/zorazrw/agent-skill-induction/HEAD/README.md) |
 | [Agent Workflow Memory implementation](https://github.com/zorazrw/agent-workflow-memory) | web | [2409.07429](https://arxiv.org/abs/2409.07429) (2024) | code Apache-2.0 | Research code that extracts reusable browser-task routines from demonstrations or prior executions, stores them as workflow memory and reuses them during subsequent navigation. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/zorazrw/agent-workflow-memory/HEAD/README.md) |
 | [CHOP](https://github.com/Yuqi-Zhou/CHOP) | android, harmonyos | [2503.03743](https://arxiv.org/abs/2503.03743) (2025) | code MIT | Mobile automation framework that uses reusable basis subtasks to constrain and refine planning between user goals and executable actions. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/Yuqi-Zhou/CHOP/HEAD/README.md) |
 | [Computer Use OOTB](https://github.com/showlab/computer_use_ootb) | desktop | [2411.10323](https://arxiv.org/abs/2411.10323) (2024) | code Apache-2.0 | Gradio desktop GUI agent for Windows and macOS that needs no Docker, using Claude 3.5 Computer Use over the API or ShowUI and UI-TARS run locally, with multi-display and phone remote control. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/showlab/computer_use_ootb/HEAD/README.md) |
@@ -133,6 +134,7 @@ All entries in this section: cross-platform.
 | 2025‑06‑04 | [macOSWorld: A Multilingual Interactive Benchmark for GUI Agents](https://arxiv.org/abs/2506.04135) | macos, desktop | macOSWorld provides 202 interactive tasks across 30 applications, with instructions and operating-system interfaces in five languages. It evaluates GUI agents on macOS workflows and includes a separate subset for deception-attack testing. |
 | 2025‑05‑28 | [WorkForceAgent-R1: Incentivizing Reasoning Capability in LLM-based Web Agents via Reinforcement Learning](https://arxiv.org/abs/2505.22942) | web | Uses rule-based rewards for output structure and action correctness to train reasoning for enterprise web navigation. |
 | 2025‑05‑26 | [ScienceBoard: Evaluating Multimodal Autonomous Agents in Realistic Scientific Workflows](https://arxiv.org/abs/2505.19897) | desktop | ScienceBoard combines an interactive environment with professional scientific software and 169 human-curated tasks in areas including biochemistry, astronomy, and geoinformatics. It evaluates computer-use agents on visually rich research workflows and analyzes their execution limitations. |
+| 2025‑04‑09 | [Inducing Programmatic Skills for Agentic Tasks](https://arxiv.org/abs/2504.06821) | web | Proposes agent skill induction, in which web agents induce, verify and reuse program-based skills online; evaluated on WebArena, including skill transfer across websites. |
 | 2025‑02‑24 | [Towards Enterprise-Ready Computer Using Generalist Agent](https://arxiv.org/abs/2503.01861) | web | Describes the CUGA enterprise-agent development process, emphasizing iterative evaluation, failure analysis, and refinement on software-task benchmarks. |
 | 2024‑12‑18 | [TheAgentCompany: Benchmarking LLM Agents on Consequential Real World Tasks](https://arxiv.org/abs/2412.14161) | web, desktop | Simulates a software-company workplace to evaluate agents on professional tasks involving websites, programs, files, and coworker communication. |
 | 2024‑11‑22 | [ScribeAgent: Towards Specialized Web Agents Using Production-Scale Workflow Data](https://arxiv.org/abs/2411.15004) | web | Studies fine-tuning open language models on production web-workflow traces, including training choices for specialized web agents. |

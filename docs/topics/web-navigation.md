@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-292 source-reviewed resources tagged `web-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+294 source-reviewed resources tagged `web-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (17)](#benchmarks) · [Datasets (8)](#datasets) · [Models (11)](#models) · [Agents (9)](#agents) · [Frameworks (23)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (2)](#infrastructure) · [Products (8)](#products) · [Surveys (2)](#surveys) · [Papers (209)](#papers)
+**Contents:** [Benchmarks (17)](#benchmarks) · [Datasets (8)](#datasets) · [Models (11)](#models) · [Agents (9)](#agents) · [Frameworks (24)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (2)](#infrastructure) · [Products (8)](#products) · [Surveys (2)](#surveys) · [Papers (210)](#papers)
 
 ## Benchmarks
 
@@ -85,6 +85,7 @@ All entries in this section: web.
 
 | Resource | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- |
+| [Agent Skill Induction (ASI)](https://github.com/zorazrw/agent-skill-induction) | [2504.06821](https://arxiv.org/abs/2504.06821) (2025) | code CC-BY-SA-4.0 | Official code for agent skill induction on WebArena: an LLM judge checks each trajectory, successful episodes become Python skill functions, and skills join the action space only after generated tests pass. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/zorazrw/agent-skill-induction/HEAD/README.md) |
 | [Agent Workflow Memory implementation](https://github.com/zorazrw/agent-workflow-memory) | [2409.07429](https://arxiv.org/abs/2409.07429) (2024) | code Apache-2.0 | Research code that extracts reusable browser-task routines from demonstrations or prior executions, stores them as workflow memory and reuses them during subsequent navigation. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/zorazrw/agent-workflow-memory/HEAD/README.md) |
 | [Agent-R](https://github.com/ByteDance-Seed/Agent-R) | [2501.11425](https://arxiv.org/abs/2501.11425) (2025) | code Apache-2.0 | Trajectory collection and revision utilities that use tree search and model-guided critique to train agents to recover from mistakes, including WebShop tasks. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/ByteDance-Seed/Agent-R/HEAD/README.md) |
 | [Browser Use](https://github.com/browser-use/browser-use) | — | code MIT | Open-source browser agent library that runs locally with any LLM against a local or cloud browser, and also serves as a CLI for coding agents and as a driver for Claude's browser toolset. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/browser-use/browser-use/HEAD/README.md) |
@@ -287,6 +288,7 @@ All entries in this section: web.
 | 2025‑04‑22 | [WASP: Benchmarking Web Agent Security Against Prompt Injection Attacks](https://arxiv.org/abs/2504.18575) | web | Introduces WASP, an end-to-end benchmark for prompt-injection security in web agents. Its evaluation separates partial attack progress from completion of the attacker’s full objective. |
 | 2025‑04‑16 | [WebRollback: Enhancing Web Agents with Explicit Rollback Mechanisms](https://arxiv.org/abs/2504.11788) | web | WebRollback gives a web agent an explicit action for returning to an earlier state in its navigation trajectory. It studies this recovery mechanism on two live web-navigation benchmarks under both zero-shot and fine-tuned settings. |
 | 2025‑04‑11 | [AgentRewardBench: Evaluating Automatic Evaluations of Web Agent Trajectories](https://arxiv.org/abs/2504.08942) | web | AgentRewardBench evaluates automated web-agent judges against expert reviews of 1,302 trajectories from five benchmarks. The annotations cover completion, side effects, and repetition, enabling comparison of LLM judges and rule-based task evaluators. |
+| 2025‑04‑09 | [Inducing Programmatic Skills for Agentic Tasks](https://arxiv.org/abs/2504.06821) | web | Proposes agent skill induction, in which web agents induce, verify and reuse program-based skills online; evaluated on WebArena, including skill transfer across websites. |
 | 2025‑04‑09 | [SkillWeaver: Web Agents can Self-Improve by Discovering and Honing Skills](https://arxiv.org/abs/2504.07079) | web | SkillWeaver explores websites, practices interactions, and converts the resulting experience into a reusable library of callable skill APIs. Its WebArena and live-website experiments examine skill refinement, composition, and transfer from stronger agents to weaker ones. |
 | 2025‑04‑02 | [An Illusion of Progress? Assessing the Current State of Web Agents](https://arxiv.org/abs/2504.01382) | web | Introduces Online-Mind2Web, with 300 tasks across 136 live websites, and examines how benchmark design affects assessments of web agents. It also develops an LLM judge for task completion and compares its judgments with human evaluation. |
 | 2025‑04‑02 | [Are Autonomous Web Agents Good Testers?](https://arxiv.org/abs/2504.01495) | web | Adapts web agents to execute natural-language test steps, verify assertions, and issue test verdicts. The study introduces 113 passing and failing test cases across three offline web applications and compares two agent implementations with qualitative failure analysis. |
