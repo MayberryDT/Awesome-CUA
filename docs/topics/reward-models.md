@@ -36,7 +36,7 @@
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
-| [SEAgent](https://github.com/SunzeY/SEAgent) | desktop | [2508.04700](https://arxiv.org/abs/2508.04700) (2025) | — | Training code for SEAgent: a UI-TARS actor explores OSWorld software, a world-state model judges its screenshot trajectories, a curriculum generator writes harder tasks, and SFT and GRPO update the actor. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/SunzeY/SEAgent/HEAD/README.md) |
+| [SEAgent](https://github.com/SunzeY/SEAgent) | desktop | [2508.04700](https://arxiv.org/abs/2508.04700) (2025) | — | Training code for SEAgent: a UI-TARS actor explores OSWorld software, a world-state model judges its screenshot trajectories, a curriculum generator writes harder tasks, and SFT and GRPO update the actor. | [✓ 2026‑10‑19](https://raw.githubusercontent.com/SunzeY/SEAgent/HEAD/README.md) |
 | [UI-Genie](https://github.com/Euphoria16/UI-Genie) | android | [2505.21496](https://arxiv.org/abs/2505.21496) (2025) | — | Training and evaluation code for a mobile-agent framework that iteratively generates trajectories using agent and reward-model feedback. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/Euphoria16/UI-Genie/HEAD/README.md) |
 | [VEM GUI-Agent-RL](https://github.com/microsoft/GUI-Agent-RL) | android | [2502.18906](https://arxiv.org/abs/2502.18906) (2025) | code MIT | Training code that learns a value environment model from offline Android interaction data and uses its frozen value estimates to guide GUI policy optimization. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/microsoft/GUI-Agent-RL/HEAD/README.md) |
 

@@ -63196,7 +63196,7 @@
         ]
       },
       {
-        "url": "https://api.github.com/repos/SunzeY/SEAgent/git/trees/main?recursive=1",
+        "url": "https://api.github.com/repos/SunzeY/SEAgent/git/trees/c8887f157352494953b3317047929cf81465defa?recursive=1",
         "sha256": "2b8fb0f69ca1dd1e5f8318b7d664cb4842d349a47d3bf01bb3f196e36514c8df",
         "retrieved_at": "2026-10-18T12:22:57Z",
         "role": "primary",
@@ -63261,7 +63261,7 @@
         "reason": "The repository has no root license file. Its README shows an Apache-2.0 code badge and a CC BY-NC 4.0 data badge, but its notice says the data and code are licensed for research use only and names Attribution-NonCommercial 4.0 International. The bundled OSWorld and R1-V licenses cover only those directories. The project code license stays unresolved.",
         "evidence_urls": [
           "https://raw.githubusercontent.com/SunzeY/SEAgent/c8887f157352494953b3317047929cf81465defa/README.md",
-          "https://api.github.com/repos/SunzeY/SEAgent/git/trees/main?recursive=1"
+          "https://api.github.com/repos/SunzeY/SEAgent/git/trees/c8887f157352494953b3317047929cf81465defa?recursive=1"
         ]
       }
     },
