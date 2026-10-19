@@ -63187,7 +63187,7 @@
           "summary",
           "notes"
         ],
-        "url": "https://raw.githubusercontent.com/milind-soni/tiptour-macos/HEAD/docs/tiptour-agent-contract.md",
+        "url": "https://raw.githubusercontent.com/milind-soni/tiptour-macos/c1d2731766ba21160b9b9f7d5178c3ad3bb5e055/docs/tiptour-agent-contract.md",
         "sha256": "b2e40abe98520eb948e07f7b3f01c5a1f33c50c988bcb447ce1708519299ba76",
         "retrieved_at": "2026-10-18T11:57:48Z"
       },
@@ -63198,7 +63198,7 @@
           "summary",
           "notes"
         ],
-        "url": "https://raw.githubusercontent.com/milind-soni/tiptour-macos/HEAD/TipTour/Jev/JevClient.swift",
+        "url": "https://raw.githubusercontent.com/milind-soni/tiptour-macos/c1d2731766ba21160b9b9f7d5178c3ad3bb5e055/TipTour/Jev/JevClient.swift",
         "sha256": "0739dc4d312a7d8e9d217c499a7ab3ee11e1b538f14edd6419f18508ecbcad08",
         "retrieved_at": "2026-10-18T11:57:48Z"
       },
@@ -63209,7 +63209,7 @@
           "licenses.code",
           "notes"
         ],
-        "url": "https://raw.githubusercontent.com/milind-soni/tiptour-macos/HEAD/LICENSE",
+        "url": "https://raw.githubusercontent.com/milind-soni/tiptour-macos/c1d2731766ba21160b9b9f7d5178c3ad3bb5e055/LICENSE",
         "sha256": "edcf5cfca262f2e2cf30a2e7564c11e147492d175b5c5ad2175cd350cf853ad6",
         "retrieved_at": "2026-10-18T11:57:47Z"
       }

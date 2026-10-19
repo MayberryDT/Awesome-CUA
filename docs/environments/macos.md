@@ -36,7 +36,7 @@
 | --- | --- | --- | --- | --- | --- |
 | [PC-Agent (X-PLUG component)](https://github.com/X-PLUG/MobileAgent/tree/main/PC-Agent) | desktop, windows, macos | [2502.14282](https://arxiv.org/abs/2502.14282) (2025) | code MIT | Multi-agent desktop automation component for Windows and macOS, combining active perception, task decomposition and reflection for workflows spanning applications. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/X-PLUG/MobileAgent/HEAD/PC-Agent/README.md) |
 | [ShowUI-Aloha](https://github.com/showlab/ShowUI-Aloha) | desktop, windows, macos | [2601.07181](https://arxiv.org/abs/2601.07181) (2026) | code Apache-2.0 | Desktop agent that records demonstrations, derives semantic action traces, and uses them to plan and execute related workflows. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/showlab/ShowUI-Aloha/HEAD/README.md) |
-| [TipTour](https://github.com/milind-soni/tiptour-macos) | desktop, macos | — | code MIT | macOS menu-bar agent that grounds clicks with a local Core ML control detector and accessibility tree, driven by TypeSafe's JEV text loop or Gemini realtime voice, with a localhost harness for other agents. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/milind-soni/tiptour-macos/HEAD/README.md) |
+| [TipTour](https://github.com/milind-soni/tiptour-macos) | desktop, macos | — | code MIT | macOS menu-bar agent that grounds clicks with a local Core ML control detector and accessibility tree, driven by TypeSafe's JEV text loop or Gemini realtime voice, with a localhost harness for other agents. | [✓ 2026‑10‑19](https://raw.githubusercontent.com/milind-soni/tiptour-macos/HEAD/README.md) |
 
 ## Frameworks
 

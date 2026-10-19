@@ -135,7 +135,7 @@
 | --- | --- | --- | --- | --- | --- |
 | [SeeAct](https://github.com/OSU-NLP-Group/SeeAct) | web | [2401.01614](https://arxiv.org/abs/2401.01614) (2024) | — | Generalist web agent framework for large multimodal models such as GPT-4V, with a Playwright tool that runs agents on live websites, text-choice and set-of-mark grounding, and a crawler mode. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/OSU-NLP-Group/SeeAct/HEAD/README.md) |
 | [Self Operating Computer](https://github.com/OthersideAI/self-operating-computer) | desktop | — | code MIT | Framework, released in November 2023, in which a multimodal model views the screen and picks mouse and keyboard actions toward a goal, with backends such as GPT-4o, Claude 3, Gemini and LLaVA. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/OthersideAI/self-operating-computer/HEAD/README.md) |
-| [TipTour](https://github.com/milind-soni/tiptour-macos) | desktop, macos | — | code MIT | macOS menu-bar agent that grounds clicks with a local Core ML control detector and accessibility tree, driven by TypeSafe's JEV text loop or Gemini realtime voice, with a localhost harness for other agents. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/milind-soni/tiptour-macos/HEAD/README.md) |
+| [TipTour](https://github.com/milind-soni/tiptour-macos) | desktop, macos | — | code MIT | macOS menu-bar agent that grounds clicks with a local Core ML control detector and accessibility tree, driven by TypeSafe's JEV text loop or Gemini realtime voice, with a localhost harness for other agents. | [✓ 2026‑10‑19](https://raw.githubusercontent.com/milind-soni/tiptour-macos/HEAD/README.md) |
 
 ## Frameworks
 
