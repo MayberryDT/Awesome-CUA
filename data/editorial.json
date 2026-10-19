@@ -63157,11 +63157,11 @@
       "tool-integration"
     ],
     "scope": "core",
-    "summary": "Chromium patch set with a built-in assistant extension whose browser agent sees indexed page elements and a screenshot with numbered boxes, then clicks, types, scrolls and switches tabs by index.",
+    "summary": "Chromium patch set with a built-in assistant extension whose browser agent sees indexed page elements and a screenshot with numbered boxes, then clicks and types by element index, scrolls and switches tabs.",
     "verify_terms": [
       "OpenBrowser"
     ],
-    "notes": "Three parts: chromium/ holds a patch list, branding assets and scripts that rebrand a separately checked-out Chromium source tree and load the assistant as a built-in component extension in a side panel (no prebuilt browser is released); chromium-extension/ is that assistant (sidebar chat, options, background agent); packages/core is the TypeScript agent library with planning, replanning, a chat agent, MCP clients, memory compression and web search. Its browser agent injects a DOM-tree script that indexes clickable elements as pseudo-HTML and, in the default normal mode with draw marking, sends a viewport capture with the indexed boxes drawn on it; tools navigate, click, type, scroll, hover, select options, extract page content and switch tabs, and the extension executes them through chrome.tabs, chrome.scripting and chrome.debugger. Models are configured with the user's own API keys. Root LICENSE is MIT. Not a fork, not archived. Code was read, not run.",
+    "notes": "Three parts: chromium/ holds a patch list and scripts that rebrand a separately checked-out Chromium source tree with the root branding_assets/ and load the assistant as a built-in component extension in a side panel (no prebuilt browser is released); chromium-extension/ is that assistant (sidebar chat, options, background agent); packages/core is the TypeScript agent library with planning, replanning, a chat agent, MCP clients, memory compression and web search. Its browser agent injects a DOM-tree script that indexes clickable elements as pseudo-HTML and, in the default normal mode with draw marking, sends a viewport capture with the indexed boxes drawn on it; tools navigate, click, type, scroll, hover, select options, extract page content and switch tabs, and the extension executes them through chrome.tabs, chrome.scripting and chrome.debugger. Models are configured with the user's own API keys. Root LICENSE is MIT. Not a fork, not archived. Code was read, not run.",
     "evidence_urls": [
       "https://raw.githubusercontent.com/OpenBrowserAI/openbrowser/HEAD/README.md"
     ],
