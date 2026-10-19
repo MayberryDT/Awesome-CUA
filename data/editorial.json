@@ -63179,9 +63179,9 @@
           "details.repository_revision",
           "licenses.code"
         ],
-        "url": "https://github.com/AliSharjeell/OpenBUA/tree/bc2c9b490291647a00946267e470efe3bf0cfd89",
-        "sha256": "f7f895990ed10183836b94f6524e31395ec240eac96f72e3e3dfbfba7a810e5e",
-        "retrieved_at": "2026-10-18T15:59:44Z"
+        "url": "https://api.github.com/repos/AliSharjeell/OpenBUA/git/trees/bc2c9b490291647a00946267e470efe3bf0cfd89?recursive=1",
+        "sha256": "04481a6b01ee0386e3cd559cb42400af037941b5f1eb665e572e7a00ee9f3ce4",
+        "retrieved_at": "2026-10-19T06:11:55Z"
       },
       {
         "role": "primary",
@@ -63265,7 +63265,7 @@
         "reason": "The README's closing License section says MIT, but the inspected tree at the reviewed commit has no license file, so no source-license grant is recorded.",
         "evidence_urls": [
           "https://raw.githubusercontent.com/AliSharjeell/OpenBUA/HEAD/README.md",
-          "https://github.com/AliSharjeell/OpenBUA/tree/bc2c9b490291647a00946267e470efe3bf0cfd89"
+          "https://api.github.com/repos/AliSharjeell/OpenBUA/git/trees/bc2c9b490291647a00946267e470efe3bf0cfd89?recursive=1"
         ]
       }
     },
