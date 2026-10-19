@@ -88,7 +88,8 @@ class SiteSearchActionTests(unittest.TestCase):
 
     def test_every_html_page_links_the_opensearch_description(self):
         pages = json.loads((self.dest / "data/search-manifest.json").read_text())["pages"]
-        paths = [item["path"] for item in pages] + ["/404.html"]
+        # The survey page is a frozen bundle copied byte-for-byte and checked against its SHA-256, so it carries no site chrome.
+        paths = [item["path"] for item in pages if item["path"] != "/survey/"] + ["/404.html"]
         for path in paths:
             target = self.dest / path.lstrip("/")
             if path.endswith("/"): target = target / "index.html"
