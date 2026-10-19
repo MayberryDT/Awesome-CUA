@@ -55,7 +55,7 @@ All entries in this section: web.
 
 | Resource | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- |
-| [Web Agent Protocol (WAP)](https://github.com/OTA-Tech-AI/web-agent-protocol) | — | code MIT | Records browser sessions with a Chrome extension and turns them into exact or LLM-condensed smart replay lists, replays them with a bundled Browser Use agent, and converts recordings into MCP servers. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/OTA-Tech-AI/web-agent-protocol/HEAD/README.md) |
+| [Web Agent Protocol (WAP)](https://github.com/OTA-Tech-AI/web-agent-protocol) | — | code MIT | Records browser sessions with a Chrome extension and turns them into exact or LLM-condensed smart replay lists, replays them with a bundled Browser Use agent, and converts recordings into MCP servers. | [✓ 2026‑10‑19](https://raw.githubusercontent.com/OTA-Tech-AI/web-agent-protocol/HEAD/README.md) |
 
 ## Products
 

@@ -538,5 +538,32 @@
         "sha256": "bb64c7fc1b5d88fc070e919516a51eefac4acb89e86773464cfa0b3de18f1898"
       }
     ]
+  },
+  {
+    "alias_id": "github:ota-tech-ai/webagentprotocol",
+    "target_id": "github:ota-tech-ai/web-agent-protocol",
+    "repository_id": 985409238,
+    "basis": "official_github_repository_id",
+    "reviewed_at": "2026-10-19T06:14:00Z",
+    "observations": [
+      {
+        "url": "https://api.github.com/repos/OTA-Tech-AI/webagentprotocol",
+        "resolved_url": "https://api.github.com/repositories/985409238",
+        "repository_id": 985409238,
+        "full_name": "OTA-Tech-AI/web-agent-protocol",
+        "html_url": "https://github.com/OTA-Tech-AI/web-agent-protocol",
+        "retrieved_at": "2026-10-19T06:13:02Z",
+        "sha256": "035e5ff978b7c604f7f95ee0bd8bc682278153961e72e0eb5f0f059922456d1e"
+      },
+      {
+        "url": "https://api.github.com/repos/OTA-Tech-AI/web-agent-protocol",
+        "resolved_url": "https://api.github.com/repos/OTA-Tech-AI/web-agent-protocol",
+        "repository_id": 985409238,
+        "full_name": "OTA-Tech-AI/web-agent-protocol",
+        "html_url": "https://github.com/OTA-Tech-AI/web-agent-protocol",
+        "retrieved_at": "2026-10-19T06:13:03Z",
+        "sha256": "035e5ff978b7c604f7f95ee0bd8bc682278153961e72e0eb5f0f059922456d1e"
+      }
+    ]
   }
 ]

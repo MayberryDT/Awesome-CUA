@@ -63165,7 +63165,7 @@
     "evidence_urls": [
       "https://raw.githubusercontent.com/OTA-Tech-AI/web-agent-protocol/HEAD/README.md"
     ],
-    "notes": "The repository bundles a modified copy of the browser_use package with WAP replay prompts, and run_replay.py drives its Agent. Smart-replay and subgoal generation call OpenAI or DeepSeek models. A desktop WAP Replay Tool is published as release wap-replay-tool-1.0.0 (2025-06-01). README badges link the former name OTA-Tech-AI/webagentprotocol, which returns the same GitHub repository ID 985409238. No commits after 2025-06-19. The 'protocol' is the repository's own event and replay-list format, not an external standard. Code was read, not run.",
+    "notes": "The repository bundles a modified copy of the browser_use package with WAP replay prompts, and run_replay.py drives its Agent. Smart-replay and subgoal generation call OpenAI or DeepSeek models. A desktop WAP Replay Tool is published as release wap-replay-tool-1.0.0 (2025-06-01). The README's license badge and extension links use the former name OTA-Tech-AI/webagentprotocol, which the GitHub API resolves to the same repository ID 985409238. The last commit, eacb1659, is dated 2025-06-03. The 'protocol' is the repository's own event and replay-list format, not an external standard. Code was read, not run.",
     "details": {
       "availability": "Public source with sample recordings, replay lists and a generated MCP server; a desktop replay tool on GitHub releases",
       "license_components_note": "Root LICENSE is MIT; chrome-extension/ carries its own GPL-3.0 LICENSE; the bundled browser_use directory is a modified copy of Browser Use."
@@ -63189,7 +63189,7 @@
           "notes",
           "relations"
         ],
-        "url": "https://raw.githubusercontent.com/OTA-Tech-AI/web-agent-protocol/HEAD/run_replay.py",
+        "url": "https://raw.githubusercontent.com/OTA-Tech-AI/web-agent-protocol/eacb165955519bacdc2bd2496301565e55b0ed02/run_replay.py",
         "sha256": "ac7d3fe5a618f6797f629b98b8c7cefffea76d3b5edfeaa1402cd5c55365b543",
         "retrieved_at": "2026-10-18T12:04:56Z"
       },
@@ -63199,7 +63199,7 @@
         "supports": [
           "details.license_components_note"
         ],
-        "url": "https://raw.githubusercontent.com/OTA-Tech-AI/web-agent-protocol/HEAD/chrome-extension/LICENSE",
+        "url": "https://raw.githubusercontent.com/OTA-Tech-AI/web-agent-protocol/eacb165955519bacdc2bd2496301565e55b0ed02/chrome-extension/LICENSE",
         "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
         "retrieved_at": "2026-10-18T12:04:56Z"
       },
@@ -63210,7 +63210,7 @@
           "licenses.code",
           "details.license_components_note"
         ],
-        "url": "https://raw.githubusercontent.com/OTA-Tech-AI/web-agent-protocol/HEAD/LICENSE",
+        "url": "https://raw.githubusercontent.com/OTA-Tech-AI/web-agent-protocol/eacb165955519bacdc2bd2496301565e55b0ed02/LICENSE",
         "sha256": "973074762df5c06e2b24aaaf0daeea2288f4744b78fbc7b5b6f45308a72ea54e",
         "retrieved_at": "2026-10-18T12:04:56Z"
       }
@@ -63219,7 +63219,7 @@
       {
         "type": "uses",
         "target_id": "github:browser-use/browser-use",
-        "evidence_url": "https://raw.githubusercontent.com/OTA-Tech-AI/web-agent-protocol/HEAD/run_replay.py"
+        "evidence_url": "https://raw.githubusercontent.com/OTA-Tech-AI/web-agent-protocol/eacb165955519bacdc2bd2496301565e55b0ed02/run_replay.py"
       }
     ],
     "editorial_reviewed": true,
