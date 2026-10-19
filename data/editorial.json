@@ -63177,22 +63177,12 @@
         "method": "editorial_primary_review",
         "supports": [
           "notes",
-          "details.repository_revision"
-        ],
-        "url": "https://github.com/AI-XiaoDao/ai-browser-mcp/tree/16e9a580a00671a35ba2b07d1d2a594aff63d2da",
-        "sha256": "3cbb1813ab0ffa06f0a01fb5e453170e9314094118a68c76ac43a4060f083312",
-        "retrieved_at": "2026-10-18T16:12:55Z"
-      },
-      {
-        "role": "primary",
-        "method": "editorial_primary_review",
-        "supports": [
-          "notes",
+          "details.repository_revision",
           "details.availability"
         ],
-        "url": "https://github.com/AI-XiaoDao/ai-browser-mcp/tree/16e9a580a00671a35ba2b07d1d2a594aff63d2da/CEFbro/AI-Fbowser-Mcp/src",
-        "sha256": "d06a7e23b91f574d38db15df94f571f7ff6dd7ec583015c8ad9a566804a4a94f",
-        "retrieved_at": "2026-10-18T16:12:57Z"
+        "url": "https://api.github.com/repos/AI-XiaoDao/ai-browser-mcp/git/trees/16e9a580a00671a35ba2b07d1d2a594aff63d2da?recursive=1",
+        "sha256": "22a0afe37870f37b50a1220273e5e3c92f08a779ae8831c5aa66acbe07d6c1cf",
+        "retrieved_at": "2026-10-19T07:17:10Z"
       },
       {
         "role": "primary",

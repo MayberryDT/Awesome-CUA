@@ -55,7 +55,7 @@ All entries in this section: web.
 
 | Resource | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- |
-| [AI Browser MCP Server (AI-XiaoDao)](https://github.com/AI-XiaoDao/ai-browser-mcp) | — | code MIT | Windows MCP server embedding a CEF browser: agents read an indexed snapshot of interactive elements, act by index or selector, fill forms, send input and call CDP, alongside scraping and fingerprint-spoofing tools. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/AI-XiaoDao/ai-browser-mcp/HEAD/README.md) |
+| [AI Browser MCP Server (AI-XiaoDao)](https://github.com/AI-XiaoDao/ai-browser-mcp) | — | code MIT | Windows MCP server embedding a CEF browser: agents read an indexed snapshot of interactive elements, act by index or selector, fill forms, send input and call CDP, alongside scraping and fingerprint-spoofing tools. | [✓ 2026‑10‑19](https://raw.githubusercontent.com/AI-XiaoDao/ai-browser-mcp/HEAD/README.md) |
 
 ## Products
 
