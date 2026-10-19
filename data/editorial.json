@@ -63165,10 +63165,8 @@
       "Bardeen.ai",
       "Bardeen AI"
     ],
-    "notes": "The site footer names Bardeen Inc. as the operator. The homepage now markets the product for lead sourcing, enrichment with contact data and LLM-based lead qualification, with exports to CSV, Google Sheets, Airtable and Notion; enrichment and qualification are not GUI actions. The scraper page describes an AI builder that navigates a page to produce a scraper template, an agent mode that works through a list of websites toward a stated goal, click and input actions, pagination, background scraping in a separate browser window and running on the user's own machine without shared passwords. The support page calls Bardeen a Chrome extension whose automations can run locally in the browser or in the cloud. Which models drive the agents, reliability, pricing terms and the SOC 2, GDPR and CASA claims are publisher statements and were not independently tested.",
+    "notes": "The site footer names Bardeen Inc. as the operator, and the homepage links plans at https://www.bardeen.ai/pricing. The homepage now markets the product for lead sourcing, enrichment with contact data and LLM-based lead qualification, with exports to CSV, Google Sheets, Airtable and Notion; enrichment and qualification are not GUI actions. The scraper page describes an AI builder that navigates a page to produce a scraper template, an agent mode that works through a list of websites toward a stated goal, click and input actions, pagination, background scraping in a separate browser window and running on the user's own machine without shared passwords. The support page calls Bardeen a Chrome extension whose automations can run locally in the browser or in the cloud. Which models drive the agents, reliability, pricing terms and the SOC 2, GDPR and CASA claims are publisher statements and were not independently tested.",
     "details": {
-      "access": "publisher-managed",
-      "pricing_url": "https://www.bardeen.ai/pricing",
       "availability": "not independently tested"
     },
     "additional_evidence": [
