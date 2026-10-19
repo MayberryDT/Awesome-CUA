@@ -5,6 +5,7 @@ Stale-page removal and old-manifest path containment are covered in test_clean_b
 import collections
 import contextlib
 import io
+import json
 from pathlib import Path
 import shutil
 import sys
@@ -101,6 +102,9 @@ class PreparePublicationTests(unittest.TestCase):
         readme = self.readme_counts(self.rows)
         self.assertIn('Evidence snapshot: 2026-10-16T02:00:00Z.', readme)
         self.assertIn(CLONE_COMMAND, readme)
+        schedule=json.loads((self.root / 'data/scan-config.json').read_text())
+        self.assertIn('Discovery is scheduled three times daily at '+', '.join(schedule['scan_times_local'])+' '+schedule['timezone'], readme)
+        self.assertIn('This website rebuilds at '+', '.join(schedule['publish_times_local'])+' '+schedule['timezone'], readme)
         reading = readme.split('## Research reading list\n', 1)[1].split('\n## ', 1)[0]
         self.assertEqual([line for line in reading.splitlines() if line.startswith('- ')],
                          [f'- [{self.reviewed["name"]}]({SITE}{resource_path(self.reviewed)}) — {self.reviewed["summary"]} [Original paper]({self.reviewed["url"]}).'])
@@ -120,7 +124,7 @@ class PreparePublicationTests(unittest.TestCase):
         self.assertIn(f'![Live catalog counts]({SITE}/badges/catalog.svg)', text)
         self.assertNotIn('resource records**', text)
         self.assertIn(f'```sh\n{CLONE_COMMAND}\n```', text)
-        self.assertTrue(text.endswith(f'[Twice-daily scan status]({SITE}/updates/) · [Source and contribution workflow](https://github.com/reacher-z/Awesome-CUA)\n'))
+        self.assertTrue(text.endswith(f'[Scan status · 3 runs daily]({SITE}/updates/) · [Source and contribution workflow](https://github.com/reacher-z/Awesome-CUA)\n'))
         self.assertIn('updated public README/profile', output)
         self.prepare('--profile-dir', str(profile))
         self.assertEqual((profile / 'profile/README.md').read_text(), text)
