@@ -63214,9 +63214,9 @@
           "details.download_url",
           "details.listed_weight_files"
         ],
-        "url": "https://huggingface.co/api/models/OS-Copilot/OS-Genesis-8B-AC",
+        "url": "https://huggingface.co/api/models/OS-Copilot/OS-Genesis-8B-AC/revision/23c57d2ddd6104166f6831b538938d610e1ac14a",
         "sha256": "c437af293184a7482df050a54eb1766d89b437661cf77984d9b7f2006f6bcfed",
-        "retrieved_at": "2026-10-18T15:47:34Z"
+        "retrieved_at": "2026-10-19T06:17:56Z"
       },
       {
         "role": "primary",
