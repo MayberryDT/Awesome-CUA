@@ -1,11 +1,11 @@
 # Coverage and quality ledger
 
-Evidence snapshot through **2026-10-19T15:37:15Z**. Generated from committed source receipts.
+Evidence snapshot through **2026-10-19T21:04:13Z**. Generated from committed source receipts.
 
-- 3,192 resource records: 1,627 curated; 1,565 bibliographic metadata only.
-- 2,732 paper and survey records, including 2,719 arXiv identities and 13 publisher-only identities. This count overlaps the status counts above.
-- 2,855 retained arXiv metadata records; 136 explicit scope exclusions are outside the active catalog.
-- 4,243 discovery identifiers; 905 remain unresolved after accounting for scope exclusions and for 97 reviewed non-resource links and 36 other addresses of indexed resources, which stay in the review queue with their reasons.
+- 3,193 resource records: 1,627 curated; 1,566 bibliographic metadata only.
+- 2,733 paper and survey records, including 2,720 arXiv identities and 13 publisher-only identities. This count overlaps the status counts above.
+- 2,856 retained arXiv metadata records; 136 explicit scope exclusions are outside the active catalog.
+- 4,244 discovery identifiers; 905 remain unresolved after accounting for scope exclusions and for 97 reviewed non-resource links and 36 other addresses of indexed resources, which stay in the review queue with their reasons.
 - 24 editorial proposals await verification or review.
 
 These are distinct resource identifiers, not distinct research projects. Papers, repositories, datasets, products, and publisher entities have different grains.
@@ -91,7 +91,7 @@ The denominator is the normalized identifiers extracted from each fetched docume
 
 ## Paper-discovery query coverage
 
-Latest pass: 2026-10-19T15:37:15Z; **32/32** query windows succeeded. 1,493 distinct identifiers; 1 new to the candidate queue.
+Latest pass: 2026-10-19T21:04:13Z; **32/32** query windows succeeded. 1,493 distinct identifiers; 1 new to the candidate queue.
 
 These are ranked search windows, not a field-wide denominator. New identifiers still require primary metadata verification and relevance review.
 
