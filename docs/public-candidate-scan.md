@@ -1,9 +1,10 @@
 # Public GitHub candidate metadata scans
 
-This optional, standalone scanner fetches public repository metadata for existing
-discovery candidates and precise GUI/browser automation topics. It is not yet a
-phase of `scripts/scan.py` or a scheduled workflow. Python 3.11+ and the standard
-library are sufficient; it does not read credentials or require an account.
+This scanner fetches public repository metadata for existing discovery candidates
+and precise GUI/browser automation topics. It can run standalone;
+`scripts/scan_candidate_stage.py` also provides a bounded scan phase when enabled
+in the scan configuration. Python 3.11+ and the standard library are sufficient;
+it does not read credentials or require an account.
 
 ```sh
 # One bounded pilot: at most ten actual, unauthenticated HTTP GETs.
@@ -38,8 +39,10 @@ Every record has `metadata_status: primary_metadata_observed`,
 `review_status: candidate` and `scope: relevance_pending`. It is not an active
 catalog record. Descriptions and tags are publisher metadata, not independently
 verified capabilities. No license, release availability, paper relation or
-editorial approval is inferred. This scanner does not edit `data/`, rebuild the
-catalog, publish files, or execute downloaded code.
+editorial approval is inferred. The standalone scanner does not edit `data/`,
+rebuild the catalog, publish files, or execute downloaded code. The scheduled
+coordinator can adopt a separately validated, sanitized observation snapshot
+after the catalog build succeeds.
 
 ## Inputs and priorities
 
@@ -213,4 +216,106 @@ operator’s retained ledger and raw cache.
 
 ```sh
 .venv/bin/python -B -m unittest discover -s tests -p 'test_candidate_exports.py' -v
+```
+
+## Durable progress across fresh checkouts
+
+Scheduled continuation uses a bound three-file snapshot:
+
+- `data/github-candidates.jsonl` contains sanitized public observations.
+- `data/github-candidates-manifest.json` describes that observation population,
+  its input fingerprints and the current catalog comparison context.
+- `data/github-candidate-progress.json` contains only operational configuration,
+  input/query/epoch cursors, run summaries and request receipts. It has no
+  repository records or descriptions, owner/contact objects, headers, or raw
+  API bodies. Its contract is
+  [`github-candidate-progress.schema.json`](../schemas/github-candidate-progress.schema.json).
+
+The checkpoint hashes the exact observation and manifest bytes. The manifest
+also binds the checkpoint's state digest, without creating a circular file hash.
+`state_sha256` hashes UTF-8 JSON with sorted keys, compact comma/colon separators,
+unescaped Unicode and one trailing newline. This differs from an epoch migration's
+`source_state_sha256`, which uses the scanner's canonical JSON without a trailing
+newline, and from `source_ledger_sha256`, which hashes the exact ledger file bytes.
+A missing checkpoint, changed binding, invalid cursor/history, or incomplete
+triplet stops continuation before a request. A fresh checkout must not silently
+re-bootstrap from an old mutable URL or assume that an ignored raw cache exists.
+
+The coordinator copies the three validated files into an ignored per-run staging
+area. `candidate_state.prepare_runtime` reconstructs the scanner's runtime ledger
+there from public observations and the sanitized checkpoint. Previously omitted
+source descriptions remain null, with their public omission annotations retained.
+Only newly successful response bodies need to be retained for this invocation.
+`finalize_runtime` verifies those bytes and their exact accepted metadata, preserves
+all old receipt/run history, and keeps unchanged observation lines byte-for-byte.
+It rejects an update that removes old observations or changes their historical
+provenance. Strict scheduled scanning quarantines a mixed or rejected response
+without adding even its otherwise-public rows to the durable population.
+
+The public manifest states the verification mode explicitly:
+
+- `full_retained_replay` means the producer re-read all retained successful primary
+  response bodies for the selected frozen ledger.
+- `incremental_retained_replay` means the producer trusted a fingerprint-bound,
+  validated prior public triplet and replayed only this invocation's new successful
+  responses. It records the baseline observation/checkpoint hashes and replay
+  counts, and sets `historical_raw_replayed` to false. Its `source_ledger_sha256`
+  identifies the reconstructed runtime ledger, not a claim to have re-read all
+  historical network bodies.
+
+A completed partial or rate-limited round may retain verified progress with its
+explicit gaps and cooldown. A crash, missing terminal result, invalid new evidence,
+or unfinished round cannot replace the durable snapshot. The child writes only
+its staging area; the parent verifies its round-bound receipt and triplet, waits
+for the catalog build to succeed, and uses `publish_snapshot` with the original
+three file hashes as a compare-and-swap precondition. Only the manifest's catalog
+comparison context is rebound to the final catalog bytes; observation bytes and
+historical input fingerprints remain separate. Raised replacement failures roll
+back the three prior files. This is not a claim that three filesystem renames are
+one crash-atomic operation: workflow validation and the final Git commit remain
+the durable publication boundary, and an incomplete local triplet fails closed.
+
+Scanner v2 records explicit query epochs. Approved topic additions keep old roots
+and cursors and backfill new topics from the original historical lower bound.
+The production configuration names nine allowlisted topics: `android-automation`,
+`browser-agent`, `browser-agents`, `browser-automation`, `computer-use`,
+`desktop-automation`, `gui-agent`, `gui-agents`, and `gui-automation`. Expanding the
+two-topic bootstrap therefore adds seven full historical backfills, rather than
+starting those topics only at the current date.
+
+Daily continuation starts only after the current topic trees are reconciled. Its
+inclusive lower bound is the preceding epoch's upper date, giving a recorded
+one-day overlap. Each scheduled invocation may reopen at most two traversals in
+`partial_results` or `partial_api_window` from page one, retaining the prior cursor
+and receipt boundary instead of deleting observations or counting old IDs toward
+the new traversal. A `blocked_single_day_window` is not reopened automatically: it
+requires a separately reviewed partition strategy. Public
+manifests expose epoch history and the recheck count; unresolved query statuses
+remain visible even when the ordinary pending counter is zero. None of these
+states establishes global completeness or CUA relevance.
+
+### One-time offline bootstrap
+
+An operator who has the original frozen ledger and successful raw cache can
+prepare the initial checkpoint explicitly. This operation first replays the raw
+evidence and requires the result to match the already reviewed public observation
+bytes exactly. It writes a reviewable proposal to the specified output directory:
+
+```sh
+python3 -S scripts/candidate_state.py \
+  --ledger .cache/candidate-scan/frozen-round.json \
+  --raw-dir .cache/candidate-scan/raw \
+  --public-dir data \
+  --catalog data/catalog.jsonl \
+  --output-dir .cache/candidate-bootstrap/public
+```
+
+Review and adopt only that sanitized triplet. Keep the frozen original ledger,
+raw responses and earlier export artifacts unchanged in ignored local storage.
+Scheduled jobs never perform this bootstrap automatically. The checkpoint is
+operational source state, not an additional resource, a normal RAG corpus, or
+an SEO resource page.
+
+```sh
+.venv/bin/python -B -m unittest discover -s tests -p 'test_candidate_state.py' -v
 ```

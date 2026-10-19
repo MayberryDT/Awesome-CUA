@@ -343,6 +343,17 @@
                         "type": "null"
                       }
                     ]
+                  },
+                  "parent_id": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "pattern": "^(search:[0-9a-f]{24}|existing:[0-9a-f]{64})$"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
                   }
                 },
                 "additionalProperties": false
@@ -419,6 +430,10 @@
             "malformed_response": {
               "type": "integer",
               "minimum": 0
+            },
+            "quarantined": {
+              "type": "integer",
+              "minimum": 0
             }
           },
           "additionalProperties": false
@@ -428,9 +443,38 @@
         },
         "limit": {
           "const": "Bounded observed requests, not an exhaustive GitHub/CUA census. Per-query totals and overlapping shards are not a global union."
+        },
+        "epochs": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/epoch"
+          }
+        },
+        "current_epoch_id": {
+          "type": "string",
+          "pattern": "^epoch:[0-9a-f]{24}$"
+        },
+        "query_rechecks_count": {
+          "type": "integer",
+          "minimum": 0
         }
       },
-      "additionalProperties": false
+      "additionalProperties": false,
+      "dependentRequired": {
+        "epochs": [
+          "current_epoch_id",
+          "query_rechecks_count"
+        ],
+        "current_epoch_id": [
+          "epochs",
+          "query_rechecks_count"
+        ],
+        "query_rechecks_count": [
+          "epochs",
+          "current_epoch_id"
+        ]
+      }
     },
     "active_catalog_context": {
       "type": "object",
@@ -581,7 +625,180 @@
     },
     "manifest_schema": {
       "const": "/schemas/github-candidate-observation-manifest.schema.json"
+    },
+    "verification": {
+      "type": "object",
+      "required": [
+        "mode",
+        "historical_raw_replayed",
+        "baseline_observation_sha256",
+        "baseline_checkpoint_sha256",
+        "successful_receipts_replayed",
+        "primary_bodies_replayed"
+      ],
+      "properties": {
+        "mode": {
+          "enum": [
+            "full_retained_replay",
+            "incremental_retained_replay"
+          ]
+        },
+        "historical_raw_replayed": {
+          "type": "boolean"
+        },
+        "baseline_observation_sha256": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "baseline_checkpoint_sha256": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "successful_receipts_replayed": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "primary_bodies_replayed": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "additionalProperties": false
+    },
+    "checkpoint_state_sha256": {
+      "anyOf": [
+        {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        {
+          "type": "null"
+        }
+      ]
     }
   },
-  "additionalProperties": false
+  "additionalProperties": false,
+  "dependentRequired": {
+    "verification": [
+      "checkpoint_state_sha256"
+    ],
+    "checkpoint_state_sha256": [
+      "verification"
+    ]
+  },
+  "$defs": {
+    "epoch": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "configuration",
+        "root_query_ids",
+        "created_at",
+        "reason",
+        "previous_epoch_id",
+        "source_state_sha256"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^epoch:[0-9a-f]{24}$"
+        },
+        "configuration": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "topics",
+            "created_after",
+            "created_before"
+          ],
+          "properties": {
+            "topics": {
+              "type": "array",
+              "minItems": 1,
+              "uniqueItems": true,
+              "items": {
+                "enum": [
+                  "computer-use",
+                  "gui-agent",
+                  "gui-agents",
+                  "gui-automation",
+                  "desktop-automation",
+                  "browser-agent",
+                  "browser-agents",
+                  "browser-automation",
+                  "android-automation"
+                ]
+              }
+            },
+            "created_after": {
+              "type": "string",
+              "format": "date"
+            },
+            "created_before": {
+              "type": "string",
+              "format": "date"
+            }
+          }
+        },
+        "root_query_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^search:[0-9a-f]{24}$"
+          }
+        },
+        "created_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "reason": {
+          "enum": [
+            "initial",
+            "v1_migration",
+            "topic_expansion",
+            "daily_continuation"
+          ]
+        },
+        "previous_epoch_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^epoch:[0-9a-f]{24}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "source_state_sha256": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    }
+  }
 }

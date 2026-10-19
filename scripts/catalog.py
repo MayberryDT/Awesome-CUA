@@ -75,6 +75,43 @@ def write_jsonl(path, rows):
     atomic_write(path, "".join(json.dumps(r, ensure_ascii=False, sort_keys=True) + "\n" for r in sorted(rows, key=lambda r: r["id"])).encode())
 
 
+def validate_candidate_snapshot(data_dir=None, *, require_checkpoint=False):
+    """Validate durable candidate inputs without equating them with active records.
+
+    A historical optional pair remains valid with automation disabled. Once a
+    checkpoint exists, or scheduled continuation is enabled, all three bound
+    files are required even after a deferred or failed candidate phase.
+    """
+    data_dir = Path(data_dir) if data_dir is not None else DATA
+    config = read_json(data_dir / 'scan-config.json', {})
+    if (not isinstance(config, dict) or type(config.get('github_candidates_enabled', False)) is not bool
+            or type(require_checkpoint) is not bool):
+        raise ValueError('Invalid candidate automation configuration')
+    # Imports are local: the candidate producer itself imports catalog helpers.
+    import candidate_state
+    import export_candidates
+    from scan_github_candidates import strict_json
+    checkpoint = data_dir / candidate_state.PROGRESS_FILE
+    required = (require_checkpoint or config.get('github_candidates_enabled', False)
+                or checkpoint.exists() or checkpoint.is_symlink())
+    if required:
+        snapshot = candidate_state.load_snapshot(data_dir)
+        return {'mode': 'resumable_triplet', 'required': True,
+                'files': snapshot.fingerprints, 'repositories': len(snapshot.records)}
+    present = [(data_dir / name).exists() or (data_dir / name).is_symlink()
+               for name in export_candidates.FILES]
+    if any(present):
+        if not all(present):
+            raise ValueError('Optional candidate observations require both public files')
+        bodies = {name: export_candidates.file_bytes(export_candidates.public_file(data_dir, name))
+                  for name in export_candidates.FILES}
+        rows = export_candidates.validate_candidate_export(bodies[export_candidates.RECORD_FILE],
+            strict_json(bodies[export_candidates.MANIFEST_FILE]))
+        return {'mode': 'optional_pair', 'required': False, 'repositories': len(rows),
+                'files': {name: hashlib.sha256(body).hexdigest() for name, body in bodies.items()}}
+    return {'mode': 'absent', 'required': False, 'repositories': 0, 'files': {}}
+
+
 def atomic_write(path, data):
     """Replace path through a flushed same-directory temporary, so a kill or full disk leaves the old file whole."""
     path.parent.mkdir(parents=True, exist_ok=True)
