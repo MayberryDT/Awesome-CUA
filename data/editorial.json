@@ -2766,9 +2766,145 @@
         "supports": [
           "notes"
         ]
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://arxiv.org/html/2506.07672v1",
+        "sha256": "f64464b1516369a87f0fbe28828e32ff61687dae4ce063aedddd8bd45a7d40eb",
+        "retrieved_at": "2026-10-18T16:12:04Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/SAAgent/MCPWorld/12396eb911c8ed9cf78fde72c15fe7b8a947f6de/computer-use-demo/computer_use_demo/loop.py",
+        "sha256": "7ec6c1bd22102d7fddfa9929ec784fc3fcb90354bec721c0ba26d2fa29ef4743",
+        "retrieved_at": "2026-10-18T16:12:06Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/SAAgent/MCPWorld/12396eb911c8ed9cf78fde72c15fe7b8a947f6de/computer-use-demo/computer_use_demo/tools/groups.py",
+        "sha256": "19fffc30b8d7fb409ac827d0781ae14652a47f8689d55c05dd8a27c6ebe0bbbc",
+        "retrieved_at": "2026-10-18T16:19:37Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/SAAgent/PC-Canary/7b219cae84d6cb45a27f056550ba5994ef4356d7/tests/tasks/telegram/task01_search/config.json",
+        "sha256": "292115e5d77f6fb14994e46f1a307cb09be8cc3d295a50ecda47efd5ff6bce9c",
+        "retrieved_at": "2026-10-18T16:12:07Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/SAAgent/PC-Canary/7b219cae84d6cb45a27f056550ba5994ef4356d7/tests/tasks/telegram/task01_search/handler.py",
+        "sha256": "a57c4bd64a1effc8f63004d4793829b660cee5586c9bd6c0af050a334831779d",
+        "retrieved_at": "2026-10-18T16:12:07Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://api.github.com/repos/SAAgent/MCPWorld/git/trees/12396eb911c8ed9cf78fde72c15fe7b8a947f6de",
+        "sha256": "1fc06a2d59cbacab681e78f9dc9726d2a7ff522a91d4bd2148abb7a814fec3d8",
+        "retrieved_at": "2026-10-18T16:20:23Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://api.github.com/repos/SAAgent/PC-Canary/git/trees/7b219cae84d6cb45a27f056550ba5994ef4356d7?recursive=1",
+        "sha256": "f7073df0978b6fddeb421ecd07ad45a7ff868100ef29c117e892cdd6a04f2f90",
+        "retrieved_at": "2026-10-18T16:20:23Z"
       }
     ],
-    "notes": "The retained paper reports 201 tasks, whereas the retained repository README describes approximately 170. These are separate source descriptions; their release/version difference has not been established."
+    "notes": "The retained paper reports 201 tasks, whereas the retained repository README describes approximately 170. These are separate source descriptions; their release/version difference has not been established.",
+    "details": {
+      "benchmark_protocol": {
+        "focus": [
+          "desktop computer-use tasks for GUI, MCP API and hybrid agents",
+          "white-box task verification through application instrumentation"
+        ],
+        "setting": "interactive",
+        "observations": [
+          "desktop screenshots through the computer-use tool",
+          "MCP tool results",
+          "bash and file-edit tool output in the default tool group"
+        ],
+        "actions": [
+          "mouse and keyboard actions through the computer-use tool",
+          "calls to the MCP servers listed in the task config",
+          "bash commands and file edits"
+        ],
+        "evaluation": "Each PC-Canary task folder pairs a config.json (instruction template, key steps, MCP servers) with a hook script and a Python handler that turns Frida messages from the running app into status updates for the evaluator; the paper describes Frida instrumentation for compiled apps. The reference agent's exec_mode is gui, api or mixed: api drops the computer tool, and api and mixed add the task's MCP tools.",
+        "counts": [
+          {
+            "value": 201,
+            "unit": "tasks",
+            "qualifier": "exact",
+            "population": "MCPWorld benchmark suite as described in arXiv 2506.07672v1",
+            "basis": "reported",
+            "evidence_url": "https://arxiv.org/html/2506.07672v1"
+          },
+          {
+            "value": 170,
+            "unit": "tasks",
+            "qualifier": "approximately",
+            "population": "task suite as the repository README describes it",
+            "basis": "reported",
+            "evidence_url": "https://raw.githubusercontent.com/SAAgent/MCPWorld/HEAD/README.md"
+          },
+          {
+            "value": 10,
+            "unit": "desktop applications",
+            "qualifier": "exact",
+            "population": "applications covered by the 201-task suite, arXiv 2506.07672v1",
+            "basis": "reported",
+            "evidence_url": "https://arxiv.org/html/2506.07672v1"
+          },
+          {
+            "value": 10,
+            "unit": "released task folders",
+            "qualifier": "exact",
+            "population": "tests/tasks/<app>/<task>/ folders with config.json in PC-Canary commit 7b219ca, the submodule pinned by MCPWorld commit 12396eb",
+            "basis": "computed",
+            "evidence_url": "https://api.github.com/repos/SAAgent/PC-Canary/git/trees/7b219cae84d6cb45a27f056550ba5994ef4356d7?recursive=1",
+            "reference_url": "https://github.com/SAAgent/PC-Canary/tree/7b219cae84d6cb45a27f056550ba5994ef4356d7/tests/tasks"
+          }
+        ],
+        "notes": "Sources disagree on size: the paper reports 201 tasks across 10 desktop applications and the README about 170 tasks across 10+ open-source applications; the PC-Canary submodule commit pinned by MCPWorld commit 12396eb holds 10 task folders (FreeTube 6, Telegram 2, VS Code 1, Zulip 1). Their release relation is not established. The reference agent in computer-use-demo calls Anthropic models and needs an Anthropic API key. No task was run for this profile.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/SAAgent/MCPWorld/HEAD/README.md",
+          "https://arxiv.org/html/2506.07672v1",
+          "https://raw.githubusercontent.com/SAAgent/MCPWorld/12396eb911c8ed9cf78fde72c15fe7b8a947f6de/computer-use-demo/computer_use_demo/loop.py",
+          "https://raw.githubusercontent.com/SAAgent/MCPWorld/12396eb911c8ed9cf78fde72c15fe7b8a947f6de/computer-use-demo/computer_use_demo/tools/groups.py",
+          "https://raw.githubusercontent.com/SAAgent/PC-Canary/7b219cae84d6cb45a27f056550ba5994ef4356d7/tests/tasks/telegram/task01_search/config.json",
+          "https://raw.githubusercontent.com/SAAgent/PC-Canary/7b219cae84d6cb45a27f056550ba5994ef4356d7/tests/tasks/telegram/task01_search/handler.py",
+          "https://api.github.com/repos/SAAgent/MCPWorld/git/trees/12396eb911c8ed9cf78fde72c15fe7b8a947f6de",
+          "https://api.github.com/repos/SAAgent/PC-Canary/git/trees/7b219cae84d6cb45a27f056550ba5994ef4356d7?recursive=1"
+        ]
+      }
+    }
   },
   {
     "name": "Precision CUA Bench",
