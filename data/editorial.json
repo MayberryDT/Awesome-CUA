@@ -63228,9 +63228,9 @@
           "details.listed_weight_files",
           "details.license_name"
         ],
-        "url": "https://huggingface.co/api/models/Hcompany/Holotron4-30B-A3B-FP8",
+        "url": "https://huggingface.co/api/models/Hcompany/Holotron4-30B-A3B-FP8/revision/c2114d9636458189f132f9de5d912bcbc30403dd",
         "sha256": "f5f0b6f378377afdfd40274df0a2574d727037c74a6d6239ca5028bfe0bca4c5",
-        "retrieved_at": "2026-10-18T15:57:38Z"
+        "retrieved_at": "2026-10-19T06:18:45Z"
       },
       {
         "role": "primary",
