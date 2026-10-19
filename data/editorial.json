@@ -63706,5 +63706,56 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "f34c5bcf454368db37dde4bb2229fd14ae5e4a118684c6d7fbb6a25f9f246911",
     "reviewed_at": "2026-10-18T15:57:12Z"
+  },
+  {
+    "id": "arxiv:2602.22190",
+    "name": "GUI-Libra: Training Native GUI Agents to Reason and Act with Action-aware Supervision and Partially Verifiable RL",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2602.22190",
+    "summary": "Post-training recipe for native GUI agents that pairs a released 81K action-aligned reasoning dataset with action-aware SFT and KL-regularized RL under partial verifiability, tested on web and Android benchmarks.",
+    "environments": [
+      "web",
+      "android"
+    ],
+    "topics": [
+      "reinforcement-learning",
+      "imitation-learning",
+      "data-generation",
+      "grounding"
+    ],
+    "scope": "core",
+    "verify_terms": [
+      "GUI-Libra"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?id_list=2602.22190"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "Reviewed against the complete arXiv abstract and the v2 HTML. The abstract names two problems with generic post-training (chain-of-thought SFT hurting grounding, and step-wise RLVR verifying against a single demonstrated action) and answers them with token-reweighted mixed SFT, a KL trust region and success-adaptive scaling of negative gradients. The HTML evaluates on AndroidWorld, AndroidControl, WebArena-Lite-v2, Online-Mind2Web and Multimodal-Mind2Web. Reported results have not been independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2602.22190v2",
+        "sha256": "972cb8f0da3286d3b9d8015c666cdc736962a85361ab751d7e8fbf1b26f2c933",
+        "retrieved_at": "2026-10-19T06:16:25Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "read_basis": "Read the arXiv API abstract and the v2 HTML evaluation sections.",
+    "reviewed_sha256": "4e29ac4b9aa02889dfb35aaea4faa13e61fc5efee4f2366c5e200b85fa6e5744",
+    "reviewed_at": "2026-10-19T06:17:30Z"
   }
 ]
