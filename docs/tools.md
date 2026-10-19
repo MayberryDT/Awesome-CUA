@@ -33,7 +33,7 @@ All entries in this section: web.
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
-| [midscene-pc](https://github.com/Mofangbao/midscene-pc) | desktop, windows, linux, macos | — | code MIT | npm package adding a desktop device to Midscene.js: it captures monitor or window screenshots and sends mouse, keyboard and clipboard input locally or to a remote desktop over a token-protected HTTP service. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/Mofangbao/midscene-pc/HEAD/README.md) |
+| [midscene-pc](https://github.com/Mofangbao/midscene-pc) | desktop, windows, linux, macos | — | code MIT | npm package adding a desktop device to Midscene.js: it captures monitor or window screenshots and sends mouse, keyboard and clipboard input locally or to a remote desktop over a token-protected HTTP service. | [✓ 2026‑10‑19](https://raw.githubusercontent.com/Mofangbao/midscene-pc/HEAD/README.md) |
 | [Sikuli legacy research implementation](https://github.com/sikuli/sikuli) | desktop, macos, linux, windows | [Sikuli: Using GUI screenshots for search and automation](https://doi.org/10.1145/1622176.1622213) (2009), [GUI Testing Using Computer Vision](https://doi.org/10.1145/1753326.1753555) (2010) | code MIT | The original Sikuli source distribution combines screenshot targets with a Jython scripting library and IDE for visual GUI automation and testing. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/sikuli/sikuli/HEAD/docs/source/index.rst) |
 
 [↑ Back to top](#tool-catalog)

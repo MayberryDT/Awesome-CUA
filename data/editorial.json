@@ -63186,9 +63186,9 @@
           "notes",
           "details.repository_revision"
         ],
-        "url": "https://github.com/Mofangbao/midscene-pc/tree/f210f4e77e3bf337ff301881224f346ddaa4ae4f",
-        "sha256": "fb11ac560e8af4a09008816728fb17adaa622dc2b7a94e48460f131f04602290",
-        "retrieved_at": "2026-10-18T16:08:44Z"
+        "url": "https://api.github.com/repos/Mofangbao/midscene-pc/git/trees/f210f4e77e3bf337ff301881224f346ddaa4ae4f?recursive=1",
+        "sha256": "ebfc257bba1725f81fa8af7ebd83baed96f415ddf00d7bedca4a9889a6c5c600",
+        "retrieved_at": "2026-10-19T06:40:03Z"
       },
       {
         "role": "primary",
