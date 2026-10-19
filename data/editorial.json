@@ -63196,7 +63196,7 @@
         ]
       },
       {
-        "url": "https://api.github.com/repos/suitedaces/computer-agent/git/trees/main?recursive=1",
+        "url": "https://api.github.com/repos/suitedaces/computer-agent/git/trees/92795e717b5bd254d1894d46d180eb29b690525b?recursive=1",
         "sha256": "0180588aaae64b508bd4ffff5460c646a068063f8fbf35c930cfabe07acb133e",
         "retrieved_at": "2026-10-18T12:19:06Z",
         "role": "primary",
