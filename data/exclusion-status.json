@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "excluded_records": 122,
+  "excluded_records": 136,
   "revalidation_pending": 0,
   "policy": "Explicit primary-abstract scope review; not a judgment of research quality. Raw metadata remains in the archive. Changed or unresolved decisions do not suppress records.",
   "decisions": [
@@ -1195,6 +1195,74 @@
       "status_reason": "Reviewed snapshot matches retained metadata."
     },
     {
+      "id": "arxiv:2306.00003",
+      "name": "Detecting Heart Disease from Multi-View Ultrasound Images via Supervised Attention Multiple Instance Learning",
+      "url": "https://arxiv.org/abs/2306.00003",
+      "decision": "out_of_scope",
+      "basis": "primary_abstract_review",
+      "reason": "The abstract studies supervised attention multiple-instance learning for detecting aortic stenosis from transthoracic echocardiography ultrasound images, outside the computer-interface agent scope.",
+      "reviewed_at": "2026-10-18T10:59:06Z",
+      "metadata_fingerprint": "9482720f6456da3bf1f293dfd47eaf35585e8b4a64c4376100e4705dd2396b1e",
+      "evidence": {
+        "url": "https://export.arxiv.org/api/query?id_list=2302.01560%2C2303.16563%2C2305.15486%2C2305.16291%2C2305.17144%2C2306.00003%2C2306.00349%2C2306.17882%2C2310.01557%2C2310.08235%2C2310.08367%2C2311.05997%2C2311.17600%2C2312.02519%2C2312.11865%2C2402.01118%2C2402.10196%2C2402.11208%2C2403.10249%2C2403.12037%2C2404.06647%2C2404.12241%2C2404.13246%2C2407.15325%2C2409.00138%2C2410.14573%2C2410.18927%2C2410.19012%2C2411.09523%2C2411.10349%2C2411.13543%2C2412.01547%2C2501.05366%2C2501.09004%2C2502.07463%2C2502.14538%2C2503.02732%2C2503.08175%2C2503.11387%2C2504.10147%2C2504.11703%2C2504.14064%2C2504.15810%2C2504.16208%2C2504.20635%2C2504.21776%2C2505.12981%2C2505.13076%2C2506.01616%2C2506.13205&max_results=50",
+        "sha256": "00d275cd5407cec847fa9d43fe73cfc4384c5570b68a5e058c97921799be0bec",
+        "retrieved_at": "2026-10-18T10:54:08Z"
+      },
+      "status": "excluded",
+      "status_reason": "Reviewed snapshot matches retained metadata."
+    },
+    {
+      "id": "arxiv:2306.00349",
+      "name": "CALICO: Self-Supervised Camera-LiDAR Contrastive Pre-training for BEV Perception",
+      "url": "https://arxiv.org/abs/2306.00349",
+      "decision": "out_of_scope",
+      "basis": "primary_abstract_review",
+      "reason": "The abstract proposes self-supervised camera-LiDAR contrastive pre-training for bird-eye-view perception in autonomous driving, outside the computer-interface agent scope.",
+      "reviewed_at": "2026-10-18T10:59:06Z",
+      "metadata_fingerprint": "f04578defe6b85042284d8e00c093a8c795fc9eadb9e1d750266e88443220247",
+      "evidence": {
+        "url": "https://export.arxiv.org/api/query?id_list=2302.01560%2C2303.16563%2C2305.15486%2C2305.16291%2C2305.17144%2C2306.00003%2C2306.00349%2C2306.17882%2C2310.01557%2C2310.08235%2C2310.08367%2C2311.05997%2C2311.17600%2C2312.02519%2C2312.11865%2C2402.01118%2C2402.10196%2C2402.11208%2C2403.10249%2C2403.12037%2C2404.06647%2C2404.12241%2C2404.13246%2C2407.15325%2C2409.00138%2C2410.14573%2C2410.18927%2C2410.19012%2C2411.09523%2C2411.10349%2C2411.13543%2C2412.01547%2C2501.05366%2C2501.09004%2C2502.07463%2C2502.14538%2C2503.02732%2C2503.08175%2C2503.11387%2C2504.10147%2C2504.11703%2C2504.14064%2C2504.15810%2C2504.16208%2C2504.20635%2C2504.21776%2C2505.12981%2C2505.13076%2C2506.01616%2C2506.13205&max_results=50",
+        "sha256": "00d275cd5407cec847fa9d43fe73cfc4384c5570b68a5e058c97921799be0bec",
+        "retrieved_at": "2026-10-18T10:54:08Z"
+      },
+      "status": "excluded",
+      "status_reason": "Reviewed snapshot matches retained metadata."
+    },
+    {
+      "id": "arxiv:2404.06647",
+      "name": "From Protoscience to Epistemic Monoculture: How Benchmarking Set the Stage for the Deep Learning Revolution",
+      "url": "https://arxiv.org/abs/2404.06647",
+      "decision": "out_of_scope",
+      "basis": "primary_abstract_review",
+      "reason": "The abstract examines the historical and epistemological role of benchmarking in deep learning research rather than computer-interface agents.",
+      "reviewed_at": "2026-10-18T10:59:06Z",
+      "metadata_fingerprint": "af0d82fcf1407c82f903490eb2cf96dafd51d2a949f9331ea13a7cb59c760a0b",
+      "evidence": {
+        "url": "https://export.arxiv.org/api/query?id_list=2302.01560%2C2303.16563%2C2305.15486%2C2305.16291%2C2305.17144%2C2306.00003%2C2306.00349%2C2306.17882%2C2310.01557%2C2310.08235%2C2310.08367%2C2311.05997%2C2311.17600%2C2312.02519%2C2312.11865%2C2402.01118%2C2402.10196%2C2402.11208%2C2403.10249%2C2403.12037%2C2404.06647%2C2404.12241%2C2404.13246%2C2407.15325%2C2409.00138%2C2410.14573%2C2410.18927%2C2410.19012%2C2411.09523%2C2411.10349%2C2411.13543%2C2412.01547%2C2501.05366%2C2501.09004%2C2502.07463%2C2502.14538%2C2503.02732%2C2503.08175%2C2503.11387%2C2504.10147%2C2504.11703%2C2504.14064%2C2504.15810%2C2504.16208%2C2504.20635%2C2504.21776%2C2505.12981%2C2505.13076%2C2506.01616%2C2506.13205&max_results=50",
+        "sha256": "00d275cd5407cec847fa9d43fe73cfc4384c5570b68a5e058c97921799be0bec",
+        "retrieved_at": "2026-10-18T10:54:08Z"
+      },
+      "status": "excluded",
+      "status_reason": "Reviewed snapshot matches retained metadata."
+    },
+    {
+      "id": "arxiv:2404.13246",
+      "name": "ISQA: Informative Factuality Feedback for Scientific Summarization",
+      "url": "https://arxiv.org/abs/2404.13246",
+      "decision": "out_of_scope",
+      "basis": "primary_abstract_review",
+      "reason": "The abstract proposes iterative factuality feedback for scientific document summarization, outside the computer-interface agent scope.",
+      "reviewed_at": "2026-10-18T10:59:06Z",
+      "metadata_fingerprint": "cd95718a1c63616b174f3cf74e76e1a990919d94ef9f30941f694beb60c6729f",
+      "evidence": {
+        "url": "https://export.arxiv.org/api/query?id_list=2302.01560%2C2303.16563%2C2305.15486%2C2305.16291%2C2305.17144%2C2306.00003%2C2306.00349%2C2306.17882%2C2310.01557%2C2310.08235%2C2310.08367%2C2311.05997%2C2311.17600%2C2312.02519%2C2312.11865%2C2402.01118%2C2402.10196%2C2402.11208%2C2403.10249%2C2403.12037%2C2404.06647%2C2404.12241%2C2404.13246%2C2407.15325%2C2409.00138%2C2410.14573%2C2410.18927%2C2410.19012%2C2411.09523%2C2411.10349%2C2411.13543%2C2412.01547%2C2501.05366%2C2501.09004%2C2502.07463%2C2502.14538%2C2503.02732%2C2503.08175%2C2503.11387%2C2504.10147%2C2504.11703%2C2504.14064%2C2504.15810%2C2504.16208%2C2504.20635%2C2504.21776%2C2505.12981%2C2505.13076%2C2506.01616%2C2506.13205&max_results=50",
+        "sha256": "00d275cd5407cec847fa9d43fe73cfc4384c5570b68a5e058c97921799be0bec",
+        "retrieved_at": "2026-10-18T10:54:08Z"
+      },
+      "status": "excluded",
+      "status_reason": "Reviewed snapshot matches retained metadata."
+    },
+    {
       "id": "arxiv:2406.06282",
       "name": "PowerInfer-2: Fast Large Language Model Inference on a Smartphone",
       "url": "https://arxiv.org/abs/2406.06282",
@@ -1207,6 +1275,57 @@
         "url": "https://export.arxiv.org/api/query?id_list=2210.03347%2C2403.04984%2C2405.07090%2C2406.06282%2C2409.00088%2C2409.10811%2C2411.10943%2C2503.09241%2C2503.20279%2C2503.23350%2C2505.05440%2C2505.10593%2C2505.16422%2C2505.21279%2C2505.24878%2C2506.02153%2C2506.02839%2C2506.05079%2C2506.07976%2C2508.02046%2C2511.07885%2C2511.11248%2C2512.21720%2C2603.20351%2C2604.19299&max_results=25",
         "sha256": "c194d15b7e422aae48b4e05216a1f1d84471b6666718b9d3dd4c9d250c356e77",
         "retrieved_at": "2026-10-18T04:21:52Z"
+      },
+      "status": "excluded",
+      "status_reason": "Reviewed snapshot matches retained metadata."
+    },
+    {
+      "id": "arxiv:2410.14573",
+      "name": "Building Trust in Black-box Optimization: A Comprehensive Framework for Explainability",
+      "url": "https://arxiv.org/abs/2410.14573",
+      "decision": "out_of_scope",
+      "basis": "primary_abstract_review",
+      "reason": "The abstract presents an explainability framework for surrogate black-box mathematical optimization, outside the computer-interface agent scope.",
+      "reviewed_at": "2026-10-18T10:59:06Z",
+      "metadata_fingerprint": "94d758f48708d64002b1bd17764a14d4178b068aae058f78bd621043e7f3664f",
+      "evidence": {
+        "url": "https://export.arxiv.org/api/query?id_list=2302.01560%2C2303.16563%2C2305.15486%2C2305.16291%2C2305.17144%2C2306.00003%2C2306.00349%2C2306.17882%2C2310.01557%2C2310.08235%2C2310.08367%2C2311.05997%2C2311.17600%2C2312.02519%2C2312.11865%2C2402.01118%2C2402.10196%2C2402.11208%2C2403.10249%2C2403.12037%2C2404.06647%2C2404.12241%2C2404.13246%2C2407.15325%2C2409.00138%2C2410.14573%2C2410.18927%2C2410.19012%2C2411.09523%2C2411.10349%2C2411.13543%2C2412.01547%2C2501.05366%2C2501.09004%2C2502.07463%2C2502.14538%2C2503.02732%2C2503.08175%2C2503.11387%2C2504.10147%2C2504.11703%2C2504.14064%2C2504.15810%2C2504.16208%2C2504.20635%2C2504.21776%2C2505.12981%2C2505.13076%2C2506.01616%2C2506.13205&max_results=50",
+        "sha256": "00d275cd5407cec847fa9d43fe73cfc4384c5570b68a5e058c97921799be0bec",
+        "retrieved_at": "2026-10-18T10:54:08Z"
+      },
+      "status": "excluded",
+      "status_reason": "Reviewed snapshot matches retained metadata."
+    },
+    {
+      "id": "arxiv:2410.19012",
+      "name": "Privacy-Computation trade-offs in Private Repetition and Metaselection",
+      "url": "https://arxiv.org/abs/2410.19012",
+      "decision": "out_of_scope",
+      "basis": "primary_abstract_review",
+      "reason": "The abstract analyzes privacy-computation trade-offs in differentially private repetition and metaselection algorithms, outside the computer-interface agent scope.",
+      "reviewed_at": "2026-10-18T10:59:06Z",
+      "metadata_fingerprint": "dae11940bcb64a5894b637fe05cf65502c1f6ff6e517a51083c06db5518db500",
+      "evidence": {
+        "url": "https://export.arxiv.org/api/query?id_list=2302.01560%2C2303.16563%2C2305.15486%2C2305.16291%2C2305.17144%2C2306.00003%2C2306.00349%2C2306.17882%2C2310.01557%2C2310.08235%2C2310.08367%2C2311.05997%2C2311.17600%2C2312.02519%2C2312.11865%2C2402.01118%2C2402.10196%2C2402.11208%2C2403.10249%2C2403.12037%2C2404.06647%2C2404.12241%2C2404.13246%2C2407.15325%2C2409.00138%2C2410.14573%2C2410.18927%2C2410.19012%2C2411.09523%2C2411.10349%2C2411.13543%2C2412.01547%2C2501.05366%2C2501.09004%2C2502.07463%2C2502.14538%2C2503.02732%2C2503.08175%2C2503.11387%2C2504.10147%2C2504.11703%2C2504.14064%2C2504.15810%2C2504.16208%2C2504.20635%2C2504.21776%2C2505.12981%2C2505.13076%2C2506.01616%2C2506.13205&max_results=50",
+        "sha256": "00d275cd5407cec847fa9d43fe73cfc4384c5570b68a5e058c97921799be0bec",
+        "retrieved_at": "2026-10-18T10:54:08Z"
+      },
+      "status": "excluded",
+      "status_reason": "Reviewed snapshot matches retained metadata."
+    },
+    {
+      "id": "arxiv:2411.10349",
+      "name": "The Critical Role of LIGO-India in the Era of Next-Generation Observatories",
+      "url": "https://arxiv.org/abs/2411.10349",
+      "decision": "out_of_scope",
+      "basis": "primary_abstract_review",
+      "reason": "The abstract evaluates binary neutron star merger localization with the LIGO-India gravitational-wave observatory, outside the computer-interface agent scope.",
+      "reviewed_at": "2026-10-18T10:59:06Z",
+      "metadata_fingerprint": "ed508da0bbb559090e970b23d2e32c5742400b65bf9ee06e30be2e42426d46d2",
+      "evidence": {
+        "url": "https://export.arxiv.org/api/query?id_list=2302.01560%2C2303.16563%2C2305.15486%2C2305.16291%2C2305.17144%2C2306.00003%2C2306.00349%2C2306.17882%2C2310.01557%2C2310.08235%2C2310.08367%2C2311.05997%2C2311.17600%2C2312.02519%2C2312.11865%2C2402.01118%2C2402.10196%2C2402.11208%2C2403.10249%2C2403.12037%2C2404.06647%2C2404.12241%2C2404.13246%2C2407.15325%2C2409.00138%2C2410.14573%2C2410.18927%2C2410.19012%2C2411.09523%2C2411.10349%2C2411.13543%2C2412.01547%2C2501.05366%2C2501.09004%2C2502.07463%2C2502.14538%2C2503.02732%2C2503.08175%2C2503.11387%2C2504.10147%2C2504.11703%2C2504.14064%2C2504.15810%2C2504.16208%2C2504.20635%2C2504.21776%2C2505.12981%2C2505.13076%2C2506.01616%2C2506.13205&max_results=50",
+        "sha256": "00d275cd5407cec847fa9d43fe73cfc4384c5570b68a5e058c97921799be0bec",
+        "retrieved_at": "2026-10-18T10:54:08Z"
       },
       "status": "excluded",
       "status_reason": "Reviewed snapshot matches retained metadata."
@@ -1314,6 +1433,23 @@
       "status_reason": "Reviewed snapshot matches retained metadata."
     },
     {
+      "id": "arxiv:2502.07463",
+      "name": "A Framework to Quantify Adaptation to Multiple Drivers",
+      "url": "https://arxiv.org/abs/2502.07463",
+      "decision": "out_of_scope",
+      "basis": "primary_abstract_review",
+      "reason": "The abstract develops an analytical bio-economic framework for quantifying adaptation in coupled ecological-economic systems, outside the computer-interface agent scope.",
+      "reviewed_at": "2026-10-18T10:59:06Z",
+      "metadata_fingerprint": "cb1ee849b9cd4766abfa686aae6675b138ac2acce157148e3a20b3e278f658ed",
+      "evidence": {
+        "url": "https://export.arxiv.org/api/query?id_list=2302.01560%2C2303.16563%2C2305.15486%2C2305.16291%2C2305.17144%2C2306.00003%2C2306.00349%2C2306.17882%2C2310.01557%2C2310.08235%2C2310.08367%2C2311.05997%2C2311.17600%2C2312.02519%2C2312.11865%2C2402.01118%2C2402.10196%2C2402.11208%2C2403.10249%2C2403.12037%2C2404.06647%2C2404.12241%2C2404.13246%2C2407.15325%2C2409.00138%2C2410.14573%2C2410.18927%2C2410.19012%2C2411.09523%2C2411.10349%2C2411.13543%2C2412.01547%2C2501.05366%2C2501.09004%2C2502.07463%2C2502.14538%2C2503.02732%2C2503.08175%2C2503.11387%2C2504.10147%2C2504.11703%2C2504.14064%2C2504.15810%2C2504.16208%2C2504.20635%2C2504.21776%2C2505.12981%2C2505.13076%2C2506.01616%2C2506.13205&max_results=50",
+        "sha256": "00d275cd5407cec847fa9d43fe73cfc4384c5570b68a5e058c97921799be0bec",
+        "retrieved_at": "2026-10-18T10:54:08Z"
+      },
+      "status": "excluded",
+      "status_reason": "Reviewed snapshot matches retained metadata."
+    },
+    {
       "id": "arxiv:2502.12252",
       "name": "Roadmap to fault tolerant quantum computation using topological qubit arrays",
       "url": "https://arxiv.org/abs/2502.12252",
@@ -1326,6 +1462,23 @@
         "url": "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22%29+AND+submittedDate%3A%5B200001010000+TO+202610160636%5D&start=700&max_results=100&sortBy=submittedDate&sortOrder=descending",
         "sha256": "4953a8e0f029016aef668bce98cec4d2873a7ae49c1fe33c4311fa5eb8d24089",
         "retrieved_at": "2026-10-16T06:36:54Z"
+      },
+      "status": "excluded",
+      "status_reason": "Reviewed snapshot matches retained metadata."
+    },
+    {
+      "id": "arxiv:2502.14538",
+      "name": "LoRA-MGPO: Mitigating Double Descent in Low-Rank Adaptation via Momentum-Guided Perturbation Optimization",
+      "url": "https://arxiv.org/abs/2502.14538",
+      "decision": "out_of_scope",
+      "basis": "primary_abstract_review",
+      "reason": "The abstract studies momentum-guided perturbation optimization to mitigate double descent in LoRA fine-tuning, outside the computer-interface agent scope.",
+      "reviewed_at": "2026-10-18T10:59:06Z",
+      "metadata_fingerprint": "ae75423260f3da6e2dba8147758ae85c25c4a54ae6b588c9739d413e02564d94",
+      "evidence": {
+        "url": "https://export.arxiv.org/api/query?id_list=2302.01560%2C2303.16563%2C2305.15486%2C2305.16291%2C2305.17144%2C2306.00003%2C2306.00349%2C2306.17882%2C2310.01557%2C2310.08235%2C2310.08367%2C2311.05997%2C2311.17600%2C2312.02519%2C2312.11865%2C2402.01118%2C2402.10196%2C2402.11208%2C2403.10249%2C2403.12037%2C2404.06647%2C2404.12241%2C2404.13246%2C2407.15325%2C2409.00138%2C2410.14573%2C2410.18927%2C2410.19012%2C2411.09523%2C2411.10349%2C2411.13543%2C2412.01547%2C2501.05366%2C2501.09004%2C2502.07463%2C2502.14538%2C2503.02732%2C2503.08175%2C2503.11387%2C2504.10147%2C2504.11703%2C2504.14064%2C2504.15810%2C2504.16208%2C2504.20635%2C2504.21776%2C2505.12981%2C2505.13076%2C2506.01616%2C2506.13205&max_results=50",
+        "sha256": "00d275cd5407cec847fa9d43fe73cfc4384c5570b68a5e058c97921799be0bec",
+        "retrieved_at": "2026-10-18T10:54:08Z"
       },
       "status": "excluded",
       "status_reason": "Reviewed snapshot matches retained metadata."
@@ -1348,6 +1501,23 @@
       "status_reason": "Reviewed snapshot matches retained metadata."
     },
     {
+      "id": "arxiv:2503.02732",
+      "name": "Micro/nanoscale spacers for enhanced thermophotovoltaic and thermionic energy conversion: a comprehensive review",
+      "url": "https://arxiv.org/abs/2503.02732",
+      "decision": "out_of_scope",
+      "basis": "primary_abstract_review",
+      "reason": "The abstract reviews micro- and nanoscale spacers for thermophotovoltaic and thermionic energy conversion, outside the computer-interface agent scope.",
+      "reviewed_at": "2026-10-18T10:59:06Z",
+      "metadata_fingerprint": "174b3436f45aff29efa0400dff4882205efcb06d6d0860bfb9073b81af210dfa",
+      "evidence": {
+        "url": "https://export.arxiv.org/api/query?id_list=2302.01560%2C2303.16563%2C2305.15486%2C2305.16291%2C2305.17144%2C2306.00003%2C2306.00349%2C2306.17882%2C2310.01557%2C2310.08235%2C2310.08367%2C2311.05997%2C2311.17600%2C2312.02519%2C2312.11865%2C2402.01118%2C2402.10196%2C2402.11208%2C2403.10249%2C2403.12037%2C2404.06647%2C2404.12241%2C2404.13246%2C2407.15325%2C2409.00138%2C2410.14573%2C2410.18927%2C2410.19012%2C2411.09523%2C2411.10349%2C2411.13543%2C2412.01547%2C2501.05366%2C2501.09004%2C2502.07463%2C2502.14538%2C2503.02732%2C2503.08175%2C2503.11387%2C2504.10147%2C2504.11703%2C2504.14064%2C2504.15810%2C2504.16208%2C2504.20635%2C2504.21776%2C2505.12981%2C2505.13076%2C2506.01616%2C2506.13205&max_results=50",
+        "sha256": "00d275cd5407cec847fa9d43fe73cfc4384c5570b68a5e058c97921799be0bec",
+        "retrieved_at": "2026-10-18T10:54:08Z"
+      },
+      "status": "excluded",
+      "status_reason": "Reviewed snapshot matches retained metadata."
+    },
+    {
       "id": "arxiv:2503.05850",
       "name": "Encrypted Vector Similarity Computations Using Partially Homomorphic Encryption: Applications and Performance Analysis",
       "url": "https://arxiv.org/abs/2503.05850",
@@ -1360,6 +1530,23 @@
         "url": "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22%29+AND+submittedDate%3A%5B200001010000+TO+202610160636%5D&start=700&max_results=100&sortBy=submittedDate&sortOrder=descending",
         "sha256": "4953a8e0f029016aef668bce98cec4d2873a7ae49c1fe33c4311fa5eb8d24089",
         "retrieved_at": "2026-10-16T06:36:54Z"
+      },
+      "status": "excluded",
+      "status_reason": "Reviewed snapshot matches retained metadata."
+    },
+    {
+      "id": "arxiv:2503.11387",
+      "name": "Hierarchical Information-Guided Spatio-Temporal Mamba for Stock Time Series Forecasting",
+      "url": "https://arxiv.org/abs/2503.11387",
+      "decision": "out_of_scope",
+      "basis": "primary_abstract_review",
+      "reason": "The abstract proposes a spatio-temporal Mamba architecture for stock time-series forecasting, outside the computer-interface agent scope.",
+      "reviewed_at": "2026-10-18T10:59:06Z",
+      "metadata_fingerprint": "701fc1b86c0c5929c48b7001697b59dd9f99731505af2c2c587acb73c9e538d0",
+      "evidence": {
+        "url": "https://export.arxiv.org/api/query?id_list=2302.01560%2C2303.16563%2C2305.15486%2C2305.16291%2C2305.17144%2C2306.00003%2C2306.00349%2C2306.17882%2C2310.01557%2C2310.08235%2C2310.08367%2C2311.05997%2C2311.17600%2C2312.02519%2C2312.11865%2C2402.01118%2C2402.10196%2C2402.11208%2C2403.10249%2C2403.12037%2C2404.06647%2C2404.12241%2C2404.13246%2C2407.15325%2C2409.00138%2C2410.14573%2C2410.18927%2C2410.19012%2C2411.09523%2C2411.10349%2C2411.13543%2C2412.01547%2C2501.05366%2C2501.09004%2C2502.07463%2C2502.14538%2C2503.02732%2C2503.08175%2C2503.11387%2C2504.10147%2C2504.11703%2C2504.14064%2C2504.15810%2C2504.16208%2C2504.20635%2C2504.21776%2C2505.12981%2C2505.13076%2C2506.01616%2C2506.13205&max_results=50",
+        "sha256": "00d275cd5407cec847fa9d43fe73cfc4384c5570b68a5e058c97921799be0bec",
+        "retrieved_at": "2026-10-18T10:54:08Z"
       },
       "status": "excluded",
       "status_reason": "Reviewed snapshot matches retained metadata."
@@ -1479,6 +1666,57 @@
         "url": "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22%29+AND+submittedDate%3A%5B200001010000+TO+202610160636%5D&start=700&max_results=100&sortBy=submittedDate&sortOrder=descending",
         "sha256": "4953a8e0f029016aef668bce98cec4d2873a7ae49c1fe33c4311fa5eb8d24089",
         "retrieved_at": "2026-10-16T06:36:54Z"
+      },
+      "status": "excluded",
+      "status_reason": "Reviewed snapshot matches retained metadata."
+    },
+    {
+      "id": "arxiv:2504.15810",
+      "name": "Multilevel lattice-based kernel approximation for elliptic PDEs with random coefficients",
+      "url": "https://arxiv.org/abs/2504.15810",
+      "decision": "out_of_scope",
+      "basis": "primary_abstract_review",
+      "reason": "The abstract introduces multilevel lattice-based kernel approximation for elliptic partial differential equations with random coefficients, outside the computer-interface agent scope.",
+      "reviewed_at": "2026-10-18T10:59:06Z",
+      "metadata_fingerprint": "63635c30bd6e71ef35fadf65948501b8f95bd4abe6f275a3ee7ead731699285c",
+      "evidence": {
+        "url": "https://export.arxiv.org/api/query?id_list=2302.01560%2C2303.16563%2C2305.15486%2C2305.16291%2C2305.17144%2C2306.00003%2C2306.00349%2C2306.17882%2C2310.01557%2C2310.08235%2C2310.08367%2C2311.05997%2C2311.17600%2C2312.02519%2C2312.11865%2C2402.01118%2C2402.10196%2C2402.11208%2C2403.10249%2C2403.12037%2C2404.06647%2C2404.12241%2C2404.13246%2C2407.15325%2C2409.00138%2C2410.14573%2C2410.18927%2C2410.19012%2C2411.09523%2C2411.10349%2C2411.13543%2C2412.01547%2C2501.05366%2C2501.09004%2C2502.07463%2C2502.14538%2C2503.02732%2C2503.08175%2C2503.11387%2C2504.10147%2C2504.11703%2C2504.14064%2C2504.15810%2C2504.16208%2C2504.20635%2C2504.21776%2C2505.12981%2C2505.13076%2C2506.01616%2C2506.13205&max_results=50",
+        "sha256": "00d275cd5407cec847fa9d43fe73cfc4384c5570b68a5e058c97921799be0bec",
+        "retrieved_at": "2026-10-18T10:54:08Z"
+      },
+      "status": "excluded",
+      "status_reason": "Reviewed snapshot matches retained metadata."
+    },
+    {
+      "id": "arxiv:2504.16208",
+      "name": "High-throughput screening of 2D materials identifies p-type monolayer WS$_2$ as potential ultra-high mobility semiconductor",
+      "url": "https://arxiv.org/abs/2504.16208",
+      "decision": "out_of_scope",
+      "basis": "primary_abstract_review",
+      "reason": "The abstract performs high-throughput materials screening of 2D monolayer WS2 semiconductors, outside the computer-interface agent scope.",
+      "reviewed_at": "2026-10-18T10:59:06Z",
+      "metadata_fingerprint": "98ae47b35efbed401211f6a356189bdbee567086f4096a8b52f4d44e15dda35e",
+      "evidence": {
+        "url": "https://export.arxiv.org/api/query?id_list=2302.01560%2C2303.16563%2C2305.15486%2C2305.16291%2C2305.17144%2C2306.00003%2C2306.00349%2C2306.17882%2C2310.01557%2C2310.08235%2C2310.08367%2C2311.05997%2C2311.17600%2C2312.02519%2C2312.11865%2C2402.01118%2C2402.10196%2C2402.11208%2C2403.10249%2C2403.12037%2C2404.06647%2C2404.12241%2C2404.13246%2C2407.15325%2C2409.00138%2C2410.14573%2C2410.18927%2C2410.19012%2C2411.09523%2C2411.10349%2C2411.13543%2C2412.01547%2C2501.05366%2C2501.09004%2C2502.07463%2C2502.14538%2C2503.02732%2C2503.08175%2C2503.11387%2C2504.10147%2C2504.11703%2C2504.14064%2C2504.15810%2C2504.16208%2C2504.20635%2C2504.21776%2C2505.12981%2C2505.13076%2C2506.01616%2C2506.13205&max_results=50",
+        "sha256": "00d275cd5407cec847fa9d43fe73cfc4384c5570b68a5e058c97921799be0bec",
+        "retrieved_at": "2026-10-18T10:54:08Z"
+      },
+      "status": "excluded",
+      "status_reason": "Reviewed snapshot matches retained metadata."
+    },
+    {
+      "id": "arxiv:2504.20635",
+      "name": "Bridging the Generalisation Gap: Synthetic Data Generation for Multi-Site Clinical Model Validation",
+      "url": "https://arxiv.org/abs/2504.20635",
+      "decision": "out_of_scope",
+      "basis": "primary_abstract_review",
+      "reason": "The abstract studies synthetic tabular data generation for multi-site clinical machine-learning validation, outside the computer-interface agent scope.",
+      "reviewed_at": "2026-10-18T10:59:06Z",
+      "metadata_fingerprint": "2731c33ba3e2a55c8347eaf8af668f1b67b133b88b7411a8d5a1c273bf189029",
+      "evidence": {
+        "url": "https://export.arxiv.org/api/query?id_list=2302.01560%2C2303.16563%2C2305.15486%2C2305.16291%2C2305.17144%2C2306.00003%2C2306.00349%2C2306.17882%2C2310.01557%2C2310.08235%2C2310.08367%2C2311.05997%2C2311.17600%2C2312.02519%2C2312.11865%2C2402.01118%2C2402.10196%2C2402.11208%2C2403.10249%2C2403.12037%2C2404.06647%2C2404.12241%2C2404.13246%2C2407.15325%2C2409.00138%2C2410.14573%2C2410.18927%2C2410.19012%2C2411.09523%2C2411.10349%2C2411.13543%2C2412.01547%2C2501.05366%2C2501.09004%2C2502.07463%2C2502.14538%2C2503.02732%2C2503.08175%2C2503.11387%2C2504.10147%2C2504.11703%2C2504.14064%2C2504.15810%2C2504.16208%2C2504.20635%2C2504.21776%2C2505.12981%2C2505.13076%2C2506.01616%2C2506.13205&max_results=50",
+        "sha256": "00d275cd5407cec847fa9d43fe73cfc4384c5570b68a5e058c97921799be0bec",
+        "retrieved_at": "2026-10-18T10:54:08Z"
       },
       "status": "excluded",
       "status_reason": "Reviewed snapshot matches retained metadata."
