@@ -63195,9 +63195,9 @@
           "details.repository_revision",
           "details.availability"
         ],
-        "url": "https://github.com/zorazrw/agent-skill-induction/tree/377abe0623a37eaf7f03bdd26cb97bb5331acf47",
-        "sha256": "71702fbf6064fd0116d4b9fb28a82cb33eba692f006c37dd05b3b8133784e544",
-        "retrieved_at": "2026-10-18T16:19:58Z"
+        "url": "https://api.github.com/repos/zorazrw/agent-skill-induction/git/trees/377abe0623a37eaf7f03bdd26cb97bb5331acf47",
+        "sha256": "f8751b33563cab8d178c5cad95b9d151cca907e4474a4eb84a06bd3ed1d2bc99",
+        "retrieved_at": "2026-10-19T07:15:07Z"
       },
       {
         "role": "primary",
@@ -63298,11 +63298,11 @@
       "Inducing Programmatic Skills for Agentic Tasks"
     ],
     "evidence_urls": [
-      "https://export.arxiv.org/api/query?id_list=2504.03206%2C2504.03601%2C2504.06821%2C2504.09723%2C2504.11301%2C2504.11543%2C2504.12609%2C2504.14233%2C2504.14348%2C2504.14603%2C2504.16073%2C2504.16419%2C2504.17892%2C2504.18580%2C2504.20965%2C2505.00019%2C2505.00693%2C2505.01578%2C2505.02094%2C2505.03570%2C2505.03574%2C2505.05026%2C2505.05849%2C2505.06507%2C2505.07003%2C2505.07473%2C2505.10468%2C2505.10887%2C2505.12053%2C2505.12490%2C2505.12728%2C2505.13291%2C2505.14030%2C2505.14454%2C2505.14646%2C2505.15801%2C2505.15816%2C2505.17020%2C2505.18746%2C2505.19095%2C2505.19713%2C2505.20023%2C2505.20732%2C2505.20795%2C2505.21055%2C2505.22304%2C2505.22429%2C2505.23450%2C2505.23559%2C2506.00641&max_results=50"
+      "https://arxiv.org/abs/2504.06821v2"
     ],
-    "notes": "The annotation and scope were reviewed against the complete retained original arXiv abstract. Experimental findings and artifact availability have not been independently reproduced.",
+    "notes": "Reviewed against the exact-version arXiv abstract page (v2); its title, ordered author list and normalized abstract SHA match the retained snapshot. Experimental findings and artifact availability have not been independently reproduced.",
     "editorial_reviewed": true,
-    "reviewed_sha256": "605e5c765e70206e3f4015def39a4d5d48c1cf440f41201f640cf6975cd558d1",
+    "reviewed_sha256": "b84b74f5b8e91cb14d4664bbe491792addd6cca504264534552e2a6beb610001",
     "reviewed_at": "2026-10-18T16:20:41Z"
   }
 ]
