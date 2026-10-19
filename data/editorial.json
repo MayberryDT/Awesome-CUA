@@ -63206,15 +63206,15 @@
         "evidence_urls": [
           "https://huggingface.co/datasets/OpenDFM/MoGUI/resolve/19639219617d083a03e24842fc620e010cc63189/metadata/data_00001_of_00200.json",
           "https://huggingface.co/api/datasets/OpenDFM/MoGUI/tree/19639219617d083a03e24842fc620e010cc63189/moguidata",
-          "https://huggingface.co/api/datasets/OpenDFM/MoGUI"
+          "https://huggingface.co/api/datasets/OpenDFM/MoGUI/revision/19639219617d083a03e24842fc620e010cc63189"
         ]
       }
     },
     "additional_evidence": [
       {
-        "url": "https://huggingface.co/api/datasets/OpenDFM/MoGUI",
+        "url": "https://huggingface.co/api/datasets/OpenDFM/MoGUI/revision/19639219617d083a03e24842fc620e010cc63189",
         "sha256": "aa4356912f147cade9b4f9067103beff80dc594f7b6562f6ae61ac4b9ef9bb71",
-        "retrieved_at": "2026-10-18T16:04:09Z",
+        "retrieved_at": "2026-10-19T06:19:11Z",
         "role": "primary",
         "method": "editorial_primary_review",
         "supports": [
