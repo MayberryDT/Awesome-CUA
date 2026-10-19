@@ -63165,12 +63165,11 @@
     "evidence_urls": [
       "https://raw.githubusercontent.com/ServiceNow/DoomArena/HEAD/README.md"
     ],
-    "notes": "The inspected tree contains separately installable packages for the core attack library and for BrowserGym, OSWorld, tau-bench, MCP, mail-agent and promptceptor integrations, with web attacks (banner, pop-up, injected div and user-generated content) and an OSWorld pop-up inpainting attack. Running the BrowserGym and OSWorld integrations requires those environments and model API keys; attack success rates reported by the authors were not reproduced. Apache-2.0 covers this repository's code; wrapped benchmarks keep their own terms.",
+    "notes": "The inspected tree contains separately installable packages for the core attack library and for BrowserGym, OSWorld, tau-bench, MCP, mail-agent and promptceptor integrations, with web attacks (banner, pop-up, injected div and user-generated content) and an OSWorld pop-up inpainting attack. Running the BrowserGym and OSWorld integrations requires those environments and model API keys; attack success rates reported by the authors were not reproduced. Apache-2.0 covers this repository's code; wrapped benchmarks keep their own terms. Project page: https://servicenow.github.io/DoomArena/.",
     "details": {
       "availability": "Published source; README documents PyPI packages",
       "repository_url": "https://github.com/ServiceNow/DoomArena",
-      "repository_tree_sha": "b80902f107b4d28194580352a59b3029f4a018b4",
-      "project_url": "https://servicenow.github.io/DoomArena/"
+      "repository_tree_sha": "b80902f107b4d28194580352a59b3029f4a018b4"
     },
     "additional_evidence": [
       {
