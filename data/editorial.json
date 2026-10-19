@@ -63181,9 +63181,9 @@
           "details.repository_revision",
           "details.availability"
         ],
-        "url": "https://github.com/fyzhang1/ExpActivator/tree/3ef8ce5d923de56e56dc17eada833306dd92ea63",
-        "sha256": "7e2766cce49055b223fc1019b59abd7b1431ad94eb0dd3e6b85213f268bc5e67",
-        "retrieved_at": "2026-10-18T16:15:43Z"
+        "url": "https://api.github.com/repos/fyzhang1/ExpActivator/git/trees/3ef8ce5d923de56e56dc17eada833306dd92ea63?recursive=1",
+        "sha256": "f90f80d264891b3a62d6e065d45f1b8d1d14325cade1a2e2824b8cc0b1bf6ac1",
+        "retrieved_at": "2026-10-19T07:11:56Z"
       },
       {
         "role": "primary",
