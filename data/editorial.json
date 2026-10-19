@@ -63187,9 +63187,9 @@
           "details.package_version",
           "licenses.code"
         ],
-        "url": "https://raw.githubusercontent.com/agent-sh/computer-use-linux/HEAD/Cargo.toml",
+        "url": "https://raw.githubusercontent.com/agent-sh/computer-use-linux/79185233096c7b855d2f48bc1253b96a0abb1d22/Cargo.toml",
         "sha256": "67d81e886abc576c63173ebef090071632e46c260dbd011ec1b084c4feba3d76",
-        "retrieved_at": "2026-10-18T11:55:03Z"
+        "retrieved_at": "2026-10-19T06:16:46Z"
       },
       {
         "role": "primary",
@@ -63197,9 +63197,9 @@
         "supports": [
           "licenses.code"
         ],
-        "url": "https://raw.githubusercontent.com/agent-sh/computer-use-linux/HEAD/LICENSE",
+        "url": "https://raw.githubusercontent.com/agent-sh/computer-use-linux/79185233096c7b855d2f48bc1253b96a0abb1d22/LICENSE",
         "sha256": "865367984df228c2bbf9df7e790b26c3b083376b705375db36a8a032daa03a25",
-        "retrieved_at": "2026-10-18T11:55:03Z"
+        "retrieved_at": "2026-10-19T06:16:46Z"
       }
     ],
     "editorial_reviewed": true,
