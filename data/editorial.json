@@ -63187,7 +63187,7 @@
           "topics",
           "notes"
         ],
-        "url": "https://raw.githubusercontent.com/BrowserOperator/browser-operator-core/HEAD/front_end/panels/ai_chat/agent_framework/implementation/ConfiguredAgents.ts",
+        "url": "https://raw.githubusercontent.com/BrowserOperator/browser-operator-core/85da86c2a9421c44d682af0e627243b76d3df0ef/front_end/panels/ai_chat/agent_framework/implementation/ConfiguredAgents.ts",
         "sha256": "a6912cb7177b0ec98c4181b067efa6f4d52fa19b189eb644dba53b4c31b36f50",
         "retrieved_at": "2026-10-18T12:03:03Z"
       },
@@ -63198,7 +63198,7 @@
           "summary",
           "notes"
         ],
-        "url": "https://raw.githubusercontent.com/BrowserOperator/browser-operator-core/HEAD/front_end/panels/ai_chat/Readme.md",
+        "url": "https://raw.githubusercontent.com/BrowserOperator/browser-operator-core/85da86c2a9421c44d682af0e627243b76d3df0ef/front_end/panels/ai_chat/Readme.md",
         "sha256": "53a65ac8d6bccf74ffdcdafa03f9947c5cde0bd21b3d746c904c265027ce5a9d",
         "retrieved_at": "2026-10-18T12:02:57Z"
       },
@@ -63208,7 +63208,7 @@
         "supports": [
           "notes"
         ],
-        "url": "https://raw.githubusercontent.com/BrowserOperator/browser-operator-core/HEAD/agent-server/README.md",
+        "url": "https://raw.githubusercontent.com/BrowserOperator/browser-operator-core/85da86c2a9421c44d682af0e627243b76d3df0ef/agent-server/README.md",
         "sha256": "95e1d0b3672c8eab9846d4ec299b58817fdd89e4dc4de28bf50ea65654a189a8",
         "retrieved_at": "2026-10-18T12:02:58Z"
       },
@@ -63219,7 +63219,7 @@
           "licenses.code",
           "notes"
         ],
-        "url": "https://raw.githubusercontent.com/BrowserOperator/browser-operator-core/HEAD/LICENSE",
+        "url": "https://raw.githubusercontent.com/BrowserOperator/browser-operator-core/85da86c2a9421c44d682af0e627243b76d3df0ef/LICENSE",
         "sha256": "ff11d445fb41a1087c7630e120ab15f1a2cb67c1b707173cb494141805fca35e",
         "retrieved_at": "2026-10-18T12:02:57Z"
       }
@@ -63231,13 +63231,13 @@
       "code": {
         "value": {
           "declared": "BSD-3-Clause",
-          "url": "https://raw.githubusercontent.com/BrowserOperator/browser-operator-core/HEAD/LICENSE",
+          "url": "https://raw.githubusercontent.com/BrowserOperator/browser-operator-core/85da86c2a9421c44d682af0e627243b76d3df0ef/LICENSE",
           "retrieved_at": "2026-10-18T12:02:57Z",
           "basis": "BSD-3-Clause text of The Chromium Authors, written as // comments and inherited from Chrome DevTools; the README states Browser Operator is released under BSD-3-Clause. Covers repository code only; third_party components keep their own licenses."
         },
         "reason": "enrich does not recognize the comment-prefixed text, but it is the three-clause BSD license used by Chromium and the README declares BSD-3-Clause; models, browser builds and third-party components are not covered.",
         "evidence_urls": [
-          "https://raw.githubusercontent.com/BrowserOperator/browser-operator-core/HEAD/LICENSE"
+          "https://raw.githubusercontent.com/BrowserOperator/browser-operator-core/85da86c2a9421c44d682af0e627243b76d3df0ef/LICENSE"
         ]
       }
     }
