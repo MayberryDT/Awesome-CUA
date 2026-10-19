@@ -63178,9 +63178,9 @@
           "notes",
           "details.repository_revision"
         ],
-        "url": "https://github.com/hooosberg/AgentLimb/tree/c48cb371e7e797c80483323a2a192df7a3ff80aa",
-        "sha256": "d968039f72da977dbd078ebc9935675dec6c260a3e4acab21125c1b7dc3e0be9",
-        "retrieved_at": "2026-10-18T16:10:46Z"
+        "url": "https://api.github.com/repos/hooosberg/AgentLimb/git/trees/c48cb371e7e797c80483323a2a192df7a3ff80aa",
+        "sha256": "4645e3ea39aad2ea9144786571265613fffe813b92afdfb6d83d5e0f6c2ac143",
+        "retrieved_at": "2026-10-19T07:25:25Z"
       },
       {
         "role": "primary",
