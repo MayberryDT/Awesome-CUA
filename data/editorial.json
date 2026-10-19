@@ -63178,12 +63178,21 @@
         "method": "editorial_primary_review",
         "supports": [
           "notes",
-          "details.repository_revision",
+          "details.repository_revision"
+        ],
+        "url": "https://api.github.com/repos/HKUDS/FastAgent/git/trees/c7c819c77482102a4557a5cde793a5e255d1d034?recursive=1",
+        "sha256": "fdc2af6a5f44fc3c76af060acd88f728b2b15b98b338debb9bb2253dd171d1e1",
+        "retrieved_at": "2026-10-19T06:39:55Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
           "details.availability"
         ],
-        "url": "https://github.com/HKUDS/FastAgent/tree/c7c819c77482102a4557a5cde793a5e255d1d034",
-        "sha256": "b7c8b105893b3c2648d66d523cc6ee92b6378898c94eda0a0ad08b7123cbd2d2",
-        "retrieved_at": "2026-10-18T16:06:51Z"
+        "url": "https://api.github.com/repos/HKUDS/FastAgent/releases",
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "retrieved_at": "2026-10-19T06:39:55Z"
       },
       {
         "role": "primary",

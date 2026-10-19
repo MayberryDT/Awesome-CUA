@@ -49,7 +49,7 @@
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
-| [FastAgent (HKUDS)](https://github.com/HKUDS/FastAgent) | desktop, macos, linux, windows | — | code MIT | Multi-agent framework combining web research with desktop use: a grounding agent routes steps to shell, MCP, web or a GUI backend that runs a Claude computer-use model's pyautogui actions through a bundled local server. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/HKUDS/FastAgent/HEAD/README.md) |
+| [FastAgent (HKUDS)](https://github.com/HKUDS/FastAgent) | desktop, macos, linux, windows | — | code MIT | Multi-agent framework combining web research with desktop use: a grounding agent routes steps to shell, MCP, web or a GUI backend that runs a Claude computer-use model's pyautogui actions through a bundled local server. | [✓ 2026‑10‑19](https://raw.githubusercontent.com/HKUDS/FastAgent/HEAD/README.md) |
 | [PC-Agent-E training and deployment](https://github.com/GAIR-NLP/PC-Agent-E) | desktop, windows, linux | [2505.13909](https://arxiv.org/abs/2505.13909) (2025) | code MIT | Tools for refining and augmenting human computer-use trajectories, preparing supervised training data, and deploying a native PC-Agent-E scaffold. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/GAIR-NLP/PC-Agent-E/HEAD/README.md) |
 | [STEVE / STEVE-R1 research code](https://github.com/FanbinLu/STEVE-R1) | desktop, windows, linux | [2503.12532](https://arxiv.org/abs/2503.12532) (2025) | — | Research code and linked models for step-verified computer-use training; the current repository describes STEVE-R1 and its trajectory releases. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/FanbinLu/STEVE/HEAD/README.md) |
 
