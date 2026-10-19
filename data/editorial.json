@@ -63199,9 +63199,9 @@
     },
     "additional_evidence": [
       {
-        "url": "https://huggingface.co/api/models/Hcompany/Holo1-3B",
+        "url": "https://huggingface.co/api/models/Hcompany/Holo1-3B/revision/94334a5f2f6b491c2d6ea68cf0ecaf050d28a94d",
         "sha256": "fca6cbe81ad520747c9f0911339be7604fb8e1a259f5afc132b01aad2d80b9a0",
-        "retrieved_at": "2026-10-18T16:08:06Z",
+        "retrieved_at": "2026-10-19T06:19:41Z",
         "role": "primary",
         "method": "editorial_primary_review",
         "supports": [
