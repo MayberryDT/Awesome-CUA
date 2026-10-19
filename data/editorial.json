@@ -63191,9 +63191,9 @@
     },
     "additional_evidence": [
       {
-        "url": "https://huggingface.co/api/models/adept/fuyu-8b",
+        "url": "https://huggingface.co/api/models/adept/fuyu-8b/revision/f41defefdb89be0d28cac19d94ce216e37cb6be5",
         "sha256": "ae28118b1737267db5c334db7f0b492bc5187ac5b975549158c63d392d8acd2e",
-        "retrieved_at": "2026-10-18T16:12:39Z",
+        "retrieved_at": "2026-10-19T07:15:26Z",
         "role": "primary",
         "method": "editorial_primary_review",
         "supports": [

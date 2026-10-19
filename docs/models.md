@@ -142,7 +142,7 @@ All entries in this section: unspecified.
 
 | Resource | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- |
-| [Fuyu-8B](https://huggingface.co/adept/fuyu-8b) | — | weights cc-by-nc-4.0 | Adept's decoder-only multimodal base model that feeds image patches straight into the transformer, released for research on digital agents, UI question answering and screen localization. | [✓ 2026‑10‑18](https://huggingface.co/adept/fuyu-8b/raw/f41defefdb89be0d28cac19d94ce216e37cb6be5/README.md) |
+| [Fuyu-8B](https://huggingface.co/adept/fuyu-8b) | — | weights cc-by-nc-4.0 | Adept's decoder-only multimodal base model that feeds image patches straight into the transformer, released for research on digital agents, UI question answering and screen localization. | [✓ 2026‑10‑19](https://huggingface.co/adept/fuyu-8b/raw/f41defefdb89be0d28cac19d94ce216e37cb6be5/README.md) |
 | [OmniParser v2 model bundle](https://huggingface.co/microsoft/OmniParser-v2.0) | — | weights Mixed by component: icon_detect = AGPL-3.0; icon_detect_v3 = MIT; icon_caption = MIT | A screen-parsing weight bundle containing icon-region detectors and an icon captioner for converting screenshots into agent-readable interface elements. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/microsoft/OmniParser/HEAD/README.md) |
 | [ShowUI-π checkpoint](https://huggingface.co/showlab/ShowUI-pi) | [2512.24965](https://arxiv.org/abs/2512.24965) (2025) | — | A compact visual-action checkpoint that predicts continuous GUI drag trajectories from a screenshot and a natural-language instruction. | [✓ 2026‑10‑17](https://huggingface.co/showlab/ShowUI-pi/raw/main/README.md) |
 
