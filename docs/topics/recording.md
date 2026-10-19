@@ -33,7 +33,7 @@ All entries in this section: desktop.
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
 | [Browser Use WebUI](https://github.com/browser-use/web-ui) | web | — | code MIT | A Gradio interface for configuring and running Browser Use agents, including persistent browser sessions and interaction recordings. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/browser-use/web-ui/HEAD/README.md) |
-| [Interceptor](https://github.com/Hacker-Valley-Media/Interceptor) | web, desktop, macos, windows, linux, ios | — | code Elastic-2.0 | CLI and MCP server that lets agents operate the user's signed-in Chrome, Brave or Safari, native apps via accessibility on macOS, Windows and Linux, and a physical iPhone through an XCUITest runner. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/Hacker-Valley-Media/Interceptor/HEAD/README.md) |
+| [Interceptor](https://github.com/Hacker-Valley-Media/Interceptor) | web, desktop, macos, windows, linux, ios | — | code Elastic-2.0 | CLI and MCP server that lets agents operate the user's signed-in Chrome, Brave or Safari, native apps via accessibility on macOS, Windows and Linux, and a physical iPhone through an XCUITest runner. | [✓ 2026‑10‑19](https://raw.githubusercontent.com/Hacker-Valley-Media/Interceptor/HEAD/README.md) |
 
 ## Infrastructure
 

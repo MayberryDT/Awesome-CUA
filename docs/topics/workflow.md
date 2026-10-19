@@ -55,7 +55,7 @@ All entries in this section: web, desktop, macos, windows, linux, ios.
 
 | Resource | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- |
-| [Interceptor](https://github.com/Hacker-Valley-Media/Interceptor) | — | code Elastic-2.0 | CLI and MCP server that lets agents operate the user's signed-in Chrome, Brave or Safari, native apps via accessibility on macOS, Windows and Linux, and a physical iPhone through an XCUITest runner. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/Hacker-Valley-Media/Interceptor/HEAD/README.md) |
+| [Interceptor](https://github.com/Hacker-Valley-Media/Interceptor) | — | code Elastic-2.0 | CLI and MCP server that lets agents operate the user's signed-in Chrome, Brave or Safari, native apps via accessibility on macOS, Windows and Linux, and a physical iPhone through an XCUITest runner. | [✓ 2026‑10‑19](https://raw.githubusercontent.com/Hacker-Valley-Media/Interceptor/HEAD/README.md) |
 
 ## Products
 

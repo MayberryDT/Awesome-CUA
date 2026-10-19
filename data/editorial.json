@@ -63192,7 +63192,7 @@
           "details.package_version",
           "licenses.code"
         ],
-        "url": "https://raw.githubusercontent.com/Hacker-Valley-Media/Interceptor/HEAD/package.json",
+        "url": "https://raw.githubusercontent.com/Hacker-Valley-Media/Interceptor/250c6b1cf8b3056b3741a6954f1d10b5f2ad5ae4/package.json",
         "sha256": "7a23b4094988d23f799f53322de113577bffe3f950f2395aa68f5d01eecc7b32",
         "retrieved_at": "2026-10-18T12:01:23Z"
       },
@@ -63203,7 +63203,7 @@
           "licenses.code",
           "notes"
         ],
-        "url": "https://raw.githubusercontent.com/Hacker-Valley-Media/Interceptor/HEAD/LICENSE",
+        "url": "https://raw.githubusercontent.com/Hacker-Valley-Media/Interceptor/250c6b1cf8b3056b3741a6954f1d10b5f2ad5ae4/LICENSE",
         "sha256": "e70a75b8857ef54c9b8e895dc9d7883296f0180dd95911ec6737ccdda059ed4e",
         "retrieved_at": "2026-10-18T12:01:23Z"
       },
@@ -63214,7 +63214,7 @@
           "licenses.code",
           "notes"
         ],
-        "url": "https://raw.githubusercontent.com/Hacker-Valley-Media/Interceptor/HEAD/COMMERCIAL.md",
+        "url": "https://raw.githubusercontent.com/Hacker-Valley-Media/Interceptor/250c6b1cf8b3056b3741a6954f1d10b5f2ad5ae4/COMMERCIAL.md",
         "sha256": "3680d7b1c255796a5b48a1abf909cae754693ed73b6b8eac8c3040dcdc605c3a",
         "retrieved_at": "2026-10-18T12:01:23Z"
       }
@@ -63223,14 +63223,14 @@
       "code": {
         "value": {
           "declared": "Elastic-2.0",
-          "url": "https://raw.githubusercontent.com/Hacker-Valley-Media/Interceptor/HEAD/LICENSE",
+          "url": "https://raw.githubusercontent.com/Hacker-Valley-Media/Interceptor/250c6b1cf8b3056b3741a6954f1d10b5f2ad5ae4/LICENSE",
           "retrieved_at": "2026-10-18T12:01:23Z",
           "basis": "Elastic License 2.0 from Hacker Valley Media, LLC: internal use, modification and redistribution are allowed, but offering Interceptor as a hosted or managed service needs a commercial license (COMMERCIAL.md)."
         },
         "reason": "GitHub reports NOASSERTION, but the LICENSE file is the Elastic License 2.0 text with a Hacker Valley Media copyright line and package.json declares Elastic-2.0; this is source-available, not an open-source license.",
         "evidence_urls": [
-          "https://raw.githubusercontent.com/Hacker-Valley-Media/Interceptor/HEAD/LICENSE",
-          "https://raw.githubusercontent.com/Hacker-Valley-Media/Interceptor/HEAD/COMMERCIAL.md"
+          "https://raw.githubusercontent.com/Hacker-Valley-Media/Interceptor/250c6b1cf8b3056b3741a6954f1d10b5f2ad5ae4/LICENSE",
+          "https://raw.githubusercontent.com/Hacker-Valley-Media/Interceptor/250c6b1cf8b3056b3741a6954f1d10b5f2ad5ae4/COMMERCIAL.md"
         ]
       }
     },
