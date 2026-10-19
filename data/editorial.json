@@ -63185,9 +63185,9 @@
           "notes",
           "details.repository_revision"
         ],
-        "url": "https://github.com/imoonkey/closepaw/tree/75dae2653f5a6b25d5df51ee7008b0f830de1536",
-        "sha256": "dfa7fd89fdf6d9aacef0c4dbad370cb1118b00ee6ee07747c402e34513e989c3",
-        "retrieved_at": "2026-10-18T16:01:39Z"
+        "url": "https://api.github.com/repos/imoonkey/closepaw/git/trees/75dae2653f5a6b25d5df51ee7008b0f830de1536?recursive=1",
+        "sha256": "900c5617c4f771568d99e7f702ee4a9f9eaf7459f0803ef394aba462025df86e",
+        "retrieved_at": "2026-10-19T06:39:32Z"
       },
       {
         "role": "primary",
