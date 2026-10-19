@@ -63174,9 +63174,9 @@
           "release_status",
           "details.repository_revision"
         ],
-        "url": "https://api.github.com/repos/danielpquinn/browsegpt/git/trees/main?recursive=1",
+        "url": "https://api.github.com/repos/danielpquinn/browsegpt/git/trees/c86c148ec7862f971fe827e1270684b9c8c41016?recursive=1",
         "sha256": "c62774e401dfeeb8345bceb4bce0bbe78bae756ee25617813401828f8052ac29",
-        "retrieved_at": "2026-10-19T06:15:41Z"
+        "retrieved_at": "2026-10-19T07:16:32Z"
       },
       {
         "role": "primary",
