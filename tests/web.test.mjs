@@ -216,7 +216,9 @@ test('sorting keeps the previous order without a collator or query normalization
     if(state.sort==='newest')return result.sort((a,b)=>newer(a,b)||alpha(a,b));
     return result.sort((a,b)=>Number(a.review_status!=='curated')-Number(b.review_status!=='curated')||(['paper','survey'].includes(state.kind)?newer(a,b)||alpha(a,b):exact(a)-exact(b)||rank(a)-rank(b)||alpha(a,b)));
   };
+  // Featured order with a query also ranks name matches first (tests/test_search_relevance.py); the other orders are unchanged.
   for(const sort of ['featured','name','newest'])for(const q of ['','g','browser use'])for(const kind of ['','paper']){
+    if(sort==='featured'&&q)continue;
     const state={...initial(),sort,q,kind};
     assert.deepEqual(filtered(rows,state).map(r=>r.id),legacy(state).map(r=>r.id),JSON.stringify(state));
   }

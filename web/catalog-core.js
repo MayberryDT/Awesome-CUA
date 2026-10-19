@@ -49,7 +49,38 @@ export function matches(record, state, ignoreKind = false) {
   if (state.year && bibliographicDate(record).slice(0,4) !== state.year) return false;
   const terms = normalize(state.q).split(' ').filter(Boolean);
   // Latin and digit terms match at word starts; CJK text is not space-delimited, so it keeps substring matching.
-  return terms.every(term => CJK.test(term) ? record.search_text.includes(term) : record.search_text.startsWith(term) || record.search_text.includes(' '+term));
+  if (terms.every(term => wordStart(record.search_text,term))) return true;
+  // A compound name typed with spaces ("os world", "ui tars") still finds OSWorld and UI-TARS.
+  return terms.length > 1 && compactHit(nameText(record).names,terms.join(''));
+}
+const wordStart = (text, term) => CJK.test(term) ? text.includes(term) : text.startsWith(term) || text.includes(' '+term);
+// True when consecutive words of a name, joined without spaces, start with the compact query; "uitars" is in "ARPO UI-TARS" but not in "GUITAR: Structured…".
+function compactHit(names, compact) {
+  for (const words of names) for (let i = 0; i < words.length; i++) {
+    let joined = '';
+    for (let j = i; j < words.length && joined.length < compact.length; j++) joined += words[j];
+    if (joined.startsWith(compact)) return true;
+  }
+  return false;
+}
+// Names and reader-facing aliases (not IDs or URLs), normalized once per record for matching and ranking.
+const NAME_TEXT = new WeakMap();
+function nameText(record) {
+  let text = NAME_TEXT.get(record);
+  if (!text) {
+    const names = [record.name,...(record.aliases || []).filter(alias => !/[:/]/.test(alias))].map(normalize);
+    text = {names: names.map(name => name.split(' ').filter(Boolean)), exact: names, words: searchText([record.name,...names.slice(1)])};
+    NAME_TEXT.set(record, text);
+  }
+  return text;
+}
+// 0: the name or an alias is the query; 1: the name starts with it; 2: every term is in the name or an alias; 3: matched elsewhere (summary, authors, tags).
+export function nameRelevance(record, q) {
+  const terms = q.split(' ').filter(Boolean), compact = terms.join(''), text = nameText(record);
+  if (!terms.length) return 3;
+  if (text.exact.some(name => name === q || name.replaceAll(' ','') === compact)) return 0;
+  if (!CJK.test(q) && (text.exact[0].startsWith(q) || text.exact[0].replaceAll(' ','').startsWith(compact))) return 1;
+  return terms.every(term => wordStart(text.words,term)) || (terms.length > 1 && compactHit(text.names,compact)) ? 2 : 3;
 }
 const collator = new Intl.Collator('en',{sensitivity:'base'});
 const FEATURED_RANK = new Map(FEATURED.map((name,i) => [name,i]));
@@ -63,9 +94,10 @@ export function filtered(records, state) {
   else if (state.sort === 'newest') result.sort((a,b) => newer(a,b) || alpha(a,b));
   else {
     const papers = ['paper','survey'].includes(state.kind), q = normalize(state.q);
-    const exact = new Set(state.q ? result.filter(r => normalize(r.name) === q) : []);
+    // With a query, records named after it come before records that only mention it in a summary or tag.
+    const relevance = new Map(q ? result.map(r => [r,nameRelevance(r,q)]) : []), tier = r => relevance.get(r) ?? 3;
     const rank = r => r.kind !== 'company' && FEATURED_RANK.has(r.name) ? FEATURED_RANK.get(r.name) : FEATURED.length;
-    result.sort((a,b) => Number(a.review_status !== 'curated') - Number(b.review_status !== 'curated') || (papers ? newer(a,b) || alpha(a,b) : exact.has(b)-exact.has(a) || rank(a)-rank(b) || alpha(a,b)));
+    result.sort((a,b) => Number(a.review_status !== 'curated') - Number(b.review_status !== 'curated') || tier(a)-tier(b) || (papers ? newer(a,b) || alpha(a,b) : rank(a)-rank(b) || alpha(a,b)));
   }
   return result;
 }
