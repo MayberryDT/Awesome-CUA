@@ -6,7 +6,7 @@ import json
 from pathlib import Path
 import sqlite3
 
-from agent_pages import CLONE_COMMAND
+from agent_pages import CLONE_COMMAND, RELEASES_URL
 from export_citations import encode_citations
 from export_rag import encode_documents
 from repository_identity import attach_repository_aliases
@@ -229,7 +229,7 @@ def data_hub_body(manifest, *, language='en', site_url='https://awesomecua.githu
             '</strong> ', tr('reviewed resources', '条已审阅资源'), '</span><a href="/downloads/manifest.json">', tr('Complete download manifest', '完整下载清单'), ' ↗</a></div>',
             '<div class="data-clone"><div class="clone-command"><code>', CLONE_COMMAND, '</code>',
             copy_button(CLONE_COMMAND, tr('Copy the Git clone command', '复制 Git 克隆命令'), 'command'), '</div><p><a href="', '/zh/agents/' if zh else '/agents/', '">',
-            tr('Agent & RAG guide', 'Agent 与 RAG 指南'), '</a> · <a href="/AGENTS.md">AGENTS.md</a> · <a href="', '/zh/topics/' if zh else '/topics/', '">', tr('Browse topic subsets', '浏览主题子集'), '</a></p></div>',
+            tr('Agent & RAG guide', 'Agent 与 RAG 指南'), '</a> · <a href="/AGENTS.md">AGENTS.md</a> · <a href="', '/zh/topics/' if zh else '/topics/', '">', tr('Browse topic subsets', '浏览主题子集'), '</a> · <a href="', RELEASES_URL, '">', tr('Versioned snapshots', '版本快照'), '</a></p></div>',
             '<nav class="data-group-nav" aria-label="', tr('Download groups', '下载分组'), '">']
     for group, labels in GROUPS.items():
         body += ['<a href="#downloads-', group, '">', labels[zh], '</a>']
@@ -253,6 +253,7 @@ def data_hub_body(manifest, *, language='en', site_url='https://awesomecua.githu
              tr('Keep stable IDs, review states, primary sources, license scopes and record fingerprints when building retrieval systems. Reconcile deletions against the complete snapshot and scope ledger.',
                 '构建检索系统时保留稳定 ID、审阅状态、一手来源、许可范围和记录指纹。对照完整快照与范围台账处理被移除的记录。'), '</p><details><summary>', tr('Source catalog SHA-256', '源目录 SHA-256'),
              '</summary><code>', manifest['catalog_sha256'], '</code>', copy_button(manifest['catalog_sha256'], tr('Copy source catalog SHA-256', '复制源目录 SHA-256'), 'hash'), '</details>',
+             '<p><a href="', RELEASES_URL, '">', tr('Download a versioned data bundle', '下载指定版本的数据包'), '</a>', tr(' to keep catalog, RAG documents, citations and topic subsets on one recorded snapshot. Releases include file checksums and the source commit.', '，将目录、RAG 文档、引用和专题子集固定在同一份已记录快照上。发布包附带文件校验值和源提交。'), '</p>',
              '<p>', tr('Downloads contain catalog metadata and original annotations. Linked papers, training datasets and weights remain with their publishers. Code, data, weights and document licenses stay separate.',
              '下载包含目录元数据与原创注释。所链接的论文、训练数据和权重由原发布方提供；代码、数据、权重与文档许可分别记录。'), ' <a href="/LICENSE">MIT</a> · <a href="/about/">', tr('Editorial policy', '收录方法'),
              '</a> · <a href="/coverage/">', tr('Coverage ledger', '覆盖台账'), '</a> · <a href="/compare/benchmarks/">', tr('Compare benchmarks', '对比基准'), '</a> · <a href="/compare/datasets/">', tr('Compare datasets', '对比数据集'),

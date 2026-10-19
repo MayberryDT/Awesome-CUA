@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="40" viewBox="0 0 200 40" role="img" aria-labelledby="title desc">
+  <title id="title">Featured by AwesomeCUA</title>
+  <desc id="desc">A purple award badge on an ink-colored surface with mint details.</desc>
+  <rect x=".5" y=".5" width="199" height="39" rx="10" fill="#1c2439" stroke="#3c465d"/>
+  <path d="M10 0h37v40H10A10 10 0 0 1 0 30V10A10 10 0 0 1 10 0" fill="#6c62e8"/>
+  <path d="m18 24-2 9 7.5-3.4L31 33l-2-9" fill="#cec9ff"/>
+  <path d="m23.5 6.5 3.1 2.1 3.7.3 1.4 3.5 2.9 2.4-.9 3.6.9 3.6-2.9 2.4-1.4 3.5-3.7.3-3.1 2.1-3.1-2.1-3.7-.3-1.4-3.5-2.9-2.4.9-3.6-.9-3.6 2.9-2.4 1.4-3.5 3.7-.3Z" fill="#fff"/>
+  <path d="m23.5 11.5 2 4.1 4.5.6-3.3 3.2.8 4.5-4-2.1-4 2.1.8-4.5-3.3-3.2 4.5-.6Z" fill="#6c62e8"/>
+  <text x="60" y="17" fill="#b6c1d7" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="9" font-weight="600" letter-spacing="1.25">FEATURED BY</text>
+  <text x="59" y="31" fill="#fff" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="15" font-weight="750" letter-spacing="-.35">AwesomeCUA</text>
+</svg>

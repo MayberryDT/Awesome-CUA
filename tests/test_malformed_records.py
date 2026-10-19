@@ -57,6 +57,9 @@ class MalformedRecordTests(unittest.TestCase):
     def test_malformed_record_does_not_hide_other_errors(self):
         malformed, bad = osworld(), osworld()
         malformed.update(id="arxiv:2404.00001", url=None)
+        # Keep the synthetic identity independent of OSWorld's publication.
+        malformed["details"].pop("publication", None)
+        malformed["identifiers"].pop("doi", None)
         bad["scope"] = "unknown"
         self.assertEqual(build.validate_records([malformed, bad]), ["arxiv:2404.00001: malformed fields url", "arxiv:2404.07972: invalid scope"])
 

@@ -41,7 +41,8 @@ jobs:
           mkdir -p release/assets
           cp data/catalog.jsonl data/coverage.json dist/catalog.json dist/catalog.sqlite release/assets/
           cp dist/site/downloads/topics.json dist/site/downloads/benchmarks-profiles.json dist/site/downloads/datasets-profiles.json release/assets/
-          (cd release/assets && sha256sum -- * > SHA256SUMS)
+          python scripts/package_data_release.py --site dist/site --output release/assets --source-commit "$(git rev-parse HEAD)" --source-ref "$GITHUB_REF"
+          (cd release/assets && sha256sum -- awesomecua-data.zip benchmarks-profiles.json catalog.json catalog.jsonl catalog.sqlite coverage.json datasets-profiles.json release-manifest.json topics.json > SHA256SUMS)
           python - "$(git rev-parse HEAD)" > release/notes.md <<'EOF'
           import json, os, sys
           commit, repo = sys.argv[1], os.environ['GITHUB_REPOSITORY']
@@ -52,6 +53,7 @@ jobs:
           rows += [('Benchmark profiles', read('benchmarks-profiles.json')['profile_count']), ('Dataset profiles', read('datasets-profiles.json')['profile_count']), ('Topics', len(topics['topics']))]
           print(f'Catalog exports built from source commit [`{commit}`](https://github.com/{repo}/tree/{commit}), with coverage as of {coverage["as_of_utc"]}.\n')
           print('| Records | Count |\n| --- | ---: |\n' + '\n'.join(f'| {label} | {count:,} |' for label, count in rows) + '\n')
+          print('The complete pinned data snapshot is in `awesomecua-data.zip`; `release-manifest.json` records its source commit, members and fingerprints. The ZIP includes full RAG, citations and topic subsets, with data-only agent instructions.\n')
           print('Counts are resources, not independent projects; topic memberships overlap. Check the downloads with `sha256sum -c SHA256SUMS`, and cite this release by its tag.')
           EOF
       - uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6.0.0

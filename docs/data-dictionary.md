@@ -67,13 +67,16 @@ The schema checks `dataset_profile`, `benchmark_protocol`, `leaderboard_url`, `a
 | `training_data_note` | model | What the publisher states about training data | Editorial |
 | `listed_weight_files` | model | Weight file names in the inspected Hub manifest | Editorial |
 | `artifact_inspection` | model | How far the artifact was inspected, such as the file manifest only | Editorial |
-| `hub_revision` | model | Hub commit whose manifest gave `listed_weight_files` | Editorial |
+| `hub_revision` | benchmark, dataset, model | Hub commit for the inspected release metadata or files; for checkpoints, the manifest that gave `listed_weight_files` | Editorial |
 | `release_revision` | benchmark, dataset, model | Hub commit of the inspected release | Editorial |
 | `repository_revision` | agent, benchmark, dataset, framework, infrastructure, tool | Git commit of the inspected source tree | Editorial |
+| `repository_id` | framework | Numeric repository identity from the retained official GitHub API response; a fork has its own ID, and a matching name or file tree does not establish a rename | Editorial |
+| `repository_tree_sha` | agent, benchmark, framework | Git tree object SHA from the inspected repository file listing; distinct from a commit SHA | Editorial |
+| `repository_url` | agent, benchmark, dataset, framework, model | Related implementation repository or component URL; this link alone does not establish a license or a separate resource identity | Editorial |
 | `release_tag` | agent, benchmark, framework, infrastructure, tool | Inspected release tag, such as `v0.8.8` | Editorial |
 | `package_version` | agent, tool | Inspected package version, such as an npm release | Editorial |
 | `dataset_release` | benchmark | DOI of a separately published data release | Editorial |
-| `component_path` | agent | Path of a component record inside its repository | Editorial |
+| `component_path` | agent, framework | Path of a component record inside its repository | Editorial |
 | `availability` | agent, benchmark, dataset, framework, infrastructure, model, product, tool | What is publicly released and what is missing, such as source without checkpoints | Editorial |
 | `access` | dataset, product | How access is obtained, such as `publisher-managed` | Editorial |
 | `pricing_url` | product | Official pricing page, or null when not established | Editorial |

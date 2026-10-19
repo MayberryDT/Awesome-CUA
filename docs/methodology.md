@@ -16,6 +16,10 @@ Supporting automation libraries and workflow recording tools may be marked `adja
 4. Editorial resources use official repositories, publisher documentation, and model/dataset cards. A reachable page or name match alone is insufficient for curation.
 5. Editorial decisions are AI-assisted, not an assertion of independent human peer review. The reviewed content digest is recorded. A changed snapshot cannot inherit approval merely because its URL still works.
 
+The [18 October 2026 expansion review](reviews/2026-10-18-expansion-review.md)
+shows how these rules changed annotations, withheld approvals, and preserved
+conflicting license declarations in a concrete batch.
+
 ## Identity and deduplication
 
 - arXiv PDF, abstract, HTML, versioned URLs, and Hugging Face paper mirrors map to one version-independent arXiv ID.
@@ -92,7 +96,7 @@ The arXiv title-query population is also bounded. It misses papers with differen
 
 The scheduled recent query covers a 14-day first-submission window ending at the current UTC midnight. A complete, successful result, including a valid zero-result feed, is reused within that UTC day with its original retrieval timestamps. Failed or partial searches are retried by a later scan. This is a local UTC cache policy following the API's recommendation to cache an identical query within its daily publication cycle; the API defines date-query bounds in GMT. [arXiv API manual](https://info.arxiv.org/help/api/user-manual.html)
 
-Both daily workflow runs still attempt to refresh all configured discovery documents and the Hugging Face paper searches. Recent-query reuse only skips that arXiv request. The 14-day discovery window does not provide revision monitoring for every historical paper in the archive.
+All three daily workflow runs still attempt to refresh all configured discovery documents and the Hugging Face paper searches. Recent-query reuse only skips that arXiv request. The 14-day discovery window does not provide revision monitoring for every historical paper in the archive.
 
 ## Performance comparisons
 

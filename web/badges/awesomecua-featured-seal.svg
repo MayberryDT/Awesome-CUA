@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="140" height="156" viewBox="0 0 140 156" role="img" aria-labelledby="title desc">
+  <title id="title">AwesomeCUA Featured Selection</title>
+  <desc id="desc">A gold and violet medal celebrating a featured AwesomeCUA resource.</desc>
+  <path d="m48 95-8 55 30-14 30 14-8-55" fill="#5852d6"/>
+  <path d="m53 99-5 35 22-10 22 10-5-35" fill="#8179e7"/>
+  <path d="m70 3 12 6 13-.3 8 10 12 5 3 13 9 10-2 13 3 13-9 10-3 13-12 5-8 10-13-.3-13 6-12-6-13 .3-8-10-12-5-3-13-9-10 2-13-3-13 9-10 3-13 12-5 8-10 13 .3Z" fill="#ead7ad" stroke="#c5a76f"/>
+  <circle cx="70" cy="59" r="46" fill="#fffdf8" stroke="#c5a76f"/>
+  <circle cx="70" cy="59" r="41" fill="none" stroke="#e2cfaa" stroke-dasharray="1 4" stroke-linecap="round"/>
+  <text x="70" y="35" text-anchor="middle" fill="#7e673e" font-family="Arial,sans-serif" font-size="8" font-weight="700" letter-spacing="1.8">FEATURED</text>
+  <path d="m70 41 3.1 6.3 7 .9-5 4.9 1.2 7-6.3-3.3-6.3 3.3 1.2-7-5-4.9 7-.9Z" fill="#5852d6"/>
+  <text x="70" y="76" text-anchor="middle" fill="#272637" font-family="Arial,sans-serif" font-size="12.5" font-weight="700" letter-spacing="-.4">AwesomeCUA</text>
+  <text x="70" y="88" text-anchor="middle" fill="#8b7853" font-family="Arial,sans-serif" font-size="6.4" font-weight="700" letter-spacing="1.15">RESEARCH · TOOLS · DATA</text>
+</svg>

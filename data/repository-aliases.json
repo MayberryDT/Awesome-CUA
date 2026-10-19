@@ -511,5 +511,32 @@
         "sha256": "14b1211ed709147f4022f311c17303ca70faaffa22be143617eb431d966eec1a"
       }
     ]
+  },
+  {
+    "alias_id": "github:dvlab-research/arpo",
+    "target_id": "github:jia-lab-research/arpo",
+    "repository_id": 987465210,
+    "basis": "official_github_repository_id",
+    "reviewed_at": "2026-10-18T04:56:53+00:00",
+    "observations": [
+      {
+        "url": "https://api.github.com/repos/dvlab-research/ARPO",
+        "resolved_url": "https://api.github.com/repositories/987465210",
+        "repository_id": 987465210,
+        "full_name": "JIA-Lab-research/ARPO",
+        "html_url": "https://github.com/JIA-Lab-research/ARPO",
+        "retrieved_at": "2026-10-17T15:37:00Z",
+        "sha256": "bb64c7fc1b5d88fc070e919516a51eefac4acb89e86773464cfa0b3de18f1898"
+      },
+      {
+        "url": "https://api.github.com/repos/JIA-Lab-research/ARPO",
+        "resolved_url": "https://api.github.com/repos/JIA-Lab-research/ARPO",
+        "repository_id": 987465210,
+        "full_name": "JIA-Lab-research/ARPO",
+        "html_url": "https://github.com/JIA-Lab-research/ARPO",
+        "retrieved_at": "2026-10-18T04:40:39Z",
+        "sha256": "bb64c7fc1b5d88fc070e919516a51eefac4acb89e86773464cfa0b3de18f1898"
+      }
+    ]
   }
 ]

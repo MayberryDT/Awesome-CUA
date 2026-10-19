@@ -12,13 +12,14 @@ ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'scripts'))
 from build import scale_counts, validate_records, write_sqlite
 from catalog import TOPICS
-from search_pages import build_search_pages, resource_path
+from search_pages import build_search_pages, resource_path, SITE
 from export_rag import build_exports
 from export_citations import build_citation_exports
 from site_files import reconcile_generated_pages
 from publication_metadata import record_date_text, publication_search_text
 from repository_identity import attach_repository_aliases
 from specifications import PREFIXES
+from survey_bundle import copy_bundle as copy_survey_bundle
 
 
 def version_script_imports(destination):
@@ -76,8 +77,17 @@ def write_site(destination):
         errors.append('Catalog repository aliases differ from their reviewed source declarations; rebuild catalog first.')
     if errors:raise ValueError('\n'.join(errors[:10]))
     if len(rows)!=coverage['total_records']:raise ValueError('Catalog/coverage count mismatch; rebuild catalog first.')
+    survey_page=copy_survey_bundle(ROOT/'web/survey',destination/'survey',source_root=ROOT,site_url=SITE)
     for path in (ROOT/'web').iterdir():
         if path.is_file():shutil.copy2(path,destination/path.name)
+    badge_source=ROOT/'web/badges'
+    if badge_source.is_dir():
+        if badge_source.is_symlink():raise ValueError('Static badge directory must not be a symbolic link')
+        (destination/'badges').mkdir(exist_ok=True)
+        for name in ('featured-by-awesomecua-laurel.svg','featured-by-awesomecua.svg','featured-by-awesomecua-dark.svg','awesomecua-featured-seal.svg'):
+            source=badge_source/name
+            if source.is_symlink() or not source.is_file():raise ValueError('Missing or unsafe static badge: '+name)
+            shutil.copy2(source,destination/'badges'/name)
     version_script_imports(destination)
     (destination/'data').mkdir(exist_ok=True)
     (destination/'downloads').mkdir(exist_ok=True)
@@ -116,7 +126,7 @@ def write_site(destination):
         if (ROOT/'data'/name).exists():shutil.copy2(ROOT/'data'/name,destination/'downloads'/name)
     shutil.copy2(ROOT/'LICENSE',destination/'LICENSE')
     (destination/'.nojekyll').write_text('',encoding='utf-8')
-    manifest=build_search_pages(destination,rows,coverage,ROOT)
+    manifest=build_search_pages(destination,rows,coverage,ROOT,survey_page=survey_page)
     reconcile_generated_pages(destination,manifest)
     return manifest,len(rows)
 

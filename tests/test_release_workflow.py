@@ -9,6 +9,8 @@ import tempfile
 import textwrap
 import unittest
 
+from test_data_release_package import make_release_fixture
+
 ROOT = Path(__file__).resolve().parents[1]
 RELEASE = ROOT / ".github" / "workflows" / "release.yml"
 CATALOG = ROOT / ".github" / "workflows" / "catalog.yml"
@@ -87,15 +89,9 @@ class ReleaseStepTests(unittest.TestCase):
         (self.base / "bin" / "gh").chmod(0o755)
         self.env = {**os.environ, "GIT_CONFIG_GLOBAL": os.devnull, "GIT_CONFIG_NOSYSTEM": "1", "GIT_AUTHOR_NAME": "t", "GIT_AUTHOR_EMAIL": "t@example.org",
                     "GIT_COMMITTER_NAME": "t", "GIT_COMMITTER_EMAIL": "t@example.org", "GITHUB_REPOSITORY": "reacher-z/Awesome-CUA",
-                    "GITHUB_REF_NAME": "v2026.10.17", "GH_TOKEN": "ghs_exampletoken", "CALLS": str(self.base / "calls"),
+                    "GITHUB_REF_NAME": "v2026.10.17", "GITHUB_REF": "refs/tags/v2026.10.17", "GH_TOKEN": "ghs_exampletoken", "CALLS": str(self.base / "calls"),
                     "PATH": f"{self.base / 'bin'}{os.pathsep}{os.environ['PATH']}"}
-        coverage = {"as_of_utc": "2026-10-17T18:05:46Z", "total_records": 1234, "curated_records": 34, "metadata_only_records": 1200, "by_kind": {"paper": 1230, "benchmark": 4}}
-        files = {"data/catalog.jsonl": "{}\n", "data/coverage.json": json.dumps(coverage), "dist/catalog.json": "[]\n", "dist/catalog.sqlite": "SQLite format 3\0",
-                 "dist/site/downloads/topics.json": json.dumps({"topics": [{"id": "grounding"}, {"id": "safety"}]}),
-                 "dist/site/downloads/benchmarks-profiles.json": json.dumps({"profile_count": 3}), "dist/site/downloads/datasets-profiles.json": json.dumps({"profile_count": 2})}
-        for path, text in files.items():
-            (self.work / path).parent.mkdir(parents=True, exist_ok=True)
-            (self.work / path).write_text(text)
+        make_release_fixture(self.work, with_scripts=True)
         self.git("init", "-q")
         self.git("add", "-A")
         self.git("commit", "-qm", "Snapshot")
@@ -115,20 +111,39 @@ class ReleaseStepTests(unittest.TestCase):
         result = self.run_step("build", "Collect release assets, checksums and notes")
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
         assets = self.work / "release/assets"
-        self.assertEqual(sorted(p.name for p in assets.iterdir()), sorted([*EXPORTS.values(), "SHA256SUMS"]))
+        self.assertEqual(sorted(p.name for p in assets.iterdir()), sorted([*EXPORTS.values(), "awesomecua-data.zip", "release-manifest.json", "SHA256SUMS"]))
         for source, name in EXPORTS.items():
             self.assertEqual((assets / name).read_bytes(), (self.work / source).read_bytes())
         sums = (assets / "SHA256SUMS").read_text().splitlines()
-        self.assertEqual(sorted(line.split("  ", 1)[1] for line in sums), sorted(EXPORTS.values()))
+        self.assertEqual(sorted(line.split("  ", 1)[1] for line in sums), sorted([*EXPORTS.values(), "awesomecua-data.zip", "release-manifest.json"]))
         check = subprocess.run(["sha256sum", "-c", "SHA256SUMS"], cwd=assets, capture_output=True, text=True)
         self.assertEqual(check.returncode, 0, check.stdout + check.stderr)
         notes = (self.work / "release/notes.md").read_text()
         self.assertIn(f"[`{self.commit}`](https://github.com/reacher-z/Awesome-CUA/tree/{self.commit})", notes)
-        self.assertIn("as of 2026-10-17T18:05:46Z", notes)
-        for row in ("| Active records | 1,234 |", "| Curated | 34 |", "| Metadata only | 1,200 |", "| Kind: benchmark | 4 |", "| Kind: paper | 1,230 |",
-                    "| Benchmark profiles | 3 |", "| Dataset profiles | 2 |", "| Topics | 2 |"):
+        self.assertIn("as of 2026-10-17T00:00:00Z", notes)
+        for row in ("| Active records | 3 |", "| Curated | 2 |", "| Metadata only | 1 |", "| Kind: dataset | 1 |", "| Kind: paper | 2 |",
+                    "| Benchmark profiles | 0 |", "| Dataset profiles | 1 |", "| Topics | 2 |"):
             self.assertIn(row, notes)
         self.assertIn("sha256sum -c SHA256SUMS", notes)
+        manifest = json.loads((assets / "release-manifest.json").read_text())
+        self.assertEqual(manifest["source_commit"], self.commit)
+        self.assertEqual(manifest["source_ref"], self.env["GITHUB_REF"])
+        self.assertIn("awesomecua-data.zip", notes)
+
+    def test_collect_can_repeat_without_hashing_sha256sums_itself(self):
+        for _ in range(2):
+            result=self.run_step("build", "Collect release assets, checksums and notes")
+            self.assertEqual(result.returncode,0,result.stdout+result.stderr)
+            check=subprocess.run(["sha256sum","-c","SHA256SUMS"],cwd=self.work/"release/assets",capture_output=True,text=True)
+            self.assertEqual(check.returncode,0,check.stdout+check.stderr)
+        sums=(self.work/"release/assets/SHA256SUMS").read_text()
+        self.assertNotIn("  SHA256SUMS",sums)
+
+    def test_unexpected_residual_asset_blocks_collection(self):
+        assets=self.work/"release/assets";assets.mkdir(parents=True);(assets/"extra.bin").write_bytes(b"not an approved export")
+        result=self.run_step("build", "Collect release assets, checksums and notes")
+        self.assertNotEqual(result.returncode,0)
+        self.assertIn("Unexpected or unsafe release asset",result.stderr)
 
     def test_a_missing_export_fails_the_build_instead_of_releasing_without_it(self):
         (self.work / "dist/site/downloads/datasets-profiles.json").unlink()
@@ -141,7 +156,7 @@ class ReleaseStepTests(unittest.TestCase):
         token, *args = (self.base / "calls").read_text().splitlines()
         self.assertEqual(token, "ghs_exampletoken")
         self.assertEqual(args[:3], ["release", "create", "v2026.10.17"])
-        self.assertEqual(sorted(args[3:-7]), sorted(f"release/assets/{name}" for name in [*EXPORTS.values(), "SHA256SUMS"]))
+        self.assertEqual(sorted(args[3:-7]), sorted(f"release/assets/{name}" for name in [*EXPORTS.values(), "awesomecua-data.zip", "release-manifest.json", "SHA256SUMS"]))
         self.assertEqual(args[-7:], ["--verify-tag", "--title", "Awesome CUA catalog v2026.10.17", "--notes-file", "release/notes.md", "-R", "reacher-z/Awesome-CUA"])
 
 

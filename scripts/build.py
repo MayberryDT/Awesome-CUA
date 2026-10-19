@@ -742,13 +742,14 @@ def shield(label, message, color):
 
 def badges(rows, report):
     curated = report["curated_records"]
+    # Keep the small status strip secondary to the README's editorial banner.
+    # Counts still come from this build; workflow status stays live on main.
+    style = '?style=flat-square&labelColor=303447'
     return ("\n" + " ".join([
-        f"[![Resources]({shield('resources', format(report['total_records'], ','), '4f46e5')})](data/catalog.jsonl)",
-        f"[![Curated]({shield('source-reviewed', format(curated, ','), '0e8a16')})](docs/coverage.md)",
-        f"[![Evidence]({shield('evidence through', report['as_of_utc'][:10], '1d76db')})](docs/coverage.md)",
-        "[![Catalog quality](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml/badge.svg)](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml)",
-        f"[![License]({shield('license', 'MIT', 'blue')})](LICENSE)",
-        f"[![Website]({shield('website', 'awesomecua.github.io', '6366f1')})](https://awesomecua.github.io/)"]) + "\n")
+        f"[![Catalog records]({shield('records', format(report['total_records'], ','), '4856df')}{style})](data/catalog.jsonl)",
+        f"[![Source-reviewed records]({shield('source-reviewed', format(curated, ','), '4856df')}{style})](docs/coverage.md)",
+        "[![Catalog checks](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml/badge.svg?branch=main)](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml)",
+        f"[![MIT license]({shield('license', 'MIT', '606779')}{style})](LICENSE)"]) + "\n")
 
 
 # README category layout: rows of (left, right) cells; each cell lists (label key, generated page, kind). Counts are curated resources.
@@ -795,6 +796,40 @@ def stats_block(report, lang="en"):
         sources=len(report["sources"]), as_of=report["as_of_utc"], metadata=report["metadata_only_records"], unindexed=report["unindexed_candidates"],
         set_aside=report.get("non_resource_candidates", 0) + report.get("alias_candidates", 0),
         excluded=report["excluded_records"]) + "\n\n"
+
+
+def task_navigator(lang="en"):
+    """Short task-oriented entry points shared by source and publication READMEs."""
+    site = "https://awesomecua.github.io"
+    if lang == "zh":
+        heading, columns, cli = "按任务查找", "| 你的任务 | 从这里开始 | 可以找到什么 |", "本地检索示例（克隆后运行；Python 3.11+，无需安装依赖）"
+        items = [
+            ("查找论文", f"[论文库]({site}/zh/papers/) · [研究主题]({site}/zh/topics/)", "按年份和主题阅读已审阅论文，查看原始来源。"),
+            ("选择评测基准", f"[基准指南]({site}/guides/gui-agent-benchmarks/)", "核对平台、任务、评估器和版本。"),
+            ("寻找训练数据", f"[训练数据指南]({site}/guides/gui-agent-training-data/)", "比较监督形式、划分、样本单位和数据许可。"),
+            ("构建智能体", f"[智能体]({site}/categories/agent/) · [框架]({site}/categories/framework/)", "找到实现入口、支持的平台和论文依据。"),
+            ("接入 RAG 或 Agent", f"[使用指南]({site}/zh/agents/) · [数据中心]({site}/zh/data/)", "下载完整记录或检索文档，保留审阅状态和来源。"),
+            ("追溯论文与资产", f"[论文—资产关系]({site}/connections/)", "查看经一手来源支持的代码、数据和模型关联。"),
+        ]
+    else:
+        heading, columns, cli = "Find by task", "| Your task | Start here | What you can find |", "Local examples (after cloning; Python 3.11+, no dependencies required)"
+        items = [
+            ("Find papers", f"[Research library]({site}/papers/) · [Topics]({site}/topics/)", "Reviewed papers by year and topic, with original sources."),
+            ("Choose a benchmark", f"[Benchmark guide]({site}/guides/gui-agent-benchmarks/)", "Platforms, tasks, evaluators, and versions to compare."),
+            ("Find training data", f"[Training-data guide]({site}/guides/gui-agent-training-data/)", "Supervision, splits, count units, and data licenses."),
+            ("Build an agent", f"[Agents]({site}/categories/agent/) · [Frameworks]({site}/categories/framework/)", "Implementation entry points, supported platforms, and papers."),
+            ("Use RAG or an agent", f"[Agent guide]({site}/agents/) · [Data hub]({site}/data/)", "Complete records or retrieval documents with review states and sources."),
+            ("Trace papers to assets", f"[Paper–asset connections]({site}/connections/)", "Code, datasets, and models linked through reviewed primary evidence."),
+        ]
+    commands = [
+        'python3 scripts/catalog.py search "grounding" --kind paper --status curated --limit 0 --json',
+        'python3 scripts/catalog.py search --kind benchmark --environment web --status curated --limit 0 --json',
+        'python3 scripts/catalog.py search --kind dataset --environment android --status curated --limit 0 --json',
+        'python3 scripts/catalog.py search --kind framework --status curated --limit 0 --json',
+        'python3 scripts/export_rag.py --output dist/rag-documents.jsonl',
+        'python3 scripts/catalog.py get arxiv:2404.07972 --related --json',
+    ]
+    return "\n" + "\n".join(["## " + heading, "", columns, "| --- | --- | --- |", *("| " + " | ".join(item) + " |" for item in items), "", "<details>", "<summary>" + cli + "</summary>", "", "```sh", "cd Awesome-CUA", *commands, "```", "", "</details>", ""]) + "\n"
 
 
 def explore(rows, report, lang="en"):
@@ -923,7 +958,7 @@ def build(args):
     for filename, lang in (("README.md", "en"), ("README.zh-CN.md", "zh")):
         path = ROOT / filename
         if path.exists():
-            blocks = {"STATS": stats_block(report, lang), "BADGES": shared_badges, "EXPLORE": explore(rows, report, lang),
+            blocks = {"STATS": stats_block(report, lang), "BADGES": shared_badges, "TASKS": task_navigator(lang), "EXPLORE": explore(rows, report, lang),
                 "HIGHLIGHTS": highlights(rows, edges, lang=lang), "RECENT": recently_reviewed(rows, reviewed_at, lang=lang)}
             content = path.read_text(encoding="utf-8")
             for name, body in blocks.items():

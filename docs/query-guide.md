@@ -63,6 +63,8 @@ For ready-made exports, use the [English data hub](https://awesomecua.github.io/
 
 Check each selected file's actual `count.value`, `count.unit`, `bytes`, and `sha256`, and require matching `catalog_sha256` values across the download, RAG, citation and topic manifests. Counts for resources, retrieval documents, citations and archive records can overlap and must not be added together. A successful file check does not turn metadata-only records into reviewed resources. See the [data dictionary](data-dictionary.md) for the manifest fields and populations.
 
+Use a [tagged release](https://github.com/reacher-z/Awesome-CUA/releases) when a retrieval corpus must remain tied to one version. `awesomecua-data.zip` includes the full catalog, reviewed and complete RAG exports, citations, provenance, schemas and complete topic subsets, with their original relative paths. Check `SHA256SUMS`, then retain `release-manifest.json` and the source commit. Read `downloads/catalog.jsonl` or `downloads/rag-documents.jsonl` within the extracted bundle; clone the source at the recorded commit to use the repository's CLI tools.
+
 ```sh
 python3 scripts/export_rag.py --output dist/rag-documents.jsonl
 python3 scripts/export_rag.py --include-metadata --output dist/rag-all-records.jsonl
