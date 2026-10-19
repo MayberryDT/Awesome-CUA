@@ -37,17 +37,19 @@ KEYED_INPUTS = {
     "data/primary-evidence.jsonl": _field("id"),
     "data/enrichment.jsonl": _field("id"),
     "data/papers.jsonl": _field("id"),
+    "data/candidates.jsonl": _field("id"),
+    "data/metadata-updates.jsonl": _field("id"),
 }
 # catalog.write_jsonl writes these sorted by id; a merge keeps them sorted while our side still is.
-SORTED_BY_ID = {"data/primary-evidence.jsonl", "data/enrichment.jsonl", "data/papers.jsonl"}
+SORTED_BY_ID = {"data/primary-evidence.jsonl", "data/enrichment.jsonl", "data/papers.jsonl", "data/candidates.jsonl", "data/metadata-updates.jsonl"}
 # Whole files that catalog.py build writes: build.build and build.documents. tests/test_land_prs.py checks this against a real build.
 BUILD_OUTPUTS = {"data/catalog.jsonl", "data/coverage.json", "data/exclusion-status.json", "data/review-queue.jsonl", "data/references.jsonl",
     "docs/papers.md", "docs/coverage.md", "docs/topics.md", "docs/environments.md",
     *(f"docs/{'companies' if kind == 'company' else kind + 's'}.md" for kind in KINDS - {"paper"})}
 BUILD_PAGE_DIRS = ("docs/topics/", "docs/environments/")  # One generated page per topic or environment.
 # Files where build replaces only the text between <!-- NAME:START --> and <!-- NAME:END -->; the rest is authored.
-README_BLOCKS = ("BADGES", "STATS", "EXPLORE", "HIGHLIGHTS", "RECENT")
-BUILD_BLOCKS = {"README.md": README_BLOCKS, "README.zh-CN.md": README_BLOCKS, "docs/data-dictionary.md": ("TOPICS",)}
+# None means every marker pair in the file, so a block the build adds later (CHARTS, BY_TOPIC) needs no change here.
+BUILD_BLOCKS = {"README.md": None, "README.zh-CN.md": None, "docs/data-dictionary.md": ("TOPICS",)}
 # A PR that changes only these paths runs no code of its own when the catalog is rebuilt.
 DATA_PREFIXES = ("data/", "docs/")
 GATE = (("build",), ("validate",), ("build", "--check"))
@@ -142,7 +144,7 @@ def merge_keyed(path, base, ours, theirs):
 
 def strip_blocks(path, text):
     """Empty the generated blocks of a partly generated file, keeping their markers for build to refill."""
-    for name in BUILD_BLOCKS[path]:
+    for name in BUILD_BLOCKS[path] or re.findall(r"<!-- ([A-Z0-9_]+):START -->", text):
         text = re.sub(rf"(?<=<!-- {name}:START -->).*?(?=<!-- {name}:END -->)", "", text, flags=re.S)
     return text
 
