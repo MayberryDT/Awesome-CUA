@@ -77,7 +77,7 @@ All entries in this section: web.
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
-| [Fazm](https://github.com/mediar-ai/fazm) | macos, desktop, web | — | code MIT | Voice-driven macOS desktop agent app that runs Claude through an ACP bridge, with MCP tools for Playwright browser control, Google Workspace and macOS app automation. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/mediar-ai/fazm/HEAD/README.md) |
+| [Fazm](https://github.com/mediar-ai/fazm) | macos, desktop, web | — | code MIT | Voice-driven macOS desktop agent app that runs Claude through an ACP bridge, with MCP tools for Playwright browser control, Google Workspace and macOS app automation. | [✓ 2026‑10‑19](https://raw.githubusercontent.com/mediar-ai/fazm/HEAD/README.md) |
 | [Mobile-Agent](https://github.com/X-PLUG/MobileAgent) | android, cross-platform | [2401.16158](https://arxiv.org/abs/2401.16158) (2024), [2406.01014](https://arxiv.org/abs/2406.01014) (2024), [2508.15144](https://arxiv.org/abs/2508.15144) (2025), [2602.16855](https://arxiv.org/abs/2602.16855) (2026) | code MIT | Mobile device agent family using visual interface interaction. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/X-PLUG/MobileAgent/HEAD/README.md) |
 | [UI-TARS Desktop](https://github.com/bytedance/UI-TARS-desktop) | desktop, web | — | code Apache-2.0 | Desktop app for a local GUI agent driven by UI-TARS and Seed-1.5-VL/1.6 models, offering local and remote operators for computers and browsers; the repository also ships the Agent TARS CLI and web UI. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/bytedance/UI-TARS-desktop/HEAD/README.md) |
 

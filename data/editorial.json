@@ -63182,7 +63182,7 @@
     "notes": "Formerly m13v/fazm; both names resolve to GitHub repository 1172888553 (not a fork, not archived). The repository holds the Swift/SwiftUI app, the TypeScript ACP bridge that wires Playwright, browser-harness, Google Workspace and macOS MCP servers, plus backend, website and inbox-pipeline code. The macOS-control server (mcp-server-macos-use) is built from a separate local checkout and skipped when absent. By default run.sh fetches a bootstrap config from fazm.ai, and model keys come from the hosted backend after sign-in. The README declares MIT, but the tree has no root LICENSE file and the GitHub API reports no license.",
     "details": {
       "repository_url": "https://github.com/mediar-ai/fazm",
-      "repository_tree_sha": "f798cfab52eb62cb8ff6b22a1ed8628937634d20"
+      "repository_revision": "f798cfab52eb62cb8ff6b22a1ed8628937634d20"
     },
     "additional_evidence": [
       {
@@ -63202,12 +63202,12 @@
         "supports": [
           "identity",
           "release_status",
-          "details.repository_tree_sha",
+          "details.repository_revision",
           "notes"
         ],
-        "url": "https://api.github.com/repos/mediar-ai/fazm/git/trees/main?recursive=1",
+        "url": "https://api.github.com/repos/mediar-ai/fazm/git/trees/f798cfab52eb62cb8ff6b22a1ed8628937634d20?recursive=1",
         "sha256": "0d90654738c7db61f858020a3ff39a46eeebdbfb9b06394454655adbab94ad43",
-        "retrieved_at": "2026-10-18T11:52:14Z"
+        "retrieved_at": "2026-10-19T06:23:38Z"
       },
       {
         "role": "primary",

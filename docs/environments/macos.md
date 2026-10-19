@@ -34,7 +34,7 @@
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
-| [Fazm](https://github.com/mediar-ai/fazm) | macos, desktop, web | — | code MIT | Voice-driven macOS desktop agent app that runs Claude through an ACP bridge, with MCP tools for Playwright browser control, Google Workspace and macOS app automation. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/mediar-ai/fazm/HEAD/README.md) |
+| [Fazm](https://github.com/mediar-ai/fazm) | macos, desktop, web | — | code MIT | Voice-driven macOS desktop agent app that runs Claude through an ACP bridge, with MCP tools for Playwright browser control, Google Workspace and macOS app automation. | [✓ 2026‑10‑19](https://raw.githubusercontent.com/mediar-ai/fazm/HEAD/README.md) |
 | [PC-Agent (X-PLUG component)](https://github.com/X-PLUG/MobileAgent/tree/main/PC-Agent) | desktop, windows, macos | [2502.14282](https://arxiv.org/abs/2502.14282) (2025) | code MIT | Multi-agent desktop automation component for Windows and macOS, combining active perception, task decomposition and reflection for workflows spanning applications. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/X-PLUG/MobileAgent/HEAD/PC-Agent/README.md) |
 | [ShowUI-Aloha](https://github.com/showlab/ShowUI-Aloha) | desktop, windows, macos | [2601.07181](https://arxiv.org/abs/2601.07181) (2026) | code Apache-2.0 | Desktop agent that records demonstrations, derives semantic action traces, and uses them to plan and execute related workflows. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/showlab/ShowUI-Aloha/HEAD/README.md) |
 
