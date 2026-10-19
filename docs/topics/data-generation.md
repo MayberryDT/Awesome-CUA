@@ -111,7 +111,7 @@ All entries in this section: android.
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
-| [DuckTrack](https://github.com/TheDuckAI/DuckTrack) | desktop, windows, macos, linux | — | code MIT | Tray app that logs mouse and keyboard events to JSONL while OBS records the screen, building multimodal computer-interaction data, and can replay a recording's input events on Windows, macOS or Linux. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/TheDuckAI/DuckTrack/HEAD/README.md) |
+| [DuckTrack](https://github.com/TheDuckAI/DuckTrack) | desktop, windows, macos, linux | — | code MIT | Tray app that logs mouse and keyboard events to JSONL while OBS records the screen, building multimodal computer-interaction data, and can replay a recording's input events on Windows, macOS or Linux. | [✓ 2026‑10‑19](https://raw.githubusercontent.com/TheDuckAI/DuckTrack/HEAD/README.md) |
 | [UI Defect Mocker](https://github.com/ZJU-ACES-ISE/UIDefectMocker) | android | — | code MIT | Synthesizes visual UI defects from mobile screenshots and Android layout metadata to support GUI-testing experiments. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/ZJU-ACES-ISE/UIDefectMocker/HEAD/README.md) |
 
 ## Papers

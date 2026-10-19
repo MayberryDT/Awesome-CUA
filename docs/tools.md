@@ -33,7 +33,7 @@ All entries in this section: web.
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
-| [DuckTrack](https://github.com/TheDuckAI/DuckTrack) | desktop, windows, macos, linux | — | code MIT | Tray app that logs mouse and keyboard events to JSONL while OBS records the screen, building multimodal computer-interaction data, and can replay a recording's input events on Windows, macOS or Linux. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/TheDuckAI/DuckTrack/HEAD/README.md) |
+| [DuckTrack](https://github.com/TheDuckAI/DuckTrack) | desktop, windows, macos, linux | — | code MIT | Tray app that logs mouse and keyboard events to JSONL while OBS records the screen, building multimodal computer-interaction data, and can replay a recording's input events on Windows, macOS or Linux. | [✓ 2026‑10‑19](https://raw.githubusercontent.com/TheDuckAI/DuckTrack/HEAD/README.md) |
 | [Sikuli legacy research implementation](https://github.com/sikuli/sikuli) | desktop, macos, linux, windows | [Sikuli: Using GUI screenshots for search and automation](https://doi.org/10.1145/1622176.1622213) (2009), [GUI Testing Using Computer Vision](https://doi.org/10.1145/1753326.1753555) (2010) | code MIT | The original Sikuli source distribution combines screenshot targets with a Jython scripting library and IDE for visual GUI automation and testing. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/sikuli/sikuli/HEAD/docs/source/index.rst) |
 
 [↑ Back to top](#tool-catalog)
