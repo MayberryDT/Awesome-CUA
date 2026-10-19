@@ -63212,9 +63212,9 @@
           "details.download_url",
           "details.listed_weight_files"
         ],
-        "url": "https://huggingface.co/api/models/OS-Copilot/OS-Genesis-4B-AW",
+        "url": "https://huggingface.co/api/models/OS-Copilot/OS-Genesis-4B-AW/revision/004b6a2aced3cde9d57be11508f78d8178ed4d09",
         "sha256": "a26e69689546a2e4ddee5460bbe2fa55679c5fd557098f7e679cdbe323a00015",
-        "retrieved_at": "2026-10-18T15:54:46Z"
+        "retrieved_at": "2026-10-19T06:18:22Z"
       },
       {
         "role": "primary",
