@@ -63159,7 +63159,7 @@
     "topics": [
       "sandbox"
     ],
-    "summary": "Virtual-machine computers for AI agents, run locally or in Celesto Cloud, with command-only, Chromium-over-CDP and Linux desktop runtimes plus Windows 11 and macOS previews, driven by a CLI and Python SDK.",
+    "summary": "Virtual-machine computers for AI agents, run locally or in Celesto Cloud, with command-only, Chromium-over-CDP and Linux desktop runtimes, Windows 11 computers and a macOS desktop preview, via a CLI and Python SDK.",
     "scope": "core",
     "verify_terms": [
       "Celesto"

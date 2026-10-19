@@ -73,7 +73,7 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 
 **3,176 resource records** · **1,615 curated** · **2,715 paper and survey records** · **54 discovery documents**
 
-Evidence through `2026-10-18T13:06:20.028238+00:00`. 1,561 records have bibliographic verification only; 905 discovered identifiers remain unresolved, not counting 133 links reviewed as non-resources or other addresses of indexed resources. 136 scope exclusions retain their original metadata in the archive. Counts overlap as explained below.
+Evidence through `2026-10-19T06:21:33Z`. 1,561 records have bibliographic verification only; 905 discovered identifiers remain unresolved, not counting 133 links reviewed as non-resources or other addresses of indexed resources. 136 scope exclusions retain their original metadata in the archive. Counts overlap as explained below.
 
 <!-- STATS:END -->
 
@@ -182,7 +182,7 @@ Newest editorial approvals of models, datasets, benchmarks, systems, and tools (
 | 2026‑10‑18 | [AgentStudio](https://github.com/skyworkai/agent-studio) | framework | desktop, linux | Toolkit and Ubuntu-based environment for building and evaluating generalist computer-use agents through GUI and API interaction. |
 | 2026‑10‑18 | [VideoCAD training and evaluation code](https://github.com/ghadinehme/VideoCAD) | framework | web | VideoCADFormer training, action-log preprocessing and evaluation code for learning CAD interface action sequences from screen recordings of browser-based Onshape. |
 | 2026‑10‑18 | [GUIPivot](https://github.com/ZrW00/GUIPivot) | framework | android | Query-inference training tools connecting screenshot grounding with GUI action reasoning, including preprocessing, query refinement and offline single-step evaluation on AndroidControl and AITZ. |
-| 2026‑10‑18 | [Celesto](https://github.com/CelestoAI/celesto) | infrastructure | desktop, linux, windows, macos, web | Virtual-machine computers for AI agents, run locally or in Celesto Cloud, with command-only, Chromium-over-CDP and Linux desktop runtimes plus Windows 11 and macOS previews, driven by a CLI and Python SDK. |
+| 2026‑10‑18 | [Celesto](https://github.com/CelestoAI/celesto) | infrastructure | desktop, linux, windows, macos, web | Virtual-machine computers for AI agents, run locally or in Celesto Cloud, with command-only, Chromium-over-CDP and Linux desktop runtimes, Windows 11 computers and a macOS desktop preview, via a CLI and Python SDK. |
 | 2026‑10‑18 | [MLA-Trust](https://github.com/thu-ml/MLA-Trust) | benchmark | web, android, cross-platform | Unified evaluation framework measuring truthfulness, controllability, safety, and privacy of multimodal LLM agents across interactive web and mobile GUI tasks. |
 <!-- RECENT:END -->
 

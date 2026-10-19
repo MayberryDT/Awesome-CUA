@@ -75,7 +75,7 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 
 **3,176 条资源记录** · **1,615 条已审阅** · **2,715 条论文与综述记录** · **54 个发现来源文档**
 
-证据截至 `2026-10-18T13:06:20.028238+00:00`。1,561 条记录仅完成书目核实；905 个已发现的标识符尚待处理，另有 133 个链接经审阅确认为非资源或已收录资源的其他地址，不计入其中。136 条范围排除记录在归档中保留原始元数据。各项计数存在重叠，详见下文。
+证据截至 `2026-10-19T06:21:33Z`。1,561 条记录仅完成书目核实；905 个已发现的标识符尚待处理，另有 133 个链接经审阅确认为非资源或已收录资源的其他地址，不计入其中。136 条范围排除记录在归档中保留原始元数据。各项计数存在重叠，详见下文。
 
 <!-- STATS:END -->
 
@@ -184,7 +184,7 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 | 2026‑10‑18 | [AgentStudio](https://github.com/skyworkai/agent-studio) | 框架 | desktop, linux | Toolkit and Ubuntu-based environment for building and evaluating generalist computer-use agents through GUI and API interaction. |
 | 2026‑10‑18 | [VideoCAD training and evaluation code](https://github.com/ghadinehme/VideoCAD) | 框架 | web | VideoCADFormer training, action-log preprocessing and evaluation code for learning CAD interface action sequences from screen recordings of browser-based Onshape. |
 | 2026‑10‑18 | [GUIPivot](https://github.com/ZrW00/GUIPivot) | 框架 | android | Query-inference training tools connecting screenshot grounding with GUI action reasoning, including preprocessing, query refinement and offline single-step evaluation on AndroidControl and AITZ. |
-| 2026‑10‑18 | [Celesto](https://github.com/CelestoAI/celesto) | 基础设施 | desktop, linux, windows, macos, web | Virtual-machine computers for AI agents, run locally or in Celesto Cloud, with command-only, Chromium-over-CDP and Linux desktop runtimes plus Windows 11 and macOS previews, driven by a CLI and Python SDK. |
+| 2026‑10‑18 | [Celesto](https://github.com/CelestoAI/celesto) | 基础设施 | desktop, linux, windows, macos, web | Virtual-machine computers for AI agents, run locally or in Celesto Cloud, with command-only, Chromium-over-CDP and Linux desktop runtimes, Windows 11 computers and a macOS desktop preview, via a CLI and Python SDK. |
 | 2026‑10‑18 | [MLA-Trust](https://github.com/thu-ml/MLA-Trust) | 基准 | web, android, cross-platform | Unified evaluation framework measuring truthfulness, controllability, safety, and privacy of multimodal LLM agents across interactive web and mobile GUI tasks. |
 <!-- RECENT:END -->
 

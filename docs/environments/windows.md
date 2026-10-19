@@ -67,7 +67,7 @@ All entries in this section: desktop, windows, linux.
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
 | [BrowserOS / BrowserOS neo](https://github.com/browseros-ai/BrowserOS) | web, desktop, windows, macos, linux | — | code AGPL-3.0 | Chromium-based browser implementations for external agent control and built-in assistant workflows, with session visibility and replay facilities. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/browseros-ai/BrowserOS/HEAD/README.md) |
-| [Celesto](https://github.com/CelestoAI/celesto) | desktop, linux, windows, macos, web | — | code Apache-2.0 | Virtual-machine computers for AI agents, run locally or in Celesto Cloud, with command-only, Chromium-over-CDP and Linux desktop runtimes plus Windows 11 and macOS previews, driven by a CLI and Python SDK. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/CelestoAI/celesto/HEAD/README.md) |
+| [Celesto](https://github.com/CelestoAI/celesto) | desktop, linux, windows, macos, web | — | code Apache-2.0 | Virtual-machine computers for AI agents, run locally or in Celesto Cloud, with command-only, Chromium-over-CDP and Linux desktop runtimes, Windows 11 computers and a macOS desktop preview, via a CLI and Python SDK. | [✓ 2026‑10‑19](https://raw.githubusercontent.com/CelestoAI/celesto/HEAD/README.md) |
 
 ## Surveys
 
