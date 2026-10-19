@@ -63180,9 +63180,9 @@
           "details.availability",
           "licenses.code"
         ],
-        "url": "https://github.com/Computer-use-agents/MacOS-Agent/tree/a047656cbfecd0d7067661ed9c1ed718027d052a",
-        "sha256": "a42ff50d08c666ccda20c8cbb26c0626468ee0c0ad7a7a34ece1df0c617f6510",
-        "retrieved_at": "2026-10-18T16:04:02Z"
+        "url": "https://api.github.com/repos/Computer-use-agents/MacOS-Agent/git/trees/a047656cbfecd0d7067661ed9c1ed718027d052a?recursive=1",
+        "sha256": "eef72bdba62410ffbe6313e3d80f44fce69134d7b21f9b561b4ef945e4987427",
+        "retrieved_at": "2026-10-19T06:14:39Z"
       },
       {
         "role": "primary",
@@ -63320,7 +63320,7 @@
         "reason": "The README's License section names CC BY-NC 4.0, but the inspected tree at the reviewed commit has no license file, so no source-license grant is recorded.",
         "evidence_urls": [
           "https://raw.githubusercontent.com/Computer-use-agents/MacOS-Agent/HEAD/README.md",
-          "https://github.com/Computer-use-agents/MacOS-Agent/tree/a047656cbfecd0d7067661ed9c1ed718027d052a"
+          "https://api.github.com/repos/Computer-use-agents/MacOS-Agent/git/trees/a047656cbfecd0d7067661ed9c1ed718027d052a?recursive=1"
         ]
       }
     },
