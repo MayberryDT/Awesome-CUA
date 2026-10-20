@@ -109,7 +109,7 @@ before changing scan inputs or resuming a checkpoint.
 
 ## Answer with the evidence boundary intact
 
-- Prefer `review_status=curated` for recommendations and evidence-backed summaries. `metadata_verified` confirms bibliographic facts; relevance and findings still await review.
+- Prefer `review_status=curated` for recommendations and evidence-backed summaries. `metadata_verified` confirms bibliographic facts without approving relevance or findings. It includes entries awaiting review and entries held after source reading; recorded hold reasons appear in the [coverage ledger](https://awesomecua.github.io/downloads/coverage.json).
 - For catalog records, cite `details.arxiv_snapshot.versioned_url` when recorded, otherwise `url`; retain `last_verified_at`, `evidence`, and `details.arxiv_snapshot`. For RAG documents, cite `metadata.source_url` (the primary source) and `metadata.citation_url` (the catalog page), preserving `metadata.record_sha256` and the other provenance fields. These RAG metadata keys are not top-level catalog fields; see the [field mapping](https://github.com/reacher-z/Awesome-CUA/blob/main/docs/query-guide.md#catalog-and-rag-field-mapping).
 - A resource is not necessarily an independent project. Preserve reviewed relations; do not treat an incidental mention as a training or evaluation dependency.
 - Code, data, weights, and document licenses are separate. Unknown values remain unknown. Keep benchmark versions, splits, evaluators, and sample units when comparing specifications.

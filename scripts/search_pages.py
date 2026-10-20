@@ -159,7 +159,7 @@ def incoming_relations(rows):
 
 def resource_body(record, lookup, incoming=None):
     r=record
-    status="AI-assisted editorial review against a primary source" if eligible(r) else "Bibliographic metadata verified; topic relevance and research findings have not been reviewed"
+    status="AI-assisted editorial review against a primary source" if eligible(r) else "Bibliographic metadata verified; editorial approval is pending"
     body=f'<div class="eyebrow">{esc(KINDS[r["kind"]])}</div><h1>{esc(r["name"])}</h1><p class="answer-lead">{esc(description(r))}</p><p class="review-notice">{esc(status)}. This is a catalog annotation, not an independent reproduction or endorsement.</p><div class="page-actions"><a class="button primary" href="{safe_href(r["url"])}">Original source ↗</a><a class="button secondary" href="{resource_path(r)}index.md">Read as Markdown</a><a class="button secondary" href="{resource_path(r)}record.json">Record JSON</a></div>'
     facts=[("Resource type",KINDS[r["kind"]]),("Environment",", ".join(r["environments"])),("Topics",", ".join(r["topics"]) or "Not assigned"),("Record publication date",record_date_text(r) or "Not recorded"),("Evidence retrieved",r["last_verified_at"]),("Resource ID",r["id"])]
     body+='<h2>What is this resource?</h2><dl class="page-facts">'+''.join(f'<div><dt>{esc(k)}</dt><dd>{esc(v)}</dd></div>' for k,v in facts)+'</dl>'
