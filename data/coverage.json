@@ -1,7 +1,7 @@
 {
-  "as_of_utc": "2026-10-20T15:15:05.368243+00:00",
+  "as_of_utc": "2026-10-20T15:43:20.402537Z",
   "total_records": 3231,
-  "curated_records": 1665,
+  "curated_records": 1667,
   "bibliographic_records": 2760,
   "arxiv_active_records": 2747,
   "non_arxiv_bibliographic_records": 13,
@@ -9,7 +9,7 @@
   "arxiv_archive_records": 2885,
   "excluded_records": 138,
   "exclusion_revalidation_pending": 0,
-  "metadata_only_records": 1566,
+  "metadata_only_records": 1564,
   "discovery_identifiers": 4270,
   "unindexed_candidates": 906,
   "non_resource_candidates": 98,
@@ -210,6 +210,13 @@
       "url": "https://arxiv.org/abs/2610.14306",
       "reason": "Scope hold after complete v1 main text (Sections I–VII) and Appendix VII-A: Plottery is a human-operated Jupyter plotting interface with direct manipulation, editable code and a prompt-to-code assistant. Its evaluation studies people switching modalities; the inspected method does not establish an agent observing or operating the GUI, or a CUA execution/recording interface. Need explicit agent interaction or directly used CUA-support evidence before core/adjacent inclusion. Preserve the metadata record; no scope exclusion is proposed.",
       "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2610.14855",
+      "name": "PEAM: On-device Communication Agent for Personalized, Efficient and Autonomous Mobile Network Configuration",
+      "url": "https://arxiv.org/abs/2610.14855",
+      "reason": "Scope hold after v1 Methodology, Evaluation and Appendices A (On-Device Deployment), B and D. PEAM generates background network-configuration rules and reports real cellular/Wi-Fi switching on Android 16; active rules execute after explicit user acceptance. The inspected work does not establish GUI observation/action control or a component actually used by a CUA workflow. Native network switching alone does not establish that broader role. Need direct interface/control or CUA-support evidence before inclusion. Preserve metadata; no permanent exclusion is proposed.",
+      "cause": "reviewer_hold"
     }
   ],
   "uncurated_linked_papers": [],
@@ -235,7 +242,7 @@
     "ios": 22,
     "linux": 54,
     "macos": 30,
-    "unspecified": 381,
+    "unspecified": 383,
     "web": 644,
     "windows": 65
   },
@@ -319,7 +326,7 @@
       "ios": 8,
       "linux": 23,
       "macos": 14,
-      "unspecified": 344,
+      "unspecified": 346,
       "web": 459,
       "windows": 38
     },
@@ -352,7 +359,7 @@
     "code": 188,
     "data": 61,
     "weights": 56,
-    "document": 2
+    "document": 4
   },
   "sources": [
     {
@@ -800,7 +807,7 @@
       "indexed": 210,
       "indexed_resources": 210,
       "resolved_aliases": 0,
-      "curated": 160,
+      "curated": 161,
       "excluded": 0,
       "set_aside": 1,
       "unindexed": 2

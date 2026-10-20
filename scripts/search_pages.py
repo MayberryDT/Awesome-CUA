@@ -194,7 +194,7 @@ def resource_body(record, lookup, incoming=None, pending_review=None):
     if r['kind'] in {'paper','survey'}:
         body+='<h2>Cite this paper</h2><p><a href="'+resource_path(r)+'citation.bib" download>Download BibTeX</a> · <a href="'+resource_path(r)+'citation.csl.json" download>Download CSL JSON</a></p><p>Citations preserve the selected source edition, its authors and recorded date precision. Unrecorded venues and identifiers are omitted.</p>'
         body+=publication_body(r)
-    if r["kind"] not in {"paper","survey"}:
+    if r["kind"] not in {"paper","survey"} or any(r["licenses"].values()):
         body+='<h2>What licenses are recorded?</h2><p>Code, training data, weights, and documents can have different terms. A blank declaration means unknown, not unrestricted use.</p><dl class="page-facts">'
         for slot,l in r["licenses"].items():
             value=f'<a href="{safe_href(l["url"])}">{esc(l["declared"] if isinstance(l["declared"],str) else ", ".join(l["declared"]))}</a> ({esc(l["basis"])})' if l else "Not recorded"

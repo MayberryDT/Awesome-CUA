@@ -2,22 +2,22 @@
 
 [Home](../README.md) · [Full arXiv bibliography](papers.md) · [Methodology](methodology.md)
 
-1,665 source-reviewed resources across 35 topics. Topic tags are catalog annotations from the editorial review, not author keywords; a resource appears under every topic it carries. Each hub lists benchmarks, data, models, systems, learning resources, and papers together, newest papers first.
+1,667 source-reviewed resources across 35 topics. Topic tags are catalog annotations from the editorial review, not author keywords; a resource appears under every topic it carries. Each hub lists benchmarks, data, models, systems, learning resources, and papers together, newest papers first.
 
 | Topic | All | Benchmarks | Datasets | Models | Systems | Learning resources | Papers | Newest reviewed paper |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- |
-| [Evaluation](topics/evaluation.md) | 715 | 87 | 9 | 1 | 31 | · | 587 | [VeriCUA: Learning Proactive Verification for Reliable GUI Agent Rewards](https://arxiv.org/abs/2610.26469) · 2026-10-19 |
-| [GUI grounding](topics/grounding.md) | 378 | 10 | 32 | 67 | 22 | · | 247 | [Focused Omni-Modal GUI Agents](https://arxiv.org/abs/2610.26203) · 2026-10-19 |
-| [Data generation](topics/data-generation.md) | 344 | · | 55 | 2 | 25 | · | 262 | [CUA-Lite: An Open Platform for Computer Use Agents](https://arxiv.org/abs/2610.26071) · 2026-10-19 |
+| [Evaluation](topics/evaluation.md) | 716 | 87 | 9 | 1 | 31 | · | 588 | [VeriCUA: Learning Proactive Verification for Reliable GUI Agent Rewards](https://arxiv.org/abs/2610.26469) · 2026-10-19 |
+| [GUI grounding](topics/grounding.md) | 379 | 10 | 32 | 67 | 22 | · | 248 | [Focused Omni-Modal GUI Agents](https://arxiv.org/abs/2610.26203) · 2026-10-19 |
+| [Data generation](topics/data-generation.md) | 345 | · | 55 | 2 | 25 | · | 263 | [CUA-Lite: An Open Platform for Computer Use Agents](https://arxiv.org/abs/2610.26071) · 2026-10-19 |
 | [Web navigation](topics/web-navigation.md) | 306 | 17 | 8 | 11 | 46 | 2 | 222 | [SPIDES: Information-Flow Control for Browser Agents](https://arxiv.org/abs/2610.24277) · 2026-10-16 |
-| [Planning](topics/planning.md) | 282 | · | 4 | 27 | 32 | 1 | 218 | [Adaptation of Computer Use Agents to New Software with User Manuals](https://arxiv.org/abs/2610.23012) · 2026-10-16 |
-| [Mobile navigation](topics/mobile-navigation.md) | 281 | 14 | 13 | 15 | 32 | · | 207 | [Tandem: Serving Hybrid Linear-Attention GUI Agents on Mobile NPUs](https://arxiv.org/abs/2610.26660) · 2026-10-19 |
-| [Reinforcement learning](topics/reinforcement-learning.md) | 240 | 2 | 5 | 23 | 22 | · | 188 | [VeriCUA: Learning Proactive Verification for Reliable GUI Agent Rewards](https://arxiv.org/abs/2610.26469) · 2026-10-19 |
+| [Planning](topics/planning.md) | 283 | · | 4 | 27 | 32 | 1 | 219 | [Adaptation of Computer Use Agents to New Software with User Manuals](https://arxiv.org/abs/2610.23012) · 2026-10-16 |
+| [Mobile navigation](topics/mobile-navigation.md) | 282 | 14 | 13 | 15 | 32 | · | 208 | [Tandem: Serving Hybrid Linear-Attention GUI Agents on Mobile NPUs](https://arxiv.org/abs/2610.26660) · 2026-10-19 |
+| [Reinforcement learning](topics/reinforcement-learning.md) | 241 | 2 | 5 | 23 | 22 | · | 189 | [VeriCUA: Learning Proactive Verification for Reliable GUI Agent Rewards](https://arxiv.org/abs/2610.26469) · 2026-10-19 |
 | [Safety & security](topics/safety-security.md) | 212 | 12 | · | · | 8 | · | 192 | [SPIDES: Information-Flow Control for Browser Agents](https://arxiv.org/abs/2610.24277) · 2026-10-16 |
 | [Screen understanding](topics/screen-understanding.md) | 211 | 6 | 19 | 10 | 12 | 1 | 163 | [Focused Omni-Modal GUI Agents](https://arxiv.org/abs/2610.26203) · 2026-10-19 |
 | [Robustness](topics/robustness.md) | 186 | 10 | 1 | · | 2 | · | 173 | [ScopeMem: Latent Memory That Learns Where to Revise Frozen GUI Agents](https://arxiv.org/abs/2610.26503) · 2026-10-19 |
-| [Memory](topics/memory.md) | 170 | 1 | 2 | · | 16 | · | 151 | [ScopeMem: Latent Memory That Learns Where to Revise Frozen GUI Agents](https://arxiv.org/abs/2610.26503) · 2026-10-19 |
-| [Efficiency](topics/efficiency.md) | 157 | 2 | · | 5 | 5 | · | 145 | [VeriCUA: Learning Proactive Verification for Reliable GUI Agent Rewards](https://arxiv.org/abs/2610.26469) · 2026-10-19 |
+| [Memory](topics/memory.md) | 171 | 1 | 2 | · | 16 | · | 152 | [ScopeMem: Latent Memory That Learns Where to Revise Frozen GUI Agents](https://arxiv.org/abs/2610.26503) · 2026-10-19 |
+| [Efficiency](topics/efficiency.md) | 158 | 2 | · | 5 | 5 | · | 146 | [VeriCUA: Learning Proactive Verification for Reliable GUI Agent Rewards](https://arxiv.org/abs/2610.26469) · 2026-10-19 |
 | [Tool integration](topics/tool-integration.md) | 136 | 9 | 2 | 4 | 24 | · | 97 | [CUA-Lite: An Open Platform for Computer Use Agents](https://arxiv.org/abs/2610.26071) · 2026-10-19 |
 | [Workflows](topics/workflow.md) | 112 | 6 | 2 | · | 22 | · | 82 | [Task-State Governance: A Virtual Machine for Verifiable and Recoverable GUI Agent Execution](https://arxiv.org/abs/2610.20100) · 2026-10-14 |
 | [Automation](topics/automation.md) | 111 | · | · | 1 | 27 | · | 83 | [Interaction-as-a-Judge](https://arxiv.org/abs/2610.17895) · 2026-10-13 |
@@ -34,7 +34,7 @@
 | [Observability](topics/observability.md) | 42 | · | · | · | 4 | · | 38 | [Comparing Computer Use Behavior Across Multiple Levels of Abstraction](https://arxiv.org/abs/2610.26703) · 2026-10-19 |
 | [Self-reflection](topics/self-reflection.md) | 40 | · | · | 3 | 7 | · | 30 | [When Faster Decisions Do Not Make Better Agents: An Empirical Study of Jev in Agent Workflows](https://arxiv.org/abs/2610.13092) · 2026-10-09 |
 | [Video](topics/video.md) | 38 | 2 | 7 | · | · | · | 29 | [Invisible in Space, Visible in Time: Motion Vision CAPTCHA against GUI Agents](https://arxiv.org/abs/2609.27461) · 2026-09-23 |
-| [Training-free methods](topics/training-free.md) | 30 | · | · | · | 2 | · | 28 | [Relevance Does Not Imply Applicability: Experience Activation for Personal GUI Agents](https://arxiv.org/abs/2609.33304) · 2026-09-27 |
+| [Training-free methods](topics/training-free.md) | 31 | · | · | · | 2 | · | 29 | [Visible but Not Avoided: State-Dependent Re-Proposal of Rejected Candidates in Catalog-Based LLM Optimization Loops](https://arxiv.org/abs/2610.15738) · 2026-10-11 |
 | [Industry](topics/industry.md) | 27 | · | · | · | 16 | · | 11 | [HealthAdminBench: Evaluating Computer-Use Agents on Healthcare Administration Tasks](https://arxiv.org/abs/2604.09937) · 2026-04-10 |
 | [Recording](topics/recording.md) | 24 | · | 1 | · | 8 | · | 15 | [Work2Skill: Capturing Human GUI Experience for Reusable Agent Skill Induction](https://arxiv.org/abs/2610.12984) · 2026-10-09 |
 | [UI design](topics/ui-design.md) | 22 | · | 1 | · | · | · | 21 | [WebUIProof: Benchmarking WebUI Code Generators with UI-Agent Execution Harness](https://arxiv.org/abs/2610.02617) · 2026-10-02 |

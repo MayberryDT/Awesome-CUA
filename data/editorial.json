@@ -66241,5 +66241,131 @@
     "review_note": "Scope hold after complete v1 main text (Sections I–VII) and Appendix VII-A: Plottery is a human-operated Jupyter plotting interface with direct manipulation, editable code and a prompt-to-code assistant. Its evaluation studies people switching modalities; the inspected method does not establish an agent observing or operating the GUI, or a CUA execution/recording interface. Need explicit agent interaction or directly used CUA-support evidence before core/adjacent inclusion. Preserve the metadata record; no scope exclusion is proposed.",
     "reviewed_at": "2026-10-20T15:25:00Z",
     "reviewed_sha256": "ded3ffd311f782aab9fb02c2b233546ee903300a22657850d6ba853e9c22dcd4"
+  },
+  {
+    "id": "arxiv:2610.15738",
+    "name": "Visible but Not Avoided: State-Dependent Re-Proposal of Rejected Candidates in Catalog-Based LLM Optimization Loops",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.15738",
+    "summary": "Studies repeated rejected edits while optimizing a screenshot-only GUI agent, contrasting static probes with reached loop states and testing how rejection wording changes subsequent edit proposals.",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "evaluation",
+      "grounding",
+      "training-free"
+    ],
+    "scope": "core",
+    "notes": "The downstream test uses one screenshot-only agent, nine synthetic apps and 60 cached development items, with TAP-tag or text-answer outputs; this is not demonstrated live-app completion. Two catalogs reword the same 40 edits. Re-proposal effects do not establish internal causal mechanisms or task-success gains. Main serving providers were unpinned; rationale labels came from LLM annotators. No independent reproduction.",
+    "verify_terms": [
+      "Catalog-Based LLM Optimization Loops"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/html/2610.15738v1"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "licenses.document"
+    ],
+    "editorial_reviewed": true,
+    "review_note": "Retained primary sources and independent source review support the annotation. Interface, evaluation, reading and license limits remain explicit; no linked model, code or benchmark was executed.",
+    "reviewed_licenses": {
+      "document": {
+        "value": {
+          "declared": "CC-BY-4.0",
+          "url": "https://arxiv.org/html/2610.15738v1",
+          "retrieved_at": "2026-10-20T15:31:34.620763Z",
+          "basis": "The retained version-specific arXiv HTML infobox explicitly declares License: CC BY 4.0 for this document."
+        },
+        "reason": "Publisher document declaration only; no code, data or weights license inferred.",
+        "evidence_urls": [
+          "https://arxiv.org/html/2610.15738v1"
+        ]
+      }
+    },
+    "reviewed_at": "2026-10-20T16:09:15Z",
+    "reviewed_sha256": "7ec947ceb462b5fd23a4a67df64e931e427224ef721b681d3fc92c1d4379449f"
+  },
+  {
+    "id": "arxiv:2609.29892",
+    "name": "Qwen-Planner-Agent: A Closed-Loop AI-for-AI Framework for Real-World Mobile Planner Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2609.29892",
+    "summary": "Trains a mobile planner with supervised trajectories and competence-adaptive RL, then couples typed tool execution with memory, skills and offline model-harness refinement.",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "planning",
+      "data-generation",
+      "reinforcement-learning",
+      "memory",
+      "mobile-navigation",
+      "efficiency"
+    ],
+    "scope": "core",
+    "notes": "Primarily typed tool actions and structured feedback, not pixel-coordinate GUI control; backends combine programmatic sandboxes, LLM simulation and selected real-device sessions. No specific OS is established. Model/harness updates are reviewed offline, not autonomous serving-time changes. Co-evolution scores use an evolve/development set; output-cost estimates exclude input, tools, devices and harness processing. Memory comparisons differ in history access and processing cost; user authorization relies on trusted upstream services. No independent reproduction.",
+    "verify_terms": [
+      "Hybrid Mobile Environment Infrastructure"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/html/2609.29892v1"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "licenses.document"
+    ],
+    "reviewed_licenses": {
+      "document": {
+        "value": {
+          "declared": "CC-BY-4.0",
+          "url": "https://arxiv.org/html/2609.29892v1",
+          "retrieved_at": "2026-10-20T15:43:20.402537Z",
+          "basis": "The exact-v1 arXiv HTML infobox (#license-tr) declares License: CC BY 4.0 for this paper. This declaration is document-only."
+        },
+        "reason": "Record the paper-specific arXiv document declaration; it does not establish code, data or model-weight permissions.",
+        "evidence_urls": [
+          "https://arxiv.org/html/2609.29892v1"
+        ]
+      }
+    },
+    "editorial_reviewed": true,
+    "review_note": "Retained primary sources and independent source review support the annotation. Interface, evaluation, reading and license limits remain explicit; no linked model, code or benchmark was executed.",
+    "reviewed_at": "2026-10-20T16:09:15Z",
+    "reviewed_sha256": "d4385231cea2965a48895eeebd2dd6000265dd7b43731a0ad88b0373a21d0308"
+  },
+  {
+    "id": "arxiv:2610.14855",
+    "name": "PEAM: On-device Communication Agent for Personalized, Efficient and Autonomous Mobile Network Configuration",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.14855",
+    "verify_terms": [
+      "On-device Communication Agent"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/html/2610.14855v1"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "scope"
+    ],
+    "editorial_reviewed": false,
+    "review_note": "Scope hold after v1 Methodology, Evaluation and Appendices A (On-Device Deployment), B and D. PEAM generates background network-configuration rules and reports real cellular/Wi-Fi switching on Android 16; active rules execute after explicit user acceptance. The inspected work does not establish GUI observation/action control or a component actually used by a CUA workflow. Native network switching alone does not establish that broader role. Need direct interface/control or CUA-support evidence before inclusion. Preserve metadata; no permanent exclusion is proposed.",
+    "reviewed_at": "2026-10-20T16:09:15Z",
+    "reviewed_sha256": "7e76afb27048fc502646c3ca1cc87a52c6ba1b4e041f4b5c0cf9fbe3bd24e5a9"
   }
 ]
