@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-36 source-reviewed resources tagged `observability`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+38 source-reviewed resources tagged `observability`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Agents (1)](#agents) · [Frameworks (1)](#frameworks) · [Tools (1)](#tools) · [Papers (33)](#papers)
+**Contents:** [Agents (1)](#agents) · [Frameworks (1)](#frameworks) · [Tools (1)](#tools) · [Papers (35)](#papers)
 
 ## Agents
 
@@ -34,6 +34,8 @@ All entries in this section: web.
 
 | Date | Resource | Environments | Description |
 | --- | --- | --- | --- |
+| 2026‑10‑19 | [Comparing Computer Use Behavior Across Multiple Levels of Abstraction](https://arxiv.org/abs/2610.26703) | desktop, web | MAP annotates computer-use traces at linked operation, function/consequence, method and goal levels, then compares human and agent workflows through sequence, pattern and effort metrics. |
+| 2026‑10‑16 | [MobileInject: Evaluating Reasoning-to-Action Security of MLLM-Based Mobile Agents under Cross-Modal Consistency Injection](https://arxiv.org/abs/2610.23307) | android | MobileInject evaluates visual/textual observation injection in stateful Android workflows using resettable emulators, benign/adversarial state oracles and trace-based diagnosis of emitted rationales and actions. |
 | 2026‑10‑02 | [WebFovea: When the Model Is Right but the Click Is Wrong -- Reliable Round Trips for Vision-Based Web Agents on Live Websites](https://arxiv.org/abs/2610.03036) | web | Describes WebFovea, a vision-based live-web agent whose execution loop checks action parsing, browser effects, feedback accuracy, and observation delivery. The report analyzes failures such as coordinate mismatches and silent control interactions and documents corresponding harness changes. |
 | 2026‑10‑01 | [Auditing Web Agent Evaluation on WebArena-Lite: Human Review of Outcomes and Trajectories](https://arxiv.org/abs/2610.01491) | web | Audits WebArena-Lite outcomes and trajectories with human review to identify automatic-evaluator false negatives and the first consequential execution errors. It also studies explicit execution-state memory and procedural guidance, showing why final task scores can miss substantial differences in agent behavior. |
 | 2026‑10‑01 | [GUI-HARVEST: Self-Improving GUI Agents through Evidence-Driven Harness Evolution](https://arxiv.org/abs/2610.00948) | desktop, windows | Improves GUI-agent execution code by analyzing action effects and repeated-task failures, then validating bounded changes with frozen model weights. |

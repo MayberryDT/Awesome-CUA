@@ -64066,5 +64066,254 @@
     "read_basis": "Complete official abstract and selected exact-v1 full-text sections. Fresh Atom metadata and abstract hash match the retained record; no reproduction or release-completeness claim.",
     "reviewed_sha256": "80bed80786f939973d0d13b4f892300fee02a6110e326247131fc83d257796de",
     "reviewed_at": "2026-10-20T08:45:57Z"
+  },
+  {
+    "id": "arxiv:2610.26203",
+    "name": "Focused Omni-Modal GUI Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.26203",
+    "summary": "FocusGUI learns step-specific weights over screenshot, audio, video and interaction-context channels, injecting a compact residual into a frozen decoder without pruning its inputs.",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "screen-understanding",
+      "grounding",
+      "imitation-learning",
+      "interaction-history",
+      "mobile-navigation"
+    ],
+    "scope": "core",
+    "notes": "Reviewed the complete retained abstract and selected v1 method/evaluation sections. OmniGUI uses episode-disjoint reference-action evaluation; Type Match, Exact Match and Goal Progress are not presented as independently demonstrated live task-success gains. The Android role is explicit in Appendix D.1. No reproduction or artifact-release verification.",
+    "verify_terms": [
+      "Focused Omni-Modal GUI Agents"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agent%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22+OR+ti%3A%22browser+agents%22+OR+ti%3A%22mobile+agent%22+OR+ti%3A%22mobile+agents%22+OR+ti%3A%22desktop+agent%22%29+AND+submittedDate%3A%5B202610130000+TO+202610192359%5D&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "scope"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2610.26203v1",
+        "sha256": "28848f8f597b2a8865ad98f5aa1e4401e15a49f92b33f7bce4d4f044c168ada0",
+        "retrieved_at": "2026-10-20T09:17:23.872790+00:00",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "scope",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "review_note": "Reviewed the complete official abstract and selected versioned methods, evaluation and limitations sections; independent source review completed.",
+    "read_basis": "Original-timestamp retained Atom reuse after exact metadata/abstract-hash checks, plus selected exact-version official HTML sections. No result reproduction or asset-release verification.",
+    "reviewed_sha256": "80bed80786f939973d0d13b4f892300fee02a6110e326247131fc83d257796de",
+    "reviewed_at": "2026-10-20T09:31:58Z"
+  },
+  {
+    "id": "arxiv:2610.26660",
+    "name": "Tandem: Serving Hybrid Linear-Attention GUI Agents on Mobile NPUs",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.26660",
+    "summary": "Tandem serves hybrid GUI-agent models on Android NPUs using divergence-point state checkpoints, rollback-aware speculative decoding and idle power release between request bursts.",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "efficiency",
+      "mobile-navigation"
+    ],
+    "scope": "core",
+    "notes": "Reviewed the complete abstract and selected v1 system/evaluation sections. Main latency measurements replay recorded requests and exclude app execution; the paper also reports instrumented real tasks. These are serving-time, energy and action-fidelity results, not a claimed task-success improvement. Hardware, cooling and model configurations matter. No independent reproduction.",
+    "verify_terms": [
+      "Tandem: Serving Hybrid Linear-Attention GUI Agents on Mobile NPUs"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agent%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22+OR+ti%3A%22browser+agents%22+OR+ti%3A%22mobile+agent%22+OR+ti%3A%22mobile+agents%22+OR+ti%3A%22desktop+agent%22%29+AND+submittedDate%3A%5B202610130000+TO+202610192359%5D&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "scope"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2610.26660v1",
+        "sha256": "7cb553f8230cfb203df446f08e29d48b676addfe9b076d35171d09970d1970bf",
+        "retrieved_at": "2026-10-20T09:17:26.960480+00:00",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "scope",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "review_note": "Reviewed the complete official abstract and selected versioned methods, evaluation and limitations sections; independent source review completed.",
+    "read_basis": "Original-timestamp retained Atom reuse after exact metadata/abstract-hash checks, plus selected exact-version official HTML sections. No result reproduction or asset-release verification.",
+    "reviewed_sha256": "80bed80786f939973d0d13b4f892300fee02a6110e326247131fc83d257796de",
+    "reviewed_at": "2026-10-20T09:31:58Z"
+  },
+  {
+    "id": "arxiv:2610.26703",
+    "name": "Comparing Computer Use Behavior Across Multiple Levels of Abstraction",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.26703",
+    "summary": "MAP annotates computer-use traces at linked operation, function/consequence, method and goal levels, then compares human and agent workflows through sequence, pattern and effort metrics.",
+    "environments": [
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "observability"
+    ],
+    "scope": "core",
+    "notes": "Reviewed the complete abstract and selected v1 taxonomy, annotation, evaluation and limitations sections. MAP analyzes existing human/agent traces rather than deploying a new acting policy. Annotation and timing coverage depend on the source datasets; manual agreement reflects a particular labeling scheme. Behavioral findings do not establish a privacy guarantee. No independent reproduction.",
+    "verify_terms": [
+      "Comparing Computer Use Behavior Across Multiple Levels of Abstraction"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agent%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22+OR+ti%3A%22browser+agents%22+OR+ti%3A%22mobile+agent%22+OR+ti%3A%22mobile+agents%22+OR+ti%3A%22desktop+agent%22%29+AND+submittedDate%3A%5B202610130000+TO+202610192359%5D&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "scope"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2610.26703v1",
+        "sha256": "9a964cbf50123887ad20bf156e69c0bbe4567d6b2c28e4cf202d5538eab8294c",
+        "retrieved_at": "2026-10-20T09:17:30.049627+00:00",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "scope",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "review_note": "Reviewed the complete official abstract and selected versioned methods, evaluation and limitations sections; independent source review completed.",
+    "read_basis": "Original-timestamp retained Atom reuse after exact metadata/abstract-hash checks, plus selected exact-version official HTML sections. No result reproduction or asset-release verification.",
+    "reviewed_sha256": "80bed80786f939973d0d13b4f892300fee02a6110e326247131fc83d257796de",
+    "reviewed_at": "2026-10-20T09:31:58Z"
+  },
+  {
+    "id": "arxiv:2610.24277",
+    "name": "SPIDES: Information-Flow Control for Browser Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.24277",
+    "summary": "SPIDES propagates HTML integrity and confidentiality labels into agent context and mediates browser actions with information-flow policies and approval gates, evaluated in the labeled MicroNet ecosystem.",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "web-navigation",
+      "human-in-the-loop",
+      "evaluation"
+    ],
+    "scope": "core",
+    "notes": "Reviewed the complete abstract and selected v1 threat-model, policy, evaluation and limitations sections. Guarantees assume correct labels/trusted origins and a trusted browser/harness mediating actions; evaluation uses idealized approvals. Origin-level reader sets can miss recipient distinctions within one origin. No unrestricted prompt-injection immunity or independent reproduction is claimed.",
+    "verify_terms": [
+      "SPIDES: Information-Flow Control for Browser Agents"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agent%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22+OR+ti%3A%22browser+agents%22+OR+ti%3A%22mobile+agent%22+OR+ti%3A%22mobile+agents%22+OR+ti%3A%22desktop+agent%22%29+AND+submittedDate%3A%5B202610130000+TO+202610192359%5D&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "scope"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2610.24277v1",
+        "sha256": "daceefecb2e6b910a6c7f2ffe35e89c7070f6282f4f35ee89e885a2e77aa94c4",
+        "retrieved_at": "2026-10-20T09:17:33.132448+00:00",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "scope",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "review_note": "Reviewed the complete official abstract and selected versioned methods, evaluation and limitations sections; independent source review completed.",
+    "read_basis": "Original-timestamp retained Atom reuse after exact metadata/abstract-hash checks, plus selected exact-version official HTML sections. No result reproduction or asset-release verification.",
+    "reviewed_sha256": "80bed80786f939973d0d13b4f892300fee02a6110e326247131fc83d257796de",
+    "reviewed_at": "2026-10-20T09:31:58Z"
+  },
+  {
+    "id": "arxiv:2610.23307",
+    "name": "MobileInject: Evaluating Reasoning-to-Action Security of MLLM-Based Mobile Agents under Cross-Modal Consistency Injection",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.23307",
+    "summary": "MobileInject evaluates visual/textual observation injection in stateful Android workflows using resettable emulators, benign/adversarial state oracles and trace-based diagnosis of emitted rationales and actions.",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "safety-security",
+      "mobile-navigation",
+      "evaluation",
+      "observability",
+      "cross-app"
+    ],
+    "scope": "core",
+    "notes": "Reviewed the complete abstract and selected v1 construction, threat-model and evaluation sections. The attacker modifies observation surfaces, not system instructions, model parameters or the OS. State oracles are distinct from emitted-rationale diagnoses, whose labels include outcome-dependent constraints. Those diagnostics are not independent evidence of hidden-reasoning causality. No reproduction or release verification.",
+    "verify_terms": [
+      "MobileInject: Evaluating Reasoning-to-Action Security of MLLM-Based Mobile Agents under Cross-Modal Consistency Injection"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agent%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22+OR+ti%3A%22browser+agents%22+OR+ti%3A%22mobile+agent%22+OR+ti%3A%22mobile+agents%22+OR+ti%3A%22desktop+agent%22%29+AND+submittedDate%3A%5B202610130000+TO+202610192359%5D&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "scope"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2610.23307v1",
+        "sha256": "3803984a185b6258276b87b87ac1991583878fb41dc22618ff743f6f69c7bc7e",
+        "retrieved_at": "2026-10-20T09:17:36.223826+00:00",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "scope",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "review_note": "Reviewed the complete official abstract and selected versioned methods, evaluation and limitations sections; independent source review completed.",
+    "read_basis": "Original-timestamp retained Atom reuse after exact metadata/abstract-hash checks, plus selected exact-version official HTML sections. No result reproduction or asset-release verification.",
+    "reviewed_sha256": "80bed80786f939973d0d13b4f892300fee02a6110e326247131fc83d257796de",
+    "reviewed_at": "2026-10-20T09:31:58Z"
   }
 ]
