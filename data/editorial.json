@@ -64315,5 +64315,203 @@
     "read_basis": "Original-timestamp retained Atom reuse after exact metadata/abstract-hash checks, plus selected exact-version official HTML sections. No result reproduction or asset-release verification.",
     "reviewed_sha256": "80bed80786f939973d0d13b4f892300fee02a6110e326247131fc83d257796de",
     "reviewed_at": "2026-10-20T09:31:58Z"
+  },
+  {
+    "id": "arxiv:2610.23012",
+    "name": "Adaptation of Computer Use Agents to New Software with User Manuals",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.23012",
+    "summary": "MAGE retrieves software-manual sections into fixed execution plans and generates setup/main task-plan pairs whose GUI rollouts support application-specific policy adaptation with round-based GRPO.",
+    "environments": [
+      "desktop"
+    ],
+    "topics": [
+      "planning",
+      "data-generation",
+      "reinforcement-learning"
+    ],
+    "scope": "core",
+    "notes": "Reviewed the complete retained abstract and selected exact-v1 methods, evaluation and validation sections. Execution plans stay fixed per episode; policy training is separate and application-specific. Screenshot-based training/Slack judgments can miss task conditions, and OSWorld tasks may overlap backbone pretraining. No independent reproduction, safe-deployment guarantee or artifact-release verification.",
+    "verify_terms": [
+      "Adaptation of Computer Use Agents to New Software with User Manuals"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agent%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22+OR+ti%3A%22browser+agents%22+OR+ti%3A%22mobile+agent%22+OR+ti%3A%22mobile+agents%22+OR+ti%3A%22desktop+agent%22%29+AND+submittedDate%3A%5B202610130000+TO+202610192359%5D&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "scope"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2610.23012v1",
+        "sha256": "75c025a862a046b8bcbdd84b800a37132edcc1ec271d40c57c18ec984652a0b0",
+        "retrieved_at": "2026-10-20T10:34:04.380045+00:00",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "scope",
+          "notes"
+        ]
+      }
+    ],
+    "review_note": "Reviewed the complete official abstract and selected exact-version methods, evaluation and limitations sections; independent source review completed.",
+    "read_basis": "Original-timestamp retained Atom reuse after exact metadata/abstract-hash checks, plus selected exact-version official HTML sections. No result reproduction or asset-release verification.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "80bed80786f939973d0d13b4f892300fee02a6110e326247131fc83d257796de",
+    "reviewed_at": "2026-10-20T10:51:01Z"
+  },
+  {
+    "id": "arxiv:2610.22539",
+    "name": "Don't Retrain, Remix: Adaptation of Web Agents using Mixture Hypernetworks",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.22539",
+    "summary": "WebMix uses a scout-produced interface manual to route mixtures of source-trained LoRA adapters for web agents, adapting to target interfaces without target-time gradient updates.",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "imitation-learning",
+      "robustness"
+    ],
+    "scope": "core",
+    "notes": "Reviewed the complete retained abstract and selected exact-v1 method, evaluation and analysis sections. Adapter-bank and router training use source demonstrations. Domain scouting accesses target training-task intents and answer-stripped reference procedures; version scouting is task-free. No target-time gradients does not mean no target task information. No independent reproduction or artifact/license verification.",
+    "verify_terms": [
+      "Don't Retrain, Remix: Adaptation of Web Agents using Mixture Hypernetworks"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agent%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22+OR+ti%3A%22browser+agents%22+OR+ti%3A%22mobile+agent%22+OR+ti%3A%22mobile+agents%22+OR+ti%3A%22desktop+agent%22%29+AND+submittedDate%3A%5B202610130000+TO+202610192359%5D&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "scope"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2610.22539v1",
+        "sha256": "0c95ddb42bbfc91aabf25e2dc2d2393a9977b6d979a2c891c5bcf80798dbfbc3",
+        "retrieved_at": "2026-10-20T10:34:07.486792+00:00",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "scope",
+          "notes"
+        ]
+      }
+    ],
+    "review_note": "Reviewed the complete official abstract and selected exact-version methods, evaluation and limitations sections; independent source review completed.",
+    "read_basis": "Original-timestamp retained Atom reuse after exact metadata/abstract-hash checks, plus selected exact-version official HTML sections. No result reproduction or asset-release verification.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "80bed80786f939973d0d13b4f892300fee02a6110e326247131fc83d257796de",
+    "reviewed_at": "2026-10-20T10:51:01Z"
+  },
+  {
+    "id": "arxiv:2610.22990",
+    "name": "PersonaCUABench: Benchmarking Computer-Use Agents Serving Diverse Personas",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.22990",
+    "summary": "PersonaCUABench varies simulated user requests and clarification dialogue over fixed web tasks, comparing task completion with requirement handling and persona-agent satisfaction ratings.",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation",
+      "human-in-the-loop"
+    ],
+    "scope": "core",
+    "notes": "Reviewed the complete retained abstract and selected exact-v1 construction, evaluation and limitations sections. Main interactions and satisfaction ratings use LLM-simulated personas; human annotators validate selected outputs. The harness observes page text, with screenshots only for auditing. Results are not evidence about real demographic populations or desktop agents. No independent reproduction.",
+    "verify_terms": [
+      "PersonaCUABench: Benchmarking Computer-Use Agents Serving Diverse Personas"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agent%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22+OR+ti%3A%22browser+agents%22+OR+ti%3A%22mobile+agent%22+OR+ti%3A%22mobile+agents%22+OR+ti%3A%22desktop+agent%22%29+AND+submittedDate%3A%5B202610130000+TO+202610192359%5D&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "scope"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2610.22990v1",
+        "sha256": "bf9066e8b3472100f120e21534f92655f4d0814f2521b9d23d778e5239c7a2a4",
+        "retrieved_at": "2026-10-20T10:42:06.870916+00:00",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "scope",
+          "notes"
+        ]
+      }
+    ],
+    "review_note": "Reviewed the complete official abstract and selected exact-version methods, evaluation and limitations sections; independent source review completed.",
+    "read_basis": "Original-timestamp retained Atom reuse after exact metadata/abstract-hash checks, plus selected exact-version official HTML sections. No result reproduction or asset-release verification.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "80bed80786f939973d0d13b4f892300fee02a6110e326247131fc83d257796de",
+    "reviewed_at": "2026-10-20T10:51:01Z"
+  },
+  {
+    "id": "arxiv:2610.23303",
+    "name": "MobileJailBench: Red Queen Jailbreak Benchmarking for Mobile Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.23303",
+    "summary": "MobileJailBench evaluates mobile-agent jailbreaks in a browser-based Android-like simulator, combining feedback-driven attack evolution, separately admitted task expansions and evidence-grounded outcome adjudication.",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "mobile-navigation",
+      "evaluation",
+      "observability",
+      "cross-app"
+    ],
+    "scope": "core",
+    "notes": "Reviewed the complete retained abstract and selected exact-v1 threat-model, construction and evaluation sections. Execution uses a browser-based Android-like simulator, not real Android isolation or live services. The attacker controls instructions and designated carriers, not privileged simulator state/APIs or system/model/harness internals. Rates depend on release, budget and adjudication coverage. SAF labels track observable expressions and actions, not latent reasoning; unresolved episodes are excluded from rate denominators. No independent reproduction.",
+    "verify_terms": [
+      "MobileJailBench: Red Queen Jailbreak Benchmarking for Mobile Agents"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agent%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22+OR+ti%3A%22browser+agents%22+OR+ti%3A%22mobile+agent%22+OR+ti%3A%22mobile+agents%22+OR+ti%3A%22desktop+agent%22%29+AND+submittedDate%3A%5B202610130000+TO+202610192359%5D&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "scope"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2610.23303v1",
+        "sha256": "ec9d647818be346ddbf7807be87b4789cd53e50c5d3d7a7904ad4f49bc71c38e",
+        "retrieved_at": "2026-10-20T10:42:09.967883+00:00",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "scope",
+          "notes"
+        ]
+      }
+    ],
+    "review_note": "Reviewed the complete official abstract and selected exact-version methods, evaluation and limitations sections; independent source review completed.",
+    "read_basis": "Original-timestamp retained Atom reuse after exact metadata/abstract-hash checks, plus selected exact-version official HTML sections. No result reproduction or asset-release verification.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "80bed80786f939973d0d13b4f892300fee02a6110e326247131fc83d257796de",
+    "reviewed_at": "2026-10-20T10:51:01Z"
   }
 ]
