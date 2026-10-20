@@ -277,11 +277,22 @@ the durable publication boundary, and an incomplete local triplet fails closed.
 
 Scanner v2 records explicit query epochs. Approved topic additions keep old roots
 and cursors and backfill new topics from the original historical lower bound.
-The production configuration names nine allowlisted topics: `android-automation`,
-`browser-agent`, `browser-agents`, `browser-automation`, `computer-use`,
-`desktop-automation`, `gui-agent`, `gui-agents`, and `gui-automation`. Expanding the
-two-topic bootstrap therefore adds seven full historical backfills, rather than
-starting those topics only at the current date.
+The production configuration names seventeen allowlisted topics. The original
+nine remain: `android-automation`, `browser-agent`, `browser-agents`,
+`browser-automation`, `computer-use`, `desktop-automation`, `gui-agent`,
+`gui-agents`, and `gui-automation`. Eight additional exact spellings are supported
+by retained publisher topic observations: `computer-use-agent`,
+`computer-use-agents`, `gui-grounding`, `browser-use`, `web-agent`, `web-agents`,
+`desktop-agent`, and `mobile-agent`. See the
+[topic decision and evidence](reviews/2026-10-20-candidate-topic-expansion.md).
+These are discovery queries, separate from reviewed catalog topic assignments.
+
+Each addition starts at the first epoch's historical lower bound and ends at the
+frontier's recorded upper date. Existing roots, cursors and receipts are retained,
+including unfinished work from earlier epochs. For example, adding a topic after
+a frontier has advanced to `2026-10-18..2026-10-20` still backfills that topic from
+`2008-01-01`, when that was the original lower bound. Expansion is explicit and
+additive; repeated invocations with the same topic set do not reset the backfill.
 
 On a new UTC date, continuation records a new creation-date frontier even when
 older topic trees still contain gaps. Its inclusive lower bound is the preceding

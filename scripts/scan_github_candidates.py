@@ -28,7 +28,10 @@ from network_budget import BudgetDeferred, budget_from_environment
 
 TOPICS = frozenset({'computer-use', 'gui-agent', 'gui-agents', 'gui-automation',
                     'desktop-automation', 'browser-agent', 'browser-agents',
-                    'browser-automation', 'android-automation'})
+                    'browser-automation', 'android-automation',
+                    'computer-use-agent', 'computer-use-agents', 'gui-grounding',
+                    'browser-use', 'web-agent', 'web-agents', 'desktop-agent',
+                    'mobile-agent'})
 DEFAULT_TOPICS = ('computer-use', 'gui-agent', 'browser-automation')
 INPUTS = ('catalog.jsonl', 'candidates.jsonl', 'primary-evidence.jsonl',
           'repository-aliases.json', 'candidate-reviews.json')
