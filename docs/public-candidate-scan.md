@@ -283,15 +283,36 @@ The production configuration names nine allowlisted topics: `android-automation`
 two-topic bootstrap therefore adds seven full historical backfills, rather than
 starting those topics only at the current date.
 
-Daily continuation starts only after the current topic trees are reconciled. Its
-inclusive lower bound is the preceding epoch's upper date, giving a recorded
-one-day overlap. Each scheduled invocation may reopen at most two traversals in
+On a new UTC date, continuation records a new creation-date frontier even when
+older topic trees still contain gaps. Its inclusive lower bound is the preceding
+frontier's upper date, giving a recorded one-day overlap. The transition is
+`daily_continuation` when that preceding tree is complete, or explicitly
+`frontier_continuation` otherwise; it never marks old gaps complete. The new upper
+date must match epoch creation and cannot exceed its associated run or request
+observation date. Same-day runs resume the existing frontier.
+
+New runs retain the current `epoch_id` and a `repair_epoch_ids` list. Permission
+to repair an older epoch is derived from actual query ownership and progress at
+the run's starting receipt boundary, not accepted merely because an ID is listed.
+Shared roots introduced by topic additions have one latest owner. Legacy runs
+without this field keep their original epoch rules. Every newly appended recheck
+in a scoped run must name that `run_id` and the exact run-start instant; removing
+the binding cannot downgrade it to a legacy event during incremental adoption.
+Legacy events retain their bytes and must match an actual legacy run boundary,
+epoch and time interval. Prior events and receipt prefixes remain unchanged.
+
+After the existing-candidate sub-budget, search attempts alternate between the
+current frontier and eligible historical repair work when both have pending
+pages. When one lane has no pending page, the other can use the remaining budget.
+This allocation never extends the 30-GET/220-second candidate limits or the shared
+round allowance. Each scheduled invocation may reopen at most two traversals in
 `partial_results` or `partial_api_window` from page one, retaining the prior cursor
 and receipt boundary instead of deleting observations or counting old IDs toward
 the new traversal. A `blocked_single_day_window` is not reopened automatically: it
 requires a separately reviewed partition strategy. Public
-manifests expose epoch history and the recheck count; unresolved query statuses
-remain visible even when the ordinary pending counter is zero. None of these
+manifests expose all historical query gaps, epoch history and the recheck count;
+unresolved statuses remain visible even when the newest frontier is complete or
+the ordinary pending counter is zero. None of these
 states establishes global completeness or CUA relevance.
 
 ### One-time offline bootstrap

@@ -853,6 +853,14 @@
               ]
             }
           }
+        },
+        "repair_epoch_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^epoch:[0-9a-f]{24}$"
+          }
         }
       }
     },
@@ -928,7 +936,8 @@
             "initial",
             "v1_migration",
             "topic_expansion",
-            "daily_continuation"
+            "daily_continuation",
+            "frontier_continuation"
           ]
         },
         "previous_epoch_id": {
@@ -1046,6 +1055,10 @@
               "minimum": 0
             }
           }
+        },
+        "run_id": {
+          "type": "string",
+          "pattern": "^run:[0-9a-f]{24}$"
         }
       }
     }
