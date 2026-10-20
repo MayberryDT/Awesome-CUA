@@ -65344,5 +65344,232 @@
     },
     "reviewed_sha256": "dfffdc4b5850ed6bfe0bcfe705fa5918d61420f8c80df2e38f61b7d1fb3819ec",
     "reviewed_at": "2026-10-20T12:29:50Z"
+  },
+  {
+    "id": "arxiv:2610.24372",
+    "name": "Beyond Next-Screen Prediction: The Decision Value of GUI World Models",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.24372",
+    "summary": "Separates next-screen prediction from action evaluation in GUI lookahead and trains Direct Action Ranking on reference actions, comparing prediction-augmented scoring under matched offline supervision.",
+    "environments": [
+      "android",
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "world-models",
+      "action-prediction",
+      "imitation-learning"
+    ],
+    "scope": "core",
+    "notes": "The matched augmentation experiment measures offline ranking; AndroidWorld task-success comparisons use differently trained evaluators and do not isolate prediction value. A separate web evaluator is trained on Mind2Web, and web results do not uniformly favor direct scoring. The main study concerns one-step selection. No independent reproduction.",
+    "verify_terms": [
+      "The Decision Value of GUI World Models"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/html/2610.24372v1"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "editorial_reviewed": true,
+    "review_note": "Selected versioned primary methods, evaluation and limitations were independently reviewed. Bibliographic snapshots remain separately retained; experiments and linked artifacts were not reproduced.",
+    "reviewed_sha256": "9dff18935a1faa7ec16366bac6a6e9e41f0381d561568c3aba39fe783efcfbd3",
+    "reviewed_at": "2026-10-20T13:32:51Z"
+  },
+  {
+    "id": "arxiv:2610.22408",
+    "name": "ECHOES: Seeing Beyond the Current Image via Recursive History Compression and Privileged On-Policy Distillation",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.22408",
+    "summary": "ECHOES learns recursive textual task memory through privileged screenshot-history distillation and GRPO, then predicts GUI actions from the current screenshot and memory.",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "memory",
+      "interaction-history",
+      "state-tracking",
+      "long-horizon",
+      "imitation-learning",
+      "reinforcement-learning",
+      "efficiency",
+      "evaluation"
+    ],
+    "scope": "core",
+    "notes": "Privileged screenshot history is used during training, while deployment retains self-generated textual state. GUI results use action/step metrics and model-specific history settings; online Sokoban transfer is separate. GRPO rewards action correctness, valid output format and compression length. Diagnostic memory replay is distinct from the validation gap used to schedule training. No independent reproduction.",
+    "verify_terms": [
+      "Recursive History Compression and Privileged On-Policy Distillation"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/html/2610.22408v1"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "editorial_reviewed": true,
+    "review_note": "Selected versioned primary methods, evaluation and limitations were independently reviewed. Bibliographic snapshots remain separately retained; experiments and linked artifacts were not reproduced.",
+    "reviewed_sha256": "0389d96a8f6c4975129f5c526e8df9ca4690f31364a2f4e66aaea4a75f0eabbc",
+    "reviewed_at": "2026-10-20T13:32:51Z"
+  },
+  {
+    "id": "arxiv:2610.15502",
+    "name": "From Observations to Authorized Actions: Measuring Source Information in Android Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.15502",
+    "summary": "Measures source-attribution limits in Android accessibility and separately tests application-history and selected-WebView-object checks for authorizing AppFunctions actions.",
+    "environments": [
+      "android",
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "tool-integration",
+      "observability"
+    ],
+    "scope": "core",
+    "notes": "The two prototypes use different workloads and trust assumptions on patched Android/WebView components. Approval is simulated; authenticated browser delivery and atomic capture remain unimplemented. Coarse source history can withhold benign work and persist across tasks. Direct-call checks and limited live-agent trials are separate, and writes are in-memory. No production vulnerability, general defense rate or released artifact is established.",
+    "verify_terms": [
+      "Measuring Source Information in Android Agents"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/html/2610.15502v1"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "editorial_reviewed": true,
+    "review_note": "Selected versioned primary methods, evaluation and limitations were independently reviewed. Bibliographic snapshots remain separately retained; experiments and linked artifacts were not reproduced.",
+    "reviewed_sha256": "a38b3ddc9d5d6744eefc937f86e174917f9b5de149323632d5d1b20283d79c8e",
+    "reviewed_at": "2026-10-20T13:32:51Z"
+  },
+  {
+    "id": "arxiv:2610.11963",
+    "url": "https://arxiv.org/abs/2610.11963",
+    "name": "Can LLMs Fix It Without Code? Toward Automated Verification of No-Code Bug Fixes",
+    "kind": "paper",
+    "summary": "Tests natural-language no-code fixes through GUI execution in Linux Brave. Scripted fixed/buggy-state gates and issue-specific checkers distinguish fix outcomes from the executor's completion claims.",
+    "environments": [
+      "web",
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation"
+    ],
+    "scope": "core",
+    "notes": "The evaluation reuses 322 fixes from 12 generation configurations and is restricted to nine of 51 candidate issues after environment setup and sanity checks. Resolution counts any success in three runs with a 20-step episode limit; executor harnesses and decoding settings differ. Opening the update page triggers a harness-controlled switch to the fixed browser build. Checker behavior, reconstructed starting states and the two-author human reference limit interpretation. The replication package was linked by the paper but was not inspected; no software, agent, model or result was run or reproduced.",
+    "verify_terms": [
+      "Can LLMs Fix It Without Code?"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/html/2610.11963v1"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "editorial_reviewed": true,
+    "review_note": "Selected versioned primary methods, evaluation and limitations were independently reviewed. Bibliographic snapshots remain separately retained; experiments and linked artifacts were not reproduced.",
+    "reviewed_sha256": "9fad44164a6f00446d2c91a31e3e77a4aab8145ac3747e9d1ce0165c1aebda95",
+    "reviewed_at": "2026-10-20T13:32:51Z"
+  },
+  {
+    "id": "arxiv:2609.33102",
+    "url": "https://arxiv.org/abs/2609.33102",
+    "name": "ORBIT: A Framework for Multi-Agent Safety and Security Evaluations",
+    "kind": "paper",
+    "summary": "Inspect-based framework that varies multi-agent roles, communication, attacks and defenses, with BrowserGym and virtual-desktop GUI adapters alongside coding and other tool scenarios.",
+    "environments": [
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "evaluation",
+      "safety-security",
+      "web-navigation"
+    ],
+    "scope": "core",
+    "notes": "BrowserART uses an accessibility-tree action interface, while the desktop adapter uses mouse, keyboard and screenshots. The adapted tasks are not claimed to preserve the constructs of their source benchmarks. Experiments cover a representative configuration slice with fixed attack templates; the OS-Harm results are imported from prior work using a different model and stack. Browser defense tables also differ in baseline versus defended judges and in judged benign denominators. Human judge validation used one grader. These results do not establish a universally effective defense. The linked repository and its code/data licenses were not independently inspected, and no experiment was run.",
+    "verify_terms": [
+      "Multi-Agent Safety and Security Evaluations"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/html/2609.33102v1"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "editorial_reviewed": true,
+    "review_note": "Selected versioned primary methods, evaluation and limitations were independently reviewed. Bibliographic snapshots remain separately retained; experiments and linked artifacts were not reproduced.",
+    "reviewed_sha256": "3ea667f4187ba601011e5ff00c4d63676b6d9903d12b80a0d7d5dd9920f00c65",
+    "reviewed_at": "2026-10-20T13:32:51Z"
+  },
+  {
+    "id": "arxiv:2610.22672",
+    "name": "Not All Graphs Are Maps: A Task-Agnostic Exploration Framework for Mobile GUI Navigation",
+    "url": "https://arxiv.org/abs/2610.22672",
+    "kind": "paper",
+    "scope": "core",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "memory",
+      "evaluation"
+    ],
+    "summary": "TAG-Nav supplies Android GUI agents with destination and route memory distilled from offline app exploration. DestBench measures arrival at a reference pre-action screen, separately from downstream task execution.",
+    "notes": "The controlled cohort has 84 tasks across six apps; the broader inventory spans 20 apps. Main results use human destination labels. DroidTask and SPA-Bench are converted to navigation-only protocols. Some comparison cells received another graph condition’s memory, with sensitivity analyses reported. Cross-family runs differ in app versions, state and denominators. A small stale-graph probe does not establish robustness. Models, code, artifacts and performance were not independently reproduced.",
+    "evidence_urls": [
+      "https://arxiv.org/html/2610.22672v1"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "verify_terms": [
+      "TAG-Nav",
+      "DestBench"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "5fd9d7926e99d068fa8fb7238a9e7811e3f8c55d00e6b89d5672754cb3e619bc",
+    "reviewed_at": "2026-10-20T13:32:51Z",
+    "review_note": "Selected versioned primary methods, evaluation and limitations were independently reviewed. Bibliographic snapshots remain separately retained; experiments and linked artifacts were not reproduced."
   }
 ]

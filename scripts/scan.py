@@ -36,6 +36,15 @@ def counts():
 # retain separate time, leaving room for the workflow's remaining quality gate.
 STAGE_TIMEOUTS={'discovery':300,'huggingface':300,'recent_arxiv':600,'harvest':300,'github_candidates':220,'build':180,'validate':180}
 NETWORK_STAGES=frozenset({'discovery','huggingface','recent_arxiv','harvest','github_candidates'})
+# Precise title terms miss methods whose interface setting appears only in the
+# abstract. Keep this a discovery query: every new hit still needs scope review.
+RECENT_ARXIV_TERMS=(
+    'ti:"computer use"', 'ti:"computer-use"', 'ti:"GUI agent"',
+    'ti:"GUI agents"', 'ti:"GUI grounding"', 'ti:"web agent"',
+    'ti:"browser agent"', 'ti:GUI', 'ti:"Android agent"',
+    'abs:"computer-use agents"', 'abs:"GUI agents"',
+    'abs:"browser agents"', 'abs:"mobile GUI"',
+)
 
 
 def stage(name,command,timeout=None):
@@ -185,7 +194,7 @@ def recent_papers(config):
     cycle=current.replace(hour=0,minute=0,second=0,microsecond=0)
     begin=cycle-dt.timedelta(days=config['recent_lookback_days'])
     cutoff=cycle.strftime('%Y%m%d%H%M');since=begin.strftime('%Y%m%d%H%M');day=cycle.date().isoformat()
-    terms='ti:"computer use" OR ti:"computer-use" OR ti:"GUI agent" OR ti:"GUI agents" OR ti:"GUI grounding" OR ti:"web agent" OR ti:"browser agent"'
+    terms=' OR '.join(RECENT_ARXIV_TERMS)
     query=f'({terms}) AND submittedDate:[{since} TO {cutoff}]'
     previous=read_json(DATA/'recent-paper-search.json',{})
     if reusable_recent_snapshot(previous,query,since,cutoff,day):
@@ -222,7 +231,7 @@ def recent_papers(config):
             if consider_paper(row,records,proposals,info['retrieved_at']):new_ids.append(row['id'])
             c=candidates.setdefault(row['id'],{'id':row['id'],'url':row['url'],'provider':'arxiv','first_discovered_at':info['retrieved_at'],'discovered_in':[]})
             c['discovered_in']=[o for o in c['discovered_in'] if o['source_id']!='arxiv-recent-scan']
-            c['discovered_in'].append({'source_id':'arxiv-recent-scan','line':None,'section':'Recent title search; relevance awaits review','snapshot_sha256':info['sha256']})
+            c['discovered_in'].append({'source_id':'arxiv-recent-scan','line':None,'section':'Recent title and abstract search; relevance awaits review','snapshot_sha256':info['sha256']})
         start+=len(entries)
         if not entries:break
         if start<min(total,ceiling):time.sleep(3.1)

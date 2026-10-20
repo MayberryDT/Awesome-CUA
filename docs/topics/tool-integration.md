@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-134 source-reviewed resources tagged `tool-integration`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+135 source-reviewed resources tagged `tool-integration`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (2)](#datasets) · [Models (4)](#models) · [Agents (5)](#agents) · [Frameworks (8)](#frameworks) · [Tools (10)](#tools) · [Infrastructure (1)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (94)](#papers)
+**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (2)](#datasets) · [Models (4)](#models) · [Agents (5)](#agents) · [Frameworks (8)](#frameworks) · [Tools (10)](#tools) · [Infrastructure (1)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (95)](#papers)
 
 ## Benchmarks
 
@@ -98,6 +98,7 @@ All entries in this section: unspecified.
 | 2026‑10‑19 | [CUA-Lite: An Open Platform for Computer Use Agents](https://arxiv.org/abs/2610.26071) | desktop, linux, windows, web, android | CUA-Lite unifies environment interfaces, supervised data formats and per-model harnesses for evaluation, reinforcement learning and supervised fine-tuning across desktop, browser and mobile tasks. |
 | 2026‑10‑15 | [OpenGCUA: Toward a Fully Open Stack for Generalist Computer Use](https://arxiv.org/abs/2610.22200) | desktop | Introduces an open generalist computer-use stack combining visual and programmatic interaction, with model-controlled observation and task-state decisions. |
 | 2026‑10‑15 | [OS-Helix: Unifying GUI Interaction and Code Execution in Native Computer-Using Agents](https://arxiv.org/abs/2610.22234) | desktop, linux | Trains native computer-use models to coordinate GUI actions and code execution using hybrid demonstrations and online reinforcement learning. |
+| 2026‑10‑11 | [From Observations to Authorized Actions: Measuring Source Information in Android Agents](https://arxiv.org/abs/2610.15502) | android, web | Measures source-attribution limits in Android accessibility and separately tests application-history and selected-WebView-object checks for authorizing AppFunctions actions. |
 | 2026‑10‑09 | [OpenMobile-2: Building Versatile Mobile Agents with Scalable Environments and App-Native Tools](https://arxiv.org/abs/2610.14157) | android, web | Introduces OpenMobile-2, combining simulated mobile apps, emulator tasks, released training data, and policies that can alternate GUI interaction with app-native tools. |
 | 2026‑10‑09 | [Web$hell: A Unified Interface for Agentic Web Access](https://arxiv.org/abs/2610.13416) | web | Introduces Web$hell, an interface that compiles live pages into persistent information and action objects so agents can gather evidence, navigate websites, and reuse acquired content through shared operations. |
 | 2026‑10‑02 | [CUAWright: A Minimal Unified Interface for Digital Agents](https://arxiv.org/abs/2610.04116) | desktop, web | Studies a minimal terminal-based execution framework that lets digital agents construct tools and manage context across browser, desktop, and CAD tasks. |
