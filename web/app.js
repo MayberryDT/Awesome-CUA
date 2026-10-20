@@ -123,8 +123,9 @@ function denseRow(r) {
   return `<article class="resource-row" data-kind="${e(r.kind)}"><div class="row-date">${dateMarkup}<span>${r.paper_version?`arXiv v${r.paper_version}`:e(label(KINDS,r.kind))}</span></div><div class="row-main"><h3><a href="${e(r.page_url)}" data-record="${e(r.id)}">${e(r.name)}</a></h3><p class="row-summary">${e(summary)}</p><div class="row-meta">${authors?`<span class="row-authors">${e(authors)}</span>`:''}${facets.map(x=>`<span class="row-tag">${e(x)}</span>`).join('')}${!isPaper?`<span>${e(label(KINDS,r.kind))}</span>`:''}${compactFacts(r,t).filter(f=>f.key!=='year').map(factMarkup).join('')}</div></div><div class="row-actions"><span class="row-review ${reviewed?'is-reviewed':''}">${e(t(reviewed?'curatedBadge':'metadataBadge'))}</span><a href="${e(safeURL(r.paper_source_url || r.url))}" target="_blank" rel="noopener noreferrer">${e(t('primaryLink'))} ↗</a><a href="${e(r.page_url)}" data-record="${e(r.id)}">${r.related_count?`${num(r.related_count)} ${e(t('related'))} · `:''}${e(t('recordLink'))}</a></div></article>`;
 }
 async function load() {
-  loading=true;$('#load-error').hidden=true;$('#load-slow').hidden=true;$('#results').setAttribute('aria-busy','true');$('#results-count').textContent=t('loading');$('#results').innerHTML=Array.from({length:6},()=>'<div class="skeleton-card" aria-hidden="true"></div>').join('');
-  const slowTimer=setTimeout(()=>{if(loading){$('#load-slow').hidden=false;$('#results-count').textContent=t('loadingSlow');}},8000);
+  const slowNotice=$('#load-slow');
+  loading=true;$('#load-error').hidden=true;if(slowNotice)slowNotice.hidden=true;$('#results').setAttribute('aria-busy','true');$('#results-count').textContent=t('loading');$('#results').innerHTML=Array.from({length:6},()=>'<div class="skeleton-card" aria-hidden="true"></div>').join('');
+  const slowTimer=setTimeout(()=>{if(loading&&slowNotice){slowNotice.hidden=false;$('#results-count').textContent=t('loadingSlow');}},8000);
   try {
     const response=await fetch('./data/index.json');if(!response.ok)throw new Error('HTTP '+response.status);
     const data=await response.json();report=data.coverage;records=data.records;TOPICS=data.topics || {};
@@ -132,11 +133,11 @@ async function load() {
     if(!Object.hasOwn(PLATFORMS,state.platform))state.platform='';
     if(!records.some(r=>r.topics.includes(state.topic)))state.topic='';
     $('#stat-resources').textContent=num(records.length);$('#stat-curated').textContent=num(report.curated_records);$('#stat-kinds').textContent=num(Object.keys(report.by_kind).length);$('#stat-sources').textContent=num(report.sources.length);
-    loading=false;clearTimeout(slowTimer);$('#load-slow').hidden=true;translate();render();updateURL();
+    loading=false;clearTimeout(slowTimer);if(slowNotice)slowNotice.hidden=true;translate();render();updateURL();
     if(pendingInfo&&$('#info-dialog').open)info(pendingInfo);
     const rid=new URLSearchParams(location.search).get('record');if(rid)await showRecord(rid,false);
   } catch(error) {loading=false;$('#results').innerHTML='';$('#results').setAttribute('aria-busy','false');$('#load-error').hidden=false;$('#results-count').innerHTML=`<span class="sr-only">${e(t('errorTitle'))}</span>`;console.error('Catalog loading failed:',error);if(pendingInfo&&$('#info-dialog').open)info(pendingInfo);}
-  finally {clearTimeout(slowTimer);$('#load-slow').hidden=true;}
+  finally {clearTimeout(slowTimer);if(slowNotice)slowNotice.hidden=true;}
 }
 const external=(url,text)=>`<a href="${e(safeURL(url))}" target="_blank" rel="noopener noreferrer">${e(text)} ↗</a>`;
 function resourceFacts(details) {
