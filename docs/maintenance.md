@@ -88,6 +88,24 @@ Every editorial entry binds to a `reviewed_sha256`. If an upstream page changes,
 
 `.github/workflows/scan.yml` performs discovery and commits validated metadata using its own repository-scoped `GITHUB_TOKEN`. Before committing, it runs the same validation, tests and website build as Catalog quality and refuses to commit if any tracked or untracked change falls outside the committed paths. A push made with `GITHUB_TOKEN` starts no `push` workflow, so a separate `dispatch_quality` job then dispatches Catalog quality on the new `main` commit. Only that job, which checks out nothing, has `actions: write`; the scan job has only `contents: write`. No checkout saves credentials (`persist-credentials: false`), so the dependency install, the scan, its tests and the site build never see a push-capable token: only the commit steps receive `github.token`, and they pass it to `git push` and `git pull` alone as a per-command HTTP header. The publication workflow's commit steps do the same. If `main` moves during a scan, the commit step rebases onto it, rebuilds and validates the generated files from the combined inputs, and retries the push up to three times; a conflicting change stops the run with an error annotation and pushes nothing. The public site's `publish.yml` independently checks out this public source, validates and builds it, updates the website snapshot, and deploys through the GitHub Pages Actions API. Its snapshot and search-receipt commits are likewise rebased onto the latest website `main` before a rejected push is retried. No cross-repository personal access token is required. The publication workflow source is maintained in `automation/publish.yml`; install workflow changes explicitly with `prepare_publication.py --install-workflow` during authorized maintenance. [Manual publication](website.md#manual-publication) lists the checkouts it needs, its flags, and what it deletes or rewrites.
 
+After the quality gate passes, `scripts/package_scan_snapshot.py` captures the
+tracked public `data/` JSON and JSONL files **before** the commit attempt. The
+workflow retains this as a separate `verified-scan-snapshot` artifact for
+30 days, including when a later push or rebase fails. Its
+`snapshot-manifest.json` binds every captured file's bytes and SHA-256 to its
+baseline Git blob, checkout commit and workflow run. It preserves the verified
+working result; it does not claim that the result reached `main`.
+
+For conflict recovery, inspect that run's quality result, verify the artifact
+fingerprints, and compare its baseline with current `main` before merging
+source inputs and rebuilding. Preserve the candidate observations, manifest
+and cursor as a bound triplet; a new catalog comparison context must not alter
+their observation history. Do not replace current editorial work with the
+whole old snapshot. Raw HTTP bodies, credentials, execution logs and untracked
+files are not part of this artifact, so it does not provide fresh raw-source
+replay evidence. The original `scan-evidence` diagnostics remain available
+independently, including for runs that did not pass the quality gate.
+
 `data/scan-status.json` records the latest completed attempt; `data/scan-history.jsonl` retains the most recent 180 receipts. One scheduled scan shares **180 network-attempt reservations and 600 seconds** across discovery documents, Hugging Face searches, recent arXiv search, metadata harvest, and GitHub candidate observations. `network_max_requests` and `network_max_seconds` in `data/scan-config.json` set these round limits. Retries and followed redirects each consume a reservation; an intact successful cache hit consumes none. Budget deferral never becomes a successful empty response and preserves the last verified response and records.
 
 `scripts/network_budget.py` stores the round ledger under ignored `.cache/scan-rounds/` and passes its path and round ID to sequential child processes. Each reservation is atomically saved before I/O. If a process is interrupted between reservation and response, that attempt stays conservatively charged and is reported as unknown; the ledger does not prove that the server received it. The ledger stores provider names, phases and URL hashes, not credentials, request URLs, headers or bodies. A completed scan exposes the budget totals, provider cooldowns and ledger fingerprint in its status/history. The raw local budget ledger is not a new catalog source or a durable candidate cursor.

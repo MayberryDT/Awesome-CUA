@@ -65571,5 +65571,372 @@
     "reviewed_sha256": "5fd9d7926e99d068fa8fb7238a9e7811e3f8c55d00e6b89d5672754cb3e619bc",
     "reviewed_at": "2026-10-20T13:32:51Z",
     "review_note": "Selected versioned primary methods, evaluation and limitations were independently reviewed. Bibliographic snapshots remain separately retained; experiments and linked artifacts were not reproduced."
+  },
+  {
+    "id": "arxiv:2610.22697",
+    "name": "What It Is, Not What It Says: Securing Agentic Browsing Interactions with Web Semantics",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.22697",
+    "summary": "Intact records webpage element provenance and capabilities, isolates planning per element, and uses a browser harness to constrain actions and request consent for third-party interactions.",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "web-navigation",
+      "planning",
+      "human-in-the-loop"
+    ],
+    "scope": "core",
+    "notes": "Evaluation instructs the model to simulate compromise and measures planner outputs and permission appearance. Utility uses plan matching and LLM-judged element suitability; no steps are executed in that assessment. Assumes an honest first party, trusted browser/harness and untampered instrumentation; multi-page and availability attacks are outside scope. Parallel latency reduction is an unimplemented estimate. No independent reproduction.",
+    "verify_terms": [
+      "Securing Agentic Browsing Interactions with Web Semantics"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/html/2610.22697v1"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "editorial_reviewed": true,
+    "review_note": "Retained primary sources and independent source review support the annotation. Platform, evaluation, reading and license limits remain explicit; no linked code or service was executed.",
+    "reviewed_at": "2026-10-20T14:34:38Z",
+    "reviewed_sha256": "cb6a8a9c0cc47be21b36b3d1831b26c6189d8f2e4af0d7e26d643c9c2a65452f"
+  },
+  {
+    "url": "https://www.deeplearning.ai/courses/building-ai-browser-agents",
+    "name": "Building AI Browser Agents",
+    "kind": "learning",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "planning"
+    ],
+    "summary": "Browser-agent course with worked lessons on structured web extraction and multi-step browser interaction, followed by AgentQ search and self-correction concepts.",
+    "notes": "Review covers the public syllabus and complete published transcripts of the simple-agent and autonomous-agent lessons, not the whole course or its video frames. The first uses Playwright and structured HTML extraction; the second uses a MultiOn session API and shows missed steps, continuations and clarifications. Hosted notebooks and helper files were not retrieved, and current service access was not tested. No account, enrollment, terms acceptance, installation or execution occurred. Course and example-code reuse terms remain unknown.",
+    "verify_terms": [
+      "Building AI Browser Agents"
+    ],
+    "id": "url:aa693ca3e8948623f31e",
+    "evidence_urls": [
+      "https://www.deeplearning.ai/courses/building-ai-browser-agents"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "scope",
+          "notes"
+        ],
+        "url": "https://learn.deeplearning.ai/courses/building-ai-browser-agents/lesson/wwewm/building-a-simple-web-agent",
+        "retrieved_at": "2026-10-20T13:41:10.403317+00:00",
+        "sha256": "0915d862638a308da6200d9603d668ab4d11bcabfa713ff0ccb82c7b21a5a92f"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "scope",
+          "notes"
+        ],
+        "url": "https://learn.deeplearning.ai/courses/building-ai-browser-agents/lesson/lot5j/building-an-autonomous-web-agent",
+        "retrieved_at": "2026-10-20T13:42:56.029732+00:00",
+        "sha256": "20d17ca47d1d16826f8e2736d6639d0cf11e826ef28c788187e16adcac9d7561"
+      }
+    ],
+    "editorial_reviewed": true,
+    "review_note": "Retained primary sources and independent source review support the annotation. Platform, evaluation, reading and license limits remain explicit; no linked code or service was executed.",
+    "reviewed_at": "2026-10-20T14:34:38Z",
+    "reviewed_sha256": "1f0315e8758fe0edd97adb2c5253955dcdbe6d7bd8be393fe14dcd093483705f"
+  },
+  {
+    "url": "https://huggingface.co/docs/smolagents/examples/web_browser",
+    "name": "Web Browser Automation with Agents (smolagents tutorial)",
+    "kind": "learning",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "screen-understanding"
+    ],
+    "summary": "Versioned tutorial building a vision-guided CodeAgent with Selenium/Helium browser tools, screenshot callbacks and example web-navigation tasks.",
+    "notes": "The reviewed v1.26.0 page matches all eight code blocks in its commit-pinned Markdown source. It uses InferenceClientModel and a vision model, unlike the retained v1.8.0 example. The shown setup starts a local visible Chrome session, and its installation command does not pin dependency versions. Runtime API compatibility, model-provider access and example outcomes were not tested. The inspected repository root contains Apache-2.0 terms, but explicit applicability to this Markdown tutorial was not established from retained sources; document reuse terms remain unknown. Model weights, visited websites and hosted-service terms are separate. No installation or notebook execution occurred.",
+    "verify_terms": [
+      "Web Browser Automation with Agents"
+    ],
+    "id": "url:5857c840372512cfe3fc",
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/huggingface/smolagents/12c1bc820eca50ace6f80a21d90426d41d74f845/docs/source/en/examples/web_browser.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "licenses.document"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "name",
+          "summary",
+          "environments",
+          "topics",
+          "scope",
+          "notes"
+        ],
+        "url": "https://huggingface.co/docs/smolagents/v1.26.0/examples/web_browser",
+        "retrieved_at": "2026-10-20T13:41:14.002361+00:00",
+        "sha256": "736281d4d96fc310050a09e830801f739729cc01217fef0be1fd45874e4c68f6"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://api.github.com/repos/huggingface/smolagents/git/ref/tags/v1.26.0",
+        "retrieved_at": "2026-10-20T13:41:17.450466+00:00",
+        "sha256": "cf08eff3ce4ca2fd85f85ba1eebca477277bca0cb2a54613e172741392061365"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://huggingface.co/docs/smolagents/v1.8.0/examples/web_browser",
+        "retrieved_at": "2026-10-20T12:51:48.091044+00:00",
+        "sha256": "9def26af20ef4a6c4091e5873b53737940b360e6ff7db2d606add92d6586c8fb"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.document"
+        ],
+        "url": "https://raw.githubusercontent.com/huggingface/smolagents/12c1bc820eca50ace6f80a21d90426d41d74f845/LICENSE",
+        "retrieved_at": "2026-10-20T13:43:02.729855+00:00",
+        "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+      }
+    ],
+    "editorial_reviewed": true,
+    "review_note": "Retained primary sources and independent source review support the annotation. Platform, evaluation, reading and license limits remain explicit; no linked code or service was executed.",
+    "reviewed_licenses": {
+      "document": {
+        "value": null,
+        "reason": "The retained repository-root file contains Apache-2.0 terms, but the reviewed Markdown has no license notice and the retained sources do not explicitly establish that this license applies to the tutorial document. Document reuse terms remain unknown; this is not a claim that no license exists. Code, data, weights and hosted-service terms are not inferred.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/huggingface/smolagents/12c1bc820eca50ace6f80a21d90426d41d74f845/docs/source/en/examples/web_browser.md",
+          "https://raw.githubusercontent.com/huggingface/smolagents/12c1bc820eca50ace6f80a21d90426d41d74f845/LICENSE"
+        ]
+      }
+    },
+    "reviewed_at": "2026-10-20T14:34:38Z",
+    "reviewed_sha256": "0bd3804794c37f263db5cba3429523721854e95fe1477127f9fb83d4d0510f50"
+  },
+  {
+    "id": "github:wlanderson0/orbit",
+    "name": "ORBIT framework",
+    "kind": "framework",
+    "url": "https://github.com/wlanderson0/orbit",
+    "summary": "Inspect-based multi-agent evaluation framework with role, scheduling and communication controls, BrowserART accessibility-tree actions, and desktop mouse, keyboard and screenshot tools.",
+    "environments": [
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "evaluation",
+      "safety-security",
+      "web-navigation",
+      "observability"
+    ],
+    "scope": "core",
+    "notes": "Reviewed version 1.0.3 source at commit 588b3035, not an asserted reproduction of the paper. BrowserART tools return accessibility trees, including the screenshot-named refresh. Qualification is scenario-specific: the project documents browser-judge and desktop-scoring limits; its opt-in exact-send oracle covers one derived local task, not SMTP delivery. Runtime profiles and scoring policies are separate. Apache-2.0 is the top-level Orbit code declaration; third-party components and external data/environments retain separate terms. No installation, release archive or live evaluation was tested.",
+    "verify_terms": [
+      "Multi-agent evaluations built on",
+      "Version 1.0.3"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/wlanderson0/orbit/588b3035f92450ec4f0496bb8b629daa205e84c7/README.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "github_repository_identity",
+        "supports": [
+          "id",
+          "url"
+        ],
+        "url": "https://api.github.com/repos/wlanderson0/orbit",
+        "sha256": "0436414b9bcc4307f3bcde476a544da6fe1dd5baa90939eed392942490fbfbf7",
+        "retrieved_at": "2026-10-20T13:39:57.052202+00:00"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "scope",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/wlanderson0/orbit/588b3035f92450ec4f0496bb8b629daa205e84c7/orbit/scenarios/browser/browserart/tools.py",
+        "sha256": "c47d046b129999da5e63b7723a3f3e2e0cc31c27ce74b45f71f8c6d0df1fc0d8",
+        "retrieved_at": "2026-10-20T13:42:37.098639+00:00"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "scope",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/wlanderson0/orbit/588b3035f92450ec4f0496bb8b629daa205e84c7/orbit/scenarios/desktop/osworld/tools.py",
+        "sha256": "2cce76b22252a415d64c356b2062771e528b554dd83b6f88fca769f48fa8a826",
+        "retrieved_at": "2026-10-20T14:10:32.910533Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/wlanderson0/orbit/588b3035f92450ec4f0496bb8b629daa205e84c7/docs/benchmark-qualification.md",
+        "sha256": "66515d7ee87eab5a2f42c26132d0bf3e2a3b9c006156d2378181cf91966a2903",
+        "retrieved_at": "2026-10-20T14:09:35.060985Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/wlanderson0/orbit/588b3035f92450ec4f0496bb8b629daa205e84c7/orbit/scenarios/browser/browserart/scorer.py",
+        "sha256": "94c781028dc80b2a748d759fae2456f6a986da7487651a6bcbb179e8ad4fe023",
+        "retrieved_at": "2026-10-20T14:10:29.541892Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/wlanderson0/orbit/588b3035f92450ec4f0496bb8b629daa205e84c7/LICENSE",
+        "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "retrieved_at": "2026-10-20T13:41:29.036076+00:00"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code",
+          "licenses.data",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/wlanderson0/orbit/588b3035f92450ec4f0496bb8b629daa205e84c7/NOTICE",
+        "sha256": "f68a64f775b1f329416f2fe294bb07b5e475893f77d1cdb5300bdb08acf95410",
+        "retrieved_at": "2026-10-20T14:09:31.550310Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "relations"
+        ],
+        "url": "https://arxiv.org/html/2609.33102v1",
+        "sha256": "3ea667f4187ba601011e5ff00c4d63676b6d9903d12b80a0d7d5dd9920f00c65",
+        "retrieved_at": "2026-10-20T13:12:28.833839+00:00"
+      }
+    ],
+    "reviewed_relations": [
+      {
+        "type": "documented_by",
+        "target_id": "arxiv:2609.33102",
+        "evidence_url": "https://arxiv.org/html/2609.33102v1"
+      }
+    ],
+    "reviewed_licenses": {
+      "code": {
+        "value": {
+          "declared": "Apache-2.0",
+          "url": "https://raw.githubusercontent.com/wlanderson0/orbit/588b3035f92450ec4f0496bb8b629daa205e84c7/LICENSE",
+          "retrieved_at": "2026-10-20T13:41:29.036076+00:00",
+          "basis": "Complete root Apache License 2.0 text for Orbit-original code. NOTICE preserves separate third-party component terms, including MIT-vendored modules; this is not a uniform license for the entire dependency/data bundle."
+        },
+        "reason": "Record only the publisher's top-level Apache-2.0 declaration for Orbit-original code. NOTICE explicitly preserves per-component terms; neither bundled or external data nor model weights inherit this declaration. Its account of BrowserART licensing is not an independent resolution of upstream conflicting declarations.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/wlanderson0/orbit/588b3035f92450ec4f0496bb8b629daa205e84c7/LICENSE",
+          "https://raw.githubusercontent.com/wlanderson0/orbit/588b3035f92450ec4f0496bb8b629daa205e84c7/NOTICE"
+        ]
+      }
+    },
+    "editorial_reviewed": true,
+    "review_note": "Retained primary sources and independent source review support the annotation. Platform, evaluation, reading and license limits remain explicit; no linked code or service was executed.",
+    "reviewed_at": "2026-10-20T14:34:38Z",
+    "reviewed_sha256": "b6743e3e9e5256d7afa8bb411baf246b60ba71bcfb84eda5a816fba3ddd7d78b"
+  },
+  {
+    "id": "arxiv:2610.20424",
+    "name": "BizBench: Unveiling Hidden Challenges in Deploying Long-Horizon Agents for Real-World Business",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.20424",
+    "verify_terms": [
+      "BizBench"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/html/2610.20424v1"
+    ],
+    "primary_supports": [
+      "kind",
+      "scope"
+    ],
+    "editorial_reviewed": false,
+    "review_note": "Scope hold after v1 Sections 3.1–3.3, 4.2–4.4 and 5.1: the reconstructed environment uses documents, database states, business-tool calls and an LLM user simulator. The inspected execution protocol does not establish GUI, browser or concrete OS/terminal interaction; a portal approval is represented as a tool/state event. Need explicit interface observations/actions and evaluated interaction evidence before core or adjacent inclusion. Preserve metadata; this is not a scope exclusion.",
+    "reviewed_at": "2026-10-20T14:34:38Z",
+    "reviewed_sha256": "7946de1c092bcb2504e8da61b69f26842ed31ab79c23141e4b0c40092594bd13"
   }
 ]

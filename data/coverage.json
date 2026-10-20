@@ -1,7 +1,7 @@
 {
-  "as_of_utc": "2026-10-20T13:48:11Z",
-  "total_records": 3224,
-  "curated_records": 1655,
+  "as_of_utc": "2026-10-20T14:10:32.910533Z",
+  "total_records": 3227,
+  "curated_records": 1659,
   "bibliographic_records": 2756,
   "arxiv_active_records": 2743,
   "non_arxiv_bibliographic_records": 13,
@@ -9,7 +9,7 @@
   "arxiv_archive_records": 2881,
   "excluded_records": 138,
   "exclusion_revalidation_pending": 0,
-  "metadata_only_records": 1569,
+  "metadata_only_records": 1568,
   "discovery_identifiers": 4270,
   "unindexed_candidates": 906,
   "non_resource_candidates": 98,
@@ -189,6 +189,13 @@
       "url": "https://arxiv.org/abs/2610.00450",
       "reason": "Scope hold after v1 Sections 3.3, 4.1 and Appendices A.3-A.4: the OpenClaw service/workspace evaluation does not establish GUI/browser interaction. Need concrete observation/action interfaces and execution-trace evidence to decide core or adjacent relevance. Retain metadata; this is not an abstract-only exclusion.",
       "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2610.20424",
+      "name": "BizBench: Unveiling Hidden Challenges in Deploying Long-Horizon Agents for Real-World Business",
+      "url": "https://arxiv.org/abs/2610.20424",
+      "reason": "Scope hold after v1 Sections 3.1–3.3, 4.2–4.4 and 5.1: the reconstructed environment uses documents, database states, business-tool calls and an LLM user simulator. The inspected execution protocol does not establish GUI, browser or concrete OS/terminal interaction; a portal approval is represented as a tool/state event. Need explicit interface observations/actions and evaluated interaction evidence before core or adjacent inclusion. Preserve metadata; this is not a scope exclusion.",
+      "cause": "reviewer_hold"
     }
   ],
   "uncurated_linked_papers": [],
@@ -197,8 +204,9 @@
     "benchmark": 89,
     "company": 16,
     "dataset": 86,
-    "framework": 78,
+    "framework": 79,
     "infrastructure": 14,
+    "learning": 2,
     "model": 98,
     "paper": 2738,
     "product": 20,
@@ -208,13 +216,13 @@
   "curated_by_environment": {
     "android": 322,
     "cross-platform": 197,
-    "desktop": 330,
+    "desktop": 331,
     "harmonyos": 3,
     "ios": 22,
     "linux": 53,
     "macos": 30,
     "unspecified": 381,
-    "web": 637,
+    "web": 641,
     "windows": 65
   },
   "curated_by_kind_and_environment": {
@@ -257,13 +265,13 @@
     "framework": {
       "android": 22,
       "cross-platform": 7,
-      "desktop": 22,
+      "desktop": 23,
       "harmonyos": 1,
       "ios": 1,
       "linux": 6,
       "macos": 1,
       "unspecified": 2,
-      "web": 38,
+      "web": 39,
       "windows": 2
     },
     "infrastructure": {
@@ -274,6 +282,9 @@
       "macos": 2,
       "web": 5,
       "windows": 1
+    },
+    "learning": {
+      "web": 2
     },
     "model": {
       "android": 24,
@@ -295,7 +306,7 @@
       "linux": 22,
       "macos": 14,
       "unspecified": 344,
-      "web": 455,
+      "web": 456,
       "windows": 38
     },
     "product": {
@@ -324,7 +335,7 @@
     }
   },
   "license_declarations_by_scope": {
-    "code": 187,
+    "code": 188,
     "data": 61,
     "weights": 56,
     "document": 0
@@ -715,7 +726,7 @@
       "indexed": 487,
       "indexed_resources": 487,
       "resolved_aliases": 0,
-      "curated": 396,
+      "curated": 397,
       "excluded": 0,
       "set_aside": 45,
       "unindexed": 12
@@ -775,7 +786,7 @@
       "indexed": 210,
       "indexed_resources": 210,
       "resolved_aliases": 0,
-      "curated": 159,
+      "curated": 160,
       "excluded": 0,
       "set_aside": 1,
       "unindexed": 2

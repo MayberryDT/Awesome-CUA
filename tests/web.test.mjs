@@ -62,6 +62,57 @@ test('deep links round-trip search, filters, layout, language, and a selected re
     assert.equal(parseState(roundTrip).platform,platform);
   }
 });
+test('learning deep links preserve kind, reviewed facets and bilingual search labels',()=>{
+  const make=(id,kind,review_status='curated')=>({id,kind,review_status,name:id,url:'https://example.org/'+id,aliases:[],authors:[],summary:'Browser practice.',environments:['web'],topics:['web-navigation'],published_at:null});
+  const lessons=[make('course','learning'),make('unreviewed','learning','metadata_verified'),make('paper','paper')];
+  lessons.forEach(row=>row.search_text=recordSearchText(row,topicLabels));
+  for(const q of ['Learning resources','学习资源']){
+    const state=parseState('?kind=learning&review=curated&platform=web&topic=web-navigation&q='+encodeURIComponent(q));
+    assert.equal(state.kind,'learning');
+    assert.deepEqual(filtered(lessons,state).map(row=>row.id),['course']);
+    const encoded=serializeState(state,'zh','course');
+    assert.deepEqual(parseState(encoded),state);
+    assert.equal(new URLSearchParams(encoded).get('record'),'course');
+  }
+  assert.equal(filtered(lessons,initial()).length,3);
+  assert.deepEqual(filtered(lessons,{...initial(),kind:'learning',review:'metadata_verified'}).map(row=>row.id),['unreviewed']);
+});
+test('learning category, cards and directory link render in both languages',async()=>{
+  const source={id:'url:course',name:'Browser course',kind:'learning',url:'https://example.org/course',page_url:'/resources/course/',aliases:[],authors:[],environments:['web'],topics:['web-navigation'],summary:'A source-reviewed browser tutorial.',review_status:'curated',published_at:null,scope:'core',related_count:0};
+  const other={...source,id:'arxiv:2401.00001',kind:'paper',name:'Pending paper',review_status:'metadata_verified',summary:null,topics:[]};
+  const elements=new Map(),element=selector=>{
+    if(!elements.has(selector))elements.set(selector,{dataset:{},listeners:{},classList:{toggle(){}},addEventListener(type,fn){this.listeners[type]=fn;},setAttribute(){},focus(){}});
+    return elements.get(selector);
+  };
+  const directory=element('learning-directory');directory.dataset.i18n='directoryLearning';
+  const location={search:'?kind=learning&review=curated&lang=en',pathname:'/',hash:'#catalog'};
+  const globals={
+    document:{documentElement:{},body:{classList:{toggle(){}}},querySelector:element,querySelectorAll:selector=>selector==='[data-i18n]'?[directory]:[],addEventListener(){}},
+    window:{addEventListener(){}},location,
+    history:{state:null,replaceState(_,__,url){location.search=url.includes('?')?'?'+url.split('?')[1].split('#')[0]:'';}},
+    localStorage:{getItem:()=>null,setItem(){}},
+    fetch:async()=>({ok:true,json:async()=>({records:structuredClone([source,other]),topics:topicLabels,coverage:{curated_records:1,by_kind:{learning:1,paper:1},sources:[],as_of_utc:'2026-10-20T00:00:00Z'}})}),
+  };
+  const saved=Object.keys(globals).map(key=>[key,Object.getOwnPropertyDescriptor(globalThis,key)]);
+  try{
+    for(const [key,value] of Object.entries(globals))Object.defineProperty(globalThis,key,{value,configurable:true,writable:true});
+    await import('../web/app.js?learning-kind-render');
+    await new Promise(resolve=>setImmediate(resolve));
+    assert.match(element('#categories').innerHTML,/data-kind="learning" aria-pressed="true"[^]*?▥[^]*?Learning resources[^]*?category-count">1</);
+    assert.match(element('#results').innerHTML,/data-kind="learning"/);
+    assert.match(element('#results').innerHTML,/kind-chip">Learning resources</);
+    assert.doesNotMatch(element('#results').innerHTML,/Pending paper/);
+    assert.equal(directory.textContent,'Learning resources');
+    element('#language').listeners.click();
+    assert.match(element('#categories').innerHTML,/data-kind="learning" aria-pressed="true"[^]*?学习资源/);
+    assert.match(element('#results').innerHTML,/kind-chip">学习资源</);
+    assert.equal(directory.textContent,'学习资源');
+    assert.equal(parseState(location.search).kind,'learning');
+    assert.equal(new URLSearchParams(location.search).get('lang'),'zh');
+  } finally {
+    for(const [key,descriptor] of saved)if(descriptor)Object.defineProperty(globalThis,key,descriptor);else delete globalThis[key];
+  }
+});
 test('unrecognized sort/type and invalid pages fall back safely',()=>{
   const state=parseState('?kind=bad&sort=bad&page=-10&review=unverified');
   assert.equal(state.page,1);assert.equal(state.kind,'');assert.equal(state.sort,'featured');assert.equal(state.review,'');

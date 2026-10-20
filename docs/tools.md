@@ -71,4 +71,4 @@ All entries in this section: unspecified.
 
 [↑ Back to top](#tool-catalog)
 
-Detailed notes and separate code/data/weights license declarations are in `data/catalog.jsonl`.
+Detailed notes and separate code/data/weights/document license declarations are in `data/catalog.jsonl`.
