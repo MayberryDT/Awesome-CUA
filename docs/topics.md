@@ -2,28 +2,28 @@
 
 [Home](../README.md) · [Full arXiv bibliography](papers.md) · [Methodology](methodology.md)
 
-1,642 source-reviewed resources across 35 topics. Topic tags are catalog annotations from the editorial review, not author keywords; a resource appears under every topic it carries. Each hub lists benchmarks, data, models, systems, and papers together, newest papers first.
+1,643 source-reviewed resources across 35 topics. Topic tags are catalog annotations from the editorial review, not author keywords; a resource appears under every topic it carries. Each hub lists benchmarks, data, models, systems, and papers together, newest papers first.
 
 | Topic | All | Benchmarks | Datasets | Models | Systems | Papers | Newest reviewed paper |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | --- |
 | [Evaluation](topics/evaluation.md) | 699 | 86 | 9 | 1 | 27 | 576 | [VeriCUA: Learning Proactive Verification for Reliable GUI Agent Rewards](https://arxiv.org/abs/2610.26469) · 2026-10-19 |
 | [GUI grounding](topics/grounding.md) | 375 | 9 | 32 | 67 | 20 | 247 | [Focused Omni-Modal GUI Agents](https://arxiv.org/abs/2610.26203) · 2026-10-19 |
-| [Data generation](topics/data-generation.md) | 342 | · | 55 | 2 | 24 | 261 | [CUA-Lite: An Open Platform for Computer Use Agents](https://arxiv.org/abs/2610.26071) · 2026-10-19 |
+| [Data generation](topics/data-generation.md) | 343 | · | 55 | 2 | 24 | 262 | [CUA-Lite: An Open Platform for Computer Use Agents](https://arxiv.org/abs/2610.26071) · 2026-10-19 |
 | [Web navigation](topics/web-navigation.md) | 297 | 17 | 8 | 11 | 45 | 216 | [SPIDES: Information-Flow Control for Browser Agents](https://arxiv.org/abs/2610.24277) · 2026-10-16 |
 | [Planning](topics/planning.md) | 279 | · | 4 | 27 | 32 | 216 | [Adaptation of Computer Use Agents to New Software with User Manuals](https://arxiv.org/abs/2610.23012) · 2026-10-16 |
-| [Mobile navigation](topics/mobile-navigation.md) | 276 | 14 | 13 | 15 | 30 | 204 | [Tandem: Serving Hybrid Linear-Attention GUI Agents on Mobile NPUs](https://arxiv.org/abs/2610.26660) · 2026-10-19 |
-| [Reinforcement learning](topics/reinforcement-learning.md) | 237 | 2 | 5 | 23 | 21 | 186 | [VeriCUA: Learning Proactive Verification for Reliable GUI Agent Rewards](https://arxiv.org/abs/2610.26469) · 2026-10-19 |
+| [Mobile navigation](topics/mobile-navigation.md) | 277 | 14 | 13 | 15 | 30 | 205 | [Tandem: Serving Hybrid Linear-Attention GUI Agents on Mobile NPUs](https://arxiv.org/abs/2610.26660) · 2026-10-19 |
+| [Reinforcement learning](topics/reinforcement-learning.md) | 238 | 2 | 5 | 23 | 21 | 187 | [VeriCUA: Learning Proactive Verification for Reliable GUI Agent Rewards](https://arxiv.org/abs/2610.26469) · 2026-10-19 |
 | [Safety & security](topics/safety-security.md) | 208 | 12 | · | · | 7 | 189 | [SPIDES: Information-Flow Control for Browser Agents](https://arxiv.org/abs/2610.24277) · 2026-10-16 |
 | [Screen understanding](topics/screen-understanding.md) | 208 | 5 | 19 | 10 | 11 | 163 | [Focused Omni-Modal GUI Agents](https://arxiv.org/abs/2610.26203) · 2026-10-19 |
 | [Robustness](topics/robustness.md) | 186 | 10 | 1 | · | 2 | 173 | [ScopeMem: Latent Memory That Learns Where to Revise Frozen GUI Agents](https://arxiv.org/abs/2610.26503) · 2026-10-19 |
 | [Memory](topics/memory.md) | 167 | 1 | 2 | · | 16 | 148 | [ScopeMem: Latent Memory That Learns Where to Revise Frozen GUI Agents](https://arxiv.org/abs/2610.26503) · 2026-10-19 |
-| [Efficiency](topics/efficiency.md) | 152 | 1 | · | 5 | 4 | 142 | [VeriCUA: Learning Proactive Verification for Reliable GUI Agent Rewards](https://arxiv.org/abs/2610.26469) · 2026-10-19 |
-| [Tool integration](topics/tool-integration.md) | 133 | 9 | 2 | 4 | 24 | 94 | [CUA-Lite: An Open Platform for Computer Use Agents](https://arxiv.org/abs/2610.26071) · 2026-10-19 |
+| [Efficiency](topics/efficiency.md) | 153 | 1 | · | 5 | 4 | 143 | [VeriCUA: Learning Proactive Verification for Reliable GUI Agent Rewards](https://arxiv.org/abs/2610.26469) · 2026-10-19 |
+| [Tool integration](topics/tool-integration.md) | 134 | 9 | 2 | 4 | 24 | 95 | [CUA-Lite: An Open Platform for Computer Use Agents](https://arxiv.org/abs/2610.26071) · 2026-10-19 |
 | [Workflows](topics/workflow.md) | 112 | 6 | 2 | · | 22 | 82 | [Task-State Governance: A Virtual Machine for Verifiable and Recoverable GUI Agent Execution](https://arxiv.org/abs/2610.20100) · 2026-10-14 |
 | [Automation](topics/automation.md) | 111 | · | · | 1 | 27 | 83 | [Interaction-as-a-Judge](https://arxiv.org/abs/2610.17895) · 2026-10-13 |
 | [Long-horizon tasks](topics/long-horizon.md) | 103 | 5 | 1 | 1 | 5 | 91 | [Agent World Model in the Wild: Computer-Use Agent Environment Synthesis](https://arxiv.org/abs/2610.26828) · 2026-10-19 |
 | [Human in the loop](topics/human-in-the-loop.md) | 85 | 1 | · | · | 7 | 77 | [SPIDES: Information-Flow Control for Browser Agents](https://arxiv.org/abs/2610.24277) · 2026-10-16 |
-| [Imitation learning](topics/imitation-learning.md) | 80 | 1 | 14 | 5 | 11 | 49 | [ScopeMem: Latent Memory That Learns Where to Revise Frozen GUI Agents](https://arxiv.org/abs/2610.26503) · 2026-10-19 |
+| [Imitation learning](topics/imitation-learning.md) | 81 | 1 | 14 | 5 | 11 | 50 | [ScopeMem: Latent Memory That Learns Where to Revise Frozen GUI Agents](https://arxiv.org/abs/2610.26503) · 2026-10-19 |
 | [Reward models](topics/reward-models.md) | 57 | 4 | 3 | 4 | 3 | 43 | [VeriCUA: Learning Proactive Verification for Reliable GUI Agent Rewards](https://arxiv.org/abs/2610.26469) · 2026-10-19 |
 | [Sandboxes](topics/sandbox.md) | 57 | 3 | · | · | 14 | 40 | [CUA-Lite: An Open Platform for Computer Use Agents](https://arxiv.org/abs/2610.26071) · 2026-10-19 |
 | [Cross-app](topics/cross-app.md) | 56 | 13 | 2 | · | 4 | 37 | [MobileJailBench: Red Queen Jailbreak Benchmarking for Mobile Agents](https://arxiv.org/abs/2610.23303) · 2026-10-16 |

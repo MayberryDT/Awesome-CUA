@@ -64513,5 +64513,78 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "80bed80786f939973d0d13b4f892300fee02a6110e326247131fc83d257796de",
     "reviewed_at": "2026-10-20T10:51:01Z"
+  },
+  {
+    "id": "arxiv:2609.30887",
+    "name": "From Tapping to Hopping: Augmenting Mobile GUI Agents with App-Native Deeplinks",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2609.30887",
+    "summary": "GUI-Hopper combines verified Android deeplinks with GUI actions, using landing-screen descriptions, hybrid trajectory training and reinforcement learning to select navigation shortcuts and recover through GUI control.",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "tool-integration",
+      "data-generation",
+      "imitation-learning",
+      "reinforcement-learning",
+      "efficiency"
+    ],
+    "scope": "core",
+    "notes": "Reviewed the complete retained Atom abstract and selected exact-v1 full text. The Atom has incomplete clauses; its text/hash remain unchanged and this annotation uses the explicit methods. Evaluation is Android-only, with a selected real-app subset. Landing-Activity verification is not task completion. Model/catalog release is prospective in the paper. No independent reproduction.",
+    "verify_terms": [
+      "From Tapping to Hopping: Augmenting Mobile GUI Agents with App-Native Deeplinks"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agent%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22+OR+ti%3A%22browser+agents%22+OR+ti%3A%22mobile+agent%22+OR+ti%3A%22mobile+agents%22+OR+ti%3A%22desktop+agent%22%29+AND+submittedDate%3A%5B202609200000+TO+202610192359%5D&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "scope"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2609.30887v1",
+        "sha256": "2b6b8147cf7b0e1fcded85f397c272bcf535ed179789e76c3ff4f15aa3fe53a7",
+        "retrieved_at": "2026-10-20T10:53:44.035673+00:00",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "scope",
+          "notes"
+        ]
+      }
+    ],
+    "review_note": "Complete retained abstract and selected exact-v1 methods, evaluation and limitations independently reviewed; detailed annotation binds the versioned HTML.",
+    "read_basis": "Complete original retained Atom abstract and selected exact-v1 HTML sections; the incomplete Atom wording is preserved rather than reconstructed.",
+    "reviewed_sha256": "096098b62f82867ee39dfd7cf44095edc5c6a9307351265592e485d82eadf111",
+    "reviewed_at": "2026-10-20T11:06:34Z",
+    "editorial_reviewed": true
+  },
+  {
+    "id": "arxiv:2610.00450",
+    "name": "ZoneClaw: Mitigating Persistent Memory Attacks by Establishing Memory-Zoning in OpenClaw-Style Computer-Use Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.00450",
+    "verify_terms": [
+      "ZoneClaw: Mitigating Persistent Memory Attacks by Establishing Memory-Zoning in OpenClaw-Style Computer-Use Agents"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/html/2610.00450v1"
+    ],
+    "primary_supports": [
+      "name",
+      "kind"
+    ],
+    "editorial_reviewed": false,
+    "review_note": "Scope hold after v1 Sections 3.3, 4.1 and Appendices A.3-A.4: the OpenClaw service/workspace evaluation does not establish GUI/browser interaction. Need concrete observation/action interfaces and execution-trace evidence to decide core or adjacent relevance. Retain metadata; this is not an abstract-only exclusion.",
+    "read_basis": "Complete retained abstract and selected exact-v1 methodology/harness/evaluation sections, including raw Tables 6-7. Full-text scope evidence does not settle GUI/browser or concrete terminal-control relevance.",
+    "reviewed_sha256": "063101c76d718b7862cb64505422cc53d88e3c32ea5d465db04f12c7d16508e2",
+    "reviewed_at": "2026-10-20T11:06:34Z"
   }
 ]
