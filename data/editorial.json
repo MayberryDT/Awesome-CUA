@@ -63653,5 +63653,196 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "id": "github:kwai/memgui-agent",
+    "name": "MemGUI-Agent",
+    "kind": "framework",
+    "url": "https://github.com/kwai/MemGUI-Agent",
+    "summary": "MemGUI-Agent training and offline evaluation tools provide trajectory conversion, LoRA SFT templates, and step-level checks of GUI actions, memory updates and context folding.",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "memory",
+      "interaction-history",
+      "long-horizon",
+      "imitation-learning",
+      "evaluation"
+    ],
+    "scope": "core",
+    "notes": "The inspected release documentation describes dataset utilities, a LoRA SFT template and gold-step offline evaluation; live Android rollouts are explicitly outside that evaluator and linked to separate benchmark repositories. Executable source files, external datasets/checkpoints and reported results were not independently verified in this bounded review.",
+    "verify_terms": [
+      "MemGUI-Agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/kwai/MemGUI-Agent/main/README.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "topics",
+      "scope",
+      "relations",
+      "notes",
+      "licenses.code"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://raw.githubusercontent.com/kwai/MemGUI-Agent/main/evaluation/memgui3k_offline_eval/README.md",
+        "sha256": "4c92c584b6885a3bde8ee89d04ccf48287e7f6119889f75cde0c034c90bd8217",
+        "retrieved_at": "2026-10-20T03:55:26.237759+00:00",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "scope",
+          "notes"
+        ]
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://raw.githubusercontent.com/kwai/MemGUI-Agent/main/LICENSE",
+        "sha256": "d4e344274155be1d0a192c8ae2940169abb0bd8546d045b96b45810593860636",
+        "retrieved_at": "2026-10-20T03:55:01.061844+00:00",
+        "supports": [
+          "licenses.code",
+          "notes"
+        ]
+      },
+      {
+        "role": "primary",
+        "method": "github_repository_identity",
+        "supports": [
+          "details.repository_id"
+        ],
+        "url": "https://api.github.com/search/repositories?q=topic%3Agui-agent+is%3Apublic+fork%3Afalse+created%3A2008-01-01..2026-10-18&per_page=100&page=1&sort=updated&order=asc",
+        "sha256": "0ae4477b885b0915e43874399c2a6b91f7d07954697370204550df931f7db82c",
+        "retrieved_at": "2026-10-19T19:10:26.954787+00:00"
+      }
+    ],
+    "paper_ids": [
+      "2606.19926"
+    ],
+    "editorial_reviewed": true,
+    "review_note": "Source review completed for the documented training and evaluation scope; linked artifacts remain unverified.",
+    "read_basis": "Read the complete root README, complete linked component README, complete root LICENSE/notice, and the retained official GitHub numeric-identity response. No code execution or full-paper reread.",
+    "details": {
+      "repository_id": 1278022559
+    },
+    "reviewed_licenses": {
+      "code": {
+        "value": null,
+        "reason": "The README declares Apache-2.0, but the inspected LICENSE is a short notice and link rather than the complete terms; the code license remains unconfirmed.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/kwai/MemGUI-Agent/main/LICENSE",
+          "https://raw.githubusercontent.com/kwai/MemGUI-Agent/main/README.md"
+        ]
+      }
+    },
+    "reviewed_sha256": "3f7545f466407ed5336f47d18b12e8354ec352ff83dcf973b1545f81d9a629ac",
+    "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "id": "github:kwai/mobileforge",
+    "name": "MobileForge",
+    "kind": "framework",
+    "url": "https://github.com/kwai/MobileForge",
+    "summary": "Android GUI-agent adaptation framework combining app exploration, generated curricula and rollout feedback with hint-conditioned step-level GRPO; the documented public training path targets Qwen3-VL-8B.",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "data-generation",
+      "reinforcement-learning",
+      "evaluation"
+    ],
+    "scope": "core",
+    "notes": "The root README describes MobileGym exploration/feedback and HiFPO optimization. The training README limits its public training path to the Qwen3-VL-8B experiment. Linked model and dataset collections, executable source completeness and benchmark results were not independently verified; the repository code license is not a model or dataset license.",
+    "verify_terms": [
+      "MobileForge"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/kwai/MobileForge/main/README.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "topics",
+      "scope",
+      "relations",
+      "notes",
+      "environments",
+      "licenses.code"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://raw.githubusercontent.com/kwai/MobileForge/main/training/README.md",
+        "sha256": "58187fe25d8398ef2ae31de02debd4bc3b932ff1925db86a87f5de65b016aed1",
+        "retrieved_at": "2026-10-20T03:55:29.533431+00:00",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "scope",
+          "notes"
+        ]
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://raw.githubusercontent.com/kwai/MobileForge/main/LICENSE",
+        "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+        "retrieved_at": "2026-10-20T03:55:07.420029+00:00",
+        "supports": [
+          "licenses.code",
+          "notes"
+        ]
+      },
+      {
+        "role": "primary",
+        "method": "github_repository_identity",
+        "supports": [
+          "details.repository_id"
+        ],
+        "url": "https://api.github.com/search/repositories?q=topic%3Agui-agent+is%3Apublic+fork%3Afalse+created%3A2008-01-01..2026-10-18&per_page=100&page=1&sort=updated&order=asc",
+        "sha256": "0ae4477b885b0915e43874399c2a6b91f7d07954697370204550df931f7db82c",
+        "retrieved_at": "2026-10-19T19:10:26.954787+00:00"
+      }
+    ],
+    "paper_ids": [
+      "2606.19930"
+    ],
+    "editorial_reviewed": true,
+    "review_note": "Source review completed for the documented training and evaluation scope; linked artifacts remain unverified.",
+    "read_basis": "Read the complete root README, complete linked component README, complete root LICENSE/notice, and the retained official GitHub numeric-identity response. No code execution or full-paper reread.",
+    "details": {
+      "repository_id": 1278021888
+    },
+    "reviewed_licenses": {
+      "code": {
+        "value": {
+          "declared": "Apache-2.0",
+          "url": "https://raw.githubusercontent.com/kwai/MobileForge/main/LICENSE",
+          "retrieved_at": "2026-10-20T03:55:07.420029+00:00",
+          "basis": "Complete repository root Apache License 2.0 text; code declaration only, not linked datasets or weights."
+        },
+        "reason": "The complete root LICENSE declares Apache-2.0 for repository code. Linked data and model weights, and third-party dependencies, retain separate licensing requirements.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/kwai/MobileForge/main/LICENSE",
+          "https://raw.githubusercontent.com/kwai/MobileForge/main/README.md"
+        ]
+      }
+    },
+    "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
+    "reviewed_at": "2026-10-20T04:06:27Z"
   }
 ]

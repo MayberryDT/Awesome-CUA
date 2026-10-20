@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-47 source-reviewed resources tagged `interaction-history`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+48 source-reviewed resources tagged `interaction-history`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Models (1)](#models) · [Papers (46)](#papers)
+**Contents:** [Models (1)](#models) · [Frameworks (1)](#frameworks) · [Papers (46)](#papers)
 
 ## Models
 
@@ -13,6 +13,14 @@ All entries in this section: android, desktop.
 | Resource | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- |
 | [Aria-UI context-aware checkpoint](https://huggingface.co/Aria-UI/Aria-UI-context-aware) | [2412.16256](https://arxiv.org/abs/2412.16256) (2024) | — | The context-aware Aria-UI release that uses interaction context to support grounding in dynamic Android and desktop agent tasks. | [✓ 2026‑10‑17](https://huggingface.co/api/models/Aria-UI/Aria-UI-context-aware) |
+
+## Frameworks
+
+All entries in this section: android.
+
+| Resource | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [MemGUI-Agent](https://github.com/kwai/MemGUI-Agent) | [2606.19926](https://arxiv.org/abs/2606.19926) (2026) | — | MemGUI-Agent training and offline evaluation tools provide trajectory conversion, LoRA SFT templates, and step-level checks of GUI actions, memory updates and context folding. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/kwai/MemGUI-Agent/main/README.md) |
 
 ## Papers
 
