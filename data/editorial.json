@@ -65938,5 +65938,308 @@
     "review_note": "Scope hold after v1 Sections 3.1–3.3, 4.2–4.4 and 5.1: the reconstructed environment uses documents, database states, business-tool calls and an LLM user simulator. The inspected execution protocol does not establish GUI, browser or concrete OS/terminal interaction; a portal approval is represented as a tool/state event. Need explicit interface observations/actions and evaluated interaction evidence before core or adjacent inclusion. Preserve metadata; this is not a scope exclusion.",
     "reviewed_at": "2026-10-20T14:34:38Z",
     "reviewed_sha256": "7946de1c092bcb2504e8da61b69f26842ed31ab79c23141e4b0c40092594bd13"
+  },
+  {
+    "id": "arxiv:2610.09944",
+    "url": "https://arxiv.org/abs/2610.09944",
+    "name": "AgentTime: Can Agents Estimate and Control Their Own Runtime?",
+    "kind": "paper",
+    "summary": "Evaluates duration following, runtime forecasts and elapsed-time estimates in native agent harnesses, including OSWorld desktop tasks, with external timers, native graders and work-versus-wait analysis.",
+    "environments": [
+      "desktop"
+    ],
+    "topics": [
+      "evaluation",
+      "observability"
+    ],
+    "scope": "core",
+    "notes": "This cross-domain suite includes 16 OSWorld 2.0 tasks among 222 tasks from 18 sources. A single run per task and requested duration, provider effects and incomplete native grades limit comparisons; elapsed time is not evidence of productive work. The OSWorld task 092 video judge was skipped without an API key. The inspected repository README identifies desktop-VM timing and states that the current 222-task forecasting runs will be added; its existing forecasting code covers an earlier study, and transcript work/wait labels are not public. No code or benchmark was executed and no license was verified.",
+    "verify_terms": [
+      "AgentTime: Can Agents Estimate and Control Their Own Runtime?"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/html/2610.09944v2"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "additional_evidence": [
+      {
+        "url": "https://github.com/michaelofengenden/agenttimebench",
+        "retrieved_at": "2026-10-20T15:15:05.368243+00:00",
+        "sha256": "9bef76f95b41a7ca39c6fa3276d6122e4b27e1e0bd56a777edcfd7e11e7d7342",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "review_note": "Retained primary sources and independent source review support the annotation. Interaction, evaluation, reading and release limitations remain explicit; no linked code, model or benchmark was executed.",
+    "reviewed_at": "2026-10-20T15:25:00Z",
+    "reviewed_sha256": "5424a5f9278ef276c84799a08d4e2e171ee93947a38c1d6670c36fa76dc84fe3"
+  },
+  {
+    "id": "arxiv:2610.23986",
+    "name": "BlenderWorld: Benchmarking Visual Agents for 3D Creation from Real-World References",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.23986",
+    "summary": "Benchmarks agents creating editable Blender projects through shell, Python and MCP tools, judging delivered scenes with multi-view renders, task-specific rubrics and visual-quality ratings.",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "evaluation",
+      "tool-integration",
+      "sandbox"
+    ],
+    "scope": "adjacent",
+    "notes": "The evaluated agents use Linux shell/Python/MCP tools and can inspect viewport screenshots; graphical CUA control and Windows/macOS are future work. Each agent is run once per task, with different Codex/Claude Code harnesses across systems. Scores combine weighted rubric satisfaction and model-rated visual quality. Tool counts include unsuccessful calls and do not establish matched compute or successful actions. No independent reproduction or artifact-release verification.",
+    "verify_terms": [
+      "Benchmarking Visual Agents for 3D Creation from Real-World References"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/html/2610.23986v1"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "editorial_reviewed": true,
+    "review_note": "Retained primary sources and independent source review support the annotation. Interaction, evaluation, reading and release limitations remain explicit; no linked code, model or benchmark was executed.",
+    "reviewed_at": "2026-10-20T15:25:00Z",
+    "reviewed_sha256": "bef4399f087e484b62ff5b8dc2c283f92e0357b94c93b464b86fd97fe7b069cb"
+  },
+  {
+    "id": "arxiv:2610.13092",
+    "summary": "Evaluates Jev as a bounded action selector inside three AndroidWorld agents and two text-based ALFWorld agents, separating decision savings from task success, recovery and resources per delivered outcome.",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "efficiency",
+      "action-prediction",
+      "evaluation",
+      "mobile-navigation",
+      "self-reflection"
+    ],
+    "scope": "core",
+    "notes": "The mobile evaluation uses text UI observations and one fixed instance for each of 116 AndroidWorld task types; three repeats share seed 0. Five agent families use different budgets, with candidate-interface and tool-call granularity changes in some variants. Reported costs use fixed experimental prices, and outcome-selected trace labels are not population failure rates. Faster selection does not imply faster or more reliable task completion. Selected sections were source-read; no independent reproduction.",
+    "name": "When Faster Decisions Do Not Make Better Agents: An Empirical Study of Jev in Agent Workflows",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.13092",
+    "verify_terms": [
+      "An Empirical Study of Jev in Agent Workflows"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/html/2610.13092v1"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "editorial_reviewed": true,
+    "review_note": "Retained primary sources and independent source review support the annotation. Interaction, evaluation, reading and release limitations remain explicit; no linked code, model or benchmark was executed.",
+    "reviewed_at": "2026-10-20T15:25:00Z",
+    "reviewed_sha256": "3db7474953cbe5a3052fb22793038f2383bdd0e7c775af06494a5e8501646d18"
+  },
+  {
+    "id": "arxiv:2609.32511",
+    "summary": "ShareMem consolidates reusable experience across users while keeping preference retrieval user-bound; its web evaluation predicts target elements and actions on recorded Mind2Web states.",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "memory",
+      "web-navigation",
+      "action-prediction",
+      "evaluation"
+    ],
+    "scope": "core",
+    "notes": "Main Mind2Web evaluation uses 252 recorded tasks assigned to 20 simulated users, frozen demonstration-derived memory and task-macro step metrics; it is not a live-browser completion test. The main split withholds same-site local experience, and sharing gains shrink when local coverage rises. Mind2Web has no preference channel; preference claims come from separate service and coding settings. User-bound retrieval is not a demonstrated privacy or security guarantee. Selected sections were source-read; no independent reproduction.",
+    "name": "Learning from Others, Acting for You: Cross-User Memory Sharing for LLM Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2609.32511",
+    "verify_terms": [
+      "Learning from Others, Acting for You: Cross-User Memory Sharing for LLM Agents"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/html/2609.32511v1"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "editorial_reviewed": true,
+    "review_note": "Retained primary sources and independent source review support the annotation. Interaction, evaluation, reading and release limitations remain explicit; no linked code, model or benchmark was executed.",
+    "reviewed_at": "2026-10-20T15:25:00Z",
+    "reviewed_sha256": "ce7210dccecb2896202639e6f7be41876fee20de1135b0d23278cead2d695339"
+  },
+  {
+    "id": "arxiv:2610.18579",
+    "url": "https://arxiv.org/abs/2610.18579",
+    "name": "Reading Right, Acting Wrong: Diagnosing Decision Failures of System One Models in Agent Loops",
+    "kind": "paper",
+    "scope": "adjacent",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation",
+      "interaction-history"
+    ],
+    "summary": "Pairs factual probes with next-action choices on frozen agent traces, including Mind2Web, to diagnose reading-decision gaps without closed-loop execution.",
+    "notes": "Adjacent diagnostic research across simulators, policies, tools, coding and an offline Mind2Web subset. Models choose among supplied admissible actions; they do not generate actions or execute a closed-loop browser policy in the reported evaluation. The paired probes measure selected visible facts, not complete understanding or internal causation. Pooled results are not a web-only leaderboard, and the paper reports coverage limits and label-sensitivity analyses. No benchmark release, code, data or weights were independently inspected.",
+    "verify_terms": [
+      "Reading Right, Acting Wrong"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/html/2610.18579v1"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "licenses.document"
+    ],
+    "reviewed_licenses": {
+      "document": {
+        "value": {
+          "declared": "CC-BY-4.0",
+          "url": "https://arxiv.org/html/2610.18579v1",
+          "retrieved_at": "2026-10-20T15:08:55Z",
+          "basis": "The retained version-specific arXiv HTML infobox explicitly labels this paper License: CC BY 4.0. This document declaration does not establish code, training-data or model-weight licenses."
+        },
+        "reason": "The retained version-specific arXiv HTML infobox explicitly labels this paper License: CC BY 4.0. This document declaration does not establish code, training-data or model-weight licenses.",
+        "evidence_urls": [
+          "https://arxiv.org/html/2610.18579v1"
+        ]
+      }
+    },
+    "editorial_reviewed": true,
+    "review_note": "Retained primary sources and independent source review support the annotation. Interaction, evaluation, reading and release limitations remain explicit; no linked code, model or benchmark was executed.",
+    "reviewed_at": "2026-10-20T15:25:00Z",
+    "reviewed_sha256": "bcbc640d1e732ba0415a9755bce120a811a13a2ba7fba3e58a167b3a9111c2a6"
+  },
+  {
+    "id": "arxiv:2610.02542",
+    "url": "https://arxiv.org/abs/2610.02542",
+    "name": "How To Train Your World Model: Fine-tuning vs RAG for LM-based World Modeling",
+    "kind": "paper",
+    "scope": "adjacent",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "world-models",
+      "planning",
+      "evaluation",
+      "web-navigation"
+    ],
+    "summary": "Compares fine-tuned, retrieval-based and hybrid language-model world models for next-observation prediction and action selection in text environments including WebShop.",
+    "notes": "Adjacent cross-domain study with WebShop as its web evaluation. WebShop uses text-rendered search/product pages and an explicit valid-action menu, not screenshot control or live purchases. A frozen policy proposes five actions; a world model predicts their next observations and the policy scores them before one is executed in the simulator. Utility is normalized environment reward, while fidelity uses a model judge; neither is a universal GUI task-success rate. Fine-tuning and retrieval use collected training experience; the hybrid masks same-episode retrieval, which does not establish general contamination freedom. The retained Atom and v1 HTML abstract wording differs; original bibliographic metadata and its abstract digest are preserved.",
+    "verify_terms": [
+      "How To Train Your World Model"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/html/2610.02542v1"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "licenses.document"
+    ],
+    "reviewed_licenses": {
+      "document": {
+        "value": {
+          "declared": "CC-BY-4.0",
+          "url": "https://arxiv.org/html/2610.02542v1",
+          "retrieved_at": "2026-10-20T15:08:56Z",
+          "basis": "The retained version-specific arXiv HTML infobox explicitly labels this paper License: CC BY 4.0. This document declaration does not establish code, training-data or model-weight licenses."
+        },
+        "reason": "The retained version-specific arXiv HTML infobox explicitly labels this paper License: CC BY 4.0. This document declaration does not establish code, training-data or model-weight licenses.",
+        "evidence_urls": [
+          "https://arxiv.org/html/2610.02542v1"
+        ]
+      }
+    },
+    "editorial_reviewed": true,
+    "review_note": "Retained primary sources and independent source review support the annotation. Interaction, evaluation, reading and release limitations remain explicit; no linked code, model or benchmark was executed.",
+    "reviewed_at": "2026-10-20T15:25:00Z",
+    "reviewed_sha256": "d8c22c6b3f07d4156c38af9dd7ca7c06a5d0a11889a7350d821a020e21604590"
+  },
+  {
+    "id": "arxiv:2610.14966",
+    "url": "https://arxiv.org/abs/2610.14966",
+    "name": "SkillHorizon: Constructing Long-Horizon Agent Tasks through Skill Composition",
+    "kind": "paper",
+    "verify_terms": [
+      "SkillHorizon: Constructing Long-Horizon Agent Tasks through Skill Composition"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/html/2610.14966v1"
+    ],
+    "primary_supports": [
+      "kind",
+      "scope"
+    ],
+    "editorial_reviewed": false,
+    "review_note": "Scope hold after exact-v1 Sections 2–4 and Appendices A.1, B.1–B.2, C and E.5: constructed business environments expose operations and persistent state through tools. The main actor has no terminal, arbitrary code execution or personal workspace; fixed scripts use a dedicated tool. The supplementary Codex experiment disables shell, web and multi-agent execution. The inspected protocol does not establish GUI, browser or concrete OS interaction. Need evaluated interface observations/actions before core or adjacent inclusion. Preserve metadata; this is not a scope exclusion.",
+    "reviewed_at": "2026-10-20T15:25:00Z",
+    "reviewed_sha256": "cabd4678c7c477c6b68cc0518f0a7258833f797e902bc1824485a2c67c66b3ff"
+  },
+  {
+    "id": "arxiv:2610.14306",
+    "name": "Plottery: A Code-Integrated GUI for Matplotlib",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.14306",
+    "verify_terms": [
+      "Plottery: A Code-Integrated GUI for Matplotlib"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/html/2610.14306v1"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "scope"
+    ],
+    "editorial_reviewed": false,
+    "review_note": "Scope hold after complete v1 main text (Sections I–VII) and Appendix VII-A: Plottery is a human-operated Jupyter plotting interface with direct manipulation, editable code and a prompt-to-code assistant. Its evaluation studies people switching modalities; the inspected method does not establish an agent observing or operating the GUI, or a CUA execution/recording interface. Need explicit agent interaction or directly used CUA-support evidence before core/adjacent inclusion. Preserve the metadata record; no scope exclusion is proposed.",
+    "reviewed_at": "2026-10-20T15:25:00Z",
+    "reviewed_sha256": "ded3ffd311f782aab9fb02c2b233546ee903300a22657850d6ba853e9c22dcd4"
   }
 ]

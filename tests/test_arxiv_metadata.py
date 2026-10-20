@@ -295,6 +295,9 @@ class IngestionTests(unittest.TestCase):
         query = urllib.parse.parse_qs(urllib.parse.urlparse(self.calls[-1][0]).query)["search_query"][0]
         self.assertNotEqual(query, old_query)
         self.assertIn('abs:"GUI agents"', query)
+        self.assertIn('abs:"web navigation"', query)
+        self.assertIn('abs:AndroidWorld', query)
+        self.assertIn('abs:Mind2Web', query)
         self.assertIn('ti:GUI', query)
         self.assertIn('ti:"Android agent"', query)
         self.assertIn("submittedDate:[202610030000 TO 202610170000]", query)

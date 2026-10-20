@@ -1,12 +1,12 @@
 # Coverage and quality ledger
 
-Evidence snapshot through **2026-10-20T14:10:32.910533Z**. Generated from committed source receipts.
+Evidence snapshot through **2026-10-20T15:15:05.368243+00:00**. Generated from committed source receipts.
 
-- 3,227 resource records: 1,659 curated; 1,568 bibliographic metadata only.
-- 2,756 paper and survey records, including 2,743 arXiv identities and 13 publisher-only identities. This count overlaps the status counts above.
-- 2,881 retained arXiv metadata records; 138 explicit scope exclusions are outside the active catalog.
+- 3,231 resource records: 1,665 curated; 1,566 bibliographic metadata only.
+- 2,760 paper and survey records, including 2,747 arXiv identities and 13 publisher-only identities. This count overlaps the status counts above.
+- 2,885 retained arXiv metadata records; 138 explicit scope exclusions are outside the active catalog.
 - 4,270 discovery identifiers; 906 remain unresolved after accounting for scope exclusions and for 98 reviewed non-resource links and 36 other addresses of indexed resources, which stay in the review queue with their reasons.
-- 26 editorial proposals await verification or review.
+- 28 editorial proposals await verification or review.
 
 These are distinct resource identifiers, not distinct research projects. Papers, repositories, datasets, products, and publisher entities have different grains.
 
@@ -24,7 +24,7 @@ Counts of source-reviewed resources. A resource tagged with several environments
 | [infrastructure](infrastructures.md) | 5 | 9 | 1 | 2 | 4 | 3 | 1 | · | · | · |
 | [learning](learning.md) | 2 | · | · | · | · | · | · | · | · | · |
 | [model](models.md) | 28 | 24 | 5 | 4 | 6 | 24 | 4 | · | 47 | 2 |
-| [paper](topics.md) | 456 | 211 | 38 | 14 | 22 | 195 | 8 | 2 | 101 | 344 |
+| [paper](topics.md) | 459 | 213 | 38 | 14 | 23 | 196 | 8 | 2 | 101 | 344 |
 | [product](products.md) | 18 | 5 | · | · | · | · | · | · | · | · |
 | [survey](surveys.md) | 3 | 1 | 1 | · | · | 2 | 1 | · | 11 | 3 |
 | [tool](tools.md) | 11 | 4 | 4 | 2 | 2 | 5 | 2 | · | 1 | 3 |
@@ -146,13 +146,13 @@ The recorded title query returned 1,199 unique records out of 1,246 reported mat
 | code | 188 |
 | data | 61 |
 | weights | 56 |
-| document | 0 |
+| document | 2 |
 
 A code license never fills a data or weights field. Hub declarations are publisher metadata, not independently audited legal conclusions. Missing values remain null.
 
 ## Pending editorial proposals
 
-26 proposals: 3 with unresolved primary evidence, 0 whose current source snapshot awaits review, 23 held by a reviewer after reading the current source, and 0 awaiting another scope review.
+28 proposals: 3 with unresolved primary evidence, 0 whose current source snapshot awaits review, 25 held by a reviewer after reading the current source, and 0 awaiting another scope review.
 
 | Resource | Reason |
 | --- | --- |
@@ -182,6 +182,8 @@ A code license never fills a data or weights field. Hub declarations are publish
 | [Progent: Securing AI Agents with Privilege Control](https://arxiv.org/abs/2504.11703) | Reviewer hold: the retained abstract and full-text Sections 8–9 evaluate typed tool-call policies on AgentDojo/ASB and MCP integrations. Section 9 explicitly excludes graphical-interface tool calls from the current method. Preserve the bibliographic record as metadata-only; do not describe this as a web/GUI defense. |
 | [ZoneClaw: Mitigating Persistent Memory Attacks by Establishing Memory-Zoning in OpenClaw-Style Computer-Use Agents](https://arxiv.org/abs/2610.00450) | Scope hold after v1 Sections 3.3, 4.1 and Appendices A.3-A.4: the OpenClaw service/workspace evaluation does not establish GUI/browser interaction. Need concrete observation/action interfaces and execution-trace evidence to decide core or adjacent relevance. Retain metadata; this is not an abstract-only exclusion. |
 | [BizBench: Unveiling Hidden Challenges in Deploying Long-Horizon Agents for Real-World Business](https://arxiv.org/abs/2610.20424) | Scope hold after v1 Sections 3.1–3.3, 4.2–4.4 and 5.1: the reconstructed environment uses documents, database states, business-tool calls and an LLM user simulator. The inspected execution protocol does not establish GUI, browser or concrete OS/terminal interaction; a portal approval is represented as a tool/state event. Need explicit interface observations/actions and evaluated interaction evidence before core or adjacent inclusion. Preserve metadata; this is not a scope exclusion. |
+| [SkillHorizon: Constructing Long-Horizon Agent Tasks through Skill Composition](https://arxiv.org/abs/2610.14966) | Scope hold after exact-v1 Sections 2–4 and Appendices A.1, B.1–B.2, C and E.5: constructed business environments expose operations and persistent state through tools. The main actor has no terminal, arbitrary code execution or personal workspace; fixed scripts use a dedicated tool. The supplementary Codex experiment disables shell, web and multi-agent execution. The inspected protocol does not establish GUI, browser or concrete OS interaction. Need evaluated interface observations/actions before core or adjacent inclusion. Preserve metadata; this is not a scope exclusion. |
+| [Plottery: A Code-Integrated GUI for Matplotlib](https://arxiv.org/abs/2610.14306) | Scope hold after complete v1 main text (Sections I–VII) and Appendix VII-A: Plottery is a human-operated Jupyter plotting interface with direct manipulation, editable code and a prompt-to-code assistant. Its evaluation studies people switching modalities; the inspected method does not establish an agent observing or operating the GUI, or a CUA execution/recording interface. Need explicit agent interaction or directly used CUA-support evidence before core/adjacent inclusion. Preserve the metadata record; no scope exclusion is proposed. |
 
 ## Uncurated papers behind curated resources
 

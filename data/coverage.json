@@ -1,15 +1,15 @@
 {
-  "as_of_utc": "2026-10-20T14:10:32.910533Z",
-  "total_records": 3227,
-  "curated_records": 1659,
-  "bibliographic_records": 2756,
-  "arxiv_active_records": 2743,
+  "as_of_utc": "2026-10-20T15:15:05.368243+00:00",
+  "total_records": 3231,
+  "curated_records": 1665,
+  "bibliographic_records": 2760,
+  "arxiv_active_records": 2747,
   "non_arxiv_bibliographic_records": 13,
   "publication_metadata_records": 77,
-  "arxiv_archive_records": 2881,
+  "arxiv_archive_records": 2885,
   "excluded_records": 138,
   "exclusion_revalidation_pending": 0,
-  "metadata_only_records": 1568,
+  "metadata_only_records": 1566,
   "discovery_identifiers": 4270,
   "unindexed_candidates": 906,
   "non_resource_candidates": 98,
@@ -196,6 +196,20 @@
       "url": "https://arxiv.org/abs/2610.20424",
       "reason": "Scope hold after v1 Sections 3.1–3.3, 4.2–4.4 and 5.1: the reconstructed environment uses documents, database states, business-tool calls and an LLM user simulator. The inspected execution protocol does not establish GUI, browser or concrete OS/terminal interaction; a portal approval is represented as a tool/state event. Need explicit interface observations/actions and evaluated interaction evidence before core or adjacent inclusion. Preserve metadata; this is not a scope exclusion.",
       "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2610.14966",
+      "name": "SkillHorizon: Constructing Long-Horizon Agent Tasks through Skill Composition",
+      "url": "https://arxiv.org/abs/2610.14966",
+      "reason": "Scope hold after exact-v1 Sections 2–4 and Appendices A.1, B.1–B.2, C and E.5: constructed business environments expose operations and persistent state through tools. The main actor has no terminal, arbitrary code execution or personal workspace; fixed scripts use a dedicated tool. The supplementary Codex experiment disables shell, web and multi-agent execution. The inspected protocol does not establish GUI, browser or concrete OS interaction. Need evaluated interface observations/actions before core or adjacent inclusion. Preserve metadata; this is not a scope exclusion.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2610.14306",
+      "name": "Plottery: A Code-Integrated GUI for Matplotlib",
+      "url": "https://arxiv.org/abs/2610.14306",
+      "reason": "Scope hold after complete v1 main text (Sections I–VII) and Appendix VII-A: Plottery is a human-operated Jupyter plotting interface with direct manipulation, editable code and a prompt-to-code assistant. Its evaluation studies people switching modalities; the inspected method does not establish an agent observing or operating the GUI, or a CUA execution/recording interface. Need explicit agent interaction or directly used CUA-support evidence before core/adjacent inclusion. Preserve the metadata record; no scope exclusion is proposed.",
+      "cause": "reviewer_hold"
     }
   ],
   "uncurated_linked_papers": [],
@@ -208,21 +222,21 @@
     "infrastructure": 14,
     "learning": 2,
     "model": 98,
-    "paper": 2738,
+    "paper": 2742,
     "product": 20,
     "survey": 18,
     "tool": 22
   },
   "curated_by_environment": {
-    "android": 322,
+    "android": 323,
     "cross-platform": 197,
-    "desktop": 331,
+    "desktop": 333,
     "harmonyos": 3,
     "ios": 22,
-    "linux": 53,
+    "linux": 54,
     "macos": 30,
     "unspecified": 381,
-    "web": 641,
+    "web": 644,
     "windows": 65
   },
   "curated_by_kind_and_environment": {
@@ -298,15 +312,15 @@
       "windows": 5
     },
     "paper": {
-      "android": 195,
+      "android": 196,
       "cross-platform": 101,
-      "desktop": 211,
+      "desktop": 213,
       "harmonyos": 2,
       "ios": 8,
-      "linux": 22,
+      "linux": 23,
       "macos": 14,
       "unspecified": 344,
-      "web": 456,
+      "web": 459,
       "windows": 38
     },
     "product": {
@@ -338,7 +352,7 @@
     "code": 188,
     "data": 61,
     "weights": 56,
-    "document": 0
+    "document": 2
   },
   "sources": [
     {

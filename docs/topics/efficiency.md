@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-156 source-reviewed resources tagged `efficiency`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+157 source-reviewed resources tagged `efficiency`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (2)](#benchmarks) · [Models (5)](#models) · [Frameworks (4)](#frameworks) · [Tools (1)](#tools) · [Papers (144)](#papers)
+**Contents:** [Benchmarks (2)](#benchmarks) · [Models (5)](#models) · [Frameworks (4)](#frameworks) · [Tools (1)](#tools) · [Papers (145)](#papers)
 
 ## Benchmarks
 
@@ -54,6 +54,7 @@ All entries in this section: unspecified.
 | 2026‑10‑13 | [Pack Light, CarryOn: Building Object-Oriented Context for Long-Horizon Agents](https://arxiv.org/abs/2610.18784) | desktop, web | Introduces CarryOn, which maintains evidence-linked task objects and remaining-work context across history compression, with evaluations on desktop tasks and web research. |
 | 2026‑10‑09 | [Latent World Action Model for GUI Agents](https://arxiv.org/abs/2610.14228) | unspecified | Replaces future-screenshot generation with a shared latent representation for GUI action selection and action-conditioned transition prediction. An action-aware contrastive objective encourages the transition representation to retain discriminative action-induced changes. |
 | 2026‑10‑09 | [Web$hell: A Unified Interface for Agentic Web Access](https://arxiv.org/abs/2610.13416) | web | Introduces Web$hell, an interface that compiles live pages into persistent information and action objects so agents can gather evidence, navigate websites, and reuse acquired content through shared operations. |
+| 2026‑10‑09 | [When Faster Decisions Do Not Make Better Agents: An Empirical Study of Jev in Agent Workflows](https://arxiv.org/abs/2610.13092) | android | Evaluates Jev as a bounded action selector inside three AndroidWorld agents and two text-based ALFWorld agents, separating decision savings from task success, recovery and resources per delivered outcome. |
 | 2026‑10‑04 | [Recurrent Latent Visual Search for GUI Grounding](https://arxiv.org/abs/2610.05185) | unspecified | Introduces ReLaViS, which performs recurrent visual search inside a grounding model by repeatedly querying screenshot tokens and feeding the resulting spatial evidence back into the model. Coarse-to-fine supervision is constructed from existing interface-element annotations. |
 | 2026‑10‑04 | [TeleTune: Evolving Agent Skills From Offline Telemetry](https://arxiv.org/abs/2610.05437) | web | Introduces TeleTune, which edits a textual skill library using held-out action prediction on offline software-use logs with missing goals or interleaved tasks. The learned workflows also guide retrieval of demonstrations for subsequent web-agent execution. |
 | 2026‑10‑02 | [CUAWright: A Minimal Unified Interface for Digital Agents](https://arxiv.org/abs/2610.04116) | desktop, web | Studies a minimal terminal-based execution framework that lets digital agents construct tools and manage context across browser, desktop, and CAD tasks. |

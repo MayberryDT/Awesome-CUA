@@ -44,6 +44,7 @@ RECENT_ARXIV_TERMS=(
     'ti:"browser agent"', 'ti:GUI', 'ti:"Android agent"',
     'abs:"computer-use agents"', 'abs:"GUI agents"',
     'abs:"browser agents"', 'abs:"mobile GUI"',
+    'abs:"web navigation"', 'abs:AndroidWorld', 'abs:Mind2Web',
 )
 
 
