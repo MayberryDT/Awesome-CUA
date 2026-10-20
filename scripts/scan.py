@@ -250,11 +250,11 @@ def recent_papers(config):
 def summarize_phases(phases,source_runs,hf_runs,harvest_failures):
     problems=[]
     for phase in phases:
-        if not phase.get('ok'):problems.append(phase['name']+': '+phase.get('error','failed'))
+        if not phase.get('ok'):problems.append(phase['name']+': '+(phase.get('error') or 'failed'))
         problems.extend(phase.get('warnings',[]))
         validation=phase.get('durable_validation',{})
         if validation.get('ok') is False:
-            problems.append('Candidate snapshot integrity: '+validation.get('error','invalid durable triplet'))
+            problems.append('Candidate snapshot integrity: '+(validation.get('error') or 'invalid durable triplet'))
     failed_sources=[r['id'] for r in source_runs if not r.get('ok')]
     successful_query=lambda r:r.get('state')=='success' and r.get('evidence',{}).get('ok') and not r.get('parse_error')
     failed_queries=[r['id'] for r in hf_runs if not successful_query(r)]
