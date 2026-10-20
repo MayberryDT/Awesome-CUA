@@ -63844,5 +63844,227 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "id": "arxiv:2610.26071",
+    "name": "CUA-Lite: An Open Platform for Computer Use Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.26071",
+    "summary": "CUA-Lite unifies environment interfaces, supervised data formats and per-model harnesses for evaluation, reinforcement learning and supervised fine-tuning across desktop, browser and mobile tasks.",
+    "environments": [
+      "desktop",
+      "linux",
+      "windows",
+      "web",
+      "android"
+    ],
+    "topics": [
+      "tool-integration",
+      "data-generation",
+      "evaluation",
+      "imitation-learning",
+      "reinforcement-learning",
+      "sandbox"
+    ],
+    "scope": "core",
+    "notes": "Reviewed the complete official abstract and selected v1 methods, training and limitations sections. WebVoyager uses offline mirrors; VM-free sandboxes are Linux-only, and reported desktop/mobile gains do not establish unseen-app transfer. No results or released artifacts were independently reproduced.",
+    "verify_terms": [
+      "CUA-Lite: An Open Platform for Computer Use Agents"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agent%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22+OR+ti%3A%22browser+agents%22+OR+ti%3A%22mobile+agent%22+OR+ti%3A%22mobile+agents%22+OR+ti%3A%22desktop+agent%22%29+AND+submittedDate%3A%5B202610130000+TO+202610192359%5D&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "topics",
+      "scope"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2610.26071v1",
+        "sha256": "d4231fa9677e916ca8cc27493dfbbe9fb34c7430207150e6b9be10c2bad43bfb",
+        "retrieved_at": "2026-10-20T08:28:55.967592+00:00",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "scope",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "review_note": "Reviewed the complete official abstract and selected versioned methods, evaluation and limitations sections; independent source review completed.",
+    "read_basis": "Complete official abstract and selected exact-v1 full-text sections. Fresh Atom metadata and abstract hash match the retained record; no reproduction or release-completeness claim.",
+    "reviewed_sha256": "80bed80786f939973d0d13b4f892300fee02a6110e326247131fc83d257796de",
+    "reviewed_at": "2026-10-20T08:45:57Z"
+  },
+  {
+    "id": "arxiv:2610.26469",
+    "name": "VeriCUA: Learning Proactive Verification for Reliable GUI Agent Rewards",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.26469",
+    "summary": "VeriCUA trains a Judge to select verification checks and stopping decisions while a frozen Probe inspects the post-task GUI. Single-attempt reinforcement learning balances verdict correctness and Probe use.",
+    "environments": [
+      "desktop",
+      "linux",
+      "web",
+      "android"
+    ],
+    "topics": [
+      "reward-models",
+      "reinforcement-learning",
+      "evaluation",
+      "efficiency"
+    ],
+    "scope": "core",
+    "notes": "Reviewed the complete abstract and selected v1 method/evaluation sections. The Judge is trained on OSWorld and frozen for MobileWorld/WebArena transfer; downstream Actor RL is separate. Evaluation uses screened terminal outcomes, and reported cost counts Probe tokens. No independent reproduction.",
+    "verify_terms": [
+      "VeriCUA: Learning Proactive Verification for Reliable GUI Agent Rewards"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agent%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22+OR+ti%3A%22browser+agents%22+OR+ti%3A%22mobile+agent%22+OR+ti%3A%22mobile+agents%22+OR+ti%3A%22desktop+agent%22%29+AND+submittedDate%3A%5B202610130000+TO+202610192359%5D&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "topics",
+      "scope"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2610.26469v1",
+        "sha256": "f13f0225c721d5aa430bb8aea1d1e7a7da5973760c4c3b82f26ba648aade82ba",
+        "retrieved_at": "2026-10-20T08:28:59.073204+00:00",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "scope",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "review_note": "Reviewed the complete official abstract and selected versioned methods, evaluation and limitations sections; independent source review completed.",
+    "read_basis": "Complete official abstract and selected exact-v1 full-text sections. Fresh Atom metadata and abstract hash match the retained record; no reproduction or release-completeness claim.",
+    "reviewed_sha256": "80bed80786f939973d0d13b4f892300fee02a6110e326247131fc83d257796de",
+    "reviewed_at": "2026-10-20T08:45:57Z"
+  },
+  {
+    "id": "arxiv:2610.26503",
+    "name": "ScopeMem: Latent Memory That Learns Where to Revise Frozen GUI Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.26503",
+    "summary": "ScopeMem conditions latent-memory prefixes on a frozen GUI agent's initial action and trains them to correct errors while preserving correct decisions. Its evaluation separates action repairs from harmful revisions.",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "memory",
+      "interaction-history",
+      "imitation-learning",
+      "robustness",
+      "evaluation"
+    ],
+    "scope": "core",
+    "notes": "Reviewed the complete abstract and selected v1 controlled-study, method and limitations sections. Results are offline, step-level action matching; online task success is explicitly left untested. The frozen actor is queried twice per step. No independent reproduction or redistribution-license claim.",
+    "verify_terms": [
+      "ScopeMem: Latent Memory That Learns Where to Revise Frozen GUI Agents"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agent%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22+OR+ti%3A%22browser+agents%22+OR+ti%3A%22mobile+agent%22+OR+ti%3A%22mobile+agents%22+OR+ti%3A%22desktop+agent%22%29+AND+submittedDate%3A%5B202610130000+TO+202610192359%5D&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "topics",
+      "scope"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2610.26503v1",
+        "sha256": "0554aa531a5f94f51cba6c51bd1b13fb05b0f462497afa5d1dae7ec6fc6e375a",
+        "retrieved_at": "2026-10-20T08:29:02.225995+00:00",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "scope",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "review_note": "Reviewed the complete official abstract and selected versioned methods, evaluation and limitations sections; independent source review completed.",
+    "read_basis": "Complete official abstract and selected exact-v1 full-text sections. Fresh Atom metadata and abstract hash match the retained record; no reproduction or release-completeness claim.",
+    "reviewed_sha256": "80bed80786f939973d0d13b4f892300fee02a6110e326247131fc83d257796de",
+    "reviewed_at": "2026-10-20T08:45:57Z"
+  },
+  {
+    "id": "arxiv:2610.26828",
+    "name": "Agent World Model in the Wild: Computer-Use Agent Environment Synthesis",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.26828",
+    "summary": "WildAWM synthesizes resettable GUI/MCP/CLI environments and cross-interface tasks, using execution-based checks of solvability, difficulty and verifier consistency before supervised and reinforcement learning.",
+    "environments": [
+      "web",
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "data-generation",
+      "sandbox",
+      "tool-integration",
+      "long-horizon",
+      "imitation-learning",
+      "reinforcement-learning"
+    ],
+    "scope": "core",
+    "notes": "Reviewed the complete abstract and selected v1 synthesis, training and evaluation sections. The system uses hybrid GUI/MCP/CLI interfaces. Evaluation includes benchmark subsets and model-based judgments, so reported scores are not treated as directly comparable GUI-only results. No independent reproduction.",
+    "verify_terms": [
+      "Agent World Model in the Wild: Computer-Use Agent Environment Synthesis"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agent%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22+OR+ti%3A%22browser+agents%22+OR+ti%3A%22mobile+agent%22+OR+ti%3A%22mobile+agents%22+OR+ti%3A%22desktop+agent%22%29+AND+submittedDate%3A%5B202610130000+TO+202610192359%5D&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "topics",
+      "scope"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2610.26828v1",
+        "sha256": "b680e07a5a883e7bb0210a1734a628be6c47d91b7df0487a2044d56d1b7e227e",
+        "retrieved_at": "2026-10-20T08:29:05.337543+00:00",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "scope",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "review_note": "Reviewed the complete official abstract and selected versioned methods, evaluation and limitations sections; independent source review completed.",
+    "read_basis": "Complete official abstract and selected exact-v1 full-text sections. Fresh Atom metadata and abstract hash match the retained record; no reproduction or release-completeness claim.",
+    "reviewed_sha256": "80bed80786f939973d0d13b4f892300fee02a6110e326247131fc83d257796de",
+    "reviewed_at": "2026-10-20T08:45:57Z"
   }
 ]
