@@ -1,15 +1,15 @@
 {
   "as_of_utc": "2026-10-20T19:13:17Z",
-  "total_records": 3232,
-  "curated_records": 1667,
-  "bibliographic_records": 2761,
-  "arxiv_active_records": 2748,
+  "total_records": 3234,
+  "curated_records": 1671,
+  "bibliographic_records": 2763,
+  "arxiv_active_records": 2750,
   "non_arxiv_bibliographic_records": 13,
   "publication_metadata_records": 77,
-  "arxiv_archive_records": 2886,
+  "arxiv_archive_records": 2888,
   "excluded_records": 138,
   "exclusion_revalidation_pending": 0,
-  "metadata_only_records": 1565,
+  "metadata_only_records": 1563,
   "discovery_identifiers": 4273,
   "unindexed_candidates": 906,
   "non_resource_candidates": 98,
@@ -217,6 +217,20 @@
       "url": "https://arxiv.org/abs/2610.14855",
       "reason": "Scope hold after v1 Methodology, Evaluation and Appendices A (On-Device Deployment), B and D. PEAM generates background network-configuration rules and reports real cellular/Wi-Fi switching on Android 16; active rules execute after explicit user acceptance. The inspected work does not establish GUI observation/action control or a component actually used by a CUA workflow. Native network switching alone does not establish that broader role. Need direct interface/control or CUA-support evidence before inclusion. Preserve metadata; no permanent exclusion is proposed.",
       "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2610.17953",
+      "name": "Agent-Reflex: Teaching Language Agents to Act Reflectively",
+      "url": "https://arxiv.org/abs/2610.17953",
+      "reason": "Scope hold after v1 Sections3.1,4.1 and AppendicesB,D.2,D.5,F. Evaluation uses standardized MCP function calls and simulated service workflows; GUI/browser/OS action evaluation is not established. Construction agents use browser/OS tools, and failure mining includes file/OS benchmarks, but these are support stages rather than reported CUA policy results. Need direct interface interaction or a demonstrated CUA consumer before core/adjacent annotation. Preserve metadata; no permanent exclusion.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2610.16260",
+      "name": "ScreenASR-Bench: A Tiered Benchmark for Speech Recognition with Visual Context",
+      "url": "https://arxiv.org/abs/2610.16260",
+      "reason": "Scope hold after complete v1 Sections 1–4: this benchmark pairs speech with video keyframes or synthesized substitute frames to test ambiguous-word transcription. Examples include map text, an outdoor scene and a game scene; metrics are WER, keyword recall and normalized visual gain. The inspected work does not establish an agent-command task, operational UI understanding/action interface, or evaluated downstream CUA use. Need direct interface-assistant evidence before core/adjacent inclusion. Keep bibliography metadata-only; this is not a permanent scope exclusion.",
+      "cause": "reviewer_hold"
     }
   ],
   "uncurated_linked_papers": [],
@@ -229,21 +243,21 @@
     "infrastructure": 14,
     "learning": 2,
     "model": 98,
-    "paper": 2743,
+    "paper": 2744,
     "product": 20,
-    "survey": 18,
+    "survey": 19,
     "tool": 22
   },
   "curated_by_environment": {
     "android": 323,
     "cross-platform": 197,
-    "desktop": 333,
+    "desktop": 334,
     "harmonyos": 3,
     "ios": 22,
     "linux": 54,
     "macos": 30,
-    "unspecified": 383,
-    "web": 644,
+    "unspecified": 385,
+    "web": 646,
     "windows": 65
   },
   "curated_by_kind_and_environment": {
@@ -321,13 +335,13 @@
     "paper": {
       "android": 196,
       "cross-platform": 101,
-      "desktop": 213,
+      "desktop": 214,
       "harmonyos": 2,
       "ios": 8,
       "linux": 23,
       "macos": 14,
-      "unspecified": 346,
-      "web": 459,
+      "unspecified": 347,
+      "web": 461,
       "windows": 38
     },
     "product": {
@@ -339,7 +353,7 @@
       "cross-platform": 11,
       "desktop": 1,
       "ios": 1,
-      "unspecified": 3,
+      "unspecified": 4,
       "web": 3,
       "windows": 1
     },
@@ -359,7 +373,7 @@
     "code": 188,
     "data": 61,
     "weights": 56,
-    "document": 4
+    "document": 8
   },
   "sources": [
     {
@@ -747,7 +761,7 @@
       "indexed": 487,
       "indexed_resources": 487,
       "resolved_aliases": 0,
-      "curated": 397,
+      "curated": 398,
       "excluded": 0,
       "set_aside": 45,
       "unindexed": 12

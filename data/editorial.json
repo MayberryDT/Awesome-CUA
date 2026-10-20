@@ -66367,5 +66367,257 @@
     "review_note": "Scope hold after v1 Methodology, Evaluation and Appendices A (On-Device Deployment), B and D. PEAM generates background network-configuration rules and reports real cellular/Wi-Fi switching on Android 16; active rules execute after explicit user acceptance. The inspected work does not establish GUI observation/action control or a component actually used by a CUA workflow. Native network switching alone does not establish that broader role. Need direct interface/control or CUA-support evidence before inclusion. Preserve metadata; no permanent exclusion is proposed.",
     "reviewed_at": "2026-10-20T16:09:15Z",
     "reviewed_sha256": "7e76afb27048fc502646c3ca1cc87a52c6ba1b4e041f4b5c0cf9fbe3bd24e5a9"
+  },
+  {
+    "id": "arxiv:2610.18067",
+    "name": "WorkRover: Scaling Long-Horizon Cowork Agent Training Via Recursive Environment Evolution",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.18067",
+    "summary": "Synthesizes resettable workspaces with files, application observations and skills; repairs environment incompatibilities and trains long-task agents using verifier-linked turn credit.",
+    "scope": "core",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "data-generation",
+      "long-horizon",
+      "evaluation",
+      "reward-models",
+      "reinforcement-learning",
+      "workflow"
+    ],
+    "notes": "App WorkEnvs expose UI observations and interaction interfaces alongside file and tool workflows; no specific operating system or pixel-control success is established. Verifier shaping depends on deterministic-check and dependency coverage. External reference scores use differing harnesses or subsets; GDPval Elo is not comparable to percentage metrics. A successful-trace analysis subset is separate from online RL outcomes. No implementation release or independent reproduction was verified.",
+    "verify_terms": [
+      "Scaling Long-Horizon Cowork Agent Training Via Recursive Environment Evolution"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/html/2610.18067v1"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "scope",
+      "environments",
+      "topics",
+      "notes",
+      "licenses.document"
+    ],
+    "reviewed_licenses": {
+      "document": {
+        "value": {
+          "declared": "CC-BY-4.0",
+          "url": "https://arxiv.org/html/2610.18067v1",
+          "retrieved_at": "2026-10-20T19:02:20Z",
+          "basis": "The exact-v1 arXiv HTML infobox explicitly declares CC BY 4.0 for this paper."
+        },
+        "reason": "Document declaration only; code, data and weights permissions are not inferred.",
+        "evidence_urls": [
+          "https://arxiv.org/html/2610.18067v1"
+        ]
+      }
+    },
+    "editorial_reviewed": true,
+    "review_note": "Retained primary sources and independent source review support the annotation. Interface, evaluation, reading and license boundaries remain explicit; no linked code, model or benchmark was executed.",
+    "reviewed_at": "2026-10-20T19:29:44Z",
+    "reviewed_sha256": "f1fbdd2ecb2a54b7723372118e2b0ac818420f3a3dd280c2486c8e064cf486d6"
+  },
+  {
+    "id": "arxiv:2610.19384",
+    "name": "MMA-SafetyBench: A Benchmark for Multimodal Agent Safety Evaluation",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.19384",
+    "summary": "Builds trajectory-guided visual-injection tests for web, desktop and mobile observations, separating target-matching action predictions from broader semantic compromise.",
+    "environments": [
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "evaluation",
+      "safety-security",
+      "grounding"
+    ],
+    "scope": "core",
+    "notes": "ASR measures predicted coordinates inside an annotated target or compromised generated content; actual clicks, environment changes and downstream harm are not verified. SCR additionally counts adopted adversarial intent or task/schema disruption. Clean-task and attacked-trajectory denominators differ, including 42 clean desktop tasks versus 209 adversarial desktop trajectories. Payloads and injection points are fixed, and neutral prompts change both compliance cues and instruction-priority guidance. GPT-5 judging has a 300-trajectory human-label check, with borderline disagreements. Android-style mobile dialogs do not establish an Android runtime. Code/data links were identified but not inspected; no independent reproduction.",
+    "verify_terms": [
+      "MMA-SafetyBench"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/html/2610.19384v1"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "licenses.document"
+    ],
+    "reviewed_licenses": {
+      "document": {
+        "value": {
+          "declared": "CC-BY-4.0",
+          "url": "https://arxiv.org/html/2610.19384v1",
+          "retrieved_at": "2026-10-20T19:02:16.329923+00:00",
+          "basis": "The retained exact-v1 arXiv HTML infobox explicitly declares License: CC BY 4.0 for this document."
+        },
+        "reason": "Paper-specific document declaration only; no code, data or weights permissions are inferred.",
+        "evidence_urls": [
+          "https://arxiv.org/html/2610.19384v1"
+        ]
+      }
+    },
+    "editorial_reviewed": true,
+    "review_note": "Retained primary sources and independent source review support the annotation. Interface, evaluation, reading and license boundaries remain explicit; no linked code, model or benchmark was executed.",
+    "reviewed_at": "2026-10-20T19:29:44Z",
+    "reviewed_sha256": "ca995ec330f62a43d3d4fbbf28dfe83c5fa8b05f5c1e446929493409760268d1"
+  },
+  {
+    "id": "arxiv:2610.19366",
+    "name": "Seeing, Maintaining, and Learning: The Evolution of Multimodal Agent Memory",
+    "kind": "survey",
+    "url": "https://arxiv.org/abs/2610.19366",
+    "summary": "Surveys multimodal memory using representation and management axes, distinguishing fixed-policy updates from policy evolution and comparing GUI memory evaluation with other modalities.",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "survey",
+      "memory",
+      "evaluation",
+      "interaction-history"
+    ],
+    "scope": "adjacent",
+    "notes": "A broad literature synthesis spanning images, video, audio, GUI and embodied settings. Its GUI section compares interface-state retention, action outcomes, cross-session reuse and visual evidence, but the paper does not provide a new GUI-agent experiment. Taxonomy corpus counts and benchmark classifications are authors' annotations, not independently audited field coverage. Updating stored content alone does not establish the survey's self-evolving-policy tier; endpoint task success does not isolate memory use. Lifecycle, resource-budget and provenance recommendations are proposed evaluation directions rather than demonstrated guarantees. Platform facets stay unspecified; cited systems and releases were not independently verified.",
+    "verify_terms": [
+      "The Evolution of Multimodal Agent Memory"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/html/2610.19366v1"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "licenses.document"
+    ],
+    "reviewed_licenses": {
+      "document": {
+        "value": {
+          "declared": "CC-BY-4.0",
+          "url": "https://arxiv.org/html/2610.19366v1",
+          "retrieved_at": "2026-10-20T19:02:22.864948+00:00",
+          "basis": "The retained exact-v1 arXiv HTML infobox explicitly declares License: CC BY 4.0 for this document."
+        },
+        "reason": "Paper-specific document declaration only; no code, data or weights permissions are inferred.",
+        "evidence_urls": [
+          "https://arxiv.org/html/2610.19366v1"
+        ]
+      }
+    },
+    "editorial_reviewed": true,
+    "review_note": "Retained primary sources and independent source review support the annotation. Interface, evaluation, reading and license boundaries remain explicit; no linked code, model or benchmark was executed.",
+    "reviewed_at": "2026-10-20T19:29:44Z",
+    "reviewed_sha256": "308796868bf9b1cb042bc6008e1e6f4ba6e776a2d4e13d40ad5684b477861563"
+  },
+  {
+    "id": "arxiv:2609.31364",
+    "name": "OpenVAM: Open-World Visual Attention Modeling with VLMs",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2609.31364",
+    "summary": "Combines dense saliency prediction with explanations of attended elements, including webpage layouts; evaluates human-attention agreement and textual rationales rather than agent actions.",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "screen-understanding",
+      "ui-design",
+      "evaluation",
+      "data-generation"
+    ],
+    "scope": "adjacent",
+    "notes": "Static human-attention modeling on U-EYE webpage screenshots, with FIWI held out from training; no live-browser, agent-action or task-success evaluation. Gemini-generated reference rationales are expert-checked, and JScore compares generated text with references; human validation covers a separate 100-image subset. Reference text and heatmap alignment do not establish causal explanations of gaze or temporal scanpaths. Several baseline scores come from prior papers. Code/data/weight releases and licenses were not verified; no independent reproduction.",
+    "verify_terms": [
+      "Open-World Visual Attention Modeling with VLMs"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/html/2609.31364v1"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "licenses.document"
+    ],
+    "reviewed_licenses": {
+      "document": {
+        "value": {
+          "declared": "CC-BY-4.0",
+          "url": "https://arxiv.org/html/2609.31364v1",
+          "retrieved_at": "2026-10-20T19:01:29.156954Z",
+          "basis": "The exact-v1 arXiv HTML infobox (#license-tr) declares License: CC BY 4.0 for this paper document."
+        },
+        "reason": "Document declaration only. The paper does not establish code, model-weight or underlying dataset permissions through this license.",
+        "evidence_urls": [
+          "https://arxiv.org/html/2609.31364v1"
+        ]
+      }
+    },
+    "editorial_reviewed": true,
+    "review_note": "Retained primary sources and independent source review support the annotation. Interface, evaluation, reading and license boundaries remain explicit; no linked code, model or benchmark was executed.",
+    "reviewed_at": "2026-10-20T19:29:44Z",
+    "reviewed_sha256": "cd4ba28778b725c63f4a7329f683b2a287db2e46ed228a0d47006fcd95bbce80"
+  },
+  {
+    "id": "arxiv:2610.17953",
+    "name": "Agent-Reflex: Teaching Language Agents to Act Reflectively",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.17953",
+    "verify_terms": [
+      "Teaching Language Agents to Act Reflectively"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/html/2610.17953v1"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "scope"
+    ],
+    "editorial_reviewed": false,
+    "review_note": "Scope hold after v1 Sections3.1,4.1 and AppendicesB,D.2,D.5,F. Evaluation uses standardized MCP function calls and simulated service workflows; GUI/browser/OS action evaluation is not established. Construction agents use browser/OS tools, and failure mining includes file/OS benchmarks, but these are support stages rather than reported CUA policy results. Need direct interface interaction or a demonstrated CUA consumer before core/adjacent annotation. Preserve metadata; no permanent exclusion.",
+    "reviewed_at": "2026-10-20T19:29:44Z",
+    "reviewed_sha256": "2a386715c04ade524c872cf66ab1cd8db1a2f6c787991cbd7fc59b93587cd9ba"
+  },
+  {
+    "id": "arxiv:2610.16260",
+    "name": "ScreenASR-Bench: A Tiered Benchmark for Speech Recognition with Visual Context",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.16260",
+    "verify_terms": [
+      "A Tiered Benchmark for Speech Recognition with Visual Context"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/html/2610.16260v1"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "scope"
+    ],
+    "editorial_reviewed": false,
+    "review_note": "Scope hold after complete v1 Sections 1–4: this benchmark pairs speech with video keyframes or synthesized substitute frames to test ambiguous-word transcription. Examples include map text, an outdoor scene and a game scene; metrics are WER, keyword recall and normalized visual gain. The inspected work does not establish an agent-command task, operational UI understanding/action interface, or evaluated downstream CUA use. Need direct interface-assistant evidence before core/adjacent inclusion. Keep bibliography metadata-only; this is not a permanent scope exclusion.",
+    "reviewed_at": "2026-10-20T19:29:44Z",
+    "reviewed_sha256": "fed38272c6c64f56e5675f0df9a5091ce38e4b9f92f1de4878c96dfcff9b1e99"
   }
 ]
