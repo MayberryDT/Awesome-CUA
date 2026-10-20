@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-343 source-reviewed resources tagged `data-generation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+344 source-reviewed resources tagged `data-generation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Datasets (55)](#datasets) · [Models (2)](#models) · [Agents (1)](#agents) · [Frameworks (22)](#frameworks) · [Tools (1)](#tools) · [Papers (262)](#papers)
+**Contents:** [Datasets (55)](#datasets) · [Models (2)](#models) · [Agents (1)](#agents) · [Frameworks (22)](#frameworks) · [Tools (2)](#tools) · [Papers (262)](#papers)
 
 ## Datasets
 
@@ -110,11 +110,10 @@ All entries in this section: android.
 
 ## Tools
 
-All entries in this section: android.
-
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [UI Defect Mocker](https://github.com/ZJU-ACES-ISE/UIDefectMocker) | — | code MIT | Synthesizes visual UI defects from mobile screenshots and Android layout metadata to support GUI-testing experiments. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/ZJU-ACES-ISE/UIDefectMocker/HEAD/README.md) |
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [Activity Recorder](https://github.com/anikasomaia/local-activity-recorder) | desktop, windows | — | — | Windows tray utility that records primary-display screenshots, keyboard key codes and mouse events as local JPEG and JSON files for training-data collection. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/anikasomaia/local-activity-recorder/967cea087bf6496b3b82743fb96770fa29f8e203/README.md) |
+| [UI Defect Mocker](https://github.com/ZJU-ACES-ISE/UIDefectMocker) | android | — | code MIT | Synthesizes visual UI defects from mobile screenshots and Android layout metadata to support GUI-testing experiments. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/ZJU-ACES-ISE/UIDefectMocker/HEAD/README.md) |
 
 ## Papers
 

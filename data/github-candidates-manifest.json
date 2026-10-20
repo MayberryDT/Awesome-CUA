@@ -1,20 +1,20 @@
 {
   "active_catalog_context": {
-    "records": 3207,
+    "records": 3213,
     "role": "Comparison context only; not the observation source, selection, or approval.",
-    "sha256": "fd71133ba3ad1174d3c34ce5d4b6811076c14507f71ac884bc1aa23d6f357736"
+    "sha256": "2536c7d65ab8ed43bd117279dd23ec429bb619d76f6507426561c0a423baa3f6"
   },
-  "checkpoint_state_sha256": "b6a3a6b28fa7aacde36851aed33f33e619040d07e5530681c8a215026081ec43",
+  "checkpoint_state_sha256": "837becb26ad37f4515fead0ff1df78ce6675a98ea2a848e2938803d6ce8c25f7",
   "count": {
     "unit": "repositories",
-    "value": 9175
+    "value": 9219
   },
   "count_policy": "Unique positive numeric GitHub repository IDs within this observation snapshot. Query occurrences overlap. Candidates may overlap active catalog resources; these populations must not be added or treated as independent projects.",
   "export": {
-    "bytes": 24152909,
+    "bytes": 24815812,
     "file": "github-candidates.jsonl",
     "format": "JSONL",
-    "sha256": "090ea233278550f36120a36d0858c01642868f0b33d96a86e9e043e10410cbba"
+    "sha256": "c522928702820a93cdce65c023df5cc3ad66f7f3426bf92909c4249ec9362040"
   },
   "input_fingerprints": [
     {
@@ -269,11 +269,11 @@
     }
   ],
   "manifest_schema": "/schemas/github-candidate-observation-manifest.schema.json",
-  "observation_snapshot_sha256": "090ea233278550f36120a36d0858c01642868f0b33d96a86e9e043e10410cbba",
+  "observation_snapshot_sha256": "c522928702820a93cdce65c023df5cc3ad66f7f3426bf92909c4249ec9362040",
   "observed_from": "2026-10-18T13:02:50.777197+00:00",
-  "observed_through": "2026-10-20T11:16:56.507474+00:00",
+  "observed_through": "2026-10-20T11:53:30.233074+00:00",
   "privacy": {
-    "checked_records": 9175,
+    "checked_records": 9219,
     "omitted_fields": [],
     "policy": "Only allowlisted public repository fields and accepted primary receipts. Suspect descriptions are explicitly omitted; owner/contact objects, headers, raw bodies and local paths are not exported."
   },
@@ -820,7 +820,7 @@
         "kind": "search",
         "parent_id": "search:4a46c8ae62f3554b372f8156",
         "reported_total": 710,
-        "status": "pending",
+        "status": "observed_pages_exhausted",
         "topic": "computer-use"
       },
       {
@@ -840,7 +840,7 @@
         "kind": "search",
         "parent_id": "search:81e64cf55236719b185be42d",
         "reported_total": 556,
-        "status": "pending",
+        "status": "observed_pages_exhausted",
         "topic": "browser-automation"
       },
       {
@@ -1130,7 +1130,7 @@
         "kind": "search",
         "parent_id": null,
         "reported_total": 242,
-        "status": "partial_results",
+        "status": "pending",
         "topic": "browser-automation"
       },
       {
@@ -1180,7 +1180,7 @@
         "kind": "search",
         "parent_id": null,
         "reported_total": 387,
-        "status": "pending",
+        "status": "observed_pages_exhausted",
         "topic": "browser-use"
       },
       {
@@ -1224,11 +1224,12 @@
         "topic": "mobile-agent"
       }
     ],
-    "query_rechecks_count": 13,
+    "query_rechecks_count": 14,
     "request_outcomes": {
-      "accepted": 248,
+      "accepted": 259,
+      "fetch_failed": 3,
       "rate_limited": 4,
-      "redirect_not_followed": 9,
+      "redirect_not_followed": 10,
       "unavailable": 1
     },
     "runs": [
@@ -1387,20 +1388,32 @@
         "requests_attempted": 11,
         "started_at": "2026-10-20T11:15:57.338172+00:00",
         "status": "rate_limited"
+      },
+      {
+        "accepted_metadata_rows": 953,
+        "after_unique_repositories": 9219,
+        "before_unique_repositories": 9175,
+        "finished_at": "2026-10-20T11:53:31.921997+00:00",
+        "id": "run:2e4a8a5a70a5c9c9b33efaba",
+        "input_id": "fa9a961b11aed51e249a1cc85b00d3af5e83e3856a72a0252b787fc460d2ba96",
+        "new_unique_repositories": 44,
+        "requests_attempted": 15,
+        "started_at": "2026-10-20T11:51:23.549142+00:00",
+        "status": "partial"
       }
     ]
   },
   "schema": "/schemas/github-candidate-observation.schema.json",
   "schema_version": 1,
   "scope": "candidate-observations",
-  "source_ledger_sha256": "7526cc91670018c83d390d0e765fa2be6a43bfcb68ffc0a2937c0e0765e2913d",
-  "supporting_primary_bodies": 242,
+  "source_ledger_sha256": "647b32b9008d9442e024e3dfaa4cc38b21e25bc54cc8ddf8fcf7c4b78b6c705f",
+  "supporting_primary_bodies": 253,
   "verification": {
-    "baseline_checkpoint_sha256": "7d1a6060c8da1d0f458b29c9e1dcb3a4f5514053a78a49863192b7d34b8c6adf",
-    "baseline_observation_sha256": "62ab128bdbf329614d648c65a136c9075700a429459ef2216452f0bf350ed6e6",
+    "baseline_checkpoint_sha256": "e35f7fbe90b324aeb2fc38c8694b86fd65493904122ab1a2563ddffffe263ad0",
+    "baseline_observation_sha256": "090ea233278550f36120a36d0858c01642868f0b33d96a86e9e043e10410cbba",
     "historical_raw_replayed": false,
     "mode": "incremental_retained_replay",
-    "primary_bodies_replayed": 9,
-    "successful_receipts_replayed": 9
+    "primary_bodies_replayed": 11,
+    "successful_receipts_replayed": 11
   }
 }

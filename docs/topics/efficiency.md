@@ -2,17 +2,16 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-153 source-reviewed resources tagged `efficiency`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+155 source-reviewed resources tagged `efficiency`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Models (5)](#models) · [Frameworks (4)](#frameworks) · [Papers (143)](#papers)
+**Contents:** [Benchmarks (2)](#benchmarks) · [Models (5)](#models) · [Frameworks (4)](#frameworks) · [Tools (1)](#tools) · [Papers (143)](#papers)
 
 ## Benchmarks
 
-All entries in this section: desktop.
-
-| Resource | Paper | Scale | License | Description | Evidence |
-| --- | --- | --- | --- | --- | --- |
-| [OSWorld-Human](https://github.com/WukLab/osworld-human) | [2506.16042](https://arxiv.org/abs/2506.16042) (2025) | — | — | Human reference trajectories and scoring code for measuring the action efficiency of computer-use agents on OSWorld tasks. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/WukLab/osworld-human/HEAD/README.md) |
+| Resource | Environments | Paper | Scale | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- | --- |
+| [OSWorld-Human](https://github.com/WukLab/osworld-human) | desktop | [2506.16042](https://arxiv.org/abs/2506.16042) (2025) | — | — | Human reference trajectories and scoring code for measuring the action efficiency of computer-use agents on OSWorld tasks. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/WukLab/osworld-human/HEAD/README.md) |
+| [Web Context Bench (Python)](https://github.com/charlypoly/web-context-bench-python) | web | — | — | code MIT | Local-page benchmark comparing six browser representations on token use, factual reading and target-element selection, with deterministic answer scoring. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/charlypoly/web-context-bench-python/58d604bfaaac60ad42f02013f53f9fb301c1dcda/README.md) |
 
 ## Models
 
@@ -32,6 +31,14 @@ All entries in this section: desktop.
 | [DistRL](https://github.com/DistRL-lab/distrl-open) | android | [2410.14803](https://arxiv.org/abs/2410.14803) (2024) | code Apache-2.0 | Distributed online reinforcement-learning framework for Android agents, with environment setup and trajectory collection tools. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/DistRL-lab/distrl-open/HEAD/README.md) |
 | [GUI-RC / GUI-RCPO](https://github.com/ZJU-REAL/GUI-RCPO) | cross-platform, desktop, web | [2508.05615](https://arxiv.org/abs/2508.05615) (2025) | — | GUI-grounding research code for spatial voting across sampled predictions and test-time policy optimization using region-consistency rewards. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/zju-real/gui-rcpo/HEAD/README.md) |
 | [SCALE-CUA (THUDM)](https://github.com/THUDM/SCALE-CUA) | desktop | [2607.11185](https://arxiv.org/abs/2607.11185) (2026) | — | Computer-use training framework with VeriGen task synthesis, adaptive rollout sampling, and visual-context segmentation. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/THUDM/SCALE-CUA/HEAD/README.md) |
+
+## Tools
+
+All entries in this section: unspecified.
+
+| Resource | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [GUI Grounding Evaluation Harness](https://github.com/PatrickStarL/gui-grounding-eval) | — | — | ScreenSpot-Pro evaluation harness with explicit coordinate transforms, prompt and crop-based inference comparisons, and per-sample grounding accuracy and cost records. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/PatrickStarL/gui-grounding-eval/d92b059caa0e0acf8db76f2164dd7be2617ccc72/README.md) |
 
 ## Papers
 

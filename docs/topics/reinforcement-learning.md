@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-238 source-reviewed resources tagged `reinforcement-learning`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+239 source-reviewed resources tagged `reinforcement-learning`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (2)](#benchmarks) · [Datasets (5)](#datasets) · [Models (23)](#models) · [Frameworks (19)](#frameworks) · [Infrastructure (2)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (186)](#papers)
+**Contents:** [Benchmarks (2)](#benchmarks) · [Datasets (5)](#datasets) · [Models (23)](#models) · [Frameworks (20)](#frameworks) · [Infrastructure (2)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (186)](#papers)
 
 ## Benchmarks
 
@@ -73,6 +73,7 @@ All entries in this section: web.
 | [VEM GUI-Agent-RL](https://github.com/microsoft/GUI-Agent-RL) | android | [2502.18906](https://arxiv.org/abs/2502.18906) (2025) | code MIT | Training code that learns a value environment model from offline Android interaction data and uses its frozen value estimates to guide GUI policy optimization. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/microsoft/GUI-Agent-RL/HEAD/README.md) |
 | [WebAgent-R1](https://github.com/weizhepei/WebAgent-R1) | web | [2505.16421](https://arxiv.org/abs/2505.16421) (2025) | code Apache-2.0 | Environment setup, multi-turn reinforcement-learning and evaluation tooling for browser agents interacting with WebArena. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/weizhepei/WebAgent-R1/HEAD/WebAgent-R1/README.md) |
 | [WebRL](https://github.com/THUDM/WebRL) | web | [2411.02337](https://arxiv.org/abs/2411.02337) (2024) | — | Training pipeline that evolves web tasks from prior attempts and uses an outcome reward model to refine browser policies. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/THUDM/WebRL/HEAD/README.md) |
+| [WinDOM code](https://github.com/ChenghengLi/WinDOM) | web | [2606.25964](https://arxiv.org/abs/2606.25964) (2026) | code MIT | GUI-grounding training and evaluation code with same-family distillation, GRPO recipes and point-in-box scoring, using a Windows-style web environment. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/ChenghengLi/WinDOM/ab52acffe2003fd0c98943a542b4114ef929de0d/README.md) |
 | [Workflow-Guided Exploration research code](https://github.com/stanfordnlp/wge) | web | [1802.08802](https://arxiv.org/abs/1802.08802) (2018) | code Apache-2.0 | Research code that learns browser-control policies by constraining exploration with workflows induced from demonstrations, with a Selenium-based MiniWoB environment and experiment harness. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/stanfordnlp/wge/HEAD/README.md) |
 | [WorkForceAgent-R1](https://github.com/night-chen/WorkForceAgent-R1) | web | [2505.22942](https://arxiv.org/abs/2505.22942) (2025) | — | Web-task reward functions, WorkArena data processing and GRPO training configurations for reasoning-oriented language agents. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/night-chen/WorkForceAgent-R1/HEAD/README.md) |
 | [ZeroGUI](https://github.com/OpenGVLab/ZeroGUI) | cross-platform | [2505.23762](https://arxiv.org/abs/2505.23762) (2025) | code Apache-2.0 | Online RL framework for GUI agents in which VLMs generate the training tasks and judge success from trajectory screenshots, with OSWorld and AndroidLab checkpoints trained from UI-TARS-7B-DPO. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/OpenGVLab/ZeroGUI/HEAD/README.md) |

@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-208 source-reviewed resources tagged `screen-understanding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+210 source-reviewed resources tagged `screen-understanding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (19)](#datasets) · [Models (10)](#models) · [Agents (3)](#agents) · [Frameworks (1)](#frameworks) · [Tools (7)](#tools) · [Papers (163)](#papers)
+**Contents:** [Benchmarks (6)](#benchmarks) · [Datasets (19)](#datasets) · [Models (10)](#models) · [Agents (4)](#agents) · [Frameworks (1)](#frameworks) · [Tools (7)](#tools) · [Papers (163)](#papers)
 
 ## Benchmarks
 
@@ -14,6 +14,7 @@
 | [Screen Point-and-Read / Tree-of-Lens](https://github.com/UCSB-AI/Screen-Point-and-Read) | cross-platform | [2406.19263](https://arxiv.org/abs/2406.19263) (2024) | — | code MIT | Screen-reading benchmark and Tree-of-Lens implementation for interpreting user-indicated regions and their layout context. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/eric-ai-lab/Screen-Point-and-Read/HEAD/README.md) |
 | [VisualWebArena](https://github.com/web-arena-x/visualwebarena) | web | [2401.13649](https://arxiv.org/abs/2401.13649) (2024) | [910 tasks](https://raw.githubusercontent.com/web-arena-x/visualwebarena/HEAD/README.md) · [233 human trajectories](https://raw.githubusercontent.com/web-arena-x/visualwebarena/HEAD/README.md) | — | Visually grounded web tasks extending the WebArena evaluation setting. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/web-arena-x/visualwebarena/HEAD/README.md) |
 | [VisualWebBench](https://github.com/VisualWebBench/VisualWebBench) | web | [2404.05955](https://arxiv.org/abs/2404.05955) (2024) | — | — | Evaluation of multimodal models on visual web understanding tasks. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/VisualWebBench/VisualWebBench/HEAD/README.md) |
+| [Web Context Bench (Python)](https://github.com/charlypoly/web-context-bench-python) | web | — | — | code MIT | Local-page benchmark comparing six browser representations on token use, factual reading and target-element selection, with deterministic answer scoring. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/charlypoly/web-context-bench-python/58d604bfaaac60ad42f02013f53f9fb301c1dcda/README.md) |
 | [WONDERBREAD](https://github.com/HazyResearch/wonderbread) | web | [2406.13264](https://arxiv.org/abs/2406.13264) (2024) | [6 task types](https://raw.githubusercontent.com/HazyResearch/wonderbread/HEAD/README.md) · [2,928 human demonstrations](https://zenodo.org/api/records/14094162) · [598 web navigation workflows](https://zenodo.org/api/records/14094162) | data cc-by-4.0 | An offline benchmark of workflow documentation, quality assessment and knowledge transfer using human web-navigation demonstrations, action traces and written procedures. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/HazyResearch/wonderbread/HEAD/README.md) |
 
 ## Datasets
@@ -62,6 +63,7 @@
 | [CAAP Agent](https://github.com/caap-agent/caap-agent) | web | [2406.06947](https://arxiv.org/abs/2406.06947) (2024) | code AGPL-3.0 | Screenshot-driven agent implementation for MiniWoB++ and WebShop, using a visual observer and context-aware prompts to issue mouse and keyboard actions. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/caap-agent/caap-agent/HEAD/README.md) |
 | [CoCo-Agent](https://github.com/xbmxb/CoCo-Agent) | android | [2402.11941](https://arxiv.org/abs/2402.11941) (2024) | — | Research implementation combining screen and layout perception with conditional action prediction for smartphone automation. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/xbmxb/CoCo-Agent/HEAD/README.md) |
 | [VisionTasker](https://github.com/AkimotoAyako/VisionTasker) | android | [2312.11190](https://arxiv.org/abs/2312.11190) (2023) | code GPL-3.0 | An Android automation implementation that translates screenshot-based UI understanding into language descriptions for step-by-step LLM planning and action execution. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/AkimotoAyako/VisionTasker/HEAD/readme.md) |
+| [Yunkai](https://github.com/solplum/yunkai) | android | — | code MIT | Android phone assistant combining model-driven tool use with accessibility-tree reading, screenshots, and tap, swipe and text-entry primitives. Its documented interaction flow presents operation plans for user confirmation. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/solplum/yunkai/2aa6cd83165bfc201b0128c250e80892895d63af/README.md) |
 
 ## Frameworks
 

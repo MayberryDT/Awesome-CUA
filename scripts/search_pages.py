@@ -157,10 +157,27 @@ def incoming_relations(rows):
     return incoming
 
 
-def resource_body(record, lookup, incoming=None):
+def reviewer_hold(record, decision):
+    """Display only a current ledger hold for this metadata-only identity."""
+    if (record.get('review_status') == 'metadata_verified' and isinstance(decision, dict)
+            and decision.get('id') == record['id'] and decision.get('cause') == 'reviewer_hold'
+            and isinstance(decision.get('reason'), str) and decision['reason'].strip()):
+        return decision['reason']
+    return None
+
+
+def markdown_literal(text):
+    """Keep a plain-text editorial reason literal in the Markdown reading view."""
+    return re.sub(r'([\\`*_{}\[\]()#+\-.!|~=])', r'\\\1', html.escape(text, quote=False))
+
+
+def resource_body(record, lookup, incoming=None, pending_review=None):
     r=record
     status="AI-assisted editorial review against a primary source" if eligible(r) else "Bibliographic metadata verified; editorial approval is pending"
     body=f'<div class="eyebrow">{esc(KINDS[r["kind"]])}</div><h1>{esc(r["name"])}</h1><p class="answer-lead">{esc(description(r))}</p><p class="review-notice">{esc(status)}. This is a catalog annotation, not an independent reproduction or endorsement.</p><div class="page-actions"><a class="button primary" href="{safe_href(r["url"])}">Original source ↗</a><a class="button secondary" href="{resource_path(r)}index.md">Read as Markdown</a><a class="button secondary" href="{resource_path(r)}record.json">Record JSON</a></div>'
+    hold=reviewer_hold(r,pending_review)
+    if hold:
+        body+='<details class="review-hold" open><summary>Recorded reviewer hold</summary><p>'+esc(hold)+'</p><p><a href="/downloads/coverage.json">Review ledger</a></p></details>'
     facts=[("Resource type",KINDS[r["kind"]]),("Environment",", ".join(r["environments"])),("Topics",", ".join(r["topics"]) or "Not assigned"),("Record publication date",record_date_text(r) or "Not recorded"),("Evidence retrieved",r["last_verified_at"]),("Resource ID",r["id"])]
     body+='<h2>What is this resource?</h2><dl class="page-facts">'+''.join(f'<div><dt>{esc(k)}</dt><dd>{esc(v)}</dd></div>' for k,v in facts)+'</dl>'
     snapshot=r['details'].get('arxiv_snapshot')
@@ -209,9 +226,12 @@ def resource_body(record, lookup, incoming=None):
     return body
 
 
-def resource_markdown(r):
+def resource_markdown(r, pending_review=None):
     lines=[f'# {r["name"]}', '', description(r), '', f'- Catalog URL: {SITE}{resource_path(r)}', f'- Original source: {r["url"]}', f'- Kind: {r["kind"]}', f'- Review: {r["review_status"]}', f'- Scope: {r["scope"]}', f'- Environments: {", ".join(r["environments"])}', f'- Topics: {", ".join(r["topics"])}', f'- Evidence checked: {r["last_verified_at"]}', f'- ID: {r["id"]}', '', '## Limitations', '', r["notes"] or 'Inclusion does not establish reproducibility or endorsement.']
     lines+=['',f'- Record JSON: {SITE}{resource_path(r)}record.json']
+    hold=reviewer_hold(r,pending_review)
+    if hold:
+        lines+=['','## Recorded reviewer hold','',markdown_literal(hold),'',f'- Review ledger: {SITE}/downloads/coverage.json']
     if r["authors"]:lines+=['','## Authors','',', '.join(r["authors"])]
     if r['kind'] in {'paper','survey'}:
         lines+=['','## Citation exports','',f'- BibTeX: {SITE}{resource_path(r)}citation.bib',f'- CSL JSON: {SITE}{resource_path(r)}citation.csl.json']
@@ -253,6 +273,7 @@ def resource_markdown(r):
 
 def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
     lookup={r["id"]:r for r in rows}
+    pending_reviews={item['id']:item for item in coverage.get('pending_editorial',[])}
     incoming=incoming_relations(rows)
     titles=resource_titles(rows)
     reviewed=[r for r in rows if eligible(r)]
@@ -278,8 +299,9 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
         manifest.append(item)
     for r in rows:
         path=resource_path(r)
-        emit(path,page(titles.get(r["id"],r["name"]),description(r),path,resource_body(r,lookup,incoming),resource_schema(r),eligible(r),crumbs=[("AwesomeCUA","/"),("Catalog","/catalog/"),(KINDS[r["kind"]],f'/categories/{r["kind"]}/'),(r["name"],path)]),eligible(r))
-        (destination/path.lstrip('/')/'index.md').write_text(clean_text(resource_markdown(r)),encoding='utf-8')
+        pending_review=pending_reviews.get(r['id'])
+        emit(path,page(titles.get(r["id"],r["name"]),description(r),path,resource_body(r,lookup,incoming,pending_review),resource_schema(r),eligible(r),crumbs=[("AwesomeCUA","/"),("Catalog","/catalog/"),(KINDS[r["kind"]],f'/categories/{r["kind"]}/'),(r["name"],path)]),eligible(r))
+        (destination/path.lstrip('/')/'index.md').write_text(clean_text(resource_markdown(r,pending_review)),encoding='utf-8')
         (destination/path.lstrip('/')/'record.json').write_text(json.dumps(r,ensure_ascii=False,sort_keys=True,indent=2)+'\n',encoding='utf-8')
         if r['kind'] in {'paper','survey'}:
             (destination/path.lstrip('/')/'citation.bib').write_text(citation_bibtex(r),encoding='utf-8')

@@ -64586,5 +64586,763 @@
     "read_basis": "Complete retained abstract and selected exact-v1 methodology/harness/evaluation sections, including raw Tables 6-7. Full-text scope evidence does not settle GUI/browser or concrete terminal-control relevance.",
     "reviewed_sha256": "063101c76d718b7862cb64505422cc53d88e3c32ea5d465db04f12c7d16508e2",
     "reviewed_at": "2026-10-20T11:06:34Z"
+  },
+  {
+    "id": "github:charlypoly/web-context-bench-python",
+    "name": "Web Context Bench (Python)",
+    "kind": "benchmark",
+    "url": "https://github.com/charlypoly/web-context-bench-python",
+    "summary": "Local-page benchmark comparing six browser representations on token use, factual reading and target-element selection, with deterministic answer scoring.",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "grounding",
+      "efficiency",
+      "screen-understanding"
+    ],
+    "scope": "core",
+    "notes": "This is a single-snapshot representation evaluation on local fixtures and captured pages, not a live multi-step agent benchmark. Its shared-prompt, one-model setup differs from complete Browser Use or Stagehand agents. The methodology notes unresolved redistribution licensing for third-party practice-site snapshots; MIT is recorded for repository code only. Selected scoring code was read, but no models, browser tasks or claimed results were run or reproduced.",
+    "verify_terms": [
+      "Web page representations"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/charlypoly/web-context-bench-python/58d604bfaaac60ad42f02013f53f9fb301c1dcda/README.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "topics",
+      "scope",
+      "notes",
+      "environments",
+      "details.benchmark_protocol.focus",
+      "details.benchmark_protocol.setting",
+      "details.benchmark_protocol.observations",
+      "details.benchmark_protocol.actions",
+      "details.benchmark_protocol.notes"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "github_repository_identity",
+        "supports": [
+          "id",
+          "url"
+        ],
+        "url": "https://api.github.com/search/repositories?q=topic%3Aweb-agents+is%3Apublic+fork%3Afalse+created%3A2008-01-01..2026-10-20&per_page=100&page=1&sort=updated&order=asc",
+        "retrieved_at": "2026-10-20T11:05:35.063004+00:00",
+        "sha256": "3e22e1cbfa47bcf98f6f70a5f6f162a31a509a9f2091a84679bb5231977e29d9"
+      },
+      {
+        "role": "primary",
+        "method": "github_repository_identity",
+        "supports": [
+          "id",
+          "url",
+          "notes"
+        ],
+        "url": "https://github.com/charlypoly/web-context-bench-python",
+        "retrieved_at": "2026-10-20T11:50:54.545491Z",
+        "sha256": "fd30e94e78e7167a49579922259fde1c7d7f8259e9f00afba15faf3a71966a94"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "scope",
+          "notes",
+          "licenses.data",
+          "details.benchmark_protocol.focus",
+          "details.benchmark_protocol.setting",
+          "details.benchmark_protocol.observations",
+          "details.benchmark_protocol.actions",
+          "details.benchmark_protocol.evaluation",
+          "details.benchmark_protocol.notes"
+        ],
+        "url": "https://raw.githubusercontent.com/charlypoly/web-context-bench-python/58d604bfaaac60ad42f02013f53f9fb301c1dcda/METHODOLOGY.md",
+        "retrieved_at": "2026-10-20T11:52:30.131541Z",
+        "sha256": "1c3c0cbf9f9d9f7cd9e7a2f027ecb217fd5c16fa157916281a15bb7f403f6f1c"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "topics",
+          "scope",
+          "notes",
+          "details.benchmark_protocol.evaluation",
+          "details.benchmark_protocol.notes"
+        ],
+        "url": "https://raw.githubusercontent.com/charlypoly/web-context-bench-python/58d604bfaaac60ad42f02013f53f9fb301c1dcda/src/wpbench/scoring.py",
+        "retrieved_at": "2026-10-20T11:53:28.567861Z",
+        "sha256": "8cada5d71b5a61e7aff2e1ac2b951c266eb2db7c082c06c5a13aa127d42b3fc5"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/charlypoly/web-context-bench-python/58d604bfaaac60ad42f02013f53f9fb301c1dcda/LICENSE",
+        "retrieved_at": "2026-10-20T11:51:41.499735Z",
+        "sha256": "9b64ef672f5091b6074d02502f6d3c161d94308a3d9d142d7437dcddf611bbc4"
+      }
+    ],
+    "reviewed_licenses": {
+      "code": {
+        "value": {
+          "declared": "MIT",
+          "url": "https://raw.githubusercontent.com/charlypoly/web-context-bench-python/58d604bfaaac60ad42f02013f53f9fb301c1dcda/LICENSE",
+          "retrieved_at": "2026-10-20T11:51:41.499735Z",
+          "basis": "Complete MIT license text in the repository root at the inspected commit; repository code only."
+        },
+        "reason": "The inspected root LICENSE contains complete MIT terms for repository software. The methodology explicitly leaves redistribution permission for captured third-party practice-site pages unresolved; code MIT is not a blanket snapshot/data license.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/charlypoly/web-context-bench-python/58d604bfaaac60ad42f02013f53f9fb301c1dcda/LICENSE"
+        ]
+      }
+    },
+    "editorial_reviewed": true,
+    "review_note": "Pinned primary documentation and relevant implementation were independently reviewed. Scope, platform and license limits are recorded; no candidate code or results were executed or reproduced.",
+    "read_basis": "Complete pinned README and complete methodology and MIT license; complete scoring.py; official root/source listings and retained numeric-identity receipt. No candidate code or tests executed.",
+    "details": {
+      "benchmark_protocol": {
+        "focus": [
+          "Browser-representation token use",
+          "Factual READ accuracy",
+          "ACT target-element selection"
+        ],
+        "setting": "offline",
+        "observations": [
+          "Top-document HTML",
+          "Markdown converted from HTML",
+          "Playwright accessibility snapshot",
+          "Browser Use indexed DOM",
+          "Stagehand hybrid snapshot",
+          "Viewport screenshot"
+        ],
+        "actions": [
+          "READ text answer",
+          "ACT selector, text/label, accessible role/name, DOM index, Stagehand reference or screenshot point, according to the representation"
+        ],
+        "evaluation": "READ uses normalized exact match against an answer or allowed alias. ACT resolves predicted identifiers to ground-truth elements, or checks screenshot points inside the target box. Representation-token accounting subtracts fixed-prompt tokens; screenshots use billed input usage minus the fixed prompt. These are answer/target correctness and token metrics, not completed-task success.",
+        "counts": [],
+        "notes": "Fixed local-page observations; the reported run uses claude-sonnet-5 and a shared prompt, without scrolling or an agent loop. Browser Use disables its viewport cutoff and sends untruncated text; Stagehand uses a separate matched browser load. Short-string representability labels are approximate. Offline does not mean API-free. Third-party snapshot redistribution remains unresolved; results were not reproduced.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/charlypoly/web-context-bench-python/58d604bfaaac60ad42f02013f53f9fb301c1dcda/README.md",
+          "https://raw.githubusercontent.com/charlypoly/web-context-bench-python/58d604bfaaac60ad42f02013f53f9fb301c1dcda/METHODOLOGY.md",
+          "https://raw.githubusercontent.com/charlypoly/web-context-bench-python/58d604bfaaac60ad42f02013f53f9fb301c1dcda/src/wpbench/scoring.py"
+        ]
+      }
+    },
+    "reviewed_sha256": "14775f6e3daba69d4684380fd33bf717bdc3093b65be796eb863bbd27d0c0bab",
+    "reviewed_at": "2026-10-20T12:29:50Z"
+  },
+  {
+    "id": "github:chenghengli/windom",
+    "name": "WinDOM code",
+    "kind": "framework",
+    "url": "https://github.com/ChenghengLi/WinDOM",
+    "summary": "GUI-grounding training and evaluation code with same-family distillation, GRPO recipes and point-in-box scoring, using a Windows-style web environment.",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "grounding",
+      "imitation-learning",
+      "reinforcement-learning",
+      "evaluation"
+    ],
+    "scope": "core",
+    "notes": "The Windows-style environment is win11React in Playwright, not native Windows control. The repository documents its predecessor trajectory pipeline but explicitly omits the final corpus harvester. The inspected ScreenSpot evaluator defaults to a privileged ground-truth-center demonstration; --no-demo and --official-prompt select other modes, so evaluation results require their prompt and coordinate settings. Linked datasets, weights and reported scores were not independently verified; MIT applies to inspected repository code.",
+    "verify_terms": [
+      "WinDOM"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ChenghengLi/WinDOM/ab52acffe2003fd0c98943a542b4114ef929de0d/README.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "topics",
+      "scope",
+      "notes",
+      "environments",
+      "relations"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "github_repository_identity",
+        "supports": [
+          "id",
+          "url"
+        ],
+        "url": "https://api.github.com/search/repositories?q=topic%3Agui-grounding+is%3Apublic+fork%3Afalse+created%3A2008-01-01..2026-10-20&per_page=100&page=1&sort=updated&order=asc",
+        "retrieved_at": "2026-10-20T11:04:53.470789+00:00",
+        "sha256": "3d76d934e98641746085772b98ee17059749f980a616435498a7ad483bd4cec1"
+      },
+      {
+        "role": "primary",
+        "method": "github_repository_identity",
+        "supports": [
+          "id",
+          "url",
+          "notes"
+        ],
+        "url": "https://github.com/ChenghengLi/WinDOM",
+        "retrieved_at": "2026-10-20T11:50:58.795155Z",
+        "sha256": "08b89c5e6143afa4c0cdde95f8ec016d9033ee004f7631fadd4457144c2b87c9"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes",
+          "licenses.data"
+        ],
+        "url": "https://raw.githubusercontent.com/ChenghengLi/WinDOM/ab52acffe2003fd0c98943a542b4114ef929de0d/data/README.md",
+        "retrieved_at": "2026-10-20T11:52:41.278660Z",
+        "sha256": "09488140d35408cc11bb9c12b1bb435b21814cf6525937a8309475c9326c4004"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "topics",
+          "scope",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/ChenghengLi/WinDOM/ab52acffe2003fd0c98943a542b4114ef929de0d/src/windom/training/sfd_4b.py",
+        "retrieved_at": "2026-10-20T11:52:45.091369Z",
+        "sha256": "0ee33b1e416ea4c5d8834688e6f42fbd15ef493f1b82398d3bb985838cbdffb9"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "topics",
+          "scope",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/ChenghengLi/WinDOM/ab52acffe2003fd0c98943a542b4114ef929de0d/src/windom/evaluation/screenspot.py",
+        "retrieved_at": "2026-10-20T11:52:48.511963Z",
+        "sha256": "c481b2f91f2d82bf801632da6ab6cce01bc42c780104d743156c272942d2cef3"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/ChenghengLi/WinDOM/ab52acffe2003fd0c98943a542b4114ef929de0d/LICENSE",
+        "retrieved_at": "2026-10-20T11:51:44.940106Z",
+        "sha256": "d5a37ff86df9b231440ab1bcf3ecf77304a0a53e772182cdb622a3ab5d043447"
+      }
+    ],
+    "documented_by": [
+      "2606.25964"
+    ],
+    "reviewed_licenses": {
+      "code": {
+        "value": {
+          "declared": "MIT",
+          "url": "https://raw.githubusercontent.com/ChenghengLi/WinDOM/ab52acffe2003fd0c98943a542b4114ef929de0d/LICENSE",
+          "retrieved_at": "2026-10-20T11:51:44.940106Z",
+          "basis": "Complete MIT license text in the repository root at the inspected commit; repository code only."
+        },
+        "reason": "The inspected root LICENSE is complete MIT text for repository code. The local data README says same as parent repository, but the linked Hub dataset/model cards and artifacts were not inspected; their licenses are not inferred.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/ChenghengLi/WinDOM/ab52acffe2003fd0c98943a542b4114ef929de0d/LICENSE"
+        ]
+      }
+    },
+    "editorial_reviewed": true,
+    "review_note": "Pinned primary documentation and relevant implementation were independently reviewed. Scope, platform and license limits are recorded; no candidate code or results were executed or reproduced.",
+    "read_basis": "Complete pinned README and complete data README, MIT license and ScreenSpot evaluator; selected teacher-prompt/distillation/CLI/optimizer sections of sfd_4b.py; official root listing and retained numeric-identity receipt. No candidate code or tests executed.",
+    "reviewed_sha256": "7cda5207d8882bc8dedaefb93d2ccf54b310354917283b8f4890fffdc5764958",
+    "reviewed_at": "2026-10-20T12:29:50Z"
+  },
+  {
+    "id": "github:patrickstarl/gui-grounding-eval",
+    "name": "GUI Grounding Evaluation Harness",
+    "kind": "tool",
+    "url": "https://github.com/PatrickStarL/gui-grounding-eval",
+    "summary": "ScreenSpot-Pro evaluation harness with explicit coordinate transforms, prompt and crop-based inference comparisons, and per-sample grounding accuracy and cost records.",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "grounding",
+      "evaluation",
+      "efficiency"
+    ],
+    "scope": "core",
+    "notes": "This is an independent harness using ScreenSpot-Pro, not a new dataset or verified leaderboard entry. The read code maps points back to original-image coordinates and scores point-in-box hits; documentation limits comparisons by prompt, model, subset and provider behavior. No OS support, code license or external data/weight license was established in this bounded review. Model calls, tests and reported results were not executed or reproduced.",
+    "verify_terms": [
+      "GUI Grounding Evaluation Harness"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/PatrickStarL/gui-grounding-eval/d92b059caa0e0acf8db76f2164dd7be2617ccc72/README.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "github_repository_identity",
+        "supports": [
+          "id",
+          "url"
+        ],
+        "url": "https://api.github.com/search/repositories?q=topic%3Agui-grounding+is%3Apublic+fork%3Afalse+created%3A2008-01-01..2026-10-20&per_page=100&page=1&sort=updated&order=asc",
+        "retrieved_at": "2026-10-20T11:04:53.470789+00:00",
+        "sha256": "3d76d934e98641746085772b98ee17059749f980a616435498a7ad483bd4cec1"
+      },
+      {
+        "role": "primary",
+        "method": "github_repository_identity",
+        "supports": [
+          "id",
+          "url",
+          "notes"
+        ],
+        "url": "https://github.com/PatrickStarL/gui-grounding-eval",
+        "retrieved_at": "2026-10-20T11:51:05.389053Z",
+        "sha256": "4fe6f65a21586dde0bf8b64f8c49e5c583b320bf5e0c2b8253baf2cd3fcfc5d2"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "topics",
+          "scope",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/PatrickStarL/gui-grounding-eval/d92b059caa0e0acf8db76f2164dd7be2617ccc72/ssp_eval/metrics.py",
+        "retrieved_at": "2026-10-20T11:53:32.022035Z",
+        "sha256": "c3eb1708b7d57dcde7478ca2f5063241b1ab567b2ba2ba28b9956b043da2b6c2"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "topics",
+          "scope",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/PatrickStarL/gui-grounding-eval/d92b059caa0e0acf8db76f2164dd7be2617ccc72/ssp_eval/geometry.py",
+        "retrieved_at": "2026-10-20T11:53:35.461491Z",
+        "sha256": "66fa5940f0c4f6265cb162cb0596402848dd2a49fd48b07ee950dc866b8730a5"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "topics",
+          "scope",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/PatrickStarL/gui-grounding-eval/d92b059caa0e0acf8db76f2164dd7be2617ccc72/ssp_eval/runner.py",
+        "retrieved_at": "2026-10-20T11:53:38.931130Z",
+        "sha256": "f83bc0632a616e7b01c8a46b0e435733f0cc47b4a19f0c709b221eaee8a0db5f"
+      }
+    ],
+    "editorial_reviewed": true,
+    "review_note": "Pinned primary documentation and relevant implementation were independently reviewed. Scope, platform and license limits are recorded; no candidate code or results were executed or reproduced.",
+    "read_basis": "Complete pinned README and complete metrics.py, geometry.py and runner.py; official root/source listings and retained numeric-identity receipt. No separate license text was established. No candidate code or tests executed.",
+    "reviewed_sha256": "3226df7608039522072e59d459094fc45be9c5a6be7ea0d7ad76ddf9723a3aea",
+    "reviewed_at": "2026-10-20T12:29:50Z"
+  },
+  {
+    "id": "github:solplum/yunkai",
+    "name": "Yunkai",
+    "kind": "agent",
+    "summary": "Android phone assistant combining model-driven tool use with accessibility-tree reading, screenshots, and tap, swipe and text-entry primitives. Its documented interaction flow presents operation plans for user confirmation.",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "screen-understanding",
+      "human-in-the-loop"
+    ],
+    "scope": "core",
+    "notes": "The Android AccessibilityService contains concrete screen-reading and action paths. The inspected HarmonyOS accessibility extension is a lifecycle/event scaffold with its screen-content probe disabled; HDC appears in an external UI-test driver, so Harmony GUI-control parity is not established by this review. Setup requires a configured OpenAI-compatible model endpoint and API key: local storage does not establish offline inference or a no-transmission guarantee. Documented approval and privacy mechanisms are not independently tested security guarantees. No app, device test or model inference was run.",
+    "verify_terms": [
+      "Yunkai"
+    ],
+    "read_basis": "Complete pinned README and MIT license; complete Android ScreenSenseService.kt, Harmony M2Tools.ets, ScreenSenseExtension.ets and drive_harmony.sh; official commit identity and complete recursive tree listing. Only these implementation files were read; no repository code was imported or executed.",
+    "url": "https://github.com/solplum/yunkai",
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/solplum/yunkai/2aa6cd83165bfc201b0128c250e80892895d63af/README.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "details": {
+      "repository_revision": "2aa6cd83165bfc201b0128c250e80892895d63af"
+    },
+    "editorial_reviewed": true,
+    "review_note": "Pinned primary documentation and relevant implementation were independently reviewed. Scope, platform and license limits are recorded; no candidate code or results were executed or reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "github_repository_identity",
+        "supports": [
+          "identity"
+        ],
+        "url": "https://api.github.com/search/repositories?q=topic%3Amobile-agent+is%3Apublic+fork%3Afalse+created%3A2008-01-01..2026-10-20&per_page=100&page=1&sort=updated&order=asc",
+        "retrieved_at": "2026-10-20T11:06:00.276978+00:00",
+        "sha256": "01f97a863952373bd10a1f849d79706344be63f5774fe7e0cfe9ba774e41d213"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "details.repository_revision"
+        ],
+        "url": "https://api.github.com/repos/solplum/yunkai/commits/main",
+        "retrieved_at": "2026-10-20T11:54:02.419278+00:00",
+        "sha256": "e2797712132e69cc50fa7ad2ae815a48339f77eebec1e85a5dc0cd75702574f1"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "details.repository_revision",
+          "notes"
+        ],
+        "url": "https://api.github.com/repos/solplum/yunkai/git/trees/4ca94f2f7d8f13099ae2c351d9578ed5ef0cb509?recursive=1",
+        "retrieved_at": "2026-10-20T11:56:30.226860+00:00",
+        "sha256": "08f48cb5c15b8d505e76a91d996c656d87765946cc7137bce088e73e6e64cf06"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/solplum/yunkai/2aa6cd83165bfc201b0128c250e80892895d63af/LICENSE",
+        "retrieved_at": "2026-10-20T11:57:22.238029+00:00",
+        "sha256": "c39441f92c303832d42f1f153c4442533ac925007e12d70f3199c568a0baac88"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "scope",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/solplum/yunkai/2aa6cd83165bfc201b0128c250e80892895d63af/yunkai-android/app/src/main/java/com/zhuolin/yunkai/service/screen/ScreenSenseService.kt",
+        "retrieved_at": "2026-10-20T11:59:51.424713+00:00",
+        "sha256": "964aad706676fc7b74e532f8bc441fa766f3ce0ca3e4d0e115c7a90c70656883"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/solplum/yunkai/2aa6cd83165bfc201b0128c250e80892895d63af/yunkai-harmony/entry/src/main/ets/service/tools/M2Tools.ets",
+        "retrieved_at": "2026-10-20T11:59:54.745065+00:00",
+        "sha256": "628cc3015999176052a09e3f3bbb8635d87163a9430d98cb6a6a7c09117dfd37"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/solplum/yunkai/2aa6cd83165bfc201b0128c250e80892895d63af/yunkai-harmony/entry/src/main/ets/service/screen/ScreenSenseExtension.ets",
+        "retrieved_at": "2026-10-20T12:04:53.632582+00:00",
+        "sha256": "ba8c9b0f4b5cea5ac36a4b49f3cf27e77e5c6beb49022e43c667e359be2c6fca"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/solplum/yunkai/2aa6cd83165bfc201b0128c250e80892895d63af/yunkai-harmony/tests/fullflow/drive_harmony.sh",
+        "retrieved_at": "2026-10-20T12:04:56.914360+00:00",
+        "sha256": "423a77e1fd57f3e105898f1adfc94c493de5c0de97fae4379f9cf540c89d4640"
+      }
+    ],
+    "reviewed_licenses": {
+      "code": {
+        "value": {
+          "declared": "MIT",
+          "url": "https://raw.githubusercontent.com/solplum/yunkai/2aa6cd83165bfc201b0128c250e80892895d63af/LICENSE",
+          "retrieved_at": "2026-10-20T11:57:22.238029+00:00",
+          "basis": "Complete root MIT license text inspected at the pinned commit. Repository software only; data, weights and third-party assets retain separate terms."
+        },
+        "reason": "Complete root MIT license text inspected at the pinned commit. Repository software only; data, weights and third-party assets retain separate terms.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/solplum/yunkai/2aa6cd83165bfc201b0128c250e80892895d63af/LICENSE"
+        ]
+      }
+    },
+    "reviewed_sha256": "eea31b35aa0b55c97f8ccda3438382ad49d2453671b49bb817efb5bc3384e900",
+    "reviewed_at": "2026-10-20T12:29:50Z"
+  },
+  {
+    "id": "github:anikasomaia/local-activity-recorder",
+    "name": "Activity Recorder",
+    "kind": "tool",
+    "summary": "Windows tray utility that records primary-display screenshots, keyboard key codes and mouse events as local JPEG and JSON files for training-data collection.",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "recording",
+      "data-generation"
+    ],
+    "scope": "core",
+    "notes": "Recording is started and stopped from the tray; screenshots use a five-second timer. The manual Upload Data action uses a built-in third-party demonstration endpoint unless changed in code, sending recorded files as base64 JSON. Successful uploads move files into uploaded subfolders rather than delete them; no automatic expiry policy was found in the inspected capture/upload path. Sensitive-application filters are listed as future work. The README's .NET version requirements are inconsistent, and long-session behavior was not established. No license declaration was found in the inspected files or complete tree's license-file names, so code permission remains unknown. No activity was captured and no uploader or executable was run.",
+    "verify_terms": [
+      "Activity Recorder"
+    ],
+    "read_basis": "Complete pinned README, Program.cs and DataUploader.cs; complete InputMonitor.cs and ScreenshotCapture.cs reconstructed from the official commit's deleted duplicate-file patches and verified against current root-path Git blob SHA1 and sizes; complete current tree listing. The reconstruction is not a new raw-file request. No recording or upload was performed.",
+    "url": "https://github.com/anikasomaia/local-activity-recorder",
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/anikasomaia/local-activity-recorder/967cea087bf6496b3b82743fb96770fa29f8e203/README.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "details": {
+      "repository_revision": "967cea087bf6496b3b82743fb96770fa29f8e203"
+    },
+    "editorial_reviewed": true,
+    "review_note": "Pinned primary documentation and relevant implementation were independently reviewed. Scope, platform and license limits are recorded; no candidate code or results were executed or reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "github_repository_identity",
+        "supports": [
+          "identity"
+        ],
+        "url": "https://api.github.com/search/repositories?q=topic%3Acomputer-use-agents+is%3Apublic+fork%3Afalse+created%3A2008-01-01..2026-10-20&per_page=100&page=1&sort=updated&order=asc",
+        "retrieved_at": "2026-10-20T11:04:41.685729+00:00",
+        "sha256": "90c30399c8aa5031f82164978bc12eae3bebba172758d20877a87fec53566c12"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "details.repository_revision",
+          "summary",
+          "environments",
+          "topics",
+          "notes"
+        ],
+        "url": "https://api.github.com/repos/anikasomaia/local-activity-recorder/commits/master",
+        "retrieved_at": "2026-10-20T11:54:07.061516+00:00",
+        "sha256": "f5b501fa132163d749c6695d81c76d45fdff2888ea890e31cbaa9bc4172fed3b"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "details.repository_revision",
+          "summary",
+          "environments",
+          "notes",
+          "licenses.code"
+        ],
+        "url": "https://api.github.com/repos/anikasomaia/local-activity-recorder/git/trees/f7ec5b6ecf0ba1bfe6362d7f2bfb0f1af5ac6bc7?recursive=1",
+        "retrieved_at": "2026-10-20T11:56:33.833893+00:00",
+        "sha256": "ee9e5899d1f150982eb05ca1f8794406cef0ffc80eb8223811b504ff972370c1"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "scope",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/anikasomaia/local-activity-recorder/967cea087bf6496b3b82743fb96770fa29f8e203/Program.cs",
+        "retrieved_at": "2026-10-20T12:05:00.168119+00:00",
+        "sha256": "ce3022b4016d140eac554e392dbe42f54ffb3e8098b03e2bf72e92ff49c5d084"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/anikasomaia/local-activity-recorder/967cea087bf6496b3b82743fb96770fa29f8e203/DataUploader.cs",
+        "retrieved_at": "2026-10-20T12:05:03.421222+00:00",
+        "sha256": "e70e2e68b5dd586e5ad0fb0b12c8b937b4614bd5237bac61d03d22144c4751f4"
+      }
+    ],
+    "reviewed_licenses": {
+      "code": {
+        "value": null,
+        "reason": "No license declaration was found in the inspected README/C# files, and the complete pinned tree has no LICENSE, LICENCE or COPYING-named file. Public source access does not establish reuse permission.",
+        "evidence_urls": [
+          "https://api.github.com/repos/anikasomaia/local-activity-recorder/git/trees/f7ec5b6ecf0ba1bfe6362d7f2bfb0f1af5ac6bc7?recursive=1"
+        ]
+      }
+    },
+    "reviewed_sha256": "440e0e43026ba7a20eaca17507cec33bd697d8b1eed6fb056be34136b3f4f76f",
+    "reviewed_at": "2026-10-20T12:29:50Z"
+  },
+  {
+    "id": "github:radishsoftware/mobster",
+    "name": "Mobster engine",
+    "kind": "agent",
+    "summary": "iOS agent engine organized around an observe, decide, verify and act loop, using WebDriverAgent screen state and phone actions such as taps, typing, swipes and app switches.",
+    "environments": [
+      "ios"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "evaluation"
+    ],
+    "scope": "core",
+    "notes": "This entry covers the published engine, not the separate Mobster for Mac product. The documented reference example requires an already-serving WebDriverAgent runner for an iPhone and a model-service key; it performs a fixed read-only Settings task and declines approvals. The repository lists benchmark/evaluation tooling, but dated simulator subsets, real-device trials and earlier engine results are different evaluation populations. The README explicitly places several product modules outside this repository. Source inspection confirms WDA dispatch paths, not task success, security guarantees or reproducible performance; no phone, simulator, model or benchmark was run. MIT applies to the inspected repository software, not automatically to external WDA code, images or other data.",
+    "verify_terms": [
+      "Mobster engine"
+    ],
+    "read_basis": "Complete pinned README, MIT license and mobile_agent/drivers.py; official commit identity and complete recursive tree listing. Driver mixins, agent-loop implementation, benchmark/evaluation implementations, product code and dependencies were not fully read or executed.",
+    "url": "https://github.com/RadishSoftware/mobster",
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/RadishSoftware/mobster/738cecdd3eacb9df88d48efb9efa53507bb4aeb4/README.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "details": {
+      "repository_revision": "738cecdd3eacb9df88d48efb9efa53507bb4aeb4"
+    },
+    "editorial_reviewed": true,
+    "review_note": "Pinned primary documentation and relevant implementation were independently reviewed. Scope, platform and license limits are recorded; no candidate code or results were executed or reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "github_repository_identity",
+        "supports": [
+          "identity"
+        ],
+        "url": "https://api.github.com/search/repositories?q=topic%3Amobile-agent+is%3Apublic+fork%3Afalse+created%3A2008-01-01..2026-10-20&per_page=100&page=1&sort=updated&order=asc",
+        "retrieved_at": "2026-10-20T11:06:00.276978+00:00",
+        "sha256": "01f97a863952373bd10a1f849d79706344be63f5774fe7e0cfe9ba774e41d213"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "details.repository_revision"
+        ],
+        "url": "https://api.github.com/repos/RadishSoftware/mobster/commits/main",
+        "retrieved_at": "2026-10-20T11:54:17.260430+00:00",
+        "sha256": "fde31e2fdae142655f09fa14fb3114bf39a22cc1ff7994204a66622f5cbfe2c7"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "details.repository_revision",
+          "notes"
+        ],
+        "url": "https://api.github.com/repos/RadishSoftware/mobster/git/trees/81f2c1990c07a3aaf001a5c3eb4f37a457f0fb3d?recursive=1",
+        "retrieved_at": "2026-10-20T11:56:37.457839+00:00",
+        "sha256": "8c2b9647b33a93b1a33e9256307e09b0f3e6aa62608019defa6dcdc5d7bff3dc"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/RadishSoftware/mobster/738cecdd3eacb9df88d48efb9efa53507bb4aeb4/LICENSE",
+        "retrieved_at": "2026-10-20T11:57:25.539870+00:00",
+        "sha256": "f9ad743798f16491100ea692069e346f82bbdb5a5df91e4e01c1d6168f2513cf"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "scope",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/RadishSoftware/mobster/738cecdd3eacb9df88d48efb9efa53507bb4aeb4/mobile_agent/drivers.py",
+        "retrieved_at": "2026-10-20T12:05:06.711971+00:00",
+        "sha256": "4296a186cc2c00b9de93ababae490dc99cba596d858eff195e40283d58d73a0a"
+      }
+    ],
+    "reviewed_licenses": {
+      "code": {
+        "value": {
+          "declared": "MIT",
+          "url": "https://raw.githubusercontent.com/RadishSoftware/mobster/738cecdd3eacb9df88d48efb9efa53507bb4aeb4/LICENSE",
+          "retrieved_at": "2026-10-20T11:57:25.539870+00:00",
+          "basis": "Complete root MIT license text inspected at the pinned commit. Applies to repository software; data, weights, external WebDriverAgent code and separately distributed products do not inherit this declaration."
+        },
+        "reason": "Complete root MIT license text inspected at the pinned commit. Applies to repository software; data, weights, external WebDriverAgent code and separately distributed products do not inherit this declaration.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/RadishSoftware/mobster/738cecdd3eacb9df88d48efb9efa53507bb4aeb4/LICENSE"
+        ]
+      }
+    },
+    "reviewed_sha256": "dfffdc4b5850ed6bfe0bcfe705fa5918d61420f8c80df2e38f61b7d1fb3819ec",
+    "reviewed_at": "2026-10-20T12:29:50Z"
   }
 ]

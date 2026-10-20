@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-375 source-reviewed resources tagged `grounding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+378 source-reviewed resources tagged `grounding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (32)](#datasets) · [Models (67)](#models) · [Agents (2)](#agents) · [Frameworks (11)](#frameworks) · [Tools (6)](#tools) · [Products (1)](#products) · [Papers (247)](#papers)
+**Contents:** [Benchmarks (10)](#benchmarks) · [Datasets (32)](#datasets) · [Models (67)](#models) · [Agents (2)](#agents) · [Frameworks (12)](#frameworks) · [Tools (7)](#tools) · [Products (1)](#products) · [Papers (247)](#papers)
 
 ## Benchmarks
 
@@ -18,6 +18,7 @@
 | [ScreenSpot Pro](https://github.com/likaixin2000/ScreenSpot-Pro-GUI-Grounding) · [leaderboard](https://gui-agent.github.io/grounding-leaderboard) | desktop, windows, macos, linux | — | [1,581 target annotations](https://huggingface.co/datasets/likaixin/ScreenSpot-Pro/raw/main/README.md) | code MIT | GUI grounding benchmark focused on professional high-resolution interfaces. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/likaixin2000/ScreenSpot-Pro-GUI-Grounding/HEAD/readme.md) |
 | [ScreenSpot v2](https://huggingface.co/datasets/OS-Copilot/ScreenSpot-v2) | cross-platform | — | — | data apache-2.0 | Second version of the ScreenSpot grounding test set, published by OS-Copilot as separate desktop, mobile and web annotation files with a shared screenshot archive. | [✓ 2026‑10‑16](https://huggingface.co/api/datasets/OS-Copilot/ScreenSpot-v2) |
 | [ScreenSpot-v2 instruction variants](https://huggingface.co/datasets/likaixin/ScreenSpot-v2-variants) | cross-platform | — | [4 instruction types](https://huggingface.co/datasets/likaixin/ScreenSpot-v2-variants/raw/main/README.md) | — | Instruction variants over ScreenSpot-v2 screenshots that distinguish original commands, explicit actions, target descriptions and impossible operations. | [✓ 2026‑10‑17](https://huggingface.co/datasets/likaixin/ScreenSpot-v2-variants/raw/main/README.md) |
+| [Web Context Bench (Python)](https://github.com/charlypoly/web-context-bench-python) | web | — | — | code MIT | Local-page benchmark comparing six browser representations on token use, factual reading and target-element selection, with deterministic answer scoring. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/charlypoly/web-context-bench-python/58d604bfaaac60ad42f02013f53f9fb301c1dcda/README.md) |
 | [WebClick](https://huggingface.co/datasets/Hcompany/WebClick) | web | [2506.02865](https://arxiv.org/abs/2506.02865) (2025) | [1,639 examples](https://huggingface.co/datasets/Hcompany/WebClick/raw/main/README.md) | — | A web-interface localization benchmark with screenshot instructions and target boxes, including agent browsing, human browsing and calendar cases. | [✓ 2026‑10‑17](https://huggingface.co/datasets/Hcompany/WebClick/raw/main/README.md) |
 
 ## Datasets
@@ -151,11 +152,13 @@
 | [TongUI training and inference framework](https://github.com/TongUI-agent/TongUI-agent) | cross-platform, desktop, web | [2504.12679](https://arxiv.org/abs/2504.12679) (2025) | — | Training configurations, preprocessing and inference examples for tutorial-trained GUI models, with a LLaMA-Factory fine-tuning workflow and screenshot-grounding interfaces. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/TongUI-agent/TongUI-agent/HEAD/README.md) |
 | [VideoCAD training and evaluation code](https://github.com/ghadinehme/VideoCAD) | web | [2505.24838](https://arxiv.org/abs/2505.24838) (2025) | code MIT | VideoCADFormer training, action-log preprocessing and evaluation code for learning CAD interface action sequences from screen recordings of browser-based Onshape. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/ghadinehme/VideoCAD/2d69eeaf0ac44210c76dcab2d08b4d4610be236c/README.md) |
 | [WebVLN research implementation](https://github.com/WebVLN/WebVLN) | web | [2312.15820](https://arxiv.org/abs/2312.15820) (2023) | — | Training and evaluation code for question-guided website navigation that combines visual observations with web-specific HTML information. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/WebVLN/WebVLN/HEAD/README.md) |
+| [WinDOM code](https://github.com/ChenghengLi/WinDOM) | web | [2606.25964](https://arxiv.org/abs/2606.25964) (2026) | code MIT | GUI-grounding training and evaluation code with same-family distillation, GRPO recipes and point-in-box scoring, using a Windows-style web environment. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/ChenghengLi/WinDOM/ab52acffe2003fd0c98943a542b4114ef929de0d/README.md) |
 
 ## Tools
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
+| [GUI Grounding Evaluation Harness](https://github.com/PatrickStarL/gui-grounding-eval) | unspecified | — | — | ScreenSpot-Pro evaluation harness with explicit coordinate transforms, prompt and crop-based inference comparisons, and per-sample grounding accuracy and cost records. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/PatrickStarL/gui-grounding-eval/d92b059caa0e0acf8db76f2164dd7be2617ccc72/README.md) |
 | [OculiX (SikuliX continuation)](https://github.com/oculix-org/Oculix) | desktop, windows, macos, linux, android | — | code MIT | A maintained continuation of SikuliX that locates on-screen targets with image matching and OCR, drives desktop or Android interfaces, and exposes scripting and optional MCP interfaces. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/oculix-org/Oculix/HEAD/README.md) |
 | [OmniParser](https://github.com/microsoft/OmniParser) | cross-platform | [2408.00203](https://arxiv.org/abs/2408.00203) (2024) | — | Screenshot parser that detects interactable regions and captions icons so vision-language models can ground actions, released as V1.5 and V2 weights alongside OmniTool for driving a Windows 11 VM. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/microsoft/OmniParser/HEAD/README.md) |
 | [Set of Mark](https://github.com/microsoft/SoM) | unspecified | [2310.11441](https://arxiv.org/abs/2310.11441) (2023) | code MIT | Visual-prompting toolbox that labels image regions for multimodal reference and grounding, including GUI applications. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/microsoft/SoM/HEAD/README.md) |

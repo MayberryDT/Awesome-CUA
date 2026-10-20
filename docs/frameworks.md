@@ -6,7 +6,7 @@ Curated metadata, not a performance ranking. Each entry links its first-party ev
 
 *Paper* lists reviewed `introduced_by`/`documented_by` relations with the record's year. *License* lists publisher declarations by scope (code, data, weights, document). *Evidence* links the reviewed first-party snapshot and its retrieval date.
 
-**77 resources:** [Web (28)](#web) · [Desktop (14)](#desktop) · [Mobile (20)](#mobile) · [Cross-platform (13)](#cross-platform) · [Unspecified (2)](#unspecified)
+**78 resources:** [Web (29)](#web) · [Desktop (14)](#desktop) · [Mobile (20)](#mobile) · [Cross-platform (13)](#cross-platform) · [Unspecified (2)](#unspecified)
 
 Resources tagged with environments from more than one family are listed under *Cross-platform*; their exact environments stay in the table.
 
@@ -42,6 +42,7 @@ All entries in this section: web.
 | [WebLlama](https://github.com/McGill-NLP/webllama) | [2402.05930](https://arxiv.org/abs/2402.05930) (2024) | code MIT | Training, evaluation and integration tooling for dialogue-guided web agents, including Llama fine-tuning workflows and BrowserGym examples built around WebLINX. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/McGill-NLP/webllama/HEAD/README.md) |
 | [WebRL](https://github.com/THUDM/WebRL) | [2411.02337](https://arxiv.org/abs/2411.02337) (2024) | — | Training pipeline that evolves web tasks from prior attempts and uses an outcome reward model to refine browser policies. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/THUDM/WebRL/HEAD/README.md) |
 | [WebVLN research implementation](https://github.com/WebVLN/WebVLN) | [2312.15820](https://arxiv.org/abs/2312.15820) (2023) | — | Training and evaluation code for question-guided website navigation that combines visual observations with web-specific HTML information. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/WebVLN/WebVLN/HEAD/README.md) |
+| [WinDOM code](https://github.com/ChenghengLi/WinDOM) | [2606.25964](https://arxiv.org/abs/2606.25964) (2026) | code MIT | GUI-grounding training and evaluation code with same-family distillation, GRPO recipes and point-in-box scoring, using a Windows-style web environment. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/ChenghengLi/WinDOM/ab52acffe2003fd0c98943a542b4114ef929de0d/README.md) |
 | [Workflow-Guided Exploration research code](https://github.com/stanfordnlp/wge) | [1802.08802](https://arxiv.org/abs/1802.08802) (2018) | code Apache-2.0 | Research code that learns browser-control policies by constraining exploration with workflows induced from demonstrations, with a Selenium-based MiniWoB environment and experiment harness. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/stanfordnlp/wge/HEAD/README.md) |
 | [WorkForceAgent-R1](https://github.com/night-chen/WorkForceAgent-R1) | [2505.22942](https://arxiv.org/abs/2505.22942) (2025) | — | Web-task reward functions, WorkArena data processing and GRPO training configurations for reasoning-oriented language agents. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/night-chen/WorkForceAgent-R1/HEAD/README.md) |
 
